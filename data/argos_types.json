@@ -1,0 +1,533 @@
+/*
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/
+_/  primitive types
+_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+*/
+
+// definition of the xref
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "xref",
+	"title": "xternal reference",
+	"description": "data structure for external references",
+	
+	"type": "object",
+	
+	"properties": {
+		"id" : {
+			"type": "string",
+			"description": "identifier of the object in the database"
+		},
+		"version" : {
+			"type": ["string", "number"],
+			"description": "version of the identified object"
+		},
+		"db" : {
+			"type": "string",
+			"description": "identity of the database where the object exists with the given id"
+		},
+		"source" : {
+			"type": "string",
+			"description": "resource identifier"
+		},
+		"url" : {
+			"type": "string",
+			"description": "resource locator"
+		}
+	},
+	
+	"anyOf": [
+		{"required" : ["id"]},
+		{"required" : ["url"]}
+	]
+}
+
+
+
+// definition of sequence position range(s)
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "range",
+	"title": "positional range(s)",
+	"description": "one or many ranges on an annotated sequence",
+	
+	"type": "array",
+	
+	"properties": {
+		"start" : {
+			"type": "integer",
+			"description": "starting position of the range" 
+		},
+		"end" : {
+			"type": "integer",
+			"description": "ending position of the range"
+		}
+	},
+	
+	"required" : ["start", "end"]
+}
+
+
+/*
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/
+_/  sequence-positional-annotation schema
+_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+*/
+
+// definition of positional annotations
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "seqpos_annotation",
+	"title": "Argos sequence positional annotation",
+	"description": "Defines the format for sequence positions specific annotations",
+	
+	"type": "array",
+	
+	"properties": {
+		"seqID" : {
+			"type": "$xref",
+			"description": "reference to the sequence" 
+		},
+		"source" : {
+			"type": "$xref",
+			"description": "reference to the source of information" 
+		},
+		"range": {
+			"type": "$range",
+			"description": "annotated range(s)"
+		},
+		"features" : {
+			"type": "array",
+			"description": "list of features that are being annotated",
+			"properties" : {
+				"feature": {
+					"type": "string",
+					"description": "feature that is being annotated"
+					"enum" : [
+						"all_gb_features_such_as", "CDS", "gene", "peptide", "mat_peptide", "etc",  
+						"all_HIVE_features_such_as", "entropy", "phred_scores", "inserion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
+]
+				},
+				"tags" : {
+					"type": "array",
+					"description": "list of tags describing the feature",
+					"properties" : {
+						"tag": {
+							"type": "string",
+							"description": "name of the tag"
+						},
+						"value": {
+							"type": ["string","number","xref", "boolean"]
+						}
+					},
+					"required": ["tag"]
+				},
+				"value" : {
+					"type": ["string", "number" , "boolean" ],
+					"description": "value directly assigned to the feature"
+				}
+			}
+        },
+		"anyOf" : {
+			"required": ["tags"],
+			"required": ["value"]
+        }
+	}
+	
+}
+
+/*
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/
+_/  Overall QC for entrie Assembly ( from HIVE)
+_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+*/
+// definition of assembly QC annotations
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "seq_annotation",
+	"title": "Argos sequence assembly annotation",
+	"description": "Defines the format for overall assembly QC",
+	
+	"type": "array",
+	
+	"properties": {
+		"seqID" : {
+			"type": "$xref",
+			"description": "reference to the sequence" 
+		},
+		"source" : {
+			"type": "xref",
+			"description": "reference to the source of information" 
+		},
+		"properties" : {
+			"GC": {
+				"type": "number",
+				"description": "GC content of the assembly"
+			},
+			"genome_size": {
+				"type": "number",
+				"description": "size of overall genome assembly"
+			},
+			"coverage_percentile": {
+				"type": "number",
+				"description": "percentile of assembly covered with own reads alignment"
+			},
+			"sequence_reads": {
+				"type": "$xref",
+				"description": "the reads from which this assembly has been created"
+			},
+			"N50": {
+				"type": "number",
+				"description": "length of the shortest read to minimally represent 50% of the assembly"
+			},
+			"L50": {
+				"type": "number",
+				"description": "number of reads minimally represent 50% of the assembly"
+			},
+			"N95": {
+				"type": "number",
+				"description": "length of the shortest read to minimally represent 95% of the assembly"
+			},
+			"L95": {
+				"type": "number",
+				"description": "number of reads minimally represent 95% of the assembly"
+			},
+			"cnt_scaffolds": {
+				"type": "number",
+				"description": "number of scaffolds to represent the assembled genome"
+			},
+			"cnt_contigs": {
+				"type": "number",
+				"description": "number of contigs to represent the assembled genome"
+			},
+			"contigs_momentum": {
+				"type": "number",
+				"description": "cumulative normalized momentum (contig_size*count) of all contigs"
+			},
+			"coverage_contigs": {
+				"type": "number",
+				"description": "average coverage on contigs"
+			},
+			"reads_unaligned": {
+				"type": "number",
+				"description": "number of reads in short_read pool that do not align to assembly"
+			},
+			"aligned_momentum": {
+				"type": "number",
+				"description": "cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly"
+			},
+			"overhang_momentum": {
+				"type": "number",
+				"description": "cumulative normalized momentum (unaligned_size*count) of own reads aligned to assembly"
+			},
+			"bases_percentile_aligned": {
+				"type": "number",
+				"description": "percentile of bases on partially aligned reads with relation to count of all bases on aligned reads"
+			},
+			"cnt_gaps": {
+				"type": "number",
+				"description": "number of gaps in an assemly as covered by own reads"
+			},
+			"size_gaps": {
+				"type": "number",
+				"description": "cumulative size of gaps as covered by own reads"
+			},
+			"clonal_populations": {
+				"type": "number",
+				"description": "number of clonal populations on assembly nephosome"
+			},
+			"clonal_expanse": {
+				"type": "number",
+				"description": "total size of all clonal contigs"
+			},
+			"phred_average": {
+				"type": "number",
+				"description": "average phred score of aligned base call"
+			},
+			"count_major_variations": {
+				"type": "number",
+				"description": "number of +50% variations on avariation profile of own reads on an assembly"
+			},
+			"indels_momentum": {
+				"type": "number",
+				"description": "momentum of indels (count*percentile) on variation profile of own reads alignment to assembly"
+			},
+			"mutation_momentum": {
+				"type": "number",
+				"description": "momentum of mutations (count*percentile) on variation profile of own reads alignment to assembly"
+			},
+			"alignment_disbalance": {
+				"type": "number",
+				"description": "ratio of forward and reverse own reads aligned on assembly"
+			},
+			"alignment_anisotropy": {
+				"type": "number",
+				"description": "anisotropy of basecalls with relation to own reads aligned to assembly"
+			},
+			"rpkm": {
+				"type": "number",
+				"description": "reads per kilobase of reference size per million alignments"
+			},
+			"fpkm": {
+				"type": "number",
+				"description": "fragments per kilobase of reference size per million alignments"
+			},
+			"coverage_homogeneity" : {
+			 	"type": "number",
+				"description": "anisotropy of the coverage with relation to assembly frame"
+			},
+			
+			
+			
+			"ambigous_bases" : {
+				 "type": "number",
+				"description": "number of IUPAC ambigous bases in reads (Ns, Ys .etc)"
+			},
+			"taxid_composition": {
+				"type": "array",
+				"description": "taxonomic identifiers hit by the reads"
+				"properties" : {
+					"taxid" : {
+						"type": "xref",
+						"description": "taxonomic id of the hit" 
+					}
+				}
+			},
+			
+			"seq_composition": {
+				"type": "array",
+				"description": "sequence identifiers hit by the reads"
+				"properties" : {
+					"taxid" : {
+						"type": "xref",
+						"description": "accession of the hit sequence" 
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+
+
+/*
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/
+_/  examples 
+_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+*/
+
+
+
+// examples how to define different annotation from genbank records, from VCF files and from HIVE QC pipelines
+// FROM GENBANK
+/*
+ 	  gene            238..21527
+                     /gene="ORF1ab"
+     CDS             join(238..13440,13440..21527)
+                     /gene="ORF1ab"
+                     /ribosomal_slippage
+                     /codon_start=1
+                     /product="ORF1ab polyprotein"
+                       
+*/
+[
+    {
+        "seqID" : {
+ 		    "id": "OK394248",
+			"version": 1, 
+			"db": "genbank", 
+			"source": "NCBI"
+ 		},
+ 		"source" : {
+ 			"url": "https://www.ncbi.nlm.nih.gov/"
+ 		},
+ 		"range": [ 
+            {"start" :238, "end": 21527} 
+ 		],
+        "features": [
+            {
+				"feature": "gene",
+				"tags": [ 
+					{ "tag": "gene", "value": "ORF1ab"} 
+				]
+            }
+        ]
+	},
+	{
+        "seqID" : {
+ 		    "id": "OK394248",
+			"version": 1, 
+			"db": "genbank", 
+			"source": "NCBI"
+ 		},
+ 		"source" : {
+ 			"url": "https://www.ncbi.nlm.nih.gov/"
+ 		},
+ 		"range": [ 
+            {"start" :238, "end": 13440},
+            {"start" :13440, "end": 21527}
+ 		],
+ 		"features": {
+    			"feature": "CDS",
+				"tags": [ 
+					{ "tag": "gene", "value": "ORF1ab"},
+					{ "tag": "ribosomal_slippage"},
+					{ "codon_start": 1},
+					{ "tag": "product", "value" : "ORF1ab polyprotein"}
+				]
+            }
+ 		]
+ 		
+	}
+	
+]
+ 
+// example how to define annotation from VCF record
+// FROM VCF
+/*
+#CHROM POS     ID        REF ALT    QUAL FILTER INFO                              FORMAT      NA00001        NA00002        NA00003
+20     14370   rs6054257 G      A       29   PASS   NS=3;DP=14;AF=0.5;DB;H2           GT:GQ:DP:HQ 0|0:48:1:51,51 1|0:48:8:51,51 1/1:43:5:.,.
+*/
+
+[
+    {
+        "seqID" : {
+ 		    "id": "NC_000020",
+			"version": 11, 
+			"db": "genbank", 
+			"source": "NCBI" 
+ 		},
+ 		"source" : {
+ 			"url": "https://www.ncbi.nlm.nih.gov/"
+ 		},
+ 		"range": [ 
+            {"start" :14370, "end": 14370 } 
+ 		],
+        "features": [
+            {
+				"feature": "ID",
+				"value": "rs6054257"
+            },
+			{
+				"feature": "REF",
+				"value": "G"
+            },
+			{
+				"feature": "ALT",
+				"value": "A"
+            },
+			{
+				"feature": "QUAL",
+				"value": "29"
+            },
+			{
+				"feature": "FILTER",
+				"tags": [ 
+					{ "tag": "NS", "value": 3},
+					{ "tag": "DP", "value": 14},
+					{ "tag": "AF", "value": 0.5},
+					{ "tag": "DB"},
+					{ "tag": "H2"}
+				]
+            }
+ 		]	
+	}
+	
+]
+
+
+
+// example how to define annotations from HIVE-heptagon QC
+// from SNPProfile
+[
+    {
+        "seqID" : {
+ 		    "id": "OK394248",
+			"version": 1, 
+			"db": "genbank", 
+			"source": "NCBI"
+ 		},
+ 		"source" : {
+ 			"url": "https://pubmed.ncbi.nlm.nih.gov/28188908/",
+ 			"version" : 1.2
+ 		},
+ 		"range": [ 
+            {"start" :1449, "end": 1457 } 
+ 		],
+        "features": [
+            {
+				"feature": "entropy",
+				"tags": [ 
+					{ "tag": "A", "value": 0.4},
+					{ "tag": "C", "value": 0.3},
+					{ "tag": "G", "value": 0.4},
+					{ "tag": "T", "value": 0.5},
+					{ "tag": "pass", "value" : false}
+				]
+            }
+ 		]
+    },
+	{
+        "seqID" : {
+ 		    "id": "OK394248",
+			"version": 1, 
+			"db": "genbank", 
+			"source": "NCBI"
+ 		},
+ 		"source" : {
+ 			"url": "https://pubmed.ncbi.nlm.nih.gov/28188908/",
+ 			"version" : 1.2
+ 		},
+ 		"range": [ 
+            {"start" :3233, "end": 3245 } 
+ 		],
+        "features": [
+            {
+				"feature": "coverage",
+				"tags": [ 
+					{ "tag": "forward", "value": 12},
+					{ "tag": "reverse", "value": 1490},
+					{ "tag": "disbalance", "value": 124},
+					{ "tag": "pass", "value": false },
+					{ "tag": "gap", "value": false }
+				]
+            },
+			{
+				"feature": "qc",
+				"value": 19.3
+            }
+ 		]
+	},
+	{
+        "seqID" : {
+ 		    "id": "OK394248",
+			"version": 1, 
+			"db": "genbank", 
+			"source": "NCBI" 
+ 		},
+ 		"source" : {
+ 			"url": "https://pubmed.ncbi.nlm.nih.gov/28188908/",
+ 			"version" : 1.2
+ 		},
+ 		"range": [ 
+            {"start" :3224, "end": 3349 } 
+ 		],
+        "features": [
+            {
+				"feature": "gap",
+				"value": true
+            }
+ 		]
+	}
+]
+
+

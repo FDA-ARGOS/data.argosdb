@@ -75,7 +75,7 @@
                             "description": "feature that is being annotated",
                             "enum" : [
                                 "all_gb_features_such_as", "CDS", "gene", "peptide", "mat_peptide", "etc",  
-                                "all_HIVE_features_such_as", "entropy", "phred_scores", "inserion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
+                                "all_HIVE_features_such_as", "entropy", "phred_scores", "insertion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
         ]
                         },
                         "tags" : {

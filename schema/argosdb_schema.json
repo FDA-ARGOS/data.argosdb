@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "xref",
+	"title": "xternal reference",
+	"description": "data structure for external references",
+	
+	"type": "object",
+	
+	"properties": {
+		"id" : {
+			"type": "string",
+			"description": "identifier of the object in the database"
+		},
+		"version" : {
+			"type": ["string", "number"],
+			"description": "version of the identified object"
+		},
+		"db" : {
+			"type": "string",
+			"description": "identity of the database where the object exists with the given id"
+		},
+		"source" : {
+			"type": "string",
+			"description": "resource identifier"
+		},
+		"url" : {
+			"type": "string",
+			"description": "resource locator"
+		}
+	},
+	
+	"anyOf": [
+		{"required" : ["id"]},
+		{"required" : ["url"]}
+	]
+}

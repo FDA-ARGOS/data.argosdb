@@ -16,7 +16,7 @@ def usr_args():
 
     # set usages options
     parser = argparse.ArgumentParser(
-        prog='bco',
+        prog='argosdb',
         usage='%(prog)s [options]')
 
     # version
@@ -25,7 +25,7 @@ def usr_args():
         action='version',
         version='%(prog)s ' + __version__)
 
-    parser.add_argument('-b', '--bco',
+    parser.add_argument('-j', '--json',
                                required=True,
                                help="BioCompute JSON to process.")
 
@@ -52,9 +52,12 @@ def validate_json(options):
     """REF: https://json-schema.org/ """
     # Describe what kind of json you expect.
     execute_api_schema = get_schema(options)
+    with open(options.json, 'r') as file:
+        data = json.load(file)
+        print('loaded data')
 
     try:
-        validate(instance=options.bco, schema=execute_api_schema)
+        validate(instance=data, schema=execute_api_schema)
     except jsonschema.exceptions.ValidationError as err:
         print(err)
         err = "Given JSON data is InValid"
@@ -69,7 +72,8 @@ def main():
     """
 
     options = usr_args()
-    validate_json(options)
+    message = validate_json(options)
+    print(message[1])
 
 
 #______________________________________________________________________________#

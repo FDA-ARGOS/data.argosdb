@@ -4,7 +4,16 @@
     "title": "Base type for ARGOSDB data objects",
     "type": "object",
     "description": "",
-    "required": [],
+    "additionalProperties": false,
+    "required": [
+		"object_identifier",
+		"schema"
+	],
+    "anyOf": [
+      {"required" : ["seq_annotation"]},
+      {"required" : ["qaqc_annotation"]},
+      {"required" : ["pop_gen_annotation"]}
+    ],
     "definitions": {
         "xref": {
             "title": "xternal reference",
@@ -49,17 +58,17 @@
                 }
             }
         },
-        "seqpos_annotation": {
+        "sequence_position_annotation": {
             "title": "Argos sequence positional annotation",
             "description": "Defines the format for sequence positions specific annotations",
-            "type": "array",
+            "type": "object",
             "properties": {
                 "seqID" : {
-                    "$ref": "#/definitions/xref/",
+                    "$ref": "#/definitions/xref",
                     "description": "reference to the sequence" 
                 },
                 "range": {
-                    "$ref": "#/definitions/range/",
+                    "$ref": "#/definitions/range",
                     "description": "annotated range(s)"
                 },
                 "seq_features" : {
@@ -75,8 +84,8 @@
                             "description": "feature that is being annotated",
                             "enum" : [
                                 "all_gb_features_such_as", "CDS", "gene", "peptide", "mat_peptide", "etc",  
-                                "all_HIVE_features_such_as", "entropy", "phred_scores", "insertion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
-        ]
+                                "all_HIVE_features_such_as", "entropy", "phred_scores", "inserion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
+                            ]
                         },
                         "tags" : {
                             "type": "array",
@@ -100,5 +109,17 @@
                 }
             }
         }
-    }
+    },
+	"properties": {
+		"object_identifier": {
+			"type": "string",
+			"readOnly": true
+		},
+		"schema": {},
+		"seq_annotation":{
+			"$ref": "#/definitions/sequence_position_annotation"
+		},
+		"qaqc_annotation": {},
+		"pop_gen_annotation":{}
+	}
 }

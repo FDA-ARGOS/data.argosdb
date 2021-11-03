@@ -1,26 +1,30 @@
 {
-	"seqID": {
-		"id": "OK394248",
-		"version": 1,
-		"db": "genbank",
-		"source": "NCBI",
-		"url": "https://www.ncbi.nlm.nih.gov/"
-	},
-	"range": [
-		{
-			"start": 238,
-			"end": 21527
-		}
-	],
-	"features": [
-		{
-			"feature": "gene",
-			"tags": [
-				{
-					"tag": "gene",
-					"value": "ORF1ab"
-				}
-			]
-		}
-	]
+	"object_identifier": "test1",
+	"schema": "https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/argosdb_schema.json",
+	"seq_annotation": {
+		"seqID": {
+			"id": "OK394248",
+			"version": 1,
+			"db": "genbank",
+			"source": "NCBI",
+			"url": "https://www.ncbi.nlm.nih.gov/"
+		},
+		"range": [
+			{
+				"start": 238,
+				"end": 21527
+			}
+		],
+		"seq_features": [
+			{
+				"feature": "gene",
+				"tags": [
+					{
+						"tag": "gene",
+						"value": "ORF1ab"
+					}
+				]
+			}
+		]
+	}
 }

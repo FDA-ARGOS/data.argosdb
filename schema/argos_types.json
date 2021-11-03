@@ -345,10 +345,8 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
  		    "id": "OK394248",
 			"version": 1, 
 			"db": "genbank", 
-			"source": "NCBI"
- 		},
- 		"source" : {
- 			"url": "https://www.ncbi.nlm.nih.gov/"
+			"source": "NCBI",
+			"url": "https://www.ncbi.nlm.nih.gov/"
  		},
  		"range": [ 
             {"start" :238, "end": 21527} 

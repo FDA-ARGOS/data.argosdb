@@ -1,36 +1,104 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "xref",
-	"title": "xternal reference",
-	"description": "data structure for external references",
-	
-	"type": "object",
-	
-	"properties": {
-		"id" : {
-			"type": "string",
-			"description": "identifier of the object in the database"
-		},
-		"version" : {
-			"type": ["string", "number"],
-			"description": "version of the identified object"
-		},
-		"db" : {
-			"type": "string",
-			"description": "identity of the database where the object exists with the given id"
-		},
-		"source" : {
-			"type": "string",
-			"description": "resource identifier"
-		},
-		"url" : {
-			"type": "string",
-			"description": "resource locator"
-		}
-	},
-	
-	"anyOf": [
-		{"required" : ["id"]},
-		{"required" : ["url"]}
-	]
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/argosdb_schema.json",
+    "title": "Base type for ARGOSDB data objects",
+    "type": "object",
+    "description": "",
+    "required": [],
+    "definitions": {
+        "xref": {
+            "title": "xternal reference",
+            "description": "data structure for external references",
+            "examples": [
+                
+            ],
+            "required" : ["id", "url"],
+            "id" : {
+                "type": "string",
+                "description": "identifier of the object in the database"
+            },
+            "version" : {
+                "type": ["string", "number"],
+                "description": "version of the identified object"
+            },
+            "db" : {
+                "type": "string",
+                "description": "identity of the database where the object exists with the given id"
+            },
+            "source" : {
+                "type": "string",
+                "description": "resource identifier"
+            },
+            "url" : {
+                "type": "string",
+                "description": "resource locator"
+            }
+        },
+        "range": {
+            "type": "array",
+            "description": "one or many ranges on an annotated sequence",
+            "required" : ["start", "end"],
+            "properties": {
+                "start" : {
+                    "type": "integer",
+                    "description": "starting position of the range" 
+                },
+                "end" : {
+                    "type": "integer",
+                    "description": "ending position of the range"
+                }
+            }
+        },
+        "seqpos_annotation": {
+            "title": "Argos sequence positional annotation",
+            "description": "Defines the format for sequence positions specific annotations",
+            "type": "array",
+            "properties": {
+                "seqID" : {
+                    "$ref": "#/definitions/xref/",
+                    "description": "reference to the sequence" 
+                },
+                "range": {
+                    "$ref": "#/definitions/range/",
+                    "description": "annotated range(s)"
+                },
+                "seq_features" : {
+                    "type": "array",
+                    "description": "list of features that are being annotated",
+                    "anyOf" : [
+                        {"required": ["tags"]},
+                        {"required": ["value"]}
+                    ],
+                    "properties" : {
+                        "feature": {
+                            "type": "string",
+                            "description": "feature that is being annotated",
+                            "enum" : [
+                                "all_gb_features_such_as", "CDS", "gene", "peptide", "mat_peptide", "etc",  
+                                "all_HIVE_features_such_as", "entropy", "phred_scores", "inserion", "deletion", "variant", "overhang", "coverage", "anisotropy", "coverage", "disbalance"   
+        ]
+                        },
+                        "tags" : {
+                            "type": "array",
+                            "description": "list of tags describing the feature",
+                            "properties" : {
+                                "tag": {
+                                    "type": "string",
+                                    "description": "name of the tag"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["tag"]
+                        },
+                        "value" : {
+                            "type": "string",
+                            "description": "value directly assigned to the feature"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

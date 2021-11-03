@@ -1,1 +1,2 @@
-.DSStore
+*.DSStore
+env

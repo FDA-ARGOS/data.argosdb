@@ -1,0 +1,26 @@
+{
+	"seqID": {
+		"id": "OK394248",
+		"version": 1,
+		"db": "genbank",
+		"source": "NCBI",
+		"url": "https://www.ncbi.nlm.nih.gov/"
+	},
+	"range": [
+		{
+			"start": 238,
+			"end": 21527
+		}
+	],
+	"features": [
+		{
+			"feature": "gene",
+			"tags": [
+				{
+					"tag": "gene",
+					"value": "ORF1ab"
+				}
+			]
+		}
+	]
+}

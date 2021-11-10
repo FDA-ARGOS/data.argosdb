@@ -1,0 +1,11 @@
+﻿assembly_id,Genome assembly identifier,argos
+Level,"Sequencing level according to NCBI: Complete genome, Chromosome, Contig",argos
+wgs_accession,Accession for WGS progect if it exists,argos
+num_chromosomes,number of Chromosomes in assembly,argos
+BioSample,BioSample accession,argos
+taxonomy_full,Full taxinomic liniage,argos
+tax_name,Name in NCBI Taxonomy,glygen
+bioproject,bioProject accession,argos
+uniprotkb_ac,Accession assigned to the protein in the UniProtKB database,glygen
+refseq_ac,Accession in the NCBI RefSeq database,glygen
+tax_id,NCBI Taxonomy database Identifier,glygen

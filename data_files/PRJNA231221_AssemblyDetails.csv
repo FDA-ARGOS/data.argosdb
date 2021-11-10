@@ -1,4 +1,4 @@
-﻿# Assembly,Level,WGS,Chrs,BioSample,Strain,Taxonomy,BioProject
+﻿assembly_id,Level,wgs_accession,num_chromosomes,BioSample,taxonomy_full,tax_name,bioproject
 GCA_013267415.1,Complete genome,undefined,1,SAMN11056500,FDAARGOS_785,Abiotrophia defectiva,PRJNA231221
 GCA_016127315.1,Complete genome,undefined,1,SAMN16357219,FDAARGOS_1050,Achromobacter deleyi,PRJNA231221
 GCA_013343095.1,Complete genome,undefined,1,SAMN11056502,FDAARGOS_787,Achromobacter denitrificans,PRJNA231221

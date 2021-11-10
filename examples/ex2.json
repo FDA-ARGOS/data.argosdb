@@ -9,7 +9,7 @@
 			"source": "NCBI",
 			"url": "https://www.ncbi.nlm.nih.gov/"
 		},
-		"seq_geatures": [
+		"seq_features": [
 			{
 				"feature": "CDS",
 				"tags": [

@@ -2,6 +2,9 @@
 
 Repository for data files and schema definitions for ARGOS rpoject. 
 
+## Data_files
+Space for raw or processed data files
+_
 ## Docs
 space for documentation
 
@@ -25,7 +28,7 @@ usage: argosdb [options]
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -j JSON, --json JSON  BioCompute JSON to process.
+  -j JSON, --json JSON  JSON to process.
   -s SCHEMA, --schema SCHEMA
                         Root json schema to validate against.
 

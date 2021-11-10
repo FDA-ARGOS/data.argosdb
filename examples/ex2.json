@@ -1,26 +1,34 @@
 {
-    "seqID" : {
-        "id": "OK394248",
-        "version": 1, 
-        "db": "genbank", 
-        "source": "NCBI"
-    },
-    "source" : {
-        "url": "https://www.ncbi.nlm.nih.gov/"
-    },
-    "range": [ 
-        {"start" :238, "end": 13440},
-        {"start" :13440, "end": 21527}
-    ],
-    "features": {
-            "feature": "CDS",
-            "tags": [ 
-                { "tag": "gene", "value": "ORF1ab"},
-                { "tag": "ribosomal_slippage"},
-                { "codon_start": 1},
-                { "tag": "product", "value" : "ORF1ab polyprotein"}
-            ]
-        }
-    ]
-    
+	"object_identifier": "test1",
+	"schema": "https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/argosdb_schema.json",
+	"seq_annotation": {
+		"seqID": {
+			"id": "OK394248",
+			"version": 1,
+			"db": "genbank",
+			"source": "NCBI",
+			"url": "https://www.ncbi.nlm.nih.gov/"
+		},
+		"seq_geatures": [
+			{
+				"feature": "CDS",
+				"tags": [
+					{
+						"tag": "gene",
+						"value": "ORF1ab"
+					},
+					{
+						"tag": "ribosomal_slippage"
+					},
+					{
+						"codon_start": 1
+					},
+					{
+						"tag": "product",
+						"value": "ORF1ab polyprotein"
+					}
+				]
+			}
+		]
+	}
 }

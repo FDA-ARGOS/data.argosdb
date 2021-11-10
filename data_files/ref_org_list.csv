@@ -1,0 +1,6 @@
+﻿# Assembly,Level,WGS,Chrs,BioSample,Strain,Taxonomy,BioProject,UniProt,RefSeq
+GCA_000006945,Complete Genome,*,1+1,SAMN02604315,,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),PRJNA241,UP000001014,yes
+GCA_003102975,Complete Genome,*,1,n/a,,Human immunodeficiency virus 1 (viruses),n/a,UP000002241,no
+GCA_009858895,Complete genome,*,1,n/a,,Severe acute respiratory syndrome coronavirus 2 (viruses),PRJNA485481,UP000464024,yes
+GCA_000857325,Complete genome,*,1,n/a,strain Kenya/Musoke/1980,Lake Victoria marburgvirus (strain Musoke-80) (MARV) (Marburg virus (strain Kenya/Musoke/1980)),PRJNA485481,UP000180448,yes
+GCA_000865725,Complete genome,*,8,n/a,strain A/Puerto Rico/8/1934 H1N1,Influenza A virus,PRJNA485481,UP000009255,

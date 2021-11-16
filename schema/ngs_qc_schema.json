@@ -1,0 +1,246 @@
+{
+	"definitions": {
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1637099294.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"ncbi_sra",
+		"hive_qc"
+	],
+	"properties": {
+		"ncbi_sra": {
+			"$id": "#root/ncbi_sra",
+			"title": "Ncbi_sra",
+			"type": "object",
+			"required": [
+				"assemblyNumber",
+				"level",
+				"wgs",
+				"chrs",
+				"bioSample",
+				"strain",
+				"taxonomy"
+			],
+			"properties": {
+				"assemblyNumber": {
+					"$id": "#root/ncbi_sra/assemblyNumber",
+					"title": "Assemblynumber",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"GCA_002209225.2"
+					],
+					"pattern": "^.*$"
+				},
+				"level": {
+					"$id": "#root/ncbi_sra/level",
+					"title": "Level",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Complete genome"
+					],
+					"pattern": "^.*$"
+				},
+				"wgs": {
+					"$id": "#root/ncbi_sra/wgs",
+					"title": "Wgs",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"undefined"
+					],
+					"pattern": "^.*$"
+				},
+				"chrs": {
+					"$id": "#root/ncbi_sra/chrs",
+					"title": "Chrs",
+					"type": "integer",
+					"examples": [
+						3
+					],
+					"default": 0
+				},
+				"bioSample": {
+					"$id": "#root/ncbi_sra/bioSample",
+					"title": "Biosample",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"SAMN06173334"
+					],
+					"pattern": "^.*$"
+				},
+				"strain": {
+					"$id": "#root/ncbi_sra/strain",
+					"title": "Strain",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"FDAARGOS_321"
+					],
+					"pattern": "^.*$"
+				},
+				"taxonomy": {
+					"$id": "#root/ncbi_sra/taxonomy",
+					"title": "Taxonomy",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Salmonella enterica subsp. enterica serovar Typhimurium"
+					],
+					"pattern": "^.*$"
+				}
+			}
+		},
+		"hive_qc": {
+			"$id": "#root/hive_qc",
+			"title": "Hive_qc",
+			"type": "object",
+			"required": [
+				"run"
+			],
+			"properties": {
+				"run": {
+					"$id": "#root/hive_qc/run",
+					"title": "Run",
+					"type": "array",
+					"default": [
+
+					],
+					"items": {
+						"$id": "#root/hive_qc/run/items",
+						"title": "Items",
+						"type": "object",
+						"required": [
+							"accession",
+							"files"
+						],
+						"properties": {
+							"accession": {
+								"$id": "#root/hive_qc/run/items/accession",
+								"title": "Accession",
+								"type": "string",
+								"default": "",
+								"examples": [
+									"SRR5417096"
+								],
+								"pattern": "^.*$"
+							},
+							"files": {
+								"$id": "#root/hive_qc/run/items/files",
+								"title": "Files",
+								"type": "array",
+								"default": [
+
+								],
+								"items": {
+									"$id": "#root/hive_qc/run/items/files/items",
+									"title": "Items",
+									"type": "object",
+									"required": [
+										"name",
+										"qualityMetrics"
+									],
+									"properties": {
+										"name": {
+											"$id": "#root/hive_qc/run/items/files/items/name",
+											"title": "Name",
+											"type": "string",
+											"default": "",
+											"examples": [
+												"SRR5417096_1.fastq"
+											],
+											"pattern": "^.*$"
+										},
+										"qualityMetrics": {
+											"$id": "#root/hive_qc/run/items/files/items/qualityMetrics",
+											"title": "Qualitymetrics",
+											"type": "object",
+											"required": [
+												"avgFileQual",
+												"positionOutlier",
+												"numReads",
+												"minRead",
+												"avgReadLength",
+												"maxRead",
+												"gcContent"
+											],
+											"properties": {
+												"avgFileQual": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/avgFileQual",
+													"title": "Avgfilequal",
+													"type": "number",
+													"examples": [
+														36.0157
+													],
+													"default": 0.0
+												},
+												"positionOutlier": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/positionOutlier",
+													"title": "Positionoutlier",
+													"type": "integer",
+													"examples": [
+														0
+													],
+													"default": 0
+												},
+												"numReads": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/numReads",
+													"title": "Numreads",
+													"type": "integer",
+													"examples": [
+														5633657
+													],
+													"default": 0
+												},
+												"minRead": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/minRead",
+													"title": "Minread",
+													"type": "integer",
+													"examples": [
+														3
+													],
+													"default": 0
+												},
+												"avgReadLength": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/avgReadLength",
+													"title": "Avgreadlength",
+													"type": "number",
+													"examples": [
+														101.0514
+													],
+													"default": 0.0
+												},
+												"maxRead": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/maxRead",
+													"title": "Maxread",
+													"type": "integer",
+													"examples": [
+														101
+													],
+													"default": 0
+												},
+												"gcContent": {
+													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/gcContent",
+													"title": "Gccontent",
+													"type": "number",
+													"examples": [
+														0.5121
+													],
+													"default": 0.0
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

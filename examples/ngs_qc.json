@@ -1,6 +1,6 @@
 {
+	"assembly": "GCA_002209225.2",
 	"ncbi_sra": {
-		"assemblyNumber": "GCA_002209225.2",
 		"level": "Complete genome",
 		"wgs": "undefined",
 		"chrs": 3,

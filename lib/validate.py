@@ -27,7 +27,7 @@ def usr_args():
 
     parser.add_argument('-j', '--json',
                                required=True,
-                               help="BioCompute JSON to process.")
+                               help="JSON to process.")
 
     parser.add_argument('-s', '--schema',
                                # type = argparse.FileType('r'),

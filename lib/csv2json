@@ -26,10 +26,10 @@ def usr_args():
         version='%(prog)s ' + __version__)
 
     parser.add_argument('-c', '--csv',
+                                required=True,
                                 help="CSV file to create.")
 
     parser.add_argument('-s', '--schema',
-                                required=True,
                                 # type = argparse.FileType('r'),
                                 help="Root json schema to parse")
 
@@ -40,37 +40,47 @@ def usr_args():
     options = parser.parse_args()
     return options
 
-def get_schema(options):
+
+def get_csv(options): 
     """
-        This function loads the given schema available
+        get csv
     """
-    with open(options.schema, 'r') as file:
-        schema = json.load(file)
+    schema = {'required':[], 'properties':{}}
+    required = []
+    with open(options.csv, 'r') as file:
+        data = csv.reader(file)
+        header = next(data)
+        for row in data: 
+            # schema.append(row)
+            schema['properties'][row[0]] = {
+                '$id':row[1],
+                'title': row[2],
+                'description': row[3],
+                'type': row[4],
+                'default': row[5],
+                'examples': row[6],
+                'pattern': row[7]
+            }
+            if row[8] == 'required':
+                schema['required'].append(row[0])
+        
+        jsonf = json.dumps(schema, indent=4)
+        return jsonf
+
+def make_schema(options, schema):
+    """
+        This function writes the schema from the given csv
+    """
+    print(options.schema)
+    
+    if options.schema:
+        file_name = options.schema
+        with open(file_name, 'w', encoding='utf-8') as jsonf: 
+            jsonf.write(schema)
+    else:
+        print(schema)
+    
     return schema
-
-def make_csv(options, schema): 
-    """
-        make csv
-    """
-    if options.csv: 
-        csv_file = options.csv
-    else: 
-        csv_file = 'test.csv'
-    csv_columns = ['property', '$id', 'title', 'description', 'type', 'default', 'examples', 'pattern', 'required']
-    required = schema['required']
-    with open(csv_file, 'w') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(csv_columns)
-        for key in schema['properties']:
-            row = [key]
-            for item in schema['properties'][key]:
-                row.append(schema['properties'][key][item])
-            if row[0] in required:
-                row.append('required')
-            else: 
-                row.append('optional')
-            writer.writerow(row)
-
 
 def main():
     """
@@ -78,8 +88,10 @@ def main():
     """
 
     options = usr_args()
-    schema = get_schema(options)
-    make_csv(options, schema)
+    schema = get_csv(options)
+    make_schema(options, schema)
+
+
 
 #______________________________________________________________________________#
 if __name__ == "__main__":

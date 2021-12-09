@@ -1,0 +1,31 @@
+property,$id,title,description,type,default,examples,pattern,required
+identifier,#root/identifier,identifier,"Unique Identifier For Each Sample. The same identifier is used for each assembly because within the scope of the original ARGOS study, each sample only have one associated assembly.",string,,[''],^.*$,required
+isolation_provider_name,#root/isolation_provider_name,isolation provider name,Name of the provider from which the biological sample was derived.,string,,[''],^.*$,required
+email,#root/email,email,Email obtained from the BioSample submission page.,string,,[''],^.*$,required
+submitting_organization,#root/submitting_organization,submitting organization,Name of organization that is submitting the BioSample.,string,,[''],^.*$,required
+department,#root/department,department,Name of department that is submitting the BioSample.,string,,[''],^.*$,required
+street,#root/street,street,Street name of the organization submitting the BioSample.,string,,[''],^.*$,required
+city,#root/city,city,City name of the organization submitting the BioSample.,string,,[''],^.*$,required
+state/province,#root/state/province,state/province,State or province of the organization submitting the BioSample.,string,,[''],^.*$,required
+postal_code,#root/postal_code,postal code,Postal Code of the organization submitting the BioSample.,string,,[''],^.*$,required
+country,#root/country,country,Country name of the organization submitting the BioSample.,string,,[''],^.*$,required
+sample_name,#root/sample_name,sample name,Name of the sample given by the submitter of the BioSample.,string,,[''],^.*$,required
+organism,#root/organism,organism,Name of the expected organism. This is determined prior to sequencing.,string,,[''],^.*$,required
+strain,#root/strain,strain,Strain name of the organism of interest.,string,,[''],^.*$,required
+collection_date,#root/collection_date,collection date,The date on which the sample was collected.,string,,[''],^.*$,required
+geo_loc_name,#root/geo_loc_name,geographic location,Geographical origin of the sample.,string,,[''],^.*$,required
+isolation_source,#root/isolation_source,isolation source,"Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived.",string,,[''],^.*$,required
+host,#root/host,host,The natural host to the organism from which the sample was obtained.,string,,[''],^.*$,required
+lineage,#root/lineage,cov_lineage,"The Pango nomenclature is being used by researchers and public health agencies worldwide to track the transmission and spread of SARS-CoV-2, including variants of concern. This website documents all current Pango lineages and their spread, as well as various software tools which can be used by researchers to perform analyses on SARS-COV-2 sequence data. https://cov-lineages.org/index.html#about",string,,[''],^.*$,optional
+isolate,#root/isolate,isolate,Identification or description of the specific individual from which this sample was obtained.,string,,[''],^.*$,optional
+id_method,#root/id_method,id method,Species identification method.,string,,[''],^.*$,optional
+sample_type,#root/sample_type,sample type,Type of sample used for the BioSample submission.,string,,[''],^.*$,optional
+isolation_acquisition_id,#root/isolation_acquisition_id,isolation acquisition identifier,Acquisition identifier for obtained isolate.,string,,[''],^.*$,optional
+ncbi_taxonomy_id,#root/ncbi_taxonomy_id,ncbi taxonomy identifier,NCBI taxonomy ID of the organism.,string,,[''],^.*$,optional
+contact_name,#root/contact_name,contact name,Contact name associated with the BioSample.,string,,[''],^.*$,optional
+clinical/environmental,#root/clinical/environmental,clinical/environmental,Additional metadata on the use of this BioSample.,string,,[''],^.*$,optional
+gisaid_accession,#root/gisaid_accession,GISAID accession,"The GISAID accession assigned to the sequence. GISAID Accession Numbers are used as unique and permanent identifiers for each virus beginning with the letters EPI and followed by numbers, to identify viruses and or/ segments.",string,,[''],^.*$,optional
+gisaid_virus_name,#root/gisaid_virus_name,GISAID virus name,The full virus name submitted to GISAID.,string,,[''],^.*$,optional
+biomaterial_provider,#root/biomaterial_provider,biomaterial provider,"Name and address of the lab or PI, or a culture collection identifier.",string,,[''],^.*$,optional
+disease,#root/disease,Disease,List of diseases diagnosed; can include multiple diagnoses.,array,[],['covid'],^.*$,optional
+host_taxid,#root/host_taxid,host taxonomy ID,NCBI taxonomy ID of the host.,string,,[''],^.*$,optional

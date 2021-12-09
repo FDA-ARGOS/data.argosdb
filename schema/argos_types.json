@@ -291,7 +291,7 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 			},
 			"taxid_composition": {
 				"type": "array",
-				"description": "taxonomic identifiers hit by the reads"
+				"description": "taxonomic identifiers hit by the reads",
 				"properties" : {
 					"taxid" : {
 						"type": "xref",
@@ -302,7 +302,7 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 			
 			"seq_composition": {
 				"type": "array",
-				"description": "sequence identifiers hit by the reads"
+				"description": "sequence identifiers hit by the reads",
 				"properties" : {
 					"taxid" : {
 						"type": "xref",

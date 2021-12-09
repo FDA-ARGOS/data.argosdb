@@ -9,7 +9,6 @@ __status__ = "Production"
 def usr_args():
     """
     functional arguments for process
-    https://stackoverflow.com/questions/27529610/call-function-based-on-argparse
     """
 
     parser = argparse.ArgumentParser()
@@ -44,11 +43,65 @@ def get_schema(options):
     """
         This function loads the given schema available
     """
+
+    schema_data = {}
     with open(options.schema, 'r') as file:
         schema = json.load(file)
-    return schema
+    for key in schema['properties']:
+        print(key)
+        if schema['properties'][key]['type'] == 'array':
+            schema_data[key] = {
+                '$id':schema['properties'][key]['$id'],
+                'title': schema['properties'][key]['title'],
+                'description': schema['properties'][key]['description'],
+                'type': schema['properties'][key]['type'],
+                'default': schema['properties'][key]['default'],
+                'examples': schema['properties'][key]['items']['examples'],
+                'pattern': schema['properties'][key]['items']['pattern']
+            }    
 
-def make_csv(options, schema): 
+        elif schema['properties'][key]['type'] == 'number' or schema['properties'][key]['type'] == 'integer':
+            schema_data[key] = {
+                '$id':schema['properties'][key]['$id'],
+                'title': schema['properties'][key]['title'],
+                'description': schema['properties'][key]['description'],
+                'type': schema['properties'][key]['type'],
+                'default': schema['properties'][key]['default'],
+                'examples': schema['properties'][key]['examples'],
+                'pattern': None
+            } 
+
+        elif schema['properties'][key]['type'] == 'object': 
+            # schema_data[key] = {
+            #     '$id':schema['properties'][key]['$id'],
+            #     'title': schema['properties'][key]['title'],
+            #     'description': schema['properties'][key]['description'],
+            #     'type': schema['properties'][key]['type'],
+            #     'default': schema['properties'][key]['default'],
+            #     'examples': schema['properties'][key]['examples'],
+            #     'pattern': schema['properties'][key]['pattern']
+            # }
+            continue
+
+        else: 
+            schema_data[key] = {
+                '$id':schema['properties'][key]['$id'],
+                'title': schema['properties'][key]['title'],
+                'description': schema['properties'][key]['description'],
+                'type': schema['properties'][key]['type'],
+                'default': schema['properties'][key]['default'],
+                'examples': schema['properties'][key]['examples'],
+                'pattern': schema['properties'][key]['pattern']
+            }    
+        
+        if key in schema['required']:
+            schema_data[key]['required'] = 'required'
+        else:
+            schema_data[key]['required'] = 'optional'
+
+    return schema_data
+
+def make_csv(options, schema_data): 
     """
         make csv
     """
@@ -57,18 +110,13 @@ def make_csv(options, schema):
     else: 
         csv_file = 'test.csv'
     csv_columns = ['property', '$id', 'title', 'description', 'type', 'default', 'examples', 'pattern', 'required']
-    required = schema['required']
     with open(csv_file, 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(csv_columns)
-        for key in schema['properties']:
+        for key in schema_data:
             row = [key]
-            for item in schema['properties'][key]:
-                row.append(schema['properties'][key][item])
-            if row[0] in required:
-                row.append('required')
-            else: 
-                row.append('optional')
+            for item in schema_data[key]:
+                row.append(schema_data[key][item])
             writer.writerow(row)
 
 
@@ -78,8 +126,8 @@ def main():
     """
 
     options = usr_args()
-    schema = get_schema(options)
-    make_csv(options, schema)
+    schema_data = get_schema(options)
+    make_csv(options, schema_data)
 
 #______________________________________________________________________________#
 if __name__ == "__main__":

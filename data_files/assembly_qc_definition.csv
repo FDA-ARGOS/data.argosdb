@@ -1,0 +1,55 @@
+property,$id,title,description,type,default,examples,pattern,required
+fdaargos_biosample_id,#root/fdaargos_biosample_id,Fdaargos_biosample_id,ARGOS BioSample identifier.,string,,[''],^.*$,required
+fdaargos_id,#root/fdaargos_id,Fdaargos_id,ARGOS identifier.,string,,[''],^.*$,required
+genome_assembly_id,#root/genome_assembly_id,Genome_assembly_id,NCBI’s Genome Assembly identifier.,string,,[''],^.*$,required
+num_chromosomes,#root/num_chromosomes,Num_chromosomes,Total number of chromosomes in the genome assembly.,string,,[''],^.*$,required
+BCO_id,#root/BCO_id,Bco_id,BioCompute Object identifier.,string,,[''],^.*$,required
+ncbi_biosample_id,#root/ncbi_biosample_id,Ncbi_biosample_id,NCBI BioSample identifier.,string,,[''],^.*$,optional
+organism_name,#root/organism_name,Organism_name,Name of the expected organism. This is determined prior to sequencing.,string,,[''],^.*$,optional
+strain_name,#root/strain_name,Strain_name,Strain name of the organism of interest.,string,,[''],^.*$,optional
+ncbi_taxonomy_id,#root/ncbi_taxonomy_id,Ncbi_taxonomy_id,NCBI taxonomy identifier of the organism.,string,,[''],^.*$,optional
+id_method,#root/id_method,Id_method,Species identification method.,string,,[''],^.*$,optional
+sample_type,#root/sample_type,Sample_type,"Type of sample used for the BioSample submission, if applicable.",string,,[''],^.*$,optional
+host,#root/host,Host,The natural host to the organism from which the sample was obtained.,string,,[''],^.*$,optional
+number_of_Ns_or_Xs,#root/number_of_Ns_or_Xs,Number_of_ns_or_xs,Total number of Ns or Xs in the assembled genome.,int,,[''],^.*$,optional
+isolation_provider_name,#root/isolation_provider_name,Isolation_provider_name,Name of the provider from which the biological sample was derived.,string,,[''],^.*$,optional
+isolation_acquisition_id,#root/isolation_acquisition_id,Isolation_acquisition_id,Acquisition identifier for obtained isolate.,string,,[''],^.*$,optional
+contact_name,#root/contact_name,Contact_name,Contact name associated with the BioSample.,string,,[''],^.*$,optional
+sequencing_method,#root/sequencing_method,Sequencing_method,Sequencing method used to obtain the DNA fragments/sequences.,string,,[''],^.*$,optional
+n50,#root/n50,N50,Length of the shortest read to minimally represent 50% of the assembly.,int,,[''],^.*$,optional
+l50,#root/l50,L50,Number of reads that minimally represent 50% of the assembly.,int,,[''],^.*$,optional
+gc%,#root/gc%,GC%,GC content of the assembly.,float,,[''],^.*$,optional
+length,#root/length,Length,Total length of the assembled genome.,int,,[''],^.*$,optional
+avg_nuc_identitiy,#root/avg_nuc_identitiy,Avg_nuc_identitiy,Average nucleotide identity between the assembly and the reference sequences.,float,,[''],^.*$,optional
+%assembly_with_>20x_coverage,#root/%assembly_with_>20x_coverage,%assembly_with_>20x_coverage,"Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used.",float,,[''],^.*$,optional
+query_coverage_against_reference,#root/query_coverage_against_reference,Query_coverage_against_reference,BLAST query coverage of the entire assembly between the assembly and reference sequences.,float,,[''],^.*$,optional
+percent_identity_against_reference,#root/percent_identity_against_reference,Percent_identity_against_reference,BLAST percent identity of the entire assembly between the assembly and reference sequences.,float,,[''],^.*$,optional
+seq_id,#root/seq_id,Seq_id,Reference identifier to a specific sequence inside the assembled genome.,string,,[''],^.*$,optional
+n95,#root/n95,N95,Length of the shortest read to minimally represent 95% of the assembly.,int,,[''],^.*$,optional
+l95,#root/l95,L95,Number of reads that minimally represent 95% of the assembly.,int,,[''],^.*$,optional
+cnt_scaffolds,#root/cnt_scaffolds,Cnt_scaffolds,Number of scaffolds to represent the assembled genome.,int,,[''],^.*$,optional
+cnt_contigs,#root/cnt_contigs,Cnt_contigs,Number of contigs to represent the assembled genome.,int,,[''],^.*$,optional
+contigs_momentum,#root/contigs_momentum,Contigs_momentum,Cumulative normalized momentum (contig_size*count) of all contigs.,float,,[''],^.*$,optional
+coverage_contigs,#root/coverage_contigs,Coverage_contigs,Average coverage on contigs.,float,,[''],^.*$,optional
+reads_unaligned,#root/reads_unaligned,Reads_unaligned,Number of reads in short_read pool that do not align to assembly.,int,,[''],^.*$,optional
+aligned_momentum,#root/aligned_momentum,Aligned_momentum,Cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly.,float,,[''],^.*$,optional
+overhang_momentum,#root/overhang_momentum,Overhang_momentum,Cumulative normalized momentum (unaligned_size*count) of own reads unaligned to assembly.,float,,[''],^.*$,optional
+bases_percentile_aligned,#root/bases_percentile_aligned,Bases_percentile_aligned,Percentile of bases on partially aligned reads with relation to count of all bases on aligned reads.,float,,[''],^.*$,optional
+cnt_gaps,#root/cnt_gaps,Cnt_gaps,Number of gaps in an assembly as covered by own reads.,int,,[''],^.*$,optional
+size_gaps,#root/size_gaps,Size_gaps,Cumulative size of gaps as covered by own reads.,float,,[''],^.*$,optional
+clonal_populations,#root/clonal_populations,Clonal_populations,Number of clonal populations on assembly nephosome.,int,,[''],^.*$,optional
+clonal_expanse,#root/clonal_expanse,Clonal_expanse,Total size of all clonal contigs.,int,,[''],^.*$,optional
+phred_average,#root/phred_average,Phred_average,Average phred score of aligned base call.,float,,[''],^.*$,optional
+count_major_variations,#root/count_major_variations,Count_major_variations,Number of +50% variations on a variation profile of own reads on avartion profile of own reads on assembly. ,float,,[''],^.*$,optional
+indels_momentum,#root/indels_momentum,Indels_momentum,Momentum of indels (count*percentile) on variation profile of own reads alignment to assembly.,float,,[''],^.*$,optional
+mutation_momentum,#root/mutation_momentum,Mutation_momentum,Momentum of mutations (count*percentile) on variation profile of own reads  alignment to assembly.,float,,[''],^.*$,optional
+alignment_disbalance,#root/alignment_disbalance,Alignment_disbalance,Ratio of forward and reverse own reads aligned on assembly.,float,,[''],^.*$,optional
+alignment_anisotropy,#root/alignment_anisotropy,Alignment_anisotropy,Anisotropy of basecalls with relation to own reads aligned to assembly.,float,,[''],^.*$,optional
+rpkm,#root/rpkm,Rpkm,Reads per kilobase of reference size per million alignments.,float,,[''],^.*$,optional
+fpkm,#root/fpkm,Fpkm,Fragments per kilobase of reference size per million alignments. ,float,,[''],^.*$,optional
+coverage_homogeneity,#root/coverage_homogeneity,Coverage_homogeneity,Anisotropy of the coverage with relation to assembly frame.,float,,[''],^.*$,optional
+ambiguous_bases,#root/ambiguous_bases,Ambiguous_bases,"Number of IUPAC ambiguous bases in reads(Ns, Ys, etc.)",int,,[''],^.*$,optional
+taxid_composition,#root/taxid_composition,Taxid_composition,Taxonomic identifiers hit by the reads.,array,[],['223'],^.*$,optional
+seq_composition,#root/seq_composition,Seq_composition,Sequence identifiers hit by the reads.,array,[],['as334'],^.*$,optional
+assembly_type,#root/assembly_type,Assembly_type,"haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms.",array,['haploid'],['haploid'],^.*$,optional
+assembly_level,#root/assembly_level,Assembly_level,The highest level of assembly for any object in the assembly.,array,['Contig'],['Complete genome'],^.*$,optional

@@ -61,11 +61,16 @@ def get_csv(options):
                 'examples': row[6],
                 'pattern': row[7]
             }
-            if row[8] == 'required':
-                schema['required'].append(row[0])
+            # if row[8] == 'required':
+            #     schema['required'].append(row[0])
+            # if row[9] == 'NA':
+            #     continue
+            # else:
+            #     print(row[9])
+            #     schema['properties'][row[0]]['properties'] = json.dumps(row[9])
+
         
-        jsonf = json.dumps(schema, indent=4)
-        return jsonf
+        return schema
 
 def make_schema(options, schema):
     """
@@ -73,14 +78,29 @@ def make_schema(options, schema):
     """
     print(options.schema)
     
+    jsonf = json.dumps(schema, indent=4)
+
     if options.schema:
         file_name = options.schema
-        with open(file_name, 'w', encoding='utf-8') as jsonf: 
-            jsonf.write(schema)
+        with open(file_name, 'w', encoding='utf-8') as file: 
+            file.write(jsonf)
     else:
-        print(schema)
+        #print(jsonf)
+        next
     
-    return schema
+    with open('schema/site_qc.json', 'r') as jsonf2:
+        new_schema = json.load(jsonf2)
+        
+        for key in new_schema['properties']:
+            if key in schema['properties']:
+                new_schema['properties'][key]['description'] = schema['properties'][key]['description'] 
+                # new_schema['properties'][key]['description'] = schema['properties'][key]['description'] 
+                # new_schema['properties'][key]['description'] = schema['properties'][key]['description'] 
+                new_schema['properties'][key]['title'] = schema['properties'][key]['title'] 
+    
+    print(json.dumps(new_schema, indent=4))
+    
+    return jsonf
 
 def main():
     """

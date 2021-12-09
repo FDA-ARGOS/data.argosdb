@@ -1,246 +1,480 @@
 {
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/FDA-ARGOS/data.argosdb/tree/1.0/schema/ngs_qc_schema.json",
+	"title": "Next Generation Sequencing Quality Controle Data definition",
 	"definitions": {
 	},
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://example.com/object1637099294.json",
-	"title": "Root",
 	"type": "object",
 	"required": [
-		"ncbi_sra",
-		"hive_qc"
+		"fdaargos_biosample_id",
+		"fdaargos_id",
+		"file_name",
+		"avg_file_quality",
+		"min_read_length",
+		"pos_outlier_count",
+		"num_reads",
+		"avg_read_length",
+		"max_reads",
+		"gc%",
+		"strategy"
 	],
 	"properties": {
-		"ncbi_sra": {
-			"$id": "#root/ncbi_sra",
-			"title": "Ncbi_sra",
-			"type": "object",
-			"required": [
-				"assemblyNumber",
-				"level",
-				"wgs",
-				"chrs",
-				"bioSample",
-				"strain",
-				"taxonomy"
+		"fdaargos_biosample_id": {
+			"$id": "#root/fdaargos_biosample_id",
+			"title": "fdaargos BioSample identifier",
+			"description": "ARGOS BioSample identifier.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
 			],
-			"properties": {
-				"assemblyNumber": {
-					"$id": "#root/ncbi_sra/assemblyNumber",
-					"title": "Assemblynumber",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"GCA_002209225.2"
-					],
-					"pattern": "^.*$"
-				},
-				"level": {
-					"$id": "#root/ncbi_sra/level",
-					"title": "Level",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"Complete genome"
-					],
-					"pattern": "^.*$"
-				},
-				"wgs": {
-					"$id": "#root/ncbi_sra/wgs",
-					"title": "Wgs",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"undefined"
-					],
-					"pattern": "^.*$"
-				},
-				"chrs": {
-					"$id": "#root/ncbi_sra/chrs",
-					"title": "Chrs",
-					"type": "integer",
-					"examples": [
-						3
-					],
-					"default": 0
-				},
-				"bioSample": {
-					"$id": "#root/ncbi_sra/bioSample",
-					"title": "Biosample",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"SAMN06173334"
-					],
-					"pattern": "^.*$"
-				},
-				"strain": {
-					"$id": "#root/ncbi_sra/strain",
-					"title": "Strain",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"FDAARGOS_321"
-					],
-					"pattern": "^.*$"
-				},
-				"taxonomy": {
-					"$id": "#root/ncbi_sra/taxonomy",
-					"title": "Taxonomy",
-					"type": "string",
-					"default": "",
-					"examples": [
-						"Salmonella enterica subsp. enterica serovar Typhimurium"
-					],
-					"pattern": "^.*$"
-				}
+			"pattern": "^.*$"
+		},
+		"fdaargos_id": {
+			"$id": "#root/fdaargos_id",
+			"title": "fdaargos identifier",
+			"description": "ARGOS identifier.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"file_name": {
+			"$id": "#root/file_name",
+			"title": "file name",
+			"description": "FASTQ file name used for the HIVE analysis.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"avg_file_quality": {
+			"$id": "#root/avg_file_quality",
+			"title": "average file quality",
+			"description": "Average quality (in phred score) of sequences in a FASTQ read file.",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"min_read_length": {
+			"$id": "#root/min_read_length",
+			"title": "minimum read length",
+			"description": "Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"pos_outlier_count": {
+			"$id": "#root/pos_outlier_count",
+			"title": "position outlier count",
+			"description": "Count of positions the quality of which is significantly different (extremely low or high).",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"num_reads": {
+			"$id": "#root/num_reads",
+			"title": "number of reads",
+			"description": "Number of sequences present in a FASTA/FASTQ read file.",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"avg_read_length": {
+			"$id": "#root/avg_read_length",
+			"title": "average read length",
+			"description": "Average length of sequences in a FASTA/FASTQ read file.",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"max_read_length": {
+			"$id": "#root/max_read_length",
+			"title": "maximum read length",
+			"description": "Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.",
+			"type": "number",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"gc%": {
+			"$id": "#root/gc%",
+			"title": "gc percent",
+			"description": "Percent GC content of the sequences in a read file.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"strategy": {
+			"$id": "#root/strategy",
+			"title": "strategy",
+			"description": "Strategy/method used to generate the NGS.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"shotgun"
+			],
+			"pattern": "^.*$"
+		},
+		"sra_run_id": {
+			"$id": "#root/sra_run_id",
+			"title": "sra run identifier",
+			"description": "Database identifier assigned by repository and linked to GenBank or other repository.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"genome_assembly_id": {
+			"$id": "#root/genome_assembly_id",
+			"title": "genome assembly identifier",
+			"description": "NCBI’s Genome Assembly identifier.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"wgs_accession": {
+			"$id": "#root/wgs_accession",
+			"title": "WGS accession",
+			"description": "NCBI’s Whole Genome Shotgun (WGS) accession number.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"ncbi_biosample_id": {
+			"$id": "#root/ncbi_biosample_id",
+			"title": "NCBI BioSample identifier",
+			"description": "NCBI’s BioSample identifier.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"level": {
+			"$id": "#root/level",
+			"title": "level",
+			"description": "Level index for run specific depth first enumeration of tax hierarchy.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"strain_name": {
+			"$id": "#root/strain_name",
+			"title": "strain name",
+			"description": "Strain name of the organism of interest.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"organism_name": {
+			"$id": "#root/organism_name",
+			"title": "Organism_name",
+			"description": "Name of the expected organism. This is determined prior to sequencing.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"instrument": {
+			"$id": "#root/instrument",
+			"title": "instrument",
+			"description": "Name of instrument used for NGS.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"NextSeq 500 High-Output",
+				"HiSeq X"
+			],
+			"pattern": "^.*$"
+		},
+		"id_method": {
+			"$id": "#root/id_method",
+			"title": "identifier method",
+			"description": "Species identification method.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				""
+			],
+			"pattern": "^.*$"
+		},
+		"codon_table": {
+			"$id": "#root/codon_table",
+			"title": "Codon table",
+			"description": "Codon Table",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/codon_table/items",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Standard"
+				],
+				"pattern": "^.*$"
 			}
 		},
-		"hive_qc": {
-			"$id": "#root/hive_qc",
-			"title": "Hive_qc",
-			"type": "object",
-			"required": [
-				"run"
+		"%protein_coding": {
+			"$id": "#root/%protein_coding",
+			"title": "%protein_coding",
+			"description": "Percent of the total content that is identified automatically as protein coding",
+			"type": "array",
+			"default": [
+
 			],
-			"properties": {
-				"run": {
-					"$id": "#root/hive_qc/run",
-					"title": "Run",
-					"type": "array",
-					"default": [
-
-					],
-					"items": {
-						"$id": "#root/hive_qc/run/items",
-						"title": "Items",
-						"type": "object",
-						"required": [
-							"accession",
-							"files"
-						],
-						"properties": {
-							"accession": {
-								"$id": "#root/hive_qc/run/items/accession",
-								"title": "Accession",
-								"type": "string",
-								"default": "",
-								"examples": [
-									"SRR5417096"
-								],
-								"pattern": "^.*$"
-							},
-							"files": {
-								"$id": "#root/hive_qc/run/items/files",
-								"title": "Files",
-								"type": "array",
-								"default": [
-
-								],
-								"items": {
-									"$id": "#root/hive_qc/run/items/files/items",
-									"title": "Items",
-									"type": "object",
-									"required": [
-										"name",
-										"qualityMetrics"
-									],
-									"properties": {
-										"name": {
-											"$id": "#root/hive_qc/run/items/files/items/name",
-											"title": "Name",
-											"type": "string",
-											"default": "",
-											"examples": [
-												"SRR5417096_1.fastq"
-											],
-											"pattern": "^.*$"
-										},
-										"qualityMetrics": {
-											"$id": "#root/hive_qc/run/items/files/items/qualityMetrics",
-											"title": "Qualitymetrics",
-											"type": "object",
-											"required": [
-												"avgFileQual",
-												"positionOutlier",
-												"numReads",
-												"minRead",
-												"avgReadLength",
-												"maxRead",
-												"gcContent"
-											],
-											"properties": {
-												"avgFileQual": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/avgFileQual",
-													"title": "Avgfilequal",
-													"type": "number",
-													"examples": [
-														36.0157
-													],
-													"default": 0.0
-												},
-												"positionOutlier": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/positionOutlier",
-													"title": "Positionoutlier",
-													"type": "integer",
-													"examples": [
-														0
-													],
-													"default": 0
-												},
-												"numReads": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/numReads",
-													"title": "Numreads",
-													"type": "integer",
-													"examples": [
-														5633657
-													],
-													"default": 0
-												},
-												"minRead": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/minRead",
-													"title": "Minread",
-													"type": "integer",
-													"examples": [
-														3
-													],
-													"default": 0
-												},
-												"avgReadLength": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/avgReadLength",
-													"title": "Avgreadlength",
-													"type": "number",
-													"examples": [
-														101.0514
-													],
-													"default": 0.0
-												},
-												"maxRead": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/maxRead",
-													"title": "Maxread",
-													"type": "integer",
-													"examples": [
-														101
-													],
-													"default": 0
-												},
-												"gcContent": {
-													"$id": "#root/hive_qc/run/items/files/items/qualityMetrics/gcContent",
-													"title": "Gccontent",
-													"type": "number",
-													"examples": [
-														0.5121
-													],
-													"default": 0.0
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
+			"items": {
+				"$id": "#root/%protein_coding/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					1.3
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
 			}
+		},
+		"%not_coding": {
+			"$id": "#root/%not_coding",
+			"title": "%not_coding",
+			"description": "Percent of the total content that is identified automatically as NOT protein coding",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/%not_coding/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					98.7
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"cumulative%_reads": {
+			"$id": "#root/cumulative%_reads",
+			"title": "Cumulative%_reads",
+			"description": "Cumlitive percent of reads",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/cumulative%_reads/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					26.3
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"density_Ns_per_read": {
+			"$id": "#root/density_Ns_per_read",
+			"title": "Density_ns_per_read",
+			"description": "The percentage of Ns per read for the content",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/density_Ns_per_read/items",
+				"title": "Items",
+				"type": "integer",
+				"examples": [
+					1
+				],
+				"default": 0,
+				"pattern": "^.*$"
+			}
+		},
+		"%complex": {
+			"$id": "#root/%complex",
+			"title": "%complex",
+			"description": "Percentage of content identified as \"complex\"",
+			"type": "integer",
+			"examples": [
+				100
+			],
+			"default": 0,
+			"pattern": "^.*$"
+		},
+		"%not_complex": {
+			"$id": "#root/%not_complex",
+			"title": "%not_complex",
+			"description": "Percentage of content identified as NOT \"complex\"",
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0,
+			"pattern": "^.*$"
+		},
+		"avg_quality_a": {
+			"$id": "#root/avg_quality_per_base",
+			"title": "Avgerage quality per base for A",
+			"description": "Avgerage quality per base for A",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/avg_quality_per_base/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					7.8
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"avg_quality_t": {
+			"$id": "#root/avg_quality_per_base",
+			"title": "Avgerage quality per base for T",
+			"description": "Avgerage quality per base for T",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/avg_quality_per_base/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					7.8
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"avg_quality_g": {
+			"$id": "#root/avg_quality_per_base",
+			"title": "Avgerage quality per base for G",
+			"description": "Avgerage quality per base for G",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/avg_quality_per_base/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					7.8
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"avg_quality_c": {
+			"$id": "#root/avg_quality_per_base",
+			"title": "Avgerage quality per base for C",
+			"description": "Avgerage quality per base for C",
+			"type": "array",
+			"default": [
+
+			],
+			"items": {
+				"$id": "#root/avg_quality_per_base/items",
+				"title": "Items",
+				"type": "number",
+				"examples": [
+					7.8
+				],
+				"default": 0.0,
+				"pattern": "^.*$"
+			}
+		},
+		"count_a": {
+			"$id": "#root/count_a",
+			"title": "Number of A nucleotides",
+			"description": "Number of A nucleotides",
+			"type": "integer",
+			"examples": [
+				123555
+			],
+			"default": 0,
+			"pattern": "^.*$"
+		},
+		"count_c": {
+			"$id": "#root/count_c",
+			"title": "Number of T nucleotides",
+			"description": "Number of T nucleotides",
+			"type": "integer",
+			"examples": [
+				123455
+			],
+			"default": 0,
+			"pattern": "^.*$"
+		},
+		"count_g": {
+			"$id": "#root/count_g",
+			"title": "Number of G nucleotides",
+			"description": "Number of G nucleotides",
+			"type": "integer",
+			"examples": [
+				123551
+			],
+			"default": 0,
+			"pattern": "^.*$"
+		},
+		"count_t": {
+			"$id": "#root/count_t",
+			"title": "Number of C nucleotides",
+			"description": "Number of C nucleotides",
+			"type": "integer",
+			"examples": [
+				1235235
+			],
+			"default": 0,
+			"pattern": "^.*$"
 		}
 	}
 }

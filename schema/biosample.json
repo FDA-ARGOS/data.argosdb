@@ -1,10 +1,30 @@
 {
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/FDA-ARGOS/data.argosdb/tree/1.0/schema/biosample.json",
+	"title": "FDA-Argos BioSample Data Object",
+	"type": "object",
+	"description": "FDA-Argos BioSample Data Object",
 	"definitions": {
 	},
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://example.com/object1638371788.json",
-	"title": "Root",
-	"type": "object",
+	"required": [
+		"identifier",
+		"isolation_provider_name",
+		"email",
+		"submitting_organization",
+		"department",
+		"street",
+		"city",
+		"state/province",
+		"postal_code",
+		"country",
+		"sample_name",
+		"organism",
+		"strain",
+		"collection_date",
+		"geo_loc_name",
+		"isolation_source",
+		"host"
+	],
 	"properties": {
 		"identifier": {
 			"$id": "#root/identifier",
@@ -12,9 +32,7 @@
 			"description": "Unique Identifier For Each Sample. The same identifier is used for each assembly because within the scope of the original ARGOS study, each sample only have one associated assembly.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"isolation_provider_name": {
@@ -23,9 +41,7 @@
 			"description": "Name of the provider from which the biological sample was derived.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"email": {
@@ -34,9 +50,7 @@
 			"description": "Email obtained from the BioSample submission page.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"submitting_organization": {
@@ -45,9 +59,7 @@
 			"description": "Name of organization that is submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"department": {
@@ -56,9 +68,7 @@
 			"description": "Name of department that is submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"street": {
@@ -67,9 +77,7 @@
 			"description": "Street name of the organization submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"city": {
@@ -78,9 +86,7 @@
 			"description": "City name of the organization submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"state/province": {
@@ -89,9 +95,7 @@
 			"description": "State or province of the organization submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"postal_code": {
@@ -100,9 +104,7 @@
 			"description": "Postal Code of the organization submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"country": {
@@ -111,9 +113,7 @@
 			"description": "Country name of the organization submitting the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"sample_name": {
@@ -122,9 +122,7 @@
 			"description": "Name of the sample given by the submitter of the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"organism": {
@@ -133,9 +131,7 @@
 			"description": "Name of the expected organism. This is determined prior to sequencing.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"strain": {
@@ -144,9 +140,7 @@
 			"description": "Strain name of the organism of interest.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"collection_date": {
@@ -155,9 +149,7 @@
 			"description": "The date on which the sample was collected.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"geo_loc_name": {
@@ -166,9 +158,7 @@
 			"description": "Geographical origin of the sample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"isolation_source": {
@@ -177,9 +167,7 @@
 			"description": "Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"host": {
@@ -188,9 +176,16 @@
 			"description": "The natural host to the organism from which the sample was obtained.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
+			"pattern": "^.*$"
+		},
+		"lineage": {
+			"$id": "#root/lineage",
+			"title": "cov_lineage",
+			"description": "The Pango nomenclature is being used by researchers and public health agencies worldwide to track the transmission and spread of SARS-CoV-2, including variants of concern. This website documents all current Pango lineages and their spread, as well as various software tools which can be used by researchers to perform analyses on SARS-COV-2 sequence data. https://cov-lineages.org/index.html#about",
+			"type": "string",
+			"default": "",
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"isolate": {
@@ -199,9 +194,7 @@
 			"description": "Identification or description of the specific individual from which this sample was obtained.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"id_method": {
@@ -210,9 +203,7 @@
 			"description": "Species identification method.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"sample_type": {
@@ -221,9 +212,7 @@
 			"description": "Type of sample used for the BioSample submission.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"isolation_acquisition_id": {
@@ -232,9 +221,7 @@
 			"description": "Acquisition identifier for obtained isolate.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"ncbi_taxonomy_id": {
@@ -243,9 +230,7 @@
 			"description": "NCBI taxonomy ID of the organism.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"contact_name": {
@@ -254,9 +239,7 @@
 			"description": "Contact name associated with the BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"clinical/environmental": {
@@ -265,9 +248,7 @@
 			"description": "Additional metadata on the use of this BioSample.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"gisaid_accession": {
@@ -276,9 +257,7 @@
 			"description": "The GISAID accession assigned to the sequence. GISAID Accession Numbers are used as unique and permanent identifiers for each virus beginning with the letters EPI and followed by numbers, to identify viruses and or/ segments.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"gisaid_virus_name": {
@@ -287,9 +266,7 @@
 			"description": "The full virus name submitted to GISAID.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"biomaterial_provider": {
@@ -298,21 +275,25 @@
 			"description": "Name and address of the lab or PI, or a culture collection identifier.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		},
 		"disease": {
-			"$id": "#root/disease",
-			"title": "disease",
+			"$id": "#root/disease", 
+			"title": "Disease", 
 			"description": "List of diseases diagnosed; can include multiple diagnoses.",
 			"type": "array",
-			"default": "",
-			"examples": [
-				""
-			],
-			"pattern": "^.*$"
+			"default": [],
+			"items":{
+				"$id": "#root/disease/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"covid"
+				],
+				"pattern": "^.*$"
+			}
 		},
 		"host_taxid": {
 			"$id": "#root/host_taxid",
@@ -320,9 +301,7 @@
 			"description": "NCBI taxonomy ID of the host.",
 			"type": "string",
 			"default": "",
-			"examples": [
-				""
-			],
+			"examples": [""],
 			"pattern": "^.*$"
 		}
 	}

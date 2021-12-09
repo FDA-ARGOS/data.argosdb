@@ -1,164 +1,144 @@
-﻿ID,Description,Data Object Type,Optional/Required,Source,Type,Default,Examples,Pattern,
-assembly_id,Genome assembly identifier,,,argos,,,,,
-Level,"Sequencing level according to NCBI: Complete genome, Chromosome, Contig",,,argos,,,,,
-wgs_accession,Accession for WGS progect if it exists,,,argos,,,,,
-num_chromosomes,number of Chromosomes in assembly,,,argos,,,,,
-BioSample,BioSample accession,,,argos,,,,,
-taxonomy_full,Full taxinomic liniage,,,argos,,,,,
-tax_name,Name in NCBI Taxonomy,,,glygen,,,,,
-bioproject,bioProject accession,,,argos,,,,,
-uniprotkb_ac,Accession assigned to the protein in the UniProtKB database,,,glygen,,,,,
-refseq_ac,Accession in the NCBI RefSeq database,,,glygen,,,,,
-tax_id,NCBI Taxonomy database Identifier,,,glygen,,,,,
-identifier,,Biosample_json,required,From Yi FDA,,,,,
-isolation_provider_name,,Biosample_json,required,From Yi FDA first & last_name from NCBI biosample page,,,,,
-email,,Biosample_json,required,from NCBI biosample submission page,,,,,
-submitting_organization,,Biosample_json,required,from NCBI biosample submission page,,,,,
-department,,Biosample_json,required,from NCBI biosample submission page,,,,,
-street,,Biosample_json,required,from NCBI biosample submission page,,,,,
-city,,Biosample_json,required,from NCBI biosample submission page,,,,,
-state/province,,Biosample_json,required,from NCBI biosample submission page,,,,,
-postal_code,,Biosample_json,required,from NCBI biosample submission page,,,,,
-country,,Biosample_json,required,from NCBI biosample submission page,,,,,
-sample_name,,Biosample_json,required,from NCBI biosample submission page,,,,,
-organism,,Biosample_json,required,from NCBI biosample submission page; organism_name From Yi FDA,,,,,
-strain,,Biosample_json,required,from NCBI biosample submission page; strain_name From Yi FDA,,,,,
-collection_date,,Biosample_json,required,from NCBI biosample submission page,,,,,
-geo_loc_name,,Biosample_json,required,From NCBI BioSample Attributes from NCBI biosample submission page,,,,,
-isolation_source,,Biosample_json,required,from NCBI biosample submission page,,,,,
-host,,Biosample_json,required,from NCBI biosample submission page host From Yi FDA,,,,,
-lineage,,Biosample_json,optional,Raja; https://cov-lineages.org/,,,,,
-isolate,,Biosample_json,optional,from NCBI biosample submission page,,,,,
-id_method,,Biosample_json,optional,From Yi FDA,,,,,
-sample_type,,Biosample_json,optional,From Yi FDA,,,,,
-isolation_acquisition_id,,Biosample_json,optional,From Yi FDA,,,,,
-ncbi_taxonomy_id,,Biosample_json,optional,From Yi FDA,,,,,
-contact_name,,Biosample_json,optional,From Yi FDA,,,,,
-clinical/environmental,,Biosample_json,optional,From Yi FDA,,,,,
-gisaid_accession,,Biosample_json,optional,From NCBI BioSample Attributes,,,,,
-gisaid_virus_name,,Biosample_json,optional,From NCBI BioSample Attributes,,,,,
-biomaterial_provider,,Biosample_json,optional,From NCBI BioSample Attributes,,,,,
-disease,,Biosample_json,optional,From NCBI BioSample Attributes,,,,,
-host_taxid,,Biosample_json,optional,From NCBI BioSample Attributes,,,,,
-fdaargos_biosample_id ,,NGS_QC,required,Raja/Vahan?,,,,,
-fdaargos_id ,,NGS_QC,required,Raja/Vahan?,,,,,
-file_name,,NGS_QC,required,,,,,,
-avg_file_quality,,NGS_QC,required,,,,,,
-min_read_length,,NGS_QC,required,,,,,,
-pos_outlier_count,,NGS_QC,required,,,,,,
-num_reads,,NGS_QC,required,,,,,,
-avg_read_length,,NGS_QC,required,,,,,,
-max_reads,,NGS_QC,required,,,,,,
-gc_percent,,NGS_QC,required,,,,,,
-sra_run_id,,NGS_QC,optional,,,,,,
-genome_assembly_id,,NGS_QC,optional,,,,,,
-wgs_accession,,NGS_QC,optional,,,,,,
-ncbi_biosample_id,,NGS_QC,optional,,,,,,
-fdaargos_id,,NGS_QC,optional,,,,,,
-level,,NGS_QC,optional,,,,,,
-fdaargos_biosample_id,,Assembly_QC,required,Raja/Vahan?,,,,,
-fdaargos_id,,Assembly_QC,required,Raja/Vahan?,,,,,
-genome_assembly_id,,Assembly_QC,required,Raja/Vahan?,,,,,
-num_chromosomes,,Assembly_QC,required,Raja/Vahan?,,,,,
-BCO_id,,Assembly_QC,required,Raja/Vahan?,,,,,
-ncbi_biosample_id,,Assembly_QC,optional,Raja/Vahan?,,,,,
-organism_name,,Assembly_QC,optional,From Yi FDA,,,,,
-strain_name,,Assembly_QC,optional,From Yi FDA,,,,,
-ncbi_taxonomy_id,,Assembly_QC,optional,From Yi FDA,,,,,
-id_method,,Assembly_QC,optional,From Yi FDA,,,,,
-sample_type,,Assembly_QC,optional,From Yi FDA,,,,,
-host,,Assembly_QC,optional,From NCBI biosample submission page & Yi FDA,,,,,
-number_of_Ns_or_Xs,,Assembly_QC,optional,Raja/Vahan?,,,,,
-isolation_provider_name,,Assembly_QC,optional,From Yi FDA,,,,,
-isolation_acquisition_id,,Assembly_QC,optional,From Yi FDA,,,,,
-contact_name,,Assembly_QC,optional,From Yi FDA,,,,,
-sequencing_method,,Assembly_QC,optional,From Yi FDA,,,,,
-n50,,Assembly_QC,optional,From Yi FDA & Vahan’s json,,,,,
-l50,,Assembly_QC,optional,From Yi FDA & Vahan’s json,,,,,
-gc%,,Assembly_QC,optional,From Yi FDA GC & Vahan’s json,,,,,
-length,,Assembly_QC,optional,From Yi FDA,,,,,
-avg_nuc_identity_to_ref,,Assembly_QC,optional,From Yi FDA,,,,,
-%assembly_with_>20x_coverage,,Assembly_QC,optional,From Yi FDA,,,,,
-query_coverage_against_reference,,Assembly_QC,optional,From Yi FDA,,,,,
-percent_identity_against_reference,,Assembly_QC,optional,From Yi FDA,,,,,
-seq_id,,Assembly_QC,optional,Vahan’s json,,,,,
-n95,,Assembly_QC,optional,Vahan’s json,,,,,
-l95,,Assembly_QC,optional,Vahan’s json,,,,,
-cnt_scaffolds,,Assembly_QC,optional,Vahan’s json,,,,,
-cnt_contigs,,Assembly_QC,optional,Vahan’s json,,,,,
-contigs_momentum,,Assembly_QC,optional,Vahan’s json,,,,,
-coverage_contigs,,Assembly_QC,optional,Vahan’s json,,,,,
-reads_unaligned,,Assembly_QC,optional,Vahan’s json,,,,,
-aligned_momentum,,Assembly_QC,optional,Vahan’s json,,,,,
-overhang_momentum,,Assembly_QC,optional,Vahan’s json,,,,,
-bases_percentile_aligned,,Assembly_QC,optional,Vahan’s json,,,,,
-cnt_gaps,,Assembly_QC,optional,Vahan’s json,,,,,
-size_gaps,,Assembly_QC,optional,Vahan’s json,,,,,
-clonal_populations,,Assembly_QC,optional,Vahan’s json,,,,,
-clonal_expanse,,Assembly_QC,optional,Vahan’s json,,,,,
-phred_average,,Assembly_QC,optional,Vahan’s json,,,,,
-count_major_variations,,Assembly_QC,optional,Vahan’s json,,,,,
-indels_momentum,,Assembly_QC,optional,Vahan’s json,,,,,
-mutation_momentum,,Assembly_QC,optional,Vahan’s json,,,,,
-alignment_disbalance,,Assembly_QC,optional,Vahan’s json,,,,,
-alignmnet_anisotropy,,Assembly_QC,optional,Vahan’s json,,,,,
-rpkm,,Assembly_QC,optional,Vahan’s json,,,,,
-fpkm,,Assembly_QC,optional,Vahan’s json,,,,,
-coverage_homogeneity,,Assembly_QC,optional,Vahan’s json,,,,,
-ambiguous_bases,,Assembly_QC,optional,Vahan’s json,,,,,
-taxid_composition,,Assembly_QC,optional,Vahan’s json,,,,,
-seq_composition,,Assembly_QC,optional,Vahan’s json,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+﻿property,$id,title,Description,type,Data Object Type,Optional/Required,Source,Default,Examples,Pattern
+assembly_id,,,Genome assembly identifier,,,,argos,,,
+Level,,,"Sequencing level according to NCBI: Complete genome, Chromosome, Contig",,,,argos,,,
+wgs_accession,,,Accession for WGS progect if it exists,,,,argos,,,
+num_chromosomes,,,number of Chromosomes in assembly,,,,argos,,,
+BioSample,,,BioSample accession,,,,argos,,,
+taxonomy_full,,,Full taxinomic liniage,,,,argos,,,
+tax_name,,,Name in NCBI Taxonomy,,,,glygen,,,
+bioproject,,,bioProject accession,,,,argos,,,
+uniprotkb_ac,,,Accession assigned to the protein in the UniProtKB database,,,,glygen,,,
+refseq_ac,,,Accession in the NCBI RefSeq database,,,,glygen,,,
+tax_id,,,NCBI Taxonomy database Identifier,,,,glygen,,,
+identifier,#root/identifier,identifier,"Unique Identifier For Each Sample. The same identifier is used for each assembly because within the scope of the original ARGOS study, each sample only have one associated assembly.",string,Biosample_json,required,From Yi FDA,,[''],^.*$
+isolation_provider_name,#root/isolation_provider_name,isolation provider name,Name of the provider from which the biological sample was derived.,string,Biosample_json,required,From Yi FDA first & last_name from NCBI biosample page,,[''],^.*$
+email,#root/email,email,Email obtained from the BioSample submission page.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+submitting_organization,#root/submitting_organization,submitting organization,Name of organization that is submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+department,#root/department,department,Name of department that is submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+street,#root/street,street,Street name of the organization submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+city,#root/city,city,City name of the organization submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+state/province,#root/state/province,state/province,State or province of the organization submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+postal_code,#root/postal_code,postal code,Postal Code of the organization submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+country,#root/country,country,Country name of the organization submitting the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+sample_name,#root/sample_name,sample name,Name of the sample given by the submitter of the BioSample.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+organism,#root/organism,organism,Name of the expected organism. This is determined prior to sequencing.,string,Biosample_json,required,from NCBI biosample submission page; organism_name From Yi FDA,,[''],^.*$
+strain,#root/strain,strain,Strain name of the organism of interest.,string,Biosample_json,required,from NCBI biosample submission page; strain_name From Yi FDA,,[''],^.*$
+collection_date,#root/collection_date,collection date,The date on which the sample was collected.,string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+geo_loc_name,#root/geo_loc_name,geographic location,Geographical origin of the sample.,string,Biosample_json,required,From NCBI BioSample Attributes from NCBI biosample submission page,,[''],^.*$
+isolation_source,#root/isolation_source,isolation source,"Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived.",string,Biosample_json,required,from NCBI biosample submission page,,[''],^.*$
+host,#root/host,host,The natural host to the organism from which the sample was obtained.,string,Biosample_json,required,from NCBI biosample submission page host From Yi FDA,,[''],^.*$
+lineage,#root/lineage,cov_lineage,"The Pango nomenclature is being used by researchers and public health agencies worldwide to track the transmission and spread of SARS-CoV-2, including variants of concern. This website documents all current Pango lineages and their spread, as well as various software tools which can be used by researchers to perform analyses on SARS-COV-2 sequence data. https://cov-lineages.org/index.html#about",string,Biosample_json,optional,Raja; https://cov-lineages.org/,,[''],^.*$
+isolate,#root/isolate,isolate,Identification or description of the specific individual from which this sample was obtained.,string,Biosample_json,optional,from NCBI biosample submission page,,[''],^.*$
+id_method,#root/id_method,id method,Species identification method.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+sample_type,#root/sample_type,sample type,Type of sample used for the BioSample submission.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+isolation_acquisition_id,#root/isolation_acquisition_id,isolation acquisition identifier,Acquisition identifier for obtained isolate.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+ncbi_taxonomy_id,#root/ncbi_taxonomy_id,ncbi taxonomy identifier,NCBI taxonomy ID of the organism.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+contact_name,#root/contact_name,contact name,Contact name associated with the BioSample.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+clinical/environmental,#root/clinical/environmental,clinical/environmental,Additional metadata on the use of this BioSample.,string,Biosample_json,optional,From Yi FDA,,[''],^.*$
+gisaid_accession,#root/gisaid_accession,GISAID accession,"The GISAID accession assigned to the sequence. GISAID Accession Numbers are used as unique and permanent identifiers for each virus beginning with the letters EPI and followed by numbers, to identify viruses and or/ segments.",string,Biosample_json,optional,From NCBI BioSample Attributes,,[''],^.*$
+gisaid_virus_name,#root/gisaid_virus_name,GISAID virus name,The full virus name submitted to GISAID.,string,Biosample_json,optional,From NCBI BioSample Attributes,,[''],^.*$
+biomaterial_provider,#root/biomaterial_provider,biomaterial provider,"Name and address of the lab or PI, or a culture collection identifier.",string,Biosample_json,optional,From NCBI BioSample Attributes,,[''],^.*$
+disease,#root/disease,disease,List of diseases diagnosed; can include multiple diagnoses.,array,Biosample_json,optional,From NCBI BioSample Attributes,[],['covid'],^.*$
+host_taxid,#root/host_taxid,host taxonomy ID,NCBI taxonomy ID of the host.,string,Biosample_json,optional,From NCBI BioSample Attributes,,[''],^.*$
+fdaargos_biosample_id,#root/fdaargos_biosample_id,Fdaargos_biosample_id,ARGOS BioSample identifier.,string,Assembly_QC,required,Raja/Vahan?,,[''],^.*$
+fdaargos_id,#root/fdaargos_id,Fdaargos_id,ARGOS identifier.,string,Assembly_QC,required,Raja/Vahan?,,[''],^.*$
+genome_assembly_id,#root/genome_assembly_id,Genome_assembly_id,NCBI‚Äôs Genome Assembly identifier.,string,Assembly_QC,required,Raja/Vahan?,,[''],^.*$
+num_chromosomes,#root/num_chromosomes,Num_chromosomes,Total number of chromosomes in the genome assembly.,string,Assembly_QC,required,Raja/Vahan?,,[''],^.*$
+BCO_id,#root/BCO_id,Bco_id,BioCompute Object identifier.,string,Assembly_QC,required,Raja/Vahan?,,[''],^.*$
+ncbi_biosample_id,#root/ncbi_biosample_id,Ncbi_biosample_id,NCBI BioSample identifier.,string,Assembly_QC,optional,Raja/Vahan?,,[''],^.*$
+organism_name,#root/organism_name,Organism_name,Name of the expected organism. This is determined prior to sequencing.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+strain_name,#root/strain_name,Strain_name,Strain name of the organism of interest.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+ncbi_taxonomy_id,#root/ncbi_taxonomy_id,Ncbi_taxonomy_id,NCBI taxonomy identifier of the organism.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+id_method,#root/id_method,Id_method,Species identification method.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+sample_type,#root/sample_type,Sample_type,"Type of sample used for the BioSample submission, if applicable.",string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+host,#root/host,Host,The natural host to the organism from which the sample was obtained.,string,Assembly_QC,optional,From NCBI biosample submission page & Yi FDA,,[''],^.*$
+number_of_Ns_or_Xs,#root/number_of_Ns_or_Xs,Number_of_ns_or_xs,Total number of Ns or Xs in the assembled genome.,int,Assembly_QC,optional,Raja/Vahan?,,[''],^.*$
+isolation_provider_name,#root/isolation_provider_name,Isolation_provider_name,Name of the provider from which the biological sample was derived.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+isolation_acquisition_id,#root/isolation_acquisition_id,Isolation_acquisition_id,Acquisition identifier for obtained isolate.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+contact_name,#root/contact_name,Contact_name,Contact name associated with the BioSample.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+sequencing_method,#root/sequencing_method,Sequencing_method,Sequencing method used to obtain the DNA fragments/sequences.,string,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+n50,#root/n50,N50,Length of the shortest read to minimally represent 50% of the assembly.,int,Assembly_QC,optional,From Yi FDA & Vahan’s json,,[''],^.*$
+l50,#root/l50,L50,Number of reads that minimally represent 50% of the assembly.,int,Assembly_QC,optional,From Yi FDA & Vahan’s json,,[''],^.*$
+gc%,#root/gc%,GC%,GC content of the assembly.,float,Assembly_QC,optional,From Yi FDA GC & Vahan’s json,,[''],^.*$
+length,#root/length,Length,Total length of the assembled genome.,int,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+avg_nuc_identity_to_ref,#root/avg_nuc_identitiy,Avg_nuc_identitiy,Average nucleotide identity between the assembly and the reference sequences.,float,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+%assembly_with_>20x_coverage,#root/%assembly_with_>20x_coverage,%assembly_with_>20x_coverage,"Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used.",float,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+query_coverage_against_reference,#root/query_coverage_against_reference,Query_coverage_against_reference,BLAST query coverage of the entire assembly between the assembly and reference sequences.,float,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+percent_identity_against_reference,#root/percent_identity_against_reference,Percent_identity_against_reference,BLAST percent identity of the entire assembly between the assembly and reference sequences.,float,Assembly_QC,optional,From Yi FDA,,[''],^.*$
+seq_id,#root/seq_id,Seq_id,Reference identifier to a specific sequence inside the assembled genome.,string,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+n95,#root/n95,N95,Length of the shortest read to minimally represent 95% of the assembly.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+l95,#root/l95,L95,Number of reads that minimally represent 95% of the assembly.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+cnt_scaffolds,#root/cnt_scaffolds,Cnt_scaffolds,Number of scaffolds to represent the assembled genome.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+cnt_contigs,#root/cnt_contigs,Cnt_contigs,Number of contigs to represent the assembled genome.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+contigs_momentum,#root/contigs_momentum,Contigs_momentum,Cumulative normalized momentum (contig_size*count) of all contigs.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+coverage_contigs,#root/coverage_contigs,Coverage_contigs,Average coverage on contigs.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+reads_unaligned,#root/reads_unaligned,Reads_unaligned,Number of reads in short_read pool that do not align to assembly.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+aligned_momentum,#root/aligned_momentum,Aligned_momentum,Cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+overhang_momentum,#root/overhang_momentum,Overhang_momentum,Cumulative normalized momentum (unaligned_size*count) of own reads unaligned to assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+bases_percentile_aligned,#root/bases_percentile_aligned,Bases_percentile_aligned,Percentile of bases on partially aligned reads with relation to count of all bases on aligned reads.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+cnt_gaps,#root/cnt_gaps,Cnt_gaps,Number of gaps in an assembly as covered by own reads.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+size_gaps,#root/size_gaps,Size_gaps,Cumulative size of gaps as covered by own reads.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+clonal_populations,#root/clonal_populations,Clonal_populations,Number of clonal populations on assembly nephosome.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+clonal_expanse,#root/clonal_expanse,Clonal_expanse,Total size of all clonal contigs.,int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+phred_average,#root/phred_average,Phred_average,Average phred score of aligned base call.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+count_major_variations,#root/count_major_variations,Count_major_variations,Number of +50% variations on a variation profile of own reads on avartion profile of own reads on assembly. ,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+indels_momentum,#root/indels_momentum,Indels_momentum,Momentum of indels (count*percentile) on variation profile of own reads alignment to assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+mutation_momentum,#root/mutation_momentum,Mutation_momentum,Momentum of mutations (count*percentile) on variation profile of own reads  alignment to assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+alignment_disbalance,#root/alignment_disbalance,Alignment_disbalance,Ratio of forward and reverse own reads aligned on assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+alignmnet_anisotropy,#root/alignment_anisotropy,Alignment_anisotropy,Anisotropy of basecalls with relation to own reads aligned to assembly.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+rpkm,#root/rpkm,Rpkm,Reads per kilobase of reference size per million alignments.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+fpkm,#root/fpkm,Fpkm,Fragments per kilobase of reference size per million alignments. ,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+coverage_homogeneity,#root/coverage_homogeneity,Coverage_homogeneity,Anisotropy of the coverage with relation to assembly frame.,float,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+ambiguous_bases,#root/ambiguous_bases,Ambiguous_bases,"Number of IUPAC ambiguous bases in reads(Ns, Ys, etc.)",int,Assembly_QC,optional,Vahan’s json,,[''],^.*$
+taxid_composition,#root/taxid_composition,Taxid_composition,Taxonomic identifiers hit by the reads.,array,Assembly_QC,optional,Vahan’s json,[],['223'],^.*$
+seq_composition,#root/seq_composition,Seq_composition,Sequence identifiers hit by the reads.,array,Assembly_QC,optional,Vahan’s json,[],['as334'],^.*$
+assembly_type,#root/assembly_type,Assembly_type,"haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms.",array,Assembly_QC,optional,from NCBI Assembly,['haploid'],['haploid'],^.*$
+assembly_level,#root/assembly_level,Assembly_level,The highest level of assembly for any object in the assembly.,array,Assembly_QC,optional,from NCBI Assembly,['Contig'],['Complete genome'],^.*$
+fdaargos_biosample_id,#root/fdaargos_biosample_id,fdaargos BioSample identifier,ARGOS BioSample identifier.,string,NGS_QC,required,ARGOS,,[''],^.*$
+fdaargos_id,#root/fdaargos_id,fdaargos identifier,ARGOS identifier.,string,NGS_QC,required,ARGOS,,[''],^.*$
+file_name,#root/file_name,file name,FASTQ file name used for the HIVE analysis.,string,NGS_QC,required,HIVE,,[''],^.*$
+avg_file_quality,#root/avg_file_quality,average file quality,Average quality (in phred score) of sequences in a FASTQ read file.,number,NGS_QC,required,HIVE,,[''],^.*$
+min_read_length,#root/min_read_length,minimum read length,Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.,number,NGS_QC,required,HIVE,,[''],^.*$
+pos_outlier_count,#root/pos_outlier_count,position outlier count,Count of positions the quality of which is significantly different (extremely low or high).,number,NGS_QC,required,HIVE,,[''],^.*$
+num_reads,#root/num_reads,number of reads,Number of sequences present in a FASTA/FASTQ read file.,number,NGS_QC,required,HIVE,,[''],^.*$
+avg_read_length,#root/avg_read_length,average read length,Average length of sequences in a FASTA/FASTQ read file.,number,NGS_QC,required,HIVE,,[''],^.*$
+max_read_length,#root/max_read_length,maximum read length,Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.,number,NGS_QC,optional,HIVE,,[''],^.*$
+gc%,#root/gc%,gc percent,Percent GC content of the sequences in a read file.,string,NGS_QC,required,HIVE & Yi FDA,,[''],^.*$
+strategy,#root/strategy,strategy,Strategy/method used to generate the NGS.,string,NGS_QC,required,Daniel Kerchner,,['shotgun'],^.*$
+sra_run_id,#root/sra_run_id,sra run identifier,Database identifier assigned by repository and linked to GenBank or other repository.,string,NGS_QC,optional,Raja/Vahan,,[''],^.*$
+genome_assembly_id,#root/genome_assembly_id,genome assembly identifier,NCBI‚Äôs Genome Assembly identifier.,string,NGS_QC,optional,ARGOS,,[''],^.*$
+wgs_accession,#root/wgs_accession,WGS accession,NCBI‚Äôs Whole Genome Shotgun (WGS) accession number.,string,NGS_QC,optional,ARGOS,,[''],^.*$
+ncbi_biosample_id,#root/ncbi_biosample_id,NCBI BioSample identifier,NCBI‚Äôs BioSample identifier.,string,NGS_QC,optional,Raja/Vahan,,[''],^.*$
+level,#root/level,level,Level index for run specific depth first enumeration of tax hierarchy.,string,NGS_QC,optional,NCBI SRA,,[''],^.*$
+strain_name,#root/strain_name,strain name,Strain name of the organism of interest.,string,NGS_QC,optional,NCBI SRA & Yi FDA,,[''],^.*$
+organism_name,#root/organism_name,Organism_name,Name of the expected organism. This is determined prior to sequencing.,string,NGS_QC,optional,Yi FDA,,[''],^.*$
+instrument,#root/instrument,instrument,Name of instrument used for NGS.,string,NGS_QC,optional,Daniel Kerchner,,"['NextSeq 500 High-Output', 'HiSeq X']",^.*$
+id_method,#root/id_method,identifier method,Species identification method.,string,NGS_QC,optional,Yi FDA,,[''],^.*$
+codon_table,#root/codon_table,Codon table,,array,NGS_QC,optional,HIVE,[],['Standard'],^.*$
+%protein_coding,#root/%protein_coding,%protein_coding,,array,NGS_QC,optional,HIVE,[],[1.3],^.*$
+%not_coding,#root/%not_coding,%not_coding,,array,NGS_QC,optional,HIVE,[],[98.7],^.*$
+cumulative%_reads,#root/cumulative%_reads,Cumulative%_reads,,array,NGS_QC,optional,HIVE,[],[26.3],^.*$
+density_Ns_per_read,#root/density_Ns_per_read,Density_ns_per_read,,array,NGS_QC,optional,HIVE,[],[1],^.*$
+%complex,#root/%complex,%complex,,integer,NGS_QC,optional,HIVE,0,[100],^.*$
+%not_complex,#root/%not_complex,%not_complex,,integer,NGS_QC,optional,HIVE,0,[0],^.*$
+avg_quality_a,#root/avg_quality_per_base,Avg_quality_per_base,,array,NGS_QC,optional,HIVE,[],[7.8],^.*$
+avg_quality_t,#root/avg_quality_per_base,Avg_quality_per_base,,array,NGS_QC,optional,HIVE,[],[7.8],^.*$
+avg_quality_g,#root/avg_quality_per_base,Avg_quality_per_base,,array,NGS_QC,optional,HIVE,[],[7.8],^.*$
+avg_quality_c,#root/avg_quality_per_base,Avg_quality_per_base,,array,NGS_QC,optional,HIVE,[],[7.8],^.*$
+count_a,#root/count_a,Count_a,,integer,NGS_QC,optional,HIVE,0,[123555],^.*$
+count_c,#root/count_c,Count_c,,integer,NGS_QC,optional,HIVE,0,[123455],^.*$
+count_g,#root/count_g,Count_g,,integer,NGS_QC,optional,HIVE,0,[123551],^.*$
+count_t,#root/count_t,Count_t,,integer,NGS_QC,optional,HIVE,0,[1235235],^.*$
+fdaargos_seq_feature,#root/fdaargos_seq_feature,Fdaargos_seq_feature,Identifier for this data object,string,site_qc,required,ARGOS,,['ex101'],^.*$
+genomeic_identifier,#root/genomeic_identifier,Genomeic_identifier,identifirer for the source genomic object,string,site_qc,required,,,['OK394248'],^.*$
+num_nuc_call,#root/num_nuc_call,Num_nuc_call,Number of nucliotides called for this position,integer,site_qc,optional,ARGOS,0,[10],
+percent_nuc_call,#root/percent_nuc_call,Percent_nuc_call,Total percentage of nucleotieds at this position that matched this call,number,site_qc,optional,Vahan’s JSON,0,[0.23],
+genome_assembly_id,#root/genome_assembly_id,Genome_assembly_id,The NCBI or ENA assembly id for this sequence,string,site_qc,optional,Vahan’s JSON,,['GCA_013267415.1'],^.*$
+genomic_coordinates_start,#root/genomic_coordinates_start,Genomic_coordinates_start,Start position for this feature in the genome file,integer,site_qc,optional,Vahan’s JSON,0,[238],
+genomic_coordinates_end,#root/genomic_coordinates_end,Genomic_coordinates_end,End position for this feature in the genome file,integer,site_qc,optional,Vahan’s JSON,0,[21527],
+protein_coordinates_start,#root/protein_coordinates_start,Protein_coordinates_start,Start position for this feature in the proteome file,integer,site_qc,optional,Vahan’s JSON,0,[79],
+protein_coordinates_end,#root/protein_coordinates_end,Protein_coordinates_end,End position for this feature in the proteome file,integer,site_qc,optional,Vahan’s JSON,0,[7176],
+forward_reverse_disbalance,#root/forward_reverse_disbalance,Forward_reverse_disbalance,Forward reverse disbalance,string,site_qc,optional,Vahan’s JSON,,['0.5'],^.*$
+source,#root/source,Source,Source database or resource for this feature,string,site_qc,optional,Vahan’s JSON,,['genbank'],^.*$
+seq_feature_tag ,#root/eq_feature_tag ,Eq_feature_tag ,Tags associated with this feature,string,site_qc,optional,Vahan’s JSON,,['gene'],^.*$
+seq_feature_value,#root/seq_feature_value,Seq_feature_value,Values for the tag associated with this feature,string,site_qc,optional,Vahan’s JSON,,['ORF1ab'],^.*$

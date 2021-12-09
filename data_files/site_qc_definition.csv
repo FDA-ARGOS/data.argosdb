@@ -1,0 +1,14 @@
+property,$id,title,description,type,default,examples,pattern,required
+fdaargos_seq_feature,#root/fdaargos_seq_feature,Fdaargos_seq_feature,Identifier for this data object,string,,['ex101'],^.*$,required
+genomeic_identifier,#root/genomeic_identifier,Genomeic_identifier,identifirer for the source genomic object,string,,['OK394248'],^.*$,required
+num_nuc_call,#root/num_nuc_call,Num_nuc_call,Number of nucliotides called for this position,integer,0,[10],,optional
+percent_nuc_call,#root/percent_nuc_call,Percent_nuc_call,Total percentage of nucleotieds at this position that matched this call,number,0,[0.23],,optional
+genome_assembly_id,#root/genome_assembly_id,Genome_assembly_id,The NCBI or ENA assembly id for this sequence,string,,['GCA_013267415.1'],^.*$,optional
+genomic_coordinates_start,#root/genomic_coordinates_start,Genomic_coordinates_start,Start position for this feature in the genome file,integer,0,[238],,optional
+genomic_coordinates_end,#root/genomic_coordinates_end,Genomic_coordinates_end,End position for this feature in the genome file,integer,0,[21527],,optional
+protein_coordinates_start,#root/protein_coordinates_start,Protein_coordinates_start,Start position for this feature in the proteome file,integer,0,[79],,optional
+protein_coordinates_end,#root/protein_coordinates_end,Protein_coordinates_end,End position for this feature in the proteome file,integer,0,[7176],,optional
+forward_reverse_disbalance,#root/forward_reverse_disbalance,Forward_reverse_disbalance,Forward reverse disbalance,string,,['0.5'],^.*$,optional
+source,#root/source,Source,Source database or resource for this feature,string,,['genbank'],^.*$,optional
+seq_feature_tag ,#root/eq_feature_tag ,Eq_feature_tag ,Tags associated with this feature,string,,['gene'],^.*$,optional
+seq_feature_value,#root/seq_feature_value,Seq_feature_value,Values for the tag associated with this feature,string,,['ORF1ab'],^.*$,optional

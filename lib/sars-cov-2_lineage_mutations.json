@@ -1,0 +1,180 @@
+{
+	"tablelist": [
+		{
+			"id": 1,
+			"type": "input",
+			"separator": "\t",
+			"fields": [
+				"genome_assembly_id",
+				"identifier",
+				"isolation_provider_name",
+				"email",
+				"submitting_organization",
+				"department",
+				"street",
+				"city",
+				"state/province",
+				"postal_code",
+				"country",
+				"sample_name",
+				"organism",
+				"strain",
+				"collection_date",
+				"geo_loc_name",
+				"isolation_source",
+				"host",
+				"lineage",
+				"isolate",
+				"id_method",
+				"sample_type",
+				"isolation_acquisition_id",
+				"ncbi_taxonomy_id",
+				"contact_name",
+				"clinical/environmental",
+				"gisaid_accession",
+				"gisaid_virus_name",
+				"biomaterial_provider",
+				"disease",
+				"host_taxid"
+			],
+			"format": "tsv",
+			"filepath": "downloads/argosdb_qc/biosample_qc_metadata.tsv"
+		}
+	],
+	"outputfiles": [
+		{
+			"tableid": 1,
+			"masterlistfilterfield": "",
+			"filepath": "unreviewed/biosample_qc_metadata.tsv",
+			"bcoid": "BCO_000047",
+			"bcoversion": "1.0",
+			"format": "tsv",
+			"fields": [
+				{
+					"newname": "genome_assembly_id",
+					"name": "genome_assembly_id"
+				},
+				{
+					"newname": "identifier",
+					"name": "identifier"
+				},
+				{
+					"newname": "isolation_provider_name",
+					"name": "isolation_provider_name"
+				},
+				{
+					"newname": "email",
+					"name": "email"
+				},
+				{
+					"newname": "submitting_organization",
+					"name": "submitting_organization"
+				},
+				{
+					"newname": "street",
+					"name": "street"
+				},
+				{
+					"newname": "city",
+					"name": "city"
+				},
+				{
+					"newname": "state/province",
+					"name": "state/province"
+				},
+				{
+					"newname": "postal_code",
+					"name": "postal_code"
+				},
+				{
+					"newname": "country",
+					"name": "country"
+				},
+				{
+					"newname": "sample_name",
+					"name": "sample_name"
+				},
+				{
+					"newname": "organism",
+					"name": "organism"
+				},
+				{
+					"newname": "strain",
+					"name": "strain"
+				},
+				{
+					"newname": "collection_date",
+					"name": "collection_date"
+				},
+				{
+					"newname": "geo_loc_name",
+					"name": "geo_loc_name"
+				},
+				{
+					"newname": "isolation_source",
+					"name": "isolation_source"
+				},
+				{
+					"newname": "sample_name",
+					"name": "sample_name"
+				},
+				{
+					"newname": "host",
+					"name": "host"
+				},
+				{
+					"newname": "lineage",
+					"name": "lineage"
+				},
+				{
+					"newname": "isolate",
+					"name": "isolate"
+				},
+				{
+					"newname": "id_method",
+					"name": "id_method"
+				},
+				{
+					"newname": "sample_type",
+					"name": "sample_type"
+				},
+				{
+					"newname": "isolation_acquisition_id",
+					"name": "isolation_acquisition_id"
+				},
+				{
+					"newname": "ncbi_taxonomy_id",
+					"name": "ncbi_taxonomy_id"
+				},
+				{
+					"newname": "contact_name",
+					"name": "contact_name"
+				},
+				{
+					"newname": "clinical/environmental",
+					"name": "clinical/environmental"
+				},
+				{
+					"newname": "gisaid_accession",
+					"name": "gisaid_accession"
+				},
+				{
+					"newname": "gisaid_virus_name",
+					"name": "gisaid_virus_name"
+				},
+				{
+					"newname": "biomaterial_provider",
+					"name": "biomaterial_provider"
+				},
+				{
+					"newname": "disease",
+					"name": "disease"
+				},
+				{
+					"newname": "host_taxid",
+					"name": "host_taxid"
+				}
+			]
+		}
+	]
+}

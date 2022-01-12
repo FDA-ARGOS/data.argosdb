@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """XML feature parser[WIP]
 
-This script will parse an XML
+This script will parse an XML for a single feature and return a list via terminal
+or file, if an output is supplied.
 """
 __version__ = "0.1.0"
 __status__ = "Beta"
@@ -34,7 +35,6 @@ def usr_args():
         required=True,
         help="Path for input file. The input file should be an XML file.")
     parser.add_argument('-t', '--tag',
-        required=True,
         help="Tag or featured for extraction from XML file.")
     parser.add_argument('-o', '--output',
         required=False,
@@ -44,42 +44,42 @@ def usr_args():
     
     return parser.parse_args()
 
-def parseXML(xmlFile, tag):
+def parseXML(xmlFile, output):
     """Parse XML file
     
     Parameters
     ----------
     xmlFile: str
         file path/name to be parsed
-    tag: str
-        tag or featured for extraction from XML file
+    output: str, optional
+        file path/name for data to be output to
     """
 
-    tag_list = tag.split('/')
-    
+    # tag_list = tag.split('/')
+    items = []
     try:
         count = 0
-        path = './'
         root = ET.parse(xmlFile).getroot()
-        # node = root
-        # for index in range(len(tag_list)):
-        #     while count <= len(tag_list):
-        #         print(index, tag_list[index], count)
-        #         for item in node.findall(path):
-        #             print(item.tag)
-        #         count += 1
         for item in root.findall('./DocumentSummarySet'):
             for run in item.findall('./DocumentSummary'):
                 for exp in run.findall('./Runs/'):
-                    print(exp.attrib['acc'])
+                    items.append(exp.attrib['acc'])
                 count += 1
             
-        # print(count)
+        
+        if output:
+            with open(output, 'w') as file:
+                for item in items:
+                    file.write(item+'\n')
+        else:
+            for item in items:
+                print(item)
+
     except ET.ParseError:
         print(xmlFile, 'not well-formed')
 
 def main():
     args = usr_args()
-    parseXML(args.file, args.tag)
+    parseXML(args.file, args.output)
 if __name__ == "__main__":
     main()

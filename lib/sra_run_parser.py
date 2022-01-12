@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ SRA Run Analysis Parser
 
-This script will parse the XML result file from the SRA Trace site(thehome of sra runs). It takes a
+This script will parse the XML result file from the SRA Trace site(the home of sra runs). It takes a
 directory as an input and will iterate through all files, parsing each one to first a dictionary, and then
 outputting to the terminal in TSV format, or to a file if an output file is provided. 
 

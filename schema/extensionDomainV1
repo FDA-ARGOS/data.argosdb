@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.3_Jan/schema/extensionDomainV1.json",
+  "type": "object",
+  "title": "GlyGen Extension Domain",
+  "description": "Additional fields required for glygen.org biocuration of datasets.",
+  "required": [
+    "additional_license",
+    "dataset_categories"
+  ],
+  "properties": {
+    "additional_license": {
+      "type": "object",
+      "description": "If additional licenses are required beyond the one listed in the base BCO, they are listed here.",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "data_license": {
+            "type:": "URI",
+            "description": "location of the license",
+            "examples": [
+              "https://creativecommons.org/licenses/by/4.0/"
+            ]
+          },
+          "script_license": {
+            "type:": "URI",
+            "description": "location of the license",
+            "examples": [
+              "https://www.gnu.org/licenses/gpl-3.0.en.html"
+            ]
+          }
+        }
+      }
+    },
+    "dataset_categories": {
+      "type": "array",
+      "description": "Additional fields used in glygen biocuration.",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "category_value": {
+            "type:": "object",
+            "description": "Values taken by field identifiers.",
+            "examples": [
+              "Homo sapiens",
+              "Protein"
+            ]
+          },
+          "category_name": {
+            "type:": "object",
+            "description": "Field identifier.",
+            "enum": [
+              "species",
+              "molecule",
+              "tags",
+              "file_type",
+              "status",
+              "scope"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

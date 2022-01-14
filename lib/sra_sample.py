@@ -1,42 +1,77 @@
 #!/usr/bin/env python3
-""" SRA Sample Parser
+""" SRA Biosample Parser
 
 This script will parse the XML result file from a list of SRA samples(SRS). It takes a
-directory as an input and will iterate through all files, parsing each one to first a dictionary, and then
-outputting to the terminal in TSV format, or to a file if an output file is provided. 
-
+single XML file as input, parsing it first a dictionary, and then
+outputting to the terminal in TSV format, or to a file if an output file is provided.
 """
 
-import csv, os
-import requests
+import os
+import sys
+import csv
+import argparse
 import xml.etree.ElementTree as ET
 __version__ = "0.1.0"
 __status__ = "Beta"
 
-xmlfile = 'home/biosampleTest.xml'
+def usr_args():
+    """Program Arguments
 
-trace_url = ['https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=', '&retmode=xml']
-
-samples = {}
-header = []
-
-def parseXML( file, dict):
+    All arguments for process are defined here.
     """
-    
+
+        # initialize parser
+    parser = argparse.ArgumentParser()
+
+    # set usages options
+    parser = argparse.ArgumentParser(
+        prog='sra_trace_xml.py',
+        usage='%(prog)s [options]')
+
+    # version
+    parser.add_argument(
+        '-v', '--version',
+        action='version',
+        version='%(prog)s ' + __version__)
+
+    parser.add_argument('-f', '--file',
+        required=True,
+        help="Input file. The input file should be a collection of SRS XML \
+            files.")
+    parser.add_argument('-o', '--output',
+        help="Output file. If no output is provided, the resulting table will \
+            be output to the terminal.")
+    if len(sys.argv) <= 1:
+        sys.argv.append('--help')
+
+    return parser.parse_args()
+
+def parse_xml( xml_file, samples):
+    """Parse XML file
+
+    Parameters
+    ----------
+    xml_file: str
+        file path/name to be parsed
+    samples: dict
+        dictionary of samples
+
+    Returns
+    -------
+    samples: dict
+        dictionary of samples
     """
-    
-    biosample_id = sra_id = strain = organism_name = sample_name = ncbi_taxonomy_id = isolate = collected_by = collection_date = geo_loc_name = \
-        isolation_source = lat_lon = culture_collection = host = host_age = host_description = host_disease = host_disease_outcome = \
-        host_disease_stage = host_health_state = host_sex = identification_method = type_material = '-'
 
-    attribute_list = [strain, isolate, collected_by, collection_date, geo_loc_name, isolation_source, lat_lon, culture_collection, host, host_age, \
-        host_description, host_disease, host_disease_outcome, host_disease_stage, host_health_state, host_sex, identification_method, type_material]
+    biosample_id = sra_id = strain = organism_name = sample_name \
+        = ncbi_taxonomy_id = isolate = collected_by = collection_date \
+        = geo_loc_name = isolation_source = lat_lon = culture_collection = host\
+        = host_age = host_description = host_disease = host_disease_outcome = \
+        host_disease_stage = host_health_state = host_sex \
+        = identification_method = type_material = '-'
 
-    samples = dict
-    
     # create element tree object and get root element
-    root = ET.parse(file).getroot()
-    for biosample in root[:1]:
+    root = ET.parse(xml_file).getroot()
+    for biosample in root:
         biosample_id = biosample.attrib['accession']
         for item in biosample.findall('./'):
             for feature in item.findall('./'):
@@ -51,25 +86,25 @@ def parseXML( file, dict):
         for attribute in biosample.findall('./Attributes/'):
             print(attribute.attrib['attribute_name'])
             if attribute.attrib['attribute_name'] == 'strain':
-               strain = attribute.text
+                strain = attribute.text
             if attribute.attrib['attribute_name'] == 'isolate':
-               isolate = attribute.text
+                isolate = attribute.text
             if attribute.attrib['attribute_name'] == 'collected_by':
-               collected_by = attribute.text
+                collected_by = attribute.text
             if attribute.attrib['attribute_name'] == 'collection_date':
-               collection_date = attribute.text
+                collection_date = attribute.text
             if attribute.attrib['attribute_name'] == 'geo_loc_name':
-               geo_loc_name = attribute.text
+                geo_loc_name = attribute.text
             if attribute.attrib['attribute_name'] == 'isolation_source':
-              isolation_source  = attribute.text
+                isolation_source  = attribute.text
             if attribute.attrib['attribute_name'] == 'lat_lon':
-              lat_lon  = attribute.text
+                lat_lon  = attribute.text
             if attribute.attrib['attribute_name'] == 'culture_collection':
-               culture_collection = attribute.text
+                culture_collection = attribute.text
             if attribute.attrib['attribute_name'] == 'host':
-               host = attribute.text
+                host = attribute.text
             if attribute.attrib['attribute_name'] == 'host_age':
-               host_age  = attribute.text
+                host_age  = attribute.text
             if attribute.attrib['attribute_name'] == 'host_description':
                 host_description = attribute.text
             if attribute.attrib['attribute_name'] == 'host_disease':
@@ -83,29 +118,60 @@ def parseXML( file, dict):
             if attribute.attrib['attribute_name'] == 'host_sex':
                 host_sex = attribute.text
             if attribute.attrib['attribute_name'] == 'identification method':
-               identification_method = attribute.text
+                identification_method = attribute.text
             if attribute.attrib['attribute_name'] == 'type-material':
-               type_material = attribute.text
+                type_material = attribute.text
 
+        samples[biosample_id] = [sra_id, organism_name, strain, sample_name, \
+            ncbi_taxonomy_id, isolate, collected_by, collection_date, \
+            geo_loc_name, isolation_source, lat_lon, culture_collection, host,\
+            host_age, host_description, host_disease, host_disease_outcome, \
+            host_disease_stage, host_health_state, host_sex, \
+            identification_method, type_material]
 
-        samples[biosample_id] = [sra_id, organism_name, strain, sample_name, ncbi_taxonomy_id, isolate, collected_by, collection_date, geo_loc_name, \
-            isolation_source, lat_lon, culture_collection, host, host_age, host_description, host_disease, host_disease_outcome, host_disease_stage, \
-                host_health_state, host_sex, identification_method, type_material]
-
-    print(samples)
     return samples
 
-def printToTerm( dict, list):
-    """
+def sample_output( samples, header, output):
+    """Sample Output
+
+    If an output file is supplied in the user arguments the samples dictionary
+    will be output in TSV to the supplied file. If no output is provided, the
+    samples dictionary will print to the terminal in a TSV format.
+
+    Parameters
+    ----------
+    header: lst of str
+        List of column headers for the output
+    samples: dict
+        dictionary of samples
+    outputs: str, optional
+        file path/name to output data to
     """
 
-    print('\t'.join(item for item in list))
-    for run in dict:
-        print(run, '\t', '\t'.join(str(item) for item in dict[run]))
-    
+    if output:
+        sample_file = os.path.abspath(output)
+        with open(sample_file, 'w',  encoding='utf8') as file:
+            writer = csv.writer(file, header, delimiter='\t')
+            writer.writerow(header)
+            for key in samples:
+                row = [key]
+                for item in range(len(samples[key])):
+                    row.append(samples[key][item])
+                writer.writerow(row)
+        print('Samples written to ', sample_file)
+    else:
+        print('\t'.join(item for item in header))
+        for run in samples:
+            print(run, '\t', '\t'.join(str(item) for item in samples[run]))
+
 def main():
-    parseXML(xmlfile, samples)
-    # printToTerm(samples, header)
-      
+    """Main Fuunction
+    """
+    samples = {}
+    header = []
+    args = usr_args()
+    parse_xml(args.file, samples)
+    sample_output(samples, header, args.output)
+
 if __name__ == "__main__":
     main()

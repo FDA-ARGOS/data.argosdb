@@ -30,6 +30,7 @@ touch $TEMPFILE || echo "Can't touch tempfile."
 #Use eutils to grab the biosample record based on user input:
 efetch -db biosample -id $ACCESSION > $TEMPFILE || echo "Can't eutils."
 
+###Update below with whatever needed.###
 #Collect relevant fields from biosample record, set equal to - if no data:
 NAME=$(sed -n -e 's/^Organism: //p' $TEMPFILE)
 if [ -z "$NAME" ]

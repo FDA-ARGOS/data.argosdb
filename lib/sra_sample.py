@@ -168,7 +168,13 @@ def main():
     """Main Fuunction
     """
     samples = {}
-    header = []
+    header = ['biosample_id', 'sra_id', 'strain', 'organism_name',\
+        'sample_name', 'ncbi_taxonomy_id', 'isolate', 'collected_by',\
+        'collection_date', 'geo_loc_name', 'isolation_source', 'lat_lon',\
+        'culture_collection', 'host', 'host_age', 'host_description', \
+        'host_disease', 'host_disease_outcome', 'host_disease_stage',\
+        'host_health_state', 'host_sex', 'identification_method',\
+        'type_material']
     args = usr_args()
     parse_xml(args.file, samples)
     sample_output(samples, header, args.output)

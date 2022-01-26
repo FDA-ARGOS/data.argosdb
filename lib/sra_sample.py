@@ -75,16 +75,14 @@ def parse_xml( xml_file, samples):
         biosample_id = biosample.attrib['accession']
         for item in biosample.findall('./'):
             for feature in item.findall('./'):
-                # print(feature.tag, feature.text, feature.attrib)
                 if 'db' in feature.attrib.keys() and feature.attrib['db'] == 'SRA':
-                    sra_id = feature.attrib['db']
+                    sra_id = feature.text
                 if 'db_label' in feature.attrib.keys():
                     sample_name = feature.text
                 if feature.tag == 'Organism':
                     ncbi_taxonomy_id = feature.attrib['taxonomy_id']
                     organism_name = feature.attrib['taxonomy_name']
         for attribute in biosample.findall('./Attributes/'):
-            print(attribute.attrib['attribute_name'])
             if attribute.attrib['attribute_name'] == 'strain':
                 strain = attribute.text
             if attribute.attrib['attribute_name'] == 'isolate':

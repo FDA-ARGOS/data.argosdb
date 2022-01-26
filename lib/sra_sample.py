@@ -166,7 +166,7 @@ def main():
     """Main Fuunction
     """
     samples = {}
-    header = ['biosample_id', 'sra_id', 'strain', 'organism_name',\
+    header = ['biosample_id', 'sra_id', 'organism_name', 'strain', \
         'sample_name', 'ncbi_taxonomy_id', 'isolate', 'collected_by',\
         'collection_date', 'geo_loc_name', 'isolation_source', 'lat_lon',\
         'culture_collection', 'host', 'host_age', 'host_description', \

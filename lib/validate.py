@@ -1,18 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""Validate BioCompute Object
 
+Validates a BCO based on the schema supplied by the user. If the user does not
+supply a schema the schema in the BCO will be used.
+"""
+import sys
 import json
 import argparse
 import jsonschema
 from jsonschema import validate
-import sys
 __version__ = "1.1.0"
 __status__ = "Production"
 
 def usr_args():
-    """
-    functional arguments for process
-    https://stackoverflow.com/questions/27529610/call-function-based-on-argparse
+    """Program Arguments
+
+    All arguments for process are defined here.
     """
 
     parser = argparse.ArgumentParser()
@@ -44,8 +48,9 @@ def usr_args():
     return options
 
 def get_schema(options):
-    """This function loads the given schema available"""
-    with open(options.schema, 'r') as file:
+    """Load Schema
+    """
+    with open(options.schema, 'r', encoding='utf8') as file:
         schema = json.load(file)
         print('loaded schema')
     return schema
@@ -55,7 +60,7 @@ def validate_json(options):
     """REF: https://json-schema.org/ """
     # Describe what kind of json you expect.
     execute_api_schema = get_schema(options)
-    with open(options.json, 'r') as file:
+    with open(options.json, 'r', encoding='utf8') as file:
         data = json.load(file)
         print('loaded data')
 

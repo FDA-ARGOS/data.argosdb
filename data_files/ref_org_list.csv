@@ -1,6 +1,0 @@
-﻿assembly_id,Level,wgs_accession,num_chromosomes,BioSample,taxonomy_full,tax_name,bioproject,uniprotkb_ac,refseq_ac,tax_id
-GCA_000006945,Complete Genome,undefined,1+1,SAMN02604315,,Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),PRJNA241,UP000001014,yes,99287
-GCA_003102975,Complete Genome,undefined,1,n/a,,Human immunodeficiency virus 1 (viruses),n/a,UP000002241,no,11676
-GCA_009858895,Complete genome,undefined,1,n/a,,Severe acute respiratory syndrome coronavirus 2 (viruses),PRJNA485481,UP000464024,yes,2697049
-GCA_000857325,Complete genome,undefined,1,n/a,strain Kenya/Musoke/1980,Lake Victoria marburgvirus (strain Musoke-80) (MARV) (Marburg virus (strain Kenya/Musoke/1980)),PRJNA485481,UP000180448,yes,11269
-GCA_000865725,Complete genome,undefined,8,n/a,strain A/Puerto Rico/8/1934 H1N1,Influenza A virus,PRJNA485481,UP000009255,,211044

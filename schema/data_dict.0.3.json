@@ -1,11 +1,11 @@
 [
 	{
-		"siteQC_HL.csv ": {
+		"siteQC_HL.csv": {
 			"definitions": {
 			},
 			"$schema": "http://json-schema.org/draft-07/schema#",
-			"$id": "https://data.argos.org/schema/siteQC_HL.csv ",
-			"title": "siteQC_HL.csv ",
+			"$id": "https://data.argos.org/schema/siteQC_HL.csv",
+			"title": "siteQC_HL.csv",
 			"type": "object",
 			"required": [
 				"fdaargos_id",
@@ -218,7 +218,7 @@
 				"strategy": {
 					"$id": "#root/strategy",
 					"title": "strategy",
-					"description": "Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA\nWGS\nWXS\nRNA-Seq\nmiRNA-Seq\nWCS\nCLONE\nPOOLCLONE\nAMPLICON\nCLONEEND\nFINISHING\nChIP-Seq\nMNase-Seq\nDNase-Hypersensitivity\nBisulfite-Seq\nTn-Seq\nEST\nFL-cDNA\nCTS\nMRE-Seq\nMeDIP-Seq\nMBD-Seq\nSynthetic-Long-Read\nOTHER",
+					"description": "Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER",
 					"type": "string",
 					"default": " ",
 					"examples": " ",
@@ -287,9 +287,9 @@
 					"examples": " ",
 					"pattern": "^.*$"
 				},
-				"taxonomy_id ": {
-					"$id": "#root/taxonomy_id ",
-					"title": "taxonomy_id ",
+				"taxonomy_id": {
+					"$id": "#root/taxonomy_id",
+					"title": "taxonomy_id",
 					"description": "NCBI taxonomy identifier of the organism.",
 					"type": "string",
 					"default": " ",
@@ -339,7 +339,8 @@
 				"fdaargos_id",
 				"num_chromosomes",
 				"isolation_provider_name",
-				"hive_object_id"
+				"hive_object_id",
+				"schema_version"
 			],
 			"properties": {
 				"genome_assembly_id": {
@@ -396,9 +397,9 @@
 					"examples": " ",
 					"pattern": "^.*$"
 				},
-				"taxonomy_id ": {
-					"$id": "#root/taxonomy_id ",
-					"title": "taxonomy_id ",
+				"taxonomy_id": {
+					"$id": "#root/taxonomy_id",
+					"title": "taxonomy_id",
 					"description": "NCBI taxonomy identifier of the organism.",
 					"type": "string",
 					"default": " ",
@@ -827,25 +828,10 @@
 					"default": " ",
 					"examples": " ",
 					"pattern": "^.*$"
-				}
-			}
-		}
-	},
-	{
-		"assemblyQC_HL.tsv ": {
-			"definitions": {
-			},
-			"$schema": "http://json-schema.org/draft-07/schema#",
-			"$id": "https://data.argos.org/schema/assemblyQC_HL.tsv ",
-			"title": "assemblyQC_HL.tsv ",
-			"type": "object",
-			"required": [
-				"schema_version"
-			],
-			"properties": {
-				"organism_name ": {
-					"$id": "#root/organism_name ",
-					"title": "organism_name ",
+				},
+				"organism_name": {
+					"$id": "#root/organism_name",
+					"title": "organism_name",
 					"description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
 					"type": "string",
 					"default": " ",
@@ -856,15 +842,6 @@
 					"$id": "#root/lineage",
 					"title": "lineage",
 					"description": "The complete taxonomic lineage for the taxonomic node indicated.",
-					"type": "string",
-					"default": " ",
-					"examples": " ",
-					"pattern": "^.*$"
-				},
-				"schema_version": {
-					"$id": "#root/schema_version",
-					"title": "schema_version",
-					"description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
 					"type": "string",
 					"default": " ",
 					"examples": " ",
@@ -887,7 +864,7 @@
 				"strain",
 				"organism_name",
 				"sample_name",
-				"taxonomy_id ",
+				"taxonomy_id",
 				"collected_by",
 				"collection_date",
 				"geo_loc_name",
@@ -941,9 +918,9 @@
 					"examples": " ",
 					"pattern": "^.*$"
 				},
-				"taxonomy_id ": {
-					"$id": "#root/taxonomy_id ",
-					"title": "taxonomy_id ",
+				"taxonomy_id": {
+					"$id": "#root/taxonomy_id",
+					"title": "taxonomy_id",
 					"description": "NCBI taxonomy identifier of the organism.",
 					"type": "string",
 					"default": " ",
@@ -1265,7 +1242,7 @@
 				"strategy": {
 					"$id": "#root/strategy",
 					"title": "strategy",
-					"description": "Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA\nWGS\nWXS\nRNA-Seq\nmiRNA-Seq\nWCS\nCLONE\nPOOLCLONE\nAMPLICON\nCLONEEND\nFINISHING\nChIP-Seq\nMNase-Seq\nDNase-Hypersensitivity\nBisulfite-Seq\nTn-Seq\nEST\nFL-cDNA\nCTS\nMRE-Seq\nMeDIP-Seq\nMBD-Seq\nSynthetic-Long-Read\nOTHER",
+					"description": "Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER",
 					"type": "string",
 					"default": " ",
 					"examples": " ",
@@ -1292,7 +1269,7 @@
 				"level": {
 					"$id": "#root/level",
 					"title": "level",
-					"description": "Level index for run specific depth first enumeration of tax hierarchy.",
+					"description": "HIVE",
 					"type": "string",
 					"default": " ",
 					"examples": " ",
@@ -1473,30 +1450,6 @@
 		}
 	},
 	{
-		"ngsQC_HL.tsv ": {
-			"definitions": {
-			},
-			"$schema": "http://json-schema.org/draft-07/schema#",
-			"$id": "https://data.argos.org/schema/ngsQC_HL.tsv ",
-			"title": "ngsQC_HL.tsv ",
-			"type": "object",
-			"required": [
-
-			],
-			"properties": {
-				"hive_object_id": {
-					"$id": "#root/hive_object_id",
-					"title": "hive_object_id",
-					"description": "HIVE object ID which is assigned automatically within the HIVE Platform. This ID assists with internal tracking and programatic inquires with in the HIVE Platfrom ",
-					"type": "string",
-					"default": " ",
-					"examples": " ",
-					"pattern": "^.*$"
-				}
-			}
-		}
-	},
-	{
 		"PRJNA231221_AssemblyUpdated.tsv": {
 			"definitions": {
 			},
@@ -1511,9 +1464,9 @@
 				"num_chromosomes",
 				"biosample",
 				"strain",
-				"organism_name ",
+				"organism_name",
 				"bioproject",
-				"taxonomy_id ",
+				"taxonomy_id",
 				"lineage"
 			],
 			"properties": {
@@ -1529,7 +1482,7 @@
 				"level": {
 					"$id": "#root/level",
 					"title": "level",
-					"description": "Level index for run specific depth first enumeration of tax hierarchy.",
+					"description": "HIVE",
 					"type": "string",
 					"default": " ",
 					"examples": " ",
@@ -1571,7 +1524,7 @@
 					"examples": " ",
 					"pattern": "^.*$"
 				},
-				"organism_name ": {
+				"organism_name": {
 					"$id": "#root/Taxonomy Name",
 					"title": "Taxonomy Name",
 					"description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
@@ -1589,9 +1542,9 @@
 					"examples": " ",
 					"pattern": "^.*$"
 				},
-				"taxonomy_id ": {
-					"$id": "#root/taxonomy_id ",
-					"title": "taxonomy_id ",
+				"taxonomy_id": {
+					"$id": "#root/taxonomy_id",
+					"title": "taxonomy_id",
 					"description": "NCBI taxonomy identifier of the organism.",
 					"type": "string",
 					"default": " ",

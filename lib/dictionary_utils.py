@@ -147,7 +147,7 @@ def tsv2json(options):
     options.multi: bool
         Default is False. If true the input file is treated as a flat version
         of a multiple schemas. These will output to a list of JSON.
-    
+
     options.output: str, optional
         An output file. If this is supplied then the function output will be
         written to this file.
@@ -158,12 +158,12 @@ def tsv2json(options):
         is supplied) or prints to the terminal. 
     """
 
-    # definition = 'schema/property_definition.tsv'
-    # prop_defs = {}
-    # with open(definition, 'r', encoding='utf8') as definitions:
-    #     def_data = csv.reader(definitions, delimiter="\t")
-    #     for row in def_data:
-    #         prop_defs[row[0].rstrip()] = row[4]
+    definition = 'data_files/property_definition.tsv'
+    prop_defs = {}
+    with open(definition, 'r', encoding='utf8') as definitions:
+        def_data = csv.reader(definitions, delimiter="\t")
+        for row in def_data:
+            prop_defs[row[0].rstrip()] = row[4]
     if options.multi is True:
         argos_schemas = {}
         with open(options.input, 'r', encoding='utf8') as file:
@@ -190,7 +190,6 @@ def tsv2json(options):
                     'pattern': row[8]
                 }
                 if row[2] == 'required':
-                    print(row[0])
                     (argos_schemas[row[1]]['required']).append(row[0])
         jsonf = json.dumps(argos_schemas, indent=4)
 

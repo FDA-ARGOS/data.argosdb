@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""Lineage addition
+
+This script will take in a TSV exported from an NCBI BioProject and add the
+taxonomic lineage to each line.
+"""
 
 import csv, time
 from Bio import Entrez

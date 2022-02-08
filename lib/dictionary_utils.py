@@ -6,16 +6,20 @@ data dictionary and associated schemas. General help below.
 
 positional arguments:
 {functions,validate,tsv2json}
-    functions           List of all available functions
-    validate            Validation options. Used to test a data sheet against a JSON schema. If no schema is supplied will throw an error
-    tsv2json            Used to convert a TSV into a JSNO schema. If no mapping file is provided, performs default conversions.
+    functions           List of all available functions and options.
+    validate            Validation options. Used to test a data sheet against
+                        a JSON schema. If no schema is supplied will throw an
+                        error.
+    tsv2json            Used to convert a TSV into a JSNO schema. If no mapping
+                        file is provided, performs default conversions.
 
 optional arguments:
 -h, --help            show this help message and exit
 -v, --version         show program's version number and exit
 """
 
-import json, csv
+import csv
+import json
 import argparse
 import sys
 
@@ -123,7 +127,7 @@ def validate_schema(options):
         file and/or an optional schema
 
     options.schema: str, optional
-    
+
     options.output: str, optional
 
     Returns
@@ -142,7 +146,7 @@ def tsv2json(options):
     Parameters
     ----------
     options.input: str
-        An inpit file to create the schema/schemas. This should be a TSV. 
+        An inpit file to create the schema/schemas. This should be a TSV.
 
     options.multi: bool
         Default is False. If true the input file is treated as a flat version
@@ -155,7 +159,7 @@ def tsv2json(options):
     Returns
     -------
         Either writes JSON schema object/objects to a file (if options.output
-        is supplied) or prints to the terminal. 
+        is supplied) or prints to the terminal.
     """
 
     definition = 'data_files/property_definition.tsv'
@@ -168,7 +172,7 @@ def tsv2json(options):
         argos_schemas = {}
         with open(options.input, 'r', encoding='utf8') as file:
             data = csv.reader(file, delimiter="\t")
-            header = next(data)
+            next(data)
             for row in data:
                 if row[1] not in argos_schemas:
                     argos_schemas[row[1]] = {
@@ -197,7 +201,7 @@ def tsv2json(options):
         argos_schema = {
             'definitions': {},
             '$schema': 'http://json-schema.org/draft-07/schema#',
-            '$id': 'https://data.argos.org/schema/'+ options.input, 
+            '$id': 'https://data.argos.org/schema/'+ options.input,
             'title': options.input,
             'type': 'object',
             'required':[],
@@ -206,7 +210,7 @@ def tsv2json(options):
 
         with open(options.input, 'r', encoding='utf8') as file:
             data = csv.reader(file, delimiter="\t")
-            header = next(data)
+            next(data)
             for row in data:
                 argos_schema['properties'][row[0]] = {
                     '$id':row[3],

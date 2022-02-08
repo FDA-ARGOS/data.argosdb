@@ -1,13 +1,13 @@
-Property	Name in Files	Data Files	recommended	Description	source/type def	
+biosampleMeta_HL.tsv | ngsQC_HL.tsv	Name in Files	Data Files	recommended	Description	source/type def	
 organism_name	organism_name | organism_name | organism_name | organism | organism |Taxonomy Name	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | organism.csv | *_proteome_metadata.csv | PRJNA231221_AssemblyUpdated.tsv	Yi FDA	Name of the expected organism. Should corrispond to a NCBI Taxonomy node	NCBI Taxonomy	
 lineage	lineage | lineage | lineage | Full Lineage | lineage	assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv 	Yi FDA	The complete taxonomic lineage for the taxonomic node indicated.	NCBI Taxonomy	
 genome_assembly_id	genome_assembly_id | genome_assembly_id | genome_assembly_id |  Assembly | genome_assembly_accsession | genome_assembly_id	assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv |  siteQC_HL.csv 	Yi FDA	NCBI Assembly DB identifier.	NCBI Assembly DB	
-strain	strain_name | strain | strain_name | Strain	"assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv Strain	PRJNA231221_AssemblyUpdated.tsv"	Yi FDA	microbial or eukaryotic strain name	NCBI Taxonomy	
-biosample	"fdaargos_biosample_id | biosample_id | fdaargos_biosample_id	 | BioSample | sra_biosample_id	"	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv 	NCBI 	NCBI BioSample identifier.	NCBI BioSample DB	
+strain	strain_name | strain | strain_name | Strain	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv PRJNA231221_AssemblyUpdated.tsv	Yi FDA	microbial or eukaryotic strain name	NCBI Taxonomy	
+biosample	fdaargos_biosample_id | biosample_id | fdaargos_biosample_id | BioSample | sra_biosample_id	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv 	NCBI 	NCBI BioSample identifier.	NCBI BioSample DB	
 fdaargos_id	fdaargos_id | fdaargos_id | fdaargos_seq_feature	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.csv 	Raja	ARGOS identifier.	data.argos.org	
 num_chromosomes	num_chromosomes | num_chromosomes	assemblyQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv	Raja	Total number of chromosomes in the genome assembly.	NCBI Assembly DB	
 bco_id	BCO_id	assemblyQC_HL.tsv	Raja	BioCompute Object identifier.	biocomputeobject.org	
-taxonomy_id	"ncbi_taxonomy_id | ncbi_taxonomy_id | taxid | Taxonomy ID | tax_id	"	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv 	Yi FDA	NCBI taxonomy identifier of the organism.	NCBI Taxonomy	
+taxonomy_id	ncbi_taxonomy_id | ncbi_taxonomy_id | taxid | Taxonomy ID | tax_id	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv 	Yi FDA	NCBI taxonomy identifier of the organism.	NCBI Taxonomy	
 id_method	id_method	assemblyQC_HL.tsv	Yi FDA	Species identification method.	Data source	
 sample_type	sample_type	assemblyQC_HL.tsv	Yi FDA	"Type of sample used for the BioSample submission, if applicable."	NCBI BioSample DB	
 host	host | host | host	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | organism.csv	NCBI Biosample DB; Yi FDA	The natural host to the organism from which the sample was obtained.	NCBI BioSample DB	
@@ -77,7 +77,7 @@ pos_outlier_count	pos_outlier_count	ngsQC_HL.tsv	HIVE	Count of positions the qua
 num_reads	num_reads	ngsQC_HL.tsv	HIVE	Number of sequences present in a FASTA/FASTQ read file.	HIVE	
 avg_read_length	avg_read_length	ngsQC_HL.tsv	HIVE	Average length of sequences in a FASTA/FASTQ read file.	HIVE	
 max_read_length	max_read_length	ngsQC_HL.tsv	HIVE	Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.	HIVE	
-strategy	strategy | strategy	"	ngsQC_HL.tsv | SRA_ngsQC.tsv"	HIVE	"Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER"	HIVE	
+strategy	strategy | strategy	ngsQC_HL.tsv | SRA_ngsQC.tsv	HIVE	"Strategy/method used to generate the NGS. Controled  vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER"	HIVE	
 sra_run_id	sra_run_id | sra_run_id	ngsQC_HL.tsv | SRA_ngsQC.tsv 	HIVE	Database identifier assigned by repository and linked to GenBank or other repository.	HIVE	
 wgs_accession	wgs_accession	ngsQC_HL.tsv	HIVE	NCBI Whole Genome Shotgun (WGS) accession number.	HIVE	
 level	level | Level	"PRJNA231221"""	ngsQC_HL.tsv | AssemblyUpdated.tsv	HIVE	Level index for run specific depth first enumeration of tax hierarchy.	NCBI SRA
@@ -119,7 +119,7 @@ genomic_coordinate_start	genomic_coordinate_start	 siteQC_HL.csv 	Vahan	Start po
 genomic_coordinates_end	genomic_coordinates_end	 siteQC_HL.csv 	Vahan	End position for this feature in the genome file	HIVE	
 protein_coordinates_start	protein_coordinates_start	 siteQC_HL.csv 	Vahan	Start position for this feature in the proteome file	HIVE	
 protein_coordinates_end	protein_coordinates_end	 siteQC_HL.csv 	Vahan	End position for this feature in the proteome file	HIVE	
-source	source	SRA_ngsQC.tsv 	SRA	"Source of genomic information in the file. From an SRA controled vocabulary: GENOMIC: [Genomic DNA (includes PCR products from genomic DNA)], TRANSCRIPTOMIC: [Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)], METAGENOMIC	: [Mixed material from metagenome], METATRANSCRIPTOMIC: [Transcription products from community targets], SYNTHETIC: [Synthetic DNA], VIRAL RNA: [Viral RNA], OTHER:[Other, unspecified, or unknown library source material (please include additional info in the “design description”)]"	NCBI SRA	
+source	source	SRA_ngsQC.tsv 	SRA	"Source of genomic information in the file. From an SRA controled vocabulary: GENOMIC: [Genomic DNA (includes PCR products from genomic DNA)], TRANSCRIPTOMIC: [Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)], METAGENOMIC: [Mixed material from metagenome], METATRANSCRIPTOMIC: [Transcription products from community targets], SYNTHETIC: [Synthetic DNA], VIRAL RNA: [Viral RNA], OTHER:[Other, unspecified, or unknown library source material (please include additional info in the “design description”)]"	NCBI SRA	
 seq_feature_tag	seq_feature_tag	 siteQC_HL.csv 	Vahan	"Tags associated with this feature. Can be coverage, quality|entropy, mutations,indels, tailsd, disbalance, aniusotropyu, partiality"	HIVE	
 seq_feature_value	seq_feature_value	 siteQC_HL.csv 	Vahan	Values for the tag associated with this feature	HIVE	
 sra_experiment_id	sra_experiment_id	 SRA_ngsQC.tsv 	SRA	Experiment identifier assigned by SRA and linked to GenBank and other databases.	SRA STAT	

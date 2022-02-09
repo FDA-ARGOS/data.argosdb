@@ -1,44 +1,44 @@
-Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	pattern	description
-sra_experiment_id	SRA_ngsQC.tsv	required	#root/sra_experiment_id	sra_experiment_id	string			^.*$	
-sra_run_id	SRA_ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string			^.*$	
-biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string			^.*$	
-num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string			^.*$	
-file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string			^.*$	
-published	SRA_ngsQC.tsv	required	#root/published	published	string			^.*$	
-source	SRA_ngsQC.tsv	required	#root/source	source	string			^.*$	
-strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string			^.*$	
-layout	SRA_ngsQC.tsv	required	#root/layout	layout	string			^.*$	
-library_newname	SRA_ngsQC.tsv	optional	#root/library_newname	library_newname	string			^.*$	
-selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string			^.*$	
-instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string			^.*$	
-file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string			^.*$	
-reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string			^.*$	
-identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string			^.*$	
-taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string			^.*$	
-lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string			^.*$	
-percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string			^.*$	
-gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string			^.*$	
-genome_assembly_id	PRJNA231221_AssemblyUpdated.tsv	required	#root/genome_assembly_id	genome_assembly_id	string			^.*$	
-level	PRJNA231221_AssemblyUpdated.tsv	required	#root/level	level	string			^.*$	
-assembly_level	PRJNA231221_AssemblyUpdated.tsv	required	#root/assembly_level	assembly_level	string			^.*$	
-num_chromosomes	PRJNA231221_AssemblyUpdated.tsv	required	#root/num_chromosomes	num_chromosomes	string			^.*$	
-biosample	PRJNA231221_AssemblyUpdated.tsv	required	#root/biosample	biosample	string			^.*$	
-strain	PRJNA231221_AssemblyUpdated.tsv	required	#root/strain	strain	string			^.*$	
-organism_name	PRJNA231221_AssemblyUpdated.tsv	required	#root/Taxonomy Name	Taxonomy Name	string			^.*$	
-bioproject	PRJNA231221_AssemblyUpdated.tsv	required	#root/BioPproject	BioPproject	string			^.*$	
-taxonomy_id	PRJNA231221_AssemblyUpdated.tsv	required	#root/taxonomy_id	taxonomy_id	string			^.*$	
-lineage	PRJNA231221_AssemblyUpdated.tsv	required	#root/lineage	lineage	string			^.*$	
-uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string			^.*$	
-found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string			^.*$	
-gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string			^.*$	
-protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string			^.*$	
-evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string			^.*$	
-begin_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/begin_aa_pos	begin_aa_pos	string			^.*$	
-end_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/end_aa_pos	end_aa_pos	string			^.*$	
-mutation_type	sars-cov-2_lineage_mutations.tsv	required	#root/mutation_type	mutation_type	string			^.*$	
-is_known_glycoprotein	sars-cov-2_lineage_mutations.tsv	required	#root/is_known_glycoprotein	is_known_glycoprotein	string			^.*$	
-motif_start	sars-cov-2_lineage_mutations.tsv	required	#root/motif_start	motif_start	string			^.*$	
-ref_motif	sars-cov-2_lineage_mutations.tsv	required	#root/ref_motif	ref_motif	string			^.*$	
-alt_motif	sars-cov-2_lineage_mutations.tsv	required	#root/alt_motif	alt_motif	string			^.*$	
-effect	sars-cov-2_lineage_mutations.tsv	required	#root/effect	effect	string			^.*$	
-note	sars-cov-2_lineage_mutations.tsv	required	#root/note	note	string			^.*$	
+Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	description	pattern
+sra_experiment_id	SRA_ngsQC.tsv	required	#root/sra_experiment_id	sra_experiment_id	string	-	-	-	^.*$
+sra_run_id	SRA_ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string	-	-	-	^.*$
+biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	-	-	-	^.*$
+num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string	-	-	-	^.*$
+file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string	-	-	-	^.*$
+published	SRA_ngsQC.tsv	required	#root/published	published	string	-	-	-	^.*$
+source	SRA_ngsQC.tsv	required	#root/source	source	string	-	-	-	^.*$
+strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string	-	-	-	^.*$
+layout	SRA_ngsQC.tsv	required	#root/layout	layout	string	-	-	-	^.*$
+library_newname	SRA_ngsQC.tsv	optional	#root/library_newname	library_newname	string	-	-	-	^.*$
+selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string	-	-	-	^.*$
+instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string	-	-	-	^.*$
+file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string	-	-	-	^.*$
+reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	-	-	^.*$
+identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	-	-	^.*$
+taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	-	-	^.*$
+lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string	-	-	-	^.*$
+percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	-	-	^.*$
+gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	-	-	^.*$
+genome_assembly_id	PRJNA231221_AssemblyUpdated.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	-	-	^.*$
+level	PRJNA231221_AssemblyUpdated.tsv	required	#root/level	level	string	-	-	-	^.*$
+assembly_level	PRJNA231221_AssemblyUpdated.tsv	required	#root/assembly_level	assembly_level	string	-	-	-	^.*$
+num_chromosomes	PRJNA231221_AssemblyUpdated.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	-	-	^.*$
+biosample	PRJNA231221_AssemblyUpdated.tsv	required	#root/biosample	biosample	string	-	-	-	^.*$
+strain	PRJNA231221_AssemblyUpdated.tsv	required	#root/strain	strain	string	-	-	-	^.*$
+organism_name	PRJNA231221_AssemblyUpdated.tsv	required	#root/Taxonomy Name	Taxonomy Name	string	-	-	-	^.*$
+bioproject	PRJNA231221_AssemblyUpdated.tsv	required	#root/BioPproject	BioPproject	string	-	-	-	^.*$
+taxonomy_id	PRJNA231221_AssemblyUpdated.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	-	-	^.*$
+lineage	PRJNA231221_AssemblyUpdated.tsv	required	#root/lineage	lineage	string	-	-	-	^.*$
+uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string	-	-	-	^.*$
+found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	-	-	-	^.*$
+gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string	-	-	-	^.*$
+protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string	-	-	-	^.*$
+evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string	-	-	-	^.*$
+begin_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/begin_aa_pos	begin_aa_pos	string	-	-	-	^.*$
+end_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/end_aa_pos	end_aa_pos	string	-	-	-	^.*$
+mutation_type	sars-cov-2_lineage_mutations.tsv	required	#root/mutation_type	mutation_type	string	-	-	-	^.*$
+is_known_glycoprotein	sars-cov-2_lineage_mutations.tsv	required	#root/is_known_glycoprotein	is_known_glycoprotein	string	-	-	-	^.*$
+motif_start	sars-cov-2_lineage_mutations.tsv	required	#root/motif_start	motif_start	string	-	-	-	^.*$
+ref_motif	sars-cov-2_lineage_mutations.tsv	required	#root/ref_motif	ref_motif	string	-	-	-	^.*$
+alt_motif	sars-cov-2_lineage_mutations.tsv	required	#root/alt_motif	alt_motif	string	-	-	-	^.*$
+effect	sars-cov-2_lineage_mutations.tsv	required	#root/effect	effect	string	-	-	-	^.*$
+note	sars-cov-2_lineage_mutations.tsv	required	#root/note	note	string	-	-	-	^.*$

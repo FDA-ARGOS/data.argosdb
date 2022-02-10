@@ -47,7 +47,7 @@ do
 	cat _.qc2.ComplexityTable.csv > ./TEMPComplexityTable.csv || echo "Can't cat ComplexityTable"
 
 #Combine and format all of the output (consider just making this an awk in the future):
-	python3 $ROOTDIR/QCTableFormatter3.py >> /home/transfer_hive_prod/outputList.txt || echo "Can't python"
+	python3 $ROOTDIR/QCTableFormatter3.1.py >> /home/transfer_hive_prod/outputList.txt || echo "Can't python"
 
 #Clean up:
 	rm ./TEMPIDFile.txt || echo "Can't rm file 1"

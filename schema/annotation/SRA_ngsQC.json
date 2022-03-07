@@ -1,0 +1,192 @@
+{
+	"definitions": {
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://data.argos.org/schema/SRA_ngsQC.tsv",
+	"title": "SRA_ngsQC.tsv",
+	"type": "object",
+	"required": [
+		"sra_experiment_id",
+		"sra_run_id",
+		"num_of_bases",
+		"file_size",
+		"published",
+		"source",
+		"strategy",
+		"layout",
+		"file_type"
+	],
+	"properties": {
+		"sra_experiment_id": {
+			"$id": "#root/sra_experiment_id",
+			"title": "sra_experiment_id",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "SRR9107811",
+			"pattern": "^.*$"
+		},
+		"sra_run_id": {
+			"$id": "#root/sra_run_id",
+			"title": "sra_run_id",
+			"description": "",
+			"type": "string",
+			"default": "-",
+			"examples": "SRX5882434",
+			"pattern": "^.*$"
+		},
+		"biosample": {
+			"$id": "#root/biosample",
+			"title": "biosample",
+			"description": "NCBI BioSample DB",
+			"type": "string",
+			"default": "-",
+			"examples": "SAMN11077980",
+			"pattern": "^.*$"
+		},
+		"num_of_bases": {
+			"$id": "#root/num_of_bases",
+			"title": "num_of_bases",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "400293278",
+			"pattern": "^.*$"
+		},
+		"file_size": {
+			"$id": "#root/file_size",
+			"title": "file_size",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "195921414",
+			"pattern": "^.*$"
+		},
+		"published": {
+			"$id": "#root/published",
+			"title": "published",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "5/22/19 16:57",
+			"pattern": "^.*$"
+		},
+		"source": {
+			"$id": "#root/source",
+			"title": "source",
+			"description": "NCBI SRA",
+			"type": "string",
+			"default": "-",
+			"examples": "VIRAL RNA",
+			"pattern": "^.*$"
+		},
+		"strategy": {
+			"$id": "#root/strategy",
+			"title": "strategy",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "WGS",
+			"pattern": "^.*$"
+		},
+		"layout": {
+			"$id": "#root/layout",
+			"title": "layout",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "PAIRED",
+			"pattern": "^.*$"
+		},
+		"library_newname": {
+			"$id": "#root/library_newname",
+			"title": "library_newname",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "IL100100209",
+			"pattern": "^.*$"
+		},
+		"selection": {
+			"$id": "#root/selection",
+			"title": "selection",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "cDNA",
+			"pattern": "^.*$"
+		},
+		"instrument": {
+			"$id": "#root/instrument",
+			"title": "instrument",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "Illumina MiSeq",
+			"pattern": "^.*$"
+		},
+		"file_type": {
+			"$id": "#root/file_type",
+			"title": "file_type",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "fastq",
+			"pattern": "^.*$"
+		},
+		"reads_unaligned": {
+			"$id": "#root/reads_unaligned",
+			"title": "reads_unaligned",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "61059",
+			"pattern": "^.*$"
+		},
+		"identified_reads": {
+			"$id": "#root/identified_reads",
+			"title": "identified_reads",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "603880",
+			"pattern": "^.*$"
+		},
+		"taxonomy_id": {
+			"$id": "#root/taxonomy_id",
+			"title": "taxonomy_id",
+			"description": "",
+			"type": "string",
+			"default": "-",
+			"examples": "64320",
+			"pattern": "^.*$"
+		},
+		"lineage": {
+			"$id": "#root/lineage",
+			"title": "lineage",
+			"description": "NCBI Taxonomy",
+			"type": "string",
+			"default": "-",
+			"examples": "Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus",
+			"pattern": "^.*$"
+		},
+		"percent_identified": {
+			"$id": "#root/percent_identified",
+			"title": "percent_identified",
+			"description": "SRA STAT",
+			"type": "string",
+			"default": "-",
+			"examples": "0.908173532",
+			"pattern": "^.*$"
+		},
+		"gc_content": {
+			"$id": "#root/gc_content",
+			"title": "gc_content",
+			"description": "HIVE;Calculated from SRA",
+			"type": "string",
+			"default": "-",
+			"examples": "0.455669683",
+			"pattern": "^.*$"
+		}
+	}
+}

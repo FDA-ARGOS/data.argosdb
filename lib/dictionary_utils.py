@@ -78,12 +78,14 @@ def usr_args():
             "If no schema is supplied will throw an error")
     parser_validate.set_defaults(func=validate_schema)
 
-    parser_tsv2json = subparsers.add_parser('tsv2json',
+    # Create a write_schema subcommand
+    parser_tsv2json = subparsers.add_parser('write_schema',
         parents=[parent_parser],
         help="Used to convert a TSV into a JSNO schema."
             " If no mapping file is provided, performs default conversions.")
-    parser_tsv2json.set_defaults(func=tsv2json)
+    parser_tsv2json.set_defaults(func=list_2_schema)
 
+    # Create a validate_columns subcommand
     parser_validate_columns = subparsers.add_parser('validate_columns',
         parents=[parent_parser],
         help=" Validates columns in a list of files in a directory using provided column headers")
@@ -148,10 +150,10 @@ def validate_schema(options):
     """
     print('validate', type(options.input))
 
-def tsv2json(options):
+def list_2_schema(options):
     """Create Schema JSON
 
-    Tales a TSV and writes JSON formatted schema
+    Takes a TSV and writes JSON formatted schema
 
     Parameters
     ----------
@@ -165,7 +167,8 @@ def tsv2json(options):
     options.output: str, optional
         An output file. If this is supplied then the function output will be
         written to this file.
-
+    definition: str
+        a list of property definitions.
     Returns
     -------
         Either writes JSON schema object/objects to a file (if options.output
@@ -183,7 +186,15 @@ def tsv2json(options):
         with open(options.input, 'r', encoding='utf8') as file:
             data = csv.reader(file, delimiter="\t")
             next(data)
+            count = 0
             for row in data:
+                count+= 1
+                try:
+                    prop_defs[row[0].rstrip()]
+                except KeyError:
+                    print(row)
+                    print(f"Error! {row[0]} at row {count} is not defined in {definition}. Exiting.")
+                    return
                 if row[1] not in argos_schemas:
                     argos_schemas[row[1]] = {
                         'definitions': {},
@@ -248,14 +259,30 @@ def tsv2json(options):
 
 def validate_columns(options):
     """Validate Columns
+
+    Parameters
+    ----------
+    options.input: str
+        An inpit file to create the schema/schemas. This should be a TSV.
+
+    Returns
+    -------
     """
     columns = []
     missing_keys = {}
+    try:
+        int(options.column_index)
+    except ValueError:
+        print('Column index is not a number')
+        return
+    count = 0
     reader = open(options.input, 'r', encoding='utf8')
     for i in reader:
         columns.append(i.split("\t")[int(options.column_index)])
+        count += 1
     with open('test2.json', 'w', encoding='utf8') as outfile:
         json.dump(columns, outfile)
+        print(columns, outfile)
     for filename in os.listdir(options.directory):
         delimiter=""
         if filename.endswith(".tsv"):
@@ -271,7 +298,9 @@ def validate_columns(options):
             header = [x.strip("\n").strip("\"").lower() for x in header]
             missing_keys[filename] = [x for x in header if x not in columns]
         with open(options.output, 'w', encoding='utf8') as outfile:
+            print(missing_keys, outfile)
             json.dump(missing_keys, outfile)
+
 def main():
     """
     Main function

@@ -1,0 +1,525 @@
+{
+	"definitions": {
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://data.argos.org/schema/assemblyQC.tsv",
+	"title": "assemblyQC.tsv",
+	"type": "object",
+	"required": [
+		"organism_name",
+		"lineage",
+		"genome_assembly_id",
+		"fdaargos_id",
+		"bco_id",
+		"schema_version",
+		"biosample",
+		"num_chromosomes",
+		"isolation_provider_name"
+	],
+	"properties": {
+		"organism_name": {
+			"$id": "#root/organism_name",
+			"title": "organism_name",
+			"description": " ",
+			"type": "string",
+			"default": "-",
+			"examples": "isolate_Wuhan_Hu_1",
+			"pattern": "^.*$"
+		},
+		"lineage": {
+			"$id": "#root/lineage",
+			"title": "lineage",
+			"description": "NCBI Taxonomy",
+			"type": "string",
+			"default": "-",
+			"examples": "GCA_009858895.3",
+			"pattern": "^.*$"
+		},
+		"genome_assembly_id": {
+			"$id": "#root/genome_assembly_id",
+			"title": "genome_assembly_id",
+			"description": "NCBI Assembly DB",
+			"type": "string",
+			"default": "-",
+			"examples": "ARGID00001",
+			"pattern": "^.*$"
+		},
+		"fdaargos_id": {
+			"$id": "#root/fdaargos_id",
+			"title": "fdaargos_id",
+			"description": "data.argos.org",
+			"type": "string",
+			"default": "-",
+			"examples": "ARGOS_000012/1.0",
+			"pattern": "^.*$"
+		},
+		"bco_id": {
+			"$id": "#root/bco_id",
+			"title": "bco_id",
+			"description": "biocomputeobject.org",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"hive_object_id": {
+			"$id": "#root/hive_object_id",
+			"title": "hive_object_id",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "v0.4",
+			"pattern": "^.*$"
+		},
+		"schema_version": {
+			"$id": "#root/schema_version",
+			"title": "schema_version",
+			"description": "data.argos.org",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"strain": {
+			"$id": "#root/strain",
+			"title": "strain",
+			"description": "NCBI Taxonomy",
+			"type": "string",
+			"default": "-",
+			"examples": "SAMN13922059",
+			"pattern": "^.*$"
+		},
+		"biosample": {
+			"$id": "#root/biosample",
+			"title": "biosample",
+			"description": "NCBI BioSample DB",
+			"type": "string",
+			"default": "-",
+			"examples": "12",
+			"pattern": "^.*$"
+		},
+		"num_chromosomes": {
+			"$id": "#root/num_chromosomes",
+			"title": "num_chromosomes",
+			"description": "NCBI Assembly DB",
+			"type": "string",
+			"default": "-",
+			"examples": "2697049",
+			"pattern": "^.*$"
+		},
+		"taxonomy_id": {
+			"$id": "#root/taxonomy_id",
+			"title": "taxonomy_id",
+			"description": "",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"id_method": {
+			"$id": "#root/id_method",
+			"title": "id_method",
+			"description": "NCBI BioSample DB",
+			"type": "string",
+			"default": "-",
+			"examples": "human bronchoalveolar lavage fluid",
+			"pattern": "^.*$"
+		},
+		"sample_type": {
+			"$id": "#root/sample_type",
+			"title": "sample_type",
+			"description": "NCBI BioSample DB",
+			"type": "string",
+			"default": "-",
+			"examples": "homo sapiens",
+			"pattern": "^.*$"
+		},
+		"host": {
+			"$id": "#root/host",
+			"title": "host",
+			"description": "NCBI BioSample DB",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"number_of_n_or_x": {
+			"$id": "#root/number_of_n_or_x",
+			"title": "number_of_n_or_x",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "Shanghai Public Health Clinical Center & School of Public Health, Fudan University",
+			"pattern": "^.*$"
+		},
+		"isolation_provider_name": {
+			"$id": "#root/isolation_provider_name",
+			"title": "isolation_provider_name",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"isolation_acquisition_id": {
+			"$id": "#root/isolation_acquisition_id",
+			"title": "isolation_acquisition_id",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"contact_name": {
+			"$id": "#root/contact_name",
+			"title": "contact_name",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "Illumina",
+			"pattern": "^.*$"
+		},
+		"sequencing_method": {
+			"$id": "#root/sequencing_method",
+			"title": "sequencing_method",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"n50": {
+			"$id": "#root/n50",
+			"title": "n50",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"l50": {
+			"$id": "#root/l50",
+			"title": "l50",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"gc_content": {
+			"$id": "#root/gc_content",
+			"title": "gc_content",
+			"description": "HIVE;Calculated from SRA",
+			"type": "string",
+			"default": "-",
+			"examples": "29,903",
+			"pattern": "^.*$"
+		},
+		"length": {
+			"$id": "#root/length",
+			"title": "length",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"avg_nuc_identity": {
+			"$id": "#root/avg_nuc_identity",
+			"title": "avg_nuc_identity",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"percent_assembly_greater_20x": {
+			"$id": "#root/percent_assembly_greater_20x",
+			"title": "percent_assembly_greater_20x",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "100",
+			"pattern": "^.*$"
+		},
+		"query_coverage_against_reference": {
+			"$id": "#root/query_coverage_against_reference",
+			"title": "query_coverage_against_reference",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "100",
+			"pattern": "^.*$"
+		},
+		"percent_identity_against_reference": {
+			"$id": "#root/percent_identity_against_reference",
+			"title": "percent_identity_against_reference",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"seq_id": {
+			"$id": "#root/seq_id",
+			"title": "seq_id",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"n95": {
+			"$id": "#root/n95",
+			"title": "n95",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"l95": {
+			"$id": "#root/l95",
+			"title": "l95",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"cnt_scaffolds": {
+			"$id": "#root/cnt_scaffolds",
+			"title": "cnt_scaffolds",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"cnt_contigs": {
+			"$id": "#root/cnt_contigs",
+			"title": "cnt_contigs",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"contigs_momentum": {
+			"$id": "#root/contigs_momentum",
+			"title": "contigs_momentum",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"coverage_contigs": {
+			"$id": "#root/coverage_contigs",
+			"title": "coverage_contigs",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"reads_unaligned": {
+			"$id": "#root/reads_unaligned",
+			"title": "reads_unaligned",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"aligned_momentum": {
+			"$id": "#root/aligned_momentum",
+			"title": "aligned_momentum",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"overhang_momentum": {
+			"$id": "#root/overhang_momentum",
+			"title": "overhang_momentum",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"bases_percentile_aligned": {
+			"$id": "#root/bases_percentile_aligned",
+			"title": "bases_percentile_aligned",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"cnt_gaps": {
+			"$id": "#root/cnt_gaps",
+			"title": "cnt_gaps",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"size_gaps": {
+			"$id": "#root/size_gaps",
+			"title": "size_gaps",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"clonal_populations": {
+			"$id": "#root/clonal_populations",
+			"title": "clonal_populations",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"clonal_expanse": {
+			"$id": "#root/clonal_expanse",
+			"title": "clonal_expanse",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"phred_average": {
+			"$id": "#root/phred_average",
+			"title": "phred_average",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"count_major_variations": {
+			"$id": "#root/count_major_variations",
+			"title": "count_major_variations",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"indels_momentum": {
+			"$id": "#root/indels_momentum",
+			"title": "indels_momentum",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"mutation_momentum": {
+			"$id": "#root/mutation_momentum",
+			"title": "mutation_momentum",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"alignment_disbalance": {
+			"$id": "#root/alignment_disbalance",
+			"title": "alignment_disbalance",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"alignmnet_anisotropy": {
+			"$id": "#root/alignmnet_anisotropy",
+			"title": "alignmnet_anisotropy",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"rpkm": {
+			"$id": "#root/rpkm",
+			"title": "rpkm",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"fpkm": {
+			"$id": "#root/fpkm",
+			"title": "fpkm",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"coverage_homogeneity": {
+			"$id": "#root/coverage_homogeneity",
+			"title": "coverage_homogeneity",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"ambiguous_bases": {
+			"$id": "#root/ambiguous_bases",
+			"title": "ambiguous_bases",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "2697049",
+			"pattern": "^.*$"
+		},
+		"taxid_composition": {
+			"$id": "#root/taxid_composition",
+			"title": "taxid_composition",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"seq_composition": {
+			"$id": "#root/seq_composition",
+			"title": "seq_composition",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "Megahit v. V1.1.3",
+			"pattern": "^.*$"
+		},
+		"assembly_type": {
+			"$id": "#root/assembly_type",
+			"title": "assembly_type",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		},
+		"assembly_level": {
+			"$id": "#root/assembly_level",
+			"title": "assembly_level",
+			"description": "HIVE",
+			"type": "string",
+			"default": "-",
+			"examples": "-",
+			"pattern": "^.*$"
+		}
+	}
+}

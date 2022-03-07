@@ -28,7 +28,7 @@ import os
 from urllib.parse import urlparse
 import jsonref
 import jsonschema
-from jsonschema import validate
+from jsonschema import validate, ValidationError
 
 __version__ = "0.2.0"
 __status__ = "Production"
@@ -162,7 +162,7 @@ def validate_schema(options):
 
     if os.path.exists(options.schema):
         print("Local file supplied")
-        with open(options.schema, 'r', encoding='utf8') as json_schema:
+        with open(options.schema, 'r', encoding='utf-8-sig') as json_schema:
             schema = json.load(json_schema)
         print('schema worked')
     elif url_valid(options.schema) is True:
@@ -172,12 +172,12 @@ def validate_schema(options):
     for line in json_list:
         count += 1
         try:
-            print(count)
             validate(instance=line, schema=schema)
-        except jsonschema.exceptions.ValidationError as err:
-            print(err)
-            err = "Given JSON data is InValid"
-            return False, err
+            print(f'Item number {count} is VALID')
+        except ValidationError as err:
+            print(f'Line {count} failed. {err.message}')
+            # err = "Given JSON data is InValid"
+            # return False, err
 
 def list_2_schema(options):
     """Create Schema JSON
@@ -349,7 +349,7 @@ def sheet_2_json(file_path):
     elif extension == 'csv':
         delimiter=','
     sheet = []
-    with open(file_path, 'r', encoding='utf8') as file:
+    with open(file_path, 'r', encoding='utf-8-sig') as file:
         data = csv.reader(file, delimiter=delimiter)
         header = next(data)
         for row in data:

@@ -1,280 +1,335 @@
 {
-	"definitions": {
-	},
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://data.argos.org/schema/biosampleMeta.tsv",
-	"title": "biosampleMeta.tsv",
-	"type": "object",
-	"required": [
-		"organism_name",
-		"lineage",
-		"genome_assembly_id",
-		"fdaargos_id",
-		"bco_id",
-		"schema_version",
-		"biosample",
-		"srs_id",
-		"strain",
-		"sample_name",
-		"taxonomy_id",
-		"collected_by",
-		"collection_date",
-		"geo_loc_name",
-		"isolation_source",
-		"host"
-	],
-	"properties": {
-		"organism_name": {
-			"$id": "#root/organism_name",
-			"title": "organism_name",
-			"description": " ",
-			"type": "string",
-			"default": "-",
-			"examples": "Severe_acute_respiratory_syndrome_coronavirus_2",
-			"pattern": "^.*$"
-		},
-		"lineage": {
-			"$id": "#root/lineage",
-			"title": "lineage",
-			"description": "NCBI Taxonomy",
-			"type": "string",
-			"default": "-",
-			"examples": "isolate_Wuhan_Hu_1",
-			"pattern": "^.*$"
-		},
-		"genome_assembly_id": {
-			"$id": "#root/genome_assembly_id",
-			"title": "genome_assembly_id",
-			"description": "NCBI Assembly DB",
-			"type": "string",
-			"default": "-",
-			"examples": "GCA_009858895.3",
-			"pattern": "^.*$"
-		},
-		"fdaargos_id": {
-			"$id": "#root/fdaargos_id",
-			"title": "fdaargos_id",
-			"description": "data.argos.org",
-			"type": "string",
-			"default": "-",
-			"examples": "ARGID00001",
-			"pattern": "^.*$"
-		},
-		"bco_id": {
-			"$id": "#root/bco_id",
-			"title": "bco_id",
-			"description": "biocomputeobject.org",
-			"type": "string",
-			"default": "-",
-			"examples": "ARGOS_000012/1.0",
-			"pattern": "^.*$"
-		},
-		"hive_object_id": {
-			"$id": "#root/hive_object_id",
-			"title": "hive_object_id",
-			"description": "HIVE",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"schema_version": {
-			"$id": "#root/schema_version",
-			"title": "schema_version",
-			"description": "data.argos.org",
-			"type": "string",
-			"default": "-",
-			"examples": "v0.4",
-			"pattern": "^.*$"
-		},
-		"biosample": {
-			"$id": "#root/biosample",
-			"title": "biosample",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "SAMN13922059",
-			"pattern": "^.*$"
-		},
-		"srs_id": {
-			"$id": "#root/srs_id",
-			"title": "srs_id",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"strain": {
-			"$id": "#root/strain",
-			"title": "strain",
-			"description": "NCBI Taxonomy",
-			"type": "string",
-			"default": "-",
-			"examples": "isolate_Wuhan_Hu_1",
-			"pattern": "^.*$"
-		},
-		"sample_name": {
-			"$id": "#root/sample_name",
-			"title": "sample_name",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "human bronchoalveolar lavage fluid",
-			"pattern": "^.*$"
-		},
-		"taxonomy_id": {
-			"$id": "#root/taxonomy_id",
-			"title": "taxonomy_id",
-			"description": "",
-			"type": "string",
-			"default": "-",
-			"examples": "433733",
-			"pattern": "^.*$"
-		},
-		"isolate": {
-			"$id": "#root/isolate",
-			"title": "isolate",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"collected_by": {
-			"$id": "#root/collected_by",
-			"title": "collected_by",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "Fudan University",
-			"pattern": "^.*$"
-		},
-		"collection_date": {
-			"$id": "#root/collection_date",
-			"title": "collection_date",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "1/2/20",
-			"pattern": "^.*$"
-		},
-		"geo_loc_name": {
-			"$id": "#root/geo_loc_name",
-			"title": "geo_loc_name",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "China: Wuhan",
-			"pattern": "^.*$"
-		},
-		"isolation_source": {
-			"$id": "#root/isolation_source",
-			"title": "isolation_source",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "human lung metagenome",
-			"pattern": "^.*$"
-		},
-		"lat_lon": {
-			"$id": "#root/lat_lon",
-			"title": "lat_lon",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"culture_collection": {
-			"$id": "#root/culture_collection",
-			"title": "culture_collection",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host": {
-			"$id": "#root/host",
-			"title": "host",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "9606",
-			"pattern": "^.*$"
-		},
-		"host_age": {
-			"$id": "#root/host_age",
-			"title": "host_age",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_description": {
-			"$id": "#root/host_description",
-			"title": "host_description",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_disease": {
-			"$id": "#root/host_disease",
-			"title": "host_disease",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_disease_outcome": {
-			"$id": "#root/host_disease_outcome",
-			"title": "host_disease_outcome",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_disease_stage": {
-			"$id": "#root/host_disease_stage",
-			"title": "host_disease_stage",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_health_state": {
-			"$id": "#root/host_health_state",
-			"title": "host_health_state",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"host_sex": {
-			"$id": "#root/host_sex",
-			"title": "host_sex",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		},
-		"id_method": {
-			"$id": "#root/identification_method",
-			"title": "identification_method",
-			"description": "NCBI BioSample DB",
-			"type": "string",
-			"default": "-",
-			"examples": "-",
-			"pattern": "^.*$"
-		}
-	}
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://data.argos.org/schema/biosampleMeta.tsv",
+    "title": "biosampleMeta.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "genome_assembly_id",
+        "fdaargos_id",
+        "bco_id",
+        "schema_version",
+        "biosample",
+        "srs_id",
+        "strain",
+        "sample_name",
+        "taxonomy_id",
+        "collected_by",
+        "collection_date",
+        "geo_loc_name",
+        "isolation_source",
+        "host"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": " ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe_acute_respiratory_syndrome_coronavirus_2"
+            ],
+            "pattern": "^.*$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "NCBI Taxonomy",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate_Wuhan_Hu_1"
+            ],
+            "pattern": "^.*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_009858895.3"
+            ],
+            "pattern": "^.*$"
+        },
+        "fdaargos_id": {
+            "$id": "#root/fdaargos_id",
+            "title": "fdaargos_id",
+            "description": "data.argos.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGID00001"
+            ],
+            "pattern": "^.*$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "biocomputeobject.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000012/1.0"
+            ],
+            "pattern": "^.*$"
+        },
+        "hive_object_id": {
+            "$id": "#root/hive_object_id",
+            "title": "hive_object_id",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "data.argos.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.4"
+            ],
+            "pattern": "^.*$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN13922059"
+            ],
+            "pattern": "^.*$"
+        },
+        "srs_id": {
+            "$id": "#root/srs_id",
+            "title": "srs_id",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "NCBI Taxonomy",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate_Wuhan_Hu_1"
+            ],
+            "pattern": "^.*$"
+        },
+        "sample_name": {
+            "$id": "#root/sample_name",
+            "title": "sample_name",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "human bronchoalveolar lavage fluid"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "433733"
+            ],
+            "pattern": "^.*$"
+        },
+        "isolate": {
+            "$id": "#root/isolate",
+            "title": "isolate",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "collected_by": {
+            "$id": "#root/collected_by",
+            "title": "collected_by",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Fudan University"
+            ],
+            "pattern": "^.*$"
+        },
+        "collection_date": {
+            "$id": "#root/collection_date",
+            "title": "collection_date",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1/2/20"
+            ],
+            "pattern": "^.*$"
+        },
+        "geo_loc_name": {
+            "$id": "#root/geo_loc_name",
+            "title": "geo_loc_name",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "China: Wuhan"
+            ],
+            "pattern": "^.*$"
+        },
+        "isolation_source": {
+            "$id": "#root/isolation_source",
+            "title": "isolation_source",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "human lung metagenome"
+            ],
+            "pattern": "^.*$"
+        },
+        "lat_lon": {
+            "$id": "#root/lat_lon",
+            "title": "lat_lon",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "culture_collection": {
+            "$id": "#root/culture_collection",
+            "title": "culture_collection",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host": {
+            "$id": "#root/host",
+            "title": "host",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "9606"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_age": {
+            "$id": "#root/host_age",
+            "title": "host_age",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_description": {
+            "$id": "#root/host_description",
+            "title": "host_description",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_disease": {
+            "$id": "#root/host_disease",
+            "title": "host_disease",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_disease_outcome": {
+            "$id": "#root/host_disease_outcome",
+            "title": "host_disease_outcome",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_disease_stage": {
+            "$id": "#root/host_disease_stage",
+            "title": "host_disease_stage",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_health_state": {
+            "$id": "#root/host_health_state",
+            "title": "host_health_state",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "host_sex": {
+            "$id": "#root/host_sex",
+            "title": "host_sex",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "id_method": {
+            "$id": "#root/identification_method",
+            "title": "identification_method",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        }
+    }
 }

@@ -25,6 +25,10 @@ import json
 import argparse
 import sys
 import os
+from urllib.parse import urlparse
+import jsonref
+import jsonschema
+from jsonschema import validate
 
 __version__ = "0.2.0"
 __status__ = "Production"
@@ -59,7 +63,6 @@ def usr_args():
     parent_parser.add_argument('-o', '--output',
         help="Output file to create")
     parent_parser.add_argument('-s', '--schema',
-        # type = argparse.FileType('r'),
         help="Root json schema to validate against.")
     parent_parser.add_argument('-m', '--multi',
         action='store_true',
@@ -139,16 +142,42 @@ def validate_schema(options):
         file and/or an optional schema
 
     options.schema: str, optional
+        Root json schema to validate against.
 
     options.output: str, optional
 
     Returns
     -------
-        Prints help for each function
+        
 
 
     """
-    print('validate', type(options.input))
+
+    json_list = json.loads(sheet_2_json(options.input))
+    count = 0
+    print(len(json_list))
+    if options.schema is None:
+        print("ERROR! No schema was supplied. Exiting")
+        return
+
+    if os.path.exists(options.schema):
+        print("Local file supplied")
+        with open(options.schema, 'r', encoding='utf8') as json_schema:
+            schema = json.load(json_schema)
+        print('schema worked')
+    elif url_valid(options.schema) is True:
+        print("Remote file supplied")
+        schema = jsonref.load_uri(options.schema)
+
+    for line in json_list:
+        count += 1
+        try:
+            print(count)
+            validate(instance=line, schema=schema)
+        except jsonschema.exceptions.ValidationError as err:
+            print(err)
+            err = "Given JSON data is InValid"
+            return False, err
 
 def list_2_schema(options):
     """Create Schema JSON
@@ -164,9 +193,10 @@ def list_2_schema(options):
         Default is False. If true the input file is treated as a flat version
         of a multiple schemas. These will output to a list of JSON.
 
-    options.output: str, optional
+    options.directory: str, optional
         An output file. If this is supplied then the function output will be
-        written to this file.
+        written to this directory.
+
     definition: str
         a list of property definitions.
     Returns
@@ -181,7 +211,8 @@ def list_2_schema(options):
         def_data = csv.reader(definitions, delimiter="\t")
         for row in def_data:
             prop_defs[row[0].rstrip()] = row[4]
-    if options.multi is True:
+    print(options.directory)
+    if os.path.exists(options.directory):
         argos_schemas = {}
         with open(options.input, 'r', encoding='utf8') as file:
             data = csv.reader(file, delimiter="\t")
@@ -192,7 +223,6 @@ def list_2_schema(options):
                 try:
                     prop_defs[row[0].rstrip()]
                 except KeyError:
-                    print(row)
                     print(f"Error! {row[0]} at row {count} is not defined in {definition}. Exiting.")
                     return
                 if row[1] not in argos_schemas:
@@ -211,7 +241,7 @@ def list_2_schema(options):
                     'description': prop_defs[row[0].rstrip()],
                     'type': row[5],
                     'default': row[6],
-                    'examples': row[7],
+                    'examples': [row[7]],
                     'pattern': row[8]
                 }
                 if row[2] == 'required':
@@ -247,15 +277,15 @@ def list_2_schema(options):
 
         jsonf = json.dumps(argos_schema, indent=4)
 
-    if options.output:
-        print(options.output)
-        file_name = options.output
-        with open(file_name, 'w', encoding='utf-8') as file:
-            file.write('[')
-            file.write(jsonf)
-            file.write(']')
+    if os.path.exists(options.directory):
+        for item in argos_schemas:
+            output = options.directory+item.split('.')[0]+'.json'
+            print(output)
+            file_name = options.directory+item.split('.')[0]+'.json'
+            with open(file_name, 'w', encoding='utf-8') as file:
+                file.write(json.dumps(argos_schemas[item], indent=4))
     else:
-        print(jsonf)
+        print('jsonf')
 
 def validate_columns(options):
     """Validate Columns
@@ -300,6 +330,59 @@ def validate_columns(options):
         with open(options.output, 'w', encoding='utf8') as outfile:
             print(missing_keys, outfile)
             json.dump(missing_keys, outfile)
+
+def sheet_2_json(file_path):
+    """Convert Data to JSON
+
+    Parameters
+    ----------
+    file_path: str
+        An inpit file to convert to JSON. This should be a TSV/CSV.
+
+    Returns
+    -------
+        List of JSONs, one representing each row of the data file
+    """
+    extension = file_path.split('.')[-1]
+    if extension == 'tsv':
+        delimiter='\t'
+    elif extension == 'csv':
+        delimiter=','
+    sheet = []
+    with open(file_path, 'r', encoding='utf8') as file:
+        data = csv.reader(file, delimiter=delimiter)
+        header = next(data)
+        for row in data:
+            sheet.append(row)
+    data_list = []
+    for row in sheet[:10]:
+        line = {}
+        for count, item in enumerate(header):
+            cell = f'{item}: {row[count]},'
+            line[item] = row[count]
+        data_list.append(line)
+    json_list = json.dumps(data_list)
+    return json_list
+
+def url_valid(url):
+    """Validate a URL
+
+    Parameters
+    ----------
+    url: str
+        String as a URL to validate
+    Returns
+    -------
+    bool
+        A True or False value for the URL supplied
+
+    """
+
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except ValueError:
+        return False
 
 def main():
     """

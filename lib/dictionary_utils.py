@@ -10,7 +10,7 @@ positional arguments:
     validate            Validation options. Used to test a data sheet against
                         a JSON schema. If no schema is supplied will throw an
                         error.
-    tsv2json            Used to convert a TSV into a JSNO schema. If no mapping
+    tsv2json            Used to convert a TSV into a JSON schema. If no mapping
                         file is provided, performs default conversions.
     validate_columns    Validates columns in a list of files in a directory using
                         provided column headers
@@ -26,12 +26,11 @@ import argparse
 import sys
 import os
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __status__ = "Production"
 
 def usr_args():
     """User supplied arguments for functions
-
     """
 
     parser = argparse.ArgumentParser()
@@ -56,7 +55,7 @@ def usr_args():
     parent_parser.add_argument('-d', '--directory',
         help="Directory")
     parent_parser.add_argument('-c', '--column_index',
-        help="Column Index")  
+        help="Column Index")
     parent_parser.add_argument('-o', '--output',
         help="Output file to create")
     parent_parser.add_argument('-s', '--schema',
@@ -123,7 +122,7 @@ def list_functions(parser):
     for subparsers_action in subparsers_actions:
         # get all subparsers and print help
         for choice, subparser in subparsers_action.choices.items():
-            print("Function: '{}'".format(choice))
+            print(f"Function: '{choice}'")
             print(subparser.format_help())
     print(parser.format_help())
 
@@ -248,28 +247,30 @@ def tsv2json(options):
         print(jsonf)
 
 def validate_columns(options):
+    """Validate Columns
+    """
     columns = []
     missing_keys = {}
-    reader = open(options.input, "r")
+    reader = open(options.input, 'r', encoding='utf8')
     for i in reader:
         columns.append(i.split("\t")[int(options.column_index)])
-    with open("test2.json", "w") as outfile:
-            json.dump(columns, outfile)
+    with open('test2.json', 'w', encoding='utf8') as outfile:
+        json.dump(columns, outfile)
     for filename in os.listdir(options.directory):
         delimiter=""
-        if(filename.endswith(".tsv")):
+        if filename.endswith(".tsv"):
             delimiter="\t"
-        elif(filename.endswith(".csv")):
+        elif filename.endswith(".csv"):
             delimiter = ","
         else:
             continue
-        f = os.path.join(options.directory, filename)
-        if os.path.isfile(f):
-            data = open(f,"r")
+        file_path = os.path.join(options.directory, filename)
+        if os.path.isfile(file_path):
+            data = open(file_path, 'r', encoding='utf8')
             header=data.readline().split(delimiter)
             header = [x.strip("\n").strip("\"").lower() for x in header]
             missing_keys[filename] = [x for x in header if x not in columns]
-        with open(options.output, "w") as outfile:
+        with open(options.output, 'w', encoding='utf8') as outfile:
             json.dump(missing_keys, outfile)
 def main():
     """

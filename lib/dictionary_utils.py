@@ -81,6 +81,7 @@ def usr_args():
             "If no schema is supplied will throw an error")
     parser_validate.set_defaults(func=validate_schema)
 
+
     # Create a write_schema subcommand
     parser_tsv2json = subparsers.add_parser('write_schema',
         parents=[parent_parser],
@@ -148,8 +149,6 @@ def validate_schema(options):
 
     Returns
     -------
-        
-
 
     """
 

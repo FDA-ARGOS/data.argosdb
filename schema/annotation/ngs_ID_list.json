@@ -1,0 +1,95 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://data.argos.org/schema/ngs_ID_list.tsv",
+    "title": "ngs_ID_list.tsv",
+    "type": "object",
+    "required": [
+        "sra_run_id",
+        "organism_name",
+        "leaf_node",
+        "taxonomy_id",
+        "selection_notes",
+        "lab_name",
+        "processed"
+    ],
+    "properties": {
+        "sra_run_id": {
+            "$id": "#root/note",
+            "title": "SRA Run ID",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR17309642"
+            ],
+            "pattern": "^.*$"
+        },
+        "organism_name": {
+            "$id": "#root/note",
+            "title": "",
+            "description": " ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe acute respiratory syndrome coronavirus 3"
+            ],
+            "pattern": "^.*$"
+        },
+        "leaf_node": {
+            "$id": "#root/note",
+            "title": "Leaf Node",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "B.1.1.529/Omicron isolate"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^.*$"
+        },
+        "selection_notes": {
+            "$id": "#root/note",
+            "title": "Selection Notes",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "For omicron, we are selecting EPI_ISL_6913953. Sequencing was conducted on Illumina MiSeq, has high coverage, and a consistent quality score across all base calls above 30. Raw reads are available at https://www.ncbi.nlm.nih.gov/sra/SRX13486794, and a full description of the patient harboring the virus is supplied with the following publication https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciab1072/6494531?login=true. The patient was one of the first two known COVID-19 cases classified as omicron in Japan. To put the collection date of 28 November 2021 in perspective, the first known omicron sample was collected on 8 November 2021. Raw reads from South Africa are available, but the average phred quality score is much lower for those samples."
+            ],
+            "pattern": "^.*$"
+        },
+        "lab_name": {
+            "$id": "#root/note",
+            "title": "Lab Name",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Pond Lab"
+            ],
+            "pattern": "^.*$"
+        },
+        "processed": {
+            "$id": "#root/processed",
+            "title": "processed",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "No"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

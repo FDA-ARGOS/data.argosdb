@@ -1,0 +1,443 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://data.argos.org/schema/ngsQC.tsv",
+    "title": "ngsQC.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "genome_assembly_id",
+        "fdaargos_id",
+        "bco_id",
+        "schema_version",
+        "file_name",
+        "avg_file_quality",
+        "min_read_length",
+        "pos_outlier_count",
+        "num_reads",
+        "avg_read_length",
+        "gc_content",
+        "strategy"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": " ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe_acute_respiratory_syndrome_coronavirus_2"
+            ],
+            "pattern": "^.*$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "NCBI Taxonomy",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate_Wuhan_Hu_1"
+            ],
+            "pattern": "^.*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_009858895.3"
+            ],
+            "pattern": "^.*$"
+        },
+        "fdaargos_id": {
+            "$id": "#root/fdaargos_id",
+            "title": "fdaargos_id",
+            "description": "data.argos.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGID00001"
+            ],
+            "pattern": "^.*$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "biocomputeobject.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000012/1.0"
+            ],
+            "pattern": "^.*$"
+        },
+        "hive_object_id": {
+            "$id": "#root/hive_object_id",
+            "title": "hive_object_id",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "data.argos.org",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.4"
+            ],
+            "pattern": "^.*$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "NCBI Taxonomy",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMEA7427912"
+            ],
+            "pattern": "^.*$"
+        },
+        "file_name": {
+            "$id": "#root/file_name",
+            "title": "file_name",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381_1.fastq"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_file_quality": {
+            "$id": "#root/avg_file_quality",
+            "title": "avg_file_quality",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.5807"
+            ],
+            "pattern": "^.*$"
+        },
+        "min_read_length": {
+            "$id": "#root/min_read_length",
+            "title": "min_read_length",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1"
+            ],
+            "pattern": "^.*$"
+        },
+        "pos_outlier_count": {
+            "$id": "#root/pos_outlier_count",
+            "title": "pos_outlier_count",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_reads": {
+            "$id": "#root/num_reads",
+            "title": "num_reads",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "14347779"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_read_length": {
+            "$id": "#root/avg_read_length",
+            "title": "avg_read_length",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "138.6775"
+            ],
+            "pattern": "^.*$"
+        },
+        "max_read_length": {
+            "$id": "#root/max_read_length",
+            "title": "max_read_length",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "151"
+            ],
+            "pattern": "^.*$"
+        },
+        "gc_content": {
+            "$id": "#root/gc_content",
+            "title": "gc_content",
+            "description": "HIVE;Calculated from SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "51.4"
+            ],
+            "pattern": "^.*$"
+        },
+        "strategy": {
+            "$id": "#root/strategy",
+            "title": "strategy",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "RNA-Seq"
+            ],
+            "pattern": "^.*$"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381"
+            ],
+            "pattern": "^.*$"
+        },
+        "wgs_accession": {
+            "$id": "#root/wgs_accession",
+            "title": "wgs_accession",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "level": {
+            "$id": "#root/level",
+            "title": "level",
+            "description": "NCBI SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "instrument": {
+            "$id": "#root/instrument",
+            "title": "instrument",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Illumina MiniSeq"
+            ],
+            "pattern": "^.*$"
+        },
+        "id_method": {
+            "$id": "#root/id_method",
+            "title": "id_method",
+            "description": "NCBI BioSample DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "codon_table": {
+            "$id": "#root/codon_table",
+            "title": "codon_table",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_coding": {
+            "$id": "#root/percent_coding",
+            "title": "percent_coding",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_not_coding": {
+            "$id": "#root/percent_not_coding",
+            "title": "percent_not_coding",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16"
+            ],
+            "pattern": "^.*$"
+        },
+        "cumulative_percent_reads": {
+            "$id": "#root/cumulative_percent_reads",
+            "title": "cumulative_percent_reads",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "14332293|9257|1534|1197|545|721|530|243|233|254|229|169|113|130|52|39|43|61|40|54|33|30|22|26|43|26|10|32|11|19|3|1|13934971"
+            ],
+            "pattern": "^.*$"
+        },
+        "density_n_per_read": {
+            "$id": "#root/density_n_per_read",
+            "title": "density_n_per_read",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|33|100"
+            ],
+            "pattern": "^.*$"
+        },
+        "complexity_percent": {
+            "$id": "#root/complexity_percent",
+            "title": "complexity_percent",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "94"
+            ],
+            "pattern": "^.*$"
+        },
+        "non_complex_percent": {
+            "$id": "#root/non_complex_percent",
+            "title": "non_complex_percent",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "6"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_quality_a": {
+            "$id": "#root/avg_quality_a",
+            "title": "avg_quality_a",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "32.095"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_quality_t": {
+            "$id": "#root/avg_quality_t",
+            "title": "avg_quality_t",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.988"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_quality_g": {
+            "$id": "#root/avg_quality_g",
+            "title": "avg_quality_g",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.911"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_quality_c": {
+            "$id": "#root/avg_quality_c",
+            "title": "avg_quality_c",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "34.093"
+            ],
+            "pattern": "^.*$"
+        },
+        "count_a": {
+            "$id": "#root/count_a",
+            "title": "count_a",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "442689195"
+            ],
+            "pattern": "^.*$"
+        },
+        "count_c": {
+            "$id": "#root/count_c",
+            "title": "count_c",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "584757437"
+            ],
+            "pattern": "^.*$"
+        },
+        "count_g": {
+            "$id": "#root/count_g",
+            "title": "count_g",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "437991224"
+            ],
+            "pattern": "^.*$"
+        },
+        "count_t": {
+            "$id": "#root/count_t",
+            "title": "count_t",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "524276679"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

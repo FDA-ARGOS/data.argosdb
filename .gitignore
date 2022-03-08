@@ -1,4 +1,6 @@
-.DSStore
-**/.DSStore
+*.DSStore
+.vscode
+.python-version
+lib/__pycache__/
 env
 home

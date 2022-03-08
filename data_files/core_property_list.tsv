@@ -1,0 +1,149 @@
+Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	pattern	description
+organism_name	siteQC.tsv	required	#root/organism_name	organism_name	string	-	Salmonella_enterica	^.*$	
+lineage	siteQC.tsv	required	#root/lineage	lineage	string	-	strain_LT2	^.*$	
+genome_assembly_id	siteQC.tsv	optional	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_001558355.2	^.*$	
+fdaargos_id	siteQC.tsv	optional	#root/fdaargos_id	fdaargos_id	string	-	ARGID00006	^.*$	
+bco_id	siteQC.tsv	optional	#root/bco_id	bco_id	string	-	ARGOS_000012/1.0	^.*$	
+schema_version	siteQC.tsv	required	#root/schema_version	schema_version	string	-	v0.4	^.*$	
+analysis_platform	siteQC.tsv	optional	#root/analysis_platform	analysis_platform		-	HIVE Heptagon	^.*$	
+analysis_platform_object_id	siteQC.tsv	optional	#root/analysis_platform_object_id	hive_object_id	string	-	39658	^.*$	
+genomic_identifier	siteQC.tsv	required	#root/genomic_identifier	genomic_identifier	string	-	GCA_001558355.2	^.*$	
+num_SNPs	siteQC.tsv	optional	#root/num_SNPs	num_SNPs	string	-	357777	^.*$	
+num_SNPs_threshold	siteQC.tsv	optional	#root/num_SNPs_threshold		string	-	50	^.*$	
+num_pos_selected_sites	siteQC.tsv	optional	#root/num_pos_selected_sites		string	-	197.45	^.*$	
+num_pos_selected_threshold	siteQC.tsv	optional	#root/num_pos_selected_threshold		string	-	300	^.*$	
+num_neg_selected_sites	siteQC.tsv	optional	#root/num_neg_selected_sites		string	-	53	^.*$	
+num_neg_selected_threshold	siteQC.tsv	optional	#root/num_neg_selected_threshold		string	-	-	^.*$	
+num_nuc_call	siteQC.tsv	optional	#root/num_nuc_call	num_nuc_call	string	-	-	^.*$	
+percent_nuc_call	siteQC.tsv	optional	#root/percent_nuc_call	percent_nuc_call	string	-	-	^.*$	
+genomic_coordinate_start	siteQC.tsv	optional	#root/genomic_coordinate_start	genomic_coordinate_start	string	-	-	^.*$	
+genomic_coordinates_end	siteQC.tsv	optional	#root/genomic_coordinates_end	genomic_coordinates_end	string	-	-	^.*$	
+protein_coordinates_start	siteQC.tsv	optional	#root/protein_coordinates_start	protein_coordinates_start	string	-	-	^.*$	
+protein_coordinates_end	siteQC.tsv	optional	#root/protein_coordinates_end	protein_coordinates_end	string	-	-	^.*$	
+source	siteQC.tsv	optional	#root/source	source	string	-	-	^.*$	
+seq_feature_tag	siteQC.tsv	optional	#root/seq_feature_tag	seq_feature_tag	string	-	-	^.*$	
+seq_feature_value	siteQC.tsv	optional	#root/seq_feature_value	seq_feature_value	string	-	-	^.*$	
+source_database	siteQC.tsv	optional	#root/source_database	source_database	string	-	-	^.*$	
+organism_name	assemblyQC.tsv	required	#root/organism_name	organism_name	string	-	isolate_Wuhan_Hu_1	^.*$	
+lineage	assemblyQC.tsv	required	#root/lineage	lineage	string	-	GCA_009858895.3	^.*$	
+genome_assembly_id	assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	ARGID00001	^.*$	
+fdaargos_id	assemblyQC.tsv	required	#root/fdaargos_id	fdaargos_id	string	-	ARGOS_000012/1.0	^.*$	
+bco_id	assemblyQC.tsv	required	#root/bco_id	bco_id	string	-	-	^.*$	
+hive_object_id	assemblyQC.tsv	optional	#root/hive_object_id	hive_object_id	string	-	v0.4	^.*$	
+schema_version	assemblyQC.tsv	required	#root/schema_version	schema_version	string	-	-	^.*$	
+strain	assemblyQC.tsv	optional	#root/strain	strain	string	-	SAMN13922059	^.*$	
+biosample	assemblyQC.tsv	required	#root/biosample	biosample	string	-	12	^.*$	
+num_chromosomes	assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	2697049	^.*$	
+taxonomy_id	assemblyQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	-	^.*$	
+id_method	assemblyQC.tsv	optional	#root/id_method	id_method	string	-	human bronchoalveolar lavage fluid	^.*$	
+sample_type	assemblyQC.tsv	optional	#root/sample_type	sample_type	string	-	homo sapiens	^.*$	
+host	assemblyQC.tsv	optional	#root/host	host	string	-	-	^.*$	
+number_of_n_or_x	assemblyQC.tsv	optional	#root/number_of_n_or_x	number_of_n_or_x	string	-	"Shanghai Public Health Clinical Center & School of Public Health, Fudan University"	^.*$	
+isolation_provider_name	assemblyQC.tsv	required	#root/isolation_provider_name	isolation_provider_name	string	-	-	^.*$	
+isolation_acquisition_id	assemblyQC.tsv	optional	#root/isolation_acquisition_id	isolation_acquisition_id	string	-	-	^.*$	
+contact_name	assemblyQC.tsv	optional	#root/contact_name	contact_name	string	-	Illumina	^.*$	
+sequencing_method	assemblyQC.tsv	optional	#root/sequencing_method	sequencing_method	string	-	-	^.*$	
+n50	assemblyQC.tsv	optional	#root/n50	n50	string	-	-	^.*$	
+l50	assemblyQC.tsv	optional	#root/l50	l50	string	-	-	^.*$	
+gc_content	assemblyQC.tsv	optional	#root/gc_content	gc_content	string	-	"29,903"	^.*$	
+length	assemblyQC.tsv	optional	#root/length	length	string	-	-	^.*$	
+avg_nuc_identity	assemblyQC.tsv	optional	#root/avg_nuc_identity	avg_nuc_identity	string	-	-	^.*$	
+percent_assembly_greater_20x	assemblyQC.tsv	optional	#root/percent_assembly_greater_20x	percent_assembly_greater_20x	string	-	100	^.*$	
+query_coverage_against_reference	assemblyQC.tsv	optional	#root/query_coverage_against_reference	query_coverage_against_reference	string	-	100	^.*$	
+percent_identity_against_reference	assemblyQC.tsv	optional	#root/percent_identity_against_reference	percent_identity_against_reference	string	-	-	^.*$	
+seq_id	assemblyQC.tsv	optional	#root/seq_id	seq_id	string	-	-	^.*$	
+n95	assemblyQC.tsv	optional	#root/n95	n95	string	-	-	^.*$	
+l95	assemblyQC.tsv	optional	#root/l95	l95	string	-	-	^.*$	
+cnt_scaffolds	assemblyQC.tsv	optional	#root/cnt_scaffolds	cnt_scaffolds	string	-	-	^.*$	
+cnt_contigs	assemblyQC.tsv	optional	#root/cnt_contigs	cnt_contigs	string	-	-	^.*$	
+contigs_momentum	assemblyQC.tsv	optional	#root/contigs_momentum	contigs_momentum	string	-	-	^.*$	
+coverage_contigs	assemblyQC.tsv	optional	#root/coverage_contigs	coverage_contigs	string	-	-	^.*$	
+reads_unaligned	assemblyQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	-	^.*$	
+aligned_momentum	assemblyQC.tsv	optional	#root/aligned_momentum	aligned_momentum	string	-	-	^.*$	
+overhang_momentum	assemblyQC.tsv	optional	#root/overhang_momentum	overhang_momentum	string	-	-	^.*$	
+bases_percentile_aligned	assemblyQC.tsv	optional	#root/bases_percentile_aligned	bases_percentile_aligned	string	-	-	^.*$	
+cnt_gaps	assemblyQC.tsv	optional	#root/cnt_gaps	cnt_gaps	string	-	-	^.*$	
+size_gaps	assemblyQC.tsv	optional	#root/size_gaps	size_gaps	string	-	-	^.*$	
+clonal_populations	assemblyQC.tsv	optional	#root/clonal_populations	clonal_populations	string	-	-	^.*$	
+clonal_expanse	assemblyQC.tsv	optional	#root/clonal_expanse	clonal_expanse	string	-	-	^.*$	
+phred_average	assemblyQC.tsv	optional	#root/phred_average	phred_average	string	-	-	^.*$	
+count_major_variations	assemblyQC.tsv	optional	#root/count_major_variations	count_major_variations	string	-	-	^.*$	
+indels_momentum	assemblyQC.tsv	optional	#root/indels_momentum	indels_momentum	string	-	-	^.*$	
+mutation_momentum	assemblyQC.tsv	optional	#root/mutation_momentum	mutation_momentum	string	-	-	^.*$	
+alignment_disbalance	assemblyQC.tsv	optional	#root/alignment_disbalance	alignment_disbalance	string	-	-	^.*$	
+alignmnet_anisotropy	assemblyQC.tsv	optional	#root/alignmnet_anisotropy	alignmnet_anisotropy	string	-	-	^.*$	
+rpkm	assemblyQC.tsv	optional	#root/rpkm	rpkm	string	-	-	^.*$	
+fpkm	assemblyQC.tsv	optional	#root/fpkm	fpkm	string	-	-	^.*$	
+coverage_homogeneity	assemblyQC.tsv	optional	#root/coverage_homogeneity	coverage_homogeneity	string	-	-	^.*$	
+ambiguous_bases	assemblyQC.tsv	optional	#root/ambiguous_bases	ambiguous_bases	string	-	2697049	^.*$	
+taxid_composition	assemblyQC.tsv	optional	#root/taxid_composition	taxid_composition	string	-	-	^.*$	
+seq_composition	assemblyQC.tsv	optional	#root/seq_composition	seq_composition	string	-	Megahit v. V1.1.3	^.*$	
+assembly_type	assemblyQC.tsv	optional	#root/assembly_type	assembly_type	string	-	-	^.*$	
+assembly_level	assemblyQC.tsv	optional	#root/assembly_level	assembly_level	string	-	-	^.*$	
+organism_name	biosampleMeta.tsv	required	#root/organism_name	organism_name	string	-	Severe_acute_respiratory_syndrome_coronavirus_2	^.*$	
+lineage	biosampleMeta.tsv	required	#root/lineage	lineage	string	-	isolate_Wuhan_Hu_1	^.*$	
+genome_assembly_id	biosampleMeta.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_009858895.3	^.*$	
+fdaargos_id	biosampleMeta.tsv	required	#root/fdaargos_id	fdaargos_id	string	-	ARGID00001	^.*$	
+bco_id	biosampleMeta.tsv	required	#root/bco_id	bco_id	string	-	ARGOS_000012/1.0	^.*$	
+hive_object_id	biosampleMeta.tsv	optional	#root/hive_object_id	hive_object_id	string	-	-	^.*$	
+schema_version	biosampleMeta.tsv	required	#root/schema_version	schema_version	string	-	v0.4	^.*$	
+biosample	biosampleMeta.tsv	required	#root/biosample	biosample	string	-	SAMN13922059	^.*$	
+srs_id	biosampleMeta.tsv	required	#root/srs_id	srs_id	string	-	-	^.*$	
+strain	biosampleMeta.tsv	required	#root/strain	strain	string	-	isolate_Wuhan_Hu_1	^.*$	
+sample_name	biosampleMeta.tsv	required	#root/sample_name	sample_name	string	-	human bronchoalveolar lavage fluid	^.*$	
+taxonomy_id	biosampleMeta.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	433733	^.*$	
+isolate	biosampleMeta.tsv	optional	#root/isolate	isolate	string	-	-	^.*$	
+collected_by	biosampleMeta.tsv	required	#root/collected_by	collected_by	string	-	Fudan University	^.*$	
+collection_date	biosampleMeta.tsv	required	#root/collection_date	collection_date	string	-	1/2/20	^.*$	
+geo_loc_name	biosampleMeta.tsv	required	#root/geo_loc_name	geo_loc_name	string	-	China: Wuhan	^.*$	
+isolation_source	biosampleMeta.tsv	required	#root/isolation_source	isolation_source	string	-	human lung metagenome	^.*$	
+lat_lon	biosampleMeta.tsv	optional	#root/lat_lon	lat_lon	string	-	-	^.*$	
+culture_collection	biosampleMeta.tsv	optional	#root/culture_collection	culture_collection	string	-	-	^.*$	
+host	biosampleMeta.tsv	required	#root/host	host	string	-	9606	^.*$	
+host_age	biosampleMeta.tsv	optional	#root/host_age	host_age	string	-	-	^.*$	
+host_description	biosampleMeta.tsv	optional	#root/host_description	host_description	string	-	-	^.*$	
+host_disease	biosampleMeta.tsv	optional	#root/host_disease	host_disease	string	-	-	^.*$	
+host_disease_outcome	biosampleMeta.tsv	optional	#root/host_disease_outcome	host_disease_outcome	string	-	-	^.*$	
+host_disease_stage	biosampleMeta.tsv	optional	#root/host_disease_stage	host_disease_stage	string	-	-	^.*$	
+host_health_state	biosampleMeta.tsv	optional	#root/host_health_state	host_health_state	string	-	-	^.*$	
+host_sex	biosampleMeta.tsv	optional	#root/host_sex	host_sex	string	-	-	^.*$	
+id_method	biosampleMeta.tsv	optional	#root/identification_method	identification_method	string	-	-	^.*$	
+organism_name	ngsQC.tsv	required	#root/organism_name	organism_name	string	-	Severe_acute_respiratory_syndrome_coronavirus_2	^.*$	
+lineage	ngsQC.tsv	required	#root/lineage	lineage	string	-	isolate_Wuhan_Hu_1	^.*$	
+genome_assembly_id	ngsQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_009858895.3	^.*$	
+fdaargos_id	ngsQC.tsv	required	#root/fdaargos_id	fdaargos_id	string	-	ARGID00001	^.*$	
+bco_id	ngsQC.tsv	required	#root/bco_id	bco_id	string	-	ARGOS_000012/1.0	^.*$	
+hive_object_id	ngsQC.tsv	optional	#root/hive_object_id	hive_object_id	string	-	-	^.*$	
+schema_version	ngsQC.tsv	required	#root/schema_version	schema_version	string	-	v0.4	^.*$	
+strain	ngsQC.tsv	optional	#root/strain	strain	string	-	-	^.*$	
+biosample	ngsQC.tsv	optional	#root/biosample	biosample	string	-	-	^.*$	
+file_name	ngsQC.tsv	required	#root/file_name	file_name	string	-	SRR10971381_1.fastq	^.*$	
+avg_file_quality	ngsQC.tsv	required	#root/avg_file_quality	avg_file_quality	string	-	33.5807	^.*$	
+min_read_length	ngsQC.tsv	required	#root/min_read_length	min_read_length	string	-	1	^.*$	
+pos_outlier_count	ngsQC.tsv	required	#root/pos_outlier_count	pos_outlier_count	string	-	0	^.*$	
+num_reads	ngsQC.tsv	required	#root/num_reads	num_reads	string	-	14347779	^.*$	
+avg_read_length	ngsQC.tsv	required	#root/avg_read_length	avg_read_length	string	-	138.6775	^.*$	
+max_read_length	ngsQC.tsv	optional	#root/max_read_length	max_read_length	string	-	151	^.*$	
+gc_content	ngsQC.tsv	required	#root/gc_content	gc_content	string	-	51.4	^.*$	
+strategy	ngsQC.tsv	required	#root/strategy	strategy	string	-	RNA-Seq	^.*$	
+sra_run_id	ngsQC.tsv	optional	#root/sra_run_id	sra_run_id	string	-	SRR10971381	^.*$	
+wgs_accession	ngsQC.tsv	optional	#root/wgs_accession	wgs_accession	string	-	-	^.*$	
+biosample	ngsQC.tsv	optional	#root/biosample	biosample	string	-	SAMEA7427912	^.*$	
+level	ngsQC.tsv	optional	#root/level	level	string	-	-	^.*$	
+instrument	ngsQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiniSeq	^.*$	
+id_method	ngsQC.tsv	optional	#root/id_method	id_method	string	-	-	^.*$	
+codon_table	ngsQC.tsv	optional	#root/codon_table	codon_table	string	-	"Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear"	^.*$	
+percent_coding	ngsQC.tsv	optional	#root/percent_coding	percent_coding	string	-	0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84	^.*$	
+percent_not_coding	ngsQC.tsv	optional	#root/percent_not_coding	percent_not_coding	string	-	0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16	^.*$	
+cumulative_percent_reads	ngsQC.tsv	optional	#root/cumulative_percent_reads	cumulative_percent_reads	string	-	14332293|9257|1534|1197|545|721|530|243|233|254|229|169|113|130|52|39|43|61|40|54|33|30|22|26|43|26|10|32|11|19|3|1|13934971	^.*$	
+density_n_per_read	ngsQC.tsv	optional	#root/density_n_per_read	density_n_per_read	string	-	0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|33|100	^.*$	
+complexity_percent	ngsQC.tsv	optional	#root/complexity_percent	complexity_percent	string	-	94	^.*$	
+non_complex_percent	ngsQC.tsv	optional	#root/non_complex_percent	non_complex_percent	string	-	6	^.*$	
+avg_quality_a	ngsQC.tsv	optional	#root/avg_quality_a	avg_quality_a	string	-	32.095	^.*$	
+avg_quality_t	ngsQC.tsv	optional	#root/avg_quality_t	avg_quality_t	string	-	33.988	^.*$	
+avg_quality_g	ngsQC.tsv	optional	#root/avg_quality_g	avg_quality_g	string	-	33.911	^.*$	
+avg_quality_c	ngsQC.tsv	optional	#root/avg_quality_c	avg_quality_c	string	-	34.093	^.*$	
+count_a	ngsQC.tsv	optional	#root/count_a	count_a	string	-	442689195	^.*$	
+count_c	ngsQC.tsv	optional	#root/count_c	count_c	string	-	584757437	^.*$	
+count_g	ngsQC.tsv	optional	#root/count_g	count_g	string	-	437991224	^.*$	
+count_t	ngsQC.tsv	optional	#root/count_t	count_t	string	-	524276679	^.*$	

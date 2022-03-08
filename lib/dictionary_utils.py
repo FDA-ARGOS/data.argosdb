@@ -27,7 +27,6 @@ import sys
 import os
 from urllib.parse import urlparse
 import jsonref
-import jsonschema
 from jsonschema import validate, ValidationError
 
 __version__ = "0.2.0"
@@ -151,6 +150,8 @@ def validate_schema(options):
     -------
 
     """
+    error_flags = 0
+    error_strings = ''
 
     json_list = json.loads(sheet_2_json(options.input))
     count = 0
@@ -163,21 +164,24 @@ def validate_schema(options):
         print("Local file supplied")
         with open(options.schema, 'r', encoding='utf-8-sig') as json_schema:
             schema = json.load(json_schema)
-        print('schema worked')
     elif url_valid(options.schema) is True:
         print("Remote file supplied")
         schema = jsonref.load_uri(options.schema)
+    else:
+        print("Could not load schema. Exiting")
+        return
 
     for line in json_list:
         count += 1
         try:
             validate(instance=line, schema=schema)
-            print(f'Item number {count} is VALID')
+            # print(f'Item number {count} is VALID')
         except ValidationError as err:
             print(f'Line {count} failed. {err.message}')
+            error_flags += 1
             # err = "Given JSON data is InValid"
             # return False, err
-
+    print(error_flags)
 def list_2_schema(options):
     """Create Schema JSON
 
@@ -222,7 +226,8 @@ def list_2_schema(options):
                 try:
                     prop_defs[row[0].rstrip()]
                 except KeyError:
-                    print(f"Error! {row[0]} at row {count} is not defined in {definition}. Exiting.")
+                    print(f"Error! {row[0]} at row {count} is not defined in \
+                        {definition}. Exiting.")
                     return
                 if row[1] not in argos_schemas:
                     argos_schemas[row[1]] = {
@@ -354,10 +359,9 @@ def sheet_2_json(file_path):
         for row in data:
             sheet.append(row)
     data_list = []
-    for row in sheet[:10]:
+    for row in sheet:
         line = {}
         for count, item in enumerate(header):
-            cell = f'{item}: {row[count]},'
             line[item] = row[count]
         data_list.append(line)
     json_list = json.dumps(data_list)

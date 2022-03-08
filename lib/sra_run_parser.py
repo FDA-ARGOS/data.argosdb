@@ -143,7 +143,7 @@ def parse_xml( xml_file, samples):
         except ValueError:
             pass
         # print(base_total, base_a, base_c, base_g, base_t, base_n, gc_content, lineage)
-        samples[sra_run_id] = [sra_experiment_id, sra_project_id, \
+        samples[sra_experiment_id] = [sra_run_id, sra_project_id, \
             sra_biosample_id, num_of_bases, file_size, published, source, \
             strategy, layout,library_name, selection, instrument, file_type, \
             unidentified_reads, identified_reads, tax_id, lineage, \
@@ -192,14 +192,11 @@ def main():
     """Main Function
     """
     samples = {}
-    header = ['Run (sra_run_id)', 'Experiment (sra_experiment_id)', 'Project \
-        (sra_project_id)', 'Biosample (sra_biosample_id)', \
-        '# of bases (num_of_bases)', 'Size (file_size)', 'Published', \
-        'Source (source)', 'Strategy (strategy)', 'Layout (layout)', \
-        'Library Name', 'Library Selection', 'Instrument (instrument)', \
-        'File type (file_type)', 'Unidentified reads (unidentified_reads)', \
-        'Identified reads (identified_reads)', 'Organism of interest', \
-        'Lineage for organism of interest', '% organism of interest', 'G/C Content']
+    header = ['sra_experiment_id', 'sra_run_id', 'sra_project_id', \
+        'sra_biosample_id', 'num_of_bases', 'file_size', 'published', \
+        'source', 'strategy', 'layout', 'library_name', 'selection', \
+        'instrument', 'file_type', 'reads_unaligned', 'identified_reads',\
+        'taxonomy_id', 'lineage', 'percent_identified', 'gc_content']
     args = usr_args()
     for item in os.listdir(args.directory):
         xml_file = os.path.join(args.directory, item)

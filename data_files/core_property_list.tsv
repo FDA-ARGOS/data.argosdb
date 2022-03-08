@@ -25,32 +25,32 @@ seq_feature_tag	siteQC.tsv	optional	#root/seq_feature_tag	seq_feature_tag	string
 seq_feature_value	siteQC.tsv	optional	#root/seq_feature_value	seq_feature_value	string	-	-	^.*$	
 source_database	siteQC.tsv	optional	#root/source_database	source_database	string	-	-	^.*$	
 organism_name	assemblyQC.tsv	required	#root/organism_name	organism_name	string	-	isolate_Wuhan_Hu_1	^.*$	
-lineage	assemblyQC.tsv	required	#root/lineage	lineage	string	-	GCA_009858895.3	^.*$	
-genome_assembly_id	assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	ARGID00001	^.*$	
-fdaargos_id	assemblyQC.tsv	required	#root/fdaargos_id	fdaargos_id	string	-	ARGOS_000012/1.0	^.*$	
-bco_id	assemblyQC.tsv	required	#root/bco_id	bco_id	string	-	-	^.*$	
-hive_object_id	assemblyQC.tsv	optional	#root/hive_object_id	hive_object_id	string	-	v0.4	^.*$	
-schema_version	assemblyQC.tsv	required	#root/schema_version	schema_version	string	-	-	^.*$	
-strain	assemblyQC.tsv	optional	#root/strain	strain	string	-	SAMN13922059	^.*$	
-biosample	assemblyQC.tsv	required	#root/biosample	biosample	string	-	12	^.*$	
-num_chromosomes	assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	2697049	^.*$	
-taxonomy_id	assemblyQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	-	^.*$	
-id_method	assemblyQC.tsv	optional	#root/id_method	id_method	string	-	human bronchoalveolar lavage fluid	^.*$	
-sample_type	assemblyQC.tsv	optional	#root/sample_type	sample_type	string	-	homo sapiens	^.*$	
-host	assemblyQC.tsv	optional	#root/host	host	string	-	-	^.*$	
-number_of_n_or_x	assemblyQC.tsv	optional	#root/number_of_n_or_x	number_of_n_or_x	string	-	"Shanghai Public Health Clinical Center & School of Public Health, Fudan University"	^.*$	
-isolation_provider_name	assemblyQC.tsv	required	#root/isolation_provider_name	isolation_provider_name	string	-	-	^.*$	
+lineage	assemblyQC.tsv	required	#root/lineage	lineage	string	-	-	^.*$	
+genome_assembly_id	assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_009858895.3	^.*$	
+fdaargos_id	assemblyQC.tsv	required	#root/fdaargos_id	fdaargos_id	string	-	ARGID00001	^.*$	
+bco_id	assemblyQC.tsv	required	#root/bco_id	bco_id	string	-	ARGOS_000012/1.0	^.*$	
+hive_object_id	assemblyQC.tsv	optional	#root/hive_object_id	hive_object_id	string	-	-	^.*$	
+schema_version	assemblyQC.tsv	required	#root/schema_version	schema_version	string	-	v0.4	^.*$	
+strain	assemblyQC.tsv	optional	#root/strain	strain	string	-	-	^.*$	
+biosample	assemblyQC.tsv	required	#root/biosample	biosample	string	-	SAMN13922059	^.*$	
+num_chromosomes	assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	12	^.*$	
+taxonomy_id	assemblyQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	2697049	^.*$	
+id_method	assemblyQC.tsv	optional	#root/id_method	id_method	string	-	-	^.*$	
+sample_type	assemblyQC.tsv	optional	#root/sample_type	sample_type	string	-	human bronchoalveolar lavage fluid	^.*$	
+host	assemblyQC.tsv	optional	#root/host	host	string	-	homo sapiens	^.*$	
+number_of_n_or_x	assemblyQC.tsv	optional	#root/number_of_n_or_x	number_of_n_or_x	string	-	-	^.*$	
+isolation_provider_name	assemblyQC.tsv	required	#root/isolation_provider_name	isolation_provider_name	string	-	"Shanghai Public Health Clinical Center & School of Public Health, Fudan University"	^.*$	
 isolation_acquisition_id	assemblyQC.tsv	optional	#root/isolation_acquisition_id	isolation_acquisition_id	string	-	-	^.*$	
-contact_name	assemblyQC.tsv	optional	#root/contact_name	contact_name	string	-	Illumina	^.*$	
-sequencing_method	assemblyQC.tsv	optional	#root/sequencing_method	sequencing_method	string	-	-	^.*$	
+contact_name	assemblyQC.tsv	optional	#root/contact_name	contact_name	string	-	-	^.*$	
+sequencing_method	assemblyQC.tsv	optional	#root/sequencing_method	sequencing_method	string	-	Illumina	^.*$	
 n50	assemblyQC.tsv	optional	#root/n50	n50	string	-	-	^.*$	
 l50	assemblyQC.tsv	optional	#root/l50	l50	string	-	-	^.*$	
-gc_content	assemblyQC.tsv	optional	#root/gc_content	gc_content	string	-	"29,903"	^.*$	
-length	assemblyQC.tsv	optional	#root/length	length	string	-	-	^.*$	
+gc_content	assemblyQC.tsv	optional	#root/gc_content	gc_content	string	-	-	^.*$	
+length	assemblyQC.tsv	optional	#root/length	length	string	-	"29,903"	^.*$	
 avg_nuc_identity	assemblyQC.tsv	optional	#root/avg_nuc_identity	avg_nuc_identity	string	-	-	^.*$	
-percent_assembly_greater_20x	assemblyQC.tsv	optional	#root/percent_assembly_greater_20x	percent_assembly_greater_20x	string	-	100	^.*$	
+percent_assembly_greater_20x	assemblyQC.tsv	optional	#root/percent_assembly_greater_20x	percent_assembly_greater_20x	string	-	-	^.*$	
 query_coverage_against_reference	assemblyQC.tsv	optional	#root/query_coverage_against_reference	query_coverage_against_reference	string	-	100	^.*$	
-percent_identity_against_reference	assemblyQC.tsv	optional	#root/percent_identity_against_reference	percent_identity_against_reference	string	-	-	^.*$	
+percent_identity_against_reference	assemblyQC.tsv	optional	#root/percent_identity_against_reference	percent_identity_against_reference	string	-	100	^.*$	
 seq_id	assemblyQC.tsv	optional	#root/seq_id	seq_id	string	-	-	^.*$	
 n95	assemblyQC.tsv	optional	#root/n95	n95	string	-	-	^.*$	
 l95	assemblyQC.tsv	optional	#root/l95	l95	string	-	-	^.*$	

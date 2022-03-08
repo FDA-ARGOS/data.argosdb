@@ -115,9 +115,9 @@
             ],
             "pattern": "^.*$"
         },
-        "library_newname": {
-            "$id": "#root/library_newname",
-            "title": "library_newname",
+        "library_name": {
+            "$id": "#root/library_name",
+            "title": "library_name",
             "description": "SRA STAT",
             "type": "string",
             "default": "-",

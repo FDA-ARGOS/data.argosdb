@@ -4,9 +4,9 @@
 This script will parse an XML for a single feature and return a list via terminal
 or file, if an output is supplied.
 """
-__version__ = "0.1.0"
-__status__ = "Beta"
-import os
+__version__ = "0.2.0"
+__status__ = "Production"
+
 import sys
 import argparse
 import xml.etree.ElementTree as ET
@@ -16,7 +16,7 @@ def usr_args():
 
     All arguments for process are defined here.
     """
-    
+
         # initialize parser
     parser = argparse.ArgumentParser()
 
@@ -41,15 +41,15 @@ def usr_args():
         help="Output file. If no output is provided, the results will output to the terminal.")
     if len(sys.argv) <= 1:
         sys.argv.append('--help')
-    
+
     return parser.parse_args()
 
-def parseXML(xmlFile, output):
+def parse_xml(xml_file, output):
     """Parse XML file
-    
+
     Parameters
     ----------
-    xmlFile: str
+    xml_file: str
         file path/name to be parsed
     output: str, optional
         file path/name for data to be output to
@@ -59,16 +59,15 @@ def parseXML(xmlFile, output):
     items = []
     try:
         count = 0
-        root = ET.parse(xmlFile).getroot()
-        for item in root.findall('./DocumentSummarySet'):
+        root = ET.parse(xml_file).getroot()
+        for item in root.findall('.'):
             for run in item.findall('./DocumentSummary'):
                 for exp in run.findall('./Runs/'):
                     items.append(exp.attrib['acc'])
                 count += 1
-            
-        
+
         if output:
-            with open(output, 'w') as file:
+            with open(output, 'w', encoding='utf-8') as file:
                 for item in items:
                     file.write(item+'\n')
         else:
@@ -76,10 +75,12 @@ def parseXML(xmlFile, output):
                 print(item)
 
     except ET.ParseError:
-        print(xmlFile, 'not well-formed')
+        print(xml_file, 'not well-formed')
 
 def main():
+    """Main"""
     args = usr_args()
-    parseXML(args.file, args.output)
+    parse_xml(args.file, args.output)
+
 if __name__ == "__main__":
     main()

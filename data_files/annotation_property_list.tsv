@@ -5,19 +5,19 @@ biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	-	SAMN11077980
 num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string	-	400293278	^.*$	
 file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string	-	195921414	^.*$	
 published	SRA_ngsQC.tsv	required	#root/published	published	string	-	5/22/19 16:57	^.*$	
-source	SRA_ngsQC.tsv	required	#root/source	source	string	-	VIRAL RNA	^.*$	
+source	SRA_ngsQC.tsv	required	#root/source	source	string	-	VIRAL RNA	(Genomic DNA|GENOMIC|TRANSCRIPTOMIC|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL RNA|OTHER)	
 strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string	-	WGS	^.*$	
 layout	SRA_ngsQC.tsv	required	#root/layout	layout	string	-	PAIRED	^.*$	
-library_newname	SRA_ngsQC.tsv	optional	#root/library_newname	library_newname	string	-	IL100100209	^.*$	
+library_name	SRA_ngsQC.tsv	optional	#root/library_name	library_name	string	-	IL100100209	^.*$	
 selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string	-	cDNA	^.*$	
 instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiSeq	^.*$	
 file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string	-	fastq	^.*$	
-reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	61059	^.*$	
-identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	603880	^.*$	
-taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	64320	^.*$	
+reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	61059	^[2-9]|[1-9]\d+$	
+identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	603880	^[2-9]|[1-9]\d+$	
+taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	64320	^[2-9]|[1-9]\d+$	
 lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string	-	Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus	^.*$	
-percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	0.908173532	^.*$	
-gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	0.455669683	^.*$	
+percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	0.908173532	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	
+gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	0.455669683	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	
 genome_assembly_id	SRA_assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_013267415.1	^.*$	
 level	SRA_assemblyQC.tsv	required	#root/level	level	string	-	Complete genome	^.*$	
 assembly_level	SRA_assemblyQC.tsv	required	#root/assembly_level	assembly_level	string	-	undefined	^.*$	
@@ -29,7 +29,7 @@ bioproject	SRA_assemblyQC.tsv	required	#root/BioPproject	BioPproject	string	-	PR
 taxonomy_id	SRA_assemblyQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	46125	^.*$	
 lineage	SRA_assemblyQC.tsv	required	#root/lineage	lineage	string	-	cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia	^.*$	
 uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string	-	P0DTC2-1	^.*$	
-found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	-	Omicron (21K, BA.1)	^.*$	
+found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	-	"Omicron (21K, BA.1)"	^.*$	
 gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string	-	S	^.*$	
 protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string	-	Spike glycoprotein	^.*$	
 evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string	-	CoVariants	^.*$	
@@ -46,6 +46,6 @@ sra_run_id	ngs_ID_list.tsv	required	#root/note	SRA Run ID	string	-	SRR17309642	^
 organism_name	ngs_ID_list.tsv	required	#root/note		string	-	Severe acute respiratory syndrome coronavirus 3	^.*$	
 leaf_node	ngs_ID_list.tsv	required	#root/note	Leaf Node	string	-	B.1.1.529/Omicron isolate	^.*$	
 taxonomy_id	ngs_ID_list.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	2697049	^.*$	
-selection_notes	ngs_ID_list.tsv	required	#root/note	Selection Notes	string	-	For omicron, we are selecting EPI_ISL_6913953. Sequencing was conducted on Illumina MiSeq, has high coverage, and a consistent quality score across all base calls above 30. Raw reads are available at https://www.ncbi.nlm.nih.gov/sra/SRX13486794, and a full description of the patient harboring the virus is supplied with the following publication https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciab1072/6494531?login=true. The patient was one of the first two known COVID-19 cases classified as omicron in Japan. To put the collection date of 28 November 2021 in perspective, the first known omicron sample was collected on 8 November 2021. Raw reads from South Africa are available, but the average phred quality score is much lower for those samples.	^.*$	
+selection_notes	ngs_ID_list.tsv	required	#root/note	Selection Notes	string	-	"For omicron, we are selecting EPI_ISL_6913953. Sequencing was conducted on Illumina MiSeq, has high coverage, and a consistent quality score across all base calls above 30. Raw reads are available at https://www.ncbi.nlm.nih.gov/sra/SRX13486794, and a full description of the patient harboring the virus is supplied with the following publication https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciab1072/6494531?login=true. The patient was one of the first two known COVID-19 cases classified as omicron in Japan. To put the collection date of 28 November 2021 in perspective, the first known omicron sample was collected on 8 November 2021. Raw reads from South Africa are available, but the average phred quality score is much lower for those samples."	^.*$	
 lab_name	ngs_ID_list.tsv	required	#root/note	Lab Name	string	-	Pond Lab	^.*$	
 processed	ngs_ID_list.tsv	required	#root/processed	processed	string	-	No	^.*$	

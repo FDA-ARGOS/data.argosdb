@@ -127,7 +127,7 @@ num_of_bases	SRA_ngsQC.tsv	SRA	Number of nucleotides represented in file	SRA STA
 file_size	SRA_ngsQC.tsv	SRA	File size	SRA STAT
 published	SRA_ngsQC.tsv	SRA	Date of publication	SRA STAT
 layout	SRA_ngsQC.tsv	SRA	Sequencing library layout	SRA STAT
-library_newname	SRA_ngsQC.tsv	SRA	Name of sequencing library	SRA STAT
+library_name	SRA_ngsQC.tsv	SRA	Name of sequencing library	SRA STAT
 selection	SRA_ngsQC.tsv	SRA	Library selection	SRA STAT
 file_type	SRA_ngsQC.tsv	SRA	Type of file representing the genomic data	SRA STAT
 identified_reads	SRA_ngsQC.tsv	SRA	The number of reads that were matched to a reference	SRA STAT

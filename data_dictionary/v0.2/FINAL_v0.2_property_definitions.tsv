@@ -1,0 +1,133 @@
+Property	Data Object Type	Optional/Required	Source	$id	Description	Title
+identifier	biosampleMeta	required	From Yi FDA	#root/identifier	"Unique Identifier For Each Sample. The same identifier is used for each assembly because within the scope of the original ARGOS study, each sample only have one associated assembly."	identifier
+isolation_provider_name	biosampleMeta	required	From Yi FDA first & last_name from NCBI biosample page	#root/isolation_provider_name	Name of the provider from which the biological sample was derived.	isolation provider name
+email	biosampleMeta	required	from NCBI biosample submission page	#root/email	Email obtained from the BioSample submission page.	email
+submitting_organization	biosampleMeta	required	from NCBI biosample submission page	#root/submitting_organization	Name of organization that is submitting the BioSample.	submitting organization
+department	biosampleMeta	required	from NCBI biosample submission page	#root/department	Name of department that is submitting the BioSample.	department
+street	biosampleMeta	required	from NCBI biosample submission page	#root/street	Street name of the organization submitting the BioSample.	street
+city	biosampleMeta	required	from NCBI biosample submission page	#root/city	City name of the organization submitting the BioSample.	city
+state/province	biosampleMeta	required	from NCBI biosample submission page	#root/state/province	State or province of the organization submitting the BioSample.	state/province
+postal_code	biosampleMeta	required	from NCBI biosample submission page	#root/postal_code	Postal Code of the organization submitting the BioSample.	postal code
+country	biosampleMeta	required	from NCBI biosample submission page	#root/country	Country name of the organization submitting the BioSample.	country
+sample_name	biosampleMeta	required	from NCBI biosample submission page	#root/sample_name	Name of the sample given by the submitter of the BioSample.	sample name
+organism	biosampleMeta	required	from NCBI biosample submission page; organism_name From Yi FDA	#root/organism	Name of the expected organism. This is determined prior to sequencing.	organism
+strain	biosampleMeta	required	from NCBI biosample submission page; strain_name From Yi FDA	#root/strain	Strain name of the organism of interest.	strain
+collection_date	biosampleMeta	required	from NCBI biosample submission page	#root/collection_date	The date on which the sample was collected.	collection date
+geo_loc_name	biosampleMeta	required	From NCBI BioSample Attributes from NCBI biosample submission page	#root/geo_loc_name	Geographical origin of the sample.	geographic location name
+isolation_source	biosampleMeta	required	from NCBI biosample submission page	#root/isolation_source	"Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived."	isolation source
+host	biosampleMeta	required	from NCBI biosample submission page host From Yi FDA	#root/host	The natural host to the organism from which the sample was obtained.	host
+lineage	biosampleMeta	optional	Raja; https://cov-lineages.org/	#root/lineage	"The Pango nomenclature is being used by researchers and public health agencies worldwide to track the transmission and spread of SARS-CoV-2, including variants of concern. This website documents all current Pango lineages and their spread, as well as various software tools which can be used by researchers to perform analyses on SARS-COV-2 sequence data. https://cov-lineages.org/index.html#about"	lineage
+isolate	biosampleMeta	optional	from NCBI biosample submission page	#root/isolate	Identification or description of the specific individual from which this sample was obtained.	isolate
+id_method	biosampleMeta	optional	From Yi FDA	#root/id_method	Species identification method.	ID method
+sample_type	biosampleMeta	optional	From Yi FDA	#root/sample_type	Type of sample used for the BioSample submission.	sample type
+isolation_acquisition_id	biosampleMeta	optional	From Yi FDA	#root/isolation_acquisition_id	Acquisition identifier for obtained isolate.	isolation aquisition ID
+ncbi_taxonomy_id	biosampleMeta	optional	From Yi FDA	#root/ncbi_taxonomy_id	NCBI taxonomy ID of the organism.	NCBI taxonomy ID
+contact_name	biosampleMeta	optional	From Yi FDA	#root/contact_name	Contact name associated with the BioSample.	contact name
+clinical/environmental	biosampleMeta	optional	From Yi FDA	#root/clinical/environmental	Additional metadata on the use of this BioSample.	clinical/environmental
+gisaid_accession	biosampleMeta	optional	From NCBI BioSample Attributes	#root/gisaid_accession	"The GISAID accession assigned to the sequence. GISAID Accession Numbers are used as unique and permanent identifiers for each virus beginning with the letters EPI and followed by numbers, to identify viruses and or/ segments."	GISAID accession
+gisaid_virus_name	biosampleMeta	optional	From NCBI BioSample Attributes	#root/gisaid_virus_name	The full virus name submitted to GISAID.	GISAID virus name
+biomaterial_provider	biosampleMeta	optional	From NCBI BioSample Attributes	#root/biomaterial_provider	"Name and address of the lab or PI, or a culture collection identifier."	biomaterial provider
+disease	biosampleMeta	optional	From NCBI BioSample Attributes	#root/disease	List of diseases diagnosed; can include multiple diagnoses.	disease
+host_taxid	biosampleMeta	optional	From NCBI BioSample Attributes	#root/host_taxid	NCBI taxonomy ID of the host.	host taxid
+fdaargos_biosample_id	assemblyQC	required	Raja/Vahan	#root/fdaargos_biosample_id	ARGOS BioSample identifier.	FDAARGOS BioSample ID
+fdaargos_id	assemblyQC	required	Raja/Vahan	#root/fdaargos_id	ARGOS identifier.	FDAARGOS ID
+genome_assembly_id	assemblyQC	required	Raja/Vahan	#root/genome_assembly_id	NCBI's Genome Assembly identifier.	genome assembly ID
+num_chromosomes	assemblyQC	required	Raja/Vahan	#root/num_chromosomes	Total number of chromosomes in the genome assembly.	number of chromosomes
+BCO_id	assemblyQC	required	Raja/Vahan	#root/BCO_id	BioCompute Object identifier.	BCO ID
+ncbi_biosample_id	assemblyQC	optional	Raja/Vahan	#root/ncbi_biosample_id	NCBI BioSample identifier.	NCBI BioSample ID
+organism_name	assemblyQC	optional	From Yi FDA	#root/organism_name	Name of the expected organism. This is determined prior to sequencing.	organism name
+strain_name	assemblyQC	optional	From Yi FDA	#root/strain_name	Strain name of the organism of interest.	strain name
+ncbi_taxonomy_id	assemblyQC	optional	From Yi FDA	#root/ncbi_taxonomy_id	NCBI taxonomy identifier of the organism.	NCBI taxonomy ID
+id_method	assemblyQC	optional	From Yi FDA	#root/id_method	Species identification method.	ID method
+sample_type	assemblyQC	optional	From Yi FDA	#root/sample_type	"Type of sample used for the BioSample submission, if applicable."	sample type
+host	assemblyQC	optional	From NCBI biosample submission page & Yi FDA	#root/host	The natural host to the organism from which the sample was obtained.	host
+number_of_Ns_or_Xs	assemblyQC	optional	Raja/Vahan?	#root/number_of_Ns_or_Xs	Total number of Ns or Xs in the assembled genome.	number of Ns or Xs
+isolation_provider_name	assemblyQC	optional	From Yi FDA	#root/isolation_provider_name	Name of the provider from which the biological sample was derived.	isolation provider name
+isolation_acquisition_id	assemblyQC	optional	From Yi FDA	#root/isolation_acquisition_id	Acquisition identifier for obtained isolate.	isolation acquisition ID
+contact_name	assemblyQC	optional	From Yi FDA	#root/contact_name	Contact name associated with the BioSample.	contact name
+sequencing_method	assemblyQC	optional	From Yi FDA	#root/sequencing_method	Sequencing method used to obtain the DNA fragments/sequences.	sequencing method
+n50	assemblyQC	optional	From Yi FDA & Vahan's json	#root/n50	Length of the shortest read to minimally represent 50% of the assembly.	N50
+l50	assemblyQC	optional	From Yi FDA & Vahan's json	#root/l50	Number of reads that minimally represent 50% of the assembly.	L50
+gc%	assemblyQC	optional	From Yi FDA GC & Vahan's json	#root/gc%	GC content of the assembly.	GC percent
+length	assemblyQC	optional	From Yi FDA	#root/length	Total length of the assembled genome.	length
+avg_nuc_identity_to_ref	assemblyQC	optional	From Yi FDA	#root/avg_nuc_identitiy	Average nucleotide identity between the assembly and the reference sequences.	average nucleotide identity to reference
+%assembly_with_>20x_coverage	assemblyQC	optional	From Yi FDA	#root/%assembly_with_>20x_coverage	"Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used."	percentage of assembly with >20x coverage
+query_coverage_against_reference	assemblyQC	optional	From Yi FDA	#root/query_coverage_against_reference	BLAST query coverage of the entire assembly between the assembly and reference sequences.	query coverage against reference
+percent_identity_against_reference	assemblyQC	optional	From Yi FDA	#root/percent_identity_against_reference	BLAST percent identity of the entire assembly between the assembly and reference sequences.	percent identity against reference
+seq_id	assemblyQC	optional	Vahan's json	#root/seq_id	Reference identifier to a specific sequence inside the assembled genome.	sequence ID
+n95	assemblyQC	optional	Vahan's json	#root/n95	Length of the shortest read to minimally represent 95% of the assembly.	N95
+l95	assemblyQC	optional	Vahan's json	#root/l95	Number of reads that minimally represent 95% of the assembly.	L95
+cnt_scaffolds	assemblyQC	optional	Vahan's json	#root/cnt_scaffolds	Number of scaffolds to represent the assembled genome.	CNT scaffolds
+cnt_contigs	assemblyQC	optional	Vahan's json	#root/cnt_contigs	Number of contigs to represent the assembled genome.	CNT contigs
+contigs_momentum	assemblyQC	optional	Vahan's json	#root/contigs_momentum	Cumulative normalized momentum (contig_size*count) of all contigs.	contigs momentum
+coverage_contigs	assemblyQC	optional	Vahan's json	#root/coverage_contigs	Average coverage on contigs.	coverage contigs
+reads_unaligned	assemblyQC	optional	Vahan's json	#root/reads_unaligned	Number of reads in short_read pool that do not align to assembly.	reads unaligned
+aligned_momentum	assemblyQC	optional	Vahan's json	#root/aligned_momentum	Cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly.	aligned momentum
+overhang_momentum	assemblyQC	optional	Vahan's json	#root/overhang_momentum	Cumulative normalized momentum (unaligned_size*count) of own reads unaligned to assembly.	overhand momentum
+bases_percentile_aligned	assemblyQC	optional	Vahan's json	#root/bases_percentile_aligned	Percentile of bases on partially aligned reads with relation to count of all bases on aligned reads.	bases percentile aligned
+cnt_gaps	assemblyQC	optional	Vahan's json	#root/cnt_gaps	Number of gaps in an assembly as covered by own reads.	CNT gaps
+size_gaps	assemblyQC	optional	Vahan's json	#root/size_gaps	Cumulative size of gaps as covered by own reads.	size gaps
+clonal_populations	assemblyQC	optional	Vahan's json	#root/clonal_populations	Number of clonal populations on assembly nephosome.	clonal populations
+clonal_expanse	assemblyQC	optional	Vahan's json	#root/clonal_expanse	Total size of all clonal contigs.	clonal expanse
+phred_average	assemblyQC	optional	Vahan's json	#root/phred_average	Average phred score of aligned base call.	phred average
+count_major_variations	assemblyQC	optional	Vahan's json	#root/count_major_variations	Number of +50% variations on a variation profile of own reads on avartion profile of own reads on assembly. 	count major variations
+indels_momentum	assemblyQC	optional	Vahan's json	#root/indels_momentum	Momentum of indels (count*percentile) on variation profile of own reads alignment to assembly.	indels momentum
+mutation_momentum	assemblyQC	optional	Vahan's json	#root/mutation_momentum	Momentum of mutations (count*percentile) on variation profile of own reads  alignment to assembly.	mutation momentum
+alignment_disbalance	assemblyQC	optional	Vahan's json	#root/alignment_disbalance	Ratio of forward and reverse own reads aligned on assembly.	alignment disbalance
+alignmnet_anisotropy	assemblyQC	optional	Vahan's json	#root/alignment_anisotropy	Anisotropy of basecalls with relation to own reads aligned to assembly.	alignment anisotropy
+rpkm	assemblyQC	optional	Vahan's json	#root/rpkm	Reads per kilobase of reference size per million alignments.	RPKM
+fpkm	assemblyQC	optional	Vahan's json	#root/fpkm	Fragments per kilobase of reference size per million alignments. 	FPKM
+coverage_homogeneity	assemblyQC	optional	Vahan's json	#root/coverage_homogeneity	Anisotropy of the coverage with relation to assembly frame.	coverage homogeneity
+ambiguous_bases	assemblyQC	optional	Vahan's json	#root/ambiguous_bases	"Number of IUPAC ambiguous bases in reads(Ns, Ys, etc.)"	ambiguous bases
+taxid_composition	ngsQC	optional	Vahan's json	#root/taxid_composition	Taxonomic identifiers hit	taxid composition
+seq_composition	ngsQC	optional	Vahan's json	#root/seq_composition	Sequence identifiers hit	sequence composition
+assembly_type	assemblyQC	optional	from NCBI Assembly	#root/assembly_type	"haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms."	assembly type
+assembly_level	assemblyQC	optional	from NCBI Assembly	#root/assembly_level	The highest level of assembly for any object in the assembly.	assembly level
+fdaargos_biosample_id	ngsQC	required	ARGOS	#root/fdaargos_biosample_id	ARGOS BioSample identifier.	FDAARGOS BioSample ID
+fdaargos_id	ngsQC	required	ARGOS	#root/fdaargos_id	ARGOS identifier.	FDAARGOS ID
+file_name	ngsQC	required	HIVE	#root/file_name	FASTQ file name used for the HIVE analysis.	file name
+avg_file_quality	ngsQC	required	HIVE	#root/avg_file_quality	Average quality (in phred score) of sequences in a FASTQ read file.	average file quality
+min_read_length	ngsQC	required	HIVE	#root/min_read_length	Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.	minimum read length
+pos_outlier_count	ngsQC	required	HIVE	#root/pos_outlier_count	Count of positions the quality of which is significantly different (extremely low or high).	position outlier count
+num_reads	ngsQC	required	HIVE	#root/num_reads	Number of sequences present in a FASTA/FASTQ read file.	number of reads
+avg_read_length	ngsQC	required	HIVE	#root/avg_read_length	Average length of sequences in a FASTA/FASTQ read file.	average read length
+max_read_length	ngsQC	optional	HIVE	#root/max_read_length	Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.	maximum read length
+gc%	ngsQC	required	HIVE & Yi FDA	#root/gc%	Percent GC content of the sequences in a read file.	GC percent
+strategy	ngsQC	required	Daniel Kerchner	#root/strategy	Strategy/method used to generate the NGS.	strategy
+sra_run_id	ngsQC	optional	Raja/Vahan	#root/sra_run_id	Database identifier assigned by repository and linked to GenBank or other repository.	SRA run ID
+genome_assembly_id	ngsQC	optional	ARGOS	#root/genome_assembly_id	NCBI's Genome Assembly identifier.	genome assembly ID
+wgs_accession	ngsQC	optional	ARGOS	#root/wgs_accession	NCBI's Whole Genome Shotgun (WGS) accession number.	WGS accession
+ncbi_biosample_id	ngsQC	optional	Raja/Vahan	#root/ncbi_biosample_id	NCBI's BioSample identifier.	NCBI BioSample ID
+level	ngsQC	optional	NCBI SRA	#root/level	Level index for run specific depth first enumeration of tax hierarchy.	level
+strain_name	ngsQC	optional	NCBI SRA & Yi FDA	#root/strain_name	Strain name of the organism of interest.	strain name
+organism_name	ngsQC	optional	Yi FDA	#root/organism_name	Name of the expected organism. This is determined prior to sequencing.	organism name
+instrument	ngsQC	optional	Daniel Kerchner	#root/instrument	Name of instrument used for NGS.	instrument
+id_method	ngsQC	optional	Yi FDA	#root/id_method	Species identification method.	ID method
+codon_table	ngsQC	optional	HIVE	#root/codon_table	"A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc."	codon table
+%protein_coding	ngsQC	optional	HIVE	#root/%protein_coding	The relative frequency of sequences that are protein coding for each DNA sequence type.	percent protein coding
+%not_coding	ngsQC	optional	HIVE	#root/%not_coding	The relative frequency of sequences that are not protein coding for each DNA sequence type.	percent not protein coding
+cumulative%_reads	ngsQC	optional	HIVE	#root/cumulative%_reads	A list containg the cumulative percentage of reads per density of Ns present in a read.	cumulative percent reads
+density_Ns_per_read	ngsQC	optional	HIVE	#root/density_Ns_per_read	A list of density values of Ns per sequence read.	density of Ns per read
+%complex	ngsQC	optional	HIVE	#root/%complex	Percentage of sequences that are complex. 	percent complex
+%not_complex	ngsQC	optional	HIVE	#root/%not_complex	Percentage of sequences that are not complex. 	percent not complex
+avg_quality_a	ngsQC	optional	HIVE	#root/avg_quality_per_base	The average cumulative quality score of adenine in the NGS. 	average quality of A
+avg_quality_t	ngsQC	optional	HIVE	#root/avg_quality_per_base	The average cumulative quality score of thiamine in the NGS.	average quality of T
+avg_quality_g	ngsQC	optional	HIVE	#root/avg_quality_per_base	The average cumulative quality score of guanine in the NGS. 	average quality of G
+avg_quality_c	ngsQC	optional	HIVE	#root/avg_quality_per_base	The average cumulative quality score of cytosine in the NGS.	average quality of C
+count_a	ngsQC	optional	HIVE	#root/count_a	The total count of adenines in the NGS. 	count of A
+count_c	ngsQC	optional	HIVE	#root/count_c	The total count of cytosines in the NGS. 	count of C
+count_g	ngsQC	optional	HIVE	#root/count_g	The total count of guanines in the NGS. 	count of G
+count_t	ngsQC	optional	HIVE	#root/count_t	The total count of thiamaines in the NGS. 	count of T
+fdaargos_seq_feature	site_qc	required	ARGOS	#root/fdaargos_seq_feature	Identifier for this data object	FDAARGOS sequence feature
+genomic_identifier	site_qc	required		#root/genomeic_identifier	identifirer for the source genomic object	genomic identifier
+num_nuc_call	site_qc	optional	ARGOS	#root/num_nuc_call	Number of nucliotides called for this position	number of nucleotide calls
+percent_nuc_call	site_qc	optional	Vahan's JSON	#root/percent_nuc_call	Total percentage of nucleotieds at this position that matched this call	percent nucleotide calls
+genome_assembly_id	site_qc	optional	Vahan's JSON	#root/genome_assembly_id	The NCBI or ENA assembly id for this sequence	genome assembly ID
+genomic_coordinates_start	site_qc	optional	Vahan's JSON	#root/genomic_coordinates_start	Start position for this feature in the genome file	genomic coordinates start
+genomic_coordinates_end	site_qc	optional	Vahan's JSON	#root/genomic_coordinates_end	End position for this feature in the genome file	genomic coordinates end
+protein_coordinates_start	site_qc	optional	Vahan's JSON	#root/protein_coordinates_start	Start position for this feature in the proteome file	protein coordinates start
+protein_coordinates_end	site_qc	optional	Vahan's JSON	#root/protein_coordinates_end	End position for this feature in the proteome file	protein coordinates end
+forward_reverse_disbalance	site_qc	optional	Vahan's JSON	#root/forward_reverse_disbalance	Forward reverse disbalance	forward reverse disbalance
+source	site_qc	optional	Vahan's JSON	#root/source	Source database or resource for this feature	source
+seq_feature_tag 	site_qc	optional	Vahan's JSON	#root/eq_feature_tag 	Tags associated with this feature	sequence feature tag
+seq_feature_value	site_qc	optional	Vahan's JSON	#root/seq_feature_value	Values for the tag associated with this feature	sequence feature value

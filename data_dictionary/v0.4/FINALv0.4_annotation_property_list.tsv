@@ -5,19 +5,19 @@ biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	-	SAMN11077980
 num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string	-	400293278	^.*$	
 file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string	-	195921414	^.*$	
 published	SRA_ngsQC.tsv	required	#root/published	published	string	-	5/22/19 16:57	^.*$	
-source	SRA_ngsQC.tsv	required	#root/source	source	string	-	VIRAL RNA	(Genomic DNA|GENOMIC|TRANSCRIPTOMIC|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL RNA|OTHER)	
+source	SRA_ngsQC.tsv	required	#root/source	source	string	-	VIRAL RNA	^.*$	
 strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string	-	WGS	^.*$	
 layout	SRA_ngsQC.tsv	required	#root/layout	layout	string	-	PAIRED	^.*$	
 library_name	SRA_ngsQC.tsv	optional	#root/library_name	library_name	string	-	IL100100209	^.*$	
 selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string	-	cDNA	^.*$	
 instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiSeq	^.*$	
 file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string	-	fastq	^.*$	
-reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	61059	^[2-9]|[1-9]\d+$	
-identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	603880	^[2-9]|[1-9]\d+$	
-taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	64320	^[2-9]|[1-9]\d+$	
+reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	61059	^.*$	
+identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	603880	^.*$	
+taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	64320	^.*$	
 lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string	-	Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus	^.*$	
-percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	0.908173532	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	
-gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	0.455669683	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	
+percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	0.908173532	^.*$	
+gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	0.455669683	^.*$	
 genome_assembly_id	SRA_assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_013267415.1	^.*$	
 level	SRA_assemblyQC.tsv	required	#root/level	level	string	-	Complete genome	^.*$	
 assembly_level	SRA_assemblyQC.tsv	required	#root/assembly_level	assembly_level	string	-	undefined	^.*$	

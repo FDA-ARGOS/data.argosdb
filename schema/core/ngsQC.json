@@ -24,7 +24,7 @@
         "organism_name": {
             "$id": "#root/organism_name",
             "title": "organism_name",
-            "description": " ",
+            "description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
             "type": "string",
             "default": "-",
             "examples": [
@@ -35,7 +35,7 @@
         "lineage": {
             "$id": "#root/lineage",
             "title": "lineage",
-            "description": "NCBI Taxonomy",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -46,7 +46,7 @@
         "genome_assembly_id": {
             "$id": "#root/genome_assembly_id",
             "title": "genome_assembly_id",
-            "description": "NCBI Assembly DB",
+            "description": "NCBI Assembly DB identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -57,7 +57,7 @@
         "fdaargos_id": {
             "$id": "#root/fdaargos_id",
             "title": "fdaargos_id",
-            "description": "data.argos.org",
+            "description": "ARGOS identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -68,7 +68,7 @@
         "bco_id": {
             "$id": "#root/bco_id",
             "title": "bco_id",
-            "description": "biocomputeobject.org",
+            "description": "BioCompute Object identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -79,7 +79,7 @@
         "hive_object_id": {
             "$id": "#root/hive_object_id",
             "title": "hive_object_id",
-            "description": "HIVE",
+            "description": "HIVE object ID which is assigned automatically within the HIVE Platform. This ID assists with internal tracking and programatic inquires with in the HIVE Platfrom",
             "type": "string",
             "default": "-",
             "examples": [
@@ -90,7 +90,7 @@
         "schema_version": {
             "$id": "#root/schema_version",
             "title": "schema_version",
-            "description": "data.argos.org",
+            "description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
             "type": "string",
             "default": "-",
             "examples": [
@@ -101,7 +101,7 @@
         "strain": {
             "$id": "#root/strain",
             "title": "strain",
-            "description": "NCBI Taxonomy",
+            "description": "microbial or eukaryotic strain name",
             "type": "string",
             "default": "-",
             "examples": [
@@ -112,7 +112,7 @@
         "biosample": {
             "$id": "#root/biosample",
             "title": "biosample",
-            "description": "NCBI BioSample DB",
+            "description": "NCBI BioSample identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -123,7 +123,7 @@
         "file_name": {
             "$id": "#root/file_name",
             "title": "file_name",
-            "description": "HIVE",
+            "description": "FASTQ file name used for the HIVE analysis.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -134,7 +134,7 @@
         "avg_file_quality": {
             "$id": "#root/avg_file_quality",
             "title": "avg_file_quality",
-            "description": "HIVE",
+            "description": "Average quality (in phred score) of sequences in a FASTQ read file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -145,7 +145,7 @@
         "min_read_length": {
             "$id": "#root/min_read_length",
             "title": "min_read_length",
-            "description": "HIVE",
+            "description": "Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -156,7 +156,7 @@
         "pos_outlier_count": {
             "$id": "#root/pos_outlier_count",
             "title": "pos_outlier_count",
-            "description": "HIVE",
+            "description": "Count of positions the quality of which is significantly different (extremely low or high).",
             "type": "string",
             "default": "-",
             "examples": [
@@ -167,7 +167,7 @@
         "num_reads": {
             "$id": "#root/num_reads",
             "title": "num_reads",
-            "description": "HIVE",
+            "description": "Number of sequences present in a FASTA/FASTQ read file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -178,7 +178,7 @@
         "avg_read_length": {
             "$id": "#root/avg_read_length",
             "title": "avg_read_length",
-            "description": "HIVE",
+            "description": "Average length of sequences in a FASTA/FASTQ read file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -189,7 +189,7 @@
         "max_read_length": {
             "$id": "#root/max_read_length",
             "title": "max_read_length",
-            "description": "HIVE",
+            "description": "Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -200,7 +200,7 @@
         "gc_content": {
             "$id": "#root/gc_content",
             "title": "gc_content",
-            "description": "HIVE;Calculated from SRA",
+            "description": "GC content of the assembly.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -211,7 +211,7 @@
         "strategy": {
             "$id": "#root/strategy",
             "title": "strategy",
-            "description": "HIVE",
+            "description": "Strategy/method used to generate the NGS. Controled vocabulary consisting of the following terms: WGA WGS WXS RNA-Seq miRNA-Seq WCS CLONE POOLCLONE AMPLICON CLONEEND FINISHING ChIP-Seq MNase-Seq DNase-Hypersensitivity Bisulfite-Seq Tn-Seq EST FL-cDNA CTS MRE-Seq MeDIP-Seq MBD-Seq Synthetic-Long-Read OTHER",
             "type": "string",
             "default": "-",
             "examples": [
@@ -222,7 +222,7 @@
         "sra_run_id": {
             "$id": "#root/sra_run_id",
             "title": "sra_run_id",
-            "description": "",
+            "description": "SRA identifier for a BioSample's genomic file.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -233,7 +233,7 @@
         "wgs_accession": {
             "$id": "#root/wgs_accession",
             "title": "wgs_accession",
-            "description": "HIVE",
+            "description": "NCBI Whole Genome Shotgun (WGS) accession number.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -244,7 +244,7 @@
         "level": {
             "$id": "#root/level",
             "title": "level",
-            "description": "NCBI SRA",
+            "description": "Level index for run specific depth first enumeration of tax hierarchy.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -255,7 +255,7 @@
         "instrument": {
             "$id": "#root/instrument",
             "title": "instrument",
-            "description": "HIVE",
+            "description": "Name of instrument used for NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -266,7 +266,7 @@
         "id_method": {
             "$id": "#root/id_method",
             "title": "id_method",
-            "description": "NCBI BioSample DB",
+            "description": "Species identification method.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -277,7 +277,7 @@
         "codon_table": {
             "$id": "#root/codon_table",
             "title": "codon_table",
-            "description": "HIVE",
+            "description": "A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -288,7 +288,7 @@
         "percent_coding": {
             "$id": "#root/percent_coding",
             "title": "percent_coding",
-            "description": "HIVE",
+            "description": "The relative frequency of sequences that are protein coding for each DNA sequence type.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -299,7 +299,7 @@
         "percent_not_coding": {
             "$id": "#root/percent_not_coding",
             "title": "percent_not_coding",
-            "description": "HIVE",
+            "description": "The relative frequency of sequences that are not protein coding for each DNA sequence type.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -310,7 +310,7 @@
         "cumulative_percent_reads": {
             "$id": "#root/cumulative_percent_reads",
             "title": "cumulative_percent_reads",
-            "description": "HIVE",
+            "description": "A list containg the number of reads that positionally correspond to the density of Ns list values. Can be used to generate cumulative percentage of N density in reads.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -321,7 +321,7 @@
         "density_n_per_read": {
             "$id": "#root/density_n_per_read",
             "title": "density_n_per_read",
-            "description": "HIVE",
+            "description": "A list of density values of Ns per sequence read.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -332,7 +332,7 @@
         "complexity_percent": {
             "$id": "#root/complexity_percent",
             "title": "complexity_percent",
-            "description": "HIVE",
+            "description": "Percentage of sequences that are complex.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -343,7 +343,7 @@
         "non_complex_percent": {
             "$id": "#root/non_complex_percent",
             "title": "non_complex_percent",
-            "description": "HIVE",
+            "description": "Percentage of sequences that are not complex.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -354,7 +354,7 @@
         "avg_quality_a": {
             "$id": "#root/avg_quality_a",
             "title": "avg_quality_a",
-            "description": "HIVE",
+            "description": "The average cumulative quality score of adenine in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -365,7 +365,7 @@
         "avg_quality_t": {
             "$id": "#root/avg_quality_t",
             "title": "avg_quality_t",
-            "description": "HIVE",
+            "description": "The average cumulative quality score of thiamine in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -376,7 +376,7 @@
         "avg_quality_g": {
             "$id": "#root/avg_quality_g",
             "title": "avg_quality_g",
-            "description": "HIVE",
+            "description": "The average cumulative quality score of guanine in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -387,7 +387,7 @@
         "avg_quality_c": {
             "$id": "#root/avg_quality_c",
             "title": "avg_quality_c",
-            "description": "HIVE",
+            "description": "The average cumulative quality score of cytosine in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -398,7 +398,7 @@
         "count_a": {
             "$id": "#root/count_a",
             "title": "count_a",
-            "description": "HIVE",
+            "description": "The total count of adenines in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -409,7 +409,7 @@
         "count_c": {
             "$id": "#root/count_c",
             "title": "count_c",
-            "description": "HIVE",
+            "description": "The total count of cytosines in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -420,7 +420,7 @@
         "count_g": {
             "$id": "#root/count_g",
             "title": "count_g",
-            "description": "HIVE",
+            "description": "The total count of guanines in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -431,7 +431,7 @@
         "count_t": {
             "$id": "#root/count_t",
             "title": "count_t",
-            "description": "HIVE",
+            "description": "The total count of thiamaines in the NGS.",
             "type": "string",
             "default": "-",
             "examples": [

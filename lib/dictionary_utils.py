@@ -182,6 +182,7 @@ def validate_schema(options):
             # err = "Given JSON data is InValid"
             # return False, err
     print(error_flags)
+
 def list_2_schema(options):
     """Create Schema JSON
 
@@ -213,7 +214,7 @@ def list_2_schema(options):
     with open(definition, 'r', encoding='utf8') as definitions:
         def_data = csv.reader(definitions, delimiter="\t")
         for row in def_data:
-            prop_defs[row[0].rstrip()] = row[4]
+            prop_defs[row[0].rstrip()] = row[3]
     print(options.directory)
     if os.path.exists(options.directory):
         argos_schemas = {}

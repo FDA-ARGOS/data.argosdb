@@ -1,5 +1,5 @@
 #!/bin/bash 
 
 # Retrieve all BioSamples from ARGOS BioProject
-(esearch -db bioproject -query "PRJNA231221" | elink -target biosample |
-	efetch -format xml) > home/PRJNA231221_biosamples.xml
+(esearch -db bioproject -query "PRJEB12890" | elink -target biosample |
+	efetch -format xml) > ../PRJEB12890_biosamples.xml

@@ -1,0 +1,140 @@
+biosample_id	sra_id	organism_name	strain	sample_name	ncbi_taxonomy_id	isolate	collected_by	collection_date	geo_loc_name	isolation_source	lat_lon	culture_collection	host	host_age	host_description	host_disease	host_disease_outcome	host_disease_stage	host_health_state	host_sex	identification_method	type_material
+SAMEA51838918	ERS1507233	Rhinovirus A81	0201132v	-	185935	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51847918	ERS1507245	Influenza A virus (A/Puerto Rico/8/1934(H1N1))	0111041v	-	211044	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51847168	ERS1507244	rhinovirus A51	0112239v	-	185912	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51846418	ERS1507243	rhinovirus B5	0111182v	-	147714	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51845668	ERS1507242	rhinovirus B70	0201063v	-	185926	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51844918	ERS1507241	rhinovirus A55	0112303v	-	185915	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51844168	ERS1507240	rhinovirus A7	0111186v	-	44136	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51843418	ERS1507239	rhinovirus A63	0112306v	-	185921	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51842668	ERS1507238	rhinovirus A56	0112304v	-	185916	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51841918	ERS1507237	Rhinovirus A81	0201131v	-	185935	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51841168	ERS1507236	rhinovirus A8	0111189v	-	185890	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51840418	ERS1507235	rhinovirus A80	0201068v	-	185934	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51839668	ERS1507234	rhinovirus A8	0111188v	-	185890	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51838168	ERS1507232	rhinovirus A85	0201133v	-	185937	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51837418	ERS1507231	Human rhinovirus A44	0112232v	-	185910	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51836668	ERS1507230	rhinovirus A73	0201065v	-	185928	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51835918	ERS1507229	rhinovirus B5	0111181v	-	147714	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51835168	ERS1507228	rhinovirus A49	0112238v	-	44131	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51834418	ERS1507227	rhinovirus A49	0112237v	-	44131	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51833668	ERS1507226	rhinovirus A49	0112236v	-	44131	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51832918	ERS1507225	rhinovirus A47	0112234v	-	185911	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51832168	ERS1507224	rhinovirus B42	0112169v	-	147683	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51831418	ERS1507223	rhinovirus A41	0112168v	-	185909	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51830668	ERS1507222	rhinovirus A40	0112167v	-	185908	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51877918	ERS1507285	rhinovirus A31	0112166v	-	185902	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51877168	ERS1507284	rhinovirus A28	0112164v	-	147672	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51876418	ERS1507283	rhinovirus A25	0112162v	-	185898	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51875668	ERS1507282	rhinovirus A24	0112161v	-	185897	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51874918	ERS1507281	rhinovirus A24	0112099v	-	185897	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51874168	ERS1507280	rhinovirus A23	0112098v	-	12135	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51873418	ERS1507279	rhinovirus A20	0112097v	-	147675	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51872668	ERS1507278	rhinovirus A1B	0111101v	-	2777147	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51871918	ERS1507277	rhinovirus A2	0111105v	-	12130	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51871168	ERS1507276	rhinovirus A2	0111104v	-	12130	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51870418	ERS1507275	Rhinovirus B48	0112235v	-	147679	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51869668	ERS1507274	rhinovirus A19	0112096v	-	185895	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51868918	ERS1507273	rhinovirus A18	0112095v	-	147674	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51868168	ERS1507272	rhinovirus B17	0112094v	-	150904	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51867418	ERS1507271	rhinovirus B17	0112093v	-	150904	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51866668	ERS1507270	rhinovirus A16	0112092v	-	31708	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51865918	ERS1507269	rhinovirus B14	0112028v	-	12131	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51865168	ERS1507268	rhinovirus B14	0112027v	-	12131	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51864418	ERS1507267	rhinovirus A11	0111259v	-	39767	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51863668	ERS1507266	rhinovirus A11	0111258v	-	39767	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51862918	ERS1507265	rhinovirus A10	0111257v	-	185892	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51862168	ERS1507264	rhinovirus A10	0111256v	-	185892	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51861418	ERS1507263	Human coronavirus 229E	0310051v	-	11137	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA51860668	ERS1507262	Feline calicivirus strain F9	0101148v	-	11981	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500775	ERS2112059	Rhinovirus A81	0101148v	-	185935	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500774	ERS2112058	rhinovirus A73	0101148v	-	185928	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500773	ERS2112057	rhinovirus A46	0101148v	-	167324	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500772	ERS2112056	rhinovirus A9	0101148v	-	185891	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500771	ERS2112055	rhinovirus A9	0101148v	-	185891	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500770	ERS2112054	Coxsackievirus B4	0101148v	-	12073	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500769	ERS2112053	Coxsackievirus B3	0101148v	-	12072	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500768	ERS2112052	Coxsackievirus B2	0101148v	-	82639	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500767	ERS2112051	Coxsackievirus B1	0101148v	-	12071	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500766	ERS2112050	Coxsackievirus B1	0101148v	-	12071	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500765	ERS2112049	Coxsackievirus B5	0101148v	-	12074	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500764	ERS2112048	Coxsackievirus B2	0101148v	-	82639	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500763	ERS2112047	Echovirus E13	0101148v	-	47501	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500762	ERS2112046	Echovirus E7	0101148v	-	46018	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500761	ERS2112045	Echovirus E3	0101148v	-	47516	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500760	ERS2112044	Respiratory syncytial virus type A	0101148v	-	1439707	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500759	ERS2112043	Respiratory syncytial virus type A	0101148v	-	1439707	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500758	ERS2112042	Mopeia mammarenavirus	0101148v	-	11629	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500757	ERS2112041	Measles virus strain Edmonston-Zagreb	0101148v	-	70149	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500756	ERS2112040	Measles morbillivirus	0101148v	-	11234	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500755	ERS2112039	Sindbis virus	0101148v	-	11034	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500754	ERS2112038	Ross River virus	0101148v	-	11029	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500753	ERS2112037	Sandfly fever Sicilian virus	0101148v	-	28292	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500752	ERS2112036	Sandfly fever Naples virus	0101148v	-	206160	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500751	ERS2112035	Human respiratory syncytial virus B	0101148v	-	208895	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500750	ERS2112034	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500749	ERS2112033	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500748	ERS2112032	Zika virus	0101148v	-	64320	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500747	ERS2112031	Zika virus	0101148v	-	64320	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500746	ERS2112030	Zika virus	0101148v	-	64320	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500745	ERS2112029	Semliki Forest virus	0101148v	-	11033	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500744	ERS2112028	Tahyna virus	0101148v	-	45270	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500743	ERS2112027	Bunyamwera virus	0101148v	-	35304	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500742	ERS2112026	Toscana virus	0101148v	-	11590	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500741	ERS2112025	Echovirus E7	0101148v	-	46018	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500740	ERS2112024	Echovirus E6	0101148v	-	12062	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500739	ERS2112023	Echovirus E6	0101148v	-	12062	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500738	ERS2112022	Echovirus E30	0101148v	-	41846	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500737	ERS2112021	Echovirus E3	0101148v	-	47516	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500736	ERS2112020	Echovirus E3	0101148v	-	47516	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500735	ERS2112019	Echovirus E25	0101148v	-	45101	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500734	ERS2112018	Echovirus E18	0101148v	-	47506	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500733	ERS2112017	Echovirus E18	0101148v	-	47506	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500732	ERS2112016	Echovirus E14	0101148v	-	47502	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500731	ERS2112015	Echovirus E13	0101148v	-	47501	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500730	ERS2112014	Echovirus E13	0101148v	-	47501	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500729	ERS2112013	Echovirus E13	0101148v	-	47501	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500728	ERS2112012	Echovirus E11	0101148v	-	12078	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500727	ERS2112011	Echovirus E11	0101148v	-	12078	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500726	ERS2112010	Coxsackievirus A16	0101148v	-	31704	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500725	ERS2112009	Enterovirus A71	0101148v	-	39054	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500724	ERS2112008	Enterovirus A71	0101148v	-	39054	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500723	ERS2112007	Enterovirus A71	0101148v	-	39054	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500722	ERS2112006	Coxsackievirus B5	0101148v	-	12074	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500721	ERS2112005	Coxsackievirus B5	0101148v	-	12074	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500720	ERS2112004	Coxsackievirus B4	0101148v	-	12073	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500719	ERS2112003	Coxsackievirus B4	0101148v	-	12073	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500718	ERS2112002	Coxsackievirus B4	0101148v	-	12073	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500717	ERS2112001	Coxsackievirus B3	0101148v	-	12072	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500716	ERS2112000	Coxsackievirus B3	0101148v	-	12072	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500715	ERS2111999	Coxsackievirus B3	0101148v	-	12072	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500714	ERS2111998	Coxsackievirus B2	0101148v	-	82639	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500713	ERS2111997	Coxsackievirus B2	0101148v	-	82639	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500712	ERS2111996	Coxsackievirus B2	0101148v	-	82639	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500711	ERS2111995	Coxsackievirus B1	0101148v	-	12071	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500710	ERS2111994	Coxsackievirus A4	0101148v	-	42785	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500709	ERS2111993	Enterovirus A	0101148v	-	138948	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500708	ERS2111992	Enterovirus A	0101148v	-	138948	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500707	ERS2111991	Enterovirus A	0101148v	-	138948	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500706	ERS2111990	Coxsackievirus A16	0101148v	-	31704	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500705	ERS2111989	Coxsackievirus A16	0101148v	-	31704	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500704	ERS2111988	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500703	ERS2111987	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500702	ERS2111986	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500701	ERS2111985	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500700	ERS2111984	Mumps orthorubulavirus	0101148v	-	2560602	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500699	ERS2111983	Measles morbillivirus	0101148v	-	11234	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500698	ERS2111982	Measles morbillivirus	0101148v	-	11234	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500697	ERS2111981	Measles morbillivirus	0101148v	-	11234	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500696	ERS2111980	Echovirus E18	0101148v	-	47506	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500695	ERS2111979	Echovirus E16	0101148v	-	47504	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500694	ERS2111978	Echovirus E11	0101148v	-	12078	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500693	ERS2111977	Echovirus E11	0101148v	-	12078	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500692	ERS2111976	Echovirus E9	0101148v	-	12060	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500691	ERS2111975	Echovirus E9	0101148v	-	12060	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500690	ERS2111974	Echovirus E6	0101148v	-	12062	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500689	ERS2111973	Echovirus E4	0101148v	-	35295	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500688	ERS2111972	Respiratory syncytial virus type A	0101148v	-	1439707	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500687	ERS2111971	Bebaru virus	0101148v	-	59305	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500686	ERS2111970	Coxsackievirus A9	0101148v	-	12067	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SAMEA104500685	ERS2111969	Rhinovirus A81	0101148v	-	185935	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-

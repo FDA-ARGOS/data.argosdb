@@ -1,7 +1,0 @@
-organism_name	lineage	genome_assembly_id	fdaargos_id	bco_id	hive_object_id	schema_version	biosample	srs_id	strain	sample_name	taxonomy_id	isolate	collected_by	collection_date	geo_loc_name	isolation_source	lat_lon	culture_collection	host	host_age	host_description	host_disease	host_disease_outcome	host_disease_stage	host_health_state	host_sex
-Human_immunodeficiency_virus_type_1	-	GCA_003102975.1	ARGID00004	ARGOS_000012/1.0	-	v0.4	-	-	group_M_subtype_B_isolate_HXB2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
-Severe_acute_respiratory_syndrome_coronavirus_2	isolate_Wuhan_Hu_1	GCA_009858895.3	ARGID00001	ARGOS_000012/1.0	-	v0.4	SAMN13922059	-	isolate_Wuhan_Hu_1	human bronchoalveolar lavage fluid	433733	-	Fudan University	1/2/20	China: Wuhan	human lung metagenome	-	-	9606	-	-	-	-	-	-	-
-Lake_Victoria_marburgvirus	-	GCA_000857325.2	ARGID00005	ARGOS_000012/1.0	-	v0.4	-	-	strain_Musoke-80	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
-Influenza_A_virus	strain_APuerto_Rico81934_H1N1	GCA_000865725.1	ARGID00002	ARGOS_000012/1.0	-	v0.4	-	-	strain_APuerto_Rico81934_H1N1	-	211044	-	SC (The Wellcome Trust Sanger Institute)	-	-	-	-	-	-	-	-	-	-	-	-	-
-Salmonella_typhimurium	str. LT2 (enterobacteria)	GCA_000006945.2	ARGID00003	ARGOS_000012/1.0	-	v0.4	SAMN02604315	-	strain_LT2__SGSC1412__ATCC_700720	AE006468	99287	LT2; SGSC 1412; ATCC 700720	-	-	-	missing	-	-	-	-	-	-	-	-	-	-
-Salmonella_enterica	strain_LT2	GCA_001558355.2	ARGID00006	ARGOS_000012/1.0	-	v0.4	SAMN03996249	-	strain_LT2_ATCC_700720	FDAARGOS_94	28901	Not Applicable	FDA	1948	USA	missing	-	environmental/food/other	-	-	-	-	-	-	-	-

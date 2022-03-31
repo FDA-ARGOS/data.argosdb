@@ -1,0 +1,229 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/SRA_ngsQC.tsv",
+    "title": "SRA_ngsQC.tsv",
+    "type": "object",
+    "required": [
+        "sra_experiment_id",
+        "sra_run_id",
+        "num_of_bases",
+        "file_size",
+        "published",
+        "source",
+        "strategy",
+        "layout",
+        "file_type"
+    ],
+    "properties": {
+        "sra_experiment_id": {
+            "$id": "#root/sra_experiment_id",
+            "title": "sra_experiment_id",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR9107811"
+            ],
+            "pattern": "^.*$"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "Raja",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRX5882434"
+            ],
+            "pattern": "^.*$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN11077980"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_of_bases": {
+            "$id": "#root/num_of_bases",
+            "title": "num_of_bases",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "400293278"
+            ],
+            "pattern": "^.*$"
+        },
+        "file_size": {
+            "$id": "#root/file_size",
+            "title": "file_size",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "195921414"
+            ],
+            "pattern": "^.*$"
+        },
+        "published": {
+            "$id": "#root/published",
+            "title": "published",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "##########"
+            ],
+            "pattern": "^.*$"
+        },
+        "source": {
+            "$id": "#root/source",
+            "title": "source",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "VIRAL RNA"
+            ],
+            "pattern": "(Genomic DNA|GENOMIC|TRANSCRIPTOMIC|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL RNA|OTHER)"
+        },
+        "strategy": {
+            "$id": "#root/strategy",
+            "title": "strategy",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "WGS"
+            ],
+            "pattern": "(WGA|WGS|WXS|RNA-Seq|miRNA-Seq|WCS|CLONE|POOLCLONE|AMPLICON|CLONEEND|FINISHING|ChIP-Seq|MNase-Seq|DNase-Hypersensitivity|Bisulfite-Seq|Tn-Seq|EST|FL-cDNA|CTS|MRE-Seq|MeDIP-Seq|MBD-Seq|Synthetic-Long-Read|ATAC-seq|ChIA-PET|FAIRE-seq|Hi-C|ncRNA-Seq|RAD-Seq|RIP-Seq|SELEX|ssRNA-seq|Targeted-Capture|Tethered Chromatin Conformation Capture|OTHER)"
+        },
+        "layout": {
+            "$id": "#root/layout",
+            "title": "layout",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PAIRED"
+            ],
+            "pattern": "^.*$"
+        },
+        "library_name": {
+            "$id": "#root/library_name",
+            "title": "library_name",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "IL100100209"
+            ],
+            "pattern": "^.*$"
+        },
+        "selection": {
+            "$id": "#root/selection",
+            "title": "selection",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "cDNA"
+            ],
+            "pattern": "(RANDOM|PCR|RANDOM PCR|RT-PCR|HMPR|MF|CF-S|CF-M|CF-H|CF-T|MDA|MSLL|cDNA|ChIP|MNase|DNAse|Hybrid Selection|Reduced Representation|Restriction Digest|5-methylcytidine antibody|MBD2 protein methyl-CpG binding domain|CAGE|RACE|size fractionation|Padlock probes capture method|other|unspecified|cDNA_oligo_dT|cDNA_randomPriming|Inverse rRNA|Oligo-dT|PolyA|repeat fractionation)"
+        },
+        "instrument": {
+            "$id": "#root/instrument",
+            "title": "instrument",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Illumina MiSeq"
+            ],
+            "pattern": "^.*$"
+        },
+        "file_type": {
+            "$id": "#root/file_type",
+            "title": "file_type",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "fastq"
+            ],
+            "pattern": "^.*$"
+        },
+        "reads_unaligned": {
+            "$id": "#root/reads_unaligned",
+            "title": "reads_unaligned",
+            "description": "Vahan",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "61059"
+            ],
+            "pattern": "^[2-9]|[1-9]\\d+$"
+        },
+        "identified_reads": {
+            "$id": "#root/identified_reads",
+            "title": "identified_reads",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "603880"
+            ],
+            "pattern": "^[2-9]|[1-9]\\d+$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "Raja",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "64320"
+            ],
+            "pattern": "^[2-9]|[1-9]\\d+$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "Yi FDA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_identified": {
+            "$id": "#root/percent_identified",
+            "title": "percent_identified",
+            "description": "SRA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.90817353"
+            ],
+            "pattern": "^[+-]?([0]+\\.?[0-9]*|\\.[0-9]+)$"
+        },
+        "gc_content": {
+            "$id": "#root/gc_content",
+            "title": "gc_content",
+            "description": "Yi FDA GC & Vahan",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.45566968"
+            ],
+            "pattern": "^[+-]?([0]+\\.?[0-9]*|\\.[0-9]+)$"
+        }
+    }
+}

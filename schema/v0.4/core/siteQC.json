@@ -1,0 +1,290 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.4/core/siteQC.tsv",
+    "title": "siteQC.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "schema_version",
+        "genomic_identifier"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Salmonella_enterica"
+            ],
+            "pattern": "^.*$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "strain_LT2"
+            ],
+            "pattern": "^.*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_001558355.2"
+            ],
+            "pattern": "^.*$"
+        },
+        "fdaargos_id": {
+            "$id": "#root/fdaargos_id",
+            "title": "fdaargos_id",
+            "description": "ARGOS identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGID00006"
+            ],
+            "pattern": "^.*$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000012/1.0"
+            ],
+            "pattern": "^.*$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.4"
+            ],
+            "pattern": "^.*$"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The type of platform used to conduct the analysis",
+            "type": "",
+            "default": "-",
+            "examples": [
+                "HIVE Heptagon"
+            ],
+            "pattern": "^.*$"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "hive_object_id",
+            "description": "The process identifier from platform used to conduct the analysis",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "39658"
+            ],
+            "pattern": "^.*$"
+        },
+        "genomic_identifier": {
+            "$id": "#root/genomic_identifier",
+            "title": "genomic_identifier",
+            "description": "identifier for the source genomic object",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_001558355.2"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_SNPs": {
+            "$id": "#root/num_SNPs",
+            "title": "num_SNPs",
+            "description": "Total number of SNPs",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "357777"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_SNPs_threshold": {
+            "$id": "#root/num_SNPs_threshold",
+            "title": "",
+            "description": "Threshold used to select these SNPs",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "50"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_pos_selected_sites": {
+            "$id": "#root/num_pos_selected_sites",
+            "title": "",
+            "description": "Total number of positively selected sites",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "197.45"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_pos_selected_threshold": {
+            "$id": "#root/num_pos_selected_threshold",
+            "title": "",
+            "description": "Threshold used to select these positively selected sites",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "300"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_neg_selected_sites": {
+            "$id": "#root/num_neg_selected_sites",
+            "title": "",
+            "description": "Total number of negatively selected sites",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "53"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_neg_selected_threshold": {
+            "$id": "#root/num_neg_selected_threshold",
+            "title": "",
+            "description": "Threshold used to select these negatively selected sites",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_nuc_call": {
+            "$id": "#root/num_nuc_call",
+            "title": "num_nuc_call",
+            "description": "Number of nucliotides called for this position",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_nuc_call": {
+            "$id": "#root/percent_nuc_call",
+            "title": "percent_nuc_call",
+            "description": "Total percentage of nucleotieds at this position that matched this call",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "genomic_coordinate_start": {
+            "$id": "#root/genomic_coordinate_start",
+            "title": "genomic_coordinate_start",
+            "description": "Start position for this feature in the genome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "genomic_coordinates_end": {
+            "$id": "#root/genomic_coordinates_end",
+            "title": "genomic_coordinates_end",
+            "description": "End position for this feature in the genome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "protein_coordinates_start": {
+            "$id": "#root/protein_coordinates_start",
+            "title": "protein_coordinates_start",
+            "description": "Start position for this feature in the proteome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "protein_coordinates_end": {
+            "$id": "#root/protein_coordinates_end",
+            "title": "protein_coordinates_end",
+            "description": "End position for this feature in the proteome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "source": {
+            "$id": "#root/source",
+            "title": "source",
+            "description": "Source of genomic information in the file. From an SRA controled vocabulary: GENOMIC: [Genomic DNA (includes PCR products from genomic DNA)], TRANSCRIPTOMIC: [Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)], METAGENOMIC : [Mixed material from metagenome], METATRANSCRIPTOMIC: [Transcription products from community targets], SYNTHETIC: [Synthetic DNA], VIRAL RNA: [Viral RNA], OTHER:[Other, unspecified, or unknown library source material (please include additional info in the \u201cdesign description\u201d)]",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_feature_tag": {
+            "$id": "#root/seq_feature_tag",
+            "title": "seq_feature_tag",
+            "description": "Tags associated with this feature. Can be coverage, quality|entropy, mutations,indels, tailsd, disbalance, aniusotropyu, partiality",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_feature_value": {
+            "$id": "#root/seq_feature_value",
+            "title": "seq_feature_value",
+            "description": "Values for the tag associated with this feature",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "source_database": {
+            "$id": "#root/source_database",
+            "title": "source_database",
+            "description": "Source database or resource for this feature",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.argos.org/schema/ngs_ID_list.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/ngs_ID_list.tsv",
     "title": "ngs_ID_list.tsv",
     "type": "object",
     "required": [
@@ -11,24 +11,24 @@
         "taxonomy_id",
         "selection_notes",
         "lab_name",
-        "processed"
+        "files_processed"
     ],
     "properties": {
         "sra_run_id": {
             "$id": "#root/note",
             "title": "SRA Run ID",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
                 "SRR17309642"
             ],
-            "pattern": "^.*$"
+            "pattern": "^\\+SRR.+"
         },
         "organism_name": {
             "$id": "#root/note",
-            "title": "",
-            "description": " ",
+            "title": "organism_name",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
@@ -39,7 +39,7 @@
         "leaf_node": {
             "$id": "#root/note",
             "title": "Leaf Node",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
@@ -50,18 +50,18 @@
         "taxonomy_id": {
             "$id": "#root/taxonomy_id",
             "title": "taxonomy_id",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
                 "2697049"
             ],
-            "pattern": "^.*$"
+            "pattern": "^[2-9]|[1-9]\\d+$"
         },
         "selection_notes": {
             "$id": "#root/note",
             "title": "Selection Notes",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
@@ -72,24 +72,24 @@
         "lab_name": {
             "$id": "#root/note",
             "title": "Lab Name",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
                 "Pond Lab"
             ],
-            "pattern": "^.*$"
+            "pattern": "(Pond Lab|Crandall Lab|HIVE Lab)"
         },
-        "processed": {
+        "files_processed": {
             "$id": "#root/processed",
             "title": "processed",
-            "description": "",
+            "description": "Raja",
             "type": "string",
             "default": "-",
             "examples": [
-                "No"
+                "ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL"
             ],
-            "pattern": "^.*$"
+            "pattern": "(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)"
         }
     }
 }

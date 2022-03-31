@@ -1,7 +1,7 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.argos.org/schema/SRA_ngsQC.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.3/annotation/SRA_ngsQC.tsv",
     "title": "SRA_ngsQC.tsv",
     "type": "object",
     "required": [
@@ -19,211 +19,211 @@
         "sra_experiment_id": {
             "$id": "#root/sra_experiment_id",
             "title": "sra_experiment_id",
-            "description": "SRA STAT",
+            "description": "Experiment identifier assigned by SRA and linked to GenBank and other databases.",
             "type": "string",
             "default": "-",
             "examples": [
-                "SRR9107811"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "sra_run_id": {
             "$id": "#root/sra_run_id",
             "title": "sra_run_id",
-            "description": "",
+            "description": "Database identifier assigned by repository and linked to GenBank or other repository.",
             "type": "string",
             "default": "-",
             "examples": [
-                "SRX5882434"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "biosample": {
             "$id": "#root/biosample",
             "title": "biosample",
-            "description": "NCBI BioSample DB",
+            "description": "NCBI BioSample identifier.",
             "type": "string",
             "default": "-",
             "examples": [
-                "SAMN11077980"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "num_of_bases": {
             "$id": "#root/num_of_bases",
             "title": "num_of_bases",
-            "description": "SRA STAT",
+            "description": "Number of nucleotides represented in file",
             "type": "string",
             "default": "-",
             "examples": [
-                "400293278"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "file_size": {
             "$id": "#root/file_size",
             "title": "file_size",
-            "description": "SRA STAT",
+            "description": "File size",
             "type": "string",
             "default": "-",
             "examples": [
-                "195921414"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "published": {
             "$id": "#root/published",
             "title": "published",
-            "description": "SRA STAT",
+            "description": "Date of publication",
             "type": "string",
             "default": "-",
             "examples": [
-                "5/22/19 16:57"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "source": {
             "$id": "#root/source",
             "title": "source",
-            "description": "NCBI SRA",
+            "description": "Source of genomic information in the file. From an SRA controled vocabulary: GENOMIC: [Genomic DNA (includes PCR products from genomic DNA)], TRANSCRIPTOMIC: [Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)], METAGENOMIC : [Mixed material from metagenome], METATRANSCRIPTOMIC: [Transcription products from community targets], SYNTHETIC: [Synthetic DNA], VIRAL RNA: [Viral RNA], OTHER:[Other, unspecified, or unknown library source material (please include additional info in the \u201cdesign description\u201d)]",
             "type": "string",
             "default": "-",
             "examples": [
-                "VIRAL RNA"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "strategy": {
             "$id": "#root/strategy",
             "title": "strategy",
-            "description": "HIVE",
+            "description": "Strategy/method used to generate the NGS. Controled vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER",
             "type": "string",
             "default": "-",
             "examples": [
-                "WGS"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "layout": {
             "$id": "#root/layout",
             "title": "layout",
-            "description": "SRA STAT",
+            "description": "Sequencing library layout",
             "type": "string",
             "default": "-",
             "examples": [
-                "PAIRED"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
-        "library_name": {
-            "$id": "#root/library_name",
-            "title": "library_name",
-            "description": "SRA STAT",
+        "library_newname": {
+            "$id": "#root/library_newname",
+            "title": "library_newname",
+            "description": "Name of sequencing library",
             "type": "string",
             "default": "-",
             "examples": [
-                "IL100100209"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "selection": {
             "$id": "#root/selection",
             "title": "selection",
-            "description": "SRA STAT",
+            "description": "Library selection",
             "type": "string",
             "default": "-",
             "examples": [
-                "cDNA"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "instrument": {
             "$id": "#root/instrument",
             "title": "instrument",
-            "description": "HIVE",
+            "description": "Name of instrument used for NGS.",
             "type": "string",
             "default": "-",
             "examples": [
-                "Illumina MiSeq"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "file_type": {
             "$id": "#root/file_type",
             "title": "file_type",
-            "description": "SRA STAT",
+            "description": "Type of file representing the genomic data",
             "type": "string",
             "default": "-",
             "examples": [
-                "fastq"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "reads_unaligned": {
             "$id": "#root/reads_unaligned",
             "title": "reads_unaligned",
-            "description": "HIVE",
+            "description": "Number of reads in short_read pool that do not align to assembly.",
             "type": "string",
             "default": "-",
             "examples": [
-                "61059"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "identified_reads": {
             "$id": "#root/identified_reads",
             "title": "identified_reads",
-            "description": "SRA STAT",
+            "description": "The number of reads that were matched to a reference",
             "type": "string",
             "default": "-",
             "examples": [
-                "603880"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "taxonomy_id": {
             "$id": "#root/taxonomy_id",
             "title": "taxonomy_id",
-            "description": "",
+            "description": "NCBI taxonomy identifier of the organism.",
             "type": "string",
             "default": "-",
             "examples": [
-                "64320"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "lineage": {
             "$id": "#root/lineage",
             "title": "lineage",
-            "description": "NCBI Taxonomy",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
             "type": "string",
             "default": "-",
             "examples": [
-                "Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "percent_identified": {
             "$id": "#root/percent_identified",
             "title": "percent_identified",
-            "description": "SRA STAT",
+            "description": "The percentage of reads that were matched to a reference",
             "type": "string",
             "default": "-",
             "examples": [
-                "0.908173532"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "gc_content": {
             "$id": "#root/gc_content",
             "title": "gc_content",
-            "description": "HIVE;Calculated from SRA",
+            "description": "GC content of the assembly.",
             "type": "string",
             "default": "-",
             "examples": [
-                "0.455669683"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         }
     }
 }

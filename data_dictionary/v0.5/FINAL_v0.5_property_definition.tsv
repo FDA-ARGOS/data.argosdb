@@ -1,0 +1,159 @@
+Property	Edit (This whole sheet needs to be check/redone programmatically based on Core and Non-core. 	Data Files	recommended	Description	source/type def
+organism_name		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | organism.csv | *_proteome_metadata.csv | PRJNA231221_AssemblyUpdated.tsv	Yi FDA	Name of the expected organism. Should corrospond to a NCBI Taxonomy node	NCBI Taxonomy
+lineage		assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv	Yi FDA	The complete taxonomic lineage for the taxonomic node indicated.	NCBI Taxonomy
+genome_assembly_id		assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | siteQC_HL.tsv	Yi FDA	NCBI Assembly DB identifier.	NCBI Assembly DB
+strain		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv Strain PRJNA231221_AssemblyUpdated.tsv	Yi FDA	microbial or eukaryotic strain name	NCBI Taxonomy
+biosample		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv	NCBI	NCBI BioSample identifier.	NCBI BioSample DB
+fdaargos_id		assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	ARGOS identifier.	data.argos.org
+num_chromosomes		assemblyQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv	Raja	Total number of chromosomes in the genome assembly.	NCBI Assembly DB
+bco_id		assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv | biosampleMeta_HL.tsv	Raja	BioCompute Object identifier.	biocomputeobject.org
+taxonomy_id		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv	Yi FDA	NCBI taxonomy identifier of the organism.	NCBI Taxonomy
+id_method		assemblyQC_HL.tsv	Yi FDA	Species identification method.	Data source
+sample_type		assemblyQC_HL.tsv	Yi FDA	"Type of sample used for the BioSample submission, if applicable."	NCBI BioSample DB
+host		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | organism.csv	NCBI Biosample DB; Yi FDA	The natural host to the organism from which the sample was obtained.	NCBI BioSample DB
+number_of_n_or_x		assemblyQC_HL.tsv	Raja/Vahan	Total number of Ns or Xs in the assembled genome.	HIVE
+isolation_provider_name		assemblyQC_HL.tsv	Yi FDA	Name of the provider from which the biological sample was derived.	HIVE
+isolation_acquisition_id		assemblyQC_HL.tsv	Yi FDA	Acquisition identifier for obtained isolate.	HIVE
+contact_name		assemblyQC_HL.tsv	Yi FDA	Contact name associated with the BioSample.	HIVE
+sequencing_method		assemblyQC_HL.tsv	Yi FDA	Sequencing method used to obtain the DNA fragments/sequences.	HIVE
+n50		assemblyQC_HL.tsv	Yi FDA; Vahan	Length of the shortest read to minimally represent 50% of the assembly.	HIVE
+l50		assemblyQC_HL.tsv	Yi FDA; Vahan	Number of reads that minimally represent 50% of the assembly.	HIVE
+gc_content		assemblyQC_HL.tsv | ngsQC_HL.tsv | SRA_ngsQC.tsv	Yi FDA GC & Vahan	GC content of the assembly.	HIVE;Calculated from SRA
+length		assemblyQC_HL.tsv | uniprot-proteome*.csv	Yi FDA	Total length of the assembled genome.	HIVE
+avg_nuc_identity		assemblyQC_HL.tsv	Yi FDA	Average nucleotide identity between the assembly and the reference sequences.	HIVE
+percent_assembly_greater_20x		assemblyQC_HL.tsv	Yi FDA	"Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used."	HIVE
+query_coverage_against_reference		assemblyQC_HL.tsv	Yi FDA	BLAST query coverage of the entire assembly between the assembly and reference sequences.	HIVE
+percent_identity_against_reference		assemblyQC_HL.tsv	Yi FDA	BLAST percent identity of the entire assembly between the assembly and reference sequences.	HIVE
+seq_id		assemblyQC_HL.tsv	Vahan	Reference identifier to a specific sequence inside the assembled genome.	HIVE
+n95		assemblyQC_HL.tsv	Vahan	Length of the shortest read to minimally represent 95% of the assembly.	HIVE
+l95		assemblyQC_HL.tsv	Vahan	Number of reads that minimally represent 95% of the assembly.	HIVE
+cnt_scaffolds		assemblyQC_HL.tsv	Vahan	Number of scaffolds to represent the assembled genome.	HIVE
+cnt_contigs		assemblyQC_HL.tsv	Vahan	Number of contigs to represent the assembled genome.	HIVE
+contigs_momentum		assemblyQC_HL.tsv	Vahan	Cumulative normalized momentum (contig_size*count) of all contigs.	HIVE
+coverage_contigs		assemblyQC_HL.tsv	Vahan	Average coverage on contigs.	HIVE
+reads_unaligned		assemblyQC_HL.tsv | SRA_ngsQC.tsv	Vahan	Number of reads in short_read pool that do not align to assembly.	HIVE
+aligned_momentum		assemblyQC_HL.tsv	Vahan	Cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly.	HIVE
+overhang_momentum		assemblyQC_HL.tsv	Vahan	Cumulative normalized momentum (unaligned_size*count) of own reads unaligned to assembly.	HIVE
+bases_percentile_aligned		assemblyQC_HL.tsv	Vahan	Percentile of bases on partially aligned reads with relation to count of all bases on aligned reads.	HIVE
+cnt_gaps		assemblyQC_HL.tsv	Vahan	Number of gaps in an assembly as covered by own reads.	HIVE
+size_gaps		assemblyQC_HL.tsv	Vahan	Cumulative size of gaps as covered by own reads.	HIVE
+clonal_populations		assemblyQC_HL.tsv	Vahan	Number of clonal populations on assembly nephosome.	HIVE
+clonal_expanse		assemblyQC_HL.tsv	Vahan	Total size of all clonal contigs.	HIVE
+phred_average		assemblyQC_HL.tsv	Vahan	Average phred score of aligned base call.	HIVE
+count_major_variations		assemblyQC_HL.tsv	Vahan	Number of +50% variations on a variation profile of own reads on avartion profile of own reads on assembly.	HIVE
+indels_momentum		assemblyQC_HL.tsv	Vahan	Momentum of indels (count*percentile) on variation profile of own reads alignment to assembly.	HIVE
+mutation_momentum		assemblyQC_HL.tsv	Vahan	Momentum of mutations (count*percentile) on variation profile of own reads alignment to assembly.	HIVE
+alignment_disbalance		assemblyQC_HL.tsv	Vahan	Ratio of forward and reverse own reads aligned on assembly.	HIVE
+alignmnet_anisotropy		assemblyQC_HL.tsv	Vahan	Anisotropy of basecalls with relation to own reads aligned to assembly.	HIVE
+rpkm		assemblyQC_HL.tsv	Vahan	Reads per kilobase of reference size per million alignments.	HIVE
+fpkm		assemblyQC_HL.tsv	Vahan	Fragments per kilobase of reference size per million alignments.	HIVE
+coverage_homogeneity		assemblyQC_HL.tsv	Vahan	Anisotropy of the coverage with relation to assembly frame.	HIVE
+ambiguous_bases		assemblyQC_HL.tsv	Vahan	"Number of IUPAC ambiguous bases in reads(Ns, Ys, etc.)"	HIVE
+taxid_composition		assemblyQC_HL.tsv	Vahan	Taxonomic identifiers hit by 1% or more reads using CensuScope or something similar	HIVE
+seq_composition		assemblyQC_HL.tsv	Vahan	Sequence identifiers hit by 1% or more reads using CensuScope or something similar	HIVE
+assembly_type		assemblyQC_HL.tsv	from NCBI Assembly	"haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms."	HIVE
+assembly_level		assemblyQC_HL.tsv | PRJNA231221_AssemblyUpdated.tsv	from NCBI Assembly	The highest level of assembly for any object in the assembly.	HIVE
+srs_id		biosampleMeta_HL.tsv	NCBI SRA	SRA identifier for a BioSample's genomic file.	NCBI BioSample DB
+sample_name		biosampleMeta_HL.tsv	NCBI Biosample DB	sample name in source database	NCBI BioSample DB
+isolate		biosampleMeta_HL.tsv	NCBI Biosample DB	identification or description of the specific individual from which this sample was obtained	NCBI BioSample DB
+collected_by		biosampleMeta_HL.tsv	NCBI Biosample DB	Name of persons or institute who collected the sample	NCBI BioSample DB
+collection_date		biosampleMeta_HL.tsv	NCBI Biosample DB	"the date on which the sample was collected; date/time ranges are supported by providing two dates from among the supported value formats, delimited by a forward-slash character; collection times are supported by adding ""T"", then the hour and minute after the date, and must be in Coordinated Universal Time (UTC),"	NCBI BioSample DB
+geo_loc_name		biosampleMeta_HL.tsv	NCBI Biosample DB	Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary.¬†	NCBI BioSample DB
+isolation_source		biosampleMeta_HL.tsv	NCBI Biosample DB	"Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived."	NCBI BioSample DB
+lat_lon		biosampleMeta_HL.tsv	NCBI Biosample DB	The geographical coordinates of the location where the sample was collected.	NCBI BioSample DB
+culture_collection		biosampleMeta_HL.tsv	NCBI Biosample DB	"Name of source institute and unique culture identifier. See the description for the proper format and list of allowed institutes, http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier"	NCBI BioSample DB
+host_age		biosampleMeta_HL.tsv	NCBI Biosample DB	Age of host at the time of sampling	NCBI BioSample DB
+host_description		biosampleMeta_HL.tsv	NCBI Biosample DB	Additional information not included in other defined vocabulary fields	NCBI BioSample DB
+host_disease		biosampleMeta_HL.tsv	NCBI Biosample DB	"Name of relevant disease, e.g. Salmonella gastroenteritis. Controlled vocabulary, http://bioportal.bioontology.org/ontologies/1009 or http://www.ncbi.nlm.nih.gov/mesh"	NCBI BioSample DB
+host_disease_outcome		biosampleMeta_HL.tsv	NCBI Biosample DB	"Final outcome of disease, e.g., death, chronic disease, recovery"	NCBI BioSample DB
+host_disease_stage		biosampleMeta_HL.tsv	NCBI Biosample DB	Stage of disease at the time of sampling	NCBI BioSample DB
+host_health_state		biosampleMeta_HL.tsv	NCBI Biosample DB	Information regarding health state of the individual sampled at the time of sampling	NCBI BioSample DB
+host_sex		biosampleMeta_HL.tsv	NCBI Biosample DB	Gender or physical sex of the host	NCBI BioSample DB
+id_method		biosampleMeta_HL.tsv | ngsQC_HL.tsv	NCBI Biosample DB	Species identification method.	NCBI BioSample DB
+type_material		biosampleMeta_HL.tsv | ngsQC_HL.tsv	NCBI Biosample DB	Material used for species identification method.	NCBI BioSample DB
+file_name		ngsQC_HL.tsv	HIVE	FASTQ file name used for the HIVE analysis.	HIVE
+avg_file_quality		ngsQC_HL.tsv	HIVE	Average quality (in phred score) of sequences in a FASTQ read file.	HIVE
+min_read_length		ngsQC_HL.tsv	HIVE	Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.	HIVE
+pos_outlier_count		ngsQC_HL.tsv	HIVE	Count of positions the quality of which is significantly different (extremely low or high).	HIVE
+num_reads		ngsQC_HL.tsv	HIVE	Number of sequences present in a FASTA/FASTQ read file.	HIVE
+avg_read_length		ngsQC_HL.tsv	HIVE	Average length of sequences in a FASTA/FASTQ read file.	HIVE
+max_read_length		ngsQC_HL.tsv	HIVE	Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.	HIVE
+strategy		ngsQC_HL.tsv | SRA_ngsQC.tsv	HIVE	Strategy/method used to generate the NGS. Controled vocabulary consisting of the following terms: WGA WGS WXS RNA-Seq miRNA-Seq WCS CLONE POOLCLONE AMPLICON CLONEEND FINISHING ChIP-Seq MNase-Seq DNase-Hypersensitivity Bisulfite-Seq Tn-Seq EST FL-cDNA CTS MRE-Seq MeDIP-Seq MBD-Seq Synthetic-Long-Read OTHER	HIVE
+sra_run_id		ngsQC_HL.tsv | SRA_ngsQC.tsv	HIVE	Database identifier assigned by repository and linked to GenBank or other repository.	HIVE
+wgs_accession		ngsQC_HL.tsv	HIVE	NCBI Whole Genome Shotgun (WGS) accession number.	HIVE
+level		ngsQC_HL.tsv | AssemblyUpdated.tsv	HIVE	Level index for run specific depth first enumeration of tax hierarchy.	NCBI SRA
+instrument		ngsQC_HL.tsv | SRA_ngsQC.tsv	HIVE	Name of instrument used for NGS.	HIVE
+codon_table		ngsQC_HL.tsv	HIVE	"A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc."	HIVE
+percent_coding		ngsQC_HL.tsv	HIVE	The relative frequency of sequences that are protein coding for each DNA sequence type.	HIVE
+percent_not_coding		ngsQC_HL.tsv	HIVE	The relative frequency of sequences that are not protein coding for each DNA sequence type.	HIVE
+cumulative_percent_reads		ngsQC_HL.tsv	HIVE	A list containg the number of reads that positionally correspond to the density of Ns list values. Can be used to generate cumulative percentage of N density in reads.	HIVE
+density_n_per_read		ngsQC_HL.tsv	HIVE	A list of density values of Ns per sequence read.	HIVE
+complexity_percent		ngsQC_HL.tsv	HIVE	Percentage of sequences that are complex.	HIVE
+non_complex_percent		ngsQC_HL.tsv	HIVE	Percentage of sequences that are not complex.	HIVE
+avg_quality_a		ngsQC_HL.tsv	HIVE	The average cumulative quality score of adenine in the NGS.	HIVE
+avg_quality_t		ngsQC_HL.tsv	HIVE	The average cumulative quality score of thiamine in the NGS.	HIVE
+avg_quality_g		ngsQC_HL.tsv	HIVE	The average cumulative quality score of guanine in the NGS.	HIVE
+avg_quality_c		ngsQC_HL.tsv	HIVE	The average cumulative quality score of cytosine in the NGS.	HIVE
+count_a		ngsQC_HL.tsv	HIVE	The total count of adenines in the NGS.	HIVE
+count_c		ngsQC_HL.tsv	HIVE	The total count of cytosines in the NGS.	HIVE
+count_g		ngsQC_HL.tsv	HIVE	The total count of guanines in the NGS.	HIVE
+count_t		ngsQC_HL.tsv	HIVE	The total count of thiamaines in the NGS.	HIVE
+bioproject		PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv	NCBI BioProject DB	"NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium."	NCBI BioProject DB
+uniprotkb_canonical_ac		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	"Uniprot canonical sequence accession. To reduce redundancy, the UniProtKB/Swiss-Prot policy is to describe all the protein products encoded by one gene in a given species in a single entry."	https://cov-lineages.org/
+found_in		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+gene_name		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+protein_name		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+evidence_ECO0000313		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+begin_aa_pos		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+end_aa_pos		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+mutation_type		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+is_known_glycoprotein		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+motif_start		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+ref_motif		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+alt_motif		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+effect		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+note		sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
+genomic_identifier		siteQC_HL.tsv	Vahan	identifier for the source genomic object	HIVE
+num_nuc_call		siteQC_HL.tsv	Vahan	Number of nucliotides called for this position	HIVE
+percent_nuc_call		siteQC_HL.tsv	Vahan	Total percentage of nucleotieds at this position that matched this call	HIVE
+genomic_coordinate_start		siteQC_HL.tsv	Vahan	Start position for this feature in the genome file	HIVE
+genomic_coordinates_end		siteQC_HL.tsv	Vahan	End position for this feature in the genome file	HIVE
+protein_coordinates_start		siteQC_HL.tsv	Vahan	Start position for this feature in the proteome file	HIVE
+protein_coordinates_end		siteQC_HL.tsv	Vahan	End position for this feature in the proteome file	HIVE
+source		SRA_ngsQC.tsv	SRA	"Source of genomic information in the file. From an SRA controled vocabulary: GENOMIC: [Genomic DNA (includes PCR products from genomic DNA)], TRANSCRIPTOMIC: [Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)], METAGENOMIC : [Mixed material from metagenome], METATRANSCRIPTOMIC: [Transcription products from community targets], SYNTHETIC: [Synthetic DNA], VIRAL RNA: [Viral RNA], OTHER:[Other, unspecified, or unknown library source material (please include additional info in the ‚Äúdesign description‚Äù)]"	NCBI SRA
+seq_feature_tag		siteQC_HL.tsv	Vahan	"Tags associated with this feature. Can be coverage, quality|entropy, mutations,indels, tailsd, disbalance, aniusotropyu, partiality"	HIVE
+seq_feature_value		siteQC_HL.tsv	Vahan	Values for the tag associated with this feature	HIVE
+sra_experiment_id		SRA_ngsQC.tsv	SRA	Experiment identifier assigned by SRA and linked to GenBank and other databases.	SRA STAT
+num_of_bases		SRA_ngsQC.tsv	SRA	Number of nucleotides represented in file	SRA STAT
+file_size		SRA_ngsQC.tsv	SRA	File size	SRA STAT
+published		SRA_ngsQC.tsv	SRA	Date of publication	SRA STAT
+layout		SRA_ngsQC.tsv	SRA	Sequencing library layout	SRA STAT
+library_name		SRA_ngsQC.tsv	SRA	Name of sequencing library	SRA STAT
+selection		SRA_ngsQC.tsv	SRA	Library selection	SRA STAT
+file_type		SRA_ngsQC.tsv	SRA	Type of file representing the genomic data	SRA STAT
+identified_reads		SRA_ngsQC.tsv	SRA	The number of reads that were matched to a reference	SRA STAT
+percent_identified		SRA_ngsQC.tsv	SRA	The percentage of reads that were matched to a reference	SRA STAT
+entry_name		uniprot-proteome*.csv	Raja	protein name	UniProt
+status		uniprot-proteome*.csv	Raja	Reviewed or unreviewed	UniProt
+protein_names		uniprot-proteome*.csv	Raja	name of protein	UniProt
+gene_names		uniprot-proteome*.csv	Raja	List of gene names associated with this protein	UniProt
+uniprotkb_ac		uniprot-proteome*.csv	Raja	accession for the protein	UniProt
+pango_lineages		sars-cov-2_lineage_mutations.tsv	Raja	"The Pango nomenclature is being used by researchers and public health agencies worldwide to track the transmission and spread of SARS-CoV-2, including variants of concern. This website documents all current Pango lineages and their spread, as well as various software tools which can be used by researchers to perform analyses on SARS-COV-2 sequence data. https://cov-lineages.org/index.html#about"	https://cov-lineages.org/index.html#about
+schema_version		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	"Version of the biosample_metadata, ngsQC, assemblyQC, siteQC"	data.argos.org
+source_database		siteQC_HL.tsv	Vahan	Source database or resource for this feature	HIVE
+hive_object_id		assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	HIVE object ID which is assigned automatically within the HIVE Platform. This ID assists with internal tracking and programatic inquires with in the HIVE Platfrom	HIVE
+sra_run_id		ngs_ID_list.tsv	Raja	SRA identifier for a BioSample's genomic file.	
+organism_name		ngs_ID_list.tsv	Raja	Name of the expected organism. Should corrispond to a NCBI Taxonomy node	 
+leaf_node		ngs_ID_list.tsv	Raja	Terminal node of organism's taxonomy 	
+taxonomy_id		ngs_ID_list.tsv	Raja	NCBI taxonomy identifier of the organism.	
+selection_notes		ngs_ID_list.tsv	Raja	Notes describing why SRR was analyzed	
+lab_name		ngs_ID_list.tsv	Raja	Lab group that ran ngs computation	
+files_processed	Joe: New entry 	ngs_ID_list.tsv	Raja	Denotes if SRR has been published on argosdb	
+num_SNPs		ngsQC_HL.tsv	Raja	Total number of SNPs	
+num_SNPs_threshold		ngsQC_HL.tsv	Raja	Threshold used to select these SNPs	
+num_pos_selected_sites		ngsQC_HL.tsv	Raja	Total number of positively selected sites	
+num_pos_selected_threshold		ngsQC_HL.tsv	Raja	Threshold used to select these positively selected sites	
+num_neg_selected_sites		ngsQC_HL.tsv	Raja	Total number of negatively selected sites	
+num_neg_selected_threshold		ngsQC_HL.tsv	Raja	Threshold used to select these negatively selected sites	
+analysis_platform	Steph: added entry 	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The type of platform used to conduct the analysis	Same as value
+analysis_platform_object_id	Steph: added entry 	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The process identifier from platform used to conduct the analysis	Same as value

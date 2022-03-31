@@ -27,7 +27,9 @@ import json
 import argparse
 import sys
 import os
+
 from urllib.parse import urlparse
+import urllib
 import jsonref
 from jsonschema import validate, ValidationError
 
@@ -166,11 +168,11 @@ def validate_schema(options):
         return
 
     if os.path.exists(options.schema):
-        print("Local file supplied")
+        print("Local schema file supplied")
         with open(options.schema, 'r', encoding='utf-8-sig') as json_schema:
             schema = json.load(json_schema)
     elif url_valid(options.schema) is True:
-        print("Remote file supplied")
+        print("Remote schema file supplied")
         schema = jsonref.load_uri(options.schema)
     else:
         print("Could not load schema. Exiting")
@@ -356,17 +358,36 @@ def sheet_2_json(file_path):
     -------
         List of JSONs, one representing each row of the data file
     """
+
+    sheet = []
+
     extension = file_path.split('.')[-1]
     if extension == 'tsv':
         delimiter='\t'
     elif extension == 'csv':
         delimiter=','
-    sheet = []
-    with open(file_path, 'r', encoding='utf-8-sig') as file:
-        data = csv.reader(file, delimiter=delimiter)
+
+    if os.path.exists(file_path):
+        print("Local file supplied")
+        with open(file_path, 'r', encoding='utf-8-sig') as file:
+            data = csv.reader(file, delimiter=delimiter)
+            header = next(data)
+            for row in data:
+                sheet.append(row)
+
+    elif url_valid(file_path) is True:
+        print("Remote file supplied")
+        response = urllib.request.urlopen(file_path)
+        lines = [l.decode('utf-8') for l in response.readlines()]
+        data = csv.reader(lines, delimiter=delimiter)
         header = next(data)
         for row in data:
             sheet.append(row)
+
+    else:
+        print("Could not load file. Exiting")
+        return
+
     data_list = []
     for row in sheet:
         line = {}

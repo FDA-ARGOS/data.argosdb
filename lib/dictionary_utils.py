@@ -4,20 +4,22 @@
 This script will perform various functions related to processing the ARGOS
 data dictionary and associated schemas. General help below.
 
+usage: argosdb_dict_utils [options]
+
 positional arguments:
-{functions,validate,tsv2json}
-    functions           List of all available functions and options.
+  {functions,validate,write_schema,validate_columns}
+    functions           List of all available functions
     validate            Validation options. Used to test a data sheet against
                         a JSON schema. If no schema is supplied will throw an
-                        error.
-    tsv2json            Used to convert a TSV into a JSON schema. If no mapping
+                        error
+    write_schema        Used to convert a TSV into a JSNO schema. If no mapping
                         file is provided, performs default conversions.
-    validate_columns    Validates columns in a list of files in a directory using
-                        provided column headers
+    validate_columns    Validates columns in a list of files in a directory
+                        using provided column headers
 
 optional arguments:
--h, --help            show this help message and exit
--v, --version         show program's version number and exit
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
 """
 
 import csv
@@ -29,7 +31,7 @@ from urllib.parse import urlparse
 import jsonref
 from jsonschema import validate, ValidationError
 
-__version__ = "0.2.0"
+__version__ = "0.5"
 __status__ = "Production"
 
 def usr_args():
@@ -57,6 +59,8 @@ def usr_args():
         help="Input file to process")
     parent_parser.add_argument('-d', '--directory',
         help="Directory")
+    parent_parser.add_argument('-f', '--definitions',
+        help="Definitions")
     parent_parser.add_argument('-c', '--column_index',
         help="Column Index")
     parent_parser.add_argument('-o', '--output',
@@ -155,7 +159,8 @@ def validate_schema(options):
 
     json_list = json.loads(sheet_2_json(options.input))
     count = 0
-    print(len(json_list))
+    lines = len(json_list)
+    print(f'File with {lines} lines supplied.')
     if options.schema is None:
         print("ERROR! No schema was supplied. Exiting")
         return
@@ -175,13 +180,13 @@ def validate_schema(options):
         count += 1
         try:
             validate(instance=line, schema=schema)
-            # print(f'Item number {count} is VALID')
+            # print(f'Item number {count} is VALID', '\n', json.dumps(line))
         except ValidationError as err:
             print(f'Line {count} failed. {err.message}')
             error_flags += 1
             # err = "Given JSON data is InValid"
             # return False, err
-    print(error_flags)
+    print(f'{error_flags} lines failed out of {lines}.')
 
 def list_2_schema(options):
     """Create Schema JSON
@@ -209,7 +214,10 @@ def list_2_schema(options):
         is supplied) or prints to the terminal.
     """
 
-    definition = 'data_files/property_definition.tsv'
+    raw_url = 'https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/'+\
+                'v'+__version__+'/'+options.directory
+
+    definition = options.definitions
     prop_defs = {}
     with open(definition, 'r', encoding='utf8') as definitions:
         def_data = csv.reader(definitions, delimiter="\t")
@@ -234,7 +242,7 @@ def list_2_schema(options):
                     argos_schemas[row[1]] = {
                         'definitions': {},
                         '$schema': 'http://json-schema.org/draft-07/schema#',
-                        '$id': 'https://data.argos.org/schema/'+row[1],
+                        '$id': raw_url+row[1],
                         'title': row[1],
                         'type': 'object',
                         'required':[],

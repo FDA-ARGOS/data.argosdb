@@ -1,7 +1,7 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.argos.org/schema/ngsQC.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.4/core/ngsQC.tsv",
     "title": "ngsQC.tsv",
     "type": "object",
     "required": [

@@ -1,0 +1,74 @@
+Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	pattern	description																																					
+sra_experiment_id	SRA_ngsQC.tsv	required	#root/sra_experiment_id	sra_experiment_id	string	-	SRR9107811	^.*$																																						
+sra_run_id	SRA_ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string	-	SRX5882434	^.*$																																						
+biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	-	SAMN11077980	^.*$																																						
+num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string	-	400293278	^.*$																																						
+file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string	-	195921414	^.*$																																						
+published	SRA_ngsQC.tsv	required	#root/published	published	string	-	##########	^.*$																																						
+source	SRA_ngsQC.tsv	required	#root/source	source	string	-	VIRAL RNA	(Genomic DNA|GENOMIC|TRANSCRIPTOMIC|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL RNA|OTHER)																																						
+strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string	-	WGS	(WGA|WGS|WXS|RNA-Seq|miRNA-Seq|WCS|CLONE|POOLCLONE|AMPLICON|CLONEEND|FINISHING|ChIP-Seq|MNase-Seq|DNase-Hypersensitivity|Bisulfite-Seq|Tn-Seq|EST|FL-cDNA|CTS|MRE-Seq|MeDIP-Seq|MBD-Seq|Synthetic-Long-Read|ATAC-seq|ChIA-PET|FAIRE-seq|Hi-C|ncRNA-Seq|RAD-Seq|RIP-Seq|SELEX|ssRNA-seq|Targeted-Capture|Tethered Chromatin Conformation Capture|OTHER)																																						
+layout	SRA_ngsQC.tsv	required	#root/layout	layout	string	-	PAIRED	^.*$																																						
+library_name	SRA_ngsQC.tsv	optional	#root/library_name	library_name	string	-	IL100100209	^.*$																																						
+selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string	-	cDNA	(RANDOM|PCR|RANDOM PCR|RT-PCR|HMPR|MF|CF-S|CF-M|CF-H|CF-T|MDA|MSLL|cDNA|ChIP|MNase|DNAse|Hybrid Selection|Reduced Representation|Restriction Digest|5-methylcytidine antibody|MBD2 protein methyl-CpG binding domain|CAGE|RACE|size fractionation|Padlock probes capture method|other|unspecified|cDNA_oligo_dT|cDNA_randomPriming|Inverse rRNA|Oligo-dT|PolyA|repeat fractionation)																																						
+instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiSeq	^.*$																																						
+file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string	-	fastq	^.*$																																						
+reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	-	61059	^[2-9]|[1-9]\d+$																																						
+identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	-	603880	^[2-9]|[1-9]\d+$																																						
+taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	-	64320	^[2-9]|[1-9]\d+$																																						
+lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string	-	Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus	^.*$																																						
+percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	-	0.90817353	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$																																						
+gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	-	0.45566968	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$																																						
+genome_assembly_id	SRA_assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_013267415.1	^.*$																																						
+level	SRA_assemblyQC.tsv	required	#root/level	level	string	-	Complete genome	^.*$																																						
+assembly_level	SRA_assemblyQC.tsv	required	#root/assembly_level	assembly_level	string	-	undefined	^.*$																																						
+num_chromosomes	SRA_assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	1	^.*$																																						
+biosample	SRA_assemblyQC.tsv	required	#root/biosample	biosample	string	-	SAMN11056500	^.*$																																						
+strain	SRA_assemblyQC.tsv	required	#root/strain	strain	string	-	FDAARGOS_785	^.*$																																						
+organism_name	SRA_assemblyQC.tsv	required	#root/Taxonomy Name	Taxonomy Name	string	-	Abiotrophia defectiva	^.*$																																						
+bioproject	SRA_assemblyQC.tsv	required	#root/BioPproject	BioPproject	string	-	PRJNA231221	^.*$																																						
+taxonomy_id	SRA_assemblyQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	46125	^[2-9]|[1-9]\d+$																																						
+lineage	SRA_assemblyQC.tsv	required	#root/lineage	lineage	string	-	cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia	^.*$																																						
+uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string	-	P0DTC2-1	^.*$																																						
+found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	-	"Omicron (21K, BA.1)"	^.*$																																						
+gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string	-	S	^.*$																																						
+protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string	-	Spike glycoprotein	^.*$																																						
+evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string	-	CoVariants	^.*$																																						
+begin_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/begin_aa_pos	begin_aa_pos	string	-	67	^.*$																																						
+end_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/end_aa_pos	end_aa_pos	string	-	67	^.*$																																						
+mutation_type	sars-cov-2_lineage_mutations.tsv	required	#root/mutation_type	mutation_type	string	-	missense	^.*$																																						
+is_known_glycoprotein	sars-cov-2_lineage_mutations.tsv	required	#root/is_known_glycoprotein	is_known_glycoprotein	string	-	yes	^.*$																																						
+motif_start	sars-cov-2_lineage_mutations.tsv	required	#root/motif_start	motif_start	string	-	67	^.*$																																						
+ref_motif	sars-cov-2_lineage_mutations.tsv	required	#root/ref_motif	ref_motif	string	-	A	^.*$																																						
+alt_motif	sars-cov-2_lineage_mutations.tsv	required	#root/alt_motif	alt_motif	string	-	V	^.*$																																						
+effect	sars-cov-2_lineage_mutations.tsv	required	#root/effect	effect	string	-	-	^.*$																																						
+note	sars-cov-2_lineage_mutations.tsv	required	#root/note	note	string	-	-	^.*$																																						
+sra_run_id	ngs_ID_list.tsv	required	#root/note	SRA Run ID	string	-	SRR17309642	^\+SRR.+																																						
+organism_name	ngs_ID_list.tsv	required	#root/note	organism_name	string	-	Severe acute respiratory syndrome coronavirus 3	^.*$																																						
+leaf_node	ngs_ID_list.tsv	required	#root/note	Leaf Node	string	-	B.1.1.529/Omicron isolate	^.*$																																						
+taxonomy_id	ngs_ID_list.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	2697049	^[2-9]|[1-9]\d+$																																						
+selection_notes	ngs_ID_list.tsv	required	#root/note	Selection Notes	string	-	"For omicron, we are selecting EPI_ISL_6913953. Sequencing was conducted on Illumina MiSeq, has high coverage, and a consistent quality score across all base calls above 30. Raw reads are available at https://www.ncbi.nlm.nih.gov/sra/SRX13486794, and a full description of the patient harboring the virus is supplied with the following publication https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciab1072/6494531?login=true. The patient was one of the first two known COVID-19 cases classified as omicron in Japan. To put the collection date of 28 November 2021 in perspective, the first known omicron sample was collected on 8 November 2021. Raw reads from South Africa are available, but the average phred quality score is much lower for those samples."	^.*$																																						
+lab_name	ngs_ID_list.tsv	required	#root/note	Lab Name	string	-	Pond Lab	(Pond Lab|Crandall Lab|HIVE Lab)																																						
+files_processed	ngs_ID_list.tsv	required	#root/processed	processed	string	-	ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL	(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)																																						
+biosample	SRA_biosample	required	#root/biosample	biosample	string	-	SAMN16357302	^.*$																																						
+srs_id	SRA_biosample	required	#root/srs_id	srs_id	string	-	SRS7619536	^.*$																																						
+organism_name	SRA_biosample	required	#root/organism_name	organism_name	string	-	Pediococcus acidilactici	^.*$																																						
+strain	SRA_biosample	required	#root/strain	strain	string	-	FDAARGOS_1133	^.*$																																						
+sample_name	SRA_biosample	required	#root/sample_name	sample_name	string	-	FDAARGOS_1133	^.*$																																						
+taxonomy_id	SRA_biosample	required	#root/taxonomy_id	taxonomy_id	string	-	1254	^.*$																																						
+isolate	SRA_biosample	required	#root/isolate	isolate	string	-	Not applicable	^.*$																																						
+collected_by	SRA_biosample	required	#root/collected_by	collected_by	string	-	DSMZ	^.*$																																						
+collection_date	SRA_biosample	required	#root/collection_date	collection_date	string	-	Unknown	^.*$																																						
+geo_loc_name	SRA_biosample	required	#root/geo_loc_name	geo_loc_name	string	-	Germany: Braunschweig	^.*$																																						
+isolation_source	SRA_biosample	required	#root/isolation_source	isolation_source	string	-	missing	^.*$																																						
+lat_lon	SRA_biosample	required	#root/lat_lon	lat_lon	string	-	Not applicable	^.*$																																						
+culture_collection	SRA_biosample	required	#root/culture_collection	culture_collection	string	-	DSM:20284	^.*$																																						
+host	SRA_biosample	required	#root/host	host	string	-	missing	^.*$																																						
+host_age	SRA_biosample	required	#root/host_age	host_age	string	-	Unknown	^.*$																																						
+host_description	SRA_biosample	required	#root/host_description	host_description	string	-	Not applicable	^.*$																																						
+host_disease	SRA_biosample	required	#root/host_disease	host_disease	string	-	Unknown	^.*$																																						
+host_disease_outcome	SRA_biosample	required	#root/host_disease_outcome	host_disease_outcome	string	-	Unknown	^.*$																																						
+host_disease_stage	SRA_biosample	required	#root/host_disease_stage	host_disease_stage	string	-	Unknown	^.*$																																						
+host_health_state	SRA_biosample	required	#root/host_health_state	host_health_state	string	-	Unknown	^.*$																																						
+host_sex	SRA_biosample	required	#root/host_sex	host_sex	string	-	Unknown	^.*$																																						
+id_method	SRA_biosample	required	#root/id_method	id_method	string	-	Phenotypic and Molecular Methods	^.*$																																						
+type_material	SRA_biosample	required	#root/type_material	type_material	string	-	neotype strain of Pediococcus acidilactici	^.*$																																						

@@ -1,0 +1,131 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/SRA_assemblyQC.tsv",
+    "title": "SRA_assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "genome_assembly_id",
+        "level",
+        "assembly_level",
+        "num_chromosomes",
+        "biosample",
+        "strain",
+        "organism_name",
+        "bioproject",
+        "taxonomy_id",
+        "lineage"
+    ],
+    "properties": {
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Yi FDA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_013267415.1"
+            ],
+            "pattern": "^.*$"
+        },
+        "level": {
+            "$id": "#root/level",
+            "title": "level",
+            "description": "HIVE",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Complete genome"
+            ],
+            "pattern": "^.*$"
+        },
+        "assembly_level": {
+            "$id": "#root/assembly_level",
+            "title": "assembly_level",
+            "description": "from NCBI Assembly",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "undefined"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_chromosomes": {
+            "$id": "#root/num_chromosomes",
+            "title": "num_chromosomes",
+            "description": "Raja",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1"
+            ],
+            "pattern": "^.*$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN11056500"
+            ],
+            "pattern": "^.*$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "Yi FDA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "FDAARGOS_785"
+            ],
+            "pattern": "^.*$"
+        },
+        "organism_name": {
+            "$id": "#root/Taxonomy Name",
+            "title": "Taxonomy Name",
+            "description": "Raja",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Abiotrophia defectiva"
+            ],
+            "pattern": "^.*$"
+        },
+        "bioproject": {
+            "$id": "#root/BioPproject",
+            "title": "BioPproject",
+            "description": "NCBI BioProject DB",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PRJNA231221"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "Raja",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "46125"
+            ],
+            "pattern": "^[2-9]|[1-9]\\d+$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "Yi FDA",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

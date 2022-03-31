@@ -1,0 +1,428 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.3/core/ngsQC.tsv",
+    "title": "ngsQC.tsv",
+    "type": "object",
+    "required": [
+        "genome_assembly_id",
+        "file_name",
+        "avg_file_quality",
+        "min_read_length",
+        "pos_outlier_count",
+        "num_reads",
+        "avg_read_length",
+        "gc_content",
+        "strategy",
+        "hive_object_id"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "microbial or eukaryotic strain name",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "fdaargos_id": {
+            "$id": "#root/fdaargos_id",
+            "title": "fdaargos_id",
+            "description": "ARGOS identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "file_name": {
+            "$id": "#root/file_name",
+            "title": "file_name",
+            "description": "FASTQ file name used for the HIVE analysis.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_file_quality": {
+            "$id": "#root/avg_file_quality",
+            "title": "avg_file_quality",
+            "description": "Average quality (in phred score) of sequences in a FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "min_read_length": {
+            "$id": "#root/min_read_length",
+            "title": "min_read_length",
+            "description": "Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "pos_outlier_count": {
+            "$id": "#root/pos_outlier_count",
+            "title": "pos_outlier_count",
+            "description": "Count of positions the quality of which is significantly different (extremely low or high).",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "num_reads": {
+            "$id": "#root/num_reads",
+            "title": "num_reads",
+            "description": "Number of sequences present in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_read_length": {
+            "$id": "#root/avg_read_length",
+            "title": "avg_read_length",
+            "description": "Average length of sequences in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "max_read_length": {
+            "$id": "#root/max_read_length",
+            "title": "max_read_length",
+            "description": "Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "gc_content": {
+            "$id": "#root/gc_content",
+            "title": "gc_content",
+            "description": "GC content of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "strategy": {
+            "$id": "#root/strategy",
+            "title": "strategy",
+            "description": "Strategy/method used to generate the NGS. Controled vocabulary consisting of the following terms: WGA, WGS, WXS, RNA-Seq, miRNA-Seq, WCS, CLONE, POOLCLONE, AMPLICON, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, DNase-Hypersensitivity, Bisulfite-Seq, Tn-Seq, EST, FL-cDNA, CTS, MRE-Seq, MeDIP-Seq, MBD-Seq, Synthetic-Long-Read, OTHER",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "Database identifier assigned by repository and linked to GenBank or other repository.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "wgs_accession": {
+            "$id": "#root/wgs_accession",
+            "title": "wgs_accession",
+            "description": "NCBI Whole Genome Shotgun (WGS) accession number.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "level": {
+            "$id": "#root/level",
+            "title": "level",
+            "description": "Level index for run specific depth first enumeration of tax hierarchy.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "instrument": {
+            "$id": "#root/instrument",
+            "title": "instrument",
+            "description": "Name of instrument used for NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "id_method": {
+            "$id": "#root/id_method",
+            "title": "id_method",
+            "description": "Species identification method.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "codon_table": {
+            "$id": "#root/codon_table",
+            "title": "codon_table",
+            "description": "A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "percent_coding": {
+            "$id": "#root/percent_coding",
+            "title": "percent_coding",
+            "description": "The relative frequency of sequences that are protein coding for each DNA sequence type.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "percent_not_coding": {
+            "$id": "#root/percent_not_coding",
+            "title": "percent_not_coding",
+            "description": "The relative frequency of sequences that are not protein coding for each DNA sequence type.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "cumulative_percent_reads": {
+            "$id": "#root/cumulative_percent_reads",
+            "title": "cumulative_percent_reads",
+            "description": "A list containg the number of reads that positionally correspond to the density of Ns list values. Can be used to generate cumulative percentage of N density in reads.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "density_n_per_read": {
+            "$id": "#root/density_n_per_read",
+            "title": "density_n_per_read",
+            "description": "A list of density values of Ns per sequence read.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "complexity_percent": {
+            "$id": "#root/complexity_percent",
+            "title": "complexity_percent",
+            "description": "Percentage of sequences that are complex.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "non_complex_percent": {
+            "$id": "#root/non_complex_percent",
+            "title": "non_complex_percent",
+            "description": "Percentage of sequences that are not complex.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_quality_a": {
+            "$id": "#root/avg_quality_a",
+            "title": "avg_quality_a",
+            "description": "The average cumulative quality score of adenine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_quality_t": {
+            "$id": "#root/avg_quality_t",
+            "title": "avg_quality_t",
+            "description": "The average cumulative quality score of thiamine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_quality_g": {
+            "$id": "#root/avg_quality_g",
+            "title": "avg_quality_g",
+            "description": "The average cumulative quality score of guanine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "avg_quality_c": {
+            "$id": "#root/avg_quality_c",
+            "title": "avg_quality_c",
+            "description": "The average cumulative quality score of cytosine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "count_a": {
+            "$id": "#root/count_a",
+            "title": "count_a",
+            "description": "The total count of adenines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "count_c": {
+            "$id": "#root/count_c",
+            "title": "count_c",
+            "description": "The total count of cytosines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "count_g": {
+            "$id": "#root/count_g",
+            "title": "count_g",
+            "description": "The total count of guanines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "count_t": {
+            "$id": "#root/count_t",
+            "title": "count_t",
+            "description": "The total count of thiamaines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "hive_object_id": {
+            "$id": "#root/hive_object_id",
+            "title": "hive_object_id",
+            "description": "HIVE object ID which is assigned automatically within the HIVE Platform. This ID assists with internal tracking and programatic inquires with in the HIVE Platfrom",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        }
+    }
+}

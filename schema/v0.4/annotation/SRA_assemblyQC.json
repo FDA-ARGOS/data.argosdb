@@ -1,7 +1,7 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.argos.org/schema/SRA_assemblyQC.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.4/annotation/SRA_assemblyQC.tsv",
     "title": "SRA_assemblyQC.tsv",
     "type": "object",
     "required": [
@@ -20,7 +20,7 @@
         "genome_assembly_id": {
             "$id": "#root/genome_assembly_id",
             "title": "genome_assembly_id",
-            "description": "NCBI Assembly DB",
+            "description": "NCBI Assembly DB identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -31,7 +31,7 @@
         "level": {
             "$id": "#root/level",
             "title": "level",
-            "description": "NCBI SRA",
+            "description": "Level index for run specific depth first enumeration of tax hierarchy.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -42,7 +42,7 @@
         "assembly_level": {
             "$id": "#root/assembly_level",
             "title": "assembly_level",
-            "description": "HIVE",
+            "description": "The highest level of assembly for any object in the assembly.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -53,7 +53,7 @@
         "num_chromosomes": {
             "$id": "#root/num_chromosomes",
             "title": "num_chromosomes",
-            "description": "NCBI Assembly DB",
+            "description": "Total number of chromosomes in the genome assembly.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -64,7 +64,7 @@
         "biosample": {
             "$id": "#root/biosample",
             "title": "biosample",
-            "description": "NCBI BioSample DB",
+            "description": "NCBI BioSample identifier.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -75,7 +75,7 @@
         "strain": {
             "$id": "#root/strain",
             "title": "strain",
-            "description": "NCBI Taxonomy",
+            "description": "microbial or eukaryotic strain name",
             "type": "string",
             "default": "-",
             "examples": [
@@ -86,7 +86,7 @@
         "organism_name": {
             "$id": "#root/Taxonomy Name",
             "title": "Taxonomy Name",
-            "description": " ",
+            "description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
             "type": "string",
             "default": "-",
             "examples": [
@@ -97,7 +97,7 @@
         "bioproject": {
             "$id": "#root/BioPproject",
             "title": "BioPproject",
-            "description": "NCBI BioProject DB",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -108,7 +108,7 @@
         "taxonomy_id": {
             "$id": "#root/taxonomy_id",
             "title": "taxonomy_id",
-            "description": "",
+            "description": "NCBI taxonomy identifier of the organism.",
             "type": "string",
             "default": "-",
             "examples": [
@@ -119,7 +119,7 @@
         "lineage": {
             "$id": "#root/lineage",
             "title": "lineage",
-            "description": "NCBI Taxonomy",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
             "type": "string",
             "default": "-",
             "examples": [

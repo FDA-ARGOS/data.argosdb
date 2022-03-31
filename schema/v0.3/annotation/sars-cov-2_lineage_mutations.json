@@ -1,7 +1,7 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://data.argos.org/schema/sars-cov-2_lineage_mutations.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.3/annotation/sars-cov-2_lineage_mutations.tsv",
     "title": "sars-cov-2_lineage_mutations.tsv",
     "type": "object",
     "required": [
@@ -24,156 +24,156 @@
         "uniprotkb_canonical_ac": {
             "$id": "#root/uniprotkb_canonical_ac",
             "title": "uniprotkb_canonical_ac",
-            "description": "https://cov-lineages.org/",
+            "description": "Uniprot canonical sequence accession. To reduce redundancy, the UniProtKB/Swiss-Prot policy is to describe all the protein products encoded by one gene in a given species in a single entry.",
             "type": "string",
             "default": "-",
             "examples": [
-                "P0DTC2-1"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "found_in": {
             "$id": "#root/found_in",
             "title": "found_in",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "Omicron (21K, BA.1)"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "gene_name": {
             "$id": "#root/gene_name",
             "title": "gene_name",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "S"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "protein_name": {
             "$id": "#root/protein_name",
             "title": "protein_name",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "Spike glycoprotein"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "evidence_ECO0000313": {
             "$id": "#root/evidence_ECO0000313",
             "title": "evidence_ECO0000313",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "CoVariants"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "begin_aa_pos": {
             "$id": "#root/begin_aa_pos",
             "title": "begin_aa_pos",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "67"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "end_aa_pos": {
             "$id": "#root/end_aa_pos",
             "title": "end_aa_pos",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "67"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "mutation_type": {
             "$id": "#root/mutation_type",
             "title": "mutation_type",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "missense"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "is_known_glycoprotein": {
             "$id": "#root/is_known_glycoprotein",
             "title": "is_known_glycoprotein",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "yes"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "motif_start": {
             "$id": "#root/motif_start",
             "title": "motif_start",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "67"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "ref_motif": {
             "$id": "#root/ref_motif",
             "title": "ref_motif",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "A"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "alt_motif": {
             "$id": "#root/alt_motif",
             "title": "alt_motif",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
-                "V"
+                "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "effect": {
             "$id": "#root/effect",
             "title": "effect",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
                 "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         },
         "note": {
             "$id": "#root/note",
             "title": "note",
-            "description": "https://cov-lineages.org/",
+            "description": "?",
             "type": "string",
             "default": "-",
             "examples": [
                 "-"
             ],
-            "pattern": "^.*$"
+            "pattern": "-"
         }
     }
 }

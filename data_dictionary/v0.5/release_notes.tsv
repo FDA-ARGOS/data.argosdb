@@ -1,0 +1,22 @@
+{'core_property_list': {'siteQC.tsv': 25, 'assemblyQC.tsv': 56, 'biosampleMeta.tsv': 28, 'ngsQC.tsv': 39}, 'non_core_property_list': {'SRA_ngsQC.tsv': 19, 'SRA_assemblyQC.tsv': 10, 'sars-cov-2_lineage_mutations.tsv': 14, 'ngs_ID_list.tsv': 7}, 'new_core_property_list': {'siteQC.tsv': 25, 'assemblyQC.tsv': 57, 'biosampleMeta.tsv': 27, 'ngsQC.tsv': 40}, 'new_non_core_property_list': {'SRA_ngsQC.tsv': 19, 'SRA_assemblyQC.tsv': 10, 'sars-cov-2_lineage_mutations.tsv': 14, 'ngs_ID_list.tsv': 7, 'SRA_biosample': 23}}
+
+Core Property Sheet Stats:
+ Sheet 	 Properties
+siteQC.tsv 	 25
+assemblyQC.tsv 	 57
+biosampleMeta.tsv 	 27
+ngsQC.tsv 	 40
+
+Non Core Property Sheet Stats:
+ Sheet 	 Properties
+SRA_ngsQC.tsv 	 19
+SRA_assemblyQC.tsv 	 10
+sars-cov-2_lineage_mutations.tsv 	 14
+ngs_ID_list.tsv 	 7
+SRA_biosample 	 23
+
+
+2 items removed from the dictionary: ['processed', '']
+
+
+2 items added to the dictionary: ['type_material', 'files_processed']

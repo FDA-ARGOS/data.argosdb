@@ -4,7 +4,10 @@
 Generates release notes for ARGOS Data Dictionary.
 """
 
+<<<<<<< HEAD
 import json
+=======
+>>>>>>> v0.5.1
 import csv
 import argparse
 import sys

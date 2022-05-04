@@ -1,4 +1,4 @@
-Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	pattern	description
+property	data_object	required	id	title	type	default	examples	pattern	description
 organism_name	siteQC.tsv	required	#root/organism_name	organism_name	string	-	Salmonella_enterica	^.*$	-
 lineage	siteQC.tsv	required	#root/lineage	lineage	string	-	strain_LT2	^.*$	-
 genome_assembly_id	siteQC.tsv	optional	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_001558355.2	^.*$	-

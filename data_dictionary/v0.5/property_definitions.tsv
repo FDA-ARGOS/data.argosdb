@@ -1,4 +1,4 @@
-Property	Data Files	recommended	Description	source/type def
+property	data_files	recommended	description	source_or_type_def
 organism_name	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | organism.csv | *_proteome_metadata.csv | PRJNA231221_AssemblyUpdated.tsv	Yi FDA	Name of the expected organism. Should corrospond to a NCBI Taxonomy node	NCBI Taxonomy
 lineage	assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | SRA_ngsQC.tsv	Yi FDA	The complete taxonomic lineage for the taxonomic node indicated.	NCBI Taxonomy
 genome_assembly_id	assemblyQC_HL.tsv | ngsQC_HL.tsv | organism.csv | PRJNA231221_AssemblyUpdated.tsv | siteQC_HL.tsv	Yi FDA	NCBI Assembly DB identifier.	NCBI Assembly DB

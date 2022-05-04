@@ -8,10 +8,10 @@ Used to convert all Galaxy exported BCO BEFORE Galaxy version 22.05
 import json
 import argparse
 import sys
-from dateutil.parser import parse, ParserError
 from urllib.parse import urlparse
+from dateutil.parser import parse, ParserError
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __status__ = "Production"
 
 def usr_args():
@@ -178,13 +178,14 @@ def convert_bco(bco):
         except ParserError:
             del prereq['uri']['access_time']
 
-    for input_obj in bco_dict['io_domain']['input_subdomain']:
+    for index, input_obj in enumerate(bco_dict['io_domain']['input_subdomain']):
         try:
-            input_obj['uri']['access_time'] = timezone_aware(
-                input_obj['uri']['access_time']
+            print(input_obj)
+            input_obj['access_time'] = timezone_aware(
+                input_obj['access_time']
             )
         except ParserError:
-            del input_obj['uri']['access_time']
+            del input_obj['access_time']
 
     for output_obj in bco_dict['io_domain']['output_subdomain']:
         try:

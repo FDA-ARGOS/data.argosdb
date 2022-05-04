@@ -1,4 +1,4 @@
-Property	Data Object Type	Optional/Required	$id	Title	Type	default	examples	pattern	description
+property	data_object	required	id	title	type	default	examples	pattern	description
 sra_experiment_id	SRA_ngsQC.tsv	required	#root/sra_experiment_id	sra_experiment_id	string	-	SRR9107811	^.*$	-
 sra_run_id	SRA_ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string	-	SRX5882434	^.*$	-
 biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	-	SAMN11077980	^.*$	-

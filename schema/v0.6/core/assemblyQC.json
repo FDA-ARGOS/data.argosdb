@@ -1,0 +1,672 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.6/core/assemblyQC.tsv",
+    "title": "assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "genome_assembly_id",
+        "taxonomy_id",
+        "bco_id",
+        "schema_version",
+        "analysis_platform",
+        "analysis_platform_object_id",
+        "bioproject",
+        "biosample",
+        "num_chromosomes",
+        "isolation_provider_name"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should corrispond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe_acute_respiratory_syndrome_coronavirus_2"
+            ],
+            "pattern": "^([a-zA-Z]+(_[a-zA-Z]+)+).*$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate_Wuhan_Hu_1"
+            ],
+            "pattern": "^([a-zA-Z]+(_[a-zA-Z]+)+).*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_009858895.3"
+            ],
+            "pattern": "^[a-zA-Z]+.*[0-9]+\\.\\d$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "fdaargos_id": {
+            "$id": "#root/fdaargos_id",
+            "title": "fdaargos_id",
+            "description": "ARGOS identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGID00001"
+            ],
+            "pattern": "^[a-zA-Z]+[0-9]+$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000013"
+            ],
+            "pattern": "^[a-zA-Z]+_[0-9]+$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.4"
+            ],
+            "pattern": "^v[0-9]*\\.[0-9]+$"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The type of platform used to conduct the analysis",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "HIVE 1 | HIVE 2 | HIVE AWS | Galaxy"
+            ],
+            "pattern": "(HIVE 1|HIVE 2|HIVE AWS|Galaxy)"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "analysis_platform_object_id",
+            "description": "The process identifier from platform used to conduct the analysis",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "39658"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "microbial or eukaryotic strain name",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                ""
+            ],
+            "pattern": ""
+        },
+        "bioproject": {
+            "$id": "",
+            "title": "",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "",
+            "default": "",
+            "examples": [
+                ""
+            ],
+            "pattern": ""
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN13922059"
+            ],
+            "pattern": "^[a-zA-Z]+[0-9]+$"
+        },
+        "num_chromosomes": {
+            "$id": "#root/num_chromosomes",
+            "title": "num_chromosomes",
+            "description": "Total number of chromosomes in the genome assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "12"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "instrument": {
+            "$id": "#root/instrument",
+            "title": "instrument",
+            "description": "Name of instrument used for NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Illumina MiniSeq"
+            ],
+            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+        },
+        "id_method": {
+            "$id": "#root/id_method",
+            "title": "id_method",
+            "description": "Species identification method.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "sample_type": {
+            "$id": "#root/sample_type",
+            "title": "sample_type",
+            "description": "Type of sample used for the BioSample submission, if applicable.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "human bronchoalveolar lavage fluid"
+            ],
+            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+        },
+        "host": {
+            "$id": "#root/host",
+            "title": "host",
+            "description": "The natural host to the organism from which the sample was obtained.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "homo sapiens"
+            ],
+            "pattern": "^[a-zA-Z]+\\s[a-zA-Z]+$"
+        },
+        "number_of_n_or_x": {
+            "$id": "#root/number_of_n_or_x",
+            "title": "number_of_n_or_x",
+            "description": "Total number of Ns or Xs in the assembled genome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                ""
+            ],
+            "pattern": "^.*$"
+        },
+        "isolation_provider_name": {
+            "$id": "#root/isolation_provider_name",
+            "title": "isolation_provider_name",
+            "description": "Name of the provider from which the biological sample was derived.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Shanghai Public Health Clinical Center & School of Public Health, Fudan University"
+            ],
+            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+).*,\\s([a-zA-Z]+( [a-zA-Z]+)+)$"
+        },
+        "isolation_acquisition_id": {
+            "$id": "#root/isolation_acquisition_id",
+            "title": "isolation_acquisition_id",
+            "description": "Acquisition identifier for obtained isolate.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "contact_name": {
+            "$id": "#root/contact_name",
+            "title": "contact_name",
+            "description": "Contact name associated with the BioSample.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                ""
+            ],
+            "pattern": "^.*$"
+        },
+        "sequencing_method": {
+            "$id": "#root/sequencing_method",
+            "title": "sequencing_method",
+            "description": "Sequencing method used to obtain the DNA fragments/sequences.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Illumina"
+            ],
+            "pattern": "^.*$"
+        },
+        "n50": {
+            "$id": "#root/n50",
+            "title": "n50",
+            "description": "Length of the shortest read to minimally represent 50% of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "l50": {
+            "$id": "#root/l50",
+            "title": "l50",
+            "description": "Number of reads that minimally represent 50% of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "gc_content": {
+            "$id": "#root/gc_content",
+            "title": "gc_content",
+            "description": "GC content of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "29,903"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "length": {
+            "$id": "#root/length",
+            "title": "length",
+            "description": "Total length of the assembled genome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "avg_nuc_identity": {
+            "$id": "#root/avg_nuc_identity",
+            "title": "avg_nuc_identity",
+            "description": "Average nucleotide identity between the assembly and the reference sequences.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_assembly_greater_20x": {
+            "$id": "#root/percent_assembly_greater_20x",
+            "title": "percent_assembly_greater_20x",
+            "description": "Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "100"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "query_coverage_against_reference": {
+            "$id": "#root/query_coverage_against_reference",
+            "title": "query_coverage_against_reference",
+            "description": "BLAST query coverage of the entire assembly between the assembly and reference sequences.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "100"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "percent_identity_against_reference": {
+            "$id": "#root/percent_identity_against_reference",
+            "title": "percent_identity_against_reference",
+            "description": "BLAST percent identity of the entire assembly between the assembly and reference sequences.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_id": {
+            "$id": "#root/seq_id",
+            "title": "seq_id",
+            "description": "Reference identifier to a specific sequence inside the assembled genome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "n95": {
+            "$id": "#root/n95",
+            "title": "n95",
+            "description": "Length of the shortest read to minimally represent 95% of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "l95": {
+            "$id": "#root/l95",
+            "title": "l95",
+            "description": "Number of reads that minimally represent 95% of the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "cnt_scaffolds": {
+            "$id": "#root/cnt_scaffolds",
+            "title": "cnt_scaffolds",
+            "description": "Number of scaffolds to represent the assembled genome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "cnt_contigs": {
+            "$id": "#root/cnt_contigs",
+            "title": "cnt_contigs",
+            "description": "Number of contigs to represent the assembled genome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "contigs_momentum": {
+            "$id": "#root/contigs_momentum",
+            "title": "contigs_momentum",
+            "description": "Cumulative normalized momentum (contig_size*count) of all contigs.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "coverage_contigs": {
+            "$id": "#root/coverage_contigs",
+            "title": "coverage_contigs",
+            "description": "Average coverage on contigs.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "reads_unaligned": {
+            "$id": "#root/reads_unaligned",
+            "title": "reads_unaligned",
+            "description": "Number of reads in short_read pool that do not align to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "aligned_momentum": {
+            "$id": "#root/aligned_momentum",
+            "title": "aligned_momentum",
+            "description": "Cumulative normalized momentum (aligned_size*count) of own reads aligned to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "overhang_momentum": {
+            "$id": "#root/overhang_momentum",
+            "title": "overhang_momentum",
+            "description": "Cumulative normalized momentum (unaligned_size*count) of own reads unaligned to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "bases_percentile_aligned": {
+            "$id": "#root/bases_percentile_aligned",
+            "title": "bases_percentile_aligned",
+            "description": "Percentile of bases on partially aligned reads with relation to count of all bases on aligned reads.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "cnt_gaps": {
+            "$id": "#root/cnt_gaps",
+            "title": "cnt_gaps",
+            "description": "Number of gaps in an assembly as covered by own reads.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "size_gaps": {
+            "$id": "#root/size_gaps",
+            "title": "size_gaps",
+            "description": "Cumulative size of gaps as covered by own reads.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "clonal_populations": {
+            "$id": "#root/clonal_populations",
+            "title": "clonal_populations",
+            "description": "Number of clonal populations on assembly nephosome.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "clonal_expanse": {
+            "$id": "#root/clonal_expanse",
+            "title": "clonal_expanse",
+            "description": "Total size of all clonal contigs.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "phred_average": {
+            "$id": "#root/phred_average",
+            "title": "phred_average",
+            "description": "Average phred score of aligned base call.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "count_major_variations": {
+            "$id": "#root/count_major_variations",
+            "title": "count_major_variations",
+            "description": "Number of +50% variations on a variation profile of own reads on avartion profile of own reads on assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "indels_momentum": {
+            "$id": "#root/indels_momentum",
+            "title": "indels_momentum",
+            "description": "Momentum of indels (count*percentile) on variation profile of own reads alignment to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "mutation_momentum": {
+            "$id": "#root/mutation_momentum",
+            "title": "mutation_momentum",
+            "description": "Momentum of mutations (count*percentile) on variation profile of own reads alignment to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "alignment_disbalance": {
+            "$id": "#root/alignment_disbalance",
+            "title": "alignment_disbalance",
+            "description": "Ratio of forward and reverse own reads aligned on assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "alignmnet_anisotropy": {
+            "$id": "#root/alignmnet_anisotropy",
+            "title": "alignmnet_anisotropy",
+            "description": "Anisotropy of basecalls with relation to own reads aligned to assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "rpkm": {
+            "$id": "#root/rpkm",
+            "title": "rpkm",
+            "description": "Reads per kilobase of reference size per million alignments.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "fpkm": {
+            "$id": "#root/fpkm",
+            "title": "fpkm",
+            "description": "Fragments per kilobase of reference size per million alignments.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "coverage_homogeneity": {
+            "$id": "#root/coverage_homogeneity",
+            "title": "coverage_homogeneity",
+            "description": "Anisotropy of the coverage with relation to assembly frame.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "ambiguous_bases": {
+            "$id": "#root/ambiguous_bases",
+            "title": "ambiguous_bases",
+            "description": "Number of IUPAC ambiguous bases in reads(Ns, Ys, etc.)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "taxid_composition": {
+            "$id": "#root/taxid_composition",
+            "title": "taxid_composition",
+            "description": "Taxonomic identifiers hit by 1% or more reads using CensuScope or something similar",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_composition": {
+            "$id": "#root/seq_composition",
+            "title": "seq_composition",
+            "description": "Sequence identifiers hit by 1% or more reads using CensuScope or something similar",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Megahit v. V1.1.3"
+            ],
+            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+        },
+        "assembly_type": {
+            "$id": "#root/assembly_type",
+            "title": "assembly_type",
+            "description": "haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        },
+        "assembly_level": {
+            "$id": "#root/assembly_level",
+            "title": "assembly_level",
+            "description": "The highest level of assembly for any object in the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "-"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

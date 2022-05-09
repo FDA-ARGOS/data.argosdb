@@ -210,14 +210,21 @@ def list_2_schema(options):
 
     definition: str
         a list of property definitions.
+
     Returns
     -------
         Either writes JSON schema object/objects to a file (if options.output
         is supplied) or prints to the terminal.
     """
+    if not options.directory:
+        print("No output directory supplied [-d]")
+        exit()
+    if not options.definitions:
+        print("No definition sheet supplied [-f]")
+        exit()
 
     raw_url = 'https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/'+\
-                'v'+__version__+'/'+options.directory
+            'v'+__version__+'/'+options.directory
 
     definition = options.definitions
     prop_defs = {}

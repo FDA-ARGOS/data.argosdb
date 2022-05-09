@@ -8,8 +8,8 @@ Used to convert all Galaxy exported BCO BEFORE Galaxy version 22.05
 import json
 import argparse
 import sys
-from dateutil.parser import parse, ParserError
 from urllib.parse import urlparse
+from dateutil.parser import parse, ParserError
 
 __version__ = "1.0.0"
 __status__ = "Production"
@@ -211,6 +211,5 @@ def main():
     else:
         print(jsonf)
 
-#______________________________________________________________________________#
 if __name__ == "__main__":
     main()

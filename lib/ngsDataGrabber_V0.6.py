@@ -1,4 +1,9 @@
-import requests
+#!/usr/bin/env python3
+"""NGS Data Grabber
+
+Designed to grab and modify data from HIVE NGS Multi-QC processes
+"""
+
 import getpass
 import json
 import re
@@ -13,7 +18,17 @@ sep = ';'
 
 #_______________________________________________________________# Functions for formatting the data.
 
-def codonQCReformatter(inFile):
+def codon_qc_reformatter(input_file):
+    """Codon QC Reformatter
+    
+    IDK???
+
+    Parameters
+    ----------
+    input_file: str
+
+    """
+
     formattedNames = ''
     formattedNotCodList = ''
     formattedProtCodList = ''
@@ -21,7 +36,7 @@ def codonQCReformatter(inFile):
     notCodList = []
     protCodList = []
 
-    for line in inFile:
+    for line in input_file:
         name = re.search("\".*\"", line)
         coding = re.split("\".*\"", line.strip())
         notCod = int(coding[1].split(",")[1])
@@ -65,8 +80,8 @@ def ComplexityReformatter(Cmplx):
     prctNtCplx = round ((values[1]/(values[0]+values[1]))*100, 1)
     return prctCplx, prctNtCplx
 
-def letterQuality(inFile):
-    for line in inFile:
+def letterQuality(input_file):
+    for line in input_file:
         if line.split(',')[0] == 'A':
             ct_a = line.split(',')[1]
             qual_a = line.split(',')[2]
@@ -83,9 +98,9 @@ def letterQuality(inFile):
             pass
     return ct_a, qual_a.rstrip(), ct_c, qual_c.rstrip(), ct_g, qual_g.rstrip(), ct_t, qual_t.rstrip()
 
-def inputGrabber(inFile):
+def inputGrabber(input_file):
     HIVEIDs = ''
-    for line in inFile:
+    for line in input_file:
         HIVEIDs = HIVEIDs + str(line.rstrip())
         return str(HIVEIDs)
 
@@ -246,7 +261,7 @@ with open ("outputFile.csv", "w+") as finalFile:
                     next (Complexity)
                     next (LCQ)
                     IDs = b.rstrip()
-                    codonName, codonCoding, codonNotCoding = codonQCReformatter(CQC)
+                    codonName, codonCoding, codonNotCoding = codon_qc_reformatter(CQC)
                     NPercent, NCount = NCountReformatter(NCT)
                     PercentComplex, PercentNotComplex = ComplexityReformatter(Complexity)
                     count_a, avg_quality_a, count_c, avg_quality_c, count_g, avg_quality_g, count_t, avg_quality_t = letterQuality(LCQ)

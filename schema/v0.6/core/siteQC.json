@@ -149,7 +149,7 @@
         },
         "num_SNPs_threshold": {
             "$id": "#root/num_SNPs_threshold",
-            "title": "",
+            "title": "num_SNPs_threshold",
             "description": "Threshold used to select these SNPs",
             "type": "string",
             "default": "-",
@@ -160,7 +160,7 @@
         },
         "num_pos_selected_sites": {
             "$id": "#root/num_pos_selected_sites",
-            "title": "",
+            "title": "num_pos_selected_sites",
             "description": "Total number of positively selected sites",
             "type": "string",
             "default": "-",
@@ -171,7 +171,7 @@
         },
         "num_pos_selected_threshold": {
             "$id": "#root/num_pos_selected_threshold",
-            "title": "",
+            "title": "num_pos_selected_threshold",
             "description": "Threshold used to select these positively selected sites",
             "type": "string",
             "default": "-",
@@ -182,7 +182,7 @@
         },
         "num_neg_selected_sites": {
             "$id": "#root/num_neg_selected_sites",
-            "title": "",
+            "title": "num_neg_selected_sites",
             "description": "Total number of negatively selected sites",
             "type": "string",
             "default": "-",
@@ -193,7 +193,7 @@
         },
         "num_neg_selected_threshold": {
             "$id": "#root/num_neg_selected_threshold",
-            "title": "",
+            "title": "num_neg_selected_threshold",
             "description": "Threshold used to select these negatively selected sites",
             "type": "string",
             "default": "-",

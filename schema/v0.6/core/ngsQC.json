@@ -137,10 +137,10 @@
             "pattern": "^.*$"
         },
         "bioproject": {
-            "$id": "",
-            "title": "",
+            "$id": "#root/bioproject",
+            "title": "bioproject",
             "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
-            "type": "",
+            "type": "string",
             "default": "",
             "examples": [
                 ""

@@ -4,10 +4,6 @@
 Generates release notes for ARGOS Data Dictionary.
 """
 
-<<<<<<< HEAD
-import json
-=======
->>>>>>> v0.5.1
 import csv
 import argparse
 import sys
@@ -56,11 +52,11 @@ def load_tsv(options):
     """
     counts ={}
     readme = []
-    property_definitions = {}
+    property_definition = {}
     core_property_list = []
     non_core_property_list = []
     new_readme = []
-    new_property_definitions = {}
+    new_property_definition = {}
     new_core_property_list = []
     new_non_core_property_list = []
 
@@ -73,13 +69,13 @@ def load_tsv(options):
                         continue
                     readme.append(row)
 
-        if 'property_definitions' in sheet:
+        if 'property_definition' in sheet:
             file_path = os.path.join(options.old, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                property_definitions_header = next(data)
+                property_definition_header = next(data)
                 for row in data:
-                    property_definitions[row[0]] = row[1:]
+                    property_definition[row[0]] = row[1:]
 
         if 'core_property_list' in sheet:
             file_path = os.path.join(options.old, sheet)
@@ -118,13 +114,13 @@ def load_tsv(options):
                         continue
                     new_readme.append(row)
 
-        if 'property_definitions.tsv' in sheet:
+        if 'property_definition.tsv' in sheet:
             file_path = os.path.join(options.new, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                new_property_definitions_header = next(data)
+                new_property_definition_header = next(data)
                 for row in data:
-                    new_property_definitions[row[0]] = row[1:]
+                    new_property_definition[row[0]] = row[1:]
 
         if 'core_property_list' in sheet:
             file_path = os.path.join(options.new, sheet)
@@ -157,17 +153,17 @@ def load_tsv(options):
     added = []
     # print(new_non_core_property_list == non_core_property_list)
     # print(readme == new_readme)
-    # print(property_definitions == new_property_definitions)
+    # print(property_definition == new_property_definition)
     # print(core_property_list == new_core_property_list)
     # print(non_core_property_list == new_non_core_property_list)
     # print('\n')
-    for key in property_definitions:
-        if key not in new_property_definitions.keys():
+    for key in property_definition:
+        if key not in new_property_definition.keys():
             removed.append(key)
             # print(f'{key} removed from {options.new}')
 
-    for key in new_property_definitions:
-        if key not in property_definitions.keys():
+    for key in new_property_definition:
+        if key not in property_definition.keys():
             added.append(key)
             # print(f'{key} added to {options.new}')
 

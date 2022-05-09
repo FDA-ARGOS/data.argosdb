@@ -11,11 +11,11 @@ analysis_platform_object_id	siteQC.tsv	required	#root/analysis_platform_object_i
 genomic_identifier	siteQC.tsv	required	#root/genomic_identifier	genomic_identifier	string	-	GCA_001558355.2	^[a-zA-Z]+.*[0-9]+\.\d$	
 instrument	siteQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiniSeq	^([a-zA-Z]+( [a-zA-Z]+)+)$	
 num_SNPs	siteQC.tsv	optional	#root/num_SNPs	num_SNPs	string	-	357777	^[0-9]+$	
-num_SNPs_threshold	siteQC.tsv	optional	#root/num_SNPs_threshold		string	-	50	^[0-9]+$	
-num_pos_selected_sites	siteQC.tsv	optional	#root/num_pos_selected_sites		string	-	197.45	^[0-9]*\.[0-9]+$	
-num_pos_selected_threshold	siteQC.tsv	optional	#root/num_pos_selected_threshold		string	-	300	^[0-9]+$	
-num_neg_selected_sites	siteQC.tsv	optional	#root/num_neg_selected_sites		string	-	53	^[0-9]+$	
-num_neg_selected_threshold	siteQC.tsv	optional	#root/num_neg_selected_threshold		string	-	-	^[0-9]+$	
+num_SNPs_threshold	siteQC.tsv	optional	#root/num_SNPs_threshold	num_SNPs_threshold	string	-	50	^[0-9]+$	
+num_pos_selected_sites	siteQC.tsv	optional	#root/num_pos_selected_sites	num_pos_selected_sites	string	-	197.45	^[0-9]*\.[0-9]+$	
+num_pos_selected_threshold	siteQC.tsv	optional	#root/num_pos_selected_threshold	num_pos_selected_threshold	string	-	300	^[0-9]+$	
+num_neg_selected_sites	siteQC.tsv	optional	#root/num_neg_selected_sites	num_neg_selected_sites	string	-	53	^[0-9]+$	
+num_neg_selected_threshold	siteQC.tsv	optional	#root/num_neg_selected_threshold	num_neg_selected_threshold	string	-	-	^[0-9]+$	
 num_nuc_call	siteQC.tsv	optional	#root/num_nuc_call	num_nuc_call	string	-	-	^[0-9]+$	
 percent_nuc_call	siteQC.tsv	optional	#root/percent_nuc_call	percent_nuc_call	string	-	-	^[0-9]+$	
 genomic_coordinate_start	siteQC.tsv	optional	#root/genomic_coordinate_start	genomic_coordinate_start	string	-	chr1:1234570-1234870	^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$	
@@ -36,7 +36,7 @@ schema_version	assemblyQC.tsv	required	#root/schema_version	schema_version	strin
 analysis_platform	assemblyQC.tsv	required	#root/analysis_platform	analysis_platform	string	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	(HIVE 1|HIVE 2|HIVE AWS|Galaxy)	
 analysis_platform_object_id	assemblyQC.tsv	required	#root/analysis_platform_object_id	analysis_platform_object_id	string	-	39658	^[0-9]+$	
 strain	assemblyQC.tsv	optional	#root/strain	strain	string	-			
-bioproject	assemblyQC.tsv	required							
+bioproject	assemblyQC.tsv	required	#root/bioproject	bioproject	string				
 biosample	assemblyQC.tsv	required	#root/biosample	biosample	string	-	SAMN13922059	^[a-zA-Z]+[0-9]+$	
 num_chromosomes	assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	-	12	^[0-9]+$	
 instrument	assemblyQC.tsv	optional	#root/instrument	instrument	string	-	Illumina MiniSeq	^([a-zA-Z]+( [a-zA-Z]+)+)$	
@@ -92,7 +92,7 @@ taxonomy_id	biosampleMeta.tsv	required	#root/taxonomy_id	taxonomy_id	string	-	43
 fdaargos_id	biosampleMeta.tsv	optional	#root/fdaargos_id	fdaargos_id	string	-	ARGID00001	^[a-zA-Z]+[0-9]+$	
 bco_id	biosampleMeta.tsv	required	#root/bco_id	bco_id	string	-	ARGOS_000012/1.0	^[a-zA-Z]+[0-9]+$	
 schema_version	biosampleMeta.tsv	required	#root/schema_version	schema_version	string	-	v0.4	^v[0-9]*\.[0-9]+$	
-bioproject	biosampleMeta.tsv	required							
+bioproject	biosampleMeta.tsv	required	#root/bioproject	bioproject	string				
 biosample	biosampleMeta.tsv	required	#root/biosample	biosample	string	-	SAMN13922059	^[a-zA-Z]+[0-9]+$	
 sra_run_id	biosampleMeta.tsv	required	#root/sra_run_id	sra_run_id	string	-	-	^.*$	
 instrument	biosampleMeta.tsv	required	#root/instrument	instrument	string	-	Illumina MiniSeq	^([a-zA-Z]+( [a-zA-Z]+)+)$	
@@ -124,7 +124,7 @@ schema_version	ngsQC.tsv	required	#root/schema_version	schema_version	string	-	v
 analysis_platform	ngsQC.tsv	required	#root/analysis_platform	analysis_platform	string	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	(HIVE 1|HIVE 2|HIVE AWS|Galaxy)	
 analysis_platform_object_id	ngsQC.tsv	required	#root/analysis_platform_object_id	analysis_platform_object_id	string	-	39658	^[0-9]+$	
 strain	ngsQC.tsv	optional	#root/strain	strain	string	-	-	^.*$	
-bioproject	ngsQC.tsv	required							
+bioproject	ngsQC.tsv	required	#root/bioproject	bioproject	string				
 biosample	ngsQC.tsv	optional	#root/biosample	biosample	string	-	-	^.*$	
 file_name	ngsQC.tsv	required	#root/file_name	file_name	string	-	SRR10971381_1.fastq	^[a-zA-Z]+[0-9]+_[0-9]+\.fastq$	
 avg_file_quality	ngsQC.tsv	required	#root/avg_file_quality	avg_file_quality	string	-	33.5807	^[0-9]*\.[0-9]+$	

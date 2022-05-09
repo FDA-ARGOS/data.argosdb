@@ -142,18 +142,18 @@ pango_lineages	sars-cov-2_lineage_mutations.tsv	Raja	"The Pango nomenclature is 
 schema_version	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	"Version of the biosample_metadata, ngsQC, assemblyQC, siteQC"	data.argos.org
 source_database	siteQC_HL.tsv	Vahan	Source database or resource for this feature	HIVE
 hive_object_id	assemblyQC_HL.tsv | biosampleMeta_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	HIVE object ID which is assigned automatically within the HIVE Platform. This ID assists with internal tracking and programatic inquires with in the HIVE Platfrom	HIVE
-sra_run_id	ngs_ID_list.tsv	Raja	SRA identifier for a BioSample's genomic file.	
-organism_name	ngs_ID_list.tsv	Raja	Name of the expected organism. Should corrispond to a NCBI Taxonomy node	
-leaf_node	ngs_ID_list.tsv	Raja	Terminal node of organism's taxonomy	
-taxonomy_id	ngs_ID_list.tsv	Raja	NCBI taxonomy identifier of the organism.	
-selection_notes	ngs_ID_list.tsv	Raja	Notes describing why SRR was analyzed	
-lab_name	ngs_ID_list.tsv	Raja	Lab group that ran ngs computation	
-files_processed	ngs_ID_list.tsv	Raja	Denotes if SRR has been published on argosdb	
-num_SNPs	ngsQC_HL.tsv	Raja	Total number of SNPs	
-num_SNPs_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these SNPs	
-num_pos_selected_sites	ngsQC_HL.tsv	Raja	Total number of positively selected sites	
-num_pos_selected_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these positively selected sites	
-num_neg_selected_sites	ngsQC_HL.tsv	Raja	Total number of negatively selected sites	
-num_neg_selected_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these negatively selected sites	
-analysis_platform	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The type of platform used to conduct the analysis	Same as value
-analysis_platform_object_id	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The process identifier from platform used to conduct the analysis	Same as value
+sra_run_id	ngs_ID_list.tsv	Raja	SRA identifier for a BioSample's genomic file.	NCBI SRA
+organism_name	ngs_ID_list.tsv	Raja	Name of the expected organism. Should corrispond to a NCBI Taxonomy node	NCBI Taxonomy
+leaf_node	ngs_ID_list.tsv	Raja	Terminal node of organism's taxonomy	NCBI Taxonomy
+taxonomy_id	ngs_ID_list.tsv	Raja	NCBI taxonomy identifier of the organism.	NCBI Taxonomy
+selection_notes	ngs_ID_list.tsv	Raja	Notes describing why SRR was analyzed	ARGOS Team
+lab_name	ngs_ID_list.tsv	Raja	Lab group that ran ngs computation	ARGOS Team
+files_processed	ngs_ID_list.tsv	Raja	Denotes if SRR has been published on argosdb	ARGOS Team
+num_SNPs	ngsQC_HL.tsv	Raja	Total number of SNPs	ARGOS Team
+num_SNPs_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these SNPs	ARGOS Team
+num_pos_selected_sites	ngsQC_HL.tsv	Raja	Total number of positively selected sites	ARGOS Team
+num_pos_selected_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these positively selected sites	ARGOS Team
+num_neg_selected_sites	ngsQC_HL.tsv	Raja	Total number of negatively selected sites	ARGOS Team
+num_neg_selected_threshold	ngsQC_HL.tsv	Raja	Threshold used to select these negatively selected sites	ARGOS Team
+analysis_platform	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The type of platform used to conduct the analysis	ARGOS Team
+analysis_platform_object_id	assemblyQC_HL.tsv | ngsQC_HL.tsv | siteQC_HL.tsv	Raja	The process identifier from platform used to conduct the analysis	ARGOS Team

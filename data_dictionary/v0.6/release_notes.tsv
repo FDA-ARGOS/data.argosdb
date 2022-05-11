@@ -1,0 +1,23 @@
+Summary				
+"AssemblyQC: ""bioproject"" and ""instrument"" columns were added"				
+"BiosampleQC: ""bioproject"" and ""instrument"" columns were added"				
+"ngsQC: ""bioproject"" and ""taxonomy_id"" columns were added"				
+"siteQC: ""taxonomy_id"" and ""instrument"" columns were added"				
+				
+				
+Data Sheet Statistics				
+Class	Sheet	Total Properties	Properties Added	Properties Removed
+Dictionary	Property Definition	158	-	-
+Core	siteQC.tsv	27	"taxonomy_id, instrument"	-
+Core	assemblyQC.tsv	59	"bioproject, instrument"	-
+Core	biosampleMeta.tsv	29	"bioproject, instrument"	-
+Core	ngsQC.tsv	41	"bioproject, taxonomy_id"	-
+Non-Core	SRA_ngsQC.tsv	19	-	-
+Non-Core	SRA_assemblyQC.tsv	10	-	-
+Non-Core	sars-cov-2_lineage_mutations.tsv	14	-	-
+Non-Core	ngs_ID_list.tsv	7	-	-
+Non-Core	SRA_biosample	23	-	-
+				
+Property Definition Modifications				
+Property	Modification			
+-	-			

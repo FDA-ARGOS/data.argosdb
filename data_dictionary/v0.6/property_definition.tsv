@@ -98,7 +98,7 @@ count_a	 ngsQC_Crandall.tsv|ngsQC_HL.tsv	HIVE	The total count of adenines in the
 count_c	 ngsQC_Crandall.tsv|ngsQC_HL.tsv	HIVE	The total count of cytosines in the NGS.	HIVE
 count_g	 ngsQC_Crandall.tsv|ngsQC_HL.tsv	HIVE	The total count of guanines in the NGS.	HIVE
 count_t	 ngsQC_Crandall.tsv|ngsQC_HL.tsv	HIVE	The total count of thiamaines in the NGS.	HIVE
-bioproject		NCBI BioProject DB	"NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium."	NCBI BioProject DB
+bioproject	 assemblyQC_HL.tsv|biosampleMeta_HL.tsv|biosampleMeta.tsv|ngs_id_list.tsv|ngsQC_Crandall.tsv|ngsQC_HL.tsv|siteQC_HL.tsv|SRA_biosample.tsv	NCBI BioProject DB	"NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium."	NCBI BioProject DB
 uniprotkb_canonical_ac	 sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	"Uniprot canonical sequence accession. To reduce redundancy, the UniProtKB/Swiss-Prot policy is to describe all the protein products encoded by one gene in a given species in a single entry."	https://cov-lineages.org/
 found_in	 sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/
 gene_name	 sars-cov-2_lineage_mutations.tsv	https://cov-lineages.org/	?	https://cov-lineages.org/

@@ -34,24 +34,3 @@ pattern	the regular expression evaluation for this property
 description	A definition and additional information about the property.
 	
 This page:	V0.6_argos_dict
-	
-NOTES: Additional annotation files can have suffixes ngsQC_HL or ngsQC_PL or ngsQC_CL or initials of people.	
-Core Property Sheet Stats:	
-Sheet	Properties
-siteQC.tsv	27
-assemblyQC.tsv	59
-biosampleMeta.tsv	29
-ngsQC.tsv	41
-	
-Non Core Property Sheet Stats:	
-Sheet	Properties
-SRA_ngsQC.tsv	19
-SRA_assemblyQC.tsv	10
-sars-cov-2_lineage_mutations.tsv	14
-ngs_ID_list.tsv	7
-SRA_biosample	23
-	
-0 items removed from the dictionary: []	
-	
-	
-0 items added to the dictionary: []	

@@ -134,7 +134,7 @@
             "title": "bioproject",
             "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
             "type": "string",
-            "default": "",
+            "default": "-",
             "examples": [
                 ""
             ],

@@ -1,0 +1,42 @@
+Summary				
+property_definition.tsv: Removed 'pango_lineages' term and associated information due to not being used				
+property_definition.tsv: Removed 'sra_id' term and associated information due to redundancy with biosample				
+property_definition.tsv: Removed 2nd mention of 'id_method' due to redundancy				
+property_definition.tsv: Removed 2nd mention of 'sra_run_id' due to redundancy				
+property_definition.tsv: Removed 2nd mention of 'organism_name' due to redundancy				
+property_definition.tsv: Removed 2nd mention of 'taxonomy_id' due to redundancy				
+property_definition.tsv: Removed 'cumulative_percent_reads' term and associated information				
+property_definition.tsv: Removed 'hive_object_id ' term and associated information				
+property_definition.tsv: Removed 'avg_file_quality'				
+property_definition.tsv: Removed 'num_reads'				
+"property_definition.tsv: Added 'avg_phred_score', replaced 'avg_file_quality'"				
+"property_definition.tsv: Added  'num_reads_unique', replaced 'num_reads'"				
+ngsQC.tsv: Added 'avg_phred_score'				
+ngsQC.tsv: Added 'num_reads_unique'				
+ngsQC.tsv: Removed 'avg_file_quality'				
+ngsQC.tsv: Removed  'num_reads'				
+ngsQC.tsv: Removed  'cumulative_percent_reads'				
+ngs_ID_list.tsv: Added 'fdaargos_id'				
+ngs_ID_list.tsv: Added 'genome_assembly_id'				
+CREATED uniprot-proteome_*.csv				
+uniprot-proteome_*.csv: Added 'uniprotkb_ac'				
+uniprot-proteome_*.csv: Added 'entry_name'				
+uniprot-proteome_*.csv: Added 'status'				
+uniprot-proteome_*.csv: Added 'protein_names'				
+uniprot-proteome_*.csv: Added 'gene_names'				
+uniprot-proteome_*.csv: Added 'organism_name'				
+uniprot-proteome_*.csv: Added 'length'				
+				
+Data Sheet Statistics				
+Class	Sheet	Total Properties	Properties Added	Properties Removed
+Dictionary	property_definition.tsv	150	avg_phred_score|num_reads_unique	avg_file_quality|num_reads|cumulative_percent_reads|id_method|sra_run_id|organism_name|taxonomy_id|hive_object_id|sra_id|pangeo_lineages
+Core	siteQC.tsv	27		-
+Core	assemblyQC.tsv	59		-
+Core	biosampleMeta.tsv	29		-
+Core	ngsQC.tsv	40	avg_phred_score|num_reads_unique	avg_file_quality|num_reads|cumulative_percent_reads
+Non-Core	SRA_ngsQC.tsv	19	-	-
+Non-Core	SRA_assemblyQC.tsv	10	-	-
+Non-Core	sars-cov-2_lineage_mutations.tsv	14	-	-
+Non-Core	ngs_ID_list.tsv	9	fdaargos_id|genome_assembly_id	-
+Non-Core	SRA_biosample	23	-	-
+Non-Core	uniprot-proteome_*.csv 	7	uniprotkb_ac|entry_name|status|protein_names|gene_names|organism_name|length	-

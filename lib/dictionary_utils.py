@@ -78,13 +78,6 @@ def usr_args():
         help="List of all available functions")
     parser_list_functions.set_defaults(func=list_functions)
 
-    # Create a validate subcommand
-    parser_validate  = subparsers.add_parser('validate',
-        parents=[parent_parser],
-        help="Validation options. "
-            "Used to test a data sheet against a JSON schema. "
-            "If no schema is supplied will throw an error")
-    parser_validate.set_defaults(func=validate_schema)
 
 
     # Create a write_schema subcommand
@@ -136,59 +129,6 @@ def list_functions(parser):
             print(f"Function: '{choice}'")
             print(subparser.format_help())
     print(parser.format_help())
-
-def validate_schema(options):
-    """Checks for Schema Complience[WIP]
-
-    Parameters
-    ----------
-    options.input: str
-        Argument parser object holding attributes to process.
-        This should inclued an inpit file and may include an optional output
-        file and/or an optional schema
-
-    options.schema: str, optional
-        Root json schema to validate against.
-
-    options.output: str, optional
-
-    Returns
-    -------
-
-    """
-    error_flags = 0
-    error_strings = ''
-
-    json_list = json.loads(sheet_2_json(options.input))
-    count = 0
-    lines = len(json_list)
-    print(f'File with {lines} lines supplied.')
-    if options.schema is None:
-        print("ERROR! No schema was supplied. Exiting")
-        return
-
-    if os.path.exists(options.schema):
-        print("Local schema file supplied")
-        with open(options.schema, 'r', encoding='utf-8-sig') as json_schema:
-            schema = json.load(json_schema)
-    elif url_valid(options.schema) is True:
-        print("Remote schema file supplied")
-        schema = jsonref.load_uri(options.schema)
-    else:
-        print("Could not load schema. Exiting")
-        return
-
-    for line in json_list:
-        count += 1
-        try:
-            validate(instance=line, schema=schema)
-            # print(f'Item number {count} is VALID', '\n', json.dumps(line))
-        except ValidationError as err:
-            print(f'Line {count} failed. {err.message}')
-            error_flags += 1
-            # err = "Given JSON data is InValid"
-            # return False, err
-    print(f'{error_flags} lines failed out of {lines}.')
 
 def list_2_schema(options):
     """Create Schema JSON

@@ -4,23 +4,23 @@
 This script will perform validation validaton operations for ARGOS data sheets.
 General help below.
 
-usage: data_sheet_validator [-v] -i INPUT -s SCHEMA [-o OUTPUT] [-h] [-m]
+usage: data_sheet_validator -i INPUT -s SCHEMA [-o OUTPUT] [-v] [-h]
 
 Data Sheet Validation. Used to test a data sheet against a JSON schema. If no
-schema is supplied will throw an error.
+schema is supplied will throw an error
 
 required arguments:
   -i INPUT, --input INPUT
-                        Input file to process
+                        Data sheet to validate. This can be a 'tsv' or 'csv'.
+                        Other file types are not permitted.
   -s SCHEMA, --schema SCHEMA
                         Root json schema to validate against.
 
 optional arguments:
-  -v, --version         show program's version number and exit
   -o OUTPUT, --output OUTPUT
-                        Output file to create
+                        Output file to create. Default is a JSON file.
+  -v, --version         show program's version number and exit
   -h, --help            show this help message and exit
-  -m, --multi           Flag to indicate if multiple items are being processed.
 """
 
 import csv
@@ -38,7 +38,7 @@ __status__ = "Draft"
 
 def usr_args():
     """User Arguments
-    
+
     User supplied arguments from command line for function
 
     Returns
@@ -66,9 +66,9 @@ def usr_args():
 
     optional.add_argument('-o', '--output',
         help="Output file to create. Default is a JSON file. ")
-    optional.add_argument('-m', '--multi',
-        action='store_true',
-        help='Flag to indicate if multiple items are being processed')
+    # optional.add_argument('-m', '--multi',
+    #     action='store_true',
+    #     help='Flag to indicate if multiple items are being processed')
     optional.add_argument('-v', '--version',
         action='version',
         version='%(prog)s ' + __version__)
@@ -160,19 +160,20 @@ def sheet_2_json(file_path):
 def validate_schema(options):
     """Checks for Schema Complience
 
+    Input and schema are required, output file is optional. If no output is
+    supplied then the results will print to the terminal.
+
     Parameters
     ----------
     options.input: str
-        Argument parser object holding attributes to process.
-        This should inclued an inpit file and may include an optional output
-        file and/or an optional schema
+        data sheet to be validated
 
     options.schema: str
         Root json schema to validate against.
 
-    Returns
-    -------
-
+    options.input: str, optional
+        output file to write errors to. If not provided errors are output to
+        the terminal.
     """
 
     count = 0
@@ -200,16 +201,19 @@ def validate_schema(options):
         count += 1
         line_errors = {
             'line_number': count,
-            'errors': []
+            'failed_cells': []
         }
         # try:
         validate = Draft7Validator(schema)
         errors = validate.iter_errors(line)
-        for error in errors:
-            print(error.__dict__.keys())
-            print('\n', error.relative_path[0], error.message)
-            line_errors['errors'].append(f'{error.relative_path[0]}: {error.message}')
-        if len(line_errors['errors']) > 0:
+        
+        for item in errors:
+            try:
+                line_errors['failed_cells'].append(f'{item.relative_path[0]}: {item.message}')
+            except IndexError as error:
+                # import pdb; pdb.set_trace()
+                line_errors['failed_cells'].append(f'top_level: {item.message}')
+        if len(line_errors['failed_cells']) > 0:
             error_strings['errors'].append(line_errors)
             error_flags += 1
 
@@ -217,8 +221,23 @@ def validate_schema(options):
     if error_flags == 0:
         error_strings['errors'] = 'NONE. Data sheet valid'
     error_strings['summary'] = f'{error_flags} lines failed out of {no_lines}.'
-    
-    return (json.dumps(error_strings))
+
+    if options.output:
+        with open(options.output, 'w', encoding='utf-8') as file:
+            json.dump(error_strings, file, sort_keys = True, indent = 4,
+               ensure_ascii = False)
+    else:
+        # print(json.dumps(error_strings))
+        print('Input: ', error_strings['input'] )
+        print('Schema: ', error_strings['schema'])
+        for error in error_strings['errors']:
+            try:
+                print('Line number', error['line_number'])
+                for cell in error['failed_cells']:
+                    print('\t',cell)
+            except TypeError:
+                print(error_strings['errors'])
+                break
 
 def main():
     """

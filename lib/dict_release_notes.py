@@ -5,50 +5,66 @@ Generates release notes for ARGOS Data Dictionary.
 """
 
 import csv
-import argparse
+from argparse import ArgumentParser, SUPPRESS
 import sys
 import os
 __version__ = "0.1.0"
 __status__ = "Production"
 
 def usr_args():
+    """User Arguments
+
+    User supplied arguments from command line for function
+
+    Returns
+    -------
+        ArgumentParser objects to be digested by subsequent functions.
     """
-    functional arguments for process
-    https://stackoverflow.com/questions/27529610/call-function-based-on-argparse
-    """
 
-    parser = argparse.ArgumentParser()
+    parser = ArgumentParser(
+        add_help=False,
+        prog='data_sheet_validator',
+        description="Release Note Generator. "
+            "Used to generate release notes from two differnt versions.")
 
-    # set usages options
-    parser = argparse.ArgumentParser(
-        prog='argosdb',
-        usage='%(prog)s [options]')
+    required = parser.add_argument_group('required arguments')
+    optional = parser.add_argument_group('optional arguments')
 
-    # version
-    parser.add_argument(
-                        '-v', '--version',
-                        action='version',
-                        version='%(prog)s ' + __version__)
+    required.add_argument('-o', '--old',
+        required=True,
+        help="Directory for old version of dictionary.")
 
-    parser.add_argument('-o', '--old',
-                        required=True,
-                        help="Directory for old version of dictionary.")
+    required.add_argument('-n', '--new',
+        required=True,
+        help="Directory for new version of dictionary")
 
-    parser.add_argument('-n', '--new',
-                        required=True,
-                        help="Directory for new version of dictionary")
+    optional.add_argument('-v', '--version',
+        action='version',
+        version='%(prog)s ' + __version__)
+    optional.add_argument('-h', '--help',
+        action='help',
+        default=SUPPRESS,
+        help='show this help message and exit')
 
-    # Print usage message if no args are supplied.
     if len(sys.argv) <= 1:
         sys.argv.append('--help')
 
-    options = parser.parse_args()
-    return options
+    return parser.parse_args()
 
 
 def load_tsv(options):
-    """
-        load tsvs
+    """Load TSVs
+    
+    Parameters
+    ----------
+    options.old: str
+        An inpit directory string.
+    options.new: str
+        An inpit directory string.
+    
+     Returns
+    -------
+        Printout of comparison stats.
     """
     counts ={}
     readme = []
@@ -185,9 +201,6 @@ def main():
     """
     options = usr_args()
     load_tsv(options)
-    # make_schema(options, schema)
-
-
 
 #______________________________________________________________________________#
 if __name__ == "__main__":

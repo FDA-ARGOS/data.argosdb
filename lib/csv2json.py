@@ -50,7 +50,7 @@ def get_csv(options):
     with open(options.csv, 'r') as file:
         data = csv.reader(file)
         header = next(data)
-        for row in data: 
+        for row in data:
             # schema.append(row)
             schema['properties'][row[0]] = {
                 '$id':row[1],

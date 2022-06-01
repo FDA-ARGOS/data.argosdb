@@ -1,0 +1,4 @@
+uniprotkb_canonical_ac	found_in	gene_name	protein_name	evidence_ECO0000313	begin_aa_pos	end_aa_pos	mutation_type	is_known_glycoprotein	motif_start	ref_motif	alt_motif	effect	note
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	67	67	missense	yes	67	A	V	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	69	69	deletion	yes	69	H	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	70	70	deletion	yes	70	V	-	-	-

@@ -1,0 +1,7 @@
+{
+    "errors": "NONE. Data sheet valid",
+    "input": "tests/test_files/sars-cov-2_lineage_mutations.tsv",
+    "lines": 3,
+    "schema": "schema/v0.7/non-core/sars-cov-2_lineage_mutations.json",
+    "summary": "0 lines failed out of 3."
+}

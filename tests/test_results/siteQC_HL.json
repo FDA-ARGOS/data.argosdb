@@ -1,0 +1,27 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "taxonomy_id: '-' does not match '^[0-9]+$'",
+                "fdaargos_id: '-' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "instrument: '-' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "num_pos_selected_sites: '-' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "num_pos_selected_threshold: '-' does not match '^[0-9]+$'",
+                "num_neg_selected_sites: '-' does not match '^[0-9]+$'",
+                "num_neg_selected_threshold: '-' does not match '^[0-9]+$'",
+                "num_nuc_call: '-' does not match '^[0-9]+$'",
+                "percent_nuc_call: '-' does not match '^[0-9]+$'",
+                "genomic_coordinate_start: '-' does not match '^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$'",
+                "genomic_coordinates_end: '-' does not match '^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$'",
+                "source: '-' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "source_database: '-' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 1
+        }
+    ],
+    "input": "tests/test_files/siteQC_HL.tsv",
+    "lines": 1,
+    "schema": "schema/v0.7/core/siteQC.json",
+    "summary": "1 lines failed out of 1."
+}

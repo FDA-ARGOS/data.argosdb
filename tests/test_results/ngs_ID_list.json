@@ -1,0 +1,30 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "sra_run_id: 'ERR2096902' does not match '^\\\\+SRR.+'",
+                "fdaargos_id: '-' does not match '^[a-zA-Z]+[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "sra_run_id: 'SRR10971381' does not match '^\\\\+SRR.+'",
+                "fdaargos_id: '-' does not match '^[a-zA-Z]+[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "sra_run_id: 'SRR17309642' does not match '^\\\\+SRR.+'",
+                "fdaargos_id: '-' does not match '^[a-zA-Z]+[0-9]+$'",
+                "files_processed: '-' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 3
+        }
+    ],
+    "input": "tests/test_files/ngs_id_list.tsv",
+    "lines": 3,
+    "schema": "schema/v0.7/non-core/ngs_ID_list.json",
+    "summary": "3 lines failed out of 3."
+}

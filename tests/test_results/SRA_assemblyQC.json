@@ -1,0 +1,36 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'genome_assembly_id' is a required property",
+                "top_level: 'level' is a required property",
+                "top_level: 'assembly_level' is a required property",
+                "top_level: 'biosample' is a required property",
+                "top_level: 'strain' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'bioproject' is a required property",
+                "top_level: 'taxonomy_id' is a required property",
+                "top_level: 'lineage' is a required property"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'genome_assembly_id' is a required property",
+                "top_level: 'level' is a required property",
+                "top_level: 'assembly_level' is a required property",
+                "top_level: 'biosample' is a required property",
+                "top_level: 'strain' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'bioproject' is a required property",
+                "top_level: 'taxonomy_id' is a required property",
+                "top_level: 'lineage' is a required property"
+            ],
+            "line_number": 2
+        }
+    ],
+    "input": "tests/test_files/SRA_assemblyQC.tsv",
+    "lines": 2,
+    "schema": "schema/v0.7/non-core/SRA_assemblyQC.json",
+    "summary": "2 lines failed out of 2."
+}

@@ -1,0 +1,44 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'avg_phred_score' is a required property",
+                "top_level: 'num_reads_unique' is a required property",
+                "lineage: '-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "fdaargos_id: 'FDAARGOS_1271' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bco_id: 'ARGOS_000025' does not match '^[a-zA-Z]+[0-9]+$'",
+                "avg_read_length: '3612' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "density_n_per_read: '1' does not match '^([0-9]+(\\\\|[0-9]+)+)$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'avg_phred_score' is a required property",
+                "top_level: 'num_reads_unique' is a required property",
+                "lineage: '-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "fdaargos_id: 'FDAARGOS_1271' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bco_id: 'ARGOS_000025' does not match '^[a-zA-Z]+[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "density_n_per_read: '1' does not match '^([0-9]+(\\\\|[0-9]+)+)$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'avg_phred_score' is a required property",
+                "top_level: 'num_reads_unique' is a required property",
+                "lineage: '-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "fdaargos_id: 'FDAARGOS_1271' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bco_id: 'ARGOS_000025' does not match '^[a-zA-Z]+[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 3
+        }
+    ],
+    "input": "tests/test_files/ngsQC_Crandall.tsv",
+    "lines": 3,
+    "schema": "schema/v0.7/core/ngsQC.json",
+    "summary": "3 lines failed out of 3."
+}

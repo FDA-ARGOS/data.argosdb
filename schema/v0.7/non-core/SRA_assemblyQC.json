@@ -1,0 +1,131 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.7/schema/0.7/SRA_assemblyQC.tsv",
+    "title": "SRA_assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "genome_assembly_id",
+        "level",
+        "assembly_level",
+        "num_chromosomes",
+        "biosample",
+        "strain",
+        "organism_name",
+        "bioproject",
+        "taxonomy_id",
+        "lineage"
+    ],
+    "properties": {
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_013267415.1"
+            ],
+            "pattern": "^.*$"
+        },
+        "level": {
+            "$id": "#root/level",
+            "title": "level",
+            "description": "Level index for run specific depth first enumeration of tax hierarchy.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Complete genome"
+            ],
+            "pattern": "^.*$"
+        },
+        "assembly_level": {
+            "$id": "#root/assembly_level",
+            "title": "assembly_level",
+            "description": "The highest level of assembly for any object in the assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "undefined"
+            ],
+            "pattern": "^.*$"
+        },
+        "num_chromosomes": {
+            "$id": "#root/num_chromosomes",
+            "title": "num_chromosomes",
+            "description": "Total number of chromosomes in the genome assembly.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1"
+            ],
+            "pattern": "^.*$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN11056500"
+            ],
+            "pattern": "^.*$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "microbial or eukaryotic strain name",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "FDAARGOS_785"
+            ],
+            "pattern": "^.*$"
+        },
+        "organism_name": {
+            "$id": "#root/Taxonomy Name",
+            "title": "Taxonomy Name",
+            "description": "Name of the expected organism. Should corrospond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Abiotrophia defectiva"
+            ],
+            "pattern": "^.*$"
+        },
+        "bioproject": {
+            "$id": "#root/BioPproject",
+            "title": "BioPproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PRJNA231221"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "46125"
+            ],
+            "pattern": "^[2-9]|[1-9]\\d+$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

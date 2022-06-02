@@ -206,7 +206,7 @@ def validate_schema(options):
         # try:
         validate = Draft7Validator(schema)
         errors = validate.iter_errors(line)
-        
+
         for item in errors:
             try:
                 line_errors['failed_cells'].append(f'{item.relative_path[0]}: {item.message}')

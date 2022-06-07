@@ -10,6 +10,7 @@ import re
 import csv
 import os
 import pandas as pd
+import requests
 
 # Separator for when multiple values are nested in one cell:
 delim = "|"
@@ -135,12 +136,20 @@ print ("\nUsing " + basename[0:-8] + "... ")
 
 #_______________________________________________________________# Login.
 
-user = input("\nEnter your username on " + hiveVal + " (email address): ")
-password  = getpass.getpass()
-loginParams = {'api': '0', 'cmdr': 'login', 'login': user, 'pswd': password}
-response = requests.get(basename, params=loginParams)
-cookies = response.cookies
+def apiLogin():
+   global cookies
 
+   user = input("\nEnter your username on " + hiveVal + " (email address): ")
+   password  = getpass.getpass()
+   loginParams = {'api': '0', 'cmdr': 'login', 'login': user, 'pswd': password}
+   response = requests.get(basename, params=loginParams)
+   if response.text != '':
+      print(response.text)
+      apiLogin()  # Try again
+   else:
+      cookies = response.cookies
+
+apiLogin()
 """
 Maybe consider putting something here that will only advance if login was successful. E.g. if response == 200, else throw login error.
 """
@@ -269,6 +278,7 @@ with open ("outputFile.csv", "w+") as finalFile:
 
 #_______________________________________________________________# Clean up.
 
+os.remove("TEMPIDFile.csv")
 os.remove("TEMPcodonQCTable.csv")
 os.remove("TEMPcountNsPercentageTable.csv")
 os.remove("TEMPComplexityTable.csv")

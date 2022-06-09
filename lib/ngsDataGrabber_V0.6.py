@@ -9,7 +9,6 @@ import json
 import re
 import csv
 import os
-import pandas as pd
 import requests
 
 # Separator for when multiple values are nested in one cell:
@@ -196,6 +195,7 @@ for key, value in data.items():
 
 #_______________________________________________________________# Get SRR/ERR archive accession for each file.
 
+# There's no reason to put the following in a try/except block. I think it was a placeholder for better error catching that was never implemented.
 try:
     print ("Getting data from input read files...\n")
 except:

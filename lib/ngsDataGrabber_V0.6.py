@@ -218,7 +218,7 @@ with open('TEMPIDFile.csv', 'w+', newline='') as IDFile:
 These API calls are basically repeated 4 times. They should just be pulled into a function.
 """
 
-with open ("outputFile.csv", "w+") as finalFile:
+with open ("outputFile_"+str(userVal)+".csv", "w+") as finalFile:
     print ("file_name;codon_table;%protein_coding;%not_coding;%_reads;density_Ns_per_read;%complex;%not_complex;avg_quality_a;avg_quality_t;avg_quality_g;avg_quality_c;count_a;count_c;count_g;count_t", file=finalFile)
     with open ('TEMPIDFile.csv') as IDFile:
         next(iter(IDFile))

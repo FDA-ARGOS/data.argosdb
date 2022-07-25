@@ -8,7 +8,7 @@ import time
 import argparse
 
 sep = '\t'
-sleeptime = 1 # seconds
+sleeptime = 0.1 # seconds
 argos_schema_version = 'v0.7'
 schema_keys = ['organism_name',
                'lineage',

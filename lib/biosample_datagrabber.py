@@ -8,7 +8,9 @@ import time
 import argparse
 
 sep = '\t'
-sleeptime = 0.1 # seconds
+# Note that this sleeptime is if authentication (a token) is provided. Use 0.34 if not authenticated.
+# Suggesting 0.11 instead of 0.1 just to be safe! Getting banned by NCBI is a huge pain.
+sleeptime = 0.11 # seconds
 argos_schema_version = 'v0.7'
 schema_keys = ['organism_name',
                'lineage',

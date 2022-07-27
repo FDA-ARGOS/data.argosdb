@@ -10,7 +10,8 @@ import argparse
 sep = '\t'
 # Note that this sleeptime is if authentication (a token) is provided. Use 0.34 if not authenticated.
 # Suggesting 0.11 instead of 0.1 just to be safe! Getting banned by NCBI is a huge pain.
-sleeptime = 0.11 # seconds
+sleeptime_withtoken = 0.11 # seconds
+sleeptime_notoken = 0.34 # seconds
 argos_schema_version = 'v0.8'
 schema_keys = ['organism_name',
                'lineage',
@@ -41,7 +42,7 @@ schema_keys = ['organism_name',
                'host_sex',
                'id_method']
 
-def bsDataGet(bs_term):
+def bsDataGet(bs_term, sleeptime):
 
     search = Entrez.esearch(db = 'biosample', term = bs_term, retmode='xml')
     time.sleep(sleeptime)
@@ -86,7 +87,7 @@ def bsDataGet(bs_term):
     attr_set['organism_name'] = sd_json['Description']['Organism']['OrganismName']
     attr_set['genome_assembly_id'] = genome_assembly_id
     attr_set['taxonomy_id'] = sd_json['Description']['Organism']['@taxonomy_id']
-    attr_set['bco_id'] = ''
+    attr_set['bco_id'] = '-'
     attr_set['schema_version'] = argos_schema_version
     attr_set['bioproject'] = sd_json['Links']['Link']['@label']
     attr_set['sra_run_id'] = SRA_id
@@ -124,14 +125,17 @@ def bsDataGet(bs_term):
 def listify(d, key_order):
     l = []
     for key in key_order:
-        l += [d.get(key) or '']
+        l += [d.get(key) or '-']
     return l
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--email',
-                        help='email address associated with the Entrez API account',
+                        help='email address associated with the NCBI account',
+                        type=str)
+    parser.add_argument('--api_key',
+                        help='API key associated with the NCBI account (optional)',
                         type=str)
     parser.add_argument('--idfile',
                         help='text file containing one biosample id on each line',
@@ -139,6 +143,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     Entrez.email = args.email
+    Entrez.api_key = args.api_key
     #print(args.idfile)
     output_file = open("biosample.tsv", "w+")
     print (sep.join(schema_keys),
@@ -146,7 +151,8 @@ if __name__ == '__main__':
     for bs_term in args.idfile:
         bs_term = bs_term.rstrip() # removes any newline character at the end
         print(bs_term)
-        bs_data_list = bsDataGet(bs_term)
+        sleeptime = sleeptime_notoken if args.api_key is None else sleeptime_withtoken
+        bs_data_list = bsDataGet(bs_term, sleeptime = sleeptime)
 
         for bs_data in bs_data_list:
             # read a line from the idfile

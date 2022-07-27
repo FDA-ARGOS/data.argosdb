@@ -1,6 +1,9 @@
 #
 # The Python libraries required are in biosample_datagrabber_requirements.py
 #
+# Example Usage:
+#   python biosample_datagrabber.py --email=myemail@gwu.edu --api_key=myapikey123abc --idfile=mybiosampleids.txt --bco_id=ARGOS_000028
+#
 
 from Bio import Entrez
 import xmltodict
@@ -42,7 +45,7 @@ schema_keys = ['organism_name',
                'host_sex',
                'id_method']
 
-def bsDataGet(bs_term, sleeptime):
+def bsDataGet(bs_term, sleeptime, bco_id):
 
     search = Entrez.esearch(db = 'biosample', term = bs_term, retmode='xml')
     time.sleep(sleeptime)
@@ -87,7 +90,7 @@ def bsDataGet(bs_term, sleeptime):
     attr_set['organism_name'] = sd_json['Description']['Organism']['OrganismName']
     attr_set['genome_assembly_id'] = genome_assembly_id
     attr_set['taxonomy_id'] = sd_json['Description']['Organism']['@taxonomy_id']
-    attr_set['bco_id'] = '-'
+    attr_set['bco_id'] = bco_id
     attr_set['schema_version'] = argos_schema_version
     attr_set['bioproject'] = sd_json['Links']['Link']['@label']
     attr_set['sra_run_id'] = SRA_id
@@ -140,6 +143,9 @@ if __name__ == '__main__':
     parser.add_argument('--idfile',
                         help='text file containing one biosample id on each line',
                         type=argparse.FileType('r'))
+    parser.add_argument('--bco_id',
+                        help='BCO ID (optional)',
+                        type=str)
     args = parser.parse_args()
 
     Entrez.email = args.email
@@ -152,7 +158,7 @@ if __name__ == '__main__':
         bs_term = bs_term.rstrip() # removes any newline character at the end
         print(bs_term)
         sleeptime = sleeptime_notoken if args.api_key is None else sleeptime_withtoken
-        bs_data_list = bsDataGet(bs_term, sleeptime = sleeptime)
+        bs_data_list = bsDataGet(bs_term, sleeptime = sleeptime, bco_id = args.bco_id or '-')
 
         for bs_data in bs_data_list:
             # read a line from the idfile

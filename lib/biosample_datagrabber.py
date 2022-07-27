@@ -11,12 +11,11 @@ sep = '\t'
 # Note that this sleeptime is if authentication (a token) is provided. Use 0.34 if not authenticated.
 # Suggesting 0.11 instead of 0.1 just to be safe! Getting banned by NCBI is a huge pain.
 sleeptime = 0.11 # seconds
-argos_schema_version = 'v0.7'
+argos_schema_version = 'v0.8'
 schema_keys = ['organism_name',
                'lineage',
                'genome_assembly_id',
                'taxonomy_id',
-               'fdaargos_id',
                'bco_id',
                'schema_version',
                'bioproject',
@@ -87,15 +86,13 @@ def bsDataGet(bs_term):
     attr_set['organism_name'] = sd_json['Description']['Organism']['OrganismName']
     attr_set['genome_assembly_id'] = genome_assembly_id
     attr_set['taxonomy_id'] = sd_json['Description']['Organism']['@taxonomy_id']
-    attr_set['fdaargos_id'] = attr_set['strain']
     attr_set['bco_id'] = ''
-    attr_set['schema_version'] = 'v0.7'
+    attr_set['schema_version'] = argos_schema_version
     attr_set['bioproject'] = sd_json['Links']['Link']['@label']
     attr_set['sra_run_id'] = SRA_id
     attr_set['instrument'] = 'TBD' # able to successfully get this for each SRA
     attr_set['sample_name'] = sd_json['Description']['Title']
     attr_set['id_method'] = attr_set['identification method']
-    attr_set['schema_version'] = argos_schema_version
 
     search = Entrez.esearch(db = 'sra', term = SRA_id, retmode='xml')
     time.sleep(sleeptime)

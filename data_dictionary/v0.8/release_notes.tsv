@@ -1,0 +1,102 @@
+Summary of V0.8 Changes in Property Definition List:		
+- In 'data_files' column: '*' implies all files in that data set category from Mazumder, Pond, and Crandall Labs.		
+- terms were either Removed, Added, the Requirement level was changed, or the term was Renamed. The specific action of each affected term is outlined below.		
+		
+Summary of V0.8 Changes in CORE Property List and associated data sets:		
+Term	Action 	Affected Datasets 
+fdaargos_id	Removed from all datasets; being held in 'Data Team' notes incase of future use 	ngsQC, assemblyQC, siteQC, biosampleMeta
+ngs_read_file_source	Added to ngsQC, siteQC, and assemblyQC; made a 'required' field	ngsQC, assemblyQC, siteQC
+ngs_read_file_name	Added to ngsQC, siteQC, and assemblyQC; made a 'required' field	ngsQC, assemblyQC, siteQC
+instrument	Removed from assemblyQC and siteQC; being held in 'Data Team' notes incase of future use 	assemblyQC, siteQC
+ref_genome_acc	Added to siteQC and assemblyQC; made a 'required' field	assemblyQC, siteQC
+genome_assembly_id 	Removed from dataset 	ngsQC
+ngs_gc_content	Renamed term for clarity	ngsQC
+biosample	Changed to 'required' field	ngsQC
+max_read_length	Changed to 'required' field	ngsQC
+genome_assembly_id 	Changed to 'required' field 	siteQC
+genomic_identifier	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_SNPs	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_SNPs_threshold	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_pos_selected_sites	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_pos_selected_threshold	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_neg_selected_sites	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_neg_selected_threshold	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+num_nuc_call	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+percent_nuc_call	Removed from siteQC; being held in 'Data Team' notes incase of future use 	siteQC
+biosample	Added to siteQC; made a 'required' field	siteQC
+molecule	Added to siteQC; made a 'required' field	siteQC
+source_database	Added to siteQC; made a 'required' field	siteQC
+wt_nucleotide	Added to siteQC; made a 'required' field	siteQC
+alt_nucleotide	Added to siteQC; made a 'required' field	siteQC
+wt_codon	Added to siteQC; made a 'required' field	siteQC
+alt_codon	Added to siteQC; made a 'required' field	siteQC
+wt_amino_acid	Added to siteQC; made a 'required' field	siteQC
+alt_amino_acid	Added to siteQC; made a 'required' field	siteQC
+molecule	Added to siteQC; made a 'required' field	siteQC
+annotation	Added to siteQC; made a 'required' field	siteQC
+read_coverage	Added to siteQC; made a 'required' field	siteQC
+frequency	Added to siteQC; made a 'required' field	siteQC
+codon_reference	Added to siteQC; made a 'required' field	siteQC
+protein_accession	Added to siteQC; made a 'required' field	siteQC
+count_major_mutations	Added to siteQC; made a 'required' field	siteQC
+count_major_indels	Added to siteQC; made a 'required' field	siteQC
+strain	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+sample_type	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+isolation_provider_name	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+isolation_acquisition_id	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+contact_name	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+sequencing_method	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+seq_id	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+cnt_scaffolds	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+cnt_contigs	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+contigs_momentum	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+coverage_contigs	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+aligned_momentum	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+overhang_momentum	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+bases_percentile_aligned	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+cnt_gaps	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+size_gaps	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+clonal_populations	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+clonal_expanse	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+count_major_variations	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+indels_momentum	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+mutation_momentum	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+alignment_disbalance	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+alignmnet_anisotropy	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+rpkm	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+fpkm	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+coverage_homogeneity	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+ambiguous_bases	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+taxid_composition	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+seq_composition	Removed from assemblyQC; being held in 'Data Team' notes incase of future use 	assemblyQC
+sra_run_id	Added to assemblyQC; made a 'required' field	assemblyQC
+num_genes	Added to assemblyQC; made a 'required' field	assemblyQC
+num_segments 	Added to assemblyQC; made an 'optional' field	assemblyQC
+assembly_score	Added to assemblyQC; made a 'required' field	assemblyQC
+assembly_gc_content	Renamed term for clarity	assemblyQC
+number_of_n_or_x	Changed to 'required' field 	assemblyQC
+n50	Changed to 'required' field 	assemblyQC
+l50	Changed to 'required' field 	assemblyQC
+reads_unaligned	Changed to 'required' field 	assemblyQC
+phred_average	Changed to 'required' field 	assemblyQC
+genome_assembly_id 	Changed to 'optional' field	biosampleMeta
+collected_by	Changed to 'optional' field	biosampleMeta
+collection_date	Changed to 'optional' field	biosampleMeta
+geo_loc_name	Changed to 'optional' field	biosampleMeta
+isolation_source	Changed to 'optional' field	biosampleMeta
+host	Changed to 'optional' field	biosampleMeta
+		
+		
+Data Sheet Statistics:		
+Class	Sheet	Total Properties
+Dictionary	property_definition.tsv	133
+Core	ngsQC.tsv	39
+Core	assemblyQC.tsv	33
+Core	siteQC.tsv	35
+Core	biosampleMeta.tsv	29
+Non-Core	SRA_ngsQC.tsv	19
+Non-Core	SRA_assemblyQC.tsv	10
+Non-Core	sars-cov-2_lineage_mutations.tsv	14
+Non-Core	ngs_ID_list.tsv	9
+Non-Core	SRA_biosample	23
+Non-Core	uniprot-proteome_*.csv	7

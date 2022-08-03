@@ -1,100 +1,34 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.7/schema/0.7/biosampleMeta.tsv",
-    "title": "biosampleMeta.tsv",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.8/schema/0.8/SRA_biosample",
+    "title": "SRA_biosample",
     "type": "object",
     "required": [
-        "organism_name",
-        "lineage",
-        "taxonomy_id",
-        "bco_id",
-        "schema_version",
-        "bioproject",
         "biosample",
-        "sra_run_id",
-        "instrument",
+        "organism_name",
         "strain",
-        "sample_name"
+        "sample_name",
+        "taxonomy_id",
+        "isolate",
+        "collected_by",
+        "collection_date",
+        "geo_loc_name",
+        "isolation_source",
+        "lat_lon",
+        "culture_collection",
+        "host",
+        "host_age",
+        "host_description",
+        "host_disease",
+        "host_disease_outcome",
+        "host_disease_stage",
+        "host_health_state",
+        "host_sex",
+        "id_method",
+        "type_material"
     ],
     "properties": {
-        "organism_name": {
-            "$id": "#root/organism_name",
-            "title": "organism_name",
-            "description": "Name of the expected organism. Should corrospond to a NCBI Taxonomy node",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "Severe_acute_respiratory_syndrome_coronavirus_2"
-            ],
-            "pattern": "^([a-zA-Z]+(_[a-zA-Z]+)+).*$"
-        },
-        "lineage": {
-            "$id": "#root/lineage",
-            "title": "lineage",
-            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "isolate_Wuhan_Hu_1"
-            ],
-            "pattern": "^([a-zA-Z]+(_[a-zA-Z]+)+).*$"
-        },
-        "genome_assembly_id": {
-            "$id": "#root/genome_assembly_id",
-            "title": "genome_assembly_id",
-            "description": "NCBI Assembly DB identifier.",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "GCA_009858895.3"
-            ],
-            "pattern": "^[a-zA-Z]+_[0-9]*\\.[0-9]+$"
-        },
-        "taxonomy_id": {
-            "$id": "#root/taxonomy_id",
-            "title": "taxonomy_id",
-            "description": "NCBI taxonomy identifier of the organism.",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "433733"
-            ],
-            "pattern": "^[0-9]+$"
-        },
-        "bco_id": {
-            "$id": "#root/bco_id",
-            "title": "bco_id",
-            "description": "BioCompute Object identifier.",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "ARGOS_000012/1.0"
-            ],
-            "pattern": "^[a-zA-Z]+[0-9]+$"
-        },
-        "schema_version": {
-            "$id": "#root/schema_version",
-            "title": "schema_version",
-            "description": "Version of the biosample_metadata, ngsQC, assemblyQC, siteQC",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "v0.4"
-            ],
-            "pattern": "^v[0-9]*\\.[0-9]+$"
-        },
-        "bioproject": {
-            "$id": "#root/bioproject",
-            "title": "bioproject",
-            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "-"
-            ],
-            "pattern": "-"
-        },
         "biosample": {
             "$id": "#root/biosample",
             "title": "biosample",
@@ -102,31 +36,20 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "SAMN13922059"
-            ],
-            "pattern": "^[a-zA-Z]+[0-9]+$"
-        },
-        "sra_run_id": {
-            "$id": "#root/sra_run_id",
-            "title": "sra_run_id",
-            "description": "This term is used in other datasets - just needs to be added for siteQC",
-            "type": "string",
-            "default": "-",
-            "examples": [
-                "-"
+                "SAMN16357302"
             ],
             "pattern": "^.*$"
         },
-        "instrument": {
-            "$id": "#root/instrument",
-            "title": "instrument",
-            "description": "Name of instrument used for NGS.",
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should corrospond to a NCBI Taxonomy node",
             "type": "string",
             "default": "-",
             "examples": [
-                "Illumina MiniSeq"
+                "Pediococcus acidilactici"
             ],
-            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+            "pattern": "^.*$"
         },
         "strain": {
             "$id": "#root/strain",
@@ -135,9 +58,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "isolate_Wuhan_Hu_1"
+                "FDAARGOS_1133"
             ],
-            "pattern": "^([a-zA-Z]+(_[a-zA-Z]+)+).*$"
+            "pattern": "^.*$"
         },
         "sample_name": {
             "$id": "#root/sample_name",
@@ -146,9 +69,20 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "human bronchoalveolar lavage fluid"
+                "FDAARGOS_1133"
             ],
-            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1254"
+            ],
+            "pattern": "^.*$"
         },
         "isolate": {
             "$id": "#root/isolate",
@@ -157,7 +91,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Not applicable"
             ],
             "pattern": "^.*$"
         },
@@ -168,9 +102,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "Fudan University"
+                "DSMZ"
             ],
-            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+            "pattern": "^.*$"
         },
         "collection_date": {
             "$id": "#root/collection_date",
@@ -179,9 +113,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "1/2/20"
+                "Unknown"
             ],
-            "pattern": "^[0-9]+/[0-9]+/[0-9]+$"
+            "pattern": "^.*$"
         },
         "geo_loc_name": {
             "$id": "#root/geo_loc_name",
@@ -190,9 +124,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "China: Wuhan"
+                "Germany: Braunschweig"
             ],
-            "pattern": "^[a-zA-Z]+/\\s[a-zA-Z]+$"
+            "pattern": "^.*$"
         },
         "isolation_source": {
             "$id": "#root/isolation_source",
@@ -201,9 +135,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "human lung metagenome"
+                "missing"
             ],
-            "pattern": "^([a-zA-Z]+( [a-zA-Z]+)+)$"
+            "pattern": "^.*$"
         },
         "lat_lon": {
             "$id": "#root/lat_lon",
@@ -212,7 +146,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Not applicable"
             ],
             "pattern": "^.*$"
         },
@@ -223,7 +157,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "DSM:20284"
             ],
             "pattern": "^.*$"
         },
@@ -234,9 +168,9 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "9606"
+                "missing"
             ],
-            "pattern": "^[0-9]+$"
+            "pattern": "^.*$"
         },
         "host_age": {
             "$id": "#root/host_age",
@@ -245,7 +179,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
@@ -256,7 +190,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Not applicable"
             ],
             "pattern": "^.*$"
         },
@@ -267,7 +201,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
@@ -278,7 +212,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
@@ -289,7 +223,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
@@ -300,7 +234,7 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
@@ -311,18 +245,29 @@
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Unknown"
             ],
             "pattern": "^.*$"
         },
         "id_method": {
-            "$id": "#root/identification_method",
-            "title": "identification_method",
+            "$id": "#root/id_method",
+            "title": "id_method",
             "description": "Species identification method.",
             "type": "string",
             "default": "-",
             "examples": [
-                "-"
+                "Phenotypic and Molecular Methods"
+            ],
+            "pattern": "^.*$"
+        },
+        "type_material": {
+            "$id": "#root/type_material",
+            "title": "type_material",
+            "description": "Material used for species identification method.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "neotype strain of Pediococcus acidilactici"
             ],
             "pattern": "^.*$"
         }

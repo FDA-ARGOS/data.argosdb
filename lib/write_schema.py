@@ -4,19 +4,20 @@
 This script will perform various functions related to processing the ARGOS
 data dictionary and associated schemas. General help below.
 
-usage: argosdb_dict_utils [options]
+usage: write_schema.py -i INPUT [-o OUTPUT] [-v] [-h]
 
-positional arguments:
-  {functions,validate,write_schema,validate_columns}
-    functions           List of all available functions
-    write_schema        Used to convert a TSV into a JSNO schema. If no mapping
-                        file is provided, performs default conversions.
-    validate_columns    Validates columns in a list of files in a directory
-                        using provided column headers
+Schema Creation. Used to create a schema from a data sheet.
+
+required arguments:
+  -i INPUT, --input INPUT
+                        Directory for schema files. This directory should contain 'core_property_list.tsv','non_core_property_list.tsv', and 'property_definition.tsv'.These files can be a
+                        'tsv' or 'csv'. Other file types are not permitted.
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        Output file to create. Default is a JSON file.
   -v, --version         show program's version number and exit
+  -h, --help            show this help message and exit
 """
 
 import csv
@@ -25,7 +26,7 @@ from argparse import ArgumentParser, SUPPRESS
 import sys
 import os
 
-__version__ = "0.7"
+__version__ = "0.8"
 __status__ = "Production"
 
 def usr_args():
@@ -97,7 +98,7 @@ def list_2_schema(options):
     """
 
     core_sheet = options.input + 'core_property_list.tsv'
-    non_core_sheet = options.input + 'non_core_property_list.tsv'
+    non_core_sheet = options.input + 'non-core_property_list.tsv'
     definitions = options.input + 'property_definition.tsv'
     output_dir = 'schema/v'+__version__+'/'
     write_output = True
@@ -134,7 +135,7 @@ def list_2_schema(options):
             try:
                 prop_defs[row[0].rstrip()]
             except KeyError:
-                print(f"Error! {row[0]} at row {count} in {core_sheet} is not defined in \
+                print(f"Error! {row[0]} at row {count} in {core_sheet} is not defined in\
                     {definitions.name}. Exiting.")
                 return
             if row[1] not in argos_schemas:

@@ -1,8 +1,8 @@
 #%%
 #!/usr/bin/env python3
-"""NGS Data Grabber
+"""assemblyQC Data Grabber
 
-Designed to grab and modify data from HIVE NGS Multi-QC processes
+Designed to grab and modify data the number of unidentified nucleotides (num_N) from HIVE NGS Multi-QC processes
 """
 import requests
 import getpass

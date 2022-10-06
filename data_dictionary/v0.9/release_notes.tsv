@@ -1,0 +1,117 @@
+README Summary for Data Dictionary V0.9				
+"- In 'data_files' column: '*' implies all files in that data set category from Mazumder, Pond, and Crandall Labs."				
+#NAME?				
+				
+Summary of V0.9 Changes in Property Definition List:				
+Term	Action 	Affected Datasets 		
+sra_run_id	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team  	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*		
+schema_version	Updated definition to be more accurate 	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*		
+ngs_read_file_source	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team	ngsQC* | assemblyQC* | siteQC*		
+ngs_read_file_name	Updated definition to be more accurate; updated data files; updated 'source_or_type_def' to Argos Team	ngsQC* | assemblyQC* | siteQC*		
+ref_genome_acc	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team	assemblyQC* | siteQC*		
+ngs_gc_content	Updated definition to be more accurate; updated data files; updated 'source_or_type_def' to HIVE	ngsQC*		
+assembly_gc_content	Updated applicable data files; updated 'source_or_type_def' to 'Calculated from SRA'	assemblyQC* 		
+length	Updated applicable data files	assemblyQC* | proteome_metadata.csv*|uniprot-proteome.csv* 		
+reads_unaligned	Updated applicable data files	assemblyQC* | SRA_ngsQC.tsv		
+num_genes	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	assemblyQC* 		
+num_segments	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	assemblyQC* 		
+wt_nucleotide	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+alt_nucleotide	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+wt_codon	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+alt_codon	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+wt_amino_acid	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+alt_amino_acid	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+annotation	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+read_coverage	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+frequency	Updated definition to be more accurate; updated 'source_or_type_def' to Argos Team 	siteQC*		
+codon_reference	Updated definition to be more accurate; updated 'source_or_type_def' to UniProt 	siteQC*		
+protein_accession	Updated definition to be more accurate; updated 'source_or_type_def' to UniProt 	siteQC*		
+count_major_mutations	Updated definition to be more accurate; updated 'source_or_type_def' to HIVE	siteQC*		
+count_major_indels	Updated definition to be more accurate; updated 'source_or_type_def' to HIVE	siteQC*		
+				
+				
+				
+Summary of V0.9 Changes in CORE Property List and associated data sets:				
+Term	Action 	Affected Datasets 		
+Edits to Column Headers:				
+ 'required' column	Replaced with 'requirement' column header	Core Property List 		
+ 'requirement'	New column header. Updated some term requirements (see below)	Core Property List 		
+ 'type' column' 	Replaced with 'data_type' column header	Core Property List 		
+ 'data_type' column 	New column header. All data types updated	Core Property List 		
+ 'constraint' column	New column header. All constraints updated	Core Property List 		
+ 'example' column	All examples updated 	Core Property List 		
+ 'description' column 	Removed column. Descriptions can be found in the Property Definitions List 	Core Property List 		
+				
+Edits to Terms (Also Reflected in Property Deinitions List):				
+analysis_platform_object_id	Set as an 'optional' requirement	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*		
+strain	Set as an 'optional' requirement	ngsQC* | biosampleMeta*		
+ngs_score	New term added to ngsQC	ngsQC*		
+pos_outlier_count	Set as an 'optional' requirement	ngsQC*		
+num_reads_unique	Set as an 'optional' requirement	ngsQC*		
+analysis_platform_object_id	Set as an 'optional' requirement	ngsQC*		
+strategy	Set as an 'optional' requirement	ngsQC*		
+assembly_score	New term added to assemblyQC; set as an 'optional' requirement; updated 'source_or_type_def' to Argos Team 	assemblyQC* 		
+genomic_section	New term added to assemblyQC; set as an 'required' requirement; updated 'source_or_type_def' to NCBI	assemblyQC* 		
+l75	New term added to assemblyQC; set as an 'optional' requirement; updated 'source_or_type_def' to HIVE / NCBI	assemblyQC* 		HIVE
+n75	New term added to assemblyQC; set as an 'optional' requirement; updated 'source_or_type_def' to HIVE / NCBI	assemblyQC* 		
+n90	New term added to assemblyQC; set as an 'optional' requirement; updated 'source_or_type_def' to HIVE / NCBI	assemblyQC* 		
+number_of_n	New term added to assemblyQC; set as an 'optional' requirement	assemblyQC* 		
+ngs_read_file_name	Set as an 'optional' requirement	assemblyQC* 		
+num_chromosomes	Set as an 'optional' requirement	assemblyQC* 		
+num_genes	Set as an 'optional' requirement	assemblyQC* 		
+num_segments 	Set as an 'optional' requirement	assemblyQC* 		
+bioproject	Set as an 'optional' requirement	assemblyQC* 		
+biosample	Set as an 'optional' requirement	assemblyQC* 		
+n50	Set as an 'optional' requirement	assemblyQC* 		
+l50	Set as an 'optional' requirement	assemblyQC* 		
+number_of_n_or_x	"Removed '_or_x' from the definition, cannot be calclated by HIVE. Term replaced with 'number_of_n'"	assemblyQC* 		
+N95 	"Removed, unnecessary term; updated data_files "	assemblyQC* 		
+L95	"Removed, unnecessary term; updated data_files "	assemblyQC* 		
+avg_nuc_identity	"Removed, unnecessary term; updated data_files "	assemblyQC* 		
+avg_contig_coverage	"Removed, unnecessary term; updated data_files "	assemblyQC* 		
+phred_average	"Removed, unnecessary term; updated data_files "	assemblyQC* 		
+molecule	"Removed, unnecessary term"	siteQC*		
+source	"Removed, redundant to ngs_read_file_source; updated data files"	siteQC*		
+source_database	"Removed, redundant to ngs_read_file_source; updated data files"	siteQC*		
+biosample	Requirement changed to 'optional' 	siteQC*		
+site_score	New term added to siteQC; set as an 'optional' requirement; updated 'source_or_type_def' to Argos Team 	siteQC*		
+protein_accession	Set as an 'optional' requirement	siteQC*		
+count_major_mutations	Set as an 'optional' requirement	siteQC*		
+count_major_indels	Set as an 'optional' requirement	siteQC*		
+biosample_score	New term added to biosampleMeta; set as an 'optional' requirement; updated 'source_or_type_def' to Argos Team 	biosampleMeta*		
+bioproject	Added to dataset; set as a 'required' requirement; updated data_files	biosampleMeta*		
+sample_name	Set as an 'optional' requirement	biosampleMeta*		
+				
+Data Sheet Statistics:				
+Class	Sheet	Total Properties		
+Dictionary	property_definition.tsv	134		
+Core	siteQC.tsv	33		
+Core	assemblyQC.tsv	34		
+Core	biosampleMeta.tsv	29		
+Core	ngsQC.tsv	40		
+Non-Core	SRA_ngsQC.tsv	19		
+Non-Core	SRA_assemblyQC.tsv	10		
+Non-Core	sars-cov-2_lineage_mutations.tsv	14		
+Non-Core	ngs_ID_list.tsv	9		
+Non-Core	SRA_biosample	23		
+Non-Core	uniprot-proteome_*.csv	7		
+				
+Core Property Sheet Stats:				
+Sheet	Properties			
+ngsQC.tsv 	40			
+assemblyQC.tsv	32			
+siteQC.tsv	33			
+biosampleMeta.tsv	29			
+				
+Non Core Property Sheet Stats:				
+ Sheet	Properties			
+SRA_ngsQC.tsv	20			
+SRA_assemblyQC.tsv	10			
+sars-cov-2_lineage_mutations.tsv	14			
+ngs_ID_list.tsv	8			
+SRA_biosample	22			
+uniprot-proteome_*.csv	7			
+				
+"9 items removed from the dictionary: ['number_of_n_or_x', 'avg_nuc_identity', 'n95', 'l95', 'phred_average', 'genomic_coordinate_start', 'source_database', 'molecule', 'gc_content']"				
+				
+"10 items added to the dictionary: ['number_of_n', 'genomic_section', 'n75', 'n90', 'l75', 'ngs_score', 'genomic_coordinates_start', 'site_score', 'biosample_score', '']"				

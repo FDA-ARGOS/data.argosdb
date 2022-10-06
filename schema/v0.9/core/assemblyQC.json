@@ -1,0 +1,398 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.9/core/assemblyQC.tsv",
+    "title": "assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "taxonomy_id",
+        "bco_id",
+        "schema_version",
+        "analysis_platform",
+        "sra_run_id",
+        "ngs_read_file_source",
+        "genome_assembly_id",
+        "ref_genome_acc",
+        "genomic_section",
+        "assembly_gc_content",
+        "reads_unaligned"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should corrospond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Severe acute respiratory syndrome coronavirus 2"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "isolate Wuhan-Hu-1"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "2697049"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "ARGOS_000012"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Reflective of the Data Dictionary version currently applied to the dataset. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "v0.9"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The type of platform used to conduct the analysis",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "HIVE 1 | HIVE 2 | HIVE AWS | Galaxy"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "analysis_platform_object_id",
+            "description": "The process identifier from platform used to conduct the analysis",
+            "type": "string",
+            "default": "43172-43172",
+            "examples": [
+                "-"
+            ],
+            "pattern": "39658"
+        },
+        "bioproject": {
+            "$id": "#root/bioproject",
+            "title": "bioproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "PRJNA603194"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SAMN13922059"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "The SRA run accession for a set of fastq files ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SRR10971381"
+        },
+        "ngs_read_file_name": {
+            "$id": "#root/ngs_read_file_name",
+            "title": "ngs_read_file_name",
+            "description": "Individual name of the fastq file involved in ngsQC or siteQC, or that is connected to a genome assembly id and subsequence fasta files in assemblyQC (i.e. SRR10971381_1.fastq)",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SRR10971381_1.fastq"
+        },
+        "ngs_read_file_source": {
+            "$id": "#root/ngs_read_file_source",
+            "title": "ngs_read_file_source",
+            "description": "Resource that the fastq files are derived from (i.e. SRA)",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SRA"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "NCBI Assembly DB identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "GCA_009858895.3"
+        },
+        "ref_genome_acc": {
+            "$id": "#root/ref_genome_acc",
+            "title": "ref_genome_acc",
+            "description": "This accession number is a unique identifier assigned to a record in sequence databases such as RefSeq (NCBI)",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "NC_002023"
+        },
+        "genomic_section": {
+            "$id": "#root/genomic_section",
+            "title": "genomic_section",
+            "description": "The section of an organisms genome undergoing analysis (i.e. the gene, segement, chromosome, contig, etc.)",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                ""
+            ],
+            "pattern": "PB2"
+        },
+        "num_chromosomes": {
+            "$id": "#root/num_chromosomes",
+            "title": "num_chromosomes",
+            "description": "Total number of chromosomes in the genome assembly.",
+            "type": "int",
+            "default": "1-100",
+            "examples": [
+                "-"
+            ],
+            "pattern": "8"
+        },
+        "num_genes": {
+            "$id": "#root/num_genes",
+            "title": "num_genes",
+            "description": "Number of Genes per Organism",
+            "type": "int",
+            "default": "1-1000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "9"
+        },
+        "num_segments ": {
+            "$id": "#root/num_segments ",
+            "title": "num_segments ",
+            "description": "Number of segments in genome",
+            "type": "int",
+            "default": "1-100000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "10"
+        },
+        "assembly_gc_content": {
+            "$id": "#root/assembly_gc_content",
+            "title": "assembly_gc_content",
+            "description": "GC content of the assembly.",
+            "type": "float",
+            "default": "0.0-1.0",
+            "examples": [
+                "-"
+            ],
+            "pattern": "29,903"
+        },
+        "length": {
+            "$id": "#root/length",
+            "title": "length",
+            "description": "Total length of the assembly",
+            "type": "int",
+            "default": "0-1000000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "13588"
+        },
+        "n50 ": {
+            "$id": "#root/n50",
+            "title": "n50",
+            "description": "Length of the shortest read to minimally represent 50% of the assembly.",
+            "type": "int",
+            "default": "0-100000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "2233"
+        },
+        "n75": {
+            "$id": "#root/n75",
+            "title": "n75",
+            "description": "Length of the shortest read to minimally represent 95% of the assembly.",
+            "type": "int",
+            "default": "0-100000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "1565"
+        },
+        "n90": {
+            "$id": "#root/n90",
+            "title": "n90",
+            "description": "Length of the shortest read to minimally represent 75% of the assembly.",
+            "type": "int",
+            "default": "0-100000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "1027"
+        },
+        "l50 ": {
+            "$id": "#root/l50",
+            "title": "l50",
+            "description": "Number of reads that minimally represent 50% of the assembly.",
+            "type": "int",
+            "default": "1-1000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "3"
+        },
+        "l75": {
+            "$id": "#root/l75",
+            "title": "l75",
+            "description": "Number of reads that minimally represent 75% of the assembly.",
+            "type": "int",
+            "default": "1-1000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "5"
+        },
+        "number_of_n": {
+            "$id": "#root/number_of_n",
+            "title": "number_of_n",
+            "description": "The total number of uncalled bases (N's) in the assembly.",
+            "type": "int",
+            "default": "0-1000000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "4"
+        },
+        "percent_assembly_greater_20x": {
+            "$id": "#root/percent_assembly_greater_20x",
+            "title": "percent_assembly_greater_20x",
+            "description": "Summary statistics of percent assembly with 20x coverage, other summery statistics could also be used.",
+            "type": "float",
+            "default": "0.0-100.0",
+            "examples": [
+                "-"
+            ],
+            "pattern": "NA"
+        },
+        "query_coverage_against_reference": {
+            "$id": "#root/query_coverage_against_reference",
+            "title": "query_coverage_against_reference",
+            "description": "BLAST query coverage of the entire assembly between the assembly and reference sequences.",
+            "type": "int",
+            "default": "1-100000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "100"
+        },
+        "percent_identity_against_reference": {
+            "$id": "#root/percent_identity_against_reference",
+            "title": "percent_identity_against_reference",
+            "description": "BLAST percent identity of the entire assembly between the assembly and reference sequences.",
+            "type": "float",
+            "default": "0.0-100.0",
+            "examples": [
+                "-"
+            ],
+            "pattern": "100"
+        },
+        "reads_unaligned": {
+            "$id": "#root/reads_unaligned",
+            "title": "reads_unaligned",
+            "description": "the number of reads that did not align to the reference as an exponent",
+            "type": "int",
+            "default": "0-100000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "1570000"
+        },
+        "id_method": {
+            "$id": "#root/id_method",
+            "title": "id_method",
+            "description": "Species identification method.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Ilumina MiSeq"
+        },
+        "assembly_type": {
+            "$id": "#root/assembly_type",
+            "title": "assembly_type",
+            "description": "haploid, haploid-with-alt-loci (a haploid assembly with alternative loci, for example as provided by the Genome Reference Consortium for the human genome), diploid, unresolved diploid, or alternate pseudohaplotype. See the NCBI Assembly Data Model for a definition of these terms.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Haploid "
+        },
+        "assembly_level": {
+            "$id": "#root/assembly_level",
+            "title": "assembly_level",
+            "description": "The highest level of assembly for any object in the assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Complete Genome"
+        },
+        "assembly_score": {
+            "$id": "#root/assembly_score",
+            "title": "assembly_score",
+            "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set",
+            "type": "int",
+            "default": "1-200",
+            "examples": [
+                "-"
+            ],
+            "pattern": "33"
+        }
+    }
+}

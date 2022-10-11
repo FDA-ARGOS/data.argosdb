@@ -106,7 +106,7 @@ def parse_xml(xml_file, samples):
         = assembly_type = assembly_level = assembly_score = '-'
 
     analysis_platform = 'NCBI'
-    bco_id = 'https://biocomputeobject.org/ARGOS_000038/DRAFT'
+    bco_id = 'ARGOS_000038'
     schema_version = 'v0.9'
     genomic_section = 'all'
 

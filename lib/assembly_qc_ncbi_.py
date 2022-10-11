@@ -59,6 +59,31 @@ def usr_args():
 
     return parser.parse_args()
 
+def read_datasheet(input_path):
+    """Read input data sheet
+
+    Designed to take the ARGOS ngs ID List and Selection Criteria and extract
+    all unique NCBI assembly accessions
+
+    Parameters
+    ----------
+    input_path: str
+        file path/name to be parsed
+    """
+
+    genome_assembly_ids =[]
+
+    with open(input_path, 'r', encoding='utf') as accessions:
+        data = csv.reader(accessions, delimiter='\t')
+        next(data)
+        for row in data:
+            if row[2] not in genome_assembly_ids and row[2] != '':
+                genome_assembly_ids.append(row[2])
+
+    genomes = ','.join(genome_assembly_ids)
+    efetch = f'efetch -db assembly -id {genomes} -format docsum > home/genomes.xml'
+    os.system(efetch)
+
 def parse_xml(xml_file, samples):
     """Parse XML file
 
@@ -239,7 +264,8 @@ def main():
         'assembly_type', 'assembly_level', 'assembly_score']
 
     args = usr_args()
-    parse_xml(args.file, samples)
+    read_datasheet(args.file)
+    parse_xml('home/genomes.xml', samples)
     sample_output(samples, header, args.output)
 
 if __name__ == "__main__":

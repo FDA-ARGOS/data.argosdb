@@ -1,0 +1,182 @@
+organism_name	leaf_node	genome_assembly_id	taxonomy_id	bioproject	biosample	sra_run_id	ngs_read_file_source	ref_org	isolate_identifiers	selection_notes	lab_name	files_processed
+Influenza_A_virus	strain_APuerto_Rico81934_H1N1	ARGOS_000019	211044	PRJEB12890	SAMEA51847918	ERR2096902	SRA	No		List of SRA IDs retrieved using search string in SRA 'txid211044[Organism:exp].' The SRA ID was selected based on NCBI search filters Source: RNA, Type: genome, Library layout: paired, Platform: Illumina. Project National Collection of Pathogenic Viruses (NCPV) UK sequences well-characterised, authenticated human pathogenic viruses.	HIVE Lab	ngsQC_HL
+Marburg_marburgvirus	-	ARGOS_000019	11269	PRJNA231221	SAMN16357615	SRR17261988	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Marburg_marburgvirus	strain_IRF0296	ARGOS_000019	11269	PRJNA231221	SAMN16357613	SRR17262090	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Marburg_marburgvirus	strain_MARV_ANGOLA	ARGOS_000019	11269	PRJNA231221	SAMN16357611	SRR17262089	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Marburg_marburgvirus	strain_musoke	ARGOS_000019	11269	PRJNA231221	SAMN11077998	SRR10027406	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Marburg_marburgvirus	strain_ Ravn virus/IRF0322_RAVN	ARGOS_000019	11269	PRJNA231221	SAMN16357614	SRR17262091	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Middle_East_respiratory_syndrome_related_coronavirus	strain_ EMC	ARGOS_000019	1335626	PRJNA231221	SAMN16357608	SRR17262085	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Middle_East_respiratory_syndrome_related_coronavirus	strain_JOR	ARGOS_000019	1335626	PRJNA231221	SAMN16357607	SRR17262080	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Middle_East_respiratory_syndrome_related_coronavirus	strain_ EMC	ARGOS_000019	1335626	PRJNA231221	SAMN11077994	SRR10017687	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Middle_East_respiratory_syndrome_related_coronavirus	-	ARGOS_000019	1335626	PRJNA231221	SAMN11077948	SRR10027398	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Monkeypox_virus	-	-	10244	PRJNA231221	SAMN11077999	SRR10027401	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Monkeypox_virus	-	-	10244	PRJNA231221	SAMN11078000	SRR10017689	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357413	SRR13183045	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173334	SRR5417096	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Paratyphi A	ARGOS_000019	54388	PRJNA231221	SAMN07312412	SRR5866640	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357235	SRR12826194	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Ohio	ARGOS_000019	117541	PRJNA231221	SAMN06173329	SRR5417092	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056433	SRR9172268	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN02934521	SRR1608976	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056426	SRR9172100	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium var. 5-	ARGOS_000019	1620419	PRJNA231221	SAMN06173325	SRR5417085	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056403	SRR9163435	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_LT2	ARGOS_000019	28901	PRJNA231221	SAMN03996249	SRR2814419	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450409	SRR12047332	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357413	SRR13183044	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_houtenae	ARGOS_000019	1173947	PRJNA231221	SAMN03255435	SRR1950250	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357413	SRR13183047	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056401	SRR9163266	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN06173332	SRR5409216	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium var. 5-	ARGOS_000019	1620419	PRJNA231221	SAMN06173331	SRR5409208	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173330	SRR5417093	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056422	SRR9171843	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056424	SRR9172070	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_LT2	ARGOS_000019	28901	PRJNA231221	SAMN03996249	SRR2814420	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056432	SRR9172266	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Infantis	ARGOS_000019	595	PRJNA231221	SAMN06173328	SRR5417089	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Paratyphi A	ARGOS_000019	54388	PRJNA231221	SAMN07312412	SRR5866641	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056402	SRR9163324	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056423	SRR9172018	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN16357235	SRR12826193	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056423	SRR9172016	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056422	SRR9171841	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN16357413	SRR13183047	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN13450408	SRR12047330	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056425	SRR9172097	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN03996249	SRR2814419	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN16357236	SRR12826196	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056483	SRR9641505	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN02934521	SRR1608976	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056403	SRR9163435	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056422	SRR9171842	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN03996249	SRR2814420	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056480	SRR9641499	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056422	SRR9171843	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056427	SRR9172122	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056480	SRR9641498	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN16357236	SRR12826195	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN13450458	SRR12046725	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056425	SRR9172096	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN03996249	SRR2814421	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN02934521	SRR1608975	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056423	SRR9172017	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056403	SRR9163434	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056402	SRR9163323	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN03996249	SRR2814422	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056425	SRR9172095	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN13450458	SRR12046724	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN13450408	SRR12047329	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056422	SRR9171840	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056483	SRR9641504	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN02934521	SRR1608974	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000025	28901	PRJNA231221	SAMN11056427	SRR9172121	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357413	SRR13183046	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000025	28091	PRJNA231221	SAMN16357235	SRR12826194	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056483	SRR9641505	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Bredeney	ARGOS_000019	134047	PRJNA231221	SAMN06173327	SRR5417087	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056432	SRR9172267	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN02934521	SRR1608975	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056426	SRR9172099	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN06173332	SRR5409217	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN03255434	SRR1950244	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056424	SRR9172071	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Paratyphi A	ARGOS_000019	54388	PRJNA231221	SAMN07312412	SRR5866642	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173334	SRR5417097	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Infantis	ARGOS_000019	595	PRJNA231221	SAMN06173328	SRR5417090	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN03255434	SRR1950245	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056425	SRR9172096	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357236	SRR12826195	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium var. 5-	ARGOS_000019	1620419	PRJNA231221	SAMN06173331	SRR5409209	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056480	SRR9641498	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450409	SRR12047331	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056423	SRR9172016	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_houtenae	ARGOS_000019	1173947	PRJNA231221	SAMN03255435	SRR1950253	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056424	SRR9172072	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN02934521	SRR1608974	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_LT2	ARGOS_000019	28901	PRJNA231221	SAMN03996249	SRR2814422	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056401	SRR9163265	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056402	SRR9163324	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_houtenae	ARGOS_000019	1173947	PRJNA231221	SAMN03255435	SRR1950252	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173330	SRR5417094	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056422	SRR9171841	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357235	SRR12826193	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium var. 5-	ARGOS_000019	1620419	PRJNA231221	SAMN06173325	SRR5417086	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056433	SRR9172269	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Ohio	ARGOS_000019	117541	PRJNA231221	SAMN06173329	SRR5417091	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056483	SRR9641504	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173333	SRR5409210	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056423	SRR9172017	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056423	SRR9172018	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN16357236	SRR12826196	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Hadar	ARGOS_000019	149385	PRJNA231221	SAMN06173326	SRR5417084	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN10346773	SRR9160490	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450458	SRR12046724	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450408	SRR12047330	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Bredeney	ARGOS_000019	134047	PRJNA231221	SAMN06173327	SRR5417088	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056422	SRR9171840	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450408	SRR12047329	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056480	SRR9641499	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056403	SRR9163434	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_houtenae	ARGOS_000019	1173947	PRJNA231221	SAMN03255435	SRR1950251	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN03255434	SRR1950247	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Saintpaul	ARGOS_000019	90105	PRJNA231221	SAMN07312417	SRR5868516	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056425	SRR9172097	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Hadar	ARGOS_000019	149385	PRJNA231221	SAMN06173326	SRR5417083	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Saintpaul	ARGOS_000019	90105	PRJNA231221	SAMN07312417	SRR5868515	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056427	SRR9172121	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN10346773	SRR9160491	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056402	SRR9163323	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN13450458	SRR12046725	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_LT2	ARGOS_000019	28901	PRJNA231221	SAMN03996249	SRR2814421	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056425	SRR9172095	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Heidelberg	ARGOS_000019	611	PRJNA231221	SAMN03255434	SRR1950246	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	strain_Typhimurium	ARGOS_000019	90371	PRJNA231221	SAMN06173333	SRR5409211	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056427	SRR9172122	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica	-	ARGOS_000019	28901	PRJNA231221	SAMN11056422	SRR9171842	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Salmonella_enterica_subsp._enterica_serovar_Hadar	strain_Hadar	ARGOS_000025	149385	PRJNA231221	SAMN06173326	SRR5417084	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Hadar	strain_Hadar	ARGOS_000025	149385	PRJNA231221	SAMN06173326	SRR5417083	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN03255434	SRR1950246	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN06173332	SRR5409216	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN03255434	SRR1950247	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN03255434	SRR1950244	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN03255434	SRR1950245	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Heidelberg	strain_Heidelberg	ARGOS_000025	611	PRJNA231221	SAMN06173332	SRR5409217	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Paratyphi_A	strain_Paratyphi_A	ARGOS_000025	54388	PRJNA231221	SAMN07312412	SRR5866640	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Paratyphi_A	strain_Paratyphi_A	ARGOS_000025	54388	PRJNA231221	SAMN07312412	SRR5866642	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Paratyphi_A	strain_Paratyphi_A	ARGOS_000025	54388	PRJNA231221	SAMN07312412	SRR5866641	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Saintpaul	strain_Saintpaul	ARGOS_000025	90105	PRJNA231221	SAMN07312417	SRR5868516	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173333	SRR5409210	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173334	SRR5417096	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173330	SRR5417093	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173333	SRR5409211	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173334	SRR5417097	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium	straini_Typhimurium	ARGOS_000025	90371	PRJNA231221	SAMN06173330	SRR5417094	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium_var._5-	straini_Typhimurium_var._5-	ARGOS_000025	1620419	PRJNA231221	SAMN06173325	SRR5417085	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Salmonella_enterica_subsp._enterica_serovar_Typhimurium_var._5-	straini_Typhimurium_var._5-	ARGOS_000025	1620419	PRJNA231221	SAMN06173325	SRR5417086	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	Crandall Lab	ngsQC_Crandall
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976037	SRR14460627	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117406	SRR14511306	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117409	SRR14511303	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976039	SRR14460625	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117403	SRR14511298	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117402	SRR14511300	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976038	SRR14460626	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.617.2/Delta_isolate	ARGOS_000019	2697049	PRJNA791622	SAMN24298863	SRR17309643	SRA	No		Raw sequencing reads were collected as part of a fusogenicity and pathogenicity study, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8942852/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117408	SRR14511307	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976043	SRR14460621	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117404	SRR14511308	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976036	SRR14460628	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117407	SRR14511305	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.1.7/Alpha_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976040	SRR14460623	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.1.529/Omicron_isolate	ARGOS_000019	2697049	PRJNA791622	SAMN24298862	SRR17309642	SRA	No		Raw sequencing reads were collected as part of a fusogenicity and pathogenicity study, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8942852/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976042	SRR14460622	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	2019-nCoV/USA-WA1/2020	ARGOS_000019	2697049	PRJNA231221	SAMN14384141	SRR11409417	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976045	SRR14460618	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	2019-nCoV/USA-WA1/2020	ARGOS_000019	2697049	PRJNA231221	SAMN14384141	SRR11393704	SRA	No		Belongs to FDA-ARGOS PRJNA231221.	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117405	SRR14511304	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.1.7/Alpha_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976043	SRR14460620	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.1.7/Alpha_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976044	SRR14460619	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117411	SRR14511299	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	B.1.351/Beta_isolate	ARGOS_000019	2697049	PRJNA726840	SAMN18976040	SRR14460624	SRA	No		Coding-complete Genome sequences for SARS-CoV-2 B.1.1.7 and B.1.351 Variants from Metro Manila, Philippines, outlined in the following paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8281087/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	P.1/Gamma_isolate	ARGOS_000019	2697049	PRJNA729484	SAMN19117401	SRR14511301	SRA	No		Raw sequencing reads were collected for the SARS-CoV-2 P.1 variant in Northeast Brazil, outlined in this paper:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321350/	HIVE Lab	ngsQC_HL
+Severe_acute_respiratory_syndrome_coronavirus_2	isolate_Wuhan_Hu_1	ARGOS_000019	2697049	PRJNA603194	SAMN13922059	SRR10971381	SRA	No		SARS-CoV-2 original isolate from human lung metagenome from Wuhan.	HIVE Lab	ngsQC_HL

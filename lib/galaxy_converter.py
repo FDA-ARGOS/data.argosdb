@@ -11,7 +11,7 @@ import sys
 from urllib.parse import urlparse
 from dateutil.parser import parse, ParserError
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __status__ = "Production"
 
 def usr_args():
@@ -130,7 +130,7 @@ def convert_bco(bco):
     for index, item in enumerate(bco_dict['execution_domain']['script']):
         if isinstance(item, dict) is False:
             bco_dict['execution_domain']['script'][index]={'uri':{'uri':item}}
-    if bco_dict['execution_domain']['script_access_type']:
+    if 'script_access_type' in bco_dict['execution_domain']:
         del bco_dict['execution_domain']['script_access_type']
     for index, item in enumerate(
         bco_dict['execution_domain']['external_data_endpoints']
@@ -178,13 +178,18 @@ def convert_bco(bco):
         except ParserError:
             del prereq['uri']['access_time']
 
-    for input_obj in bco_dict['io_domain']['input_subdomain']:
+    for index, input_obj in enumerate(bco_dict['io_domain']['input_subdomain']):
+        if isinstance(input_obj['uri'], str):
+            bco_dict['io_domain']['input_subdomain'][index] = {'uri': input_obj}
+            uri_obj = bco_dict['io_domain']['input_subdomain'][index]
         try:
-            input_obj['uri']['access_time'] = timezone_aware(
-                input_obj['uri']['access_time']
+            uri_obj['uri']['access_time'] = timezone_aware(
+                uri_obj['uri']['access_time']
             )
         except ParserError:
             del input_obj['uri']['access_time']
+        if not isinstance(uri_obj['uri']['filename'], str):
+            bco_dict['io_domain']['input_subdomain'][index]['uri']['filename'] = ''
 
     for output_obj in bco_dict['io_domain']['output_subdomain']:
         try:

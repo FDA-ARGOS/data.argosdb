@@ -57,10 +57,11 @@ def parse_xml(xml_file, output):
 
     # tag_list = tag.split('/')
     items = []
+    print('start')
     try:
         count = 0
         root = ET.parse(xml_file).getroot()
-        for item in root.findall('.'):
+        for item in root.findall('./DocumentSummarySet'):
             for run in item.findall('./DocumentSummary'):
                 for exp in run.findall('./Runs/'):
                     items.append(exp.attrib['acc'])

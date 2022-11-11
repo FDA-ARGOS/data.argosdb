@@ -7,12 +7,13 @@ or file, if an output is supplied.
 __version__ = "1.0.0"
 __status__ = "PRODUCTION"
 
+import csv
 import os
 import sys
-import csv
-from ftplib import FTP
 import xml.etree.ElementTree as ET
-from argparse import ArgumentParser, SUPPRESS
+from argparse import SUPPRESS, ArgumentParser
+from ftplib import FTP
+
 import requests
 from Bio import Entrez
 
@@ -86,38 +87,34 @@ def argosdb_api(samples):
             > home/assembly/genome_assembly.xml")
     parse_xml('home/assembly/genome_assembly.xml', samples)
 
-def parse_xml(xml_file, samples):
+def parse_xml(xml_file, assembly_stats):
     """Parse XML file
 
     Parameters
     ----------
     xml_file: str
         file path/name to be parsed
-    output: str, optional
-        file path/name for data to be output to
+    assembly_stats: dict
+        A python dictionary of the assembly statitistics from NCBI with the
+        genome_assembly_id as the index value.
 
     Returns
     -------
-    samples: dict
+    assembly_stats: dict
         A python dictionary of the assembly statitistics from NCBI with the
         genome_assembly_id as the index value.
     """
-    genome_stats = {}
-    genome_assembly_id = lineage = taxonomy_id = bco_id = schema_version \
-        = analysis_platform = analysis_platform_object_id = bioproject \
-        = biosample = sra_run_id = ngs_read_file_name = ngs_read_file_source \
-        = organism_name = ref_genome_acc = genomic_section \
-        = num_chromosomes = num_genes = num_segments  = assembly_gc_content \
-        = length = n50  = n75 = n90 = l50  = l75 = number_of_n \
-        = percent_assembly_greater_20x = query_coverage_against_reference \
-        = percent_identity_against_reference = reads_unaligned = id_method \
-        = assembly_type = assembly_level = assembly_score = '-'
+
+    organism_name = genome_assembly_id \
+        = lineage = taxonomy_id = bco_id = schema_version = analysis_platform \
+        = analysis_platform_object_id = sra_run_id = ngs_read_file_source \
+        = num_chromosomes = num_genes = num_segments = assembly_type \
+        = assembly_level = '-'
 
     analysis_platform = 'NCBI'
     bco_id = 'ARGOS_000038'
-    schema_version = 'v0.9'
-    genomic_section = 'all'
-
+    schema_version = 'v1.0'
+    samples = {}
     root = ET.parse(xml_file).getroot()
     for item in root:
         if item.tag == "DbBuild":
@@ -134,65 +131,86 @@ def parse_xml(xml_file, samples):
                 lineage = get_lineage(taxonomy_id)
             if summary.tag == 'AssemblyType':
                 assembly_type = summary.text
-            if summary.tag == 'GB_BioProjects':
-                if summary[0][0].tag == 'BioprojectAccn':
-                    bioproject = summary[0][0].tag
-            if summary.tag == 'RS_BioProjects':
-                if summary[0][0].tag == 'BioprojectAccn':
-                    bioproject = summary[0][0].text
-            if summary.tag == 'BioSampleAccn':
-                biosample = summary.text
             if summary.tag == 'FtpPath_GenBank':
                 ngs_read_file_source = summary.text + '_genomic.gbff.gz'
-                ngs_read_file_name = summary.text.split('/')[-1] \
-                    + '_genomic.gbff.gz'
-            if summary.tag == 'Synonym':
-                for synonm in summary:
-                    if synonm.tag == 'RefSeq':
-                        ref_genome_acc = synonm.text
             if summary.tag == 'Meta':
                 for meta in summary.findall('./'):
                     if meta.tag == 'Stats':
                         for stat in meta.findall('./'):
                             if stat.attrib['category'] == 'chromosome_count':
                                 num_chromosomes = stat.text
-                            if stat.attrib['category'] == 'total_length':
-                                length = stat.text
-                            if stat.attrib['category'] == 'contig_n50':
-                                n50 = stat.text
-                            if stat.attrib['category'] == 'contig_l50':
-                                l50 = stat.text
+                            # if stat.attrib['category'] == 'total_length':
+                            #     length = stat.text
                     if meta.tag == 'assembly-status':
                         assembly_level = meta.text
             if summary.tag == 'FtpPath_Stats_rpt':
                 print(summary.text)
-                genome_stats = stats_report(summary.text, genome_stats)
-                num_segments = genome_stats['top-level-count']
-                assembly_gc_content = genome_stats['gc-perc']
-                n75 = genome_stats['scaffold-N75']
-                n90 = genome_stats['scaffold-N90']
+                stats_report(summary.text, assembly_stats)
+                num_segments = len(assembly_stats)
 
-        samples[genome_assembly_id] = lineage , taxonomy_id , bco_id , schema_version \
-            , analysis_platform , analysis_platform_object_id , bioproject \
-            , biosample , sra_run_id , ngs_read_file_name , ngs_read_file_source \
-            , organism_name , ref_genome_acc , genomic_section \
-            , num_chromosomes , num_genes , num_segments  , assembly_gc_content \
-            , length , n50  , n75 , n90 , l50  , l75 , number_of_n \
-            , percent_assembly_greater_20x , query_coverage_against_reference \
-            , percent_identity_against_reference , reads_unaligned , id_method \
-            , assembly_type , assembly_level , assembly_score
-    print(samples)
-    return samples
+        samples[genome_assembly_id] = [organism_name, lineage, taxonomy_id,
+            bco_id, schema_version, analysis_platform, 
+            analysis_platform_object_id, sra_run_id, ngs_read_file_source,
+            num_chromosomes, num_genes, num_segments, assembly_type,
+            assembly_level]
 
-def stats_report(stats_ftp, genome_stats):
+    for sequence in assembly_stats.items():
+        try:
+            assembly_stats[sequence[0]][0] = samples[assembly_stats[sequence[0]][2]][0]
+            assembly_stats[sequence[0]][3] = samples[assembly_stats[sequence[0]][2]][1]
+            assembly_stats[sequence[0]][4] = samples[assembly_stats[sequence[0]][2]][2]
+            assembly_stats[sequence[0]][5] = samples[assembly_stats[sequence[0]][2]][3]
+            assembly_stats[sequence[0]][6] = samples[assembly_stats[sequence[0]][2]][4]
+            assembly_stats[sequence[0]][7] = samples[assembly_stats[sequence[0]][2]][5]
+            assembly_stats[sequence[0]][8] = samples[assembly_stats[sequence[0]][2]][6]
+            assembly_stats[sequence[0]][9] = samples[assembly_stats[sequence[0]][2]][7]
+            assembly_stats[sequence[0]][10] = samples[assembly_stats[sequence[0]][2]][8]
+            assembly_stats[sequence[0]][12] = samples[assembly_stats[sequence[0]][2]][9]
+            assembly_stats[sequence[0]][13] = samples[assembly_stats[sequence[0]][2]][10]
+            assembly_stats[sequence[0]][14] = samples[assembly_stats[sequence[0]][2]][11]
+            assembly_stats[sequence[0]][25] = samples[assembly_stats[sequence[0]][2]][12]
+            assembly_stats[sequence[0]][26] = samples[assembly_stats[sequence[0]][2]][13]
+        except KeyError as error:
+            gen_bank = assembly_stats[sequence[0]][2]
+            ref_seq = gen_bank.replace('GCA', 'GCF')
+            print(error)
+            assembly_stats[sequence[0]][0] = samples[ref_seq][0]
+            assembly_stats[sequence[0]][3] = samples[ref_seq][1]
+            assembly_stats[sequence[0]][4] = samples[ref_seq][2]
+            assembly_stats[sequence[0]][5] = samples[ref_seq][3]
+            assembly_stats[sequence[0]][6] = samples[ref_seq][4]
+            assembly_stats[sequence[0]][7] = samples[ref_seq][5]
+            assembly_stats[sequence[0]][8] = samples[ref_seq][6]
+            assembly_stats[sequence[0]][9] = samples[ref_seq][7]
+            assembly_stats[sequence[0]][10] = samples[ref_seq][8]
+            assembly_stats[sequence[0]][12] = samples[ref_seq][9]
+            assembly_stats[sequence[0]][13] = samples[ref_seq][10]
+            assembly_stats[sequence[0]][14] = samples[ref_seq][11]
+            assembly_stats[sequence[0]][25] = samples[ref_seq][12]
+            assembly_stats[sequence[0]][26] = samples[ref_seq][13]
+            import pdb; pdb.set_trace()
+
+    return assembly_stats
+
+def stats_report(stats_ftp, assembly_stats):
     """Assembly Stats Report
 
     Downloads and then parses the NCBI Assembly Stats Report
 
-
-
+    Parameters
+    ----------
+    stats_ftp: str
+        ftp url for NCBI assembly stats files
+    assembly_stats: dict
+        A dictionary for stroing results and creating final table
     """
 
+    infraspecific_name = '-'
+    genome_assembly_id = '-'
+    # if os.path.exists('home/assembly/stats') is True:
+    #     stats_file = 'GCF_000865725.1_ViralMultiSegProj15521_assembly_stats.txt'
+    #     report_file = 'GCF_000865725.1_ViralMultiSegProj15521_assembly_report.txt'
+    # else:
     ftp = FTP('ftp.ncbi.nlm.nih.gov')
     ftp.login()
     stats_ftp = stats_ftp.split('://')[1]
@@ -201,7 +219,7 @@ def stats_report(stats_ftp, genome_stats):
     genome_dir = stats_ftp.split(stats_file)[0]
     genome_dir = genome_dir.replace('ftp.ncbi.nlm.nih.gov/', '')
     ftp.cwd(genome_dir)
-
+    genbank_assembly_id = '-'
     os.system('mkdir home/assembly/stats')
 
     with open('home/assembly/stats/' + stats_file, 'wb') as file:
@@ -213,26 +231,46 @@ def stats_report(stats_ftp, genome_stats):
     with open('home/assembly/stats/' + report_file, encoding='utf-8') as  reportfile:
         report_tsv = csv.reader(reportfile, delimiter='\t')
         for row in report_tsv:
+            if row[0].startswith('# GenBank assembly accession: '):
+                genome_assembly_id = row[0].replace('# GenBank assembly accession: ', '')
+                
+            if row[0].startswith('# RefSeq assembly accession:'):
+                genbank_assembly_id = row[0].replace('# RefSeq assembly accession: ', '')
+            
+            if row[0].startswith('# Infraspecific name:'):
+                infraspecific_name = row[0].replace('# Infraspecific name:  ', '')
             if row[0].startswith('#'):
                 continue
-            genome_stats[row[6]] = [row[0], row[1], row[2], row[3], row[4],\
-                row[5], row[7], row[8], row[9]]
+            if row[6] == 'na':
+                assembly_stats[row[0]] = ['-', infraspecific_name, genbank_assembly_id, '-', '-',
+                '-', '-', '-', '-', '-', '-', row[0], '-', '-', '-', '-', '-',
+                '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
+            else:
+                assembly_stats[row[6]] = ['-', infraspecific_name, genome_assembly_id, '-', '-',
+                    '-', '-', '-', '-', '-', '-', row[0], '-', '-', '-', '-', '-',
+                    '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
 
     with open('home/assembly/stats/' + stats_file, 'r', encoding='utf8') as statfile:
         genome_tsv = csv.reader(statfile, delimiter="\t")
         for row in genome_tsv:
             if row[0].startswith('#'):
                 continue
-            if row[0] == 'all' and row[4] == 'gc-perc':
-                genome_stats['gc-perc'] = row[5]
-            if row[0] == 'all' and row[4] == 'scaffold-count':
-                genome_stats['top-level-count'] = row[5]
-            if row[0] == 'all' and row[4] == 'scaffold-N75':
-                genome_stats['scaffold-N75'] = row[5]
-            if row[0] == 'all' and row[4] == 'scaffold-N90':
-                genome_stats['scaffold-N90'] = row[5]
-    import pdb; pdb.set_trace()
-    return genome_stats
+            for genome in assembly_stats:
+                segment = assembly_stats[genome][11]
+                if row[1] == segment and row[3] == 'all' and row[4] == 'gc-perc':
+                    assembly_stats[genome][15] = row[5]
+                if row[1] == segment and row[3] == 'all' and row[4] == 'total-length':
+                    assembly_stats[genome][16] = row[5]
+                if row[1] == segment and row[3] == 'all' and row[4] == 'scaffold-N50':
+                    assembly_stats[genome][17] = row[5]
+                if row[1] == 'all' and row[3] == 'all' and row[4] == 'scaffold-N75':
+                    assembly_stats[genome][18] = row[5]
+                if row[1] == 'all' and row[3] == 'all' and row[4] == 'scaffold-N90':
+                    assembly_stats[genome][19] = row[5]
+                if row[1] == 'all' and row[3] == 'all' and row[4] == 'scaffold-L50':
+                    assembly_stats[genome][20] = row[5]
+
+    return assembly_stats
 
 def get_lineage(taxonomy_id):
     """Get lineage
@@ -277,6 +315,7 @@ def sample_output( samples, header, output):
                     row.append(samples[key][item])
                 writer.writerow(row)
         print('Samples written to ', sample_file)
+
     else:
         print('\t'.join(item for item in header))
         for run in samples:
@@ -285,23 +324,23 @@ def sample_output( samples, header, output):
 def main():
     """Main"""
 
-    samples = {}
-    header = ['genome_assembly_id', 'lineage', 'taxonomy_id', 'bco_id', 'schema_version', \
-        'analysis_platform', 'analysis_platform_object_id', 'bioproject', \
-        'biosample',  'sra_run_id', 'ngs_read_file_name', 'ngs_read_file_source', \
-        'organism_name', 'ref_genome_acc', 'genomic_section', \
+    assembly_stats = {}
+    header = ['ref_genome_acc', 'organism_name', 'infraspecific_name', \
+        'genome_assembly_id', 'lineage', 'taxonomy_id', 'bco_id', \
+        'schema_version', 'analysis_platform', 'analysis_platform_object_id', \
+        'sra_run_id', 'ngs_read_file_source', 'genomic_section', \
         'num_chromosomes', 'num_genes', 'num_segments', 'assembly_gc_content', \
-        'length', 'n50', 'n75', 'n90', 'l50', 'l75', 'number_of_n',  \
-        'percent_assembly_greater_20x', 'query_coverage_against_reference', \
-        'percent_identity_against_reference',  'reads_unaligned', 'id_method',\
-        'assembly_type', 'assembly_level', 'assembly_score']
+        'length', 'n50', 'n75', 'n90', 'l50', 'l75', \
+        'query_coverage_against_reference', \
+        'percent_identity_against_reference', 'percent_reads_unaligned', \
+        'assembly_type', 'assembly_level']
 
     args = usr_args()
     if args.input == 'api':
-        argosdb_api(samples)
+        argosdb_api(assembly_stats)
     else:
-        parse_xml(args.input, samples)
-    sample_output(samples, header, args.output)
+        parse_xml(args.input, assembly_stats)
+    sample_output(assembly_stats, header, args.output)
 
 if __name__ == "__main__":
     main()

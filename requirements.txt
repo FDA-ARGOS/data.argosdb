@@ -12,7 +12,7 @@ jsonschema==4.2.1
 lazy-object-proxy==1.7.1
 mccabe==0.6.1
 mygene==3.2.2
-numpy==1.21.4
+numpy==1.22.0
 pandas==1.4.2
 platformdirs==2.4.1
 pylint==2.12.2

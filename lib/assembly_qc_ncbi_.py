@@ -317,6 +317,7 @@ def get_lineage(taxonomy_id):
         NCBI Taxonomy identifier
     """
     Entrez.email = "hadley_king@gwu.edu"
+    Entrez.api_key = os.getenv('NCBI_API_KEY')
     handle = Entrez.efetch(db="taxonomy", id=taxonomy_id)
     record = Entrez.read(handle)
     return record[0]['Lineage']

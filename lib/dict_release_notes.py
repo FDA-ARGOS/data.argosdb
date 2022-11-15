@@ -54,14 +54,14 @@ def usr_args():
 
 def load_tsv(options):
     """Load TSVs
-    
+
     Parameters
     ----------
     options.old: str
         An inpit directory string.
     options.new: str
         An inpit directory string.
-    
+
      Returns
     -------
         Printout of comparison stats.

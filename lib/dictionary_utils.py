@@ -30,10 +30,8 @@ import os
 
 from urllib.parse import urlparse
 import urllib
-import jsonref
-from jsonschema import validate, ValidationError
 
-__version__ = "0.5"
+__version__ = "1.0"
 __status__ = "Production"
 
 def usr_args():
@@ -201,7 +199,7 @@ def list_2_schema(options):
                     '$id':row[3],
                     'title': row[4],
                     'description': prop_defs[row[0].rstrip()],
-                    'type': row[5],
+                    'type': 'string',
                     'default': row[6],
                     'examples': [row[7]],
                     'pattern': row[8]

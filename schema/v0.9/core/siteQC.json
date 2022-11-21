@@ -196,7 +196,7 @@
             "$id": "#root/genomic_coordinates_end",
             "title": "genomic_coordinates_end",
             "description": "End position for this feature in the genome file",
-            "type": "int",
+            "type": "number",
             "default": "1-100000",
             "examples": [
                 "-"
@@ -207,7 +207,7 @@
             "$id": "#root/protein_coordinates_start",
             "title": "protein_coordinates_start",
             "description": "Start position for this feature in the proteome file",
-            "type": "int",
+            "type": "number",
             "default": "N/A",
             "examples": [
                 "-"
@@ -218,7 +218,7 @@
             "$id": "#root/protein_coordinates_end",
             "title": "protein_coordinates_end",
             "description": "End position for this feature in the proteome file",
-            "type": "int",
+            "type": "number",
             "default": "N/A",
             "examples": [
                 "-"
@@ -328,7 +328,7 @@
             "$id": "#root/read_coverage",
             "title": "read_coverage",
             "description": "Number of unique reads that include a specific nucleotide",
-            "type": "int",
+            "type": "number",
             "default": "1-100000",
             "examples": [
                 "-"
@@ -339,7 +339,7 @@
             "$id": "#root/frequency",
             "title": "frequency",
             "description": "Frequency of a specific nucleotide variation with respect to the number of occurences of the specific variation",
-            "type": "float",
+            "type": "number",
             "default": "0.0-100.0",
             "examples": [
                 "-"
@@ -361,7 +361,7 @@
             "$id": "#root/count_major_mutations",
             "title": "count_major_mutations",
             "description": "Count of major mutations",
-            "type": "int",
+            "type": "number",
             "default": "0-100000",
             "examples": [
                 "-"
@@ -372,7 +372,7 @@
             "$id": "#root/count_major_indels",
             "title": "count_major_indels",
             "description": "Count of insertions or deletions",
-            "type": "int",
+            "type": "number",
             "default": "0-100000",
             "examples": [
                 "-"
@@ -383,7 +383,7 @@
             "$id": "#root/site_score",
             "title": "site_score",
             "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set",
-            "type": "int",
+            "type": "number",
             "default": "1-200",
             "examples": [
                 "-"

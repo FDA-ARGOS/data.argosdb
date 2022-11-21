@@ -1,0 +1,92 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'uniprotkb_ac' is a required property",
+                "top_level: 'entry_name' is a required property",
+                "top_level: 'status' is a required property",
+                "top_level: 'protein_names' is a required property",
+                "top_level: 'gene_names' is a required property",
+                "top_level: 'organism_name' is a required property",
+                "top_level: 'length' is a required property"
+            ],
+            "line_number": 7
+        }
+    ],
+    "input": "tests/v1.0/test_files/uniprot-proteome_UP000180448.csv",
+    "lines": 7,
+    "schema": "schema/v1.0//non-core/uniprot-proteome_*.json",
+    "summary": "7 lines failed out of 7."
+}

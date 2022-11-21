@@ -22,7 +22,9 @@ data = [{
   "offset": 1,
   "limit": 10000
 }]
+
 os.system('mkdir home/assembly')
+
 for item in data:
     response = requests.post(api_url, json=item)
     results.append(response.json())

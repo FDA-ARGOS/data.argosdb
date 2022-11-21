@@ -1,0 +1,110 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property"
+            ],
+            "line_number": 17
+        }
+    ],
+    "input": "tests/v1.0/test_files/uniprot-proteome_UP000464024.csv",
+    "lines": 17,
+    "schema": "schema/v1.0//non-core/uniprot-proteome_*.json",
+    "summary": "17 lines failed out of 17."
+}

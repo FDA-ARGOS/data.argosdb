@@ -89,7 +89,7 @@ def load_tsv(options):
             file_path = os.path.join(options.old, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                property_definition_header = next(data)
+                next(data)
                 for row in data:
                     property_definition[row[0]] = row[1:]
 
@@ -97,7 +97,7 @@ def load_tsv(options):
             file_path = os.path.join(options.old, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                core_property_list_header = next(data)
+                next(data)
                 counts['core_property_list'] ={}
                 for row in data:
                     core_property_list.append(row)
@@ -111,7 +111,7 @@ def load_tsv(options):
             file_path = os.path.join(options.old, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                non_core_property_list_header = next(data)
+                next(data)
                 counts['non_core_property_list'] ={}
                 for row in data:
                     non_core_property_list.append(row)
@@ -134,7 +134,7 @@ def load_tsv(options):
             file_path = os.path.join(options.new, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                new_property_definition_header = next(data)
+                next(data)
                 for row in data:
                     new_property_definition[row[0]] = row[1:]
 
@@ -142,7 +142,7 @@ def load_tsv(options):
             file_path = os.path.join(options.new, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                new_core_property_list_header = next(data)
+                next(data)
                 counts['new_core_property_list'] ={}
                 for row in data:
                     new_core_property_list.append(row)
@@ -152,11 +152,11 @@ def load_tsv(options):
                         counts['new_core_property_list'][row[1]] += 1
 
         if 'annotation_property_list' in sheet or\
-            'non_core_property_list' in sheet:
+            'non-core_property_list' in sheet:
             file_path = os.path.join(options.new, sheet)
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = csv.reader(file, delimiter='\t')
-                new_non_core_property_list_header = next(data)
+                next(data)
                 counts['new_non_core_property_list'] ={}
                 for row in data:
                     new_non_core_property_list.append(row)

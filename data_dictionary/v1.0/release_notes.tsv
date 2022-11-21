@@ -1,0 +1,92 @@
+README Summary for Data Dictionary V1.0		
+"- In 'data_files' column: '*' implies all files in that data set category from Mazumder, Pond, and Crandall Labs."		
+		
+Summary of V1.0 Changes in Property Definition List:		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+N/A		
+Edits to Terms:		
+infraspecific_name	New term added to data dictionary and datasets	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv 
+lineage	Definition updated; Data files updated; Example changed; Information require  per cell for this term has changed 	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv 
+biosample	Data files updated	assemblyQC*|ngs_id_list.tsv
+bioproject	Data files updated	assemblyQC*|ngs_id_list.tsv
+analysis_platform	Updated definition 	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv
+analysis_platform_object_id	Updated definition 	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv
+sra_run_id	Updated definition; data files updated	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv
+ngs_read_file_name	Updated definition; data files updated	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv
+ngs_read_file_source	Updated definition; data files updated	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv
+query_coverage_against_reference	Updated definition 	assemblyQC*
+reference_coverage_against_query	New term added to data dictionary and dataset	assemblyQC*
+percent_identity_against_reference	Updated definition 	assemblyQC*
+level	"Removed from Property List as a defined term, and corresponding dataset "	ngsQC*
+		
+Summary of V1.0 Changes in CORE Property List and associated data sets:		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+N/A		
+		
+Edits to Terms (Also Reflected in Property Deinitions List):		
+leaf_node	Removed from dataset	property_definition_list.tsv|ngs_id_list.tsv
+infraspecific_name	Added to datasets; Requirement set to 'optional' 	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*
+lineage	Data in column updated to fit definition 	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*
+genome_assembly_id	Added to dataset; Requirement set to 'optional' 	ngsQC*
+level	Removed from dataset	ngsQC*
+bioproject	Moved from the assemblyQC* datasets to the ngs_id_list.tsv dataset	assemblyQC*|ngs_id_list.tsv
+biosample	Moved from the assemblyQC* datasets to the ngs_id_list.tsv dataset	assemblyQC*|ngs_id_list.tsv
+sra_run_id	Moved from the assemblyQC* datasets to the ngs_id_list.tsv dataset	assemblyQC*|ngs_id_list.tsv
+ngs_read_file_name	Moved from the assemblyQC* datasets to the ngs_id_list.tsv dataset	assemblyQC*|ngs_id_list.tsv
+assembled_genome_acc	New term added to data dictionary and dataset; Requirement set to 'required'	assemblyQC*
+genome_coverage	New term added to data dictionary and dataset; Requirement set to 'optional'	assemblyQC*
+reference_coverage_against_query	New term added to data dictionary and dataset; Requirement set to 'optional'	assemblyQC*
+percent_reads_unaligned	Term name adjusted from 'reads_unaligned' to 'percent_reads_unaligned'; Updated definition 	assemblyQC*
+number_of_n	Removed from dataset	assemblyQC*
+percent_assembly_greater_20x	Removed from dataset	assemblyQC*
+id_method	Removed from dataset	assemblyQC*
+sra_run_id	Removed from dataset	biosampleMeta*
+		
+Summary of V01.0 Changes in Non-CORE Property List and associated data sets:		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+constraint	New column added to dataset	ngs_id_list.tsv
+Edits to Terms (Also Reflected in Property Deinitions List):		
+infraspecific_name	Added to datasets; Requirement set to 'optional' 	
+bioproject	Added to dataset 	ngs_id_list.tsv
+biosample	Added to dataset 	ngs_id_list.tsv
+sra_run_id	Added to dataset 	ngs_id_list.tsv
+ngs_read_file_name	Added to dataset 	ngs_id_list.tsv
+lineage	Data in column updated to fit definition 	ngs_id_list.tsv
+leaf_node	Removed from dataset	ngs_id_list.tsv
+		
+V1.0 Data Sheet Statistics:		
+Class	Sheet	Total Properties
+Dictionary	property_definition.tsv	134
+Core	ngsQC.tsv	41
+Core	assemblyQC.tsv	31
+Core	siteQC.tsv	34
+Core	biosampleMeta.tsv	29
+Non-Core	ngs_ID_list.tsv	13
+Non-Core	SRA_ngsQC.tsv	19
+Non-Core	SRA_assemblyQC.tsv	10
+Non-Core	sars-cov-2_lineage_mutations.tsv	14
+Non-Core	SRA_biosample	23
+Non-Core	uniprot-proteome_*.csv	7
+		
+Core Property Sheet Stats:		
+Sheet	Properties	
+ngsQC.tsv	41	
+assemblyQC.tsv	31	
+siteQC.tsv	34	
+biosampleMeta.tsv	29	
+		
+Non Core Property Sheet Stats:		
+Sheet	Properties	
+SRA_ngsQC.tsv	20	
+SRA_assemblyQC.tsv	10	
+sars-cov-2_lineage_mutations.tsv	14	
+ngs_ID_list.tsv	12	
+SRA_biosample.tsv	22	
+uniprot-proteome_*.csv	7	
+		
+3 items removed from the dictionary:	"['reads_unaligned', 'level', 'leaf_node']"	
+		
+5 items added to the dictionary:	"['infraspecific_name', 'percent_reads_unaligned', 'assembled_genome_acc', 'genome_coverage', 'reference_coverage_against_query']"	

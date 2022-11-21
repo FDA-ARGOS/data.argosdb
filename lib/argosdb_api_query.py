@@ -22,13 +22,15 @@ data = [{
   "offset": 1,
   "limit": 10000
 }]
-os.system('mkdir home/new_test')
+
+os.system('mkdir home/assembly')
+
 for item in data:
     response = requests.post(api_url, json=item)
     results.append(response.json())
     for record in response.json()['recordlist']:
         if record['genome_assembly_id'] not in assemblies:
             assemblies.append(record['genome_assembly_id'])
-            os.system(f"efetch -db assembly -id {record['genome_assembly_id']} -format docsum > home/new_test/{record['genome_assembly_id']}.xml")
+            os.system(f"efetch -db assembly -id {record['genome_assembly_id']} -format docsum > home/{record['genome_assembly_id']}.xml")
     print(response.status_code)
 print(assemblies)

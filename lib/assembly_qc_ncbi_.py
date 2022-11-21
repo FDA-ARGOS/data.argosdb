@@ -141,6 +141,7 @@ def parse_xml(xml_file, assembly_stats, samples):
                 for synonym in summary.findall('./'):
                     if synonym.tag == 'Genbank':
                         assembled_genome_acc = synonym.text
+
             if summary.tag == 'Id':
                 analysis_platform_object_id = summary.text
             if summary.tag == 'SpeciesName':
@@ -228,6 +229,7 @@ def stats_report(stats_ftp, assembly_stats):
     genome_dir = genome_dir.replace('ftp.ncbi.nlm.nih.gov/', '')
     ftp.cwd(genome_dir)
     os.system('mkdir home/assembly/stats')
+
     with open('home/assembly/stats/' + stats_file, 'wb') as file:
         ftp.retrbinary(f'RETR {stats_file}', file.write )
     with open('home/assembly/stats/' + report_file, 'wb') as file:
@@ -241,7 +243,6 @@ def stats_report(stats_ftp, assembly_stats):
 
             if row[0].startswith('# RefSeq assembly accession:'):
                 refseq_assembly_id= row[0].replace('# RefSeq assembly accession: ', '')
-
             if row[0].startswith('# Infraspecific name:'):
                 infraspecific_name = row[0].replace('# Infraspecific name:  ', '')
             if row[0].startswith('#'):

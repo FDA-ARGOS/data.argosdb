@@ -54,7 +54,6 @@ def get_HIVE():
             # These columns need to be updated/changed to reflect new columns added to ngs_id
             for r in reader:
                 writer.writerow([r[3],r[4],r[6],r[5],r[11],r[12],r[23],r[13]])
-    datafile.close()
 get_HIVE()
 
 data_hl = pd.read_table('hiveapi.tsv', sep='\t', on_bad_lines='skip')

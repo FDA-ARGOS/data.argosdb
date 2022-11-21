@@ -1,0 +1,1828 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA603194' does not match '-'",
+                "sra_run_id: 'SRR10971381' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA603194' does not match '-'",
+                "sra_run_id: 'SRR10971381' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR11393704' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR11409417' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460618' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460619' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460620' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460621' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460622' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460623' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460624' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460625' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460626' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460627' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "sra_run_id: 'SRR14460628' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511298' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511299' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 17
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511300' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 18
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511301' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 19
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511302' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 20
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511303' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 21
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511304' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 22
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511305' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 23
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511306' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 24
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511307' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 25
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "sra_run_id: 'SRR14511308' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 26
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA791622' does not match '-'",
+                "sra_run_id: 'SRR17309642' does not match '^\\\\+SRR.+'",
+                "files_processed: '' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 27
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA791622' does not match '-'",
+                "sra_run_id: 'SRR17309642' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 28
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA791622' does not match '-'",
+                "sra_run_id: 'SRR17309643' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 29
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12046724' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 30
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12046724' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 31
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12046725' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 32
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12046725' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 33
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047329' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 34
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047329' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 35
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047330' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 36
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047330' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 37
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047332' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 38
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12047331' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 39
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826193' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 40
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826193' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 41
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826194' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 42
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826194' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 43
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826195' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 44
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826195' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 45
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826196' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 46
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR12826196' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 47
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR13183044' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 48
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR13183045' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 49
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR13183046' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 50
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR13183047' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 51
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR13183047' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 52
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608974' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 53
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608974' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 54
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608975' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 55
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608975' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 56
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608976' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 57
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1608976' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 58
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950244' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 59
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950244' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 60
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950245' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 61
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950245' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 62
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950246' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 63
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950246' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 64
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950247' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 65
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950247' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 66
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950250' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 67
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950251' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 68
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950252' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 69
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR1950253' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 70
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814419' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 71
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814419' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 72
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814420' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 73
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814420' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 74
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814421' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 75
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814421' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 76
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814422' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 77
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2814422' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 78
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409208' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 79
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409209' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 80
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409210' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 81
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409210' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 82
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409211' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 83
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409211' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 84
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409216' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 85
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409216' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 86
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409217' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 87
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5409217' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 88
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417083' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 89
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417083' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 90
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417084' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 91
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417084' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 92
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417085' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 93
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417085' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 94
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417086' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 95
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417086' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 96
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417087' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 97
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417088' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 98
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417089' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 99
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417090' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 100
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417091' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 101
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417092' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 102
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417093' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 103
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417093' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 104
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417094' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 105
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417094' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 106
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417096' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 107
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417096' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 108
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417097' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 109
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5417097' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 110
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866640' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 111
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866640' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 112
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866641' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 113
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866641' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 114
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866642' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 115
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5866642' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 116
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5868515' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 117
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5868515' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 118
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5868516' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 119
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5868516' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 120
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9160490' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 121
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9160491' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 122
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163265' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 123
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163266' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 124
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163323' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 125
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163323' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 126
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163324' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 127
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163324' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 128
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163434' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 129
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163434' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 130
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163435' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 131
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9163435' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 132
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171840' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 133
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171840' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 134
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171841' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 135
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171841' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 136
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171842' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 137
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171842' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 138
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171843' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 139
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9171843' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 140
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172016' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 141
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172016' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 142
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172017' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 143
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172017' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 144
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172018' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 145
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172018' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 146
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172070' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 147
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172071' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 148
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172072' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 149
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172095' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 150
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172095' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 151
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172096' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 152
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172096' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 153
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172097' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 154
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172097' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 155
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172099' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 156
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172100' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 157
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172121' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 158
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172121' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 159
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172122' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 160
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172122' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 161
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172266' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 162
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172267' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 163
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172268' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 164
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9172269' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 165
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641498' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 166
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641498' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 167
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641499' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 168
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641499' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 169
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641504' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 170
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641504' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 171
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641505' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 172
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR9641505' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 173
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10017689' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 174
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10027401' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 175
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10017687' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 176
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10027398' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 177
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262080' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 178
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262085' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 179
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10027406' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 180
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR10027406' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 181
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17261988' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 182
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262089' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 183
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262089' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 184
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262090' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 185
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262090' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 186
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262091' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 187
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17262091' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 188
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJEB12890' does not match '-'",
+                "sra_run_id: 'ERR2096902' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 189
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJEB12890' does not match '-'",
+                "sra_run_id: 'ERR2096902' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Pond' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 190
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA550394' does not match '-'",
+                "sra_run_id: 'SRR9588828' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 191
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA550394' does not match '-'",
+                "sra_run_id: 'SRR9588829' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 192
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA550394' does not match '-'",
+                "sra_run_id: 'SRR9588830' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 193
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA550394' does not match '-'",
+                "sra_run_id: 'SRR9588831' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 194
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA550394' does not match '-'",
+                "sra_run_id: 'SRR9588832' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 195
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: '' does not match '-'",
+                "biosample: '' does not match '^[a-zA-Z]+[0-9]+$'",
+                "sra_run_id: '' does not match '^\\\\+SRR.+'",
+                "taxonomy_id: '' does not match '^[2-9]|[1-9]\\\\d+$'",
+                "lab_name: '' does not match '(Pond Lab|Crandall Lab|HIVE Lab)'",
+                "files_processed: '' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 196
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2820658' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 197
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2820659' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 198
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR2820660' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 199
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5413252' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 200
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5413253' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 201
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5427930' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 202
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5427931' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 203
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5440732' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 204
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5440733' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 205
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5884781' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 206
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR5884782' does not match '^\\\\+SRR.+'",
+                "files_processed: 'ngsQC_Crandall' does not match '(ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL)'"
+            ],
+            "line_number": 207
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167624' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 208
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167622' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 209
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167623' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 210
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167618' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 211
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167617' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 212
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17429276' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 213
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17429277' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 214
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR17429278' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 215
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167615' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 216
+        },
+        {
+            "failed_cells": [
+                "top_level: 'ngs_read_file_name' is a required property",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "sra_run_id: 'SRR7167616' does not match '^\\\\+SRR.+'"
+            ],
+            "line_number": 217
+        }
+    ],
+    "input": "tests/v1.0/test_files/ngs_ID_list.tsv",
+    "lines": 217,
+    "schema": "schema/v1.0//non-core/ngs_ID_list.json",
+    "summary": "217 lines failed out of 217."
+}

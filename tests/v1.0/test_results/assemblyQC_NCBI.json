@@ -1,0 +1,460 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Marburg marburgvirus (viruses)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Marburgvirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '38.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_000857325.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Paratyphi A (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002386165.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Saintpaul (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002386325.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Escherichia coli (E. coli)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '50.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_002589795.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. houtenae serovar 50:g,z51:- (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '51.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_001188155.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Typhimurium var. 5- (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica; Salmonella enterica subsp. enterica serovar Typhimurium' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002206495.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Bredeney (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002206165.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Ohio (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002206525.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Infantis (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002206245.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_000783815.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Heidelberg (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_001188125.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Escherichia coli (E. coli)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '50.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_002944935.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_001558355.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Escherichia coli O157 (E. coli)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia; Escherichia coli' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '50.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_002208865.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Typhimurium var. 5- (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica; Salmonella enterica subsp. enterica serovar Typhimurium' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002208965.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Hadar (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002209205.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Escherichia coli O104:H4 (E. coli)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia; Escherichia coli' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '50.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_002983645.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 17
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Typhimurium (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002983965.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 18
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Heidelberg (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002984035.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 19
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Typhimurium (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002984285.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 20
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Escherichia coli O104:H4 (E. coli)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia; Escherichia coli' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '50.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_002209105.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 21
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica subsp. enterica serovar Typhimurium (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica; Salmonella enterica subsp. enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_002209225.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 22
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '51.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_006364755.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 23
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_006365335.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 24
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_006370495.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 25
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Influenza A virus (A/Puerto Rico/8/1934(H1N1)) (viruses)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus; H1N1 subtype' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '43.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_000865725.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 26
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '52.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_009729895.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 27
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_009729915.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 28
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '52.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_009729935.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 29
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_009729955.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 30
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_009729975.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 31
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_009730015.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 32
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "assembly_gc_content: '52.5' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'GCF_012273275.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 33
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_012273475.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 34
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_013364495.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 35
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_013364515.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 36
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_013367835.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 37
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016026715.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 38
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016028495.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 39
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016117835.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 40
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016127435.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 41
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016127835.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 42
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Salmonella enterica (enterobacteria)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'cellular organisms; Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_016889645.1' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 43
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembled_genome_acc' is a required property",
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2 (viruses)' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus; Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "ref_genome_acc: 'GCF_009858895.2' does not match '-'",
+                "query_coverage_against_reference: '-' does not match '^[0-9]+$'"
+            ],
+            "line_number": 44
+        }
+    ],
+    "input": "tests/v1.0/test_files/assemblyQC_NCBI.tsv",
+    "lines": 44,
+    "schema": "schema/v1.0//core/assemblyQC.json",
+    "summary": "44 lines failed out of 44."
+}

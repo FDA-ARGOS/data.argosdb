@@ -1,0 +1,136 @@
+property	data_object	requirement	id	title	data_type	constraint	default	examples	pattern
+organism_name	ngsQC.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+infraspecific_name	ngsQC.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	
+lineage	ngsQC.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+genome_assembly_id	ngsQC.tsv	optional	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_009858895.3	^[a-zA-Z]+.*[0-9]+\.\d$
+taxonomy_id	ngsQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	2697049	^[0-9]+$
+bco_id	ngsQC.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000019	^[a-zA-Z]+[0-9]+$
+schema_version	ngsQC.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^v[0-9]*\.[0-9]+$
+analysis_platform	ngsQC.tsv	required	#root/analysis_platform	analysis_platform	string	N/A	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	(HIVE 1|HIVE 2|HIVE AWS|Galaxy)
+analysis_platform_object_id	ngsQC.tsv	optional	#root/analysis_platform_object_id	analysis_platform_object_id	string	43172-43172	-	39658	^[0-9]+$
+bioproject	ngsQC.tsv	required	#root/bioproject	bioproject	string	N/A	-	PRJNA603194	-
+biosample	ngsQC.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN13922059	^.*$
+strain	ngsQC.tsv	optional	#root/strain	strain	string	N/A	-	FDAARGOS_94	^.*$
+sra_run_id	ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string	N/A	-	SRR10971381	^.*$
+ngs_read_file_name	ngsQC.tsv	required	#root/ngs_read_file_name	ngs_read_file_name	string	N/A	-	SRR10971381_1.fastq	^[a-zA-Z]+[0-9]+_[0-9]+\.fastq$
+ngs_read_file_source	ngsQC.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	N/A	-	SRA	^.*$
+ngs_gc_content	ngsQC.tsv	required	#root/ngs_gc_content	gc_content	float	0.0-1.0	-	51.4	^[0-9]*\.[0-9]+$
+avg_phred_score	ngsQC.tsv	required	#root/avg_phred_score	avg_phred_score	float	0.0-1000.0	-	33.5807	^[0-9]*\.[0-9]+$
+avg_read_length	ngsQC.tsv	required	#root/avg_read_length	avg_read_length	float	0.0-10000.0	-	138.6775	^[0-9]*\.[0-9]+$
+max_read_length	ngsQC.tsv	required	#root/max_read_length	max_read_length	int	0-100000	-	151	^[0-9]+$
+min_read_length	ngsQC.tsv	required	#root/min_read_length	min_read_length	int	0-10000	-	1	^[0-9]+$
+num_reads_unique	ngsQC.tsv	optional	#root/num_reads_unique	num_reads_unique	int	0-100000000	-	NA	^[0-9]+$
+pos_outlier_count	ngsQC.tsv	optional	#root/pos_outlier_count	pos_outlier_count	int	0-100000	-	0	^[0-9]+$
+codon_table	ngsQC.tsv	optional	#root/codon_table	codon_table	string	N/A	-	Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+percent_coding	ngsQC.tsv	optional	#root/percent_coding	percent_coding	string	N/A	-	0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
+percent_not_coding	ngsQC.tsv	optional	#root/percent_not_coding	percent_not_coding	string	N/A	-	0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
+density_n_per_read	ngsQC.tsv	optional	#root/density_n_per_read	density_n_per_read	string	N/A	-	0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|33|100	^([0-9]+(\|[0-9]+)+)$
+complexity_percent	ngsQC.tsv	optional	#root/complexity_percent	complexity_percent	float	0.0-100.0	-	94	^[0-9]+$
+non_complex_percent	ngsQC.tsv	optional	#root/non_complex_percent	non_complex_percent	float	0.0-100.0	-	6	^[0-9]+$
+avg_quality_a	ngsQC.tsv	optional	#root/avg_quality_a	avg_quality_a	float	0.0-1000.0	-	32.095	^[0-9]*\.[0-9]+$
+avg_quality_t	ngsQC.tsv	optional	#root/avg_quality_t	avg_quality_t	float	0.0-1000.0	-	33.988	^[0-9]*\.[0-9]+$
+avg_quality_g	ngsQC.tsv	optional	#root/avg_quality_g	avg_quality_g	float	0.0-1000.0	-	33.911	^[0-9]*\.[0-9]+$
+avg_quality_c	ngsQC.tsv	optional	#root/avg_quality_c	avg_quality_c	float	0.0-1000.0	-	34.093	^[0-9]*\.[0-9]+$
+count_a	ngsQC.tsv	optional	#root/count_a	count_a	int	0-1000000000	-	442689195	^[0-9]+$
+count_t	ngsQC.tsv	optional	#root/count_t	count_t	int	0-1000000000	-	524276679	^[0-9]+$
+count_g	ngsQC.tsv	optional	#root/count_g	count_g	int	0-1000000000	-	437991224	^[0-9]+$
+count_c	ngsQC.tsv	optional	#root/count_c	count_c	int	0-1000000000	-	584757437	^[0-9]+$
+instrument	ngsQC.tsv	required	#root/instrument	instrument	string	N/A	-	Illumina MiniSeq	^([a-zA-Z]+( [a-zA-Z]+)+)$
+id_method	ngsQC.tsv	optional	#root/id_method	id_method	string	N/A	-	Viral RNA | Culture | Phenotypic Identification	^.*$
+wgs_accession	ngsQC.tsv	optional	#root/wgs_accession	wgs_accession	string	N/A	-	NJFG00000000	^.*$
+strategy	ngsQC.tsv	optional	#root/strategy	strategy	string	N/A	-	RNA-Seq	^([a-zA-Z]+( [a-zA-Z]+)+)$
+ngs_score	ngsQC.tsv	optional	#root/ngs_score	ngs_score	int	1-200	-	20	^.*$
+organism_name	assemblyQC.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+infraspecific_name	assemblyQC.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	
+lineage	assemblyQC.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+assembled_genome_acc	assemblyQC.tsv	required	#root/assembled_genome_acc	assembled_genome_acc	string	N/A	-	ARG_000001	
+genome_assembly_id	assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_009858895.3	^[a-zA-Z]+.*[0-9]+\.\d$
+taxonomy_id	assemblyQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	2697049	^[0-9]+$
+bco_id	assemblyQC.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000012	^[a-zA-Z]+_[0-9]+$
+schema_version	assemblyQC.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^v[0-9]*\.[0-9]+$
+analysis_platform	assemblyQC.tsv	required	#root/analysis_platform	analysis_platform	string	N/A	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	(HIVE 1|HIVE 2|HIVE AWS|Galaxy)
+analysis_platform_object_id	assemblyQC.tsv	optional	#root/analysis_platform_object_id	analysis_platform_object_id	string	NA	-	39658	^[0-9]+$
+ngs_read_file_source	assemblyQC.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	N/A	-	SRA	-
+genomic_section	assemblyQC.tsv	required	#root/genomic_section	genomic_section	string	N/A		PB2	
+num_chromosomes	assemblyQC.tsv	optional	#root/num_chromosomes	num_chromosomes	int	1-100	-	8	^[0-9]+$
+num_genes	assemblyQC.tsv	optional	#root/num_genes	num_genes	int	1-1000000	-	9	-
+num_segments	assemblyQC.tsv	optional	#root/num_segments	num_segments	int	1-100000	-	10	-
+assembly_gc_content	assemblyQC.tsv	required	#root/assembly_gc_content	assembly_gc_content	float	0.0-1.0	-	29,903	^[0-9]+$
+length	assemblyQC.tsv	optional	#root/length	length	int	0-1000000000	-	13588	^.*$
+genome_coverage	assemblyQC.tsv	optional	#root/genome_coverage	genome_coverage	float	N/A			
+n50	assemblyQC.tsv	optional	#root/n50	n50	int	0-100000	-	2233	^.*$
+n75	assemblyQC.tsv	optional	#root/n75	n75	int	0-100000	-	1565	^.*$
+n90	assemblyQC.tsv	optional	#root/n90	n90	int	0-100000	-	1027	^.*$
+l50	assemblyQC.tsv	optional	#root/l50	l50	int	1-1000000	-	3	^.*$
+l75	assemblyQC.tsv	optional	#root/l75	l75	int	1-1000000	-	5	
+ref_genome_acc	assemblyQC.tsv	required	#root/ref_genome_acc	ref_genome_acc	string	N/A	-	NC_002023	-
+query_coverage_against_reference	assemblyQC.tsv	optional	#root/query_coverage_against_reference	query_coverage_against_reference	int	1-100000	-	100	^[0-9]+$
+reference_coverage_against_query	assemblyQC.tsv	optional	#root/reference_coverage_against_query	reference_coverage_against_query	int	1-100001		100	
+percent_identity_against_reference	assemblyQC.tsv	optional	#root/percent_identity_against_reference	percent_identity_against_reference	float	0.0-100.0	-	100	^.*$
+percent_reads_unaligned	assemblyQC.tsv	optional	#root/reads_unaligned	reads_unaligned	int	0-100000000	-	1570000	^.*$
+assembly_type	assemblyQC.tsv	optional	#root/assembly_type	assembly_type	string	N/A	-	Haploid	^.*$
+assembly_level	assemblyQC.tsv	optional	#root/assembly_level	assembly_level	string	N/A	-	Complete Genome	^.*$
+assembly_score	assemblyQC.tsv	optional	#root/assembly_score	assembly_score	int	1-200	-	33	^.*$
+organism_name	siteQC.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^[a-zA-Z]+_[a-zA-Z]+$
+infraspecific_name	siteQC.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	
+lineage	siteQC.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^[a-zA-Z]+_[a-zA-Z]+[0-9]+$
+taxonomy_id	siteQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	2697049	^[0-9]+$
+bco_id	siteQC.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000011	^[a-zA-Z]+_[0-9]+$
+schema_version	siteQC.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^v[0-9]*\.[0-9]+$
+analysis_platform	siteQC.tsv	required	#root/analysis_platform	analysis_platform	string	N/A	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	(HIVE 1|HIVE 2|HIVE AWS|Galaxy)
+analysis_platform_object_id	siteQC.tsv	optional	#root/analysis_platform_object_id	analysis_platform_object_id	string	43172-43172	-	39658	^[0-9]+$
+bioproject	siteQC.tsv	optional	#root/bioproject	bioproject	string	N/A	-	PRJNA603194	-
+biosample	siteQC.tsv	optional	#root/biosample	biosample	string	N/A	-	SAMN13922059	^[a-zA-Z]+[0-9]+$
+sra_run_id	siteQC.tsv	required	#root/sra_run_id	sra_run_id	string	N/A	-	SRR10971381	-
+ngs_read_file_name	siteQC.tsv	required	#root/ngs_read_file_name	ngs_read_file_name	string	N/A	-	SRR10971381_1.fastq	-
+ngs_read_file_source	siteQC.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	N/A	-	SRA	-
+genome_assembly_id	siteQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_001558355.2	^[a-zA-Z]+.*[0-9]+\.\d$
+ref_genome_acc	siteQC.tsv	required	#root/ref_genome_acc	ref_genome_acc	string	N/A	-	NC_002023	-
+genomic_coordinate_start	siteQC.tsv	optional	#root/genomic_coordinate_start	genomic_coordinate_start	string	N/A	-	23063	^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$
+genomic_coordinates_end	siteQC.tsv	optional	#root/genomic_coordinates_end	genomic_coordinates_end	int	1-100000	-	23063	^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$
+protein_coordinates_start	siteQC.tsv	optional	#root/protein_coordinates_start	protein_coordinates_start	int	N/A	-	501	^.*$
+protein_coordinates_end	siteQC.tsv	optional	#root/protein_coordinates_end	protein_coordinates_end	int	N/A	-	502	^.*$
+seq_feature_tag	siteQC.tsv	optional	#root/seq_feature_tag	seq_feature_tag	string	N/A	-	NA	^.*$
+seq_feature_value	siteQC.tsv	optional	#root/seq_feature_value	seq_feature_value	string	N/A	-	NA	^.*$
+wt_nucleotide	siteQC.tsv	required	#root/wt_nucleotide	wt_nucleotide	string	N/A	-	A	-
+alt_nucleotide	siteQC.tsv	required	#root/alt_nucleotide	alt_nucleotide	string	N/A	-	T	-
+wt_codon	siteQC.tsv	required	#root/wt_codon	wt_codon	string	N/A	-	AAT	-
+alt_codon	siteQC.tsv	required	#root/alt_codon	alt_codon	string	N/A	-	TAT	-
+wt_amino_acid	siteQC.tsv	required	#root/wt_amino_acid	wt_amino_acid	string	N/A	-	N	-
+alt_amino_acid	siteQC.tsv	required	#root/alt_amino_acid	alt_amino_acid	string	N/A	-	Y	-
+annotation	siteQC.tsv	required	#root/annotation	annotation	string	N/A	-	Enhanced Infectivity Mutation	-
+read_coverage	siteQC.tsv	required	#root/read_coverage	read_coverage	int	1-100000	-	691	-
+frequency	siteQC.tsv	required	#root/frequency	frequency	float	0.0-100.0	-	0.9986	-
+protein_accession	siteQC.tsv	optional	#root/protein_accession	protein_accession	string	N/A	-	YP_009724390.1	-
+count_major_mutations	siteQC.tsv	optional	#root/count_major_mutations	count_major_mutations	int	0-100000	-	NA	-
+count_major_indels	siteQC.tsv	optional	#root/count_major_indels	count_major_indels	int	0-100000	-	NA	-
+site_score	siteQC.tsv	optional	#root/site_score	site_score	int	1-200	-	33	^.*$
+organism_name	biosampleMeta.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+infraspecific_name	biosampleMeta.tsv	optional		infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	
+lineage	biosampleMeta.tsv	required	#root/lineage	lineage	string	N/A	-	isolate Wuhan-Hu-1	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+taxonomy_id	biosampleMeta.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	433733	^[0-9]+$
+bco_id	biosampleMeta.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000020	^[a-zA-Z]+[0-9]+$
+schema_version	biosampleMeta.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^v[0-9]*\.[0-9]+$
+bioproject	biosampleMeta.tsv	required	#root/bioproject	bioproject	string	N/A	-	PRJNA603194	-
+biosample	biosampleMeta.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN13922059	^[a-zA-Z]+[0-9]+$
+strain	biosampleMeta.tsv	optional	#root/strain	strain	string	N/A	-	FDAARGOS_94	^([a-zA-Z]+(_[a-zA-Z]+)+).*$
+genome_assembly_id	biosampleMeta.tsv	optional	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_009858895.3	^[a-zA-Z]+_[0-9]*\.[0-9]+$
+sample_name	biosampleMeta.tsv	optional	#root/sample_name	sample_name	string	N/A	-	human bronchoalveolar lavage fluid	^([a-zA-Z]+( [a-zA-Z]+)+)$
+instrument	biosampleMeta.tsv	required	#root/instrument	instrument	string	N/A	-	Illumina MiniSeq	^([a-zA-Z]+( [a-zA-Z]+)+)$
+isolate	biosampleMeta.tsv	optional	#root/isolate	isolate	string	N/A	-	Monkeypox Virus/USA-2003	^.*$
+collected_by	biosampleMeta.tsv	optional	#root/collected_by	collected_by	string	N/A	-	Fudan University	^([a-zA-Z]+( [a-zA-Z]+)+)$
+collection_date	biosampleMeta.tsv	optional	#root/collection_date	collection_date	string	N/A	-	02/20/2020	^[0-9]+/[0-9]+/[0-9]+$
+geo_loc_name	biosampleMeta.tsv	optional	#root/geo_loc_name	geo_loc_name	string	N/A	-	China: Wuhan	^[a-zA-Z]+/\s[a-zA-Z]+$
+isolation_source	biosampleMeta.tsv	optional	#root/isolation_source	isolation_source	string	N/A	-	human lung metagenome	^([a-zA-Z]+( [a-zA-Z]+)+)$
+lat_lon	biosampleMeta.tsv	optional	#root/lat_lon	lat_lon	string	N/A	-	NA	^.*$
+culture_collection	biosampleMeta.tsv	optional	#root/culture_collection	culture_collection	string	N/A	-	FDA:FDAARGOS_855	^.*$
+host	biosampleMeta.tsv	optional	#root/host	host	string	N/A	-	9606	^[0-9]+$
+host_age	biosampleMeta.tsv	optional	#root/host_age	host_age	int	0-200	-	16M	^.*$
+host_description	biosampleMeta.tsv	optional	#root/host_description	host_description	string	N/A	-	NA	^.*$
+host_disease	biosampleMeta.tsv	optional	#root/host_disease	host_disease	string	N/A	-	Monkeypox Virus Disease	^.*$
+host_disease_outcome	biosampleMeta.tsv	optional	#root/host_disease_outcome	host_disease_outcome	string	N/A	-	NA	^.*$
+host_disease_stage	biosampleMeta.tsv	optional	#root/host_disease_stage	host_disease_stage	string	N/A	-	NA	^.*$
+host_health_state	biosampleMeta.tsv	optional	#root/host_health_state	host_health_state	string	N/A	-	NA	^.*$
+host_sex	biosampleMeta.tsv	optional	#root/host_sex	host_sex	string	N/A	-	Male | Female	^.*$
+id_method	biosampleMeta.tsv	optional	#root/identification_method	identification_method	string	N/A	-	RT-PCR and Amplicon Sequencing|Phenotypic and Molecular Methods	^.*$
+biosample_score	biosampleMeta.tsv	optional	#root/biosample_score	biosample_score	int	1-200	-	33	^.*$

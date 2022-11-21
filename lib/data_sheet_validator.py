@@ -244,7 +244,7 @@ def validate_schema(in_file, schema_file, out_file):
 def file_schema_matcher(input_dir, schema_dir, output_dir):
     """Schema and Datasheet matcher
 
-    Invoked with the multi flag. 
+    Invoked with the multi flag.
     """
     input_list = []
     schema_list = []
@@ -274,8 +274,9 @@ def file_schema_matcher(input_dir, schema_dir, output_dir):
         for sheet in input_list:
             if search_term in sheet:
                 count += 1
+                output_file = output_dir + '/' + sheet.split('/')[-1].split('.')[0]+'.json'
                 print(search_term, [sheet, item])
-                validate_schema(sheet, item, output_dir)
+                validate_schema(sheet, item, output_file)
                 tracking_list.append(sheet)
 
     print('\n\n')

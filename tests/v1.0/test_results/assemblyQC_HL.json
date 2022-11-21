@@ -1,0 +1,697 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.22' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'AE006468.2' does not match '-'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '53.13' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'AE006471.2' does not match '-'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '38.29' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'DQ217792.1' does not match '-'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '43.74' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002023.1' does not match '-'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '42.08' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002022.1' does not match '-'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '41.96' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002021.1' does not match '-'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '44.27' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002020.1' does not match '-'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '46.39' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002019.1' does not match '-'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '42.75' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002018.1' does not match '-'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '41.62' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002017.1' does not match '-'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '47.22' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002016.1' does not match '-'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Human immunodeficiency virus 1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Pararnavirae|Artverviricota|Revtraviricetes|Ortervirales|Retroviridae|Orthoretrovirinae|Lentivirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '42.12' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_001802.1' does not match '-'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '37.97' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_045512.1' does not match '-'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '36.38' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '36.38' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.19' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.19' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 17
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.82' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 18
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.82' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 19
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.26' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 20
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.26' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 21
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.54' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 22
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.54' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 23
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '47.22' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 24
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '47.22' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 25
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.19' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 26
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '45.6' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 27
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.13' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 28
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.85' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 29
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '49.31' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 30
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '49.71' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 31
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.16' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 32
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.6' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 33
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.6' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 34
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '48.46' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 35
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '48.46' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 36
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.48' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 37
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.48' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 38
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.59' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 39
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.59' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 40
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.82' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 41
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '55.82' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 42
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.79' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 43
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.79' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 44
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '48.89' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 45
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '48.89' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 46
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.17' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 47
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.98' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 48
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '51.96' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014050.2' does not match '-'"
+            ],
+            "line_number": 49
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Paratyphi A' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '52.15' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NZ_CP014051.2' does not match '-'"
+            ],
+            "line_number": 50
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Ebolavirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "genome_assembly_id: 'SRR17429276 MetaViralSPAdes' does not match '^[a-zA-Z]+.*[0-9]+\\\\.\\\\d$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '41.34' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_006432.1' does not match '-'"
+            ],
+            "line_number": 51
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Ebolavirus' does not match '^([a-zA-Z].+);.([a-z].+)$'",
+                "genome_assembly_id: 'SRR17429276 MEGAHIT' does not match '^[a-zA-Z]+.*[0-9]+\\\\.\\\\d$'",
+                "analysis_platform: 'HIVE2' does not match '(NCBI|HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "ngs_read_file_source: '' does not match '[-a-zA-Z0-9@:%._\\\\+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_\\\\+.~#?&//=]*)'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '-'",
+                "assembly_gc_content: '41.27' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_006432.1' does not match '-'"
+            ],
+            "line_number": 52
+        }
+    ],
+    "input": "tests/v1.0/test_files/assemblyQC_HL.tsv",
+    "lines": 52,
+    "schema": "schema/v1.0//core/assemblyQC.json",
+    "summary": "52 lines failed out of 52."
+}

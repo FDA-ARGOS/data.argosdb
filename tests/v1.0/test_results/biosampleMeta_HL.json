@@ -1,0 +1,1216 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Polyploviricotina|Insthoviricetes|Articulavirales|Orthomyxoviridae|Alphainfluenzavirus|Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJEB12890' does not match '-'",
+                "strain: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: '1a231360-83e3-11e6-ad90-3c4a9275d6c8' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'SC (The Wellcome Trust Sanger Institute)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Varidnaviria|Bamfordvirae|Nucleocytoviricota|Pokkesviricetes|Chitovirales|Poxviridae|Chordopoxvirinae|Orthopoxvirus|Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_855' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_855' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'BEI strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Varidnaviria|Bamfordvirae|Nucleocytoviricota|Pokkesviricetes|Chitovirales|Poxviridae|Chordopoxvirinae|Orthopoxvirus|Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_854' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_854' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Scab From Female Monkey (Macaca fascicularis)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'BEI strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_94' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_94' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CFSAN <-- NIST <-- ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '1948' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_316' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_316' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Typhimurium var. 5-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_312' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_312' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_315' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_315' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_319' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_319' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_313' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_313' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_54' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_54' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Brazil' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Environmental' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. houtenae' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_55' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_55' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Environmental' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_70' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_70' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: \"Children's National Hospital\" does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'USA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Abscess' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Bredeney' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_314' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_314' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: TN' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Typhimurium' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_317' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_317' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Typhimurium var. 5-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_318' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_318' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Typhimurium' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_320' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_320' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Typhimurium' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_321' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_321' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 17
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Paratyphi A' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_368' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_368' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'USA: DC' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Blood' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 18
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica subsp. enterica serovar Saintpaul' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_373' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_373' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'USA: DC' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 19
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_609' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_609' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'ZYMO RESEARCH, Ames, B. N.' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: Davis, CA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Animal' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'ZymoBIOMICS Microbial Community Standard Strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 20
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_686' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_686' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 21
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_687' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_687' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 22
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_688' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_688' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 23
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_707' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_707' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 24
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_708' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_708' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 25
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_709' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_709' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 26
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_710' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_710' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 27
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_711' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_711' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 28
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_712' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_712' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 29
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_717' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_717' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 30
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_718' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_718' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Nigeria: Ibadan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 31
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_765' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_765' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'NIST<ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: VA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'NIST Mixed Microbial RM strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 32
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_768' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_768' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'NIST<ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: VA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'NIST Mixed Microbial RM strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 33
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_878' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_878' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'DSMZ' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 34
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_879' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_879' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'DSMZ' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 35
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_928' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_928' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'DSMZ' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 36
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1066' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_1066' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'DSMZ' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Germany: Braunschweig' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 37
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1067' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_1067' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'DSMZ' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Germany: Braunschweig' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 38
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Salmonella|Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1271' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_1271' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: VA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 39
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella typhimurium' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA57799' does not match '-'",
+                "strain: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'AE006468' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 40
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID51005' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Quezon City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 41
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID52511' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Pasay City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 42
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID58620' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Indang, Cavite, CALABARZON' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 43
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID53359' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Taguig City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 44
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID53656' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Taguig City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 45
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID53909' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Taguig City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 46
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID55604' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Tanay, Rizal, CALABARZON' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 47
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID56628' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Tanay, Rizal, CALABARZON' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 48
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID58228' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Navotas City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 49
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID58236' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Paco, Manila City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 50
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA726840' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'SARS CoV 2/Philippines/AFRIMS COVID58693' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Illumina iSeq 100' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'AFRIMS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Philippines: Caloocan City' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 51
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA49' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 52
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA50' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 53
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA51' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 54
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA54' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Irece, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 55
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA53' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Joao Dourado, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 56
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA52' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 57
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA56' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 58
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA57' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 59
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA55' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Joao Dourado, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 60
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA58' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 61
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA729484' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'LACENBA59' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: 'Ion Torrent S5' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'Brazil: Salvador, Bahia' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 62
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA791622' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'GSM5747643' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'The Genotype to Phenotype Japan (G2P Japan) Consortium' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2021' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Wuhan Hu 1' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Clinical Isolate' does not match '^[0-9]+$'"
+            ],
+            "line_number": 63
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA791622' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'GSM5747644' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'The Genotype to Phenotype Japan (G2P Japan) Consortium' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2021' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Wuhan Hu 1' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Clinical Isolate' does not match '^[0-9]+$'"
+            ],
+            "line_number": 64
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA603194' does not match '-'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "geo_loc_name: 'China: Wuhan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 65
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1168' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1168' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 66
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1169' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1169' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 67
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_853' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_853' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'BEI strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 68
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1170' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1170' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 69
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Marburgvirus|Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1166' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1166' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 70
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Human immunodeficiency virus 1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Pararnavirae|Artverviricota|Revtraviricetes|Ortervirales|Retroviridae|Orthoretrovirinae|Lentivirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: '' does not match '-'",
+                "biosample: '' does not match '^[a-zA-Z]+[0-9]+$'",
+                "strain: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "instrument: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 71
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Middle East respiratory syndrome related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Merbecovirus|Middle East respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1163' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1163' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 72
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Middle East respiratory syndrome related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Merbecovirus|Middle East respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_1162' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1162' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 73
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Middle East respiratory syndrome related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Merbecovirus|Middle East respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231222' does not match '-'",
+                "strain: 'FDAARGOS_803' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_803' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA:MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'ATCC strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 74
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Middle East respiratory syndrome related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Merbecovirus|Middle East respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_849' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_849' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA:MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 75
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Ebolavirus|Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_484' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_484' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'USAMRIID < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '1976' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Sudan' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Blood' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 76
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Ebolavirus|Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_470' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_470' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'Public Health England (PHE) < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2004' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Sudan:Yambio' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Blood' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 77
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Ebolavirus|Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_470' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_1167' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'IRF strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 78
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses|Riboviria|Orthornavirae|Negarnaviricota|Haploviricotina|Monjiviricetes|Mononegavirales|Filoviridae|Ebolavirus|Sudan ebolavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_469' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_469' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'Public Health England (PHE) < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2000' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'Uganda:Gulu' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 79
+        }
+    ],
+    "input": "tests/v1.0/test_files/biosampleMeta_HL.tsv",
+    "lines": 79,
+    "schema": "schema/v1.0//core/biosampleMeta.json",
+    "summary": "79 lines failed out of 79."
+}

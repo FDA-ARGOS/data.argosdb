@@ -1,0 +1,63 @@
+uniprotkb_canonical_ac	found_in	gene_name	protein_name	evidence_ECO0000313	begin_aa_pos	end_aa_pos	mutation_type	is_known_glycoprotein	motif_start	ref_motif	alt_motif	effect	note
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	67	67	missense	yes	67	A	V	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	69	69	deletion	yes	69	H	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	70	70	deletion	yes	70	V	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	95	95	missense	yes	95	T	I	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	142	142	deletion	yes	142	G	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	143	143	deletion	yes	143	V	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	144	144	deletion	yes	144	Y	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	145	145	missense	yes	145	Y	D	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	211	211	deletion	yes	211	N	-	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	212	212	missense	yes	212	L	I	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	339	339	missense	yes	339	G	D	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	371	371	missense	yes	371	S	L	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	373	373	missense	yes	373	S	P	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	375	375	missense	yes	375	S	F	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	417	417	missense	yes	417	K	N	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	440	440	missense	yes	440	N	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	446	446	missense	yes	446	G	S	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	477	477	missense	yes	477	S	N	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	478	478	missense	yes	478	T	K	o-glyco-site-loss	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	484	484	missense	yes	484	E	A	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	493	493	missense	yes	493	Q	R	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	496	496	missense	yes	496	G	S	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	498	498	missense	yes	498	Q	R	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	501	501	missense	yes	501	N	Y	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	505	505	missense	yes	505	Y	H	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	547	547	missense	yes	547	T	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	614	614	missense	yes	614	D	G	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	655	655	missense	yes	655	H	Y	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	679	679	missense	yes	679	N	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	681	681	missense	yes	681	P	H	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	764	764	missense	yes	764	N	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	796	796	missense	yes	796	D	Y	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	856	856	missense	yes	856	N	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	954	954	missense	yes	954	Q	H	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	969	969	missense	yes	969	N	K	-	-
+P0DTC2-1	"Omicron (21K, BA.1)"	S	Spike glycoprotein	CoVariants	981	981	missense	yes	981	L	F	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	13	13	missense	no	13	P	L	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	31	31	deletion	no	31	E	-	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	32	32	deletion	no	32	R	-	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	33	33	deletion	no	33	S	-	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	203	203	missense	no	203	R	K	-	-
+P0DTC9-1	"Omicron (21K, BA.1)"	N	Nucleoprotein	CoVariants	204	204	missense	no	204	G	R	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	856	856	missense	no	856	K	R	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	2083	2083	deletion	no	2083	S	-	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	2084	2084	missense	no	2084	L	I	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	2710	2710	missense	no	2710	A	T	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3255	3255	missense	no	3255	T	I	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3395	3395	missense	no	3395	P	H	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3674	3674	deletion	no	3674	L	-	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3675	3675	deletion	no	3675	S	-	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3676	3676	deletion	no	3676	G	-	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	3758	3758	missense	no	3758	I	V	-	-
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	4720	4720	missense	no	4720	P	L	-	314 (in ORF1b)
+P0DTD1-1	"Omicron (21K, BA.1)"	rep 1a-1b	Replicase polyprotein 1ab	CoVariants	5970	5970	missense	no	5970	I	V	-	1566 (in ORF1b)
+P0DTD2-1	"Omicron (21K, BA.1)"	9b	ORF9b protein	CoVariants	10	10	missense	no	10	P	S	-	-
+P0DTD2-1	"Omicron (21K, BA.1)"	9b	ORF9b protein	CoVariants	27	27	deletion	no	27	E	-	-	-
+P0DTD2-1	"Omicron (21K, BA.1)"	9b	ORF9b protein	CoVariants	28	28	deletion	no	28	N	-	-	-
+P0DTD2-1	"Omicron (21K, BA.1)"	9b	ORF9b protein	CoVariants	29	29	deletion	no	29	A	-	-	-
+P0DTC4-1	"Omicron (21K, BA.1)"	E	Envelope small membrane protein	CoVariants	9	9	missense	no	9	T	I	-	-
+P0DTC5-1	"Omicron (21K, BA.1)"	M	Membrane protein	CoVariants	3	3	missense	no	3	D	G	-	-
+P0DTC5-1	"Omicron (21K, BA.1)"	M	Membrane protein	CoVariants	19	19	missense	no	19	Q	E	-	-
+P0DTC5-1	"Omicron (21K, BA.1)"	M	Membrane protein	CoVariants	63	63	missense	no	63	A	T	-	-

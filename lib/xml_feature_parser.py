@@ -62,8 +62,7 @@ def parse_xml(xml_file, output):
         count = 0
         root = ET.parse(xml_file).getroot()
         for item in root.findall('.'):
-            print("FOUND ONE")
-            for run in item.findall('./DocumentSummary'):
+            for run in item.findall('.//DocumentSummary'):
                 for exp in run.findall('./Runs/'):
                     items.append(exp.attrib['acc'])
                 count += 1

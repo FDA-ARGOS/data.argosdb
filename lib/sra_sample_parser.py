@@ -160,7 +160,7 @@ def sample_output( samples, header, output):
     else:
         print('\t'.join(item for item in header))
         for run in samples:
-            print(run, '\t', '\t'.join(str(item) for item in samples[run]))
+            print(run + '\t' + '\t'.join(str(item) for item in samples[run]))
 
 def main():
     """Main Fuunction

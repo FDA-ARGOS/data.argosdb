@@ -74,9 +74,8 @@ def parse_xml( xml_file, samples):
     # create element tree object and get root element
     try:
         root = ET.parse(xml_file).getroot()
-        sra_run_id = root.attrib['run']
-        for run in root.findall('./RUN'):
-            num_of_bases = run.attrib['total_bases']
+        sra_run_id = "run_id_placeholder" # root.attrib['run']
+        for run in root.findall('.//RUN'):
             file_size = run.attrib['size']
             published = run.attrib['published']
             file_type = run.findall('./SRAFiles/')[0].attrib['semantic_name']
@@ -97,7 +96,6 @@ def parse_xml( xml_file, samples):
                         if base.attrib['value'] == 'N':
                             base_n = int(base.attrib['count'])
                 if run_tag.tag == 'tax_analysis':
-                    total_spot_count = int(run_tag.attrib['total_spot_count'])
                     analyzed_spot_count = int(run_tag.attrib['analyzed_spot_count'])
                     try:
                         identified_reads = int(run_tag.attrib['identified_spot_count'])
@@ -112,7 +110,7 @@ def parse_xml( xml_file, samples):
                         # lineage.append(line.text)
                         if line.attrib != {}:
                             tax_id = line.attrib['taxid']
-        for experiment in root.findall('./EXPERIMENT'):
+        for experiment in root.findall('.//EXPERIMENT'):
             for platform in experiment.findall('./PLATFORM/'):
                 for instriment in platform:
                     instrument = instriment.text
@@ -135,19 +133,11 @@ def parse_xml( xml_file, samples):
         for study in root.findall('./STUDY'):
             sra_project_id = study.attrib['alias']
 
-        try:
-            # print('Math check', base_total == int(num_of_bases))
-            gc_content = float(base_g + base_c)/float(base_total)
-            unidentified_reads = analyzed_spot_count - identified_reads
-            percent_identified = float(identified_reads)/float(analyzed_spot_count)
-        except ValueError:
-            pass
-        # print(base_total, base_a, base_c, base_g, base_t, base_n, gc_content, lineage)
         samples[sra_experiment_id] = [sra_run_id, sra_project_id, \
-            sra_biosample_id, num_of_bases, file_size, published, source, \
+            sra_biosample_id, \
+            file_size, published, source, \
             strategy, layout,library_name, selection, instrument, file_type, \
-            unidentified_reads, identified_reads, tax_id, lineage, \
-            percent_identified, gc_content]
+            tax_id, lineage]
 
     except ET.ParseError:
         print(xml_file, 'not well-formed')
@@ -193,10 +183,11 @@ def main():
     """
     samples = {}
     header = ['sra_experiment_id', 'sra_run_id', 'sra_project_id', \
-        'sra_biosample_id', 'num_of_bases', 'file_size', 'published', \
+        'sra_biosample_id', \
+        'file_size', 'published', \
         'source', 'strategy', 'layout', 'library_name', 'selection', \
-        'instrument', 'file_type', 'reads_unaligned', 'identified_reads',\
-        'taxonomy_id', 'lineage', 'percent_identified', 'gc_content']
+        'instrument', 'file_type', \
+        'taxonomy_id', 'lineage']
     args = usr_args()
     for item in os.listdir(args.directory):
         xml_file = os.path.join(args.directory, item)

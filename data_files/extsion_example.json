@@ -1,0 +1,39 @@
+{
+    "extension_schema": "http://www.w3id.org/biocompute/extension_domain/1.2.0/dataset/dataset_extension.json",
+    "dataset_extension": {
+        "additional_license": {
+            "data_license": "https://creativecommons.org/licenses/by/4.0/",
+            "script_license": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+        },
+        "dataset_categories": [
+            {
+                "category_value": "SARS-CoV-2 Wuhan",
+                "category_name": "species"
+            },
+            {
+                "category_value": "non-core",
+                "category_name": "priority"
+            },
+            {
+                "category_value": "nucleotide",
+                "category_name": "molecule"
+            },
+            {
+                "category_value": "genome assembly",
+                "category_name": "tag"
+            },
+            {
+                "category_value": "fasta",
+                "category_name": "file_type"
+            },
+            {
+                "category_value": "reviewed",
+                "category_name": "status"
+            },
+            {
+                "category_value": "internal",
+                "category_name": "scope"
+            }
+        ]
+    }
+}

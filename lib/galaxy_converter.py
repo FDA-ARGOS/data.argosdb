@@ -2,7 +2,21 @@
 # -*- coding: utf-8 -*-
 """Galaxy BCO Converter
 
-Used to convert all Galaxy exported BCO BEFORE Galaxy version 22.05
+Used to convert all Galaxy exported BCO BEFORE Galaxy version 22.09
+
+usage: galaxy_converter.py [options]
+
+options:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -b BCO, --bco BCO     bco file to convert.
+  -e EXTENSION, --extension EXTENSION
+                        dataset extension file to add.
+  -o OUTPUT, --output OUTPUT
+                        File to write output to. If none is supplied, output will print to terminal.
+Running the Example:
+$ python lib/galaxy_converter.py -b data_files/draft_galaxy_BCO_example.json -e data_files/extsion_example.json -o data_f
+iles/final_galaxy_bco_result.json
 """
 
 import json
@@ -26,7 +40,7 @@ def usr_args():
     parser = argparse.ArgumentParser()
 
     # set usages options
-    parser = argparse.ArgumentParser(prog="argosdb", usage="%(prog)s [options]")
+    parser = argparse.ArgumentParser(prog="galaxy_converter.py", usage="%(prog)s [options]")
 
     # version
     parser.add_argument(
@@ -190,7 +204,6 @@ def convert_bco(bco, extension=None):
         if isinstance(input_obj["uri"], str):
             bco_dict["io_domain"]["input_subdomain"][index] = {"uri": input_obj}
             uri_obj = bco_dict["io_domain"]["input_subdomain"][index]
-            print(uri_obj)
         try:
             uri_obj["uri"]["access_time"] = timezone_aware(
                 uri_obj["uri"]["access_time"]

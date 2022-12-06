@@ -1,0 +1,1365 @@
+{
+    "description_domain": {
+        "keywords": [],
+        "pipeline_steps": [
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:13-04:00",
+                        "filename": "Fasta Statistics on data 41: summary stats",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=446d58d7476a4437"
+                    },
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Fasta Statistics on data 37: summary stats",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a71fb0c4ac6b0587"
+                    }
+                ],
+                "name": "ObservableHQ",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:13-04:00",
+                        "filename": "ObservableHQ on data 43 and data 39",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=491278ec358e7504"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 20,
+                "version": "0.1.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Pluck longest on data 37",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1922f2d493e33466"
+                    }
+                ],
+                "name": "Fasta Statistics",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:13-04:00",
+                        "filename": "Fasta Statistics on data 41: summary stats",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=446d58d7476a4437"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 19,
+                "version": "2.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Assembly with MEGAHIT on data 35 and data 34",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6e9616e07a70845c"
+                    }
+                ],
+                "name": "Pluck longest",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Pluck longest on data 37",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1922f2d493e33466"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 17,
+                "version": "0.0.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Assembly with MEGAHIT on data 35 and data 34",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6e9616e07a70845c"
+                    }
+                ],
+                "name": "Fasta Statistics",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Fasta Statistics on data 37: summary stats",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a71fb0c4ac6b0587"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 16,
+                "version": "2.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:11-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ2)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=990af724c5de2682"
+                    },
+                    {
+                        "access_time": "2022-10-28T23:13:11-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ1)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=943a067d1c8a0664"
+                    }
+                ],
+                "name": "MEGAHIT",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T23:13:12-04:00",
+                        "filename": "Assembly with MEGAHIT on data 35 and data 34",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6e9616e07a70845c"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 14,
+                "version": "1.1.3.5"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ2)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=990af724c5de2682"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ1)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=943a067d1c8a0664"
+                    }
+                ],
+                "name": "Zip collections",
+                "output_list": [],
+                "prerequisite": [],
+                "step_number": 12,
+                "version": "1.0.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "Filter SAM or BAM on data 26: bam",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=d1b6a58e2bdee39c"
+                    }
+                ],
+                "name": "Samtools fastx",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ2)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=990af724c5de2682"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "data 28 converted to fastqsanger (READ1)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=943a067d1c8a0664"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 10,
+                "version": "1.13"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "Map with BWA-MEM on data 23 and data 22 (mapped reads in BAM format)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=24c34284eaa86f56"
+                    }
+                ],
+                "name": "Filter SAM or BAM",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "Filter SAM or BAM on data 26: bam",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=d1b6a58e2bdee39c"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 8,
+                "version": "1.1.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:50-04:00",
+                        "filename": "fastp on data 19 and data 18",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=114fce1452adf384"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:50-04:00",
+                        "filename": "fastp on data 19 and data 18",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=235661066ab3c910"
+                    }
+                ],
+                "name": "Map with BWA-MEM",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:51-04:00",
+                        "filename": "Map with BWA-MEM on data 23 and data 22 (mapped reads in BAM format)",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=24c34284eaa86f56"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 6,
+                "version": "0.7.17.2"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:49-04:00",
+                        "filename": "SRR10971381:reverse",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a066ddab0bc032ec"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:49-04:00",
+                        "filename": "SRR10971381:forward",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=95898c5824256d19"
+                    }
+                ],
+                "name": "fastp",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:50-04:00",
+                        "filename": "fastp on data 19 and data 18: HTML report",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a881bf6779c55ecf"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:50-04:00",
+                        "filename": "fastp on data 19 and data 18",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=114fce1452adf384"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:50-04:00",
+                        "filename": "fastp on data 19 and data 18",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=235661066ab3c910"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 4,
+                "version": "0.20.1+galaxy0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:59-04:00",
+                        "filename": "JQ on data 14",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1f257a72576fe263"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:15:59-04:00",
+                        "filename": "JQ on data 14",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1f257a72576fe263"
+                    }
+                ],
+                "name": "Collapse Collection",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:59-04:00",
+                        "filename": "Collapse Collection on data 16",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=4ea4828fd762f178"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 18,
+                "version": "5.1.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:58-04:00",
+                        "filename": "433733",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=2e0ace3bf5ee8d41"
+                    }
+                ],
+                "name": "JQ",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:59-04:00",
+                        "filename": "JQ on data 14",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1f257a72576fe263"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 15,
+                "version": "1.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:00-04:00",
+                        "filename": "Unique lines on data 11",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6495eac3a08d9a4e"
+                    }
+                ],
+                "name": "NCBI efetch",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:58-04:00",
+                        "filename": "433733",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=2e0ace3bf5ee8d41"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 13,
+                "version": "0.0.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:00-04:00",
+                        "filename": "Sort on data 10",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=2127ac2d0815b001"
+                    }
+                ],
+                "name": "Unique lines",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:00-04:00",
+                        "filename": "Unique lines on data 11",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6495eac3a08d9a4e"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 11,
+                "version": "1.1.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:59-04:00",
+                        "filename": "Collapse Collection on data 9",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=9aeef2ce2af8f644"
+                    }
+                ],
+                "name": "Sort",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:15:00-04:00",
+                        "filename": "Sort on data 10",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=2127ac2d0815b001"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 9,
+                "version": "1.1.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:59-04:00",
+                        "filename": "JQ on data 7",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=15be1252cc35d932"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:14:59-04:00",
+                        "filename": "JQ on data 7",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=15be1252cc35d932"
+                    }
+                ],
+                "name": "Collapse Collection",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:59-04:00",
+                        "filename": "Collapse Collection on data 9",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=9aeef2ce2af8f644"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 7,
+                "version": "5.1.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:58-04:00",
+                        "filename": "SRR10971381",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=aebcaaa86cd4040e"
+                    }
+                ],
+                "name": "JQ",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:59-04:00",
+                        "filename": "JQ on data 7",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=15be1252cc35d932"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 5,
+                "version": "1.0"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:03-04:00",
+                        "filename": "accessions",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=9a5c0e77e75c03e2"
+                    }
+                ],
+                "name": "NCBI efetch",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:58-04:00",
+                        "filename": "SRR10971381",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=aebcaaa86cd4040e"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 3,
+                "version": "0.0.1"
+            },
+            {
+                "description": "",
+                "input_list": [
+                    {
+                        "access_time": "2022-10-28T22:14:03-04:00",
+                        "filename": "accessions",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=9a5c0e77e75c03e2"
+                    }
+                ],
+                "name": "Faster Download and Extract Reads in FASTQ",
+                "output_list": [
+                    {
+                        "access_time": "2022-10-28T22:47:49-04:00",
+                        "filename": "SRR10971381:reverse",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a066ddab0bc032ec"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:47:49-04:00",
+                        "filename": "SRR10971381:forward",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=95898c5824256d19"
+                    },
+                    {
+                        "access_time": "2022-10-28T22:14:46-04:00",
+                        "filename": "fasterq-dump log",
+                        "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=21048940f2c38e44"
+                    }
+                ],
+                "prerequisite": [],
+                "step_number": 2,
+                "version": "2.11.0+galaxy1"
+            }
+        ],
+        "platform": [
+            "Galaxy"
+        ],
+        "xref": []
+    },
+    "error_domain": {
+        "algorithmic_error": {},
+        "empirical_error": {}
+    },
+    "etag": "92afaaa2a6ba3404df60d3770326330d72dda1ca2a6142a8f6765e3ef1f5cde6",
+    "execution_domain": {
+        "environment_variables": {},
+        "external_data_endpoints": [
+            {
+                "name": "Access to Galaxy",
+                "url": "https://galaxy.hyphy.org/"
+            }
+        ],
+        "script": [
+            {
+                "uri": {
+                    "uri": "https://galaxy.hyphy.org/api/workflows?encoded_workflow_id=9752b387803d3e1e"
+                }
+            }
+        ],
+        "script_driver": "Galaxy",
+        "software_prerequisites": [
+            {
+                "name": "observable",
+                "uri": {
+                    "uri": "https://observable"
+                },
+                "version": "0.1.0"
+            },
+            {
+                "name": "fasta-stats-2",
+                "uri": {
+                    "uri": "https://fasta-stats-2"
+                },
+                "version": "2.0"
+            },
+            {
+                "name": "pluck-longest",
+                "uri": {
+                    "uri": "https://pluck-longest"
+                },
+                "version": "0.0.1"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.1.3.5",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/iuc/megahit/megahit/1.1.3.5"
+                },
+                "version": "1.1.3.5"
+            },
+            {
+                "name": "__ZIP_COLLECTION__",
+                "uri": {
+                    "uri": "https://__ZIP_COLLECTION__"
+                },
+                "version": "1.0.0"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.13",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/iuc/samtools_fastx/samtools_fastx/1.13"
+                },
+                "version": "1.13"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/jjohnson/samtools_filter/samtools_filter/1.1.1",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/jjohnson/samtools_filter/samtools_filter/1.1.1"
+                },
+                "version": "1.1.1"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.2"
+                },
+                "version": "0.7.17.2"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.20.1+galaxy0",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/0.20.1+galaxy0"
+                },
+                "version": "0.20.1+galaxy0"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/5.1.0",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/5.1.0"
+                },
+                "version": "5.1.0"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/iuc/jq/jq/1.0"
+                },
+                "version": "1.0"
+            },
+            {
+                "name": "efetch",
+                "uri": {
+                    "uri": "https://efetch"
+                },
+                "version": "0.0.1"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_uniq_tool/1.1.1"
+                },
+                "version": "1.1.1"
+            },
+            {
+                "name": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1",
+                "uri": {
+                    "uri": "https://toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1"
+                },
+                "version": "1.1.1"
+            },
+            {
+                "name": "fasterq_dump",
+                "uri": {
+                    "uri": "https://fasterq_dump"
+                },
+                "version": "2.11.0+galaxy1"
+            }
+        ]
+    },
+    "extension_domain": [
+        {
+            "extension_schema": "http://www.w3id.org/biocompute/extension_domain/1.2.0/dataset/dataset_extension.json",
+            "dataset_extension": {
+                "additional_license": {
+                    "data_license": "https://creativecommons.org/licenses/by/4.0/",
+                    "script_license": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+                },
+                "dataset_categories": [
+                    {
+                        "category_value": "SARS-CoV-2 Wuhan",
+                        "category_name": "species"
+                    },
+                    {
+                        "category_value": "non-core",
+                        "category_name": "priority"
+                    },
+                    {
+                        "category_value": "nucleotide",
+                        "category_name": "molecule"
+                    },
+                    {
+                        "category_value": "genome assembly",
+                        "category_name": "tag"
+                    },
+                    {
+                        "category_value": "fasta",
+                        "category_name": "file_type"
+                    },
+                    {
+                        "category_value": "reviewed",
+                        "category_name": "status"
+                    },
+                    {
+                        "category_value": "internal",
+                        "category_name": "scope"
+                    }
+                ]
+            }
+        },
+        {
+            "extension_schema": "https://raw.githubusercontent.com/biocompute-objects/extension_domain/1.2.0/galaxy/galaxy_extension.json",
+            "galaxy_extension": {
+                "galaxy_url": "https://galaxy.hyphy.org/",
+                "galaxy_version": "22.05.1"
+            }
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2022-10-28T14:19:05-04:00",
+                    "filename": "Accessions",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=02ebe14ed79d83d8"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "observablehq",
+                "uri": {
+                    "access_time": "2022-10-28T23:13:13-04:00",
+                    "filename": "ObservableHQ on data 43 and data 39",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=491278ec358e7504"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T23:13:13-04:00",
+                    "filename": "Fasta Statistics on data 41: summary stats",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=446d58d7476a4437"
+                }
+            },
+            {
+                "mediatype": "fasta",
+                "uri": {
+                    "access_time": "2022-10-28T23:13:12-04:00",
+                    "filename": "Pluck longest on data 37",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1922f2d493e33466"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T23:13:12-04:00",
+                    "filename": "Fasta Statistics on data 37: summary stats",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a71fb0c4ac6b0587"
+                }
+            },
+            {
+                "mediatype": "fasta",
+                "uri": {
+                    "access_time": "2022-10-28T23:13:12-04:00",
+                    "filename": "Assembly with MEGAHIT on data 35 and data 34",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6e9616e07a70845c"
+                }
+            },
+            {
+                "mediatype": "bam",
+                "uri": {
+                    "access_time": "2022-10-28T22:47:51-04:00",
+                    "filename": "Filter SAM or BAM on data 26: bam",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=d1b6a58e2bdee39c"
+                }
+            },
+            {
+                "mediatype": "bam",
+                "uri": {
+                    "access_time": "2022-10-28T22:47:51-04:00",
+                    "filename": "Map with BWA-MEM on data 23 and data 22 (mapped reads in BAM format)",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=24c34284eaa86f56"
+                }
+            },
+            {
+                "mediatype": "html",
+                "uri": {
+                    "access_time": "2022-10-28T22:47:50-04:00",
+                    "filename": "fastp on data 19 and data 18: HTML report",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=a881bf6779c55ecf"
+                }
+            },
+            {
+                "mediatype": "json",
+                "uri": {
+                    "access_time": "2022-10-28T22:15:59-04:00",
+                    "filename": "Collapse Collection on data 16",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=4ea4828fd762f178"
+                }
+            },
+            {
+                "mediatype": "json",
+                "uri": {
+                    "access_time": "2022-10-28T22:15:59-04:00",
+                    "filename": "JQ on data 14",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=1f257a72576fe263"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T22:15:00-04:00",
+                    "filename": "Unique lines on data 11",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=6495eac3a08d9a4e"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T22:15:00-04:00",
+                    "filename": "Sort on data 10",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=2127ac2d0815b001"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T22:14:59-04:00",
+                    "filename": "Collapse Collection on data 9",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=9aeef2ce2af8f644"
+                }
+            },
+            {
+                "mediatype": "tabular",
+                "uri": {
+                    "access_time": "2022-10-28T22:14:59-04:00",
+                    "filename": "JQ on data 7",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=15be1252cc35d932"
+                }
+            },
+            {
+                "mediatype": "txt",
+                "uri": {
+                    "access_time": "2022-10-28T22:14:46-04:00",
+                    "filename": "fasterq-dump log",
+                    "uri": "https://galaxy.hyphy.org/history_content?history_id=c5e4e2683b6e9022&id=21048940f2c38e44"
+                }
+            }
+        ]
+    },
+    "object_id": "https://galaxy.hyphy.org/api/invocations/90240358ebde1489/biocompute",
+    "parametric_domain": [
+        {
+            "param": "__page__",
+            "step": "20",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "20",
+            "value": "None"
+        },
+        {
+            "param": "collection",
+            "step": "20",
+            "value": "[{'__index__': 0, 'key': 'contig_stats', 'val': {'__class__': 'ConnectedValue'}}, {'__index__': 1, 'key': 'genome_stats', 'val': {'__class__': 'ConnectedValue'}}]"
+        },
+        {
+            "param": "individual",
+            "step": "20",
+            "value": "[]"
+        },
+        {
+            "param": "observable_form",
+            "step": "20",
+            "value": "stephenshank/assembly-qc"
+        },
+        {
+            "param": "__page__",
+            "step": "19",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "19",
+            "value": "None"
+        },
+        {
+            "param": "fasta",
+            "step": "19",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "gaps_option",
+            "step": "19",
+            "value": "false"
+        },
+        {
+            "param": "genome_size",
+            "step": "19",
+            "value": "None"
+        },
+        {
+            "param": "__page__",
+            "step": "17",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "17",
+            "value": "None"
+        },
+        {
+            "param": "input",
+            "step": "17",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "__page__",
+            "step": "16",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "16",
+            "value": "None"
+        },
+        {
+            "param": "fasta",
+            "step": "16",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "gaps_option",
+            "step": "16",
+            "value": "false"
+        },
+        {
+            "param": "genome_size",
+            "step": "16",
+            "value": "None"
+        },
+        {
+            "param": "__page__",
+            "step": "14",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "14",
+            "value": "None"
+        },
+        {
+            "param": "advanced_section",
+            "step": "14",
+            "value": "{'bubble_level': '2', 'kmin1pass': 'false', 'low_local_ratio': '0.2', 'merge_level': '20,0.95', 'nolocal': 'false', 'nomercy': 'false', 'prune_depth': '2', 'prune_level': '2'}"
+        },
+        {
+            "param": "basic_section",
+            "step": "14",
+            "value": "{'k_mer': {'__current_case__': 0, 'k_list': '21,29,39,59,79,99,119,141', 'k_mer_method': 'klist_method'}, 'min_count': '2'}"
+        },
+        {
+            "param": "input_option",
+            "step": "14",
+            "value": "{'__current_case__': 3, 'batchmode': {'__current_case__': 0, 'pair_input': {'__class__': 'ConnectedValue'}, 'processmode': 'individual'}, 'choice': 'paired_collection'}"
+        },
+        {
+            "param": "output_section",
+            "step": "14",
+            "value": "{'min_contig_len': '200', 'show_intermediate_contigs': 'false'}"
+        },
+        {
+            "param": "__page__",
+            "step": "12",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "12",
+            "value": "None"
+        },
+        {
+            "param": "input_forward",
+            "step": "12",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "input_reverse",
+            "step": "12",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "__page__",
+            "step": "10",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "10",
+            "value": "None"
+        },
+        {
+            "param": "copy_arb_tags",
+            "step": "10",
+            "value": ""
+        },
+        {
+            "param": "copy_tags",
+            "step": "10",
+            "value": "false"
+        },
+        {
+            "param": "exclusive_filter",
+            "step": "10",
+            "value": "['256', '2048']"
+        },
+        {
+            "param": "exclusive_filter_all",
+            "step": "10",
+            "value": "None"
+        },
+        {
+            "param": "idxout_cond",
+            "step": "10",
+            "value": "{'__current_case__': 0, 'idxout_select': 'no'}"
+        },
+        {
+            "param": "inclusive_filter",
+            "step": "10",
+            "value": "None"
+        },
+        {
+            "param": "input",
+            "step": "10",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "output_fmt_cond",
+            "step": "10",
+            "value": "{'__current_case__': 0, 'default_quality': None, 'ilumina_casava': 'false', 'output_fmt_select': 'fastqsanger', 'output_quality': 'false'}"
+        },
+        {
+            "param": "outputs",
+            "step": "10",
+            "value": "['r1', 'r2']"
+        },
+        {
+            "param": "read_numbering",
+            "step": "10",
+            "value": ""
+        },
+        {
+            "param": "__page__",
+            "step": "8",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "8",
+            "value": "None"
+        },
+        {
+            "param": "bed_file",
+            "step": "8",
+            "value": "{'__class__': 'RuntimeValue'}"
+        },
+        {
+            "param": "flag",
+            "step": "8",
+            "value": "{'__current_case__': 1, 'filter': 'yes', 'reqBits': ['0x0004', '0x0008'], 'skipBits': None}"
+        },
+        {
+            "param": "header",
+            "step": "8",
+            "value": "-h"
+        },
+        {
+            "param": "input1",
+            "step": "8",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "library",
+            "step": "8",
+            "value": ""
+        },
+        {
+            "param": "mapq",
+            "step": "8",
+            "value": "None"
+        },
+        {
+            "param": "read_group",
+            "step": "8",
+            "value": ""
+        },
+        {
+            "param": "regions",
+            "step": "8",
+            "value": ""
+        },
+        {
+            "param": "__page__",
+            "step": "6",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "6",
+            "value": "None"
+        },
+        {
+            "param": "analysis_type",
+            "step": "6",
+            "value": "{'__current_case__': 0, 'analysis_type_selector': 'illumina'}"
+        },
+        {
+            "param": "fastq_input",
+            "step": "6",
+            "value": "{'__current_case__': 2, 'fastq_input1': {'__class__': 'ConnectedValue'}, 'fastq_input_selector': 'paired_collection', 'iset_stats': ''}"
+        },
+        {
+            "param": "output_sort",
+            "step": "6",
+            "value": "coordinate"
+        },
+        {
+            "param": "reference_source",
+            "step": "6",
+            "value": "{'__current_case__': 0, 'ref_file': 'hg19_rCRS_pUC18_phiX174', 'reference_source_selector': 'cached'}"
+        },
+        {
+            "param": "rg",
+            "step": "6",
+            "value": "{'__current_case__': 3, 'rg_selector': 'do_not_set'}"
+        },
+        {
+            "param": "__page__",
+            "step": "4",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "4",
+            "value": "None"
+        },
+        {
+            "param": "filter_options",
+            "step": "4",
+            "value": "{'length_filtering_options': {'disable_length_filtering': 'false', 'length_limit': None, 'length_required': None}, 'low_complexity_filter': {'complexity_threshold': None, 'enable_low_complexity_filter': 'false'}, 'quality_filtering_options': {'disable_quality_filtering': 'false', 'n_base_limit': None, 'qualified_quality_phred': None, 'unqualified_percent_limit': None}}"
+        },
+        {
+            "param": "output_options",
+            "step": "4",
+            "value": "{'report_html': 'true', 'report_json': 'false'}"
+        },
+        {
+            "param": "overrepresented_sequence_analysis",
+            "step": "4",
+            "value": "{'overrepresentation_analysis': 'false', 'overrepresentation_sampling': None}"
+        },
+        {
+            "param": "read_mod_options",
+            "step": "4",
+            "value": "{'base_correction_options': {'correction': 'false'}, 'cutting_by_quality_options': {'cut_by_quality3': 'false', 'cut_by_quality5': 'false', 'cut_mean_quality': None, 'cut_window_size': None}, 'polyg_tail_trimming': {'__current_case__': 1, 'poly_g_min_len': None, 'trimming_select': ''}, 'polyx_tail_trimming': {'__current_case__': 1, 'polyx_trimming_select': ''}, 'umi_processing': {'umi': 'false', 'umi_len': None, 'umi_loc': '', 'umi_prefix': ''}}"
+        },
+        {
+            "param": "single_paired",
+            "step": "4",
+            "value": "{'__current_case__': 2, 'adapter_trimming_options': {'adapter_sequence1': '', 'adapter_sequence2': '', 'disable_adapter_trimming': 'false'}, 'global_trimming_options': {'trim_front1': None, 'trim_front2': None, 'trim_tail1': None, 'trim_tail2': None}, 'paired_input': {'__class__': 'ConnectedValue'}, 'single_paired_selector': 'paired_collection'}"
+        },
+        {
+            "param": "__page__",
+            "step": "18",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "18",
+            "value": "None"
+        },
+        {
+            "param": "filename",
+            "step": "18",
+            "value": "{'__current_case__': 0, 'add_name': 'true', 'place_name': 'same_once'}"
+        },
+        {
+            "param": "input_list",
+            "step": "18",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "one_header",
+            "step": "18",
+            "value": "false"
+        },
+        {
+            "param": "__page__",
+            "step": "15",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "15",
+            "value": "None"
+        },
+        {
+            "param": "filter",
+            "step": "15",
+            "value": ".TaxaSet.Taxon.Lineage"
+        },
+        {
+            "param": "input",
+            "step": "15",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "tsv",
+            "step": "15",
+            "value": "false"
+        },
+        {
+            "param": "__page__",
+            "step": "13",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "13",
+            "value": "None"
+        },
+        {
+            "param": "accession",
+            "step": "13",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "database",
+            "step": "13",
+            "value": "taxonomy"
+        },
+        {
+            "param": "email",
+            "step": "13",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "__page__",
+            "step": "11",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "11",
+            "value": "None"
+        },
+        {
+            "param": "grouping",
+            "step": "11",
+            "value": "{'__current_case__': 0, 'count': 'false', 'grouping_select': 'no', 'repeated': 'false', 'uniqueonly': 'false'}"
+        },
+        {
+            "param": "ignorecase",
+            "step": "11",
+            "value": "false"
+        },
+        {
+            "param": "infile",
+            "step": "11",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "skipfields",
+            "step": "11",
+            "value": "0"
+        },
+        {
+            "param": "__page__",
+            "step": "9",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "9",
+            "value": "None"
+        },
+        {
+            "param": "header",
+            "step": "9",
+            "value": "0"
+        },
+        {
+            "param": "ignore_case",
+            "step": "9",
+            "value": "false"
+        },
+        {
+            "param": "infile",
+            "step": "9",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "sortkeys",
+            "step": "9",
+            "value": "[{'__index__': 0, 'column': '1', 'order': '', 'style': 'n'}]"
+        },
+        {
+            "param": "unique",
+            "step": "9",
+            "value": "false"
+        },
+        {
+            "param": "__page__",
+            "step": "7",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "7",
+            "value": "None"
+        },
+        {
+            "param": "filename",
+            "step": "7",
+            "value": "{'__current_case__': 1, 'add_name': 'false'}"
+        },
+        {
+            "param": "input_list",
+            "step": "7",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "one_header",
+            "step": "7",
+            "value": "false"
+        },
+        {
+            "param": "__page__",
+            "step": "5",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "5",
+            "value": "None"
+        },
+        {
+            "param": "filter",
+            "step": "5",
+            "value": "[.EXPERIMENT_PACKAGE_SET.EXPERIMENT_PACKAGE.SAMPLE.SAMPLE_NAME.TAXON_ID]"
+        },
+        {
+            "param": "input",
+            "step": "5",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "tsv",
+            "step": "5",
+            "value": "true"
+        },
+        {
+            "param": "__page__",
+            "step": "3",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "3",
+            "value": "None"
+        },
+        {
+            "param": "accession",
+            "step": "3",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "database",
+            "step": "3",
+            "value": "sra"
+        },
+        {
+            "param": "email",
+            "step": "3",
+            "value": "{'__class__': 'ConnectedValue'}"
+        },
+        {
+            "param": "__page__",
+            "step": "2",
+            "value": "None"
+        },
+        {
+            "param": "__rerun_remap_job_id__",
+            "step": "2",
+            "value": "None"
+        },
+        {
+            "param": "adv",
+            "step": "2",
+            "value": "{'minlen': None, 'skip_technical': 'true', 'split': '--split-3'}"
+        },
+        {
+            "param": "input",
+            "step": "2",
+            "value": "{'__current_case__': 2, 'file_list': {'__class__': 'ConnectedValue'}, 'input_select': 'file_list'}"
+        },
+        {
+            "param": "optional",
+            "step": "1",
+            "value": "False"
+        },
+        {
+            "param": "parameter_type",
+            "step": "1",
+            "value": "text"
+        },
+        {
+            "param": "optional",
+            "step": "0",
+            "value": "False"
+        },
+        {
+            "param": "tag",
+            "step": "0",
+            "value": "None"
+        }
+    ],
+    "provenance_domain": {
+        "contributors": [],
+        "created": "2022-10-28T22:14:44-04:00",
+        "license": "",
+        "modified": "2022-10-28T23:13:13-04:00",
+        "name": "AssemblyQC",
+        "review": [],
+        "version": "23.0"
+    },
+    "spec_version": "https://w3id.org/ieee/ieee-2791-schema/2791object.json",
+    "usability_domain": [
+        "Assembly quality control for FDA Argos project"
+    ]
+}

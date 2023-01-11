@@ -1,0 +1,64 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "top_level: 'ref_genome_acc' is a required property",
+                "infraspecific_name: 'B.1.617.2' does not match 'isolate Wuhan-Hu-1'",
+                "lineage: '' does not match 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus'",
+                "assembled_genome_acc: '' does not match 'ARG_000001'",
+                "genome_assembly_id: 'EPI_ISL_2378732' does not match 'GCA_009858895.3'",
+                "bco_id: '' does not match 'ARGOS_000012'",
+                "schema_version: 'v1.0' does not match 'v0.9'",
+                "analysis_platform: 'Galaxy' does not match 'HIVE 1 | HIVE 2 | HIVE AWS | Galaxy'",
+                "analysis_platform_object_id: '' does not match '39658'",
+                "genomic_section: '' does not match 'PB2'",
+                "num_chromosomes: '1' does not match '8'",
+                "num_genes: '' does not match '9'",
+                "assembly_gc_content: '39.68' does not match '29,903'",
+                "length: '29886' does not match '13588'",
+                "l75: '' does not match '5'",
+                "query_coverage_against_reference: '' does not match '100'",
+                "reference_coverage_against_query: '' does not match '100'",
+                "percent_identity_against_reference: '' does not match '100'",
+                "percent_reads_unaligned: '' does not match '1570000'",
+                "assembly_type: '' does not match 'Haploid '",
+                "assembly_level: '' does not match 'Complete Genome'",
+                "assembly_score: '' does not match '33'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "top_level: 'ref_genome_acc' is a required property",
+                "infraspecific_name: 'B.1.1.52' does not match 'isolate Wuhan-Hu-1'",
+                "lineage: '' does not match 'Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus'",
+                "assembled_genome_acc: '' does not match 'ARG_000001'",
+                "genome_assembly_id: 'EPI_ISL_6913953' does not match 'GCA_009858895.3'",
+                "bco_id: '' does not match 'ARGOS_000012'",
+                "schema_version: 'v1.0' does not match 'v0.9'",
+                "analysis_platform: 'Galaxy' does not match 'HIVE 1 | HIVE 2 | HIVE AWS | Galaxy'",
+                "analysis_platform_object_id: '' does not match '39658'",
+                "genomic_section: '' does not match 'PB2'",
+                "num_chromosomes: '1' does not match '8'",
+                "num_genes: '' does not match '9'",
+                "assembly_gc_content: '40.92' does not match '29,903'",
+                "length: '29752' does not match '13588'",
+                "l75: '' does not match '5'",
+                "query_coverage_against_reference: '' does not match '100'",
+                "reference_coverage_against_query: '' does not match '100'",
+                "percent_identity_against_reference: '' does not match '100'",
+                "percent_reads_unaligned: '' does not match '1570000'",
+                "assembly_type: '' does not match 'Haploid '",
+                "assembly_level: '' does not match 'Complete Genome'",
+                "assembly_score: '' does not match '33'"
+            ],
+            "line_number": 2
+        }
+    ],
+    "input": "tests/v1.1/test_files/assemblyQC-Pond.tsv",
+    "lines": 2,
+    "schema": "schema/v1.1/core/assemblyQC.json",
+    "summary": "2 lines failed out of 2."
+}

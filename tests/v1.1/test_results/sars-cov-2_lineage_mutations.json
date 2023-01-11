@@ -1,0 +1,790 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '69' does not match '67'",
+                "end_aa_pos: '69' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '69' does not match '67'",
+                "ref_motif: 'H' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '70' does not match '67'",
+                "end_aa_pos: '70' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '70' does not match '67'",
+                "ref_motif: 'V' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '95' does not match '67'",
+                "end_aa_pos: '95' does not match '67'",
+                "motif_start: '95' does not match '67'",
+                "ref_motif: 'T' does not match 'A'",
+                "alt_motif: 'I' does not match 'V'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '142' does not match '67'",
+                "end_aa_pos: '142' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '142' does not match '67'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '143' does not match '67'",
+                "end_aa_pos: '143' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '143' does not match '67'",
+                "ref_motif: 'V' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '144' does not match '67'",
+                "end_aa_pos: '144' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '144' does not match '67'",
+                "ref_motif: 'Y' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '145' does not match '67'",
+                "end_aa_pos: '145' does not match '67'",
+                "motif_start: '145' does not match '67'",
+                "ref_motif: 'Y' does not match 'A'",
+                "alt_motif: 'D' does not match 'V'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '211' does not match '67'",
+                "end_aa_pos: '211' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "motif_start: '211' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '212' does not match '67'",
+                "end_aa_pos: '212' does not match '67'",
+                "motif_start: '212' does not match '67'",
+                "ref_motif: 'L' does not match 'A'",
+                "alt_motif: 'I' does not match 'V'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '339' does not match '67'",
+                "end_aa_pos: '339' does not match '67'",
+                "motif_start: '339' does not match '67'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: 'D' does not match 'V'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '371' does not match '67'",
+                "end_aa_pos: '371' does not match '67'",
+                "motif_start: '371' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: 'L' does not match 'V'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '373' does not match '67'",
+                "end_aa_pos: '373' does not match '67'",
+                "motif_start: '373' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: 'P' does not match 'V'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '375' does not match '67'",
+                "end_aa_pos: '375' does not match '67'",
+                "motif_start: '375' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: 'F' does not match 'V'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '417' does not match '67'",
+                "end_aa_pos: '417' does not match '67'",
+                "motif_start: '417' does not match '67'",
+                "ref_motif: 'K' does not match 'A'",
+                "alt_motif: 'N' does not match 'V'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '440' does not match '67'",
+                "end_aa_pos: '440' does not match '67'",
+                "motif_start: '440' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '446' does not match '67'",
+                "end_aa_pos: '446' does not match '67'",
+                "motif_start: '446' does not match '67'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: 'S' does not match 'V'"
+            ],
+            "line_number": 17
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '477' does not match '67'",
+                "end_aa_pos: '477' does not match '67'",
+                "motif_start: '477' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: 'N' does not match 'V'"
+            ],
+            "line_number": 18
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '478' does not match '67'",
+                "end_aa_pos: '478' does not match '67'",
+                "motif_start: '478' does not match '67'",
+                "ref_motif: 'T' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 19
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '484' does not match '67'",
+                "end_aa_pos: '484' does not match '67'",
+                "motif_start: '484' does not match '67'",
+                "ref_motif: 'E' does not match 'A'",
+                "alt_motif: 'A' does not match 'V'"
+            ],
+            "line_number": 20
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '493' does not match '67'",
+                "end_aa_pos: '493' does not match '67'",
+                "motif_start: '493' does not match '67'",
+                "ref_motif: 'Q' does not match 'A'",
+                "alt_motif: 'R' does not match 'V'"
+            ],
+            "line_number": 21
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '496' does not match '67'",
+                "end_aa_pos: '496' does not match '67'",
+                "motif_start: '496' does not match '67'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: 'S' does not match 'V'"
+            ],
+            "line_number": 22
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '498' does not match '67'",
+                "end_aa_pos: '498' does not match '67'",
+                "motif_start: '498' does not match '67'",
+                "ref_motif: 'Q' does not match 'A'",
+                "alt_motif: 'R' does not match 'V'"
+            ],
+            "line_number": 23
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '501' does not match '67'",
+                "end_aa_pos: '501' does not match '67'",
+                "motif_start: '501' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'Y' does not match 'V'"
+            ],
+            "line_number": 24
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '505' does not match '67'",
+                "end_aa_pos: '505' does not match '67'",
+                "motif_start: '505' does not match '67'",
+                "ref_motif: 'Y' does not match 'A'",
+                "alt_motif: 'H' does not match 'V'"
+            ],
+            "line_number": 25
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '547' does not match '67'",
+                "end_aa_pos: '547' does not match '67'",
+                "motif_start: '547' does not match '67'",
+                "ref_motif: 'T' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 26
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '614' does not match '67'",
+                "end_aa_pos: '614' does not match '67'",
+                "motif_start: '614' does not match '67'",
+                "ref_motif: 'D' does not match 'A'",
+                "alt_motif: 'G' does not match 'V'"
+            ],
+            "line_number": 27
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '655' does not match '67'",
+                "end_aa_pos: '655' does not match '67'",
+                "motif_start: '655' does not match '67'",
+                "ref_motif: 'H' does not match 'A'",
+                "alt_motif: 'Y' does not match 'V'"
+            ],
+            "line_number": 28
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 29
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '681' does not match '67'",
+                "end_aa_pos: '681' does not match '67'",
+                "motif_start: '681' does not match '67'",
+                "ref_motif: 'P' does not match 'A'",
+                "alt_motif: 'H' does not match 'V'"
+            ],
+            "line_number": 30
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '764' does not match '67'",
+                "end_aa_pos: '764' does not match '67'",
+                "motif_start: '764' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 31
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '796' does not match '67'",
+                "end_aa_pos: '796' does not match '67'",
+                "motif_start: '796' does not match '67'",
+                "ref_motif: 'D' does not match 'A'",
+                "alt_motif: 'Y' does not match 'V'"
+            ],
+            "line_number": 32
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '856' does not match '67'",
+                "end_aa_pos: '856' does not match '67'",
+                "motif_start: '856' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 33
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '954' does not match '67'",
+                "end_aa_pos: '954' does not match '67'",
+                "motif_start: '954' does not match '67'",
+                "ref_motif: 'Q' does not match 'A'",
+                "alt_motif: 'H' does not match 'V'"
+            ],
+            "line_number": 34
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '969' does not match '67'",
+                "end_aa_pos: '969' does not match '67'",
+                "motif_start: '969' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 35
+        },
+        {
+            "failed_cells": [
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "begin_aa_pos: '981' does not match '67'",
+                "end_aa_pos: '981' does not match '67'",
+                "motif_start: '981' does not match '67'",
+                "ref_motif: 'L' does not match 'A'",
+                "alt_motif: 'F' does not match 'V'"
+            ],
+            "line_number": 36
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '13' does not match '67'",
+                "end_aa_pos: '13' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '13' does not match '67'",
+                "ref_motif: 'P' does not match 'A'",
+                "alt_motif: 'L' does not match 'V'"
+            ],
+            "line_number": 37
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '31' does not match '67'",
+                "end_aa_pos: '31' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '31' does not match '67'",
+                "ref_motif: 'E' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 38
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '32' does not match '67'",
+                "end_aa_pos: '32' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '32' does not match '67'",
+                "ref_motif: 'R' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 39
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '33' does not match '67'",
+                "end_aa_pos: '33' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '33' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 40
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '203' does not match '67'",
+                "end_aa_pos: '203' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '203' does not match '67'",
+                "ref_motif: 'R' does not match 'A'",
+                "alt_motif: 'K' does not match 'V'"
+            ],
+            "line_number": 41
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC9-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'N' does not match 'S'",
+                "protein_name: 'Nucleoprotein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '204' does not match '67'",
+                "end_aa_pos: '204' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '204' does not match '67'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: 'R' does not match 'V'"
+            ],
+            "line_number": 42
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '856' does not match '67'",
+                "end_aa_pos: '856' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '856' does not match '67'",
+                "ref_motif: 'K' does not match 'A'",
+                "alt_motif: 'R' does not match 'V'"
+            ],
+            "line_number": 43
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '2083' does not match '67'",
+                "end_aa_pos: '2083' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '2083' does not match '67'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 44
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '2084' does not match '67'",
+                "end_aa_pos: '2084' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '2084' does not match '67'",
+                "ref_motif: 'L' does not match 'A'",
+                "alt_motif: 'I' does not match 'V'"
+            ],
+            "line_number": 45
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '2710' does not match '67'",
+                "end_aa_pos: '2710' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '2710' does not match '67'",
+                "alt_motif: 'T' does not match 'V'"
+            ],
+            "line_number": 46
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '3255' does not match '67'",
+                "end_aa_pos: '3255' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '3255' does not match '67'",
+                "ref_motif: 'T' does not match 'A'",
+                "alt_motif: 'I' does not match 'V'"
+            ],
+            "line_number": 47
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '3395' does not match '67'",
+                "end_aa_pos: '3395' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '3395' does not match '67'",
+                "ref_motif: 'P' does not match 'A'",
+                "alt_motif: 'H' does not match 'V'"
+            ],
+            "line_number": 48
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "ref_motif: 'L' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 49
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "ref_motif: 'S' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 50
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "ref_motif: 'G' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 51
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '3758' does not match '67'",
+                "end_aa_pos: '3758' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '3758' does not match '67'",
+                "ref_motif: 'I' does not match 'A'"
+            ],
+            "line_number": 52
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '4720' does not match '67'",
+                "end_aa_pos: '4720' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '4720' does not match '67'",
+                "ref_motif: 'P' does not match 'A'",
+                "alt_motif: 'L' does not match 'V'",
+                "note: '314 (in ORF1b)' does not match '-'"
+            ],
+            "line_number": 53
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD1-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'rep 1a-1b' does not match 'S'",
+                "protein_name: 'Replicase polyprotein 1ab' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '5970' does not match '67'",
+                "end_aa_pos: '5970' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '5970' does not match '67'",
+                "ref_motif: 'I' does not match 'A'",
+                "note: '1566 (in ORF1b)' does not match '-'"
+            ],
+            "line_number": 54
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD2-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: '9b' does not match 'S'",
+                "protein_name: 'ORF9b protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '10' does not match '67'",
+                "end_aa_pos: '10' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '10' does not match '67'",
+                "ref_motif: 'P' does not match 'A'",
+                "alt_motif: 'S' does not match 'V'"
+            ],
+            "line_number": 55
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD2-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: '9b' does not match 'S'",
+                "protein_name: 'ORF9b protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '27' does not match '67'",
+                "end_aa_pos: '27' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '27' does not match '67'",
+                "ref_motif: 'E' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 56
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD2-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: '9b' does not match 'S'",
+                "protein_name: 'ORF9b protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '28' does not match '67'",
+                "end_aa_pos: '28' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '28' does not match '67'",
+                "ref_motif: 'N' does not match 'A'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 57
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTD2-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: '9b' does not match 'S'",
+                "protein_name: 'ORF9b protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '29' does not match '67'",
+                "end_aa_pos: '29' does not match '67'",
+                "mutation_type: 'deletion' does not match 'missense'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '29' does not match '67'",
+                "alt_motif: '-' does not match 'V'"
+            ],
+            "line_number": 58
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC4-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'E' does not match 'S'",
+                "protein_name: 'Envelope small membrane protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '9' does not match '67'",
+                "end_aa_pos: '9' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '9' does not match '67'",
+                "ref_motif: 'T' does not match 'A'",
+                "alt_motif: 'I' does not match 'V'"
+            ],
+            "line_number": 59
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC5-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'M' does not match 'S'",
+                "protein_name: 'Membrane protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '3' does not match '67'",
+                "end_aa_pos: '3' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '3' does not match '67'",
+                "ref_motif: 'D' does not match 'A'",
+                "alt_motif: 'G' does not match 'V'"
+            ],
+            "line_number": 60
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC5-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'M' does not match 'S'",
+                "protein_name: 'Membrane protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '19' does not match '67'",
+                "end_aa_pos: '19' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '19' does not match '67'",
+                "ref_motif: 'Q' does not match 'A'",
+                "alt_motif: 'E' does not match 'V'"
+            ],
+            "line_number": 61
+        },
+        {
+            "failed_cells": [
+                "uniprotkb_canonical_ac: 'P0DTC5-1' does not match 'P0DTC2-1'",
+                "found_in: 'Omicron (21K, BA.1)' does not match 'Omicron (21K, BA.1)'",
+                "gene_name: 'M' does not match 'S'",
+                "protein_name: 'Membrane protein' does not match 'Spike glycoprotein'",
+                "begin_aa_pos: '63' does not match '67'",
+                "end_aa_pos: '63' does not match '67'",
+                "is_known_glycoprotein: 'no' does not match 'yes'",
+                "motif_start: '63' does not match '67'",
+                "alt_motif: 'T' does not match 'V'"
+            ],
+            "line_number": 62
+        }
+    ],
+    "input": "tests/v1.1/test_files/sars-cov-2_lineage_mutations.tsv",
+    "lines": 62,
+    "schema": "schema/v1.1/non-core/sars-cov-2_lineage_mutations.json",
+    "summary": "62 lines failed out of 62."
+}

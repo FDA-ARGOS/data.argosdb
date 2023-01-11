@@ -1,0 +1,206 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC4' does not match '-'",
+                "entry_name: 'VEMP_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Envelope small membrane protein (E) (sM protein)' does not match '-'",
+                "gene_names: 'E 4' does not match '-'",
+                "length: '75' does not match '-'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTD1' does not match '-'",
+                "entry_name: 'R1AB_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "length: '7096' does not match '-'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTF1' does not match '-'",
+                "entry_name: 'ORF3B_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Putative ORF3b protein (ORF3b)' does not match '-'",
+                "gene_names: '' does not match '-'",
+                "length: '22' does not match '-'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC5' does not match '-'",
+                "entry_name: 'VME1_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Membrane protein (M) (E1 glycoprotein) (Matrix glycoprotein) (Membrane glycoprotein)' does not match '-'",
+                "gene_names: 'M' does not match '-'",
+                "length: '222' does not match '-'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC3' does not match '-'",
+                "entry_name: 'AP3A_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'ORF3a protein (ORF3a) (Accessory protein 3a) (Protein 3a) (Protein U274) (Protein X1)' does not match '-'",
+                "gene_names: '3a' does not match '-'",
+                "length: '275' does not match '-'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC8' does not match '-'",
+                "entry_name: 'NS8_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "gene_names: '8' does not match '-'",
+                "length: '121' does not match '-'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC9' does not match '-'",
+                "entry_name: 'NCAP_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Nucleoprotein (N) (Nucleocapsid protein) (NC) (Protein N)' does not match '-'",
+                "gene_names: 'N' does not match '-'",
+                "length: '419' does not match '-'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC6' does not match '-'",
+                "entry_name: 'NS6_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "gene_names: '6' does not match '-'",
+                "length: '61' does not match '-'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC7' does not match '-'",
+                "entry_name: 'NS7A_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'ORF7a protein (ORF7a) (Accessory protein 7a) (Protein U122) (Protein X4)' does not match '-'",
+                "gene_names: '7a' does not match '-'",
+                "length: '121' does not match '-'"
+            ],
+            "line_number": 9
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTD8' does not match '-'",
+                "entry_name: 'NS7B_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'ORF7b protein (ORF7b) (Accessory protein 7b)' does not match '-'",
+                "gene_names: '7b' does not match '-'",
+                "length: '43' does not match '-'"
+            ],
+            "line_number": 10
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTD2' does not match '-'",
+                "entry_name: 'ORF9B_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "gene_names: '9b' does not match '-'",
+                "length: '97' does not match '-'"
+            ],
+            "line_number": 11
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTG0' does not match '-'",
+                "entry_name: 'ORF3D_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Putative ORF3d protein' does not match '-'",
+                "gene_names: '' does not match '-'",
+                "length: '57' does not match '-'"
+            ],
+            "line_number": 12
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTD3' does not match '-'",
+                "entry_name: 'ORF9C_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'Putative ORF9c protein (ORF9c) (Uncharacterized protein 14) (ORF14)' does not match '-'",
+                "gene_names: '9c' does not match '-'",
+                "length: '73' does not match '-'"
+            ],
+            "line_number": 13
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC1' does not match '-'",
+                "entry_name: 'R1A_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "gene_names: '' does not match '-'",
+                "length: '4405' does not match '-'"
+            ],
+            "line_number": 14
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTC2' does not match '-'",
+                "entry_name: 'SPIKE_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: \"Spike glycoprotein (S glycoprotein) (E2) (Peplomer protein) [Cleaved into: Spike protein S1; Spike protein S2; Spike protein S2']\" does not match '-'",
+                "gene_names: 'S 2' does not match '-'",
+                "length: '1273' does not match '-'"
+            ],
+            "line_number": 15
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'P0DTG1' does not match '-'",
+                "entry_name: 'ORF3C_SARS2' does not match '-'",
+                "status: 'reviewed' does not match '-'",
+                "protein_names: 'ORF3c protein (ORF3c) (ORF3h protein) (ORF3h)' does not match '-'",
+                "gene_names: '' does not match '-'",
+                "length: '41' does not match '-'"
+            ],
+            "line_number": 16
+        },
+        {
+            "failed_cells": [
+                "top_level: 'organism_name' is a required property",
+                "uniprotkb_ac: 'A0A663DJA2' does not match '-'",
+                "entry_name: 'A0A663DJA2_SARS2' does not match '-'",
+                "status: 'unreviewed' does not match '-'",
+                "protein_names: 'ORF10 protein' does not match '-'",
+                "gene_names: 'ORF10 orf10' does not match '-'",
+                "length: '38' does not match '-'"
+            ],
+            "line_number": 17
+        }
+    ],
+    "input": "tests/v1.1/test_files/uniprot-proteome_UP000464024.csv",
+    "lines": 17,
+    "schema": "schema/v1.1/non-core/uniprot-proteome_*.json",
+    "summary": "17 lines failed out of 17."
+}

@@ -2,6 +2,7 @@
 #
 # Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE
 
+
 WORKING_DIR=biosample_$(date "+%Y%m%d_%H%M%S")
 mkdir -p $WORKING_DIR
 

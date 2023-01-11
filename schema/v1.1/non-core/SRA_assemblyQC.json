@@ -1,0 +1,119 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.0/schema/v1.1/non-core/SRA_assemblyQC.tsv",
+    "title": "SRA_assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "genome_assembly_id",
+        "assembly_level",
+        "num_chromosomes",
+        "biosample",
+        "strain",
+        "organism_name",
+        "bioproject",
+        "taxonomy_id",
+        "lineage"
+    ],
+    "properties": {
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Assembly DB identifier (Example: NCBI assembly accession)",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "GCA_013267415.1"
+        },
+        "assembly_level": {
+            "$id": "#root/assembly_level",
+            "title": "assembly_level",
+            "description": "The highest level of assembly for any object in the assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "undefined"
+        },
+        "num_chromosomes": {
+            "$id": "#root/num_chromosomes",
+            "title": "num_chromosomes",
+            "description": "Total number of chromosomes in the genome assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "1"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SAMN11056500"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "microbial or eukaryotic strain name",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "FDAARGOS_785"
+        },
+        "organism_name": {
+            "$id": "#root/Taxonomy Name",
+            "title": "Taxonomy Name",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Abiotrophia defectiva"
+        },
+        "bioproject": {
+            "$id": "#root/BioPproject",
+            "title": "BioPproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "PRJNA231221"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "46125"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia"
+        }
+    }
+}

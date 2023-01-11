@@ -38,6 +38,11 @@ def usr_args():
         required=True,
         help="Input file. The input file should be a collection of SRS XML \
             files.")
+
+    parser.add_argument('-l', '--lineage_file',
+        required=True,
+        help="Lineage file, in text format.")
+
     parser.add_argument('-o', '--output',
         help="Output file. If no output is provided, the resulting table will \
             be output to the terminal.")
@@ -46,7 +51,7 @@ def usr_args():
 
     return parser.parse_args()
 
-def parse_xml( xml_file, samples):
+def parse_xml(xml_file, lineage_file, samples):
     """Parse XML file
 
     Parameters
@@ -62,12 +67,14 @@ def parse_xml( xml_file, samples):
         dictionary of samples
     """
 
-    biosample_id = sra_id = strain = organism_name = sample_name \
-        = ncbi_taxonomy_id = isolate = collected_by = collection_date \
+    organism_name = lineage = taxonomy_id = bco_id \
+        = schema_version = bioproject = biosample \
+        = strain = genome_assembly_id = sample_name \
+        = instrument = isolate = collected_by = collection_date \
         = geo_loc_name = isolation_source = lat_lon = culture_collection = host\
-        = host_age = host_description = host_disease = host_disease_outcome = \
-        host_disease_stage = host_health_state = host_sex \
-        = identification_method = type_material = '-'
+        = host_age = host_description = host_disease = host_disease_outcome \
+        = host_disease_stage = host_health_state = host_sex \
+        = id_method = biosample_score = '-'
 
     # create element tree object and get root element
     root = ET.parse(xml_file).getroot()
@@ -80,8 +87,12 @@ def parse_xml( xml_file, samples):
                 if 'db_label' in feature.attrib.keys():
                     sample_name = feature.text
                 if feature.tag == 'Organism':
-                    ncbi_taxonomy_id = feature.attrib['taxonomy_id']
+                    taxonomy_id = feature.attrib['taxonomy_id']
                     organism_name = feature.attrib['taxonomy_name']
+        # Get lineage
+        with open(lineage_file, 'r') as lin_file:
+            lineage = lin_file.readline().rstrip('\n')
+        # Extract other attributes from XML
         for attribute in biosample.findall('./Attributes/'):
             if attribute.attrib['attribute_name'] == 'strain':
                 strain = attribute.text
@@ -116,16 +127,17 @@ def parse_xml( xml_file, samples):
             if attribute.attrib['attribute_name'] == 'host_sex':
                 host_sex = attribute.text
             if attribute.attrib['attribute_name'] == 'identification method':
-                identification_method = attribute.text
+                id_method = attribute.text
             if attribute.attrib['attribute_name'] == 'type-material':
                 type_material = attribute.text
 
-        samples[biosample_id] = [sra_id, organism_name, strain, sample_name, \
-            ncbi_taxonomy_id, isolate, collected_by, collection_date, \
+        samples[biosample_id] = [organism_name, lineage, taxonomy_id, bco_id, \
+            schema_version, bioproject, biosample_id, strain, genome_assembly_id, \
+            sample_name, instrument, isolate, collected_by, collection_date, \
             geo_loc_name, isolation_source, lat_lon, culture_collection, host,\
             host_age, host_description, host_disease, host_disease_outcome, \
             host_disease_stage, host_health_state, host_sex, \
-            identification_method, type_material]
+            id_method, biosample_score]
 
     return samples
 
@@ -152,7 +164,8 @@ def sample_output( samples, header, output):
             writer = csv.writer(file, header, delimiter='\t')
             writer.writerow(header)
             for key in samples:
-                row = [key]
+                #row = [key] # biosample_id is no longer first in order
+                row = []
                 for item in range(len(samples[key])):
                     row.append(samples[key][item])
                 writer.writerow(row)
@@ -160,21 +173,22 @@ def sample_output( samples, header, output):
     else:
         print('\t'.join(item for item in header))
         for run in samples:
-            print(run + '\t' + '\t'.join(str(item) for item in samples[run]))
+            print('\t'.join(str(item) for item in samples[run]))
 
 def main():
     """Main Fuunction
     """
     samples = {}
-    header = ['biosample_id', 'sra_id', 'organism_name', 'strain', \
-        'sample_name', 'ncbi_taxonomy_id', 'isolate', 'collected_by',\
+    header = ['organism_name', 'lineage', 'taxonomy_id', 'bco_id', \
+        'schema_version', 'bioproject', 'biosample', 'strain', \
+        'genome_assembly_id', 'sample_name', 'instrument', 'isolate', 'collected_by',\
         'collection_date', 'geo_loc_name', 'isolation_source', 'lat_lon',\
         'culture_collection', 'host', 'host_age', 'host_description', \
         'host_disease', 'host_disease_outcome', 'host_disease_stage',\
-        'host_health_state', 'host_sex', 'identification_method',\
-        'type_material']
+        'host_health_state', 'host_sex', 'id_method',\
+        'biosample_score']
     args = usr_args()
-    parse_xml(args.file, samples)
+    parse_xml(args.file, args.lineage_file, samples)
     sample_output(samples, header, args.output)
 
 if __name__ == "__main__":

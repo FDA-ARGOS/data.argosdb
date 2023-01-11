@@ -1,33 +1,48 @@
 #!/bin/bash 
+#
+# Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE
+
 
 WORKING_DIR=biosample_$(date "+%Y%m%d_%H%M%S")
 mkdir -p $WORKING_DIR
 
-# # Retrieve biosample metadata
-echo Retrieving biosample metadata for $1
-./efetch_biosample_meta.sh $1 > $WORKING_DIR/biosample_meta_$1.xml
+while getopts "f:" opt; do
+  case $opt in
+    f | file)
+      sampleidfile=$OPTARG
+      ;;
+  esac
+done
 
-# parse metadata
-echo Parsing XML biosample metadata to create tsv
-python3 ./sra_sample_parser.py -f $WORKING_DIR/biosample_meta_$1.xml > $WORKING_DIR/biosample_meta_$1.tsv
+# Read sample id file into an array
+IDLINES=($(cat $sampleidfile))
 
-# # Retrieve all run IDs from an ARGOS BioSample
-echo Retrieving run data associated with biosample $1
-./efetch_biosample_runs.sh $1 > $WORKING_DIR/biosample_runs_$1.xml
+for biosample_id in ${IDLINES[@]}
+do
+  echo "Retrieving biosample metadata for $biosample_id"
+  # Retrieve biosample metadata
+  esearch -db biosample -query $biosample_id | efetch -format xml > $WORKING_DIR/biosample_meta_$biosample_id.xml
+  # Retrieve lineage
+  echo "...Retrieving lineage"
+  esearch -db biosample -query $biosample_id | elink -target taxonomy | efetch -format xml > $WORKING_DIR/biosample_lineage_$biosample_id.xml
+  # converting lineage to text
+  xmllint --xpath 'string(//Lineage)' $WORKING_DIR/biosample_lineage_$biosample_id.xml > $WORKING_DIR/biosample_lineage_$biosample_id.txt
+  # parse metadata
+  echo ...Parsing XML biosample metadata to create tsv
+  python3 ./sra_sample_parser.py -f $WORKING_DIR/biosample_meta_$biosample_id.xml -l $WORKING_DIR/biosample_lineage_$biosample_id.txt > $WORKING_DIR/biosample_meta_$biosample_id.tsv
+done 
 
-# Get experiment IDs list
-echo Parsing run data to extract run IDs
-python3 ./xml_feature_parser.py -f $WORKING_DIR/biosample_runs_$1.xml -o $WORKING_DIR/biosample_runlist_$1.txt
+echo Biosample metadata files are located at $WORKING_DIR
+ 
+TSVFILENAME=$WORKING_DIR/${WORKING_DIR}_meta_combined.tsv
 
-# Fetch experiment info based on run list, place in $WORKING_DIR/biosample_runs_$1
-echo Fetching experiment metadata assoicated with each run ID
-./eutils_SRAfetch_experiments.sh $WORKING_DIR/biosample_runlist_$1.txt $WORKING_DIR/biosample_runs_$1 
-# Parse experiment info
-echo Parsing experiment metadata XMLs to create tsv with metadata from runs
-python3 ./sra_run_parser.py -d $WORKING_DIR/biosample_runs_$1/ > $WORKING_DIR/biosample_run_$1.tsv
+echo Adding header line
+head -n 1 $WORKING_DIR/biosample_meta_${IDLINES[0]}.tsv > $TSVFILENAME
 
-# Merge TSV files
-echo Merging biosample metadata and run metadata tsv files
-python3 ./biosample_tsv_join.py -m $WORKING_DIR/biosample_meta_$1.tsv -r $WORKING_DIR/biosample_run_$1.tsv -o $WORKING_DIR/biosample_complete_$1.tsv
+echo looping through lines
+for biosample_id in ${IDLINES[@]}
+do
+   tail -n +2 $WORKING_DIR/biosample_meta_$biosample_id.tsv >> $TSVFILENAME
+done
 
-echo Biosample metadata tsv file is located at $WORKING_DIR/biosample_complete_$1.tsv
+echo Combined tsv file is located at $TSVFILENAME

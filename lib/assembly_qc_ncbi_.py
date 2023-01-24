@@ -251,12 +251,12 @@ def stats_report(stats_ftp, assembly_stats):
                 count += 1
                 assembly_stats[row[0]] = ['-', infraspecific_name, genbank_assembly_id, '-', '-',
                     '-', '-', '-', '-', '-', row[0], '-', '-', '-', '-', '-',
-                    '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
+                    '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
             else:
                 count += 1
                 assembly_stats[row[6]] = ['-', infraspecific_name, genbank_assembly_id, '-', '-',
                     '-', '-', '-', '-', '-', row[0], '-', '-', '-', '-', '-',
-                    '-', '-', '-', '-', '-', '-', refseq_assembly_id, '-', '-', '-', '-', '-']
+                    '-', '-', '-', '-', '-', '-', refseq_assembly_id, '-', '-', '-', '-', '-', '-', '-']
 
     with open('home/assembly/stats/' + stats_file, 'r', encoding='utf8') as statfile:
         genome_tsv = csv.reader(statfile, delimiter="\t")
@@ -318,10 +318,13 @@ def get_lineage(taxonomy_id):
         NCBI Taxonomy identifier
     """
     Entrez.email = "hadley_king@gwu.edu"
-    Entrez.api_key = os.getenv('NCBI_API_KEY')
-    handle = Entrez.efetch(db="taxonomy", id=taxonomy_id)
-    record = Entrez.read(handle)
-    return record[0]['Lineage']
+    try:
+        Entrez.api_key = os.getenv('NCBI_API_KEY')
+        handle = Entrez.efetch(db="taxonomy", id=taxonomy_id)
+        record = Entrez.read(handle)
+        return record[0]['Lineage']
+    except Exception as error:
+        return f"Error retrieving lineage for {taxonomy_id}. {error}"
 
 def sample_output( samples, header, output):
     """Sample Output
@@ -370,7 +373,8 @@ def main():
         'length', 'genome_coverage', 'n50', 'n75', 'n90', 'l50', 'l75', \
         'ref_genome_acc', 'query_coverage_against_reference', \
         'percent_identity_against_reference', 'percent_reads_unaligned', \
-        'assembly_type', 'assembly_level']
+        'assembly_type', 'assembly_level', 'assembly_score', \
+        'reference_coverage_against_query']
 
     args = usr_args()
     if args.input == 'api':

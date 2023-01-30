@@ -14,6 +14,8 @@ import xml.etree.ElementTree as ET
 __version__ = "0.1.0"
 __status__ = "Beta"
 
+PLACEHOLDER_CHAR = ''
+
 def usr_args():
     """Program Arguments
 
@@ -74,7 +76,7 @@ def parse_xml(xml_file, lineage_file, samples):
         = geo_loc_name = isolation_source = lat_lon = culture_collection = host\
         = host_age = host_description = host_disease = host_disease_outcome \
         = host_disease_stage = host_health_state = host_sex \
-        = id_method = biosample_score = '-'
+        = id_method = biosample_score = PLACEHOLDER_CHAR
 
     # create element tree object and get root element
     root = ET.parse(xml_file).getroot()

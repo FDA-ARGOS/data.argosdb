@@ -1,0 +1,1116 @@
+README Summary for Data Dictionary V1.2					
+"- In 'data_files' column: '*' implies all files in that data set category from Mazumder, Pond, and Crandall Labs."					
+					
+Summary of V1.2 Changes in Property Definition List:					
+Term	Action 	Affected Datasets 			
+Edits to Column Headers:					
+NA					
+Edits to Terms:					
+num_of_frameshifts	New term added. Supporting information included.	assemblyQC.tsv | assemblyQC_NCBI.tsv			
+num_of_stop_codons	New term added. Supporting information included.	assemblyQC.tsv | assemblyQC_NCBI.tsv			
+taxonomy_id	data_files column updated. Datasets were removed. 	SRA_ngsQC.tsv | SRA_assemblyQC.tsv			
+lineage	data_files column updated. Datasets were removed. 	SRA_ngsQC.tsv | SRA_assemblyQC.tsv			
+bioproject	data_files column updated. Datasets were removed. 	SRA_ngsQC.tsv | SRA_assemblyQC.tsv			
+biosample	data_files column updated. Datasets were removed. 	SRA_ngsQC.tsv | SRA_assemblyQC.tsv			
+sra_run_id	data_files column updated. Dataset was removed. 	SRA_ngsQC.tsv			
+source	data_files column updated. Dataset was removed. 	SRA_ngsQC.tsv			
+strategy	data_files column updated. Dataset was removed. 	SRA_ngsQC.tsv			
+instrument	data_files column updated. Dataset was removed. 	SRA_ngsQC.tsv			
+sra_experiment_id	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+num_of_bases	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+file_size	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+published	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+layout	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+library_name	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+selection	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+file_type	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+identified_reads	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+percent_identified	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+gc_content	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+reads_unaligned	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_ngsQC.tsv			
+organism_name	data_files column updated. Dataset was removed. 	SRA_assemblyQC.tsv			
+genome_assembly_id	data_files column updated. Dataset was removed. 	SRA_assemblyQC.tsv			
+num_chromosomes	data_files column updated. Dataset was removed. 	SRA_assemblyQC.tsv			
+strain	data_files column updated. Dataset was removed. 	SRA_assemblyQC.tsv			
+assembly_level	data_files column updated. Dataset was removed. 	SRA_assemblyQC.tsv			
+level	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_assemblyQC.tsv			
+biosample	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_assemblyQC.tsv			
+bioproject	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_assemblyQC.tsv			
+taxonomy_id	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_assemblyQC.tsv			
+lineage	Term and dataset were removed from Data Dictionary. Term was exclusive to the removed dataset. 	SRA_assemblyQC.tsv			
+					
+					
+Summary of V1.2 Changes in CORE Property List and associated data sets:					
+Term	Action 	Affected Datasets 			
+Edits to Column Headers:					
+NA					
+Edits to Terms (Also Reflected in Property Deinitions List):					
+num_of_frameshifts	New QC term added to dataset. Supporting Inormation included. 	assemblyQC.tsv | assemblyQC_NCBI.tsv			
+num_of_stop_codons	New QC term added to dataset. Supporting Inormation included. 	assemblyQC.tsv | assemblyQC_NCBI.tsv			
+organism_name	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+infraspecific_name	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+lineage	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+genome_assembly_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+taxonomy_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+bco_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+schema_version	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+analysis_platform	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+analysis_platform_object_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+bioproject	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+biosample	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+strain	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+sra_run_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+ngs_read_file_name	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+ngs_read_file_source	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+ngs_gc_content	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_phred_score	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_read_length	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+max_read_length	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+min_read_length	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+num_reads_unique	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+pos_outlier_count	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+codon_table	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+percent_coding	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+percent_not_coding	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+density_n_per_read	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+complexity_percent	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+non_complex_percent	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_quality_a	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_quality_t	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_quality_g	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+avg_quality_c	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+count_a	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+count_t	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+count_g	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+count_c	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+instrument	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+id_method	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+wgs_accession	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+strategy	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+ngs_score	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'ngsQC_NCBI.tsv'.	ngsQC_NCBI.tsv			
+organism_name	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+infraspecific_name	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+lineage	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembled_genome_acc	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+genome_assembly_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+taxonomy_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+bco_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+schema_version	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+analysis_platform	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+analysis_platform_object_id	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembly_file_source	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+genomic_section	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+num_chromosomes	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+num_genes	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+num_segments 	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembly_gc_content	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+length	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+num_of_frameshifts	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+num_of_stop_codons	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+genome_coverage	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+n50 	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+n75	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+n90	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+l50 	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+l75	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+ref_genome_acc	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+query_coverage_against_reference	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+reference_coverage_against_query	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+percent_identity_against_reference	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+percent_reads_unaligned	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembly_type	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembly_level	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+assembly_score	New dataset added to Core Property List. New dataset uses the following QC term. New dataset name is 'assemblyQC_NCBI.tsv'.	assemblyQC_NCBI.tsv			
+					
+Summary of V1.2 Changes in Non-CORE Property List and associated data sets:					
+Term	Action 	Affected Datasets 			
+Edits to Column Headers:					
+NA					
+Edits to Terms (Also Reflected in Property Deinitions List):					
+All terms 	Dataset was retired and replaced with the new datasets incorporated into the Core Property List. All dataset information was removed from Non-Core Property list.	SRA_ngsQC.tsv			
+All terms 	Dataset was retired and replaced with the new datasets incorporated into the Core Property List. All dataset information was removed from Non-Core Property list.	SRA_assemblyQC.tsv			
+					
+V1.2 Data Sheet Statistics:					
+Class	Sheet	Total Properties			
+Dictionary	property_definition.tsv	132			
+Dictionary 	core_property_list.tsv	211			
+Dictionary 	non-core_property_list.tsv	57			
+Core	ngsQC*	41			
+Core	assemblyQC*	33			
+Core	siteQC*	34			
+Core	biosampleMeta*	29			
+Non-Core	SRA_biosample	23			
+Non-Core	ngs_ID_list.tsv	14			
+Non-Core	sars-cov-2_lineage_mutations.tsv	14			
+Non-Core	uniprot-proteome_*.csv	7			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					

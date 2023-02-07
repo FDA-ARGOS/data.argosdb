@@ -1,0 +1,157 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'Strain=LT2, FDAARGOS_94' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/558/355/GCF_001558355.2_ASM155835v2/' does not match '-'",
+                "genomic_section: 'Chromosome' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '52.22' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'AE006468.2' does not match '-'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'Strain=LT2, FDAARGOS_94' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/558/355/GCF_001558355.2_ASM155835v2/' does not match '-'",
+                "genomic_section: 'pSLT' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '53.13' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'AE006471.2' does not match '-'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'Musoke' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Marburgvirus; Marburg marburgvirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_001608.3' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/857/325/GCF_000857325.2_ViralProj15199/' does not match '-'",
+                "genomic_section: 'Chromosome' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '38.29' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'DQ217792.1' does not match '-'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002023.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'PB2' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '43.74' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002023.1' does not match '-'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002022.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'PA' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '42.08' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002022.1' does not match '-'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002021.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'PB1' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '41.96' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002021.1' does not match '-'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002020.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'NS1' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '44.27' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002020.1' does not match '-'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002019.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'NP' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '46.39' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002019.1' does not match '-'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: 'NC_002018.1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "assembly_file_source: 'https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/725/GCF_000865725.1_ViralMultiSegProj15521/' does not match '-'",
+                "genomic_section: 'NA' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '42.75' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "ref_genome_acc: 'NC_002018.1' does not match '-'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.2/test_files//assemblyQC_HL.tsv",
+    "lines": 9,
+    "schema": "schema/v1.2//core/assemblyQC.json",
+    "summary": "9 lines failed out of 9."
+}

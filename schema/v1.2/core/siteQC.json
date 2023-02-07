@@ -1,0 +1,404 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.0/schema/v1.2/core/siteQC.tsv",
+    "title": "siteQC.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "taxonomy_id",
+        "bco_id",
+        "schema_version",
+        "analysis_platform",
+        "sra_run_id",
+        "ngs_read_file_name",
+        "ngs_read_file_source",
+        "genome_assembly_id",
+        "ref_genome_acc",
+        "wt_nucleotide",
+        "alt_nucleotide",
+        "wt_codon",
+        "alt_codon",
+        "wt_amino_acid",
+        "alt_amino_acid",
+        "annotation",
+        "read_coverage",
+        "frequency"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe acute respiratory syndrome coronavirus 2"
+            ],
+            "pattern": "^[a-zA-Z]+_[a-zA-Z]+$"
+        },
+        "infraspecific_name": {
+            "$id": "#root/infraspecific_name",
+            "title": "infraspecific_name",
+            "description": "scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate Wuhan-Hu-1"
+            ],
+            "pattern": ""
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
+            ],
+            "pattern": "^[a-zA-Z]+_[a-zA-Z]+[0-9]+$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000011"
+            ],
+            "pattern": "^[a-zA-Z]+_[0-9]+$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Reflective of the Data Dictionary version currently applied to the dataset. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.9"
+            ],
+            "pattern": "^v[0-9]*\\.[0-9]+$"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The platform used to conduct the analysis.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "HIVE 1 | HIVE 2 | HIVE AWS | Galaxy"
+            ],
+            "pattern": "(HIVE 1|HIVE 2|HIVE AWS|Galaxy)"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "analysis_platform_object_id",
+            "description": "Unique identifier of archive containing data and analyses. Examples include HIVEPack or Research Object (RO).",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "39658"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "bioproject": {
+            "$id": "#root/bioproject",
+            "title": "bioproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PRJNA603194"
+            ],
+            "pattern": "-"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN13922059"
+            ],
+            "pattern": "^[a-zA-Z]+[0-9]+$"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "The SRA run accession for a set of fastq files ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381"
+            ],
+            "pattern": "-"
+        },
+        "ngs_read_file_name": {
+            "$id": "#root/ngs_read_file_name",
+            "title": "ngs_read_file_name",
+            "description": "Individual name of the fastq file involved in ngsQC or siteQC, or that is connected to a genome assembly id and subsequence fasta files in assemblyQC (i.e. SRR10971381_1.fastq)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381_1.fastq"
+            ],
+            "pattern": "-"
+        },
+        "ngs_read_file_source": {
+            "$id": "#root/ngs_read_file_source",
+            "title": "ngs_read_file_source",
+            "description": "Resource that the fastq files are derived from (i.e. SRA) in the form of a URI/static URL.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRA"
+            ],
+            "pattern": "-"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Assembly DB identifier (Example: NCBI assembly accession)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_001558355.2"
+            ],
+            "pattern": "^[a-zA-Z]+.*[0-9]+\\.\\d$"
+        },
+        "ref_genome_acc": {
+            "$id": "#root/ref_genome_acc",
+            "title": "ref_genome_acc",
+            "description": "This accession number is a unique identifier assigned to a record in sequence databases such as RefSeq (NCBI).",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NC_002023"
+            ],
+            "pattern": "-"
+        },
+        "genomic_coordinates_start": {
+            "$id": "#root/genomic_coordinate_start",
+            "title": "genomic_coordinate_start",
+            "description": "Start position for this feature in the genome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "23063"
+            ],
+            "pattern": "^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$"
+        },
+        "genomic_coordinates_end": {
+            "$id": "#root/genomic_coordinates_end",
+            "title": "genomic_coordinates_end",
+            "description": "End position for this feature in the genome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "23063"
+            ],
+            "pattern": "^[a-zA-Z]+[0-9]+:[0-9]+-[0-9]+$"
+        },
+        "protein_coordinates_start": {
+            "$id": "#root/protein_coordinates_start",
+            "title": "protein_coordinates_start",
+            "description": "Start position for this feature in the proteome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "501"
+            ],
+            "pattern": "^.*$"
+        },
+        "protein_coordinates_end": {
+            "$id": "#root/protein_coordinates_end",
+            "title": "protein_coordinates_end",
+            "description": "End position for this feature in the proteome file",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "502"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_feature_tag": {
+            "$id": "#root/seq_feature_tag",
+            "title": "seq_feature_tag",
+            "description": "Tags associated with this feature. Can be coverage, quality|entropy, mutations,indels, tailsd, disbalance, aniusotropyu, partiality",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NA"
+            ],
+            "pattern": "^.*$"
+        },
+        "seq_feature_value": {
+            "$id": "#root/seq_feature_value",
+            "title": "seq_feature_value",
+            "description": "Values for the tag associated with this feature",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NA"
+            ],
+            "pattern": "^.*$"
+        },
+        "wt_nucleotide": {
+            "$id": "#root/wt_nucleotide",
+            "title": "wt_nucleotide",
+            "description": "Nucleotide at position of interest in wild type sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "A"
+            ],
+            "pattern": "-"
+        },
+        "alt_nucleotide": {
+            "$id": "#root/alt_nucleotide",
+            "title": "alt_nucleotide",
+            "description": "Nucleotide at position of interest in alternate sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "T"
+            ],
+            "pattern": "-"
+        },
+        "wt_codon": {
+            "$id": "#root/wt_codon",
+            "title": "wt_codon",
+            "description": "Codon at position of interest in wild type sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "AAT"
+            ],
+            "pattern": "-"
+        },
+        "alt_codon": {
+            "$id": "#root/alt_codon",
+            "title": "alt_codon",
+            "description": "Codon at position of interest in alternate sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "TAT"
+            ],
+            "pattern": "-"
+        },
+        "wt_amino_acid": {
+            "$id": "#root/wt_amino_acid",
+            "title": "wt_amino_acid",
+            "description": "Amino acid at position of interest in wild type sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "N"
+            ],
+            "pattern": "-"
+        },
+        "alt_amino_acid": {
+            "$id": "#root/alt_amino_acid",
+            "title": "alt_amino_acid",
+            "description": "Amino acid at position of interest in alternate sample",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Y"
+            ],
+            "pattern": "-"
+        },
+        "annotation": {
+            "$id": "#root/annotation",
+            "title": "annotation",
+            "description": "Explanation or justification for analysis of this specific site",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Enhanced Infectivity Mutation"
+            ],
+            "pattern": "-"
+        },
+        "read_coverage": {
+            "$id": "#root/read_coverage",
+            "title": "read_coverage",
+            "description": "Number of unique reads that include a specific nucleotide",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "691"
+            ],
+            "pattern": "-"
+        },
+        "frequency": {
+            "$id": "#root/frequency",
+            "title": "frequency",
+            "description": "Frequency of a specific nucleotide variation with respect to the number of occurences of the specific variation",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.9986"
+            ],
+            "pattern": "-"
+        },
+        "protein_accession": {
+            "$id": "#root/protein_accession",
+            "title": "protein_accession",
+            "description": "Protein accession from UniProt",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "YP_009724390.1"
+            ],
+            "pattern": "-"
+        },
+        "count_major_mutations": {
+            "$id": "#root/count_major_mutations",
+            "title": "count_major_mutations",
+            "description": "Count of major mutations",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NA"
+            ],
+            "pattern": "-"
+        },
+        "count_major_indels": {
+            "$id": "#root/count_major_indels",
+            "title": "count_major_indels",
+            "description": "Count of insertions or deletions",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NA"
+            ],
+            "pattern": "-"
+        },
+        "site_score": {
+            "$id": "#root/site_score",
+            "title": "site_score",
+            "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

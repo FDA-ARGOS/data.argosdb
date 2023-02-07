@@ -1,0 +1,88 @@
+property	data_object	required	id	title	type	constraint	default	examples	pattern	description
+sra_experiment_id	SRA_ngsQC.tsv	required	#root/sra_experiment_id	sra_experiment_id	string	N/A	-	SRR9107811	^.*$	-
+sra_run_id	SRA_ngsQC.tsv	required	#root/sra_run_id	sra_run_id	string	N/A	-	SRX5882434	^.*$	-
+bioproject	SRA_ngsQC.tsv	required	#root/bioproject	bioproject	string	N/A	-	PRJNA231221	^.*$	-
+biosample	SRA_ngsQC.tsv	optional	#root/biosample	biosample	string	N/A	-	SAMN11077980	^.*$	-
+num_of_bases	SRA_ngsQC.tsv	required	#root/num_of_bases	num_of_bases	string	N/A	-	400293278	^.*$	-
+file_size	SRA_ngsQC.tsv	required	#root/file_size	file_size	string	N/A	-	195921414	^.*$	-
+published	SRA_ngsQC.tsv	required	#root/published	published	string	N/A	-	##########	^.*$	-
+source	SRA_ngsQC.tsv	required	#root/source	source	string	N/A	-	VIRAL RNA	(Genomic DNA|GENOMIC|TRANSCRIPTOMIC|METAGENOMIC|METATRANSCRIPTOMIC|SYNTHETIC|VIRAL RNA|OTHER)	-
+strategy	SRA_ngsQC.tsv	required	#root/strategy	strategy	string	N/A	-	WGS	(WGA|WGS|WXS|RNA-Seq|miRNA-Seq|WCS|CLONE|POOLCLONE|AMPLICON|CLONEEND|FINISHING|ChIP-Seq|MNase-Seq|DNase-Hypersensitivity|Bisulfite-Seq|Tn-Seq|EST|FL-cDNA|CTS|MRE-Seq|MeDIP-Seq|MBD-Seq|Synthetic-Long-Read|ATAC-seq|ChIA-PET|FAIRE-seq|Hi-C|ncRNA-Seq|RAD-Seq|RIP-Seq|SELEX|ssRNA-seq|Targeted-Capture|Tethered Chromatin Conformation Capture|OTHER)	-
+layout	SRA_ngsQC.tsv	required	#root/layout	layout	string	N/A	-	PAIRED	^.*$	-
+library_name	SRA_ngsQC.tsv	optional	#root/library_name	library_name	string	N/A	-	IL100100209	^.*$	-
+selection	SRA_ngsQC.tsv	optional	#root/selection	selection	string	N/A	-	cDNA	(RANDOM|PCR|RANDOM PCR|RT-PCR|HMPR|MF|CF-S|CF-M|CF-H|CF-T|MDA|MSLL|cDNA|ChIP|MNase|DNAse|Hybrid Selection|Reduced Representation|Restriction Digest|5-methylcytidine antibody|MBD2 protein methyl-CpG binding domain|CAGE|RACE|size fractionation|Padlock probes capture method|other|unspecified|cDNA_oligo_dT|cDNA_randomPriming|Inverse rRNA|Oligo-dT|PolyA|repeat fractionation)	-
+instrument	SRA_ngsQC.tsv	optional	#root/instrument	instrument	string	N/A	-	Illumina MiSeq	^.*$	-
+file_type	SRA_ngsQC.tsv	required	#root/file_type	file_type	string	N/A	-	fastq	^.*$	-
+reads_unaligned	SRA_ngsQC.tsv	optional	#root/reads_unaligned	reads_unaligned	string	N/A	-	61059	^[2-9]|[1-9]\d+$	-
+identified_reads	SRA_ngsQC.tsv	optional	#root/identified_reads	identified_reads	string	N/A	-	603880	^[2-9]|[1-9]\d+$	-
+taxonomy_id	SRA_ngsQC.tsv	optional	#root/taxonomy_id	taxonomy_id	string	N/A	-	64320	^[2-9]|[1-9]\d+$	-
+lineage	SRA_ngsQC.tsv	optional	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Kitrinoviricota|Flasuviricetes|Amarillovirales|Flaviviridae|Flavivirus|Zika virus	^.*$	-
+percent_identified	SRA_ngsQC.tsv	optional	#root/percent_identified	percent_identified	string	N/A	-	0.90817353	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	-
+gc_content	SRA_ngsQC.tsv	optional	#root/gc_content	gc_content	string	N/A	-	0.45566968	^[+-]?([0]+\.?[0-9]*|\.[0-9]+)$	-
+genome_assembly_id	SRA_assemblyQC.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_013267415.1	^.*$	-
+level	SRA_assemblyQC.tsv	required	#root/level	level	string	N/A	-	Complete genome	^.*$	-
+assembly_level	SRA_assemblyQC.tsv	required	#root/assembly_level	assembly_level	string	N/A	-	undefined	^.*$	-
+num_chromosomes	SRA_assemblyQC.tsv	required	#root/num_chromosomes	num_chromosomes	string	N/A	-	1	^.*$	-
+biosample	SRA_assemblyQC.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN11056500	^.*$	-
+strain	SRA_assemblyQC.tsv	required	#root/strain	strain	string	N/A	-	FDAARGOS_785	^.*$	-
+organism_name	SRA_assemblyQC.tsv	required	#root/Taxonomy Name	Taxonomy Name	string	N/A	-	Abiotrophia defectiva	^.*$	-
+bioproject	SRA_assemblyQC.tsv	required	#root/BioPproject	BioPproject	string	N/A	-	PRJNA231221	^.*$	-
+taxonomy_id	SRA_assemblyQC.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	46125	^[2-9]|[1-9]\d+$	-
+lineage	SRA_assemblyQC.tsv	required	#root/lineage	lineage	string	N/A	-	cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia	^.*$	-
+uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string	N/A	-	P0DTC2-1	^.*$	-
+found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	N/A	-	Omicron (21K, BA.1)	^.*$	-
+gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string	N/A	-	S	^.*$	-
+protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string	N/A	-	Spike glycoprotein	^.*$	-
+evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string	N/A	-	CoVariants	^.*$	-
+begin_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/begin_aa_pos	begin_aa_pos	string	N/A	-	67	^.*$	-
+end_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/end_aa_pos	end_aa_pos	string	N/A	-	67	^.*$	-
+mutation_type	sars-cov-2_lineage_mutations.tsv	required	#root/mutation_type	mutation_type	string	N/A	-	missense	^.*$	-
+is_known_glycoprotein	sars-cov-2_lineage_mutations.tsv	required	#root/is_known_glycoprotein	is_known_glycoprotein	string	N/A	-	yes	^.*$	-
+motif_start	sars-cov-2_lineage_mutations.tsv	required	#root/motif_start	motif_start	string	N/A	-	67	^.*$	-
+ref_motif	sars-cov-2_lineage_mutations.tsv	required	#root/ref_motif	ref_motif	string	N/A	-	A	^.*$	-
+alt_motif	sars-cov-2_lineage_mutations.tsv	required	#root/alt_motif	alt_motif	string	N/A	-	V	^.*$	-
+effect	sars-cov-2_lineage_mutations.tsv	required	#root/effect	effect	string	N/A	-	-	^.*$	-
+note	sars-cov-2_lineage_mutations.tsv	required	#root/note	note	string	N/A	-	-	^.*$	-
+organism_name	ngs_ID_list.tsv	required	#root/note	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 3	^.*$	-
+infraspecific_name	ngs_ID_list.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	^.*$	
+lineage	ngs_ID_list.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^.*$	
+genome_assembly_id	ngs_ID_list.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_013267415.1	^.*$	-
+taxonomy_id	ngs_ID_list.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	2697049	^.*$	-
+bioproject	ngs_ID_list.tsv	optional	#root/bioproject	bioproject	string	N/A	-	PRJNA603194	^.*$	
+biosample	ngs_ID_list.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN13922059	^.*$	
+sra_run_id	ngs_ID_list.tsv	required	#root/sra_run_id	sra_run_id	string	N/A	-	SRR10971381	^.*$	
+ngs_read_file_source	ngs_ID_list.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	N/A	-	SRA	^.*$	
+ref_org	ngs_ID_list.tsv	optional	#root/ref_org	ref_org	string	N/A	-	Yes/No	^.*$	
+isolate_identifiers	ngs_ID_list.tsv	optional	#root/isolate_identifiers	isolate_identifiers	string	N/A	-	PDT000289948.1	^.*$	
+selection_notes	ngs_ID_list.tsv	required	#root/note	Selection Notes	string	N/A	-	For omicron, we are selecting EPI_ISL_6913953. Sequencing was conducted on Illumina MiSeq, has high coverage, and a consistent quality score across all base calls above 30. Raw reads are available at https://www.ncbi.nlm.nih.gov/sra/SRX13486794, and a full description of the patient harboring the virus is supplied with the following publication https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciab1072/6494531?login=true. The patient was one of the first two known COVID-19 cases classified as omicron in Japan. To put the collection date of 28 November 2021 in perspective, the first known omicron sample was collected on 8 November 2021. Raw reads from South Africa are available, but the average phred quality score is much lower for those samples.	^.*$	-
+lab_name	ngs_ID_list.tsv	required	#root/note	Lab Name	string	N/A	-	Pond Lab	^.*$	-
+files_processed	ngs_ID_list.tsv	required	#root/processed	processed	string	N/A	-	ngsQC_HL|assemblyQC_HL|siteQC_HL|biosampleMeta_HL	^.*$	-
+biosample	SRA_biosample.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN16357302	^.*$	-
+organism_name	SRA_biosample.tsv	required	#root/organism_name	organism_name	string	N/A	-	Pediococcus acidilactici	^.*$	-
+strain	SRA_biosample.tsv	required	#root/strain	strain	string	N/A	-	FDAARGOS_1133	^.*$	-
+sample_name	SRA_biosample.tsv	required	#root/sample_name	sample_name	string	N/A	-	FDAARGOS_1133	^.*$	-
+taxonomy_id	SRA_biosample.tsv	required	#root/taxonomy_id	taxonomy_id	string	N/A	-	1254	^.*$	-
+isolate	SRA_biosample.tsv	required	#root/isolate	isolate	string	N/A	-	-	^.*$	-
+collected_by	SRA_biosample.tsv	required	#root/collected_by	collected_by	string	N/A	-	-	^.*$	-
+collection_date	SRA_biosample.tsv	required	#root/collection_date	collection_date	string	N/A	-	-	^.*$	-
+geo_loc_name	SRA_biosample.tsv	required	#root/geo_loc_name	geo_loc_name	string	N/A	-	-	^.*$	-
+isolation_source	SRA_biosample.tsv	required	#root/isolation_source	isolation_source	string	N/A	-	-	^.*$	-
+lat_lon	SRA_biosample.tsv	required	#root/lat_lon	lat_lon	string	N/A	-	-	^.*$	-
+culture_collection	SRA_biosample.tsv	required	#root/culture_collection	culture_collection	string	N/A	-	-	^.*$	-
+host	SRA_biosample.tsv	required	#root/host	host	string	N/A	-	-	^.*$	-
+host_age	SRA_biosample.tsv	required	#root/host_age	host_age	string	N/A	-	-	^.*$	-
+host_description	SRA_biosample.tsv	required	#root/host_description	host_description	string	N/A	-	-	^.*$	-
+host_disease	SRA_biosample.tsv	required	#root/host_disease	host_disease	string	N/A	-	-	^.*$	-
+host_disease_outcome	SRA_biosample.tsv	required	#root/host_disease_outcome	host_disease_outcome	string	N/A	-	-	^.*$	-
+host_disease_stage	SRA_biosample.tsv	required	#root/host_disease_stage	host_disease_stage	string	N/A	-	-	^.*$	-
+host_health_state	SRA_biosample.tsv	required	#root/host_health_state	host_health_state	string	N/A	-	-	^.*$	-
+host_sex	SRA_biosample.tsv	required	#root/host_sex	host_sex	string	N/A	-	-	^.*$	-
+id_method	SRA_biosample.tsv	required	#root/id_method	id_method	string	N/A	-	-	^.*$	-
+type_material	SRA_biosample.tsv	required	#root/type_material	type_material	string	N/A	-	-	^.*$	-
+uniprotkb_ac	uniprot-proteome_*.csv	required	#root/uniprotkb_ac	uniprotkb_ac	string	N/A	-	-	^.*$	-
+entry_name	uniprot-proteome_*.csv	required	#root/entry_name	entry_name	string	N/A	-	-	^.*$	-
+status	uniprot-proteome_*.csv	required	#root/status	status	string	N/A	-	-	^.*$	-
+protein_names	uniprot-proteome_*.csv	required	#root/protein_names	protein_names	string	N/A	-	-	^.*$	-
+gene_names	uniprot-proteome_*.csv	required	#root/gene_names	gene_names	string	N/A	-	-	^.*$	-
+organism_name	uniprot-proteome_*.csv	required	#root/organism	organism	string	N/A	-	-	^.*$	-
+length	uniprot-proteome_*.csv	required	#root/length	length	string	N/A	-	-	^.*$	-

@@ -1,0 +1,142 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'isolate Wuhan-Hu-1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus; Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "strategy: 'RNA-Seq' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'isolate Wuhan-Hu-1' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus; Severe acute respiratory syndrome-related coronavirus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '93.7' does not match '^[0-9]+$'",
+                "non_complex_percent: '6.3' does not match '^[0-9]+$'",
+                "strategy: 'RNA-Seq' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "avg_read_length: '150' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "density_n_per_read: '0' does not match '^([0-9]+(\\\\|[0-9]+)+)$'",
+                "complexity_percent: '86.3' does not match '^[0-9]+$'",
+                "non_complex_percent: '13.7' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '66.7' does not match '^[0-9]+$'",
+                "non_complex_percent: '33.3' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '93.8' does not match '^[0-9]+$'",
+                "non_complex_percent: '6.3' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '83.3' does not match '^[0-9]+$'",
+                "non_complex_percent: '16.7' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '79.3' does not match '^[0-9]+$'",
+                "non_complex_percent: '20.7' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'LT2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000019' does not match '^[a-zA-Z]+[0-9]+$'",
+                "analysis_platform: 'HIVE2' does not match '(HIVE 1|HIVE 2|HIVE AWS|Galaxy)'",
+                "avg_read_length: '1248' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "codon_table: 'Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "complexity_percent: '87.5' does not match '^[0-9]+$'",
+                "non_complex_percent: '12.5' does not match '^[0-9]+$'",
+                "strategy: 'WGS' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.2/test_files//ngsQC_HL.tsv",
+    "lines": 9,
+    "schema": "schema/v1.2//core/ngsQC.json",
+    "summary": "9 lines failed out of 9."
+}

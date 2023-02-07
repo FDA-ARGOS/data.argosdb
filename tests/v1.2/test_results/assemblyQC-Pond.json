@@ -1,0 +1,46 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "top_level: 'ref_genome_acc' is a required property",
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'B.1.617.2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: 'EPI_ISL_2378732' does not match '^[a-zA-Z]+.*[0-9]+\\\\.\\\\d$'",
+                "bco_id: '' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "analysis_platform_object_id: '' does not match '^[0-9]+$'",
+                "genomic_section: '' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '39.68' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "top_level: 'ref_genome_acc' is a required property",
+                "organism_name: 'Severe acute respiratory syndrome coronavirus 2' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "infraspecific_name: 'B.1.1.52' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "assembled_genome_acc: '' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: 'EPI_ISL_6913953' does not match '^[a-zA-Z]+.*[0-9]+\\\\.\\\\d$'",
+                "bco_id: '' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "analysis_platform_object_id: '' does not match '^[0-9]+$'",
+                "genomic_section: '' does not match '^[a-zA-Z]+_[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "assembly_gc_content: '40.92' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        }
+    ],
+    "input": "tests/v1.2/test_files//assemblyQC-Pond.tsv",
+    "lines": 2,
+    "schema": "schema/v1.2//core/assemblyQC.json",
+    "summary": "2 lines failed out of 2."
+}

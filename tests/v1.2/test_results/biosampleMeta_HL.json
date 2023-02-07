@@ -1,0 +1,145 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "organism_name: 'Influenza A virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Influenza A virus (A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJEB12890' does not match '-'",
+                "strain: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: '1a231360-83e3-11e6-ad90-3c4a9275d6c8' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'SC (The Wellcome Trust Sanger Institute)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota; Pokkesviricetes; Chitovirales; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_855' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_855' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'BEI strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota; Pokkesviricetes; Chitovirales; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Monkeypox virus' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_854' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "genome_assembly_id: '' does not match '^[a-zA-Z]+_[0-9]*\\\\.[0-9]+$'",
+                "sample_name: 'FDAARGOS_854' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'BEI Resources/American Type and Culture Collection (ATCC)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Scab From Female Monkey (Macaca fascicularis)' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'BEI strain' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_94' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_94' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CFSAN <-- NIST <-- ATCC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '1948' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: '' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica subsp. enterica serovar Ohio' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_316' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_316' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica subsp. enterica serovar Typhimurium var. 5-' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_312' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_312' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: MD' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica subsp. enterica serovar Infantis' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_315' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_315' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica subsp. enterica serovar Heidelberg' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_319' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_319' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collected_by: 'FDA CVM < CDC' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2012' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: '' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "isolation_source: 'Stool' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "host: 'Homo sapiens' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Salmonella enterica' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "lineage: 'Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella; Salmonella enterica subsp. enterica serovar Hadar' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "bco_id: 'ARGOS_000020' does not match '^[a-zA-Z]+[0-9]+$'",
+                "bioproject: 'PRJNA231221' does not match '-'",
+                "strain: 'FDAARGOS_313' does not match '^([a-zA-Z]+(_[a-zA-Z]+)+).*$'",
+                "sample_name: 'FDAARGOS_313' does not match '^([a-zA-Z]+( [a-zA-Z]+)+)$'",
+                "collection_date: '2011' does not match '^[0-9]+/[0-9]+/[0-9]+$'",
+                "geo_loc_name: 'USA: NM' does not match '^[a-zA-Z]+/\\\\s[a-zA-Z]+$'",
+                "host: 'Environment' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.2/test_files//biosampleMeta_HL.tsv",
+    "lines": 9,
+    "schema": "schema/v1.2//core/biosampleMeta.json",
+    "summary": "9 lines failed out of 9."
+}

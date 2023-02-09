@@ -50,10 +50,11 @@ def get_HIVE():
             writer=csv.writer(result, delimiter='\t')
             headings=next(reader)
             #append headers for ngs_id
-            writer.writerow(['organism_name', 'leaf_node', 'genome_assembly_id', 'taxonomy_id', 'bioproject','biosample','sra_run_id','ngs_read_file_source','ref_org','isolate_identifiers','selection_notes','lab_name','files_processed'])
+            writer.writerow(['organism_name', 'intraspecific_name', 'lineage', 'genome_assembly_id', 'taxonomy_id', 'bioproject','biosample','sra_run_id','ngs_read_file_source','ref_org','isolate_identifiers','selection_notes','lab_name','files_processed'])
             # These columns need to be updated/changed to reflect new columns added to ngs_id
             for r in reader:
-                writer.writerow([r[3],r[4],r[6],r[5],r[11],r[12],r[23],r[13]])
+                writer.writerow([r[3],r[4],r[5],r[6],r[7],r[13],r[14], r[15],r[17]])
+    datafile.close()
 get_HIVE()
 
 data_hl = pd.read_table('hiveapi.tsv', sep='\t', on_bad_lines='skip')
@@ -104,10 +105,10 @@ def get_Crandall():
             ####
             ####  ngsQC_Crandall hasn't been updated for v9 - this will need to be edited
             #####
-            writer.writerow(['organism_name', 'leaf_node', 'genome_assembly_id', 'taxonomy_id', 'bioproject','biosample','sra_run_id','ngs_read_file_source','ref_org','isolate_identifiers','selection_notes','lab_name','files_processed'])
+            writer.writerow(['organism_name', 'intraspecific_name', 'lineage', 'genome_assembly_id', 'taxonomy_id', 'bioproject','biosample','sra_run_id','ngs_read_file_source','ref_org','isolate_identifiers','selection_notes','lab_name','files_processed'])
             # These columns need to be updated/changed to reflect new columns added to ngs_id
             for r in reader:
-                writer.writerow([r[3],r[4],r[6],r[5],r[11],r[12],r[13],r[14]])
+                writer.writerow([r[3],r[4],r[5],r[6],r[7],r[13],r[14], r[15],r[17]])
 
     datafile.close()
 get_Crandall()
@@ -217,6 +218,7 @@ def selection_notes(row):
 
 dfinal=dfinal.assign(selection_notes=dfinal.apply(selection_notes, axis=1))
 dfinal=dfinal.sort_values('organism_name', ascending=True)
+
 dfinal.to_csv('ngs_id_from_api.tsv', sep = '\t', index = False)
 
 #clean up files

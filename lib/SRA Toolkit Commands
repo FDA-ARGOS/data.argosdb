@@ -1,0 +1,16 @@
+This is an SRA toolkit. By following the commands below, users will be able to download SRA toolkit and extract SRA data from NCBI.
+
+Step 1:For Mac OS X, (or use wget if you prefer)
+Command: curl --output sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-mac64.tar.gz
+
+Step 2: Extract the contents of the tar file
+Command: tar -vxzf sratoolkit.tar.gz
+
+Step 3: For convenience (and to show you where the binaries are) append the path to the binaries to your PATH environment variable:
+Command: export PATH=$PATH:$PWD/sratoolkit.3.0.0-mac64/bin
+
+Step 4: Verify that the binaries will be found by the shell
+Command: which fastq-dump
+
+Step 5: Test that the toolkit is functional by downloading SRA
+Command: fastq-dump --stdout -X 2 SRR390728

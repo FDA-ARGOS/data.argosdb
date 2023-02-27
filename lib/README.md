@@ -9,6 +9,10 @@ as defined in https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.0/co
 Currently requires the `-f` parameter, specifying the path to a text file of bioSample IDs with one ID per line.
 The TSV returned contains one row per SRA id associated with the biosample.
 
+Optional parameters:
+- `-b`: BCO ID
+- `-s`: schema version
+
 Example usage:
 
-`./biosample_complete.sh -f biosample_ids.txt`
+`./biosample_complete.sh -f biosample_ids.txt -b ARGOS_000028 -s v1.12`

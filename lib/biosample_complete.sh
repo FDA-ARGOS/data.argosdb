@@ -1,15 +1,21 @@
 #!/bin/bash 
 #
-# Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE
+# Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE -b BCO_ID -s SCHEMA_VERSION
 
 
 WORKING_DIR=biosample_$(date "+%Y%m%d_%H%M%S")
 mkdir -p $WORKING_DIR
 
-while getopts "f:" opt; do
+while getopts "f:b:s:" opt; do
   case $opt in
     f | file)
       sampleidfile=$OPTARG
+      ;;
+    b | bco_id )
+      bco_id=$OPTARG
+      ;;
+    s | schema )
+      schema=$OPTARG
       ;;
   esac
 done
@@ -29,7 +35,7 @@ do
   xmllint --xpath 'string(//Lineage)' $WORKING_DIR/biosample_lineage_$biosample_id.xml > $WORKING_DIR/biosample_lineage_$biosample_id.txt
   # parse metadata
   echo ...Parsing XML biosample metadata to create tsv
-  python3 ./sra_sample_parser.py -f $WORKING_DIR/biosample_meta_$biosample_id.xml -l $WORKING_DIR/biosample_lineage_$biosample_id.txt > $WORKING_DIR/biosample_meta_$biosample_id.tsv
+  python3 ./sra_sample_parser.py -f $WORKING_DIR/biosample_meta_$biosample_id.xml -l $WORKING_DIR/biosample_lineage_$biosample_id.txt -b $bco_id -s $schema > $WORKING_DIR/biosample_meta_$biosample_id.tsv
 done 
 
 echo Biosample metadata files are located at $WORKING_DIR

@@ -41,6 +41,12 @@ def usr_args():
         help="Input file. The input file should be a collection of SRS XML \
             files.")
 
+    parser.add_argument('-b', '--bco_id',
+        help="BCO ID")
+
+    parser.add_argument('-s', '--schema',
+        help="Schema version")
+
     parser.add_argument('-l', '--lineage_file',
         required=True,
         help="Lineage file, in text format.")
@@ -48,12 +54,12 @@ def usr_args():
     parser.add_argument('-o', '--output',
         help="Output file. If no output is provided, the resulting table will \
             be output to the terminal.")
-    if len(sys.argv) <= 1:
+    if len(sys.argv) <= 2:
         sys.argv.append('--help')
 
     return parser.parse_args()
 
-def parse_xml(xml_file, lineage_file, samples):
+def parse_xml(xml_file, lineage_file, samples, bco_id, schema_version):
     """Parse XML file
 
     Parameters
@@ -69,14 +75,17 @@ def parse_xml(xml_file, lineage_file, samples):
         dictionary of samples
     """
 
-    organism_name = lineage = taxonomy_id = bco_id \
-        = schema_version = bioproject = biosample \
+    organism_name = lineage = taxonomy_id \
+        = bioproject = biosample \
         = strain = genome_assembly_id = sample_name \
         = instrument = isolate = collected_by = collection_date \
         = geo_loc_name = isolation_source = lat_lon = culture_collection = host\
         = host_age = host_description = host_disease = host_disease_outcome \
         = host_disease_stage = host_health_state = host_sex \
         = id_method = biosample_score = PLACEHOLDER_CHAR
+
+    bco_id = bco_id or PLACEHOLDER_CHAR
+    schema_version = schema_version or PLACEHOLDER_CHAR
 
     # create element tree object and get root element
     root = ET.parse(xml_file).getroot()
@@ -190,7 +199,7 @@ def main():
         'host_health_state', 'host_sex', 'id_method',\
         'biosample_score']
     args = usr_args()
-    parse_xml(args.file, args.lineage_file, samples)
+    parse_xml(args.file, args.lineage_file, samples, args.bco_id, schema_version = args.schema)
     sample_output(samples, header, args.output)
 
 if __name__ == "__main__":

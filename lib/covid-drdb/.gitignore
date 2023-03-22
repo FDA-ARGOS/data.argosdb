@@ -1,0 +1,8 @@
+*.swp
+*.orig
+*.log
+DS_Store
+local/
+build/
+docker-envfile
+.DS_Store

@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mypy = "*"
+types-requests = "*"
+lxml-stubs = "*"
+
+[packages]
+click = "*"
+more-itertools = "*"
+db-to-sqlite = "*"
+requests = "*"
+lxml = "*"
+psycopg2-binary = "*"
+tqdm = "*"
+biopython = "*"
+questionary = "*"
+
+[requires]
+python_version = "3.9"

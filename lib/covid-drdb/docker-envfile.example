@@ -1,0 +1,10 @@
+# This is an example for the configuration required by "make release",
+# please make a duplicate and name it as "docker-envfile".
+
+# GitHub Token, required
+# Can be created at https://github.com/settings/tokens/new
+# Please select at least "repo" scope when generating the new token
+GITHUB_TOKEN=ghp_XXXXXXXXXXXXXXXXXX
+
+# GitHub authenticating user name, required
+GITHUB_AUTH_USER=your_github_account

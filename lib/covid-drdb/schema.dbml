@@ -1,0 +1,1324 @@
+// https://dbdiagram.io/d/600896e480d742080a373304
+
+Enum amino_acid_enum {
+  A [note: 'A/Ala, Alanine']
+  C [note: 'C/Cys, Cysteine']
+  D [note: 'D/Asp, Aspartic acid']
+  E [note: 'E/Glu, Glutamic acid']
+  F [note: 'F/Phe, Phenylalanine']
+  G [note: 'G/Gly, Glutamine']
+  H [note: 'H/His, Histidine']
+  I [note: 'I/Ile, Isoleucine']
+  K [note: 'K/Lys, Lysine']
+  L [note: 'L/Leu, Leucine']
+  M [note: 'M/Met, Methionine']
+  N [note: 'N/Asn, Asparagine']
+  P [note: 'P/Pro, Proline']
+  Q [note: 'Q/Gln, Glutamine']
+  R [note: 'R/Arg, Arginine']
+  S [note: 'S/Ser, Serine']
+  T [note: 'T/Thr, Threonine']
+  V [note: 'V/Val, Valine']
+  W [note: 'W/Trp, Tryptophan']
+  Y [note: 'Y/Tyr, Tyrosine']
+  X [note: 'Out-frame deletion']
+  stop [note: 'Stop codon']
+  del [note: 'Deletion']
+  ins [note: 'Insertion']
+}
+
+Enum numeric_cmp_enum {
+  "=" [note: 'Equal']
+  ">" [note: 'More than']
+  "<" [note: 'Less than']
+  "~" [note: 'About']
+}
+
+Table articles as R {
+  ref_name varchar [
+    pk,
+    note: 'Manually assigned name (RefID, RefName) for this reference, usually formed by the surname of first author, two digits year and an optional serial letter for distinguishing studies published in the same year'
+  ]
+  doi varchar [
+    unique,
+    note: 'Digital Object Identifier (DOI) of a reference'
+  ]
+  url varchar [
+    unique,
+    note: 'Web address of a reference; can be specified when DOI is not available'
+  ]
+  first_author varchar [
+    not null,
+    note: 'First author name. Should formed by the surname, a comma and the initial of given names (no dots)'
+  ]
+  year int [
+    not null,
+    note: 'Year of when this reference was published'
+  ]
+  date_added date [not null]
+  date_updated date
+}
+
+Table treatments as Rx {
+  ref_name varchar [ref: > R.ref_name]
+  rx_name varchar [note: 'Name of the treatment']
+
+  indexes {
+    (ref_name, rx_name) [pk]
+  }
+}
+
+// TODO: add rx_vaccines to allow many-to-many relationship
+// between rxvp and vaccines tables
+
+Enum vaccine_type_enum {
+  "mRNA"
+  "Viral vector"
+  "Protein subunit"
+  "Inactivated virus"
+  "Mixed"
+  "DNA"
+}
+
+Table vaccines as V {
+  vaccine_name varchar [pk]
+  vaccine_type vaccine_type_enum
+  developer varchar
+  developer_country varchar
+  priority int [
+    note: "Display priority; lower number first"
+  ]
+}
+
+Table vaccine_efficacy as VE {
+  ref_name varchar [ref: > R.ref_name]
+  vaccine_name varchar [ref: > V.vaccine_name]
+  var_name varchar [ref: > VAR.var_name]
+  design varchar
+  efficacy varchar
+  // lower_bound numeric(2,0)
+  // upper_bound numeric(2,0)
+}
+
+Table rx_antibodies as RxMAb {
+  ref_name varchar
+  rx_name varchar
+  ab_name varchar [ref: > MAb.ab_name]
+
+  indexes {
+    (ref_name, rx_name, ab_name) [pk]
+    rx_name
+    ab_name
+  }
+}
+
+Ref: RxMAb.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Table rx_compounds as RxDrug {
+  ref_name varchar
+  rx_name varchar
+  drug_name varchar [ref: > Drug.drug_name]
+
+  indexes {
+    (ref_name, rx_name, drug_name) [pk]
+    rx_name
+    drug_name
+  }
+}
+
+Ref: RxDrug.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Enum severity_enum {
+  "Asymptomatic"
+  "Mild"
+  "Moderate"
+  "Severe"
+  "Hospitalized"
+  "Non-Hospitalized"
+}
+
+Enum subject_species_enum {
+  "Human"
+  "Mouse"
+  "Rat"
+  "Macaque"
+  "Hamster"
+  "HyperIG" // Hyperimmune immunoglobulin TODO: this should be another type of Rx
+}
+
+Enum immune_status_enum {
+  "HIV"     // The subject is affected by acquired immunodeficiency by infecting with HIV
+  "Primary" // The subject is affected by primary immunodeficiency
+  "Medical" // This subject is iatrogenic immunocompromised, i.e. received medical that could suppress their immuno system
+  "Unknown" // The immune status is not indicated by the study
+  "None"    // the subject is not immunosuppressed
+}
+
+Table subjects as Sbj {
+  ref_name varchar [ref: > R.ref_name]
+  subject_name varchar
+  subject_species subject_species_enum
+  birth_year numeric(4)
+  num_subjects int [
+    note: "Indicates if this record is for an individual subject (=1) or a group of subjects (>1)."
+  ]
+
+  indexes {
+    (ref_name, subject_name) [pk]
+  }
+}
+
+
+Table subject_infections as SbjInf {
+  ref_name varchar
+  subject_name varchar
+  infection_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  infection_date date
+  infected_var_name varchar [
+    not null,
+    ref: > VAR.var_name,
+    note: "Infected variant name"
+  ]
+  location varchar [
+    note: "Location of where this person was infected"
+  ]
+  immune_status immune_status_enum
+  severity severity_enum
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+
+  indexes {
+    (ref_name, subject_name, infection_date) [pk]
+    infection_date
+    infected_var_name
+  }
+}
+
+ref: SbjInf.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+
+
+Enum isolate_source_enum {
+  NP [note: 'Nasopharyngeal']
+  ETA [note: 'Endotracheal aspirate']
+  BAL [note: 'Bronchoalveolar lavage']
+  OP [note: 'Oropharyngeal']
+  LT [note: 'Lung Tissue']
+  AN [note: 'Anterior Nasal']
+  CNTS [note: 'combined nose and throat swab']
+  Respiratory
+  Plasma
+  Saliva
+  Stool
+  Unknown
+  Pending
+}
+
+
+Table subject_isolates as SbjIso {
+  ref_name varchar
+  subject_name varchar
+  collection_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  collection_date date
+  iso_name varchar [
+    not null,
+    ref: > isolates.iso_name,
+    note: "Collected isolate name"
+  ]
+  iso_source isolate_source_enum
+  iso_culture boolean
+  location varchar [
+    note: "Location of where this isolate was collected"
+  ]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+
+  indexes {
+    (ref_name, subject_name, collection_date, iso_source, iso_culture) [pk]
+    collection_date
+    iso_name
+  }
+}
+
+ref: SbjIso.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+
+
+Table subject_vaccines as SbjVacc {
+  ref_name varchar
+  subject_name varchar
+  vaccination_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  vaccination_date date
+  vaccine_name varchar [
+    ref: > vaccines.vaccine_name,
+    note: "Vaccine name"
+  ]
+  dosage int [not null]
+  location varchar [
+    note: "Location of where this person was vaccinated"
+  ]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+
+  indexes {
+    (ref_name, subject_name, vaccination_date, vaccine_name) [pk]
+    (ref_name, subject_name, dosage) [unique]
+    vaccination_date
+    vaccine_name
+  }
+}
+
+ref: SbjVacc.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+
+
+Enum treatment_dosage_unit_enum {
+  "mg/kg"
+  "ml"
+  "mg"
+  "unit"
+}
+
+Table subject_treatments as PtRx {
+  ref_name varchar
+  subject_name varchar [
+    note: 'Subject who received the treatment (not the CP donor if rx_name is a CP)'
+  ]
+  rx_name varchar [not null]
+  start_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  start_date date
+  end_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  end_date date
+  dosage numeric(8,0) [
+    note: 'dosage per day'
+  ]
+  dosage_unit treatment_dosage_unit_enum
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+
+  indexes {
+    (ref_name, subject_name, rx_name, start_date, end_date) [pk]
+  }
+}
+
+ref: PtRx.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+ref: PtRx.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+
+
+Table subject_plasma as SbjP {
+  ref_name varchar
+  subject_name varchar [
+    note: 'Subject who is the CP/VP donor (not the subject received CP treatment)'
+  ]
+  rx_name varchar
+  collection_date_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  collection_date date [not null]
+  location varchar [
+    note: "Location of where this plasma was collected"
+  ]
+  // TODO: deprecate cumulative_group
+  cumulative_group varchar [note: "Cumulative group for cumulating results"]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+
+  indexes {
+    (ref_name, rx_name) [pk]
+    (ref_name, subject_name)
+    collection_date
+    rx_name
+  }
+}
+ref: SbjP.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+Ref: SbjP.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+
+Table antibodies as MAb {
+  ab_name varchar [
+    pk,
+    note: 'Name of the antibody'
+  ]
+  abbreviation_name varchar
+  availability varchar
+  mature_month numeric(4,1)
+  institute varchar
+  origin varchar
+  priority int [
+    note: "Display priority; lower number first"
+  ]
+  visibility bool [
+    note: "Should this antibody be displayed or not"
+  ]
+  // todo_more_mab_definition varchar
+  date_added date [not null]
+}
+
+Table antibody_articles as MabR {
+  ref_name varchar [ref: > R.ref_name]
+  chiro_rx_name varchar
+  ab_name varchar [ref: > MAb.ab_name]
+
+  indexes {
+    (ref_name, chiro_rx_name, ab_name) [pk]
+  }
+}
+
+Table antibody_synonyms as MAbSyn {
+  ab_name varchar [ref: > MAb.ab_name]
+  synonym varchar [pk]
+
+  indexes {
+    ab_name
+  }
+}
+
+Enum ab_type_enum {
+  "mAb"
+  "nanobody"
+}
+
+Table antibody_invitro as MabVitro {
+  ab_name varchar [ref: > MAb.ab_name]
+  ab_type ab_type_enum
+  ab_source varchar
+  ic50 varchar
+}
+
+Table antibody_seq as MabSeq {
+  ab_name varchar [ref: > MAb.ab_name]
+  ighv_gene varchar
+  shm numeric(3)
+  cdrh3_length numeric(3)
+  iglv_gene varchar
+}
+
+Enum antibody_class {
+  "RBM Class I"
+  "RBM Class II"
+  "RBM Class III"
+  "RBM"
+  "RBD Core Cluster I"
+  "RBD Core Cluster II"
+  "RBD Core"
+  "NTD"
+  "S1"
+  "S2"
+  "S"
+}
+
+Table antibody_targets as MAbT {
+  ab_name varchar [ref: > MAb.ab_name]
+  pdb_id varchar
+  target varchar
+  class antibody_class
+  source varchar
+
+  indexes {
+    (ab_name, pdb_id, target, class, source)
+  }
+}
+
+Table antibody_epitopes as MAbEpi {
+  ab_name varchar [ref: > MAb.ab_name]
+  position int [
+    note: 'Epitope position'
+  ]
+
+  indexes {
+    (ab_name, position) [pk]
+  }
+}
+
+Table compounds as Drug {
+  drug_name varchar [
+    pk,
+    note: "Name of the compound"
+  ]
+  abbreviation_name varchar
+}
+
+Table compound_synonyms as DrugSyn {
+  drug_name varchar [ref: > Drug.drug_name]
+  synonym varchar [pk]
+
+  indexes {
+    drug_name
+  }
+}
+
+Table compound_binding_pockets as Pocket {
+  ref_name varchar [ref: > R.ref_name]
+  drug_name varchar [ref: > Drug.drug_name]
+  gene varchar [
+    ref: > G.gene,
+    note: 'Gene name'
+  ]
+  position int [
+    note: 'Position of compound binding pocket'
+  ]
+
+  indexes {
+    (ref_name, drug_name, gene, position) [pk]
+  }
+}
+
+Table variants as VAR {
+  var_name varchar [pk]
+  as_wildtype bool [
+    note: 'Should variant be treated as a wild type virus'
+  ]
+  consensus_availability bool [
+    note: 'If consensus mutations of this variant exist in variant_consensus table'
+  ]
+}
+
+Enum variant_status_enum {
+  VOC [note: 'Variant of Concern']
+  VOI [note: 'Variant of Interest']
+  VBM [note: 'Variant Being Monitored']
+  VUI [note: 'Variant under Investigation']
+}
+
+Table variant_status as VStatus {
+  var_name varchar [
+    ref: > VAR.var_name,
+    note: 'Variant name'
+  ]
+  ref_name varchar [
+    ref: > R.ref_name,
+    note: 'Reference name'
+  ]
+  status variant_status_enum
+
+  indexes {
+    (var_name, ref_name, status) [pk]
+  }
+}
+
+Table variant_consensus as VCons {
+
+  var_name varchar [
+    ref: > VAR.var_name,
+    note: 'Variant name'
+  ]
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+
+  indexes {
+    (var_name, gene, position, amino_acid) [pk]
+  }
+
+}
+
+Table variant_synonyms as VARSYN {
+  var_name varchar [ref: > VAR.var_name]
+  synonym varchar
+  priority int [not null, note: 'Synonym priority']
+
+  indexes {
+    (var_name, synonym) [pk]
+    (var_name, synonym, priority) [unique]
+  }
+}
+
+Table isolates as I {
+
+  iso_name varchar [
+    pk,
+    note: 'Isolate name'
+  ]
+  var_name varchar [
+    ref: > VAR.var_name,
+    note: 'Variant name of this isolate'
+  ]
+  site_directed boolean [
+    not null,
+    note: 'Is this isolate created by site-directed mutagenesis?'
+  ]
+  gisaid_id int [
+    note: 'GISAID isolate accession ID without the common initial "EPI_ISL_"'
+  ]
+  genbank_accn varchar [
+    note: 'Genbank accession number'
+  ]
+  sra_accn varchar [
+    note: 'SRA accession number'
+  ]
+  expandable boolean [
+    not null,
+    note: 'Expand spike mutations or not'
+  ]
+
+  indexes {
+    var_name
+    gisaid_id
+    genbank_accn
+  }
+}
+
+Table genes as G {
+  gene varchar [
+    pk,
+    note: 'Canonical gene name (compatible with Sierra-SARS2)'
+  ]
+  display_name varchar [
+    unique,
+    note: 'Display gene name'
+  ]
+  gene_order integer
+
+  indexes {
+    gene_order
+  }
+}
+
+Table gene_synonyms as GS {
+  gene varchar [
+    ref: > G.gene,
+    note: 'Gene name'
+  ]
+  synonym varchar [
+    unique,
+    note: 'Gene synonym'
+  ]
+
+  indexes {
+    (gene, synonym) [pk]
+  }
+}
+
+Table isolate_mutations as M {
+
+  iso_name varchar [
+    ref: > I.iso_name,
+    note: 'Isolate name'
+  ]
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  count int [
+    note: 'When cumulative/NGS data entered, the number of samples/reads carried this mutation'
+  ]
+  total int [
+    note: 'When cumulative/NGS data entered, the number of samples/reads coverage at this position'
+  ]
+
+  indexes {
+    (iso_name, gene, position, amino_acid) [pk]
+  }
+
+}
+
+Enum resistance_level_enum {
+  "susceptible"
+  "partial-resistance"
+  "resistant"
+}
+
+Enum ineffective_enum {
+  "control"
+  "experimental"
+  "both"
+}
+
+Enum potency_type_enum {
+  "NT50" // NTxx are mainly for Plasma
+  "NT80"
+  "NT90"
+  "NT100"
+  "IC50" // ICxx are mainly for MAbs
+  "IC80"
+  "IC90"
+  "IC100"
+  "EC50" // ECxx are mainly for chemical drugs
+  "RC50" // RCxx are relative concentration
+  "NC20"
+  "NC" [note: "Neutralization capacity"]
+  "Ki" [note: "Enzyme inhibition constant"]
+  "Kcat/Km" [note: "Michaelis-Menten kinetics, for enzymatic activity"]
+}
+
+Enum potency_unit_enum {
+  "ng/ml"
+  "µM"
+  "pM"
+  "nM"
+  "percent"
+  "IU/ml"
+  "s⁻¹µM⁻¹"
+  "s⁻¹M⁻¹"
+}
+
+Enum virus_type_enum {
+  "live-virus"
+  "pseudovirus"
+  "chimeric-virus"
+  "surrogate"
+  "binding"
+  "VLP"
+  "enzyme" // for enzyme inhibition
+  "reporter-cell"
+}
+
+Table assays as A {
+  assay_name varchar [pk]
+  virus_type virus_type_enum
+
+  indexes {
+    virus_type
+  }
+}
+
+Table rx_fold as RxF {
+  ref_name varchar
+  rx_name varchar
+  control_iso_name varchar [ref: > I.iso_name]
+  iso_name varchar [ref: > I.iso_name]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+  assay_name varchar [ref: > A.assay_name]
+  potency_type potency_type_enum [
+    note: 'Potency type (e.g. IC50, IC90)'
+  ]
+  fold_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  fold numeric(10,1) [
+    note: 'Fold change comparing to wild type'
+  ]
+  resistance_level resistance_level_enum [
+    note: 'Qualitative result when quantitative result (fold change) is not available'
+  ]
+  ineffective ineffective_enum [
+    note: 'Rx has no effect on control sequence or experimental sequence'
+  ]
+  cumulative_count int [
+    default: 1,
+    note: 'Cumulative count of matching results (when multiple)'
+  ]
+  date_added date [not null]
+  indexes {
+    (rx_name, control_iso_name, iso_name, ref_name, assay_name, potency_type) [pk]
+  }
+}
+Ref: RxF.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Table rx_potency as RxPo {
+  ref_name varchar
+  rx_name varchar
+  iso_name varchar [ref: > I.iso_name]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+  assay_name varchar [ref: > A.assay_name]
+  potency_type potency_type_enum [
+    note: 'Potency type (e.g. IC50, IC90)'
+  ]
+  potency numeric(10,3) [
+    note: 'Potency against this isolate, can be IC50, Titer, etc.'
+  ]
+  cumulative_count int [
+    default: 1,
+    note: 'Cumulative count of matching results (when multiple)'
+  ]
+  potency_upper_limit numeric(10,3)
+  potency_lower_limit numeric(10,3)
+  potency_unit potency_unit_enum [
+    note: 'Unit used by the potency value. Can be ng/ml, µM or pM'
+  ]
+  date_added date [not null]
+  indexes {
+    (ref_name, rx_name, iso_name, assay_name, potency_type) [pk]
+    iso_name
+    assay_name
+  }
+}
+Ref: RxPo.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Table ref_isolate_pairs as RxIsoPair {
+  ref_name varchar
+  control_iso_name varchar [ref: > I.iso_name]
+  iso_name varchar [ref: > I.iso_name]
+
+  indexes {
+    (ref_name, control_iso_name, iso_name) [pk]
+    control_iso_name
+    iso_name
+  }
+}
+
+Table ref_unpaired_isolates as RxIsoUnpair {
+  ref_name varchar
+  iso_name varchar [ref: > I.iso_name]
+
+  indexes {
+    (ref_name, iso_name) [pk]
+  }
+}
+
+Table invitro_selection_results as Vitro {
+  ref_name varchar
+  rx_name varchar
+  backbone varchar [ref: > I.iso_name]
+  gene varchar [
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+  date_added date [not null]
+
+  indexes {
+    (ref_name, rx_name, gene, position, amino_acid) [pk]
+  }
+}
+
+Table ref_invivo as InVivo {
+  ref_name varchar
+  subject_name varchar
+  collection_date date
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+  note varchar
+  date_added date [not null]
+
+  indexes {
+    (ref_name, subject_name, collection_date) [pk]
+  }
+}
+
+Ref: Susc.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+Ref: InVivo.(ref_name, subject_name) > Sbj.(ref_name, subject_name)
+Ref: Vitro.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Table ref_amino_acid as RefAA {
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid'
+  ]
+  codon char(3) [
+    note: 'Codon'
+  ]
+
+  indexes {
+    (gene, position, amino_acid) [pk]
+  }
+}
+
+Table mutation_distance {
+  source_codon char(3) [note: 'Source codon']
+  dest_amino_acid amino_acid_enum [note: 'Mutated amino acid']
+  min_bp_changes smallint [note: 'Minimal basepair changes for this mutation to occur']
+  max_bp_changes smallint [note: 'Maximum basepair changes for this mutation to occur']
+
+  indexes {
+    (source_codon, dest_amino_acid) [pk]
+  }
+}
+
+Table blosum62 {
+  source_amino_acid amino_acid_enum [note: 'Source amino acid']
+  dest_amino_acid amino_acid_enum [note: 'Mutated amino acid']
+  score smallint [note: 'BLOSUM62 score']
+
+  indexes {
+    (source_amino_acid, dest_amino_acid) [pk]
+  }
+}
+
+Table amino_acid_prevalence as AAPcnt {
+  ref_name varchar [ref: > R.ref_name]
+  gene varchar [ref: > G.gene]
+  position int
+  amino_acid amino_acid_enum
+  count int
+  proportion numeric(8,7)
+  date_updated date
+
+  indexes {
+    (ref_name, gene, position, amino_acid) [pk]
+    (gene, position, amino_acid)
+  }
+}
+
+Table dms_ace2_binding as Binding {
+  // ref_name varchar [ref: > R.ref_name]
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  ace2_binding numeric(10,2)
+  expression numeric(10,2)
+  ace2_contact boolean
+  // ace2_assay ace2_assay_type
+  // backbone varchar  // RBD background
+
+  indexes {
+    // (ref_name, gene, position, amino_acid, backbone) [pk]
+    (gene, position, amino_acid) [pk]
+  }
+}
+
+Enum ace2_assay_type {
+  "monomeric"
+  "dimeric"
+}
+
+Table dms_escape_results as DMSEscape {
+  ref_name varchar
+  rx_name varchar
+  gene varchar [
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  escape_score numeric(10,3)
+  method dms_method_enum
+  // backbone varchar  // RBD backbone
+
+  indexes {
+    // (ref_name, rx_name, gene, position, amino_acid, backbone) [pk]
+    (ref_name, rx_name, gene, position, amino_acid) [pk]
+    (gene, position, amino_acid)
+  }
+}
+
+Enum dms_method_enum {
+  "FACS" // fluorescence-activated cell sorting
+  "MACS" // magnetic-activated cell sorting
+}
+
+Ref: DMSEscape.(ref_name, rx_name) > Rx.(ref_name, rx_name)
+
+Table ignore_mutations {
+  gene varchar [ref: > G.gene]
+  position integer
+  amino_acid amino_acid_enum
+
+  indexes {
+    (gene, position, amino_acid) [pk]
+  }
+}
+
+Table known_deletion_ranges {
+  gene varchar [ref: > G.gene]
+  position_start integer
+  position_end integer
+
+  indexes {
+    (gene, position_start, position_end) [pk]
+  }
+}
+
+Table last_update {
+  scope varchar [pk]
+  last_update timestamptz [not null]
+}
+
+// Derived tables begin
+
+Enum rx_type_enum {
+  "antibody"
+  "compound"
+  "conv-plasma"
+  "vacc-plasma"
+  "enzyme-kinetics"
+}
+
+Enum iso_type_enum {
+  "indiv-mut"
+  "combo-muts"
+}
+
+Table isolate_pairs as IPair {
+  gene varchar [ref: > G.gene]
+  control_iso_name varchar [ref: > I.iso_name]
+  iso_name varchar [ref: > I.iso_name]
+  iso_aggkey varchar
+  num_mutations integer
+
+  indexes {
+    (gene, control_iso_name, iso_name) [pk]
+    (gene, iso_aggkey)
+    num_mutations
+  }
+}
+
+Table isolate_aggs as IAgg {
+  gene varchar [ref: > G.gene]
+  iso_aggkey varchar
+  iso_agg_display varchar
+  var_name varchar [ref: > VAR.var_name]
+  iso_type iso_type_enum
+
+  indexes {
+    (gene, iso_aggkey) [pk]
+    var_name
+    iso_type
+  }
+}
+
+
+Table susc_summary as SSmry {
+  aggregate_by varchar
+  rx_type rx_type_enum
+  iso_type iso_type_enum
+
+  // aggregate keys
+  ref_name varchar [
+    note: 'Study/article name'
+  ]
+  antibody_names varchar [
+    note: 'Comma separated antibody names'
+  ]
+  antibody_order integer [
+    note: 'Order when sorting by antibody'
+  ]
+  vaccine_name varchar [
+    note: 'Vaccine name'
+  ]
+  vaccine_order integer [
+    note: 'Order when sorting by vaccine'
+  ]
+  vaccine_dosage numeric(2,0) [
+    note: 'Vaccine shots received when plasma/serum was collected'
+  ]
+  subject_species subject_species_enum
+  timing numeric(4,0) [note: "time after vaccination / from symptom on set, Month"]
+  // infected_iso_name varchar [
+  //   note: 'Infected isolate name'
+  // ]
+  // infected_iso_display varchar [
+  //   note: 'Display name of infected isolate'
+  // ]
+  infected_var_name varchar [
+    note: 'Variant of the infected isolate'
+  ]
+  control_iso_name varchar [
+    note: 'Control isolate name'
+  ]
+  control_iso_display varchar [
+    note: 'Display name of control isolate'
+  ]
+  control_var_name varchar [
+    note: 'Variant of the control isolate'
+  ]
+  iso_name varchar [
+    note: 'Experimental isolate name'
+  ]
+  iso_display varchar [
+    note: 'Display name of experimental isolate'
+  ]
+  var_name varchar [
+    note: 'Variant of the experimental isolate'
+  ]
+  iso_aggkey varchar [
+    note: 'Rule based isolate aggregation key. This key removes mutations from control isolate and D614G. It also treats a deletion range as one mutation.'
+  ]
+  iso_agg_display varchar [
+    note: 'Display name of rule based isolate aggregation key'
+  ]
+  position varchar [
+    note: 'Gene position for individual mutations'
+  ]
+  potency_type potency_type_enum [
+    note: 'Potency type (e.g. IC50, IC90)'
+  ]
+  potency_unit potency_unit_enum [
+    note: 'Unit used by the potency value. Can be ng/ml, µM or pM'
+  ]
+
+  // aggregated data
+  num_studies integer [
+    note: 'Number of studies; count of distinct ref_name'
+  ]
+  num_subjects integer [
+    note: 'Number of subjects; count of distinct ref_name/subject_name pairs'
+  ]
+  num_samples integer [
+    note: 'Number of samples; count of unique ref_name/rx_name pairs'
+  ]
+  num_experiments integer [
+    note: 'Number of experiments; count of ref_name/rx_name/iso_name/potency_type pairs'
+  ]
+
+  indexes {
+    aggregate_by
+    ref_name
+    antibody_names
+    vaccine_name
+    infected_var_name
+    iso_aggkey
+    position
+  }
+}
+
+Table rx_conv_plasma as RxCP {
+  // derived table from rx_conv_plasma and subject_history
+  ref_name varchar
+  rx_name varchar
+  subject_name varchar [not null]
+  infected_var_name varchar [ref: > VAR.var_name]
+  location varchar
+  timing numeric(4,0) [note: "time from symptom on set, Month"]
+  severity severity_enum
+  collection_date date
+  cumulative_group varchar [note: "Cumulative group for cumulating results"]
+
+  indexes {
+    (ref_name, rx_name) [pk]
+    (ref_name, subject_name)
+    infected_var_name
+    rx_name
+  }
+}
+
+Table rx_vacc_plasma as RxVP {
+  ref_name varchar
+  rx_name varchar
+  subject_name varchar
+  infected_var_name varchar [ref: > VAR.var_name]
+  vaccine_name varchar [ref: > V.vaccine_name]
+  location varchar
+  timing numeric(4,0)  [note: "time after vaccination, Month"]
+  dosage numeric(2,0)
+  collection_date date
+  cumulative_group varchar [note: "Cumulative group for cumulating results"]
+  // todo_more_ip_definition varchar
+
+  indexes {
+    (ref_name, rx_name) [pk]
+    (ref_name, subject_name)
+    infected_var_name
+    vaccine_name
+    rx_name
+  }
+}
+
+Table unlinked_susc_results as SuscGroup {
+  ref_name varchar
+  rx_name varchar
+  rx_group varchar
+  iso_name varchar
+  assay_name varchar
+  potency_type potency_type_enum
+  potency numeric(10,3)
+  cumulative_count int
+  ineffective boolean
+
+  indexes {
+    (ref_name, rx_name, iso_name, assay_name, potency_type) [pk]
+    (ref_name, rx_group, potency_type)
+    iso_name
+    assay_name
+    rx_name
+  }
+}
+
+Table susc_results as Susc {
+  ref_name varchar
+  rx_name varchar
+  rx_group varchar
+  rx_type rx_type_enum
+  control_iso_name varchar [ref: > I.iso_name]
+  iso_name varchar [ref: > I.iso_name]
+  section varchar [
+    note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  ]
+  fold_cmp numeric_cmp_enum [
+    default: "=",
+    note: '"=", ">", or "<"'
+  ]
+  fold numeric(10,1) [
+    note: 'Fold change comparing to wild type'
+  ]
+  potency_type potency_type_enum [
+    note: 'Potency type (e.g. IC50, IC90)'
+  ]
+  control_potency numeric(10,3) [
+    note: 'Potency against control isolate'
+  ]
+  potency numeric(10,3) [
+    note: 'Potency against experimental isolate'
+  ]
+  potency_unit potency_unit_enum [
+    note: 'Unit used by the control & exp potency value. Can be ng/ml, µM or pM'
+  ]
+  resistance_level resistance_level_enum [
+    note: 'Qualitative result when quantitative result (fold change) is not available'
+  ]
+  ineffective ineffective_enum [
+    note: 'Rx has no effect on control sequence or experimental sequence'
+  ]
+  control_cumulative_count int [
+    default: 1
+  ]
+  cumulative_count int [
+    default: 1,
+    note: 'Cumulative count of matching results (when multiple)'
+  ]
+  control_assay_name varchar [ref: > A.assay_name]
+  assay_name varchar [ref: > A.assay_name]
+  date_added date [not null]
+  indexes {
+    // XXX: if you add new keys to this list, don't forget to update
+    // the uniqkey of 06_susc_summary.sql function summarize_susc_results.
+    // This is how it currently (Dec 2021) looks like:
+    //
+    // S.ref_name || '$##$' ||
+    // S.rx_group || '$##$' ||
+    // S.control_iso_name || '$##$' ||
+    // S.iso_name || '$##$' ||
+    // S.potency_type || '$##$' ||
+    // S.control_assay_name || '$##$' ||
+    // S.assay_name
+    (ref_name, rx_group, control_iso_name, iso_name, potency_type, control_assay_name, assay_name) [pk]
+    rx_name
+    rx_type
+    control_iso_name
+    iso_name
+  }
+}
+
+Table invivo_selection_results {
+  ref_name varchar
+  subject_name varchar [
+    note: 'Subject who received the treatment (not the CP donor if rx_name is a CP)'
+  ]
+  infected_var_name varchar [
+    ref: > VAR.var_name,
+    note: 'Variant of the infected isolate'
+  ]
+  gene varchar [
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  count int
+  total int
+  infection_date date
+  appearance_date date
+  immune_status immune_status_enum
+  severity severity_enum
+  // section varchar [
+  //   note: 'The cited section in the reference; e.g. Figure 1, table 1 or page 1, para 4'
+  // ]
+  // note varchar
+  // date_added date [not null]
+
+  indexes {
+    (ref_name, subject_name, infected_var_name, gene, position, amino_acid) [pk]
+  }
+}
+
+Table resistance_mutation_attributes {
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+  col_name varchar [
+    note: 'Attribute key of this DRM'
+  ]
+  col_value varchar [
+    note: 'Attribute value of this DRM'
+  ]
+
+  indexes {
+    (gene, position, amino_acid, col_name) [pk]
+  }
+}
+
+Table resistance_mutation_articles {
+  gene varchar [ref: > G.gene]
+  ref_name varchar [ref: > R.ref_name]
+
+  indexes {
+    (gene, ref_name) [pk]
+  }
+}
+
+Table resistance_mutations {
+  gene varchar [
+    ref: > G.gene,
+    note: 'Mutation gene'
+  ]
+  position int [
+    note: 'Position of this mutation'
+  ]
+  amino_acid amino_acid_enum [
+    note: 'Amino acid of this mutation'
+  ]
+
+  indexes {
+    (gene, position, amino_acid) [pk]
+  }
+}

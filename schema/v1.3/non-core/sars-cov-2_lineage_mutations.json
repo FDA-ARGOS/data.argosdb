@@ -1,0 +1,179 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.0/schema/v1.3/non-core/sars-cov-2_lineage_mutations.tsv",
+    "title": "sars-cov-2_lineage_mutations.tsv",
+    "type": "object",
+    "required": [
+        "uniprotkb_canonical_ac",
+        "found_in",
+        "gene_name",
+        "protein_name",
+        "evidence_ECO0000313",
+        "begin_aa_pos",
+        "end_aa_pos",
+        "mutation_type",
+        "is_known_glycoprotein",
+        "motif_start",
+        "ref_motif",
+        "alt_motif",
+        "effect",
+        "note"
+    ],
+    "properties": {
+        "uniprotkb_canonical_ac": {
+            "$id": "#root/uniprotkb_canonical_ac",
+            "title": "uniprotkb_canonical_ac",
+            "description": "Uniprot canonical sequence accession. To reduce redundancy, the UniProtKB/Swiss-Prot policy is to describe all the protein products encoded by one gene in a given species in a single entry.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "P0DTC2-1"
+        },
+        "found_in": {
+            "$id": "#root/found_in",
+            "title": "found_in",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Omicron (21K, BA.1)"
+        },
+        "gene_name": {
+            "$id": "#root/gene_name",
+            "title": "gene_name",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "S"
+        },
+        "protein_name": {
+            "$id": "#root/protein_name",
+            "title": "protein_name",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Spike glycoprotein"
+        },
+        "evidence_ECO0000313": {
+            "$id": "#root/evidence_ECO0000313",
+            "title": "evidence_ECO0000313",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "CoVariants"
+        },
+        "begin_aa_pos": {
+            "$id": "#root/begin_aa_pos",
+            "title": "begin_aa_pos",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "67"
+        },
+        "end_aa_pos": {
+            "$id": "#root/end_aa_pos",
+            "title": "end_aa_pos",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "67"
+        },
+        "mutation_type": {
+            "$id": "#root/mutation_type",
+            "title": "mutation_type",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "missense"
+        },
+        "is_known_glycoprotein": {
+            "$id": "#root/is_known_glycoprotein",
+            "title": "is_known_glycoprotein",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "yes"
+        },
+        "motif_start": {
+            "$id": "#root/motif_start",
+            "title": "motif_start",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "67"
+        },
+        "ref_motif": {
+            "$id": "#root/ref_motif",
+            "title": "ref_motif",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "A"
+        },
+        "alt_motif": {
+            "$id": "#root/alt_motif",
+            "title": "alt_motif",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "V"
+        },
+        "effect": {
+            "$id": "#root/effect",
+            "title": "effect",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "note": {
+            "$id": "#root/note",
+            "title": "note",
+            "description": "-",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        }
+    }
+}

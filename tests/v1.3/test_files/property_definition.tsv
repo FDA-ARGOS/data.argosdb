@@ -1,0 +1,10 @@
+property	data_files	recommended	description	source_or_type_def
+organism_name	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv|SRA_biosample.tsv	Yi FDA	Name of the expected organism. Should correspond to a NCBI Taxonomy node	NCBI Taxonomy
+infraspecific_name	assemblyQC*|ngsQC*| siteQC* |biosampleMeta*|ngs_id_list.tsv	Data Team	scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies.	NCBI Assembly
+lineage	assemblyQC*|ngsQC*| siteQC*| biosampleMeta*|ngs_id_list.tsv|	Yi FDA	The complete taxonomic lineage for the taxonomic node indicated.	NCBI Taxonomy
+genome_assembly_id	assemblyQC*|ngsQC* |  siteQC* | biosampleMeta*|ngs_id_list.tsv	Yi FDA	Assembly DB identifier (Example: NCBI assembly accession)	NCBI Assembly DB
+taxonomy_id	assemblyQC*|ngsQC* | siteQC* |biosampleMeta*|ngs_id_list.tsv	Yi FDA	NCBI taxonomy identifier of the organism.	NCBI Taxonomy
+bioproject	ngsQC*| siteQC* | biosampleMeta* | ngs_id_list.tsv| SRA_biosample.tsv	NCBI BioProject DB	NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.	NCBI BioProject DB
+bco_id	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*	Raja	BioCompute Object identifier.	biocomputeobject.org
+schema_version	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*	Raja	Reflective of the Data Dictionary version currently applied to the dataset.	data.argos.org
+analysis_platform	assemblyQC* | ngsQC* | siteQC*| biosampleMeta*	Raja	The platform used to conduct the analysis.	ARGOS Team

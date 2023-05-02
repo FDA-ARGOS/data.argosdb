@@ -1,0 +1,95 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.0/schema/v1.3/non-core/uniprot-proteome_*.csv",
+    "title": "uniprot-proteome_*.csv",
+    "type": "object",
+    "required": [
+        "uniprotkb_ac",
+        "entry_name",
+        "status",
+        "protein_names",
+        "gene_names",
+        "organism_name",
+        "length"
+    ],
+    "properties": {
+        "uniprotkb_ac": {
+            "$id": "#root/uniprotkb_ac",
+            "title": "uniprotkb_ac",
+            "description": "accession for the protein",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "entry_name": {
+            "$id": "#root/entry_name",
+            "title": "entry_name",
+            "description": "protein name",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "status": {
+            "$id": "#root/status",
+            "title": "status",
+            "description": "Reviewed or unreviewed",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "protein_names": {
+            "$id": "#root/protein_names",
+            "title": "protein_names",
+            "description": "name of protein",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "gene_names": {
+            "$id": "#root/gene_names",
+            "title": "gene_names",
+            "description": "List of gene names associated with this protein",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "organism_name": {
+            "$id": "#root/organism",
+            "title": "organism",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        },
+        "length": {
+            "$id": "#root/length",
+            "title": "length",
+            "description": "Total length of the assembly",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "-"
+        }
+    }
+}

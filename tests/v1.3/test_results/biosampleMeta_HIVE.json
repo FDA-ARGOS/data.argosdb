@@ -1,0 +1,7 @@
+{
+    "errors": "NONE. Data sheet valid",
+    "input": "tests/v1.3/test_files//biosampleMeta_HIVE.tsv",
+    "lines": 9,
+    "schema": "schema/v1.3//core/.json",
+    "summary": "0 lines failed out of 9."
+}

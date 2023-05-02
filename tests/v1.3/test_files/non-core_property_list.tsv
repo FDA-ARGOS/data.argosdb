@@ -1,0 +1,10 @@
+property	data_object	required	id	title	type	constraint	default	examples	pattern	description
+uniprotkb_canonical_ac	sars-cov-2_lineage_mutations.tsv	required	#root/uniprotkb_canonical_ac	uniprotkb_canonical_ac	string	N/A	-	P0DTC2-1	^.*$	-
+found_in	sars-cov-2_lineage_mutations.tsv	required	#root/found_in	found_in	string	N/A	-	Omicron (21K, BA.1)	^.*$	-
+gene_name	sars-cov-2_lineage_mutations.tsv	required	#root/gene_name	gene_name	string	N/A	-	S	^.*$	-
+protein_name	sars-cov-2_lineage_mutations.tsv	required	#root/protein_name	protein_name	string	N/A	-	Spike glycoprotein	^.*$	-
+evidence_ECO0000313	sars-cov-2_lineage_mutations.tsv	required	#root/evidence_ECO0000313	evidence_ECO0000313	string	N/A	-	CoVariants	^.*$	-
+begin_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/begin_aa_pos	begin_aa_pos	string	N/A	-	67	^.*$	-
+end_aa_pos	sars-cov-2_lineage_mutations.tsv	required	#root/end_aa_pos	end_aa_pos	string	N/A	-	67	^.*$	-
+mutation_type	sars-cov-2_lineage_mutations.tsv	required	#root/mutation_type	mutation_type	string	N/A	-	missense	^.*$	-
+is_known_glycoprotein	sars-cov-2_lineage_mutations.tsv	required	#root/is_known_glycoprotein	is_known_glycoprotein	string	N/A	-	yes	^.*$	-

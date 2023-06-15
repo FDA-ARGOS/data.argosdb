@@ -1,4 +1,4 @@
 biopython==1.79
-certifi==2022.6.15 # might only be needed for Mac?
+certifi==2022.12.7 # might only be needed for Mac?
 numpy==1.22.0
 xmltodict==0.13.0

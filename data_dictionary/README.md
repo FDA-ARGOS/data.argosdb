@@ -10,11 +10,11 @@ The primary use case for the Data Dictionary is to ensure all data submitted to 
 
 The draft dictionary is maintained as a Excell file for project members to contribute to. After a final review that sheet is downloaded and each of the respective tabs are converted to a `tsv` and are saved in the respective versiond directory here. Each version should contain the following files:
 
-- release_notes.tsv => An itemized list of the changes implemented in the current version.
-- README.tsv => A summary of each sheet and the column headers
-- property_definition.tsv => List of all controlled vocabulary terms for ARGOSdb
-- non_core_property_list.tsv => List of all non-core table data properties
-- core_property_list.tsv => List of all core table data properties
+- `release_notes.tsv` => An itemized list of the changes implemented in the current version.
+- `README.tsv` => A summary of each sheet and the column headers
+- `property_definition.tsv` => List of all controlled vocabulary terms for ARGOSdb
+- `annotation_property_list.tsv` => List of all non-core table data properties
+- `core_property_list.tsv` => List of all core table data properties
 
 ### Running the `write_schema` function
 
@@ -32,8 +32,10 @@ usage: argosdb_dict_utils [options]
 positional arguments:
   {functions,write_schema,validate_columns}
     functions           List of all available functions
-    write_schema        Used to convert a TSV into a JSNO schema. If no mapping file is provided, performs default conversions.
-    validate_columns    Validates columns in a list of files in a directory using provided column headers
+    write_schema        Used to convert a TSV into a JSNO schema. If no mapping file
+                        is provided, performs default conversions.
+    validate_columns    Validates columns in a list of files in a directory using
+                        provided column headers
 
 options:
   -h, --help            show this help message and exit
@@ -45,10 +47,10 @@ To prepare the new schema directories run the following commands from the projec
 ```shell
 mkdir schema/[CURRENT NEW VERSION]
 mkdir schema/[CURRENT NEW VERSION]/core
-mkdir schema/[CURRENT NEW VERSION]/non-core
+mkdir schema/[CURRENT NEW VERSION]/annotation
 ```
 
-To generate the schema files you need to run the `dictionary_utils.py` twice. Once for the CORE and once for the NON-CORE sheet. 
+To generate the schema files you need to run the `dictionary_utils.py` twice. Once for the CORE and once for the ANNOTATION sheet. 
 ```shell
 '-m', '--multi',
         'Flag to indicate if multiple items are being processed'
@@ -70,6 +72,6 @@ For the Core tables run:
 
 `python lib/dictionary_utils.py write_schema -i data_dictionary/[current version]/core_property_list.tsv -d schema/[current version]/core/ -f data_dictionary/[current version]/property_definition.tsv`
 
-For the Non-Core tables run: 
+For the Annotation tables run: 
 
-`python lib/dictionary_utils.py write_schema -i data_dictionary/[current version]/non-core_property_list.tsv -d schema/[current version]/non-core/ -f data_dictionary/[current version]/property_definition.tsv`
+`python lib/dictionary_utils.py write_schema -i data_dictionary/[current version]/annotation_property_list.tsv -d schema/[current version]/annotation/ -f data_dictionary/[current version]/property_definition.tsv`

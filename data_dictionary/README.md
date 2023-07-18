@@ -76,7 +76,7 @@ For the Annotation tables run:
 
 `python lib/dictionary_utils.py write_schema -i data_dictionary/[current version]/annotation_property_list.tsv -d schema/[current version]/annotation/ -f data_dictionary/[current version]/property_definition.tsv`
 
-## Schema Tests
+## Schema Tests (using `data_sheet_validator.py`)
 
 The schema tests take a `CSV` or `TSV` and convert them to a `.json` file. Each line in the data sheet becomes a JSON object that is validated by the supplied schema. 
 
@@ -106,4 +106,8 @@ Example command:
 
         sh lib/shell/test_file_generation.sh /data/shared/argosdb/generated/datasets/reviewed/ tests/v1.4/test_files/
 
-### Running the `` function
+### Running the `data_sheet_validator.py` function
+
+once the testing files are inplace run the following: 
+
+        python3 lib/data_sheet_validator.py -m -i tests/v1.4/test_files/ -s schema/v1.4/ -o tests/v1.4/test_results/ > tests/v1.4/test_results/summary.txt

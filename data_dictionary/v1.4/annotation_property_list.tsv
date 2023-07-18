@@ -1,30 +1,30 @@
-property	data_object	required	id	title	data_type	constraint	default	examples	pattern
-organism_name	DRM_all_orgs.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$
-infraspecific_name	DRM_all_orgs.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$
-lineage	DRM_all_orgs.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^.*$
-genome_assembly_id	DRM_all_orgs.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_009858895.3	^.*$
-taxonomy_id	DRM_all_orgs.tsv	required	#root/taxonomy_id	taxonomy_id	int	N/A	-	2697049	^[0-9]+$
-bco_id	DRM_all_orgs.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000012	^.*$
-schema_version	DRM_all_orgs.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^.*$
-analysis_platform	DRM_all_orgs.tsv	required	#root/analysis_platform	analysis_platform	string	N/A	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	^.*$
-analysis_platform_object_id	DRM_all_orgs.tsv	optional	#root/analysis_platform_object_id	analysis_platform_object_id	string	NA	-	39658	^[0-9]+$
-biosample	DRM_all_orgs.tsv	required	#root/biosample	biosample	string	N/A	-	SAMN13922059	^[A-Za-z0-9]+$
-serotype	DRM_all_orgs.tsv	optional	#root/serotype	serotype	string	N/A	-	1a	^.*$
-strain	DRM_all_orgs.tsv	optional	#root/strain	strain	string	N/A	-	LT2 / SGSC1412 / ATCC 700720	^.*$
-isolate	DRM_all_orgs.tsv	optional	#root/isolate	isolate	string	N/A	-	HXB2	^.*$
-ngs_read_file_source	DRM_all_orgs.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	N/A	-	SRA	^[A-Za-z]+$
-wt_amino_acid	DRM_all_orgs.tsv	required	#root/wt_amino_acid	wt_amino_acid	string	N/A	-	V	^[A-Za-z]+$
-amino_acid_pos_uniprot	DRM_all_orgs.tsv	required	#root/amino_acid_pos_uniprot	amino_acid_pos_uniprot	int	10000000000	-	766	^[0-9]+$
-ncbi_nonredundant_accession	DRM_all_orgs.tsv	optional	#root/ncbi_nonredundant_accession	ncbi_nonredundant_accession	string	N/A	-	WP_001132508.1	^.*$
-uniprot_accession	DRM_all_orgs.tsv	required	#root/uniprot_accession	uniprot_accession	string	N/A	-	P04585	^.*$
-amino_acid_pos_refseq	DRM_all_orgs.tsv	required	#root/amino_acid_pos_refseq	amino_acid_pos_refseq	int	10000	-	10	^[0-9]+$
-refseq_protein_accession	DRM_all_orgs.tsv	required	#root/refseq_protein_accession	refseq_protein_accession	string	N/A	-	NP_705926.1	^.*$
-mut_amino_acid	DRM_all_orgs.tsv	required	#root/mut_amino_acid	mut_amino_acid	string	N/A	-	I	^[A-Za-z]+$
-protein_name	DRM_all_orgs.tsv	required	#root/protein_name	protein_name	string	N/A	-	Protease	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$
-drug_class	DRM_all_orgs.tsv	optional	#root/drug_class	drug_class	string	N/A	-	PI	^.*$
-event	DRM_all_orgs.tsv	optional	#root/event	event	string	N/A	-	PI resistance	^.*$
-drm_formula	DRM_all_orgs.tsv	required	#root/drm_formula	drm_formula	string	N/A	-	${seq}== 'NP_705926.1' && (int)${pos}==10 && ${wt}=='L' && ${mut}=='I'	^.*$
-genomic_accession	DRM_all_orgs.tsv	required	#root/genomic_accession	genomic_accession	string	N/A	-	NC_001802.1	^.*$
-proteome_id	DRM_all_orgs.tsv	required	#root/proteome_id	proteome_id	string	N/A	-	UP000002241	^[A-Za-z0-9]+$
-reference	DRM_all_orgs.tsv	required	#root/reference	reference	string	N/A	-	31634862	^[0-9]+$
-annotation_score	DRM_all_orgs.tsv	required	#root/annotation_score	annotation_score	int	100	-	20	^[0-9]+$
+property	data_object	required	id	title	data_type	default	examples	pattern	constraint
+organism_name	DRM_all_orgs.tsv	required	#root/organism_name	organism_name	string	-	Severe acute respiratory syndrome coronavirus 2	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$	N/A
+infraspecific_name	DRM_all_orgs.tsv	optional	#root/infraspecific_name	infraspecific_name	string	-	isolate Wuhan-Hu-1	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$	N/A
+lineage	DRM_all_orgs.tsv	required	#root/lineage	lineage	string	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^.*$	N/A
+genome_assembly_id	DRM_all_orgs.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	-	GCA_009858895.3	^.*$	N/A
+taxonomy_id	DRM_all_orgs.tsv	required	#root/taxonomy_id	taxonomy_id	int	-	2697049	^[0-9]+$	N/A
+bco_id	DRM_all_orgs.tsv	required	#root/bco_id	bco_id	string	-	ARGOS_000012	^.*$	N/A
+schema_version	DRM_all_orgs.tsv	required	#root/schema_version	schema_version	string	-	v0.9	^.*$	N/A
+analysis_platform	DRM_all_orgs.tsv	required	#root/analysis_platform	analysis_platform	string	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	^.*$	N/A
+analysis_platform_object_id	DRM_all_orgs.tsv	optional	#root/analysis_platform_object_id	analysis_platform_object_id	string	-	39658	^[0-9]+$	NA
+biosample	DRM_all_orgs.tsv	required	#root/biosample	biosample	string	-	SAMN13922059	^[A-Za-z0-9]+$	N/A
+serotype	DRM_all_orgs.tsv	optional	#root/serotype	serotype	string	-	1a	^.*$	N/A
+strain	DRM_all_orgs.tsv	optional	#root/strain	strain	string	-	LT2 / SGSC1412 / ATCC 700720	^.*$	N/A
+isolate	DRM_all_orgs.tsv	optional	#root/isolate	isolate	string	-	HXB2	^.*$	N/A
+ngs_read_file_source	DRM_all_orgs.tsv	required	#root/ngs_read_file_source	ngs_read_file_source	string	-	SRA	^[A-Za-z]+$	N/A
+wt_amino_acid	DRM_all_orgs.tsv	required	#root/wt_amino_acid	wt_amino_acid	string	-	V	^[A-Za-z]+$	N/A
+amino_acid_pos_uniprot	DRM_all_orgs.tsv	required	#root/amino_acid_pos_uniprot	amino_acid_pos_uniprot	int	-	766	^[0-9]+$	10000000000
+ncbi_nonredundant_accession	DRM_all_orgs.tsv	optional	#root/ncbi_nonredundant_accession	ncbi_nonredundant_accession	string	-	WP_001132508.1	^.*$	N/A
+uniprot_accession	DRM_all_orgs.tsv	required	#root/uniprot_accession	uniprot_accession	string	-	P04585	^.*$	N/A
+amino_acid_pos_refseq	DRM_all_orgs.tsv	required	#root/amino_acid_pos_refseq	amino_acid_pos_refseq	int	-	10	^[0-9]+$	10000
+refseq_protein_accession	DRM_all_orgs.tsv	required	#root/refseq_protein_accession	refseq_protein_accession	string	-	NP_705926.1	^.*$	N/A
+mut_amino_acid	DRM_all_orgs.tsv	required	#root/mut_amino_acid	mut_amino_acid	string	-	I	^[A-Za-z]+$	N/A
+protein_name	DRM_all_orgs.tsv	required	#root/protein_name	protein_name	string	-	Protease	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$	N/A
+drug_class	DRM_all_orgs.tsv	optional	#root/drug_class	drug_class	string	-	PI	^.*$	N/A
+event	DRM_all_orgs.tsv	optional	#root/event	event	string	-	PI resistance	^.*$	N/A
+drm_formula	DRM_all_orgs.tsv	required	#root/drm_formula	drm_formula	string	-	${seq}== 'NP_705926.1' && (int)${pos}==10 && ${wt}=='L' && ${mut}=='I'	^.*$	N/A
+genomic_accession	DRM_all_orgs.tsv	required	#root/genomic_accession	genomic_accession	string	-	NC_001802.1	^.*$	N/A
+proteome_id	DRM_all_orgs.tsv	required	#root/proteome_id	proteome_id	string	-	UP000002241	^[A-Za-z0-9]+$	N/A
+reference	DRM_all_orgs.tsv	required	#root/reference	reference	string	-	31634862	^[0-9]+$	N/A
+annotation_score	DRM_all_orgs.tsv	required	#root/annotation_score	annotation_score	int	-	20	^[0-9]+$	100

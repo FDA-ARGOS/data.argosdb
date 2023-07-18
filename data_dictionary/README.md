@@ -75,3 +75,35 @@ For the Core tables run:
 For the Annotation tables run: 
 
 `python lib/dictionary_utils.py write_schema -i data_dictionary/[current version]/annotation_property_list.tsv -d schema/[current version]/annotation/ -f data_dictionary/[current version]/property_definition.tsv`
+
+## Schema Tests
+
+The schema tests take a `CSV` or `TSV` and convert them to a `.json` file. Each line in the data sheet becomes a JSON object that is validated by the supplied schema. 
+
+**The tests are run in the ARGOS server because that is where the data files live, but the tests can be used on any individual file**
+
+Ensure that the virtual enviornment is activated and updated. From the repository root run:
+```shell
+sh env/bin/activate
+pip install -r requirements.txt
+```
+
+### Setting up the Test Directories
+
+We need a versioned directory for the test results and test files. run the following commands to create them:
+
+	mkdir tests/[current version]
+        mkdir tests/[current version]/test_results
+        mkdir tests/[current version]/test_files
+
+### Gathering Test files
+
+For the testing a new dictionary version it is best to use an abriveated table for each data type. To do this we run [test_file_generation.sh](/lib/shell/test_file_generation.sh) This is a simple script to take the HEAD of each data file to make the test files. You need to provide 2 directories as the arguments: 
+1. first directory is the location of files to copy to test.
+2. second directory is the location you want the test files to be generated in.
+
+Example command:
+
+        sh lib/shell/test_file_generation.sh /data/shared/argosdb/generated/datasets/reviewed/ tests/v1.4/test_files/
+
+### Running the `` function

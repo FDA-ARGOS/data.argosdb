@@ -31,7 +31,7 @@ import os
 from urllib.parse import urlparse
 import urllib
 
-__version__ = "1.0"
+__version__ = "1.4"
 __status__ = "Production"
 
 def usr_args():
@@ -71,30 +71,26 @@ def usr_args():
         action='store_true',
         help='Flag to indicate if multiple items are being processed')
 
-    # Create functions subcommand
     parser_list_functions = subparsers.add_parser('functions',
         help="List of all available functions")
     parser_list_functions.set_defaults(func=list_functions)
 
-
-
-    # Create a write_schema subcommand
     parser_tsv2json = subparsers.add_parser('write_schema',
         parents=[parent_parser],
         help="Used to convert a TSV into a JSNO schema."
             " If no mapping file is provided, performs default conversions.")
     parser_tsv2json.set_defaults(func=list_2_schema)
 
-    # Create a validate_columns subcommand
     parser_validate_columns = subparsers.add_parser('validate_columns',
         parents=[parent_parser],
         help=" Validates columns in a list of files in a directory using provided column headers")
     parser_validate_columns.set_defaults(func=validate_columns)
-    # Print usage message if no args are supplied.
+
     if len(sys.argv) <= 1:
         sys.argv.append('--help')
 
     options = parser.parse_args()
+
     if parser.parse_args().func is list_functions:
         options.func(parser)
     else:
@@ -119,10 +115,7 @@ def list_functions(parser):
         action for action in parser._actions
         # pylint: disable=W0212
         if isinstance(action, argparse._SubParsersAction)]
-    # there will probably only be one subparser_action,
-    # but better safe than sorry
     for subparsers_action in subparsers_actions:
-        # get all subparsers and print help
         for choice, subparser in subparsers_action.choices.items():
             print(f"Function: '{choice}'")
             print(subparser.format_help())
@@ -258,6 +251,7 @@ def validate_columns(options):
     Returns
     -------
     """
+
     columns = []
     missing_keys = {}
     try:

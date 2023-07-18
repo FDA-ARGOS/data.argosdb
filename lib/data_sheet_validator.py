@@ -246,20 +246,22 @@ def file_schema_matcher(input_dir, schema_dir, output_dir):
 
     Invoked with the multi flag.
     """
+    if output_dir is None:
+        raise Exception("Output directory required for Multi operation")
     input_list = []
     schema_list = []
     for (root, dirs, file) in os.walk(input_dir):
         for f in file:
             input_list.append(f'{input_dir}/{f}')
     core_dir = f'{schema_dir}/core/'
-    non_core_dir = f'{schema_dir}/non-core/'
+    non_core_dir = f'{schema_dir}/annotation/'
+    
     for (root, dirs, file) in os.walk(core_dir):
         for f in file:
             schema_list.append(f'{core_dir}{f}')
     for (root, dirs, file) in os.walk(non_core_dir):
         for f in file:
             schema_list.append(f'{non_core_dir}{f}')
-
     # for sheet in input_list:
     #     datasheet = ''
     #     schema = ''
@@ -275,17 +277,18 @@ def file_schema_matcher(input_dir, schema_dir, output_dir):
             if search_term in sheet:
                 count += 1
                 output_file = output_dir + '/' + sheet.split('/')[-1].split('.')[0]+'.json'
-                print(search_term, [sheet, item])
+                print('\n',search_term, [sheet, item])
                 validate_schema(sheet, item, output_file)
                 tracking_list.append(sheet)
 
-    print('\n\n')
+    print('\n')
     if count != len(input_list):
-        print(count, '!=', len(input_list))
+        print(f'{count} files validated', '!=', len(input_list), 'files supplied')
         x = set(input_list)
         y = set(tracking_list)
+        print("\nUnvalidated files:")
         for i in x.difference(y):
-            print(i)
+            print('\t',i)
 
 def main():
     """
@@ -294,7 +297,7 @@ def main():
 
     options = usr_args()
     if options.multi is True:
-        print('True')
+        print('Multi is True')
         file_schema_matcher(options.input, options.schema, options.output)
     else:
         validate_schema(options.input, options.schema, options.output)

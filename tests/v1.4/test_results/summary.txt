@@ -1,0 +1,67 @@
+Multi is True
+
+ assemblyQC_HIVE ['tests/v1.4/test_files//assemblyQC_HIVE.tsv', 'schema/v1.4//core/assemblyQC_HIVE.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ assemblyQC_NCBI ['tests/v1.4/test_files//assemblyQC_NCBI.tsv', 'schema/v1.4//core/assemblyQC_NCBI.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ biosampleMeta_HIVE ['tests/v1.4/test_files//biosampleMeta_HIVE.tsv', 'schema/v1.4//core/biosampleMeta_HIVE.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ biosampleMeta_NCBI ['tests/v1.4/test_files//biosampleMeta_NCBI.tsv', 'schema/v1.4//core/biosampleMeta_NCBI.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ ngsQC_HIVE ['tests/v1.4/test_files//ngsQC_HIVE.tsv', 'schema/v1.4//core/ngsQC_HIVE.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ ngsQC_NCBI ['tests/v1.4/test_files//ngsQC_NCBI.tsv', 'schema/v1.4//core/ngsQC_NCBI.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ ngs_id_list ['tests/v1.4/test_files//ngs_id_list.tsv', 'schema/v1.4//core/ngs_id_list.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+0 lines failed out of 9 lines.
+
+ siteQC_HIVE ['tests/v1.4/test_files//siteQC_HIVE.tsv', 'schema/v1.4//core/siteQC_HIVE.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+ DRM_all_orgs ['tests/v1.4/test_files//DRM_all_orgs.tsv', 'schema/v1.4//annotation/DRM_all_orgs.json']
+Local file supplied
+File with 9 lines supplied.
+Local schema file supplied
+9 lines failed out of 9 lines.
+
+
+9 files validated != 16 files supplied
+
+Unvalidated files:
+	 tests/v1.4/test_files//reference-guided_genome_assemblies_HIVE-Hexagon.fasta
+	 tests/v1.4/test_files//reference-guided_genome_assemblies_Galaxy.fasta
+	 tests/v1.4/test_files//temp_archive
+	 tests/v1.4/test_files//NC_045512_SARS-CoV-2_Wuhan.fasta
+	 tests/v1.4/test_files//property_definition.tsv
+	 tests/v1.4/test_files//core_property_list.tsv
+	 tests/v1.4/test_files//annotation_property_list.tsv

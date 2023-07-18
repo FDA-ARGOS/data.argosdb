@@ -1,0 +1,188 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'ctg.s2.000022F_arrow_pilon' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'ctg.s2.000023F_arrow_pilon' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'NODE_20_length_5672_cov_569.216265_trim' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'NODE_21_length_4077_cov_1311.276750_trim' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'NODE_18_length_6872_cov_562.722149_trim' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'ctg.s1.000000F_arrow_pilon' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1515' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'ctg.s1.000001F_arrow_pilon' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1513' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: '000006F_arrow_pilon' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "top_level: 'assembly_file_source' is a required property",
+                "infraspecific_name: 'strain=FDAARGOS_1513' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "genomic_section: 'NODE_31_length_5671_cov_723.051662_trim' does not match '^[A-Za-z0-9]+$'",
+                "num_genes: 'NA' does not match '^[0-9]+$'",
+                "assembly_gc_content: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "length: '' does not match '^[0-9]+$'",
+                "genome_coverage: 'NA' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n75: '' does not match '^[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "l75: 'NA' does not match '^[0-9]+$'",
+                "query_coverage_against_reference: 'NA' does not match '^[0-9]+$'",
+                "reference_coverage_against_query: 'NA' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: 'NA' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: 'NA' does not match '^[0-9]+$'",
+                "assembly_score: 'NA' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.4/test_files//assemblyQC_NCBI.tsv",
+    "lines": 9,
+    "schema": "schema/v1.4//core/assemblyQC_NCBI.json",
+    "summary": "9 lines failed out of 9."
+}

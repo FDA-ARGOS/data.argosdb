@@ -1,0 +1,87 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "infraspecific_name: 'isolate Wuhan-Hu-1' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'isolate Wuhan-Hu-1' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '93.7' does not match '^[0-9]+$'",
+                "non_complex_percent: '6.3' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'Omicron/XBB.1.5' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '99.9' does not match '^[0-9]+$'",
+                "non_complex_percent: '0.1' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'Omicron/XBB.1.5' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '99.9' does not match '^[0-9]+$'",
+                "non_complex_percent: '0.1' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "avg_read_length: '150' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "density_n_per_read: '0' does not match '^([0-9]+(\\\\|[0-9]+)+)$'",
+                "complexity_percent: '86.3' does not match '^[0-9]+$'",
+                "non_complex_percent: '13.7' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'LT2' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '66.7' does not match '^[0-9]+$'",
+                "non_complex_percent: '33.3' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'LT2' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '93.8' does not match '^[0-9]+$'",
+                "non_complex_percent: '6.3' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'LT2' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_reads_unique: '' does not match '^[0-9]+$'",
+                "complexity_percent: '83.3' does not match '^[0-9]+$'",
+                "non_complex_percent: '16.7' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.4/test_files//ngsQC_HIVE.tsv",
+    "lines": 9,
+    "schema": "schema/v1.4//core/ngsQC_HIVE.json",
+    "summary": "9 lines failed out of 9."
+}

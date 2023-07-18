@@ -1,0 +1,132 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "infraspecific_name: 'Strain=LT2, FDAARGOS_94' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '4.6' does not match '^[0-9]+$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'Strain=LT2, FDAARGOS_94' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '98.96' does not match '^[0-9]+$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: 'Musoke' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '' does not match '^[0-9]+$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.79' does not match '^[0-9]+$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.69' does not match '^[0-9]+$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.76' does not match '^[0-9]+$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.27' does not match '^[0-9]+$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.61' does not match '^[0-9]+$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '(A/Puerto Rico/8/1934(H1N1))' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "num_chromosomes: '' does not match '^[0-9]+$'",
+                "num_genes: '' does not match '^[0-9]+$'",
+                "num_of_frameshifts: '' does not match '^[0-9]+$'",
+                "num_of_stop_codons: '' does not match '^[0-9]+$'",
+                "genome_coverage: '' does not match '^[0-9]*\\\\.[0-9]+$'",
+                "n90: '' does not match '^[0-9]+$'",
+                "percent_identity_against_reference: '100.00' does not match '^[0-9]+$'",
+                "percent_reads_unaligned: '0.89' does not match '^[0-9]+$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.4/test_files//assemblyQC_HIVE.tsv",
+    "lines": 9,
+    "schema": "schema/v1.4//core/assemblyQC_HIVE.json",
+    "summary": "9 lines failed out of 9."
+}

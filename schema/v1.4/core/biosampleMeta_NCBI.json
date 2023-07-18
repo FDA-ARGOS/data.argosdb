@@ -18,319 +18,319 @@
             "title": "organism_name",
             "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Severe acute respiratory syndrome coronavirus 2"
             ],
-            "pattern": "Severe acute respiratory syndrome coronavirus 2"
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
         },
         "infraspecific_name": {
             "$id": "#root/infraspecific_name",
             "title": "infraspecific_name",
             "description": "scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies. ",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "isolate Wuhan-Hu-1"
             ],
-            "pattern": "isolate Wuhan-Hu-1"
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
         },
         "lineage": {
             "$id": "#root/lineage",
             "title": "lineage",
             "description": "The complete taxonomic lineage for the taxonomic node indicated.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
             ],
-            "pattern": "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
+            "pattern": "^.*$"
         },
         "taxonomy_id": {
             "$id": "#root/taxonomy_id",
             "title": "taxonomy_id",
             "description": "NCBI taxonomy identifier of the organism.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "433733"
             ],
-            "pattern": "433733"
+            "pattern": "^[0-9]+$"
         },
         "bco_id": {
             "$id": "#root/bco_id",
             "title": "bco_id",
             "description": "BioCompute Object identifier.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "ARGOS_000020"
             ],
-            "pattern": "ARGOS_000020"
+            "pattern": "^.*$"
         },
         "schema_version": {
             "$id": "#root/schema_version",
             "title": "schema_version",
             "description": "Reflective of the Data Dictionary version currently applied to the dataset. ",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "v0.9"
             ],
-            "pattern": "v0.9"
+            "pattern": "^.*$"
         },
         "bioproject": {
             "$id": "#root/bioproject",
             "title": "bioproject",
             "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "PRJNA603194"
             ],
-            "pattern": "PRJNA603194"
+            "pattern": "^[A-Za-z0-9]+$"
         },
         "biosample": {
             "$id": "#root/biosample",
             "title": "biosample",
             "description": "NCBI BioSample identifier.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "SAMN13922059"
             ],
-            "pattern": "SAMN13922059"
+            "pattern": "^[A-Za-z0-9]+$"
         },
         "strain": {
             "$id": "#root/strain",
             "title": "strain",
             "description": "Microbial or eukaryotic strain name",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "FDAARGOS_94"
             ],
-            "pattern": "FDAARGOS_94"
+            "pattern": "^.*$"
         },
         "genome_assembly_id": {
             "$id": "#root/genome_assembly_id",
             "title": "genome_assembly_id",
             "description": "Assembly DB identifier (Example: NCBI assembly accession)",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "GCA_009858895.3"
             ],
-            "pattern": "GCA_009858895.3"
+            "pattern": "^.*$"
         },
         "sample_name": {
             "$id": "#root/sample_name",
             "title": "sample_name",
             "description": "sample name in source database",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "human bronchoalveolar lavage fluid"
             ],
-            "pattern": "human bronchoalveolar lavage fluid"
+            "pattern": "^.*$"
         },
         "instrument": {
             "$id": "#root/instrument",
             "title": "instrument",
             "description": "Name of instrument used for NGS.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Illumina MiniSeq"
             ],
-            "pattern": "Illumina MiniSeq"
+            "pattern": "^.*$"
         },
         "isolate": {
             "$id": "#root/isolate",
             "title": "isolate",
             "description": "The isolate classifer",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Monkeypox Virus/USA-2003"
             ],
-            "pattern": "Monkeypox Virus/USA-2003"
+            "pattern": "^.*$"
         },
         "collected_by": {
             "$id": "#root/collected_by",
             "title": "collected_by",
             "description": "Name of persons or institute who collected the sample",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Fudan University"
             ],
-            "pattern": "Fudan University"
+            "pattern": "^.*$"
         },
         "collection_date": {
             "$id": "#root/collection_date",
             "title": "collection_date",
             "description": "the date on which the sample was collected; date/time ranges are supported by providing two dates from among the supported value formats, delimited by a forward-slash character; collection times are supported by adding \"T\", then the hour and minute after the date, and must be in Coordinated Universal Time (UTC),",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "2/20/20"
             ],
-            "pattern": "02/20/2020"
+            "pattern": "^.*$"
         },
         "geo_loc_name": {
             "$id": "#root/geo_loc_name",
             "title": "geo_loc_name",
             "description": "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary.\u00ac\u2020",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "China: Wuhan"
             ],
-            "pattern": "China: Wuhan"
+            "pattern": "^.*$"
         },
         "isolation_source": {
             "$id": "#root/isolation_source",
             "title": "isolation_source",
             "description": "Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "human lung metagenome"
             ],
-            "pattern": "human lung metagenome"
+            "pattern": "^.*$"
         },
         "lat_lon": {
             "$id": "#root/lat_lon",
             "title": "lat_lon",
             "description": "The geographical coordinates of the location where the sample was collected.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "NA"
             ],
-            "pattern": "NA"
+            "pattern": "^.*$"
         },
         "culture_collection": {
             "$id": "#root/culture_collection",
             "title": "culture_collection",
             "description": "Name of source institute and unique culture identifier. See the description for the proper format and list of allowed institutes, http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "FDA:FDAARGOS_855"
             ],
-            "pattern": "FDA:FDAARGOS_855"
+            "pattern": "^.*$"
         },
         "host": {
             "$id": "#root/host",
             "title": "host",
             "description": "The natural host to the organism from which the sample was obtained.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "9606"
             ],
-            "pattern": "9606"
+            "pattern": "^.*$"
         },
         "host_age": {
             "$id": "#root/host_age",
             "title": "host_age",
             "description": "Age of host at the time of sampling",
             "type": "string",
-            "default": "0-200",
+            "default": "-",
             "examples": [
-                "-"
+                "16M"
             ],
-            "pattern": "16M"
+            "pattern": "^.*$"
         },
         "host_description": {
             "$id": "#root/host_description",
             "title": "host_description",
             "description": "Additional information not included in other defined vocabulary fields",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "NA"
             ],
-            "pattern": "NA"
+            "pattern": "^.*$"
         },
         "host_disease": {
             "$id": "#root/host_disease",
             "title": "host_disease",
             "description": "Name of relevant disease, e.g. Salmonella gastroenteritis. Controlled vocabulary, http://bioportal.bioontology.org/ontologies/1009 or http://www.ncbi.nlm.nih.gov/mesh",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Monkeypox Virus Disease"
             ],
-            "pattern": "Monkeypox Virus Disease"
+            "pattern": "^.*$"
         },
         "host_disease_outcome": {
             "$id": "#root/host_disease_outcome",
             "title": "host_disease_outcome",
             "description": "Final outcome of disease, e.g., death, chronic disease, recovery",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "NA"
             ],
-            "pattern": "NA"
+            "pattern": "^.*$"
         },
         "host_disease_stage": {
             "$id": "#root/host_disease_stage",
             "title": "host_disease_stage",
             "description": "Stage of disease at the time of sampling",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "NA"
             ],
-            "pattern": "NA"
+            "pattern": "^.*$"
         },
         "host_health_state": {
             "$id": "#root/host_health_state",
             "title": "host_health_state",
             "description": "Information regarding health state of the individual sampled at the time of sampling",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "NA"
             ],
-            "pattern": "NA"
+            "pattern": "^.*$"
         },
         "host_sex": {
             "$id": "#root/host_sex",
             "title": "host_sex",
             "description": "Gender or physical sex of the host",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "Male | Female "
             ],
-            "pattern": "Male | Female "
+            "pattern": "^.*$"
         },
         "id_method": {
             "$id": "#root/identification_method",
             "title": "identification_method",
             "description": "Species identification method.",
             "type": "string",
-            "default": "N/A",
+            "default": "-",
             "examples": [
-                "-"
+                "RT-PCR and Amplicon Sequencing|Phenotypic and Molecular Methods"
             ],
-            "pattern": "RT-PCR and Amplicon Sequencing|Phenotypic and Molecular Methods"
+            "pattern": "^.*$"
         },
         "biosample_score": {
             "$id": "#root/biosample_score",
             "title": "biosample_score",
             "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set",
             "type": "string",
-            "default": "1-200",
+            "default": "-",
             "examples": [
-                "-"
+                "33"
             ],
-            "pattern": "33"
+            "pattern": "^.*$"
         }
     }
 }

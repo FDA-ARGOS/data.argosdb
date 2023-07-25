@@ -2,7 +2,7 @@
 
 if [ "$#" -eq 0 ]
 then
-        echo "No arguments supplied"
+        echo "No version supplied; usage: ./argosPuller.sh <version>"
         exit 1
 fi
 
@@ -23,15 +23,15 @@ do
                 }' > ~/api/data/"$query".json;
 done
 
-echo "Finished downlaoding data from ARGOS API. Attempting to push data sets to HIVE 3...\n"
+echo "Finished downlaoding data from ARGOS API. Attempting to push data sets to HIVE 3..."
 read -p "Enter your login for HIVE 3: " user
 read -sp "Enter your password" pass
+#This needs a check to make sure it logged in properly and retry input if not.
 curl -k -c ~/hive3.cookie "https://hive3.biochemistry.gwu.edu/dna.cgi?cmdr=login&login=${user}&pswd=${pass}"
 
 for DATASET in ~/api/data/*.json;
-#for DATASET in ~/api/data/*.json;
 do
-        curl -v -b  ~/hive3.cookie  -X POST -F "content=@${DATASET}" -F 'cmd=objSetFile' -F 'raw=1'  -F 'bin=0' -F 'type=u-file' -F 'filename=_.json' -F 'name=apiTestFile'  -F 'ext=json'  'https://hive3.biochemistry.gwu.edu/dna.cgi';
+        curl -v -b  ~/hive3.cookie  -X POST -F "content=@${DATASET}" -F 'cmd=objSetFile' -F 'raw=1'  -F 'bin=0' -F 'type=u-file' -F 'filename=_.json' -F 'name=ArgosDataSetFile'  -F 'ext=json'  'https://hive3.biochemistry.gwu.edu/dna.cgi';
 done
 
 

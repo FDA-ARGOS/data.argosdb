@@ -125,7 +125,6 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
         lineage = ngs.lineage[biosample_id]
         bioproject = ngs.bioproject[biosample_id]
         organism_name = ngs.organism_name[biosample_id]
-        lineage = ngs.organism_name[biosample_id]
         taxonomy_id = ngs.taxonomy_id[biosample_id]
         genome_assembly_id = ngs.genome_assembly_id[biosample_id]
 

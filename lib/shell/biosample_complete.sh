@@ -1,15 +1,18 @@
 #!/bin/bash 
 #
-# Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE -b BCO_ID -s SCHEMA_VERSION
+# Usage: ./biosample_complete.sh -f BIOSAMPLEIDFILE -n NGSQCFILE -b BCO_ID -s SCHEMA_VERSION
 
 
 WORKING_DIR=biosample_$(date "+%Y%m%d_%H%M%S")
 mkdir -p $WORKING_DIR
 
-while getopts "f:b:s:" opt; do
+while getopts "f:n:b:s:" opt; do
   case $opt in
     f | file)
       sampleidfile=$OPTARG
+      ;;
+    n | ngsqc_file )
+      ngsqcfile=$OPTARG
       ;;
     b | bco_id )
       bco_id=$OPTARG
@@ -29,13 +32,13 @@ do
   # Retrieve biosample metadata
   esearch -db biosample -query $biosample_id | efetch -format xml > $WORKING_DIR/biosample_meta_$biosample_id.xml
   # Retrieve lineage
-  echo "...Retrieving lineage"
-  esearch -db biosample -query $biosample_id | elink -target taxonomy | efetch -format xml > $WORKING_DIR/biosample_lineage_$biosample_id.xml
+#  echo "...Retrieving lineage"
+#  esearch -db biosample -query $biosample_id | elink -target taxonomy | efetch -format xml > $WORKING_DIR/biosample_lineage_$biosample_id.xml
   # converting lineage to text
-  xmllint --xpath 'string(//Lineage)' $WORKING_DIR/biosample_lineage_$biosample_id.xml > $WORKING_DIR/biosample_lineage_$biosample_id.txt
+#  xmllint --xpath 'string(//Lineage)' $WORKING_DIR/biosample_lineage_$biosample_id.xml > $WORKING_DIR/biosample_lineage_$biosample_id.txt
   # parse metadata
   echo ...Parsing XML biosample metadata to create tsv
-  python3 ./sra_sample_parser.py -f $WORKING_DIR/biosample_meta_$biosample_id.xml -l $WORKING_DIR/biosample_lineage_$biosample_id.txt -b $bco_id -s $schema > $WORKING_DIR/biosample_meta_$biosample_id.tsv
+  python3 ./sra_sample_parser.py -n $ngsqcfile -f $WORKING_DIR/biosample_meta_$biosample_id.xml -b $bco_id -s $schema > $WORKING_DIR/biosample_meta_$biosample_id.tsv
 done 
 
 echo Biosample metadata files are located at $WORKING_DIR

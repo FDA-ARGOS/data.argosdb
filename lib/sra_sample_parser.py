@@ -10,6 +10,7 @@ import os
 import sys
 import csv
 import argparse
+import pandas as pd
 import xml.etree.ElementTree as ET
 __version__ = "0.1.0"
 __status__ = "Beta"
@@ -27,7 +28,7 @@ def usr_args():
 
     # set usages options
     parser = argparse.ArgumentParser(
-        prog='sra_trace_xml.py',
+        prog='sra_sample_parser.py',
         usage='%(prog)s [options]')
 
     # version
@@ -48,8 +49,12 @@ def usr_args():
         help="Schema version")
 
     parser.add_argument('-l', '--lineage_file',
-        required=True,
+        #required=True,
         help="Lineage file, in text format.")
+
+    parser.add_argument('-n', '--ngsqc_file',
+        required=True,
+        help="ngsQC file, in tsv format.")
 
     parser.add_argument('-o', '--output',
         help="Output file. If no output is provided, the resulting table will \
@@ -59,13 +64,15 @@ def usr_args():
 
     return parser.parse_args()
 
-def parse_xml(xml_file, lineage_file, samples, bco_id, schema_version):
+def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
     """Parse XML file
 
     Parameters
     ----------
     xml_file: str
         file path/name to be parsed
+    ngsqc_file: str
+        file path/name to HIVE QC file
     samples: dict
         dictionary of samples
 
@@ -74,6 +81,16 @@ def parse_xml(xml_file, lineage_file, samples, bco_id, schema_version):
     samples: dict
         dictionary of samples
     """
+
+    # read ngsqc
+    ngs = pd.read_table(ngsqc_file, sep='\t')
+    # scope down to relevant columns
+    ngs = ngs[['biosample',
+               'bioproject', 'organism_name', 'lineage', 'taxonomy_id', 'genome_assembly_id']]
+    # there can be >1 row per biosample
+    ngs = ngs.drop_duplicates()
+    # set biosample as the row index
+    ngs.index = ngs.biosample
 
     organism_name = lineage = taxonomy_id \
         = bioproject = biosample \
@@ -101,8 +118,17 @@ def parse_xml(xml_file, lineage_file, samples, bco_id, schema_version):
                     taxonomy_id = feature.attrib['taxonomy_id']
                     organism_name = feature.attrib['taxonomy_name']
         # Get lineage
-        with open(lineage_file, 'r') as lin_file:
-            lineage = lin_file.readline().rstrip('\n')
+        # with open(lineage_file, 'r') as lin_file:
+        #     lineage = lin_file.readline().rstrip('\n')
+        ngs = ngs[['biosample',
+                   'bioproject', 'organism_name', 'lineage', 'taxonomy_id', 'genome_assembly_id']]
+        lineage = ngs.lineage[biosample_id]
+        bioproject = ngs.bioproject[biosample_id]
+        organism_name = ngs.organism_name[biosample_id]
+        lineage = ngs.organism_name[biosample_id]
+        taxonomy_id = ngs.taxonomy_id[biosample_id]
+        genome_assembly_id = ngs.genome_assembly_id[biosample_id]
+
         # Extract other attributes from XML
         for attribute in biosample.findall('./Attributes/'):
             if attribute.attrib['attribute_name'] == 'strain':
@@ -116,7 +142,7 @@ def parse_xml(xml_file, lineage_file, samples, bco_id, schema_version):
             if attribute.attrib['attribute_name'] == 'geo_loc_name':
                 geo_loc_name = attribute.text
             if attribute.attrib['attribute_name'] == 'isolation_source':
-                isolation_source  = attribute.text
+                isolation_source = attribute.text
             if attribute.attrib['attribute_name'] == 'lat_lon':
                 lat_lon  = attribute.text
             if attribute.attrib['attribute_name'] == 'culture_collection':
@@ -199,7 +225,7 @@ def main():
         'host_health_state', 'host_sex', 'id_method',\
         'biosample_score']
     args = usr_args()
-    parse_xml(args.file, args.lineage_file, samples, args.bco_id, schema_version = args.schema)
+    parse_xml(args.file, args.ngsqc_file, samples, args.bco_id, schema_version = args.schema)
     sample_output(samples, header, args.output)
 
 if __name__ == "__main__":

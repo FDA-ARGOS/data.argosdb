@@ -122,11 +122,14 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
         #     lineage = lin_file.readline().rstrip('\n')
         ngs = ngs[['biosample',
                    'bioproject', 'organism_name', 'lineage', 'taxonomy_id', 'genome_assembly_id']]
-        lineage = ngs.lineage[biosample_id]
-        bioproject = ngs.bioproject[biosample_id]
-        organism_name = ngs.organism_name[biosample_id]
-        taxonomy_id = ngs.taxonomy_id[biosample_id]
-        genome_assembly_id = ngs.genome_assembly_id[biosample_id]
+        # [0] below is taking the first row when duplicate results are returned.
+        # Using pandas to deduplicate is not a sufficient solution because
+        #   the data can be messy (and such rows would not qualify as duplicates)
+        lineage = ngs[ngs.biosample == biosample_id].lineage[0]
+        bioproject = ngs[ngs.biosample == biosample_id].bioproject[0]
+        organism_name = ngs[ngs.biosample == biosample_id].organism_name[0]
+        taxonomy_id = ngs[ngs.biosample == biosample_id].taxonomy_id[0]
+        genome_assembly_id = ngs[ngs.biosample == biosample_id].genome_assembly_id[0]
 
         # Extract other attributes from XML
         for attribute in biosample.findall('./Attributes/'):

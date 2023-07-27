@@ -31,11 +31,6 @@ do
   echo "Retrieving biosample metadata for $biosample_id"
   # Retrieve biosample metadata
   esearch -db biosample -query $biosample_id | efetch -format xml > $WORKING_DIR/biosample_meta_$biosample_id.xml
-  # Retrieve lineage
-#  echo "...Retrieving lineage"
-#  esearch -db biosample -query $biosample_id | elink -target taxonomy | efetch -format xml > $WORKING_DIR/biosample_lineage_$biosample_id.xml
-  # converting lineage to text
-#  xmllint --xpath 'string(//Lineage)' $WORKING_DIR/biosample_lineage_$biosample_id.xml > $WORKING_DIR/biosample_lineage_$biosample_id.txt
   # parse metadata
   echo ...Parsing XML biosample metadata to create tsv
   python3 ./sra_sample_parser.py -n $ngsqcfile -f $WORKING_DIR/biosample_meta_$biosample_id.xml -b $bco_id -s $schema > $WORKING_DIR/biosample_meta_$biosample_id.tsv

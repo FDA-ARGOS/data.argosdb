@@ -85,14 +85,15 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
     # read ngsqc
     ngs = pd.read_table(ngsqc_file, sep='\t')
     # scope down to relevant columns
-    ngs = ngs[['biosample',
-               'bioproject', 'organism_name', 'lineage', 'taxonomy_id', 'genome_assembly_id']]
+    ngs = ngs[['biosample', \
+               'bioproject', 'organism_name', 'infraspecific_name', \
+               'lineage', 'taxonomy_id', 'genome_assembly_id']]
     # there can be >1 row per biosample
     ngs = ngs.drop_duplicates()
     # set biosample as the row index
     ngs.index = ngs.biosample
 
-    organism_name = lineage = taxonomy_id \
+    organism_name = infraspecific_name = lineage = taxonomy_id \
         = bioproject = biosample \
         = strain = genome_assembly_id = sample_name \
         = instrument = isolate = collected_by = collection_date \
@@ -121,13 +122,15 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
         # with open(lineage_file, 'r') as lin_file:
         #     lineage = lin_file.readline().rstrip('\n')
         ngs = ngs[['biosample',
-                   'bioproject', 'organism_name', 'lineage', 'taxonomy_id', 'genome_assembly_id']]
+                   'bioproject', 'organism_name', 'infraspecific_name',
+                   'lineage', 'taxonomy_id', 'genome_assembly_id']]
         # [0] below is taking the first row when duplicate results are returned.
         # Using pandas to deduplicate is not a sufficient solution because
         #   the data can be messy (and such rows would not qualify as duplicates)
         lineage = ngs[ngs.biosample == biosample_id].lineage[0]
         bioproject = ngs[ngs.biosample == biosample_id].bioproject[0]
         organism_name = ngs[ngs.biosample == biosample_id].organism_name[0]
+        infraspecific_name = ngs[ngs.biosample == biosample_id].infraspecific_name[0]
         taxonomy_id = ngs[ngs.biosample == biosample_id].taxonomy_id[0]
         genome_assembly_id = ngs[ngs.biosample == biosample_id].genome_assembly_id[0]
 
@@ -170,7 +173,8 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
             if attribute.attrib['attribute_name'] == 'type-material':
                 type_material = attribute.text
 
-        samples[biosample_id] = [organism_name, lineage, taxonomy_id, bco_id, \
+        samples[biosample_id] = [organism_name, infraspecific_name, lineage, \
+            taxonomy_id, bco_id, \
             schema_version, bioproject, biosample_id, strain, genome_assembly_id, \
             sample_name, instrument, isolate, collected_by, collection_date, \
             geo_loc_name, isolation_source, lat_lon, culture_collection, host,\
@@ -218,8 +222,8 @@ def main():
     """Main Fuunction
     """
     samples = {}
-    header = ['organism_name', 'lineage', 'taxonomy_id', 'bco_id', \
-        'schema_version', 'bioproject', 'biosample', 'strain', \
+    header = ['organism_name', 'infraspecific_name', 'lineage', 'taxonomy_id', \
+        'bco_id', 'schema_version', 'bioproject', 'biosample', 'strain', \
         'genome_assembly_id', 'sample_name', 'instrument', 'isolate', 'collected_by',\
         'collection_date', 'geo_loc_name', 'isolation_source', 'lat_lon',\
         'culture_collection', 'host', 'host_age', 'host_description', \

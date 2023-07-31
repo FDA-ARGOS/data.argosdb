@@ -180,7 +180,10 @@ def parse_xml(xml_file, ngsqc_file, samples, bco_id, schema_version):
             geo_loc_name, isolation_source, lat_lon, culture_collection, host,\
             host_age, host_description, host_disease, host_disease_outcome, \
             host_disease_stage, host_health_state, host_sex, \
-            id_method, biosample_score]
+            id_method]
+
+        biosample_score = len(samples[biosample_id])-samples[biosample_id].count(PLACEHOLDER_CHAR)
+        samples[biosample_id].append(biosample_score)
 
     return samples
 

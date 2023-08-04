@@ -1,0 +1,4 @@
+# Python environment requirements for sra_sample_parser.py
+requests==2.28.2
+urllib3==1.26.15
+pandas=2.0.3

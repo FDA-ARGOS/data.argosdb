@@ -15,6 +15,7 @@ Required parameters:
 Optional parameters:
 - `-b`: BCO ID
 - `-s`: schema version
+- `-d`: debug (if `-d` is not set, the output directory will contain intermediate xml and tsv files)
 
 Example usage:
 

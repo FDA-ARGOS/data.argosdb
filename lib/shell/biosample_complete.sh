@@ -6,7 +6,7 @@
 WORKING_DIR=biosample_$(date "+%Y%m%d_%H%M%S")
 mkdir -p $WORKING_DIR
 
-while getopts "f:n:b:s:" opt; do
+while getopts "f:n:b:s:d" opt; do
   case $opt in
     f | file)
       sampleidfile=$OPTARG
@@ -19,6 +19,9 @@ while getopts "f:n:b:s:" opt; do
       ;;
     s | schema )
       schema=$OPTARG
+      ;;
+    d | debug )
+      debug=true
       ;;
   esac
 done
@@ -40,13 +43,21 @@ echo Biosample metadata files are located at $WORKING_DIR
  
 TSVFILENAME=$WORKING_DIR/${WORKING_DIR}_meta_combined.tsv
 
-echo Adding header line
+echo Creating TSV file...
+echo ...Adding header line
 head -n 1 $WORKING_DIR/biosample_meta_${IDLINES[0]}.tsv > $TSVFILENAME
 
-echo looping through lines
+echo ...looping through data lines
 for biosample_id in ${IDLINES[@]}
 do
    tail -n +2 $WORKING_DIR/biosample_meta_$biosample_id.tsv >> $TSVFILENAME
 done
+
+# Clean up if $debug is NOT set
+if [ -z $debug ]
+then
+   echo "Cleaning up..."
+   rm $WORKING_DIR/biosample_meta*
+fi
 
 echo Combined tsv file is located at $TSVFILENAME

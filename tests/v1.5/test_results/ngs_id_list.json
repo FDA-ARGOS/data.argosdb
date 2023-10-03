@@ -1,0 +1,7 @@
+{
+    "errors": "NONE. Data sheet valid",
+    "input": "tests/v1.5/test_files//ngs_id_list.tsv",
+    "lines": 9,
+    "schema": "schema/v1.5//core/ngs_id_list.json",
+    "summary": "0 lines failed out of 9."
+}

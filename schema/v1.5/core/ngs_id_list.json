@@ -1,0 +1,175 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.4/schema/v1.5/core/ngs_id_list.tsv",
+    "title": "ngs_id_list.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "genome_assembly_id",
+        "taxonomy_id",
+        "biosample",
+        "sra_run_id",
+        "ngs_read_file_source",
+        "selection_notes",
+        "lab_name",
+        "files_processed"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/note",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe acute respiratory syndrome coronavirus 2"
+            ],
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
+        },
+        "infraspecific_name": {
+            "$id": "#root/infraspecific_name",
+            "title": "infraspecific_name",
+            "description": "scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate Wuhan-Hu-1"
+            ],
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
+            ],
+            "pattern": "^.*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Assembly DB identifier (Example: NCBI assembly accession)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_009858895.3"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "bioproject": {
+            "$id": "#root/bioproject",
+            "title": "bioproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PRJNA603194"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN13922059"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "The SRA run accession for a set of fastq files ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "ngs_read_file_source": {
+            "$id": "#root/ngs_read_file_source",
+            "title": "ngs_read_file_source",
+            "description": "Resource that the fastq files are derived from (i.e. SRA) in the form of a URI/static URL.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRA"
+            ],
+            "pattern": "^[A-Za-z]+$"
+        },
+        "ref_org": {
+            "$id": "#root/ref_org",
+            "title": "ref_org",
+            "description": "Internally determined as 'concensus reference organism' used as a standard while building and testing Argos QC pipelines. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Yes/No"
+            ],
+            "pattern": "^.*$"
+        },
+        "isolate_identifiers": {
+            "$id": "#root/isolate_identifiers",
+            "title": "isolate_identifiers",
+            "description": "Isolate accession for each pathogen genome",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PDT000289948.1"
+            ],
+            "pattern": "^.*$"
+        },
+        "selection_notes": {
+            "$id": "#root/note",
+            "title": "Selection Notes",
+            "description": "Notes describing why SRR was analyzed",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Text"
+            ],
+            "pattern": "^.*$"
+        },
+        "lab_name": {
+            "$id": "#root/note",
+            "title": "Lab Name",
+            "description": "Lab group that ran ngs computation",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Mazumder Lab"
+            ],
+            "pattern": "^.*$"
+        },
+        "files_processed": {
+            "$id": "#root/processed",
+            "title": "processed",
+            "description": "Denotes if SRR has been published on argosdb",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ngsQC_HIVE.tsv"
+            ],
+            "pattern": "^.*$"
+        }
+    }
+}

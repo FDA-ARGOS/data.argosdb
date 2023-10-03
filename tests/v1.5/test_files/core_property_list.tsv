@@ -1,0 +1,10 @@
+property	data_object	requirement	id	title	data_type	constraint	default	examples	pattern
+organism_name	assemblyQC_HIVE.tsv	required	#root/organism_name	organism_name	string	N/A	-	Severe acute respiratory syndrome coronavirus 2	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$
+infraspecific_name	assemblyQC_HIVE.tsv	optional	#root/infraspecific_name	infraspecific_name	string	N/A	-	isolate Wuhan-Hu-1	^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$
+lineage	assemblyQC_HIVE.tsv	required	#root/lineage	lineage	string	N/A	-	Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus	^.*$
+assembled_genome_acc	assemblyQC_HIVE.tsv	required	#root/assembled_genome_acc	assembled_genome_acc	string	N/A	-	ARG_000001	^.*$
+genome_assembly_id	assemblyQC_HIVE.tsv	required	#root/genome_assembly_id	genome_assembly_id	string	N/A	-	GCA_009858895.3	^.*$
+taxonomy_id	assemblyQC_HIVE.tsv	required	#root/taxonomy_id	taxonomy_id	int	N/A	-	2697049	^[0-9]+$
+bco_id	assemblyQC_HIVE.tsv	required	#root/bco_id	bco_id	string	N/A	-	ARGOS_000012	^.*$
+schema_version	assemblyQC_HIVE.tsv	required	#root/schema_version	schema_version	string	N/A	-	v0.9	^.*$
+analysis_platform	assemblyQC_HIVE.tsv	required	#root/analysis_platform	analysis_platform	string	N/A	-	HIVE 1 | HIVE 2 | HIVE AWS | Galaxy	^.*$

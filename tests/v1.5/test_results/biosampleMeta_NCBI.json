@@ -1,0 +1,65 @@
+{
+    "errors": [
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 1
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 2
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 3
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 4
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 5
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Bacillus sp. (in: firmicutes)' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 6
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Bacillus sp. (in: firmicutes)' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 7
+        },
+        {
+            "failed_cells": [
+                "organism_name: 'Bacillus sp. (in: firmicutes)' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'",
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 8
+        },
+        {
+            "failed_cells": [
+                "infraspecific_name: '' does not match '^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$'"
+            ],
+            "line_number": 9
+        }
+    ],
+    "input": "tests/v1.5/test_files//biosampleMeta_NCBI.tsv",
+    "lines": 9,
+    "schema": "schema/v1.5//core/biosampleMeta_NCBI.json",
+    "summary": "9 lines failed out of 9."
+}

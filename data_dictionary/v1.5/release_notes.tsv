@@ -1,0 +1,1110 @@
+README Summary for Data Dictionary V1.4																										
+"- In 'data_files' column: '*' implies all files in that data set category from Mazumder, Pond, and Crandall Labs."																										
+																										
+Major Changes to V1.4 Data Dictionary 																										
+Action 	Affected Datasets 	Justification																								
+Dataset name change	non-core_propoerty_list.tsv' was renamed 'annotation_propoerty_list.tsv'|'SRA_biosample.tsv' was renamed 'biosampleMeta_NCBI.tsv' 	The renaming is a more appropriate description of the dataset and it's contents. 																								
+"New dataset added, and new terms added and defined"	property_list.tsv|annotation_property_list.tsv|DRM_all_orgs.tsv	The annotation dictionary is expanding due to new protocols and datasets.																								
+Datasets were archived; terms not in use were removed from the data dictionary	proteome_metadata.csv*|uniprot-proteome.csv*|SRA_biosample.tsv|PRJNA231221_AssemblyUpdated.tsv|property_definition.tsv|annotation_property_list.tsv	Terms or datasets are reomved if they are not in use or represented in data.argosdb.org. Previous versions of the data dictionary can be referenced if a term is pulled back into use. 																								
+Statsitics section of 'Release Notes' updated 	release_notes.tsv|README.tsv	To maintain data dictionary metadata.																								
+																										
+Summary of V1.4 Changes in Property Definition List:																										
+Term	Action 	Affected Datasets 																								
+Edits to Column Headers:																										
+NA	NA	NA																								
+Edits to Terms:																										
+organism_name	Update to the 'data_files' column; New dataset added; Dataset was archived	DRM_all_orgs.tsv|SRA_biosample.tsv																								
+bioproject	Update to the 'data_files' column; New dataset added; Dataset was archived	DRM_all_orgs.tsv|SRA_biosample.tsv																								
+strain	Update to the 'data_files' column; New dataset added; Dataset was archived	DRM_all_orgs.tsv|SRA_biosample.tsv																								
+infraspecific_name	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+lineage	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+genome_assembly_id	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+taxonomy_id	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+bco_id	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+schema_version	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+analysis_platform	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+analysis_platform_id	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+biosample	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+ngs_read_file_source	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+wt_amino_acid	Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+isolate	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+serotype	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+annotation_score	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+ncbi_nonredundant_accession	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+amino_acid_pos_uniprot	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+uniprot_accession	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+amino_acid_pos_refseq	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+refseq_protein_accession	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+mut_amino_acid	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+protein_name	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+drug_class	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+event	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+drm_formula	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+genomic_accession	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+proteome_id	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+reference	New term and definition; Update to the 'data_files' column; New dataset added	DRM_all_orgs.tsv																								
+length	Datasets were archived; 'data_files' column updated to remove affected datasets 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+num_chromosomes	Dataset was archived; 'data_files' column updated to remove affected datasets 	PRJNA231221_AssemblyUpdated.tsv																								
+host	Dataset was archived; 'data_files' column updated to remove affected datasets 	SRA_biosample.tsv																								
+type_material	Datasets were archived; term removed from data dictionary 	SRA_biosample.tsv																								
+entry_name	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+status	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+protein_names	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+gene_names	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+uniprotkb_ac	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome.csv* 																								
+uniprotkb_canonical_ac	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+found_in	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+gene_name	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+protein_name	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+evidence_ECO0000313	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+begin_aa_pos	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+end_aa_pos	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+mutation_type	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+is_known_glycoprotein	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+motif_start	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+ref_motif	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+alt_motif	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+effect	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+note	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+																										
+Summary of V1.4 Changes in CORE Property List and associated data sets:																										
+Term	Action 	Affected Datasets 																								
+Edits to Column Headers:																										
+NA	NA	NA																								
+Edits to Terms:																										
+All Terms	data_object' file name update to 'assemblyQC_HIVE.tsv'	assemblyQC.tsv																								
+All Terms	data_object' file name update to 'biosampleMeta_HIVE.tsv'	biosampleMeta.tsv																								
+All Terms	data_object' file name update to 'ngsQC_HIVE.tsv'	ngsQC.tsv																								
+All Terms	data_object' file name update to 'siteQC_HIVE.tsv'	siteQC.tsv																								
+All Terms	data_object' file name updated to 'biosampleMeta_NCBI.tsv'	SRA_biosample.tsv																								
+All Terms	"Update information in 'data_type', 'constraint', 'default', 'examples', and 'pattern' columns"	biosampleMeta_NCBI.tsv																								
+All Terms	Terms and dataset were re-prioritized to CORE	ngs_id_list.tsv																								
+																										
+Summary of V1.4 Changes in Annotation Property List and associated data sets: Dataset name changed from non-core_property_list.tsv to annotation_propoerty_list.tvs																										
+Term	Action 	Affected Datasets 																								
+Edits to Column Headers:																										
+type	Renamed 'type' column to 'data_type' to match core_property_list columns 	annotation_property_list.tsv																								
+Edits to Terms:																										
+All Terms 	"Update information in 'data_type', 'constraint', 'default', 'examples', and 'pattern' columns"	DRM_all_orgs.tsv|ngs_id_list.tsv																								
+isolate	New term in new dataset	DRM_all_orgs.tsv																								
+serotype	New term in new dataset	DRM_all_orgs.tsv																								
+annotation_score	New term in new dataset	DRM_all_orgs.tsv																								
+ncbi_nonredundant_accession	New term in new dataset	DRM_all_orgs.tsv																								
+amino_acid_pos_uniprot	New term in new dataset	DRM_all_orgs.tsv																								
+uniprot_accession	New term in new dataset	DRM_all_orgs.tsv																								
+amino_acid_pos_refseq	New term in new dataset	DRM_all_orgs.tsv																								
+refseq_protein_accession	New term in new dataset	DRM_all_orgs.tsv																								
+mut_amino_acid	New term in new dataset	DRM_all_orgs.tsv																								
+protein_name	New term in new dataset	DRM_all_orgs.tsv																								
+drug_class	New term in new dataset	DRM_all_orgs.tsv																								
+event	New term in new dataset	DRM_all_orgs.tsv																								
+drm_formula	New term in new dataset	DRM_all_orgs.tsv																								
+genomic_accession	New term in new dataset	DRM_all_orgs.tsv																								
+proteome_id	New term in new dataset	DRM_all_orgs.tsv																								
+reference	New term in new dataset	DRM_all_orgs.tsv																								
+uniprotkb_ac	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+entry_name	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+status	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+protein_names	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+gene_names	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+organism_name	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+length	Datasets were archived; term removed from data dictionary 	proteome_metadata.csv*|uniprot-proteome_*.csv																								
+uniprotkb_canonical_ac	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+found_in	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+gene_name	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+protein_name	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+evidence_ECO0000313	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+begin_aa_pos	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+end_aa_pos	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+mutation_type	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+is_known_glycoprotein	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+motif_start	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+ref_motif	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+alt_motif	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+effect	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+note	Datasets were archived; term removed from data dictionary 	sars-cov-2_lineage_mutations.tsv																								
+																										
+V1.4 Data Sheet Statistics:																										
+Class	Sheet	Total Properties																								
+Dictionary	property_definition.tsv	132																								
+Dictionary 	core_property_list.tsv	254																								
+Dictionary 	annotation_property_list.tsv	29																								
+Core	assemblyQC*	33																								
+Core	biosampleMeta*	29																								
+Core	ngsQC*	41																								
+Core	siteQC*	34																								
+Core	ngs_ID_list.tsv	14																								
+Annotation	DRM_all_orgs.tsv	29																								
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										

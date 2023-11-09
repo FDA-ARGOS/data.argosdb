@@ -1,0 +1,478 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.4/schema/v1.5/core/ngsQC_NCBI.tsv",
+    "title": "ngsQC_NCBI.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "taxonomy_id",
+        "bco_id",
+        "schema_version",
+        "analysis_platform",
+        "bioproject",
+        "biosample",
+        "sra_run_id",
+        "ngs_read_file_name",
+        "ngs_read_file_source",
+        "ngs_gc_content",
+        "avg_phred_score",
+        "avg_read_length",
+        "max_read_length",
+        "min_read_length",
+        "instrument"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Severe acute respiratory syndrome coronavirus 2"
+            ],
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
+        },
+        "infraspecific_name": {
+            "$id": "#root/infraspecific_name",
+            "title": "infraspecific_name",
+            "description": "scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "isolate Wuhan-Hu-1"
+            ],
+            "pattern": "^([A-Za-z0-9]+( [A-Za-z0-9]+)+)$"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
+            ],
+            "pattern": "^.*$"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Assembly DB identifier (Example: NCBI assembly accession)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "GCA_009858895.3"
+            ],
+            "pattern": "^.*$"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "2697049"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "ARGOS_000019"
+            ],
+            "pattern": "^.*$"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Reflective of the Data Dictionary version currently applied to the dataset. ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "v0.9"
+            ],
+            "pattern": "^.*$"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The platform used to conduct the analysis.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "HIVE 1 | HIVE 2 | HIVE AWS | Galaxy"
+            ],
+            "pattern": "^.*$"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "analysis_platform_object_id",
+            "description": "Unique identifier of archive containing data and analyses. Examples include HIVEPack or Research Object (RO).",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "39658"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "bioproject": {
+            "$id": "#root/bioproject",
+            "title": "bioproject",
+            "description": "NCBI BioProject DB ID. A BioProject is a collection of biological data for a single initiative, originating from a single organization or from a consortium.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "PRJNA603194"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SAMN13922059"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "Microbial or eukaryotic strain name",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "FDAARGOS_94"
+            ],
+            "pattern": "^.*$"
+        },
+        "sra_run_id": {
+            "$id": "#root/sra_run_id",
+            "title": "sra_run_id",
+            "description": "The SRA run accession for a set of fastq files ",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381"
+            ],
+            "pattern": "^[A-Za-z0-9]+$"
+        },
+        "ngs_read_file_name": {
+            "$id": "#root/ngs_read_file_name",
+            "title": "ngs_read_file_name",
+            "description": "Individual name of the fastq file involved in ngsQC or siteQC, or that is connected to a genome assembly id and subsequence fasta files in assemblyQC (i.e. SRR10971381_1.fastq)",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRR10971381_1.fastq"
+            ],
+            "pattern": "^.*$"
+        },
+        "ngs_read_file_source": {
+            "$id": "#root/ngs_read_file_source",
+            "title": "ngs_read_file_source",
+            "description": "Resource that the fastq files are derived from (i.e. SRA) in the form of a URI/static URL.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "SRA"
+            ],
+            "pattern": "^[A-Za-z]+$"
+        },
+        "ngs_gc_content": {
+            "$id": "#root/ngs_gc_content",
+            "title": "gc_content",
+            "description": "GC content of the individual fastq files in ngsQC.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "51.4"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "avg_phred_score": {
+            "$id": "#root/avg_phred_score",
+            "title": "avg_phred_score",
+            "description": "Average quality (in phred score) of sequences in a FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.5807"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "avg_read_length": {
+            "$id": "#root/avg_read_length",
+            "title": "avg_read_length",
+            "description": "Average length of sequences in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "138.6775"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "max_read_length": {
+            "$id": "#root/max_read_length",
+            "title": "max_read_length",
+            "description": "Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "151"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "min_read_length": {
+            "$id": "#root/min_read_length",
+            "title": "min_read_length",
+            "description": "Length (in base pairs) of the shortest sequence(s) in a FASTA/FASTQ read file.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "1"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "num_reads_unique": {
+            "$id": "#root/num_reads_unique",
+            "title": "num_reads_unique",
+            "description": "Number of unique reads that are not identical to other reads.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NA"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "pos_outlier_count": {
+            "$id": "#root/pos_outlier_count",
+            "title": "pos_outlier_count",
+            "description": "Count of positions the quality of which is significantly different (extremely low or high).",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "codon_table": {
+            "$id": "#root/codon_table",
+            "title": "codon_table",
+            "description": "A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear"
+            ],
+            "pattern": "^.*$"
+        },
+        "percent_coding": {
+            "$id": "#root/percent_coding",
+            "title": "percent_coding",
+            "description": "The relative frequency of sequences that are protein coding for each DNA sequence type.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84"
+            ],
+            "pattern": "^([0-9]*\\.[0-9]+(\\|[0-9]*\\.[0-9]+)+)$"
+        },
+        "percent_not_coding": {
+            "$id": "#root/percent_not_coding",
+            "title": "percent_not_coding",
+            "description": "The relative frequency of sequences that are not protein coding for each DNA sequence type.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16"
+            ],
+            "pattern": "^([0-9]*\\.[0-9]+(\\|[0-9]*\\.[0-9]+)+)$"
+        },
+        "density_n_per_read": {
+            "$id": "#root/density_n_per_read",
+            "title": "density_n_per_read",
+            "description": "A list of density values of Ns per sequence read.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|33|100"
+            ],
+            "pattern": "^([0-9]+(\\|[0-9]+)+)$"
+        },
+        "complexity_percent": {
+            "$id": "#root/complexity_percent",
+            "title": "complexity_percent",
+            "description": "Percentage of sequences that are complex.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "94"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "non_complex_percent": {
+            "$id": "#root/non_complex_percent",
+            "title": "non_complex_percent",
+            "description": "Percentage of sequences that are not complex.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "6"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "avg_quality_a": {
+            "$id": "#root/avg_quality_a",
+            "title": "avg_quality_a",
+            "description": "The average cumulative quality score of adenine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "32.095"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "avg_quality_t": {
+            "$id": "#root/avg_quality_t",
+            "title": "avg_quality_t",
+            "description": "The average cumulative quality score of thiamine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.988"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "avg_quality_g": {
+            "$id": "#root/avg_quality_g",
+            "title": "avg_quality_g",
+            "description": "The average cumulative quality score of guanine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "33.911"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "avg_quality_c": {
+            "$id": "#root/avg_quality_c",
+            "title": "avg_quality_c",
+            "description": "The average cumulative quality score of cytosine in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "34.093"
+            ],
+            "pattern": "^[0-9]*\\.[0-9]+$"
+        },
+        "count_a": {
+            "$id": "#root/count_a",
+            "title": "count_a",
+            "description": "The total count of adenines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "442689195"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "count_t": {
+            "$id": "#root/count_t",
+            "title": "count_t",
+            "description": "The total count of thiamaines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "524276679"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "count_g": {
+            "$id": "#root/count_g",
+            "title": "count_g",
+            "description": "The total count of guanines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "437991224"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "count_c": {
+            "$id": "#root/count_c",
+            "title": "count_c",
+            "description": "The total count of cytosines in the NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "584757437"
+            ],
+            "pattern": "^[0-9]+$"
+        },
+        "instrument": {
+            "$id": "#root/instrument",
+            "title": "instrument",
+            "description": "Name of instrument used for NGS.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Illumina MiniSeq"
+            ],
+            "pattern": "^.*$"
+        },
+        "id_method": {
+            "$id": "#root/id_method",
+            "title": "id_method",
+            "description": "Species identification method.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "Viral RNA | Culture | Phenotypic Identification"
+            ],
+            "pattern": "^.*$"
+        },
+        "wgs_accession": {
+            "$id": "#root/wgs_accession",
+            "title": "wgs_accession",
+            "description": "NCBI Whole Genome Shotgun (WGS) accession number.",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "NJFG00000000"
+            ],
+            "pattern": "^.*$"
+        },
+        "strategy": {
+            "$id": "#root/strategy",
+            "title": "strategy",
+            "description": "Strategy/method used to generate the NGS. Controled vocabulary consisting of the following terms: WGA WGS WXS RNA-Seq miRNA-Seq WCS CLONE POOLCLONE AMPLICON CLONEEND FINISHING ChIP-Seq MNase-Seq DNase-Hypersensitivity Bisulfite-Seq Tn-Seq EST FL-cDNA CTS MRE-Seq MeDIP-Seq MBD-Seq Synthetic-Long-Read OTHER",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "RNA-Seq"
+            ],
+            "pattern": "^.*$"
+        },
+        "ngs_score": {
+            "$id": "#root/ngs_score",
+            "title": "ngs_score",
+            "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set",
+            "type": "string",
+            "default": "-",
+            "examples": [
+                "20"
+            ],
+            "pattern": "^[0-9]+$"
+        }
+    }
+}

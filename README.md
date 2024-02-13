@@ -1,6 +1,6 @@
 # Data Argosdb
 
-Repository for data files and schema definitions for ARGOS rpoject. 
+Repository for data files and schema definitions for ARGOS project. 
 
 ## Data_files
 Space for raw or processed data files

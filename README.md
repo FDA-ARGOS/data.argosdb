@@ -1,4 +1,4 @@
-# data.argosdb
+# Data Argosdb
 
 Repository for data files and schema definitions for ARGOS rpoject. 
 

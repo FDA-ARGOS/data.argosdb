@@ -1,6 +1,16 @@
-# Data Argosdb
+# FDA-ARGOS: ARGOSDB
 
-Repository for data files and schema definitions for ARGOS project. 
+Repository for data files and schema definitions for ARGOS project.
+For additional details on project information and assembly QC see:
+
+* [ARGOSDB](https://data.argosdb.org/)
+* [NCBI Bioproject](https://www.ncbi.nlm.nih.gov/bioproject/231221)
+* [Project Information](https://www.fda.gov/emergency-preparedness-and-response/mcm-regulatory-science/expanding-next-generation-sequencing-tools-support-pandemic-preparedness-and-response)
+
+## Introduction
+FDA-ARGOS database updates may help researchers rapidly validate diagnostic tests and use qualified genetic sequences to support future product development
+
+As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
 
 ## Data_files
 Space for raw or processed data files
@@ -9,7 +19,22 @@ _
 space for documentation
 
 ## Schema
-Houses the ARGOS data schemas by release version
+Houses the ARGOS data schemas by release version:
+
+Current: [v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)  
+[v1.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.4)  
+[v1.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.3)  
+[v1.2](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.2)  
+[v1.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.1)  
+[v1.0](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.0)  
+[v0.9](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.9)  
+[v0.8](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.8)  
+[v0.7](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.7)  
+[v0.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.6)  
+[v0.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.5)  
+[v0.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.4)  
+[v0.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.3)  
+[v0.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.1)  
 
 ## lib
 For scripts and sutch
@@ -40,3 +65,9 @@ For Example:
 >  python lib/dictionary_utils.py validate -i https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/data_files/test_SRA_ngsQC.tsv -s https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/SRA_ngsQC.json
 ``` 
 should give you the same results. 
+
+
+## Citations
+Sichtig, H., Minogue, T., Yan, Y. et al. FDA-ARGOS is a database with public quality-controlled reference genomes for diagnostic use and regulatory science. Nat Commun 10, 3313 (2019). https://doi.org/10.1038/s41467-019-11306-6
+
+

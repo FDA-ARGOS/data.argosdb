@@ -1,0 +1,37 @@
+{
+  "columns": [
+    "organism_name",
+    "infraspecific_name",
+    "lineage",
+    "taxonomy_id",
+    "bco_id",
+    "schema_version",
+    "bioproject",
+    "biosample",
+    "strain",
+    "genome_assembly_id",
+    "sample_name",
+    "instrument",
+    "isolate",
+    "collected_by",
+    "collection_date",
+    "geo_loc_name",
+    "isolation_source",
+    "lat_lon",
+    "culture_collection",
+    "host",
+    "host_age",
+    "host_description",
+    "host_disease",
+    "host_disease_outcome",
+    "host_disease_stage",
+    "host_health_state",
+    "host_sex",
+    "id_method",
+    "biosample_score"
+  ],
+  "header_map": {
+    "organism_name": "organism"
+
+  }
+}

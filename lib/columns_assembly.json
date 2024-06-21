@@ -1,0 +1,41 @@
+{
+  "top_level": "refseq",
+  "columns": [
+    "organism_name", 
+    "infraspecific_name",
+    "assembled_genome_acc",
+    "genome_assembly_id",
+    "lineage",
+    "taxonomy_id",
+    "bco_id",
+    "schema_version",
+    "analysis_platform",
+    "analysis_platform_object_id",
+    "assembly_file_source",	
+    "genomic_section", 
+    "num_chromosomes",
+    "num_genes",
+    "num_segments",	
+    "assembly_gc_content",	
+    "length",
+    "num_of_frameshifts",
+    "num_of_stop_codons",
+    "genome_coverage",
+    "n50",
+    "n75", 
+    "n90",
+    "l50", 	
+    "l75",
+    "ref_genome_acc",
+    "query_coverage_against_reference",
+    "reference_coverage_against_query",
+    "percent_identity_against_reference",
+    "percent_reads_unaligned",
+    "assembly_level",
+    "assembly_score"
+  ],
+  "header_map": {
+    "bco_id": "id"
+    
+  }
+}

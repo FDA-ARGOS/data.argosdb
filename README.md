@@ -13,10 +13,11 @@ FDA-ARGOS database updates may help researchers rapidly validate diagnostic test
 As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
 
 ## Data_files
-Space for raw or processed data files
+The data files contains raw or processed code. It also contains templates and tables for the data files pushed to data.argosdb.org.
+It can be found [here](data_files).
 _
 ## Docs
-space for documentation
+Documentation can be found in the [docs](docs) directory.
 
 ## Schema
 Houses the ARGOS data schemas by release version:
@@ -37,16 +38,17 @@ Current: [v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)
 [v0.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.1)  
 
 ## lib
-For scripts and sutch
+The [lib](lib) directory contains the scripts, raw, processed code, and extras. 
+Shell files, inside lib, can be found [here](lib/shell).
 
 
 ### Validating a data file against a schema:
-Assume you wanted to validate a flie of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).
+Assume you wanted to validate a file of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).
 
 - The data file is `/data_files/test_SRA_ngsQC.tsv`
 - The schema for a `SRA_ngsQC` data file is `/schema/v0.5/non-core/SRA_ngsQC.json` 
 
-For illitstration purposes cell `T6` in our example data file has been modified. The schema says that the value has to be less than 1, as `gc_ content` is a percentage. The example data sheet has a value of `10.63682374` in that cell, and the following error shoudl be thrown:
+For illitstration purposes cell `T6` in our example data file has been modified. The schema says that the value has to be less than 1, as `gc_ content` is a percentage. The example data sheet has a value of `10.63682374` in that cell, and the following error should be thrown:
 
 `Line 5 failed. '10.63682374' does not match '^[+-]?([0]+\\.?[0-9]*|\\.[0-9]+)$` 
 

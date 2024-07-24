@@ -8,7 +8,7 @@ The primary use case for the Data Dictionary is to ensure all data submitted to 
 
 ## To generate the Schema files
 
-The draft dictionary is maintained as a Excell file for project members to contribute to. After a final review that sheet is downloaded and each of the respective tabs are converted to a `tsv` and are saved in the respective versiond directory here. Each version should contain the following files:
+The draft dictionary is maintained as a Excel file for project members to contribute to. After a final review that sheet is downloaded and each of the respective tabs are converted to a `tsv` and are saved in the respective versioned directory here. Each version should contain the following files:
 
 - `release_notes.tsv` => An itemized list of the changes implemented in the current version.
 - `README.tsv` => A summary of each sheet and the column headers
@@ -32,7 +32,7 @@ usage: argosdb_dict_utils [options]
 positional arguments:
   {functions,write_schema,validate_columns}
     functions           List of all available functions
-    write_schema        Used to convert a TSV into a JSNO schema. If no mapping file
+    write_schema        Used to convert a TSV into a JSON schema. If no mapping file
                         is provided, performs default conversions.
     validate_columns    Validates columns in a list of files in a directory using
                         provided column headers
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ### Setting up the Test Directories
 
-We need a versioned directory for the test results and test files. run the following commands to create them:
+We need a versioned directory for the test results and test files. Run the following commands to create them:
 
 	mkdir tests/[current version]
         mkdir tests/[current version]/test_results

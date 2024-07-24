@@ -14,7 +14,7 @@ As of September 2021, Embleema and George Washington University have been conduc
 
 ## Data_files
 The data files contains raw or processed code. It also contains templates and tables for the data files pushed to data.argosdb.org.
-It can be found [here](data_files).
+It can be found [here](data_files)
 _
 ## Docs
 Documentation can be found in the [docs](docs) directory.
@@ -41,6 +41,9 @@ Current: [v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)
 The [lib](lib) directory contains the scripts, raw, processed code, and extras. 
 Shell files, inside lib, can be found [here](lib/shell).
 
+## covid-drdb
+COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.
+The documents and files can be found [here](covid-drdb/README.md).
 
 ### Validating a data file against a schema:
 Assume you wanted to validate a file of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).

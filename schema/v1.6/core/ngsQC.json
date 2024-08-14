@@ -1,0 +1,118 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.4/schema/v1.6/core/ngsQC.tsv",
+    "title": "ngsQC.tsv",
+    "type": "object",
+    "required": [
+        "max_duplicate_read",
+        "stdev_quality",
+        "num_reads",
+        "percent_a",
+        "percent_c",
+        "percent_g",
+        "percent_t",
+        "count_all "
+    ],
+    "properties": {
+        "max_duplicate_read": {
+            "$id": "#root/max_duplicate_read",
+            "title": "max_duplicate_read",
+            "description": "Count of the most identical repeated read.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "9"
+        },
+        "stdev_quality": {
+            "$id": "#root/stdev_quality",
+            "title": "stdev_quality",
+            "description": "Standard deviation of the phred score of nucleotides of all reads. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "5.468866"
+        },
+        "num_reads": {
+            "$id": "#root/num_reads",
+            "title": "num_reads",
+            "description": "Number of reads.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "942546"
+        },
+        "count_n": {
+            "$id": "#root/count_n",
+            "title": "count_n",
+            "description": "Number of n's in the fastq files.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "24356288"
+        },
+        "percent_a": {
+            "$id": "#root/percent_a",
+            "title": "percent_a",
+            "description": "Percent of a's in the fastq files.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "27.566466"
+        },
+        "percent_c": {
+            "$id": "#root/percent_c",
+            "title": "percent_c",
+            "description": "Percent of c's in the fastq files.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "22.409867"
+        },
+        "percent_g": {
+            "$id": "#root/percent_g",
+            "title": "percent_g",
+            "description": "Percent of g's in the fastq files.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "23.487356"
+        },
+        "percent_t": {
+            "$id": "#root/percent_t",
+            "title": "percent_t",
+            "description": "Percent of t's in the fastq files.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "32.464539"
+        },
+        "count_all ": {
+            "$id": "#root/count_all",
+            "title": "count_all ",
+            "description": "The total count of all nucleotides.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "236597871"
+        }
+    }
+}

@@ -1,0 +1,287 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.4/schema/v1.6/core/assemblyQC.tsv",
+    "title": "assemblyQC.tsv",
+    "type": "object",
+    "required": [
+        "size_gaps",
+        "size_contigs",
+        "coverage_contigs",
+        "coverage_gaps",
+        "cnt_contigs",
+        "cnt_gaps",
+        "contig_percentile",
+        "gap_percentile",
+        "contig_momentum",
+        "l90",
+        "n95",
+        "l95",
+        "phred_average",
+        "mutation_momentum",
+        "indels_momentum",
+        "major_mutation_momentum",
+        "major_indels_momentum",
+        "alignment_anisotropy",
+        "aligned_momentum",
+        "entropic_momentum",
+        "rpkm",
+        "reads_unaligned",
+        "reads_aligned"
+    ],
+    "properties": {
+        "size_gaps": {
+            "$id": "#root/size_gaps",
+            "title": "size_gaps",
+            "description": "Cumulative of size of regions with no alignment coverage.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "13367"
+        },
+        "size_contigs": {
+            "$id": "#root/size_contigs",
+            "title": "size_contigs",
+            "description": "Size of the contig in nucleotides.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "31456135"
+        },
+        "coverage_contigs": {
+            "$id": "#root/coverage_contigs",
+            "title": "coverage_contigs",
+            "description": "The value would have been calculated by taking the total no. of reads that map to the contig divided by the contig length.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "33"
+        },
+        "coverage_gaps": {
+            "$id": "#root/coverage_gaps",
+            "title": "coverage_gaps",
+            "description": "Usually zero and means no coverage of gaps.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0"
+        },
+        "cnt_contigs": {
+            "$id": "#root/cnt_contigs",
+            "title": "cnt_contigs",
+            "description": "The count/number of continuously covered regions separated by gaps in the sequence.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "130"
+        },
+        "cnt_gaps": {
+            "$id": "#root/cnt_gaps",
+            "title": "cnt_gaps",
+            "description": "The count/number of non-covered regions in the sequence.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "58"
+        },
+        "contig_percentile": {
+            "$id": "#root/contig_percentile",
+            "title": "contig_percentile",
+            "description": "The percent of the assembly length that is covered by alignments.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "98.56%"
+        },
+        "gap_percentile": {
+            "$id": "#root/gap_percentile",
+            "title": "gap_percentile",
+            "description": "The percent of the assembly length that is not covered at all.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "5.14%"
+        },
+        "contig_momentum": {
+            "$id": "#root/contig_momentum",
+            "title": "contig_momentum",
+            "description": "Weighted average length of the contig.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "33.8745687"
+        },
+        "l90": {
+            "$id": "#root/l90",
+            "title": "l90",
+            "description": "Number of reads that minimally represent 90% of the assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "52"
+        },
+        "n95": {
+            "$id": "#root/n95",
+            "title": "n95",
+            "description": "Length of the shortest read to minimally represent 95% of the assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "2998077"
+        },
+        "l95": {
+            "$id": "#root/l95",
+            "title": "l95",
+            "description": "Number of reads that minimally represent 95% of the assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "59"
+        },
+        "phred_average": {
+            "$id": "#root/phred_average",
+            "title": "phred_average",
+            "description": "The average phred score for this assembly.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "36.8567"
+        },
+        "mutation_momentum": {
+            "$id": "#root/mutation_momentum",
+            "title": "mutation_momentum",
+            "description": "Weighted average mutation frequency.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.00786"
+        },
+        "indels_momentum": {
+            "$id": "#root/indels_momentum",
+            "title": "indels_momentum",
+            "description": "Weighted average indel frequency.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.0002"
+        },
+        "major_mutation_momentum": {
+            "$id": "#root/major_mutation_momentum",
+            "title": "major_mutation_momentum",
+            "description": "Weighted average mutation frequency for mutations with frequencies above 50 percent.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.97987"
+        },
+        "major_indels_momentum": {
+            "$id": "#root/major_indels_momentum",
+            "title": "major_indels_momentum",
+            "description": "Weighted average indel frequency for indels with frequencies above 50 percent.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.303747"
+        },
+        "alignment_anisotropy": {
+            "$id": "#root/alignment_anisotropy",
+            "title": "alignment_anisotropy",
+            "description": "How heavy the left side versus right side are alignments in this position. Tells that your reference sequence is not fully representative of your isolate, but is one of them. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "36.342564"
+        },
+        "aligned_momentum": {
+            "$id": "#root/aligned_momentum",
+            "title": "aligned_momentum",
+            "description": "Averaged weighted length of read alignments. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.969783"
+        },
+        "entropic_momentum": {
+            "$id": "#root/entropic_momentum",
+            "title": "entropic_momentum",
+            "description": "Average entropy across the reference profile.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "0.761897"
+        },
+        "rpkm": {
+            "$id": "#root/rpkm",
+            "title": "rpkm",
+            "description": "Reads per kilobase per million mapped reads. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "89.072056"
+        },
+        "reads_unaligned": {
+            "$id": "#root/reads_unaligned",
+            "title": "reads_unaligned",
+            "description": "Number of reads that are unaligned to the common reference genome",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "291881"
+        },
+        "reads_aligned": {
+            "$id": "#root/reads_aligned",
+            "title": "reads_aligned",
+            "description": "Number of reads that aligned to the common reference genome.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "446570"
+        }
+    }
+}

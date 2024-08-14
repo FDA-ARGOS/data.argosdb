@@ -1,0 +1,73 @@
+V1.6 FDA ARGOS Data Dictionary README		
+		
+Description: 		
+List of controlled vocabulary terms for data.ARGOSdb.org datasets and data properties. 		
+This data dictionary was created to aid in the integration of ARGOS data from many disparate sources.		
+Each of the column headers in each of the respective data sheets displayed on data.ARGOSdb.org was recommended by project members and collaborators from the FDA.		
+The resulting list was manually curated to combine similar terms, and provide a consistent representation across all datasets in data.ARGOSdb.		
+The primary use case for the data dictionary is to ensure all data submitted to data.argosdb.org is following a consistent representation of the data properties.		
+The draft dictionary is maintained as a excel file for project members to contribute to. 		
+		
+GitHub Directory: 	https://github.com/FDA-ARGOS/data.argosdb/tree/main/data_dictionary 	
+		
+Data Dictionary Contents:		
+1) README.tsv => A summary of each sheet and the column headers.		
+2) release_notes.tsv => An itemized list of the changes implemented in the current version.		
+		
+3) property_definition.tsv => List of all controlled vocabulary terms for data.ARGOSdb.		
+BCO ID: ARGOS_000015		
+column header	data	
+property	Consensus name for data property described in row.	
+data_files	A `|` separated list of dataset names where this property is utilized.	
+recommended	The person or resource that suggested using the property.	
+description	A definition and additional information about the property.	
+source_or_type_def*	The data source for obtaining the property.	
+*sources include:	NCBI BioSample DB: https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/	
+	ENA Read the Docs: https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html	
+	HIVE: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=main	
+	NCBI RefSeq: https://www.ncbi.nlm.nih.gov/refseq/functionalelements/	
+	Biocompute Object: http://biocomputeobject.org	
+	NCBI Taxonomy: https://www.ncbi.nlm.nih.gov/books/NBK53758/	
+	Stanford Coronavirus Antiviral & Resistance Database: https://covdb.stanford.edu/page/database-schema/	
+	UniProt: https://www.uniprot.org/	
+	NCBI SRA: https://www.ncbi.nlm.nih.gov/sra/docs/submitmeta/	
+		
+4) core_property_list.tsv => List of all core dataset properties.		
+BCO ID: ARGOS_000016		
+column header	data	
+property	Consensus name for data property described in row.	
+data_object	The dataset this property is used.	
+requirement	Indicates if the property is REQUIRED to hava a valid data row.	
+id	For JSON schema conversion.	
+title	Human readable name for property. Default is the same as property.	
+data_type	Property type as defined by data types. Can be used as a QC tool.	
+constraint	Set per a term to indicate an acceptable value range. Can be used as a QC tool.	
+default	Default value for property.	
+examples	Example for the property.	
+pattern	The regular expression evaluation for this property. Can be used as a QC tool. 	
+		
+5) annotation_property_list.tsv => List of all annotation dataset properties.		
+BCO ID: ARGOS_000017		
+column header	data	
+property	Consensus name for data property described in row.	
+data_object	The dataset this property is used.	
+requirement	Indicates if the property is REQUIRED to hava a valid data row.	
+id	For JSON schema conversion.	
+title	Human readable name for property. Default is the same as property.	
+data_type	Property type as defined by data types. Can be used as a QC tool.	
+constraint	Set per a term to indicate an acceptable value range. Can be used as a QC tool.	
+default	Default value for property.	
+examples	Example for the property.	
+pattern	The regular expression evaluation for this property. Can be used as a QC tool. 	
+		
+V1.6 Data Sheet Statistics:		
+Class:	Sheet:	Total Properties:
+Dictionary	property_definition.tsv	158
+Dictionary 	core_property_list.tsv	268
+Dictionary 	annotation_property_list.tsv	29
+Core	assemblyQC*	49
+Core	biosampleMeta*	28
+Core	ngsQC*	50
+Core	siteQC*	38
+Core	ngs_ID_list.tsv	15
+Annotation	DRM_all_orgs.tsv	34

@@ -21,7 +21,8 @@ space for documentation
 ## Schema
 Houses the ARGOS data schemas by release version:
 
-Current: [v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)  
+Current: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
+[v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)  
 [v1.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.4)  
 [v1.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.3)  
 [v1.2](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.2)  

@@ -1,0 +1,351 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v1.4/schema/v1.6/annotation/DRM_all_orgs.tsv",
+    "title": "DRM_all_orgs.tsv",
+    "type": "object",
+    "required": [
+        "organism_name",
+        "lineage",
+        "genome_assembly_id",
+        "taxonomy_id",
+        "bco_id",
+        "schema_version",
+        "analysis_platform",
+        "biosample",
+        "ngs_read_file_source",
+        "wt_amino_acid",
+        "amino_acid_pos_uniprot",
+        "uniprot_accession",
+        "amino_acid_pos_refseq",
+        "refseq_protein_accession",
+        "mut_amino_acid",
+        "protein_name",
+        "drm_formula",
+        "genomic_accession",
+        "proteome_id",
+        "reference",
+        "annotation_score"
+    ],
+    "properties": {
+        "organism_name": {
+            "$id": "#root/organism_name",
+            "title": "organism_name",
+            "description": "Name of the expected organism. Should correspond to a NCBI Taxonomy node.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Severe acute respiratory syndrome coronavirus 2"
+        },
+        "infraspecific_name": {
+            "$id": "#root/infraspecific_name",
+            "title": "infraspecific_name",
+            "description": "Scientific name for any taxon below the rank of species, i.e. an infraspecific taxon or infraspecies. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "isolate Wuhan-Hu-1"
+        },
+        "lineage": {
+            "$id": "#root/lineage",
+            "title": "lineage",
+            "description": "The complete taxonomic lineage for the taxonomic node indicated.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Viruses|Riboviria|Orthornavirae|Pisuviricota|Pisoniviricetes|Nidovirales|Cornidovirineae|Coronaviridae|Orthocoronavirinae|Betacoronavirus|Sarbecovirus|Severe acute respiratory syndrome-related coronavirus"
+        },
+        "genome_assembly_id": {
+            "$id": "#root/genome_assembly_id",
+            "title": "genome_assembly_id",
+            "description": "Assembly DB identifier (Example: NCBI assembly accession).",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "GCA_009858895.3"
+        },
+        "taxonomy_id": {
+            "$id": "#root/taxonomy_id",
+            "title": "taxonomy_id",
+            "description": "NCBI taxonomy identifier of the organism.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "2697049"
+        },
+        "bco_id": {
+            "$id": "#root/bco_id",
+            "title": "bco_id",
+            "description": "BioCompute Object identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "ARGOS_000012"
+        },
+        "schema_version": {
+            "$id": "#root/schema_version",
+            "title": "schema_version",
+            "description": "Reflective of the Data Dictionary version currently applied to the dataset. ",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "v0.9"
+        },
+        "analysis_platform": {
+            "$id": "#root/analysis_platform",
+            "title": "analysis_platform",
+            "description": "The platform used to conduct the analysis.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "HIVE 1 | HIVE 2 | HIVE AWS | Galaxy"
+        },
+        "analysis_platform_object_id": {
+            "$id": "#root/analysis_platform_object_id",
+            "title": "analysis_platform_object_id",
+            "description": "Unique identifier of archive containing data and analyses. Examples include HIVEPack or Research Object (RO).",
+            "type": "string",
+            "default": "NA",
+            "examples": [
+                "-"
+            ],
+            "pattern": "39658"
+        },
+        "biosample": {
+            "$id": "#root/biosample",
+            "title": "biosample",
+            "description": "NCBI BioSample identifier.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SAMN13922059"
+        },
+        "serotype": {
+            "$id": "#root/serotype",
+            "title": "serotype",
+            "description": "The species/subspecies subgroup to which the sample belongs.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "1a"
+        },
+        "strain": {
+            "$id": "#root/strain",
+            "title": "strain",
+            "description": "Microbial or eukaryotic strain name.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "LT2 / SGSC1412 / ATCC 700720"
+        },
+        "isolate": {
+            "$id": "#root/isolate",
+            "title": "isolate",
+            "description": "The isolate classifer.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "HXB2"
+        },
+        "ngs_read_file_source": {
+            "$id": "#root/ngs_read_file_source",
+            "title": "ngs_read_file_source",
+            "description": "Resource that the fastq files are derived from (i.e. SRA) in the form of a URI/static URL.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "SRA"
+        },
+        "wt_amino_acid": {
+            "$id": "#root/wt_amino_acid",
+            "title": "wt_amino_acid",
+            "description": "Amino acid at position of interest in wild type sample.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "V"
+        },
+        "amino_acid_pos_uniprot": {
+            "$id": "#root/amino_acid_pos_uniprot",
+            "title": "amino_acid_pos_uniprot",
+            "description": "Position of interest within the proteome from UniProt.",
+            "type": "string",
+            "default": "10000000000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "766"
+        },
+        "ncbi_nonredundant_accession": {
+            "$id": "#root/ncbi_nonredundant_accession",
+            "title": "ncbi_nonredundant_accession",
+            "description": "Nonredundant protein records always represent one exact sequence that has been observed once or many times in different strains or species.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "WP_001132508.1"
+        },
+        "uniprot_accession": {
+            "$id": "#root/uniprot_accession",
+            "title": "uniprot_accession",
+            "description": "The UniProt accession number.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "P04585"
+        },
+        "amino_acid_pos_refseq": {
+            "$id": "#root/amino_acid_pos_refseq",
+            "title": "amino_acid_pos_refseq",
+            "description": "Position of interest within the proteome from RefSeq.",
+            "type": "string",
+            "default": "10000",
+            "examples": [
+                "-"
+            ],
+            "pattern": "10"
+        },
+        "refseq_protein_accession": {
+            "$id": "#root/refseq_protein_accession",
+            "title": "refseq_protein_accession",
+            "description": "The RefSeq protein accession.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "NP_705926.1"
+        },
+        "mut_amino_acid": {
+            "$id": "#root/mut_amino_acid",
+            "title": "mut_amino_acid",
+            "description": "The mutated amino acid at position of interest.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "I"
+        },
+        "protein_name": {
+            "$id": "#root/protein_name",
+            "title": "protein_name",
+            "description": "The name of the protein or gene product.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "Protease"
+        },
+        "drug_class": {
+            "$id": "#root/drug_class",
+            "title": "drug_class",
+            "description": "The class of the drug resistance target.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "PI"
+        },
+        "event": {
+            "$id": "#root/event",
+            "title": "event",
+            "description": "The description term used to identify the type of drug or antibiotic resistance conferred in the output of the HIVE DRM pipeline classified by drug type.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "PI resistance"
+        },
+        "drm_formula": {
+            "$id": "#root/drm_formula",
+            "title": "drm_formula",
+            "description": "The formula used to call the mutation from the table for the HIVE Drug Resistance Pipeline.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "${seq}== 'NP_705926.1' && (int)${pos}==10 && ${wt}=='L' && ${mut}=='I'"
+        },
+        "genomic_accession": {
+            "$id": "#root/genomic_accession",
+            "title": "genomic_accession",
+            "description": "The genomic accession of the organism.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "NC_001802.1"
+        },
+        "proteome_id": {
+            "$id": "#root/proteome_id",
+            "title": "proteome_id",
+            "description": "The UniProt proteome ID.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "UP000002241"
+        },
+        "reference": {
+            "$id": "#root/reference",
+            "title": "reference",
+            "description": "The reference PMID for the publication source.",
+            "type": "string",
+            "default": "N/A",
+            "examples": [
+                "-"
+            ],
+            "pattern": "31634862"
+        },
+        "annotation_score": {
+            "$id": "#root/annotation_score",
+            "title": "annotation_score",
+            "description": "Internally developed scores used to evaluate the quality and / or quantity of the information present for a particular entry. Scoring criteria may vary per core data set.",
+            "type": "string",
+            "default": "100",
+            "examples": [
+                "-"
+            ],
+            "pattern": "20"
+        }
+    }
+}

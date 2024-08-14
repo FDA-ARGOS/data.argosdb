@@ -1,0 +1,181 @@
+README Summary for Data Dictionary V1.6		
+- In 'data_files' column: '*' implies all files in that data set category 		
+		
+Major Changes to V1.6 Data Dictionary:		
+Action 	Affected Datasets 	Justification
+		
+Added term 'representative_genome_org'	ngsQC_HIVE.tsv*	
+Added term 'representative_genome_acc'	ngsQC_HIVE.tsv*	
+Added term 'representative_genome_uniprot_acc'	ngsQC_HIVE.tsv*	
+Added term 'overhang_momentum'	ngsQC_HIVE.tsv*	
+Added term 'count_all_wn'	ngsQC_HIVE.tsv*	
+Removed term 'percent_identity'	ngsQC_HIVE.tsv*	
+Edited definition of term 'count_t'	ngsQC_HIVE.tsv*	Changed thiamaine to thyamine.
+Added term 'size_gaps'	assemblyQC_HIVE.tsv*	
+Added term 'count_all'	ngsQC_HIVE.tsv*	
+Added term 'size_contigs'	assemblyQC_HIVE.tsv*	
+Added term 'coverage_contigs'	assemblyQC_HIVE.tsv*	
+Added term 'coverage_gaps'	assemblyQC_HIVE.tsv*	
+Added term 'cnt_contigs'	assemblyQC_HIVE.tsv*	
+Added term 'cnt_gaps'	assemblyQC_HIVE.tsv*	
+Added term 'contig_percentile'	assemblyQC_HIVE.tsv*	
+Added term 'gap_percentile'	assemblyQC_HIVE.tsv*	
+Added term 'contig_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'l90'	assemblyQC_HIVE.tsv*	
+Added term 'n95'	assemblyQC_HIVE.tsv*	
+Added term' l95'	assemblyQC_HIVE.tsv*	
+Added term 'phred_average'	assemblyQC_HIVE.tsv*	
+Added term 'mutation_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'indels_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'major_mutation_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'major_indels_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'alignment_anisotropy'	assemblyQC_HIVE.tsv*	
+Added term 'aligned_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'entropic_momentum'	assemblyQC_HIVE.tsv*	
+Added term 'rpkm'	assemblyQC_HIVE.tsv*	
+Added term 'reads_unaligned'	assemblyQC_HIVE.tsv*	
+Added term 'reads_aligned'	assemblyQC_HIVE.tsv*	
+Added term 'max_duplicate_read'	ngsQC_HIVE.tsv*	
+Added term 'stdev_quality'	ngsQC_HIVE.tsv*	
+Added term 'num_reads'	ngsQC_HIVE.tsv*	
+Added term 'count_n'	ngsQC_HIVE.tsv*	
+Added term 'percent_a'	ngsQC_HIVE.tsv*	
+Added term 'percent_c'	ngsQC_HIVE.tsv*	
+Added term 'percent_g'	ngsQC_HIVE.tsv*	
+Added term 'percent_t'	ngsQC_HIVE.tsv*	
+Deleted 'assembly_score'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'representative_coverage_against_assembly'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'assembly_coverage_against_representative'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'percent_identity_against_reference'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'biosample_score'	biosampleQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'num_of_frameshifts'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'num_of_stop_codons'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'ref_genome_acc'	assemblyQC_HIVE.tsv*	Not currently in the JSON outputs.
+Deleted 'num_segments'	assemblyQC_HIVE.tsv*	Not currently on NCBI or a JSON output variable.
+Deleted 'ngs_score'	ngsQC_HIVE.tsv*	Not currently avilable in the JSON output and not calculated internally anymore.
+Deleted 'wgs_accession'	ngsQC_HIVE.tsv*	Not currently available in the JSON outputs or the NCBI page
+Deleted 'density_n_per_read'	ngsQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'pos_outlier_count'	ngsQC_HIVE.tsv*	They are not in the JSON outputs currently
+		
+		
+		
+		
+		
+Summary of V1.6 Changes in Property Definition List:		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+NA	NA	NA
+Edits to Terms:		
+count_t	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv
+representative_genome_org	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+representative_genome_acc	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+representative_genome_uniprot_acc	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+overhang_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+count_all_wn	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_coding	Updated the term in 'definition' column.	ngsQC_HIVE.tsv*
+assembly_coverage_against_representative	Updated “query_coverage_against_reference” changed to “assembly_coverage_against_representative”.	assemblyQC_HIVE.tsv
+representative_coverage_against_assembly	Updated “reference_coverage_against_query” changed to “representative_coverage_against_assembly”.	assemblyQC_HIVE.tsv
+representative_genome	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+assembly_gc_content	Updated the definition	assemblyQC_HIVE.tsv
+percent_identity	Dropped and no longer in the workflow.	All*
+size_gaps	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+size_contigs	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+coverage_contigs	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+coverage_gaps	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+cnt_contigs	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+cnt_gaps	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+contig_percentile	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+gap_percentile	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+contig_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+l90	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+n95	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+l95	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+phred_average	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+mutation_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+indels_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+major_mutation_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+major_indels_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+alignment_anisotropy	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+aligned_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+entropic_momentum	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+rpkm	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+reads_unaligned	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+reads_aligned	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	assemblyQC_HIVE.tsv*
+count_all 	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+max_duplicate_read	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+stdev_quality	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+num_reads	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+count_n	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_a	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_c	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_g	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_t	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+		
+		
+Summary of V1.6 Changes in CORE Property List and associated data sets:		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+NA	NA	NA
+Edits to Terms:		
+representative_genome_org	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+representative_genome_acc	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+representative_genome_uniprot_acc	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+overhang_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+count_all_wn	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+assembly_coverage_against_representative	Updated “query_coverage_against_reference” changed to “assembly_coverage_against_representative”.	assemblyQC_HIVE.tsv*
+representative_coverage_against_assembly	Updated “reference_coverage_against_query” changed to “representative_coverage_against_assembly”.	assemblyQC_HIVE.tsv*
+representative_genome	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+size_gaps	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+size_contigs	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+coverage_contigs	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+coverage_gaps	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+cnt_contigs	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+cnt_gaps	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+contig_percentile	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+gap_percentile	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+contig_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+l90	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+n95	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+l95	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+phred_average	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+mutation_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+indels_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+major_mutation_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+major_indels_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+alignment_anisotropy	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+aligned_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+entropic_momentum	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+rpkm	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+reads_unaligned	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+reads_aligned	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	assemblyQC_HIVE.tsv*
+count_all 	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+max_duplicate_read	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+stdev_quality	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+num_reads	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+count_n	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+percent_a	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+percent_c	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+percent_g	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+percent_t	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+		
+		
+		
+		
+Summary of V1.6 Changes in Annotation Property List and associated data sets: 		
+Term	Action 	Affected Datasets 
+Edits to Column Headers:		
+NA	NA	NA
+Edits to Terms:		
+NA	NA	NA
+		
+V1.6 Data Sheet Statistics:		
+Class	Sheet	Total Properties
+Dictionary	property_definition.tsv	158
+Dictionary 	core_property_list.tsv	268
+Dictionary 	annotation_property_list.tsv	29
+Core	assemblyQC*	49
+Core	biosampleMeta*	28
+Core	ngsQC*	50
+Core	siteQC*	38
+Core	ngs_ID_list.tsv	15
+Annotation	DRM_all_orgs.tsv	34

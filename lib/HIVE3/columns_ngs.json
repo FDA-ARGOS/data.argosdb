@@ -24,18 +24,15 @@
     "min_read_length",
     "num_reads",
     "num_reads_unique",
-    "pos_outlier_count",
     "avg_read_length",
     "max_read_length",
     "max_duplicate_read",
     "strategy",
-    "wgs_accession",
     "instrument",
     "id_method",
     "codon_table",
     "percent_coding",
     "percent_not_coding",
-    "density_n_per_read",
     "complexity_percent",
     "non_complex_percent",
     "stdev_quality",
@@ -52,7 +49,6 @@
     "percent_c",
     "percent_g",
     "percent_t",
-    "ngs_score",
     "count_all_wn",
     "count_all"
   ],
@@ -69,6 +65,11 @@
     "count_a": "bases_count_a",
     "count_c": "bases_count_c",
     "count_g": "bases_count_g",
-    "count_t": "bases_count_t"
+    "count_t": "bases_count_t",
+    "count_n": "bases_count_n",
+    "percent_a": "bases_percent_a",
+    "percent_c":"bases_percent_c",
+    "percent_g": "bases_percent_g",
+    "percent_t": "bases_percent_t"
   }
 }

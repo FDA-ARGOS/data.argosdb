@@ -5,6 +5,9 @@
     "infraspecific_name",
     "assembled_genome_acc",
     "genome_assembly_id",
+    "representative_genome_acc",
+    "representative_genome_org",
+    "representative_genome_uniprot_acc",
     "lineage",
     "taxonomy_id",
     "bco_id",
@@ -14,14 +17,11 @@
     "assembly_file_source",	
     "genomic_section", 
     "num_chromosomes",
-    "num_genes",
-    "num_segments",	
+    "num_genes",	
     "assembly_gc_content",	
     "length",
     "size_gaps",
     "size_contigs",
-    "num_of_frameshifts",
-    "num_of_stop_codons",
     "contig_percentile",
     "contig_momentum",
     "coverage_contigs",
@@ -48,19 +48,13 @@
     "overhang_momentum",
     "aligned_momentum",
     "entropic_momentum",
-    "ref_genome_acc",
-    "query_coverage_against_reference",
-    "reference_coverage_against_query",
-    "percent_identity_against_reference",
     "reads_unaligned",
     "percent_reads_unaligned",
     "reads_aligned",
     "assembly_level",
-    "rpkm",
-    "assembly_score"
+    "rpkm"
   ],
   "header_map": {
     "bco_id": "id"
-    
   }
 }

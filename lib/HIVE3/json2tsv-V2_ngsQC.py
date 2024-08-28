@@ -54,8 +54,11 @@ def usr_args():
     #So NCBI doesn't ban us
     parser.add_argument('--email', help='Email address associated with the NCBI account', type=str)
 
-    #API key to be faster
-    parser.add_argument('--api', help= "your personal API key found in your NCBI account settings", type=str)
+    # #API key to be faster
+    # parser.add_argument('--api',
+    #                     help='API key associated with the NCBI account (optional)',
+    #                     type=str) 
+    # --api 291f963bdc5fd6db25fb6df0f015b7378609
 
     # Print usage message if no args are supplied.
     if len(sys.argv) <= 1:
@@ -63,10 +66,11 @@ def usr_args():
 
     options = parser.parse_args()
     Entrez.email = options.email
+    #Entrez.api_key = options.api_key
 
-    # Set the API key if provided
-    if options.api:
-        Entrez.api_key = options.api
+    # # Set the API key if provided
+    # if options.api:
+    #     Entrez.api_key = options.api
 
     return options
 
@@ -123,10 +127,8 @@ def bsMeta(bs_term, sleeptime):
     ''' gets additional biosample information to add to the tsv'''
     search = Entrez.esearch(db = 'biosample', term = bs_term, retmode='xml') #'ESearch searches and retrieves primary IDs (for use in EFetch, ELink and ESummary) and term translations, and optionally retains results for future use in the user’s environment.'
     time.sleep(sleeptime)
-
     record = Entrez.read(search)
     time.sleep(sleeptime)
-
     bs_id = record['IdList'][0]
     info = Entrez.esummary(db='biosample',id=bs_id)
     time.sleep(sleeptime)
@@ -264,6 +266,8 @@ def make_tsv(options):
         writer.writerow(columns_data["columns"])
 
         json_files = glob.glob(os.path.join(options.schema, '*.json'))
+        # print(f"Looking for JSON files in: {options.schema}")
+        # print(f"Found JSON files: {json_files}")
 
         for schema in json_files:
             with open(schema, "r") as jsonfile:

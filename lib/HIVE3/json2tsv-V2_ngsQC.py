@@ -4,7 +4,12 @@
 #
 """json to tsv code and formatted schema v1.6 ngsQC HIVE3. 
 This code will take the JSON file QC output for ngsQC from schema v1.6 stored in a local folder and reformat it into a combined tsv. The output tsv will be pasted and aligned with the 
-columns/headers for ngsQC_HIVE (BCI ID ARGOS_000019) found in the data.argosdb.org dataset. This code wis used for the datapush to ARGOSdb"""
+columns/headers for ngsQC_HIVE (BCI ID ARGOS_000019) found in the data.argosdb.org dataset. This code is used for the datapush to ARGOSdb.
+- The code takes in a folder of ngsQC json outputs and formats their information and additional information in a table.
+"""
+'''The command line input is: 
+python3 json2tsv-V2_ngsQC.py -t test_ngs.tsv --schema /Users/steve/desktop/argos/june/ngs --email cool@gwu.edu'''
+
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -41,24 +46,22 @@ def usr_args():
     parser.add_argument(
         "-v", "--version", action="version", version="%(prog)s " + __version__
     )
-    # The name of the output tsv file (and include .tsv extension)
-    parser.add_argument("-t", "--tsv", help="tsv file to create.")
-    # input ngsQC json file directory
-    parser.add_argument(
-        "-s",
-        "--schema",
-        required=True,
-        # type = argparse.FileType('r'),
+    
+    parser.add_argument("-t", "--tsv", help="name of tsv file to create with .tsv extension.") # The name of the output tsv file (and include .tsv extension)
+    
+    parser.add_argument("-s", "--schema", required=True,
+        # type = argparse.FileType('r'), 
         help="Root json schema to parse",
-    )
+    ) # input ngsQC json file directory/folder
+
     #So NCBI doesn't ban us
     parser.add_argument('--email', help='Email address associated with the NCBI account', type=str)
 
-    # #API key to be faster
-    # parser.add_argument('--api',
-    #                     help='API key associated with the NCBI account (optional)',
-    #                     type=str) 
-    # --api 291f963bdc5fd6db25fb6df0f015b7378609
+    #API key to be faster
+    parser.add_argument('--api',
+                        help='API key associated with the NCBI account (optional)',
+                        type=str) 
+
 
     # Print usage message if no args are supplied.
     if len(sys.argv) <= 1:
@@ -66,11 +69,11 @@ def usr_args():
 
     options = parser.parse_args()
     Entrez.email = options.email
-    #Entrez.api_key = options.api_key
+    Entrez.api_key = options.api
 
-    # # Set the API key if provided
-    # if options.api:
-    #     Entrez.api_key = options.api
+    # Set the API key if provided
+    if options.api:
+        Entrez.api_key = options.api
 
     return options
 
@@ -98,7 +101,7 @@ def listify(d, key_order):
         l += [d.get(key) or '-']
     return l
 
-#Methods that are consistent and don't need to be updated^^^^^^^^^^
+#Methods that are consistent and don't need to be updated are above^^^^^^^^^^
 ###################################################################################################################################################################################################################
 
 def bsDataGet(bs_term, sleeptime):
@@ -206,7 +209,7 @@ def bsMeta(bs_term, sleeptime):
 
 #from biosample_datagrabber_v2.py on GitHub but used to grab assembly genome accession
 def getAssembly(as_term, sleeptime): #removed bco_id value
-    #Get the genome assembly id -----------------------------------------------------------------------
+    '''Get the genome assembly id -----------------------------------------------------------------------'''
     #print(f' as_term: {as_term}')
     search = Entrez.esearch(db='nucleotide', term=as_term, retmode='xml', idtype="acc")
     time.sleep(sleeptime)
@@ -232,7 +235,7 @@ def getAssembly(as_term, sleeptime): #removed bco_id value
 
 #to get the lineage
 def getLin(l_term, sleeptime): #removed bco_id value
-    #Get the genome assembly id -----------------------------------------------------------------------
+    '''Get the lineage information'''
     search = Entrez.esearch(db = 'nucleotide', term = l_term, retmode='xml', idtype="acc")
     time.sleep(sleeptime)
     record = Entrez.read(search)
@@ -250,7 +253,7 @@ def getLin(l_term, sleeptime): #removed bco_id value
 
 
 def extract_srr_id(file_source):
-    """Remove the '_#.fasta' or '_#.fastq' suffix from the file source."""
+    """Remove the '_#.fasta' or '_#.fastq' suffix from the file source. and just the SRR id"""
     if file_source:
         #print(f"Original file source: {file_source}")  # Debugging line
         # Updated regex pattern to ensure it matches correctly
@@ -316,6 +319,7 @@ def main():
     """
     options = usr_args()
     Entrez.email = options.email
+    Entrez.api_key = options.api
     #directory = options.schema
     make_tsv(options)
 
@@ -324,4 +328,5 @@ def main():
 if __name__ == "__main__":
     options = usr_args()
     Entrez.email = options.email
+    Entrez.api_key = options.api
     main()

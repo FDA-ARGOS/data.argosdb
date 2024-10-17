@@ -6,9 +6,10 @@
 This code will take the JSON file QC output for ngsQC from schema v1.6 stored in a local folder and reformat it into a combined tsv. The output tsv will be pasted and aligned with the 
 columns/headers for ngsQC_HIVE (BCI ID ARGOS_000019) found in the data.argosdb.org dataset. This code is used for the datapush to ARGOSdb.
 - The code takes in a folder of ngsQC json outputs and formats their information and additional information in a table.
+- API is from your NCBI Account specifically
 """
 '''The command line input is: 
-python3 json2tsv-V2_ngsQC.py -t test_ngs.tsv --schema /Users/steve/desktop/argos/june/ngs --email cool@gwu.edu'''
+python3 json2tsv-V2_ngsQC.py -t test_ngs.tsv --schema /Users/steve/desktop/argos/june/ngs --email cool@gwu.edu --api blahbalhblah'''
 
 
 #!/usr/bin/env python

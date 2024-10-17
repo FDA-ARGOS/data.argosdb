@@ -31,7 +31,7 @@ sep = '\t'
 #This code was taken from biosample_datagrabber_v2.py
 
 '''Example entry: 
-python3 json2tsv-V2assemQC.py -t test_assembly.tsv --schema /Users/name/desktop/folder --email email@gwu.edu'''
+python3 json2tsv-V2assemQC.py -t test_assembly.tsv --schema /Users/name/desktop/folder --email email@gwu.edu --api blahblahblah'''
 
 def usr_args():
     """
@@ -47,11 +47,19 @@ def usr_args():
     #So NCBI doesn't ban us
     parser.add_argument('--email', help='Email address associated with the NCBI account', type=str)
 
+    parser.add_argument('--api',
+                        help='API key associated with the NCBI account (optional)',
+                        type=str)
+
     if len(sys.argv) <= 1:
         sys.argv.append("--help")
 
     options = parser.parse_args()
     Entrez.email = options.email
+
+    if options.api:
+        Entrez.api_key = options.api
+        
     return options
 
 def flatten_json(y):
@@ -72,7 +80,7 @@ def flatten_json(y):
     return out
 #__________________________________________________________________________________________________________________________________
 def bsDataGet(as_term, sleeptime):
-    '''Outputs the assembly id that is needed'''
+    '''Outputs the assembly id that is needed, just did not change the method name'''
     search = Entrez.esearch(db='nucleotide', term=as_term, retmode='xml', idtype="acc")
     time.sleep(sleeptime)
     record = Entrez.read(search)
@@ -311,6 +319,7 @@ def main():
 
     options = usr_args()
     Entrez.email = options.email
+    Entrez.api_key = options.api
     make_tsv(options)
 
 
@@ -318,4 +327,5 @@ def main():
 if __name__ == "__main__":
     options = usr_args()
     Entrez.email = options.email
+    Entrez.api_key = options.api
     main()

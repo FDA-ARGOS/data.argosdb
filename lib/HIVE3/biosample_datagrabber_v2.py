@@ -1,6 +1,10 @@
 # Updated for schema v1.6 on Aug 27, 2024
 
-'''This code is used to formulate the tsv for the biosample tsv that is pushed to argos. A text file containing the biosample IDs is needed.This should work on both MacOS and PC computers'''
+'''This code is used to formulate the tsv for the biosample tsv that is pushed to argos. 
+A text file (using vim) containing the biosample IDs is needed as input. The file will have one ID per row. No whitespace
+This should work on both MacOS and PC computers'''
+'''NOTE: This works best for files that are just refSeq at the top'''
+
 '''The Python libraries required are in biosample_datagrabber_requirements.py in GITHUB, but here they are:
 biopython==1.79
 certifi==2022.12.7 # might only be needed for Mac?
@@ -8,16 +12,22 @@ numpy==1.22.0
 xmltodict==0.13.0'''
 #
 '''Example Usage:
-  python3 biosample_datagrabber.py --email=myemail@gwu.edu --api_key=myapikey123abc --idfile=mybiosampleids.txt --output test_BS.tsv'''
+  python3 biosample_datagrabber_v2.py --email christie.woodside@email.gwu.edu --api_key bfbde99c962d228023e8d62a078bdb12d108 --idfile /Users/christiewoodside/Desktop/ARGOS/oct_18/biosample/BS_Oct_21.txt --output /Users/christiewoodside/Desktop/ARGOS/oct_18/biosample/BS_ListeriaMono.tsv'''
+
+
 from Bio import Entrez
 import xmltodict
 import time
 import argparse
 
 sep = '\t'
+sleeptime = 0.11
 
 sleeptime_withtoken = 0.11  # seconds
 sleeptime_notoken = 0.34  # seconds
+
+'''Api key for CW as of Oct 1 bfbde99c962d228023e8d62a078bdb12d108'''
+
 argos_schema_version = 'v1.6'
 schema_keys = ['organism_name',
                'infraspecific_name',
@@ -27,8 +37,8 @@ schema_keys = ['organism_name',
                'schema_version',
                'bioproject',
                'biosample',
-               'sra_run_id',
                'strain',
+               'sra_run_id',
                'genome_assembly_id',
                'sample_name',
                'instrument',
@@ -64,6 +74,7 @@ def bsDataGet(bs_term, sleeptime, bco_id):
     sd = r['SampleData']
     sd_json = xmltodict.parse(sd)['BioSample']
 
+    #print('links output:       ', sd_json['Links']['Link']['@label'])
     attr = sd_json['Attributes']['Attribute']
     attr_set = {}
     for att in attr:
@@ -98,6 +109,7 @@ def bsDataGet(bs_term, sleeptime, bco_id):
                 assembly_id = xref["GBXref_id"]
 
     attr_set['biosample'] = bs_term
+    #print(bs_term)
     attr_set['infraspecific_name'] = ''
     attr_set['organism_name'] = sd_json['Description']['Organism']['OrganismName']
     attr_set['genome_assembly_id'] = assembly_id
@@ -109,7 +121,7 @@ def bsDataGet(bs_term, sleeptime, bco_id):
     attr_set['instrument'] = 'TBD'
     attr_set['sample_name'] = sd_json['Description']['Title']
     attr_set['id_method'] = idm_id
-    attr_set['bco_id'] = 'ARGOS_000020'
+    attr_set['bco_id'] = 'ARGOS_000088'
 
     # Populate lineage using genome assembly ID
     lineage = getLin(assembly_id, sleeptime) #some samples may not have a genome and therefore no lineage. Look it up on NCBI Taxonomy
@@ -211,6 +223,7 @@ if __name__ == '__main__':
     print(sep.join(schema_keys), file=output_file)
 
     for bs_term in args.idfile:  
+        print(bs_term)
         bs_term = bs_term.rstrip()  # removes any newline character at the end
         sleeptime = sleeptime_notoken if args.api_key is None else sleeptime_withtoken
         bs_data_list = bsDataGet(bs_term, sleeptime=sleeptime, bco_id=args.bco_id or '')

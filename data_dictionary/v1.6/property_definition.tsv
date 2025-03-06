@@ -97,11 +97,11 @@ selection_notes	ngs_id_list.tsv	Raja	Notes describing why SRR was analyzed.	ARGO
 lab_name	ngs_id_list.tsv	Raja	Lab group that ran ngs computation.	ARGOS Team
 files_processed	ngs_id_list.tsv	Raja	Denotes if SRR has been published on argosdb.	ARGOS Team
 representative_genome	ngsQC_HIVE.tsv	Raja/Vahan	A genome computationally or manually selected as a representative from among the best genomes available for a species or clade that does not have a designated reference genome (NCBI Assembly).	HIVE/NCBI
+count_all_wn	ngsQC_HIVE.tsv 	Raja/Vahan	The total count of all nucleotides with Ns included.	HIVE
+count_all 	ngsQC_HIVE.tsv 	Raja/Vahan	The total count of all nucleotides.	HIVE
 representative_genome_org	ngsQC_HIVE.tsv | assemblyQC.tsv	Raja/Vahan	Name of the representative organism. Should correspond to a NCBI Taxonomy node.	HIVE
 representative_genome_acc	ngsQC_HIVE.tsv | assemblyQC.tsv	Raja/Vahan	This accession number is a unique identifier assigned to a record in sequence databases such as RefSeq (NCBI).	HIVE
 representative_genome_uniprot_acc	ngsQC_HIVE.tsv | assemblyQC.tsv	Raja/Vahan	UniProt accession number assigned to the associated representative genome.	HIVE
-count_all_wn	ngsQC_HIVE.tsv 	Raja/Vahan	The total count of all nucleotides with Ns included.	HIVE
-count_all 	ngsQC_HIVE.tsv 	Raja/Vahan	The total count of all nucleotides.	HIVE
 max_duplicate_read	ngsQC.tsv	Raja/Vahan	Count of the most identical repeated read.	HIVE
 stdev_quality	ngsQC.tsv	Raja/Vahan	Standard deviation of the phred score of nucleotides of all reads. 	HIVE
 num_reads	ngsQC.tsv	Raja/Vahan	Number of reads.	HIVE/NCBI
@@ -119,7 +119,7 @@ pos_outlier_count	ngsQC*	HIVE	Count of positions the quality of which is signifi
 num_reads_unique	ngsQC*	HIVE	Number of unique reads that are not identical to other reads.	HIVE
 avg_read_length	ngsQC*	HIVE	Average length of sequences in a FASTA/FASTQ read file.	HIVE
 max_read_length	ngsQC*	HIVE	Length (in base pairs) of longest sequence(s) present in a FASTA/FASTQ read file.	HIVE
-codon_table	ngsQC*	HIVE	A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc.	HIVE
+coding_system	ngsQC*	HIVE	A list containing the different types of DNA sequences, including Standard, Vertebrate Mitochondrial, Yeast Mitochondrial, etc.	HIVE
 percent_coding	ngsQC*	HIVE	The relative frequency of sequences that are protein coding selected for one relevant species.	HIVE
 percent_not_coding	ngsQC*	HIVE	The relative frequency of sequences that are not protein coding for each DNA sequence type.	HIVE
 complexity_percent	ngsQC*	HIVE	Percentage of sequences that are complex.	HIVE
@@ -157,3 +157,5 @@ site_score	siteQC*	Raja	Internally developed scores are used to evaluate the qua
 count_major_mutations	siteQC* | assemblyQC*	Raja	Count of major mutations.	HIVE
 count_major_indels	siteQC* | assemblyQC*	Raja	Count of insertions or deletions.	HIVE
 wt_amino_acid	siteQC*|DRM_all_orgs.tsv	Raja	Amino acid at position of interest in wild type sample.	ARGOS Team 
+percent_n	ngsQC	Vahan	Percent of n's in the fastq files.	HIVE
+avg_quality_n	ngsQC	HIVE	The average cumulative quality score of n in the NGS.	HIVE

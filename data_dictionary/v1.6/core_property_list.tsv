@@ -38,7 +38,7 @@ sample_name	biosampleMeta_HIVE.tsv	optional	#root/sample_name	sample_name	string
 instrument	biosampleMeta_HIVE.tsv	optional	#root/instrument	instrument	string	N/A	-	Illumina MiniSeq	^.*$
 isolate	biosampleMeta_HIVE.tsv	optional	#root/isolate	isolate	string	N/A	-	Monkeypox Virus/USA-2003	^.*$
 collected_by	biosampleMeta_HIVE.tsv	optional	#root/collected_by	collected_by	string	N/A	-	Fudan University	^.*$
-collection_date	biosampleMeta_HIVE.tsv	optional	#root/collection_date	collection_date	string	N/A	-	2/20/20	^.*$
+collection_date	biosampleMeta_HIVE.tsv	optional	#root/collection_date	collection_date	string	N/A	-	02/20/2020	^.*$
 geo_loc_name	biosampleMeta_HIVE.tsv	optional	#root/geo_loc_name	geo_loc_name	string	N/A	-	China: Wuhan	^.*$
 isolation_source	biosampleMeta_HIVE.tsv	optional	#root/isolation_source	isolation_source	string	N/A	-	human lung metagenome	^.*$
 lat_lon	biosampleMeta_HIVE.tsv	optional	#root/lat_lon	lat_lon	string	N/A	-	NA	^.*$
@@ -74,7 +74,7 @@ max_read_length	ngsQC_HIVE.tsv 	required	#root/max_read_length	max_read_length	i
 min_read_length	ngsQC_HIVE.tsv 	required	#root/min_read_length	min_read_length	int	0-10000	-	1	^[0-9]+$
 num_reads_unique	ngsQC_HIVE.tsv 	optional	#root/num_reads_unique	num_reads_unique	int	0-100000000	-	NA	^[0-9]+$
 pos_outlier_count	ngsQC_HIVE.tsv 	optional	#root/pos_outlier_count	pos_outlier_count	int	0-100000	-	0	^[0-9]+$
-codon_table	ngsQC_HIVE.tsv 	optional	#root/codon_table	codon_table	string	N/A	-	"Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear"	^.*$
+coding_system	ngsQC_HIVE.tsv 	optional	#root/coding_system	coding_system	string	N/A	-	Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear	^.*$
 percent_coding	ngsQC_HIVE.tsv 	optional	#root/percent_coding	percent_coding	string	N/A	-	0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
 percent_not_coding	ngsQC_HIVE.tsv 	optional	#root/percent_not_coding	percent_not_coding	string	N/A	-	0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
 complexity_percent	ngsQC_HIVE.tsv 	optional	#root/complexity_percent	complexity_percent	float	0.0-100.0	-	94	^[0-9]+$
@@ -161,7 +161,7 @@ sample_name	biosampleMeta_NCBI.tsv	optional	#root/sample_name	sample_name	string
 instrument	biosampleMeta_NCBI.tsv	optional	#root/instrument	instrument	string	N/A	-	Illumina MiniSeq	^.*$
 isolate	biosampleMeta_NCBI.tsv	optional	#root/isolate	isolate	string	N/A	-	Monkeypox Virus/USA-2003	^.*$
 collected_by	biosampleMeta_NCBI.tsv	optional	#root/collected_by	collected_by	string	N/A	-	Fudan University	^.*$
-collection_date	biosampleMeta_NCBI.tsv	optional	#root/collection_date	collection_date	string	N/A	-	2/20/20	^.*$
+collection_date	biosampleMeta_NCBI.tsv	optional	#root/collection_date	collection_date	string	N/A	-	02/20/2020	^.*$
 geo_loc_name	biosampleMeta_NCBI.tsv	optional	#root/geo_loc_name	geo_loc_name	string	N/A	-	China: Wuhan	^.*$
 isolation_source	biosampleMeta_NCBI.tsv	optional	#root/isolation_source	isolation_source	string	N/A	-	human lung metagenome	^.*$
 lat_lon	biosampleMeta_NCBI.tsv	optional	#root/lat_lon	lat_lon	string	N/A	-	NA	^.*$
@@ -197,7 +197,7 @@ max_read_length	ngsQC_NCBI.tsv	required	#root/max_read_length	max_read_length	in
 min_read_length	ngsQC_NCBI.tsv	required	#root/min_read_length	min_read_length	int	0-10000	-	1	^[0-9]+$
 num_reads_unique	ngsQC_NCBI.tsv	optional	#root/num_reads_unique	num_reads_unique	int	0-100000000	-	NA	^[0-9]+$
 pos_outlier_count	ngsQC_NCBI.tsv	optional	#root/pos_outlier_count	pos_outlier_count	int	0-100000	-	0	^[0-9]+$
-codon_table	ngsQC_NCBI.tsv	optional	#root/codon_table	codon_table	string	N/A	-	"Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear"	^.*$
+coding_system	ngsQC_NCBI.tsv	optional	#root/coding_system	coding_system	string	N/A	-	Standard|Vertebrate Mitochondrial|Yeast Mitochondrial|Mold,Protozoan and Coelenterate Mitochondrial and Mycoplasma/Spiroplasma|Invertebrate Mitochonrial|Ciliate, Dasycladacean and Hexamita Nuclear|Echinoderm and Flatworm Mitochondrial|Euplotid Nuclear|Bacterial, Archael and Plant Plastid|Alternative Yeast Nuclear|Ascidian Mitochondrial|Alternative Flatworm Mitochondrial|Chlorophycean Mitochondrial|Trematode Mitochondrial|Scenedesmus Obliquus Mitochondrial|Thraustochytrium Mitochondrial|Pterobranchia Mitochondrial|Candidate Division SR1 and Gracilibacteria|Pachysolen tannophilus Nuclear	^.*$
 percent_coding	ngsQC_NCBI.tsv	optional	#root/percent_coding	percent_coding	string	N/A	-	0.84|0.71|0.93|0.93|0.93|1.0|0.93|0.93|0.84|0.84|0.93|1.0|0.91|0.93|0.28|0.84|0.93|0.93|0.84	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
 percent_not_coding	ngsQC_NCBI.tsv	optional	#root/percent_not_coding	percent_not_coding	string	N/A	-	0.16|0.29|0.07|0.07|0.07|0.0|0.07|0.07|0.16|0.16|0.07|0.0|0.09|0.07|0.72|0.16|0.07|0.07|0.16	^([0-9]*\.[0-9]+(\|[0-9]*\.[0-9]+)+)$
 complexity_percent	ngsQC_NCBI.tsv	optional	#root/complexity_percent	complexity_percent	float	0.0-100.0	-	94	^[0-9]+$
@@ -247,7 +247,7 @@ n95	assemblyQC.tsv	required	#root/n95	n95	int	N/A	-	2998077	^[0-9]+$
 l95	assemblyQC.tsv	required	#root/l95	l95	int	N/A	-	59	^[0-9]+$
 phred_average	assemblyQC.tsv	required	#root/phred_average	phred_average	float	N/A	-	36.8567	^[0-9]*\.[0-9]+$
 mutation_momentum	assemblyQC.tsv	required	#root/mutation_momentum	mutation_momentum	float	N/A	-	0.00786	^[0-9]*\.[0-9]+$
-indels_momentum	assemblyQC.tsv	required	#root/indels_momentum	indels_momentum	float	N/A	-	0.0002	^[0-9]*\.[0-9]+$
+indels_momentum	assemblyQC.tsv	required	#root/indels_momentum	indels_momentum	float	N/A	-	0.00020	^[0-9]*\.[0-9]+$
 major_mutation_momentum	assemblyQC.tsv	required	#root/major_mutation_momentum	major_mutation_momentum	float	N/A	-	0.97987	^[0-9]*\.[0-9]+$
 major_indels_momentum	assemblyQC.tsv	required	#root/major_indels_momentum	major_indels_momentum	float	N/A	-	0.303747	^[0-9]*\.[0-9]+$
 alignment_anisotropy	assemblyQC.tsv	required	#root/alignment_anisotropy	alignment_anisotropy	float	N/A	-	36.342564	^[0-9]*\.[0-9]+$
@@ -260,8 +260,10 @@ max_duplicate_read	ngsQC.tsv	required	#root/max_duplicate_read	max_duplicate_rea
 stdev_quality	ngsQC.tsv	required	#root/stdev_quality	stdev_quality	float	N/A	-	5.468866	^[0-9]*\.[0-9]+$
 num_reads	ngsQC.tsv	required	#root/num_reads	num_reads	int	N/A	-	942546	^[0-9]+$
 count_n	ngsQC.tsv	optional	#root/count_n	count_n	int	N/A	-	24356288	^[0-9]+$
-percent_a	ngsQC.tsv	required	#root/percent_a	percent_a	float	N/A	-	27.566466	^[0-9]*\.[0-9]+$
+percent_not_coding	ngsQC.tsv	required	#root/percent_a	percent_a	float	N/A	-	27.566466	^[0-9]*\.[0-9]+$
 percent_c	ngsQC.tsv	required	#root/percent_c	percent_c	float	N/A	-	22.409867	^[0-9]*\.[0-9]+$
 percent_g	ngsQC.tsv	required	#root/percent_g	percent_g	float	N/A	-	23.487356	^[0-9]*\.[0-9]+$
 percent_t	ngsQC.tsv	required	#root/percent_t	percent_t	float	N/A	-	32.464539	^[0-9]*\.[0-9]+$
 count_all 	ngsQC.tsv	required	#root/count_all	count_all 	int	N/A	-	236597871	^[0-9]+$
+percent_n	ngsQC.tsv	optional	#root/percent_n	percent_n	float	N/A	-	25.83745	^[0-9]*\.[0-9]+$
+avg_quality_n	ngsQC.tsv	optional	#root/avg_quality_n	avg_quality_n	float	N/A	-	2.000000	^[0-9]*\.[0-9]+$

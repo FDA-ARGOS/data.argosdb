@@ -44,8 +44,8 @@ Added term 'percent_c'	ngsQC_HIVE.tsv*
 Added term 'percent_g'	ngsQC_HIVE.tsv*	
 Added term 'percent_t'	ngsQC_HIVE.tsv*	
 Deleted 'assembly_score'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
-Deleted 'representative_coverage_against_assembly'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
-Deleted 'assembly_coverage_against_representative'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'representative_coverage_against_assembly'/“reference_coverage_against_query”	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
+Deleted 'assembly_coverage_against_representative'/“query_coverage_against_reference”	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
 Deleted 'percent_identity_against_reference'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
 Deleted 'biosample_score'	biosampleQC_HIVE.tsv*	They are not in the JSON outputs currently
 Deleted 'num_of_frameshifts'	assemblyQC_HIVE.tsv*	They are not in the JSON outputs currently
@@ -56,9 +56,9 @@ Deleted 'ngs_score'	ngsQC_HIVE.tsv*	Not currently avilable in the JSON output an
 Deleted 'wgs_accession'	ngsQC_HIVE.tsv*	Not currently available in the JSON outputs or the NCBI page
 Deleted 'density_n_per_read'	ngsQC_HIVE.tsv*	They are not in the JSON outputs currently
 Deleted 'pos_outlier_count'	ngsQC_HIVE.tsv*	They are not in the JSON outputs currently
-		
-		
-		
+Updated 'codon_table' to 'coding_system'	ngsQC_HIVE.tsv	Updated the term from Vahan's JSON outputs.
+Added term 'percent_n'	ngsQC_HIVE.tsv	Added, because it is now in the JSONs for applicable computations
+Added term 'avg_quality_n'	ngsQC_HIVE.tsv	Added, because it is now in the JSONs for applicable computations
 		
 		
 Summary of V1.6 Changes in Property Definition List:		
@@ -110,6 +110,9 @@ percent_a	Added term in 'property' column, 'data_files' column, 'description' co
 percent_c	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
 percent_g	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
 percent_t	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+percent_n	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+avg_quality_n	Added term in 'property' column, 'data_files' column, 'description' column, and 'recommended' column.	ngsQC_HIVE.tsv*
+		
 		
 		
 Summary of V1.6 Changes in CORE Property List and associated data sets:		
@@ -157,8 +160,8 @@ percent_a	Added term in 'property' column, in 'data object' column, in 'constrai
 percent_c	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
 percent_g	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
 percent_t	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
-		
-		
+percent_n	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
+avg_quality_n	Added term in 'property' column, in 'data object' column, in 'constraint' column, in 'id' column, in 'title' column, in 'examples' column, and 'pattern' column.	ngsQC_HIVE.tsv*
 		
 		
 Summary of V1.6 Changes in Annotation Property List and associated data sets: 		
@@ -170,12 +173,12 @@ NA	NA	NA
 		
 V1.6 Data Sheet Statistics:		
 Class	Sheet	Total Properties
-Dictionary	property_definition.tsv	158
+Dictionary	property_definition.tsv	160
 Dictionary 	core_property_list.tsv	268
 Dictionary 	annotation_property_list.tsv	29
 Core	assemblyQC*	49
 Core	biosampleMeta*	28
-Core	ngsQC*	50
+Core	ngsQC*	52
 Core	siteQC*	38
 Core	ngs_ID_list.tsv	15
 Annotation	DRM_all_orgs.tsv	34

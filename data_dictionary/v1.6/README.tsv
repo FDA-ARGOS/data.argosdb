@@ -62,12 +62,12 @@ pattern	The regular expression evaluation for this property. Can be used as a QC
 		
 V1.6 Data Sheet Statistics:		
 Class:	Sheet:	Total Properties:
-Dictionary	property_definition.tsv	158
+Dictionary	property_definition.tsv	160
 Dictionary 	core_property_list.tsv	268
 Dictionary 	annotation_property_list.tsv	29
 Core	assemblyQC*	49
 Core	biosampleMeta*	28
-Core	ngsQC*	50
+Core	ngsQC*	52
 Core	siteQC*	38
 Core	ngs_ID_list.tsv	15
 Annotation	DRM_all_orgs.tsv	34

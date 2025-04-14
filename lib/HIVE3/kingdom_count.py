@@ -1,6 +1,8 @@
 # Christie Woodside
-'''Counts the number of biosamples associated with each kingdom for the FDA-ARGOS BioProject. This will be used
-for the table in the paper'''
+# April 14, 2025
+
+'''Counts the number of biosamples associated with each kingdom for the FDA-ARGOS BioProject. This will be used for the table in the paper. Takes in the biosample summary text file.
+To doanload, click on the biosample hyperlink in the bioproject page > send to > file > summary(text) > download. It should be a .txt file'''
 
 import re
 import requests
@@ -25,7 +27,7 @@ def parse_biosample_file(filepath):
     return organisms
 
 def get_kingdom(organism):
-    api_key = os.getenv("NCBI_API_KEY") or "bfbde99c962d228023e8d62a078bdb12d108"
+    api_key = os.getenv("NCBI_API_KEY") or "your own API key"                    #<------------ make sure to add your NCBI API key to this
 
     # Get tax ID
     esearch_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -47,7 +49,7 @@ def get_kingdom(organism):
     except Exception:
         return "Unknown"
 
-    # Fetch lineage
+    # fetch the lineage
     efetch_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
     fetch_params = {
         "db": "taxonomy",

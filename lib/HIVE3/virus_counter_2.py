@@ -1,3 +1,9 @@
+#Christie Woodside
+#April 1 2025
+''' --- Key difference in this code is that it checks if these viruses has assemblies associated.
+The code takes in the biosample summary text file as a .txt format. This code find all of the viruses that are in the FDA ARGOS Bioproject and spits out their name, biosample ID, strain, and yes or no assembly into a spreadsheet.
+This was used to verify if there were any viruses in our bioproject and which had an assemblies associated with them'''
+
 import re
 import requests
 import csv
@@ -31,7 +37,7 @@ def parse_biosample_file(filepath):
     return samples
 
 def check_virus_and_assembly(biosample_id):
-    api_key = os.getenv("NCBI_API_KEY") or "bfbde99c962d228023e8d62a078bdb12d108"
+    api_key = os.getenv("NCBI_API_KEY") or "your API key here"               #<----------- add your NCBI API key here 
 
     # Step 1: Use esearch to get the UID from the BioSample accession
     esearch_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"

@@ -15,7 +15,7 @@ from collections import defaultdict
 
 
 def get_kingdom_from_organism(organism):
-    api_key = os.getenv("NCBI_API_KEY") or "bfbde99c962d228023e8d62a078bdb12d108"
+    api_key = os.getenv("NCBI_API_KEY") or "your API key from NCBI"            # <---------- make sure to add your NCBI API key here
 
     # Step 1: Get Taxonomy ID
     search_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"

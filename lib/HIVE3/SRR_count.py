@@ -1,5 +1,10 @@
 #Christie Woodside
-'''Counts the number of SRR IDs in each of the kingdoms from the ARGOS bioProject'''
+#April 14 2025
+
+'''Counts the number of SRR IDs in each of the kingdoms from the ARGOS bioProject specifically. Takes in the SRA total entires summary file. 
+To download click on the SRR hyperlink from the bioproject > send to > file > summary > download. The count will be displayed in the terminal'''
+
+
 import csv
 import argparse
 import os

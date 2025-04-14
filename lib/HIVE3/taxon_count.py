@@ -1,6 +1,9 @@
 #Christie Woodside
+#April 14 2025
+
 '''Code will count the number of unique taxon IDs from the bioproject so we get an accurate 
-count of bacteria, fungi, and viruses that are therefore in the bioproject'''
+count of bacteria, fungi, and viruses that are therefore in the bioproject. Takes in the biosample file containing the biosample summaries from the bioproject. To download
+click on the biosample hyperlink from the bioproject > send to > file > summary(text) > download'''
 
 import re
 import requests
@@ -25,7 +28,7 @@ def parse_biosample_file(filepath):
     return organisms
 
 def get_tax_id_and_kingdom(organism):
-    api_key = os.getenv("NCBI_API_KEY") or "bfbde99c962d228023e8d62a078bdb12d108"
+    api_key = os.getenv("NCBI_API_KEY") or "your actual NCBI API key"            # <---------------- make sure you add this from your NCBI account
 
     # Step 1: Get Taxonomy ID
     search_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -86,7 +89,7 @@ def main():
     seen_taxa = {}
     kingdom_counts = defaultdict(set)
 
-    for i, organism in enumerate(set(organisms), 1):  # deduplicate by name before querying
+    for i, organism in enumerate(set(organisms), 1):         # deduplicate by name before querying
         tax_id, kingdom = get_tax_id_and_kingdom(organism)
         if tax_id and kingdom in {"bacteria", "fungi", "virus"}:
             if tax_id not in seen_taxa:

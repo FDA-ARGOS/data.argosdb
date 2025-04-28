@@ -4,7 +4,6 @@
 '''Counts the number of SRR IDs in each of the kingdoms from the ARGOS bioProject specifically. Takes in the SRA total entires summary file. 
 To download click on the SRR hyperlink from the bioproject > send to > file > summary > download. The count will be displayed in the terminal'''
 
-
 import csv
 import argparse
 import os
@@ -15,7 +14,7 @@ from collections import defaultdict
 
 
 def get_kingdom_from_organism(organism):
-    api_key = os.getenv("NCBI_API_KEY") or "your API key from NCBI"            # <---------- make sure to add your NCBI API key here
+    api_key = os.getenv("NCBI_API_KEY") or "YOUR API KEY"   #<-- make sure to add your API key
 
     # Step 1: Get Taxonomy ID
     search_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -30,11 +29,13 @@ def get_kingdom_from_organism(organism):
         time.sleep(1)
         search_resp = requests.get(search_url, params=search_params)
     if search_resp.status_code != 200:
+        print("-- bad status code for: ", organism)
         return None
 
     try:
         tax_id = search_resp.json()["esearchresult"]["idlist"][0]
     except Exception:
+        print('---- no id list for: ', organism)
         return None
 
     # Step 2: Get lineage
@@ -50,6 +51,7 @@ def get_kingdom_from_organism(organism):
         time.sleep(1)
         fetch_resp = requests.get(fetch_url, params=fetch_params)
     if fetch_resp.status_code != 200:
+        print("-- bad status code again for: ", organism)
         return None
 
     try:
@@ -62,6 +64,7 @@ def get_kingdom_from_organism(organism):
         elif "Bacteria" in lineage:
             return "bacteria"
         else:
+            print('**** other: ', lineage)
             return "other"
     except Exception:
         return None

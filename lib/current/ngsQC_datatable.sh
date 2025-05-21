@@ -90,7 +90,7 @@ for json_file in "$input_dir"*-qcNGS.json; do
 
 
         # Query the SRA database using eutils API (using SRR_ID from above directly)
-        SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=$SRR_ID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+        SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=$SRR_ID&retmode=json&api_key=APIKEY")  #API KEY HERE
         SRA_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
         #echo ""
         #echo "SRA API Response: $SEARCH_RESULT"
@@ -99,7 +99,7 @@ for json_file in "$input_dir"*-qcNGS.json; do
         if [[ -n "$SRA_ID" ]]; then
             
             # Query the SRA metadata to get more information about the SRA ID
-            SRA_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=sra&id=$SRA_ID&retmode=xml&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+            SRA_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=sra&id=$SRA_ID&retmode=xml&api_key=APIKEY")  #ADD AGAIN HERE
             
             # Decode HTML entities in the SRA_METADATA
             DECODED_SRA_METADATA=$(echo "$SRA_METADATA" | sed 's/&lt;/</g; s/&gt;/>/g; s/&amp;/&/g')
@@ -128,13 +128,13 @@ for json_file in "$input_dir"*-qcNGS.json; do
             if [[ -n "$BIOSAMPLE_ID" ]]; then
 
                 #Getting Biosample metadata that is needed
-                BIOSAMPLE_SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=biosample&term=$BIOSAMPLE_ID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                BIOSAMPLE_SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=biosample&term=$BIOSAMPLE_ID&retmode=json&api_key=APIKEY") #HERE
                 
                 # Extract the Biosample UID from the search result
                 BIOSAMPLE_UID=$(echo "$BIOSAMPLE_SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
 
                 if [[ -n "$BIOSAMPLE_UID" ]]; then
-                    BIOSAMPLE_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=biosample&id=$BIOSAMPLE_UID&retmode=xml&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                    BIOSAMPLE_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=biosample&id=$BIOSAMPLE_UID&retmode=xml&api_key=APIKEY")  #ALSO HERE
                     BIOSAMPLE_METADATA_CLEAN=$(echo "$BIOSAMPLE_METADATA" | sed 's/<!DOCTYPE[^>]*>//g')
                     #echo "$BIOSAMPLE_METADATA_CLEAN"
                     STRAIN=$(echo "$BIOSAMPLE_METADATA_CLEAN" | xmlstarlet sel -t -v "//Attribute[@attribute_name='strain']" -n)
@@ -148,7 +148,7 @@ import time
 from Bio import Entrez
 import xmltodict
 
-Entrez.email = 'christie.woodside@email.gwu.edu'
+Entrez.email = 'YOUREMAILFORNCBI@email.gwu.edu'
 
 def bsMeta(bs_term, sleeptime):
     ''' gets additional biosample information to add to the tsv'''

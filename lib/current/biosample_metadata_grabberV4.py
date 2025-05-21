@@ -2,8 +2,10 @@
 #Christie Woodside
 #Uses the folder of ngsQC files instead of a text file
 
+''' Takes in a folder of ngs JSONs that are from May 15, 2025 and newer. The assembly ID is no lonbger listed at the top of the jsons. This fixes that issue  '''
+
 '''Example Usage:
-  python3 biosample_metadata_grabberV4.py --email christie.woodside@email.gwu.edu --api_key bfbde99c962d228023e8d62a078bdb12d108 --folder /Users/christiewoodside/Desktop/ARGOS/oct_28/all/ --output /Users/christiewoodside/Desktop/ARGOS/oct_28/BS_clostridiumPerfringens.tsv'''
+  python3 biosample_metadata_grabberV4.py --email PERSON@email.gwu.edu --api_key BBBBBBBBB --folder /Users/USER/Desktop/ARGOS/may28/all/ --output /Users/USER/Desktop/ARGOS/may28/BS_clostridiumPerfringens.tsv'''
 
 
 from Bio import Entrez
@@ -18,8 +20,7 @@ sleeptime = 0.11
 
 sleeptime_withtoken = 0.11  # seconds
 sleeptime_notoken = 0.34  # seconds
-
-'''Api key for CW as of Oct 1 bfbde99c962d228023e8d62a078bdb12d108'''
+### ADD YOUR API KEYYYYY
 
 argos_schema_version = 'v1.6'
 schema_keys = ['organism_name',

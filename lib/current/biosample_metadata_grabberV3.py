@@ -29,8 +29,7 @@ sleeptime = 0.11
 
 sleeptime_withtoken = 0.11  # seconds
 sleeptime_notoken = 0.34  # seconds
-
-'''Api key for CW as of Oct 1 bfbde99c962d228023e8d62a078bdb12d108'''
+##ADD YOUR NCBI API KEY
 
 argos_schema_version = 'v1.6'
 schema_keys = ['organism_name',

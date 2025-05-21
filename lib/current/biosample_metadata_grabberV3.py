@@ -14,7 +14,7 @@ numpy==1.22.0
 xmltodict==0.13.0'''
 #
 '''Example Usage:
-  python3 biosample_metadata_grabberV3.py --email christie.woodside@email.gwu.edu --api_key bfbde99c962d228023e8d62a078bdb12d108 --folder /Users/christiewoodside/Desktop/ARGOS/oct_28/all/ --output /Users/christiewoodside/Desktop/ARGOS/oct_28/BS_clostridiumPerfringens.tsv'''
+  python3 biosample_metadata_grabberV3.py --email blahblah@email.gwu.edu --api_key hhhhhhhhhhh --folder /Users/user/Desktop/ARGOS/may28/all/ --output /Users/user/Desktop/ARGOS/may28/BS_argos_batch1.tsv'''
 
 
 from Bio import Entrez

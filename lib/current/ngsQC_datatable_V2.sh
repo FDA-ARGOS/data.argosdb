@@ -7,6 +7,8 @@
 
 #bash ngsQC_datatable_V2.sh /Users/christiewoodside/Desktop/ARGOS/may21/ngs/ /Users/christiewoodside/Desktop/ARGOS/may21/ngs/ngs_may21_test2.tsv
 
+read -p "Enter your API key: " MYAPIKEY
+
 # Check if jq is installed
 if ! command -v jq &> /dev/null; then
     echo "jq is required but not installed. Install jq and try again."
@@ -127,7 +129,7 @@ for json_file in "$input_dir"*-qcNGS.json; do
     
 
 
-        SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=$SRR_ID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+        SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=$SRR_ID&retmode=json&api_key=$MYAPIKEY")
         SRA_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
         #echo "$SRA_ID"
         #echo "SRA API Response: $SEARCH_RESULT"
@@ -137,7 +139,7 @@ for json_file in "$input_dir"*-qcNGS.json; do
         if [[ -n "$SRA_ID" ]]; then
             
             # Query the SRA metadata to get more information about the SRA ID
-            SRA_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=sra&id=$SRA_ID&retmode=xml&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+            SRA_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=sra&id=$SRA_ID&retmode=xml&api_key=$MYAPIKEY")
             
             # Decode HTML entities in the SRA_METADATA
             DECODED_SRA_METADATA=$(echo "$SRA_METADATA" | sed 's/&lt;/</g; s/&gt;/>/g; s/&amp;/&/g')
@@ -166,13 +168,13 @@ for json_file in "$input_dir"*-qcNGS.json; do
             if [[ -n "$BIOSAMPLE_ID" ]]; then
 
                 #Getting Biosample metadata that is needed
-                BIOSAMPLE_SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=biosample&term=$BIOSAMPLE_ID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                BIOSAMPLE_SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=biosample&term=$BIOSAMPLE_ID&retmode=json&api_key=$MYAPIKEY")
                 
                 # Extract the Biosample UID from the search result
                 BIOSAMPLE_UID=$(echo "$BIOSAMPLE_SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
 
                 if [[ -n "$BIOSAMPLE_UID" ]]; then
-                    BIOSAMPLE_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=biosample&id=$BIOSAMPLE_UID&retmode=xml&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                    BIOSAMPLE_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=biosample&id=$BIOSAMPLE_UID&retmode=xml&api_key=$MYAPIKEY")
                     BIOSAMPLE_METADATA_CLEAN=$(echo "$BIOSAMPLE_METADATA" | sed 's/<!DOCTYPE[^>]*>//g')
                     #echo "$BIOSAMPLE_METADATA_CLEAN"
                     STRAIN=$(echo "$BIOSAMPLE_METADATA_CLEAN" | xmlstarlet sel -t -v "//Attribute[@attribute_name='strain']" -n)
@@ -237,7 +239,7 @@ print(bsMeta('$BIOSAMPLE_ID', 0.75))")
             if [[ -n "$BIOSAMPLE_UID" ]]; then
                 #echo "$BIOSAMPLE_UID"
                 BS_LINKS=$(curl -s \
-                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=biosample&db=assembly&id=$BIOSAMPLE_UID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=biosample&db=assembly&id=$BIOSAMPLE_UID&retmode=json&api_key=$MYAPIKEY")
 
                 #echo "DEBUG raw BS_LINKS →"
                 #echo "$BS_LINKS" | jq .
@@ -249,7 +251,7 @@ print(bsMeta('$BIOSAMPLE_ID', 0.75))")
             # 2) fallback SRA → Assembly
             if [[ -z "$ASSEMBLY_UID" && -n "$SRA_ID" ]]; then
                 SR_LINKS=$(curl -s \
-                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=sra&db=assembly&id=$SRA_ID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=sra&db=assembly&id=$SRA_ID&retmode=json&api_key=$MYAPIKEY")
                 ASSEMBLY_UID=$(echo "$SR_LINKS" \
                     | jq -r '.linksets[0].linksetdbs[0].links[0] // empty')
             fi
@@ -257,7 +259,7 @@ print(bsMeta('$BIOSAMPLE_ID', 0.75))")
             # 3) fetch the accession
             if [[ -n "$ASSEMBLY_UID" ]]; then
                 SUMMARY=$(curl -s \
-                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=assembly&id=$ASSEMBLY_UID&retmode=json&api_key=bfbde99c962d228023e8d62a078bdb12d108")
+                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=assembly&id=$ASSEMBLY_UID&retmode=json&api_key=$MYAPIKEY")
                 GAID=$(echo "$SUMMARY" \
                     | jq -r --arg id "$ASSEMBLY_UID" \
                     '.result[$id].assemblyaccession // .result[$id].AssemblyAccession // "NA"')

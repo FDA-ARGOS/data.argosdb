@@ -22,6 +22,9 @@ sleeptime_withtoken = 0.11  # seconds
 sleeptime_notoken = 0.34  # seconds
 ### ADD YOUR API KEYYYYY
 
+apiKey=input("Enter your API key: ")
+email=input("Enter your email: ")
+
 argos_schema_version = 'v1.6'
 schema_keys = ['organism_name',
                'infraspecific_name',
@@ -230,20 +233,20 @@ def listify(d, key_order):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--email', help='email address associated with the NCBI account', type=str)
-    parser.add_argument('--api_key', help='API key associated with the NCBI account (optional)', type=str)
+#    parser.add_argument('--email', help='email address associated with the NCBI account', type=str)
+#    parser.add_argument('--api_key', help='API key associated with the NCBI account (optional)', type=str)
     parser.add_argument('--folder', help='folder containing JSON files with biosample information', type=str, required=True)
     parser.add_argument('--bco_id', help='BCO ID (optional)', type=str)
     parser.add_argument('--output', help='Name you want to assign to the output tsv file', type=str)
     args = parser.parse_args()
 
-    Entrez.email = args.email
-    Entrez.api_key = args.api_key
+    Entrez.email = email
+    Entrez.api_key = apiKey
 
     output_file = open(args.output, "w+")
     print(sep.join(schema_keys), file=output_file)
 
-    sleeptime = sleeptime_notoken if args.api_key is None else sleeptime_withtoken
+    sleeptime = sleeptime_notoken if apiKey is None else sleeptime_withtoken
 
     # Iterate through each JSON file in the specified folder
     for filename in os.listdir(args.folder):

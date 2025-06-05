@@ -9,6 +9,7 @@
 #This code is used to create the assemblyQC_* tables for ARGOSDB currently. This was because there were server issues with NCBI
 
 read -sp "Enter your API key: " YOURAPIKEY
+sleeptime_wtoken=0.14    #this will be the sleeptime set before all the API calls
 
 # Check if jq is installed
 if ! command -v jq &> /dev/null; then
@@ -120,10 +121,12 @@ for json_file in "$input_dir"*-qcAll.json; do
 
         # Grabbing Metadata from the NCBI APIS below---------------------------------------------------------------------------------------------
 
-
+        sleep "$sleeptime_wtoken"
         # Query the assembly database using eutils API and $GAID which is the assemblyID
         SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=assembly&term=$GAID&retmode=json&api_key=$YOURAPIKEY")   ##ADD API KEY
+        sleep "$sleeptime_wtoken"
         ASSEM_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
+        sleep "$sleeptime_wtoken"
         #echo "ASSEMBLY API Response: $SEARCH_RESULT"
 
         ########If there is no assemblyUID associated with this nucleotide accession, lets search through nucleotide to get it
@@ -132,12 +135,17 @@ for json_file in "$input_dir"*-qcAll.json; do
             echo "  No assembly UID found. Searching with nucleotide ID to find UID..."
 
             # If ASSEM_ID is empty, search with nucleotide
+            sleep "$sleeptime_wtoken"
             SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=$GAID&retmode=json&api_key=$YOURAPIKEY")         #######ADD API KEY
+            sleep "$sleeptime_wtoken"
             ASSEM_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty') #getting the nucleotide UID to add into the assembly search
+            sleep "$sleeptime_wtoken"
             #echo ""
             #echo "ASSEMBLY with Nuc API Response: $SEARCH_RESULT" #getting the uid we need
 
+            sleep "$sleeptime_wtoken"
             NUC_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=$ASSEM_ID&retmode=xml&api_key=YOURAPIKEY")    ##AND HERE
+            sleep "$sleeptime_wtoken"
             DECODED_NUC_METADATA=$(echo "$NUC_METADATA" | \
             sed 's/&lt;/</g; s/&gt;/>/g; s/&amp;/&/g' | \
             sed -E 's/(<GBQualifier_name>[^<]+<\/GBQualifier_name>)[[:space:]]*([^<]+)/\1<GBQualifier_value>\2<\/GBQualifier_value>/g' | \
@@ -160,8 +168,11 @@ for json_file in "$input_dir"*-qcAll.json; do
             #echo "ASSEMBLY ID: $ASSEMBLY_ID"
 
             #finally grabbed the assembly ID from the nucleotide id. Now researching the assembly database with it
+            sleep "$sleeptime_wtoken"
             SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=assembly&term=$ASSEMBLY_ID&retmode=json&api_key=$YOURAPIKEY")    ##AND HERE
+            sleep "$sleeptime_wtoken"
             ASSEM_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
+            sleep "$sleeptime_wtoken"
         
         fi
 
@@ -171,7 +182,9 @@ for json_file in "$input_dir"*-qcAll.json; do
         if [[ -n "$ASSEM_ID" ]]; then
 
             # Query the ASSEMBLY metadata to get more information to fill out the table
+            sleep "$sleeptime_wtoken"
             ASSEM_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=assembly&id=$ASSEM_ID&retmode=xml&api_key=$YOURAPIKEY")    #AND HERE
+            sleep "$sleeptime_wtoken"
             
             # Decode HTML entities in the ASSEM_METADATA
             DECODED_ASSEM_METADATA=$(echo "$ASSEM_METADATA" | sed 's/&lt;/</g; s/&gt;/>/g; s/&amp;/&/g')
@@ -204,13 +217,18 @@ for json_file in "$input_dir"*-qcAll.json; do
 
 
         # Query the nucleotide database using eutils API and $nucleotide which is the nucleotide assecion iD
+        sleep "$sleeptime_wtoken"
         SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nucleotide&term=$nucleotide&retmode=json&api_key=$YOURAPIKEY")   #AND HERE
+        sleep "$sleeptime_wtoken"
         NUC_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
+        sleep "$sleeptime_wtoken"
         #echo "NUC API Response: $SEARCH_RESULT"
 
         if [[ -n "$NUC_ID" ]]; then
             # Query the NUCLEOTIDE metadata to get more information to fill out the table
+            sleep "$sleeptime_wtoken"
             NUC_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=$NUC_ID&retmode=xml&api_key=$YOURAPIKEY")     #AND HERE
+            sleep "$sleeptime_wtoken"
             #echo "$NUC_METADATA"
 
             # Decode HTML entities in the NUC_METADATA -> some tags/f;ags were causing parsing errors which is why these are so long

@@ -8,6 +8,7 @@
 #bash ngsQC_datatable_V2.sh /Users/christiewoodside/Desktop/ARGOS/may21/ngs/ /Users/christiewoodside/Desktop/ARGOS/may21/ngs/ngs_may21_test2.tsv
 
 read -p "Enter your API key: " MYAPIKEY
+sleeptime_wtoken=0.14
 
 # Check if jq is installed
 if ! command -v jq &> /dev/null; then
@@ -128,9 +129,11 @@ for json_file in "$input_dir"*-qcNGS.json; do
     #echo "DEBUG: extracted SRR_ID=[$SRR_ID]"
     
 
-
+        sleep "$sleeptime_wtoken"
         SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=$SRR_ID&retmode=json&api_key=$MYAPIKEY")
+        sleep "$sleeptime_wtoken"
         SRA_ID=$(echo "$SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
+        #sleep "$sleeptime_wtoken"
         #echo "$SRA_ID"
         #echo "SRA API Response: $SEARCH_RESULT"
 
@@ -139,7 +142,9 @@ for json_file in "$input_dir"*-qcNGS.json; do
         if [[ -n "$SRA_ID" ]]; then
             
             # Query the SRA metadata to get more information about the SRA ID
+            sleep "$sleeptime_wtoken"
             SRA_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=sra&id=$SRA_ID&retmode=xml&api_key=$MYAPIKEY")
+            sleep "$sleeptime_wtoken"
             
             # Decode HTML entities in the SRA_METADATA
             DECODED_SRA_METADATA=$(echo "$SRA_METADATA" | sed 's/&lt;/</g; s/&gt;/>/g; s/&amp;/&/g')
@@ -159,7 +164,9 @@ for json_file in "$input_dir"*-qcNGS.json; do
             # this gets me the lineage for the organisms 
             ENCODED_ORGANISM=$(echo "$ORGANISM" | sed 's/ /%20/g')
 
+            sleep "$sleeptime_wtoken"
             tax_META=$(curl -s "https://www.ebi.ac.uk/ena/taxonomy/rest/scientific-name/$ENCODED_ORGANISM")
+            sleep "$sleeptime_wtoken"
             LINEAGE=$(echo "$tax_META" | jq -r '.[0].lineage' | sed 's/; $//')
             #echo "$LINEAGE"
 
@@ -168,13 +175,17 @@ for json_file in "$input_dir"*-qcNGS.json; do
             if [[ -n "$BIOSAMPLE_ID" ]]; then
 
                 #Getting Biosample metadata that is needed
+                sleep "$sleeptime_wtoken"
                 BIOSAMPLE_SEARCH_RESULT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=biosample&term=$BIOSAMPLE_ID&retmode=json&api_key=$MYAPIKEY")
+                sleep "$sleeptime_wtoken"
                 
                 # Extract the Biosample UID from the search result
                 BIOSAMPLE_UID=$(echo "$BIOSAMPLE_SEARCH_RESULT" | jq -r '.esearchresult.idlist[0] // empty')
 
                 if [[ -n "$BIOSAMPLE_UID" ]]; then
+                    sleep "$sleeptime_wtoken"
                     BIOSAMPLE_METADATA=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=biosample&id=$BIOSAMPLE_UID&retmode=xml&api_key=$MYAPIKEY")
+                    sleep "$sleeptime_wtoken"
                     BIOSAMPLE_METADATA_CLEAN=$(echo "$BIOSAMPLE_METADATA" | sed 's/<!DOCTYPE[^>]*>//g')
                     #echo "$BIOSAMPLE_METADATA_CLEAN"
                     STRAIN=$(echo "$BIOSAMPLE_METADATA_CLEAN" | xmlstarlet sel -t -v "//Attribute[@attribute_name='strain']" -n)
@@ -188,8 +199,8 @@ import time
 from Bio import Entrez
 import xmltodict
 
-Entrez.email = 'christie.woodside@email.gwu.edu'
-
+Entrez.email = 'youremailhere'
+sleeptime = 0.11
 def bsMeta(bs_term, sleeptime):
     ''' gets additional biosample information to add to the tsv'''
     if not bs_term:
@@ -238,28 +249,36 @@ print(bsMeta('$BIOSAMPLE_ID', 0.75))")
             # 1) BioSample → Assembly
             if [[ -n "$BIOSAMPLE_UID" ]]; then
                 #echo "$BIOSAMPLE_UID"
+                sleep "$sleeptime_wtoken"
                 BS_LINKS=$(curl -s \
                     "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=biosample&db=assembly&id=$BIOSAMPLE_UID&retmode=json&api_key=$MYAPIKEY")
+                sleep "$sleeptime_wtoken"    
 
                 #echo "DEBUG raw BS_LINKS →"
                 #echo "$BS_LINKS" | jq .
+                sleep "$sleeptime_wtoken"
                 ASSEMBLY_UID=$(echo "$BS_LINKS" \
                     | jq -r '.linksets[0]?.linksetdbs[0]?.links[0] // empty')
-                #echo "$ASSEMBLY_UID"    
+                #echo "$ASSEMBLY_UID"  
+                #sleep "$sleeptime_wtoken"
             fi
 
             # 2) fallback SRA → Assembly
             if [[ -z "$ASSEMBLY_UID" && -n "$SRA_ID" ]]; then
+                sleep "$sleeptime_wtoken"
                 SR_LINKS=$(curl -s \
                     "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=sra&db=assembly&id=$SRA_ID&retmode=json&api_key=$MYAPIKEY")
+                sleep "$sleeptime_wtoken"
                 ASSEMBLY_UID=$(echo "$SR_LINKS" \
                     | jq -r '.linksets[0].linksetdbs[0].links[0] // empty')
             fi
 
             # 3) fetch the accession
             if [[ -n "$ASSEMBLY_UID" ]]; then
+                sleep "$sleeptime_wtoken"
                 SUMMARY=$(curl -s \
                     "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=assembly&id=$ASSEMBLY_UID&retmode=json&api_key=$MYAPIKEY")
+                sleep "$sleeptime_wtoken"
                 GAID=$(echo "$SUMMARY" \
                     | jq -r --arg id "$ASSEMBLY_UID" \
                     '.result[$id].assemblyaccession // .result[$id].AssemblyAccession // "NA"')

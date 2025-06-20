@@ -1,9 +1,20 @@
 #!/bin/bash
-echo "Assembly;SRR;ERR;DRR;BioSample"
-while read -u3 line || [ "$line" ]
+echo "Assembly;SRR;ERR;DRR;BioSample" > ~/ukAssemblies.txt
+
+# Get all assemblies for each BioProject:
+while read -u3 row
 do
 
-        assembly="$(esearch -db bioproject -query $line | elink -target assembly | esummary | grep "FtpPath_RefSeq" | sed -r 's/.*>(ftp:\/\/ftp.ncbi.nlm.nih.gov\/genomes\/all\/.+.+)<.*/\1/' | rev | cut -d'/' -f 1 | rev | tr '\n' ',' | sed 's/.$//')"
+        assembly="$(esearch -db bioproject -query $row | elink -target assembly | esummary | grep "FtpPath_RefSeq" | sed -r 's/.*>(ftp:\/\/ftp.ncbi.nlm.nih.gov\/genomes\/all\/.+.+)<.*/\1/' | rev | cut -d'/' -f 1 | rev | tr '\n' ',' | sed 's/.$//')" >> ~/assemblies.tmp
+
+	echo "${assembly}" >> ~/assemblies.tmp
+
+	sleep .5
+done 3< ~/workspace/ukBioprojects/rajaAssemblies.txt
+
+# Get all read data and BioSample information for each assembly:
+while read -u3 line
+do
 
         sra="$(esearch -db bioproject -query $line | elink -target sra | esummary)"
         srr="$(echo "${sra}" | grep -E -o 'SRR[0-9]{4,}' | tr '\n' ',' | sed 's/.$//')"
@@ -12,7 +23,7 @@ do
 
         biosample="$(esearch -db bioproject -query PRJNA766550 | elink -target biosample | esummary | grep -E -o 'SAMN[0-9]{4,}' | tr '\n' ',' | sed 's/.$//')"
 
-        echo "${assembly};${srr};${err};${drr};${biosample}" || echo "$line failed."
+        echo "$line;${srr};${err};${drr};${biosample}" || echo "$line failed." >> ~/ukAssemblies.txt
         sleep .5
 
-done 3< rajaAssemblies.txt
+done 3< assemblies.tmp

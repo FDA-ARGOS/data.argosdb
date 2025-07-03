@@ -37,6 +37,8 @@ do
 
 done 3< rajaBioprojects.txt
 
+cat readList2.txt | sort | uniq > readList3.txt
+
 while read -u3 row
 do
 
@@ -45,4 +47,4 @@ do
 	assembly="$(esearch -db sra -query $row | elink -target assembly | esummary)" | grep "FtpPath_RefSeq" | sed -r 's/.*>(ftp:\/\/ftp.ncbi.nlm.nih.gov\/genomes\/all\/.+.+)<.*/\1/' | rev | cut -d'/' -f 1 | rev >> assemblies.txt || echo "$row failed."
     sleep .4
 
-done 3< readList2.txt
+done 3< readList3.txt

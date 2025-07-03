@@ -26,7 +26,6 @@ Chryseobacterium
 Citrobacter
 Clavispora
 Clostridioides
-[Clostridium]
 Clostridium
 Collinsella
 Comamonas
@@ -53,7 +52,6 @@ Gemella
 Gordonia
 Granulicatella
 Grimontia
-[Haemophilus]
 Haemophilus
 Hafnia
 Helicobacter

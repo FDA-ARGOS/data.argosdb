@@ -69,6 +69,7 @@ File.txt (species or description; number of assemblies)
 
 ### otherBeta.txt (Other Betaproteobacteria; 323)
 `grep "Betaproteobacteria" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > otherBeta.txt`
+
       5 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
      18 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Bordetella
       3 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Oligella
@@ -90,6 +91,7 @@ File.txt (species or description; number of assemblies)
 
 ### bacteroidota.txt (Bacteroidota; 157)
 `grep "Bacteroidota" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > bacteroidota.txt`
+
      81 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
      11 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Bacteroidaceae; Phocaeicola
       1 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Odoribacteraceae; Butyricimonas
@@ -155,7 +157,6 @@ File.txt (species or description; number of assemblies)
 ### otherGamma.txt (Other Gammaproteobacteria; 421)
 `grep "Gammaproteobacteria" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | grep -v "Enterobacterales" | grep -v "Betaproteobacteria" | grep -v "Escherichia" | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > otherGamma.txt`
 
-
      40 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Legionellales; Legionellaceae; Legionella
       6 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Lysobacterales; Lysobacteraceae; Stenotrophomonas; Stenotrophomonas maltophilia group
       2 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Lysobacterales; Rhodanobacteraceae; Rhodanobacter
@@ -194,6 +195,7 @@ File.txt (species or description; number of assemblies)
 
 ### eukaryota.txt (Eukaryotes; 260)
 `grep "Eukaryota" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > eukaryota.txt`
+
      56 Eukaryota; Discoba; Euglenozoa; Kinetoplastea; Metakinetoplastina; Trypanosomatida; Trypanosomatidae; Leishmaniinae; Leishmania
     121 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Debaryomycetaceae; Candida/Lodderomyces clade; Candida
      14 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Metschnikowiaceae; Candidozyma
@@ -204,11 +206,7 @@ File.txt (species or description; number of assemblies)
 ### saccharo.txt (Saccharomyces; 61)
 `grep "Saccharomyces" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > saccharo.txt`
 
-Saccharomycetaceae; Saccharomyces
-      1 lineage
-      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus sudanense
-      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus
-      3 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus; Orthomarburgvirus marburgense.
+      61 Saccharomycetaceae; Saccharomyces
 
 
 ### virus.txt (Viruses; 208)
@@ -219,6 +217,9 @@ Saccharomycetaceae; Saccharomyces
       1 Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus; Severe acute respiratory syndrome-related coronavirus
       1 Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes; Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus
       2 Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota; Pokkesviricetes; Chitovirales; Poxviridae; Chordopoxvirinae; Orthopoxvirus
+      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus sudanense
+      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus
+      3 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus; Orthomarburgvirus marburgense.
 
 
 ### staph.txt (Staphylococus; 466)
@@ -234,6 +235,7 @@ Saccharomycetaceae; Saccharomyces
 
 ### escherichia.txt (Escherchia; 426)
 `grep "Escherichia" /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS.tsv | awk -F  '\t' '{ print $4 }' | tr '\n' ',' | sed 's/.$//' > escherichia.txt`
+
     408 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia
     18 Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia
 

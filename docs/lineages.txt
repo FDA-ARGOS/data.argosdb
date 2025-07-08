@@ -1,0 +1,187 @@
+      3 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Actinomycetales; Actinomycetaceae; Actinomyces
+      7 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Actinomycetales; Actinomycetaceae; Mobiluncus
+      2 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Actinomycetales; Actinomycetaceae; Schaalia
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Bifidobacteriales; Bifidobacteriaceae; Bifidobacterium
+      3 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Bifidobacteriales; Bifidobacteriaceae; Gardnerella
+     22 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Kitasatosporales; Streptomycetaceae; Streptomyces
+      2 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Dermabacteraceae; Dermabacter
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Dermacoccaceae; Dermacoccus
+      2 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Jonesiaceae; Jonesia
+      2 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Kytococcaceae; Kytococcus
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Micrococcaceae; Kocuria
+      4 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Micrococcaceae; Micrococcus
+      6 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micrococcales; Micrococcaceae; Rothia
+     55 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Corynebacteriaceae; Corynebacterium
+      9 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Gordoniaceae; Gordonia
+     10 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycobacterium
+     10 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium avium complex (MAC)
+      5 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycobacterium; Mycobacterium tuberculosis complex
+      3 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycobacteroides
+      4 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycobacteroides; Mycobacteroides abscessus
+      7 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Mycobacteriaceae; Mycolicibacterium
+     15 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Nocardiaceae; Nocardia
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Nocardiaceae; Prescottella
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Mycobacteriales; Tsukamurellaceae; Tsukamurella
+      1 Bacteria; Bacillati; Actinomycetota; Actinomycetes; Propionibacteriales; Propionibacteriaceae; Propionibacterium
+      1 Bacteria; Bacillati; Actinomycetota; Coriobacteriia; Coriobacteriales; Atopobiaceae; Fannyhessea
+      1 Bacteria; Bacillati; Actinomycetota; Coriobacteriia; Coriobacteriales; Coriobacteriaceae; Collinsella
+     25 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Bacillus
+    125 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Bacillus; Bacillus cereus group
+      1 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Heyndrickxia
+      3 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Lysinibacillus
+      5 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Niallia
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Bacillaceae; Peribacillus
+      5 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Gemellaceae; Gemella
+      5 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Listeriaceae; Listeria
+      3 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Macrococcoides
+      8 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Mammaliicoccus
+    425 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus; Staphylococcus cohnii species complex
+      3 Bacteria; Bacillati; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus; Staphylococcus intermedius group
+      1 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Aerococcaceae; Abiotrophia
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Aerococcaceae; Aerococcus
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Carnobacteriaceae; Granulicatella
+    109 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Enterococcaceae; Enterococcus
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus
+      7 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Lactobacillaceae; Leuconostoc
+     12 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Lactobacillaceae; Pediococcus
+      3 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Lactobacillaceae; Pediococcus; Pediococcus acidilactici group
+      1 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Lactobacillaceae; Weissella
+     27 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Streptococcaceae; Lactococcus
+     69 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus
+      8 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus; Streptococcus anginosus group
+      2 Bacteria; Bacillati; Bacillota; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus; Streptococcus mitis group
+      2 Bacteria; Bacillati; Bacillota; Clostridia; Eubacteriales; Clostridiaceae; Clostridium
+      4 Bacteria; Bacillati; Bacillota; Clostridia; Eubacteriales; Oscillospiraceae; Ruminococcus
+      3 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae
+      1 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Blautia
+      2 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Coprococcus
+      4 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Enterocloster
+      2 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Lachnospira
+      1 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Lacrimispora
+      1 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Mediterraneibacter
+      2 Bacteria; Bacillati; Bacillota; Clostridia; Lachnospirales; Lachnospiraceae; Roseburia
+     27 Bacteria; Bacillati; Bacillota; Clostridia; Peptostreptococcales; Peptostreptococcaceae; Clostridioides
+      4 Bacteria; Bacillati; Bacillota; Erysipelotrichia; Erysipelotrichales; Coprobacillaceae; Thomasclavelia
+      1 Bacteria; Bacillati; Bacillota; Negativicutes; Acidaminococcales; Acidaminococcaceae; Acidaminococcus
+      1 Bacteria; Bacillati; Bacillota; Negativicutes; Veillonellales; Veillonellaceae; Veillonella
+      7 Bacteria; Bacillati; Bacillota; Tissierellia; Tissierellales; Peptoniphilaceae; Finegoldia
+      2 Bacteria; Bacillati; Bacillota; Tissierellia; Tissierellales; Peptoniphilaceae; Parvimonas
+      5 Bacteria; Bacillati; Bacillota; Tissierellia; Tissierellales; Peptoniphilaceae; Peptoniphilus
+     14 Bacteria; Bacillota; Bacilli; Bacillales; Listeriaceae; Listeria
+     25 Bacteria; Bacillota; Bacilli; Bacillales; Staphylococcaceae; Staphylococcus
+     25 Bacteria; Bacillota; Clostridia; Eubacteriales; Clostridiaceae; Clostridium
+      3 Bacteria; Bacillota; Clostridia; Peptostreptococcales; Peptostreptococcaceae; Clostridioides
+      3 Bacteria; Fusobacteriati; Fusobacteriota; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium
+      2 Bacteria; Fusobacteriati; Fusobacteriota; Fusobacteriia; Fusobacteriales; Leptotrichiaceae; Streptobacillus
+      1 Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
+      3 Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Hafniaceae; Hafnia
+      1 Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Morganellaceae; Proteus
+      1 Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+     13 Bacteria; Proteobacteria; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Pasteurella
+     81 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides
+     11 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Bacteroidaceae; Phocaeicola
+      1 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Odoribacteraceae; Butyricimonas
+      1 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Odoribacteraceae; Odoribacter
+      1 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Porphyromonadaceae; Porphyromonas
+      1 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Prevotellaceae; Hoylesella
+     10 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella
+      3 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Prevotellaceae; Segatella
+     17 Bacteria; Pseudomonadati; Bacteroidota; Bacteroidia; Bacteroidales; Tannerellaceae; Parabacteroides
+      3 Bacteria; Pseudomonadati; Bacteroidota; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Capnocytophaga
+      2 Bacteria; Pseudomonadati; Bacteroidota; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Myroides
+     10 Bacteria; Pseudomonadati; Bacteroidota; Flavobacteriia; Flavobacteriales; Weeksellaceae; Chryseobacterium group; Chryseobacterium
+      4 Bacteria; Pseudomonadati; Bacteroidota; Flavobacteriia; Flavobacteriales; Weeksellaceae; Elizabethkingia
+     12 Bacteria; Pseudomonadati; Bacteroidota; Sphingobacteriia; Sphingobacteriales; Sphingobacteriaceae; Sphingobacterium
+     37 Bacteria; Pseudomonadati; Campylobacterota; Epsilonproteobacteria; Campylobacterales; Campylobacteraceae; Campylobacter
+      6 Bacteria; Pseudomonadati; Campylobacterota; Epsilonproteobacteria; Campylobacterales; Helicobacteraceae; Helicobacter
+     13 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Acetobacterales; Roseomonadaceae; Roseomonas
+      2 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Brevundimonas
+      4 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Hyphomicrobiales; Bartonellaceae; Bartonella
+      5 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Hyphomicrobiales; Brucellaceae; Brucella/Ochrobactrum group; Brucella
+     19 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Hyphomicrobiales; Rhizobiaceae; Rhizobium/Agrobacterium group; Agrobacterium
+     13 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Rhodobacterales; Paracoccaceae; Paracoccus
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Rhodobacterales; Roseobacteraceae; Roseobacter
+      8 Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas
+      5 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Achromobacter
+     18 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Bordetella
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Alcaligenaceae; Oligella
+     36 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia
+    144 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia cepacia complex
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; Burkholderia gladioli
+     48 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Burkholderia; pseudomallei group
+     23 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Cupriavidus
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Pandoraea
+     10 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Paraburkholderia
+      5 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Burkholderiaceae; Ralstonia
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Comamonadaceae; Comamonas
+      6 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Burkholderiales; Sutterellaceae; Sutterella
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Neisseriales; Neisseriaceae; Eikenella
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Neisseriales; Neisseriaceae; Kingella
+     17 Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria; Neisseriales; Neisseriaceae; Neisseria
+     15 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Aeromonadales; Aeromonadaceae; Aeromonas
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Alteromonadales; Shewanellaceae; Shewanella
+      2 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Alteromonadales; Shewanellaceae; Shewanella; unclassified Shewanella
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Budviciaceae; Budvicia
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cedecea
+     48 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter
+     23 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Citrobacter; Citrobacter freundii complex
+      6 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Cronobacter
+      9 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter
+     54 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Enterobacter; Enterobacter cloacae complex
+    408 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia
+     94 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella/Raoultella group; Klebsiella
+    260 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella/Raoultella group; Klebsiella; Klebsiella pneumoniae complex
+     35 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Klebsiella/Raoultella group; Raoultella
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Leclercia
+      9 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Lelliottia
+      1 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Plesiomonas
+      4 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Pluralibacter
+     57 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+     30 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Shigella
+     14 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Pantoea
+      3 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Erwiniaceae; Pantoea; Pantoea agglomerans group
+     18 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Hafniaceae; Edwardsiella
+     23 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Hafniaceae; Hafnia
+     12 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Morganellaceae; Morganella
+     21 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Morganellaceae; Proteus
+     25 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Morganellaceae; Providencia
+     44 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Serratia
+     59 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+     40 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Legionellales; Legionellaceae; Legionella
+      6 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Lysobacterales; Lysobacteraceae; Stenotrophomonas; Stenotrophomonas maltophilia group
+      2 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Lysobacterales; Rhodanobacteraceae; Rhodanobacter
+     75 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Moraxellales; Moraxellaceae; Acinetobacter
+     50 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Moraxellales; Moraxellaceae; Acinetobacter; Acinetobacter calcoaceticus/baumannii complex
+     24 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Moraxellales; Moraxellaceae; Moraxella
+     16 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Moraxellales; Moraxellaceae; Psychrobacter
+     13 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Haemophilus
+     18 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Pasteurellales; Pasteurellaceae; Pasteurella
+     31 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+      5 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Stutzerimonas
+     10 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Thiotrichales; Francisellaceae; Francisella
+      2 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales; Vibrionaceae; Grimontia
+     81 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio
+      7 Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio; Vibrio diabolicus subgroup
+      2 Bacteria; Pseudomonadati; Spirochaetota; Spirochaetia; Leptospirales; Leptospiraceae; Leptospira
+     12 Bacteria; Pseudomonadati; Spirochaetota; Spirochaetia; Spirochaetales; Borreliaceae; Borreliella
+     18 Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia
+      4 Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Salmonella
+     20 Bacteria; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Yersiniaceae; Yersinia
+     10 Bacteria; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas
+      2 cellular organisms; Bacteria; Pseudomonadati; Pseudomonadota; Alphaproteobacteria; Hyphomicrobiales; Brucellaceae; Brucella/Ochrobactrum group; Brucella
+     56 Eukaryota; Discoba; Euglenozoa; Kinetoplastea; Metakinetoplastina; Trypanosomatida; Trypanosomatidae; Leishmaniinae; Leishmania
+    121 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Debaryomycetaceae; Candida/Lodderomyces clade; Candida
+     14 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Metschnikowiaceae; Candidozyma
+      8 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes; Metschnikowiaceae; Clavispora
+     61 Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces
+      1 lineage
+      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus sudanense
+      1 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus
+      3 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus; Orthomarburgvirus marburgense.
+    192 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus influenzae
+      7 Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus influenzae; Influenza A virus; H1N1 subtype
+      1 Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus; Severe acute respiratory syndrome-related coronavirus
+      1 Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes; Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus
+      2 Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota; Pokkesviricetes; Chitovirales; Poxviridae; Chordopoxvirinae; Orthopoxvirus

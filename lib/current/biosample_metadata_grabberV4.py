@@ -135,8 +135,42 @@ def bsDataGet(bs_term, genome_assembly_id, srr_id, sleeptime, bco_id):
         attr_set['isolation_source'] = attr_set['isolation source']
     if 'collected-by' in attr_set:
         attr_set['collected_by'] = attr_set['collected-by']
+
+    if 'geographic location' in attr_set:
+        #print(attr_set['geographic location'])
+        attr_set['geo_loc_name'] = attr_set['geographic location']
+    if 'geographic location (country and/or sea)' in attr_set:
+        #print(attr_set['geographic location'])
+        attr_set['geo_loc_name'] = attr_set['geographic location (country and/or sea)']
+    if 'collection date' in attr_set:
+        #print(attr_set['collection date'])
+        attr_set['collection_date'] = attr_set['collection date']
+    if 'host scientific name' in attr_set:
+        #print(attr_set['host'])
+        attr_set['host'] = attr_set['host scientific name']
+    if 'host age' in attr_set:
+        #print(attr_set['host age'])
+        attr_set['host_age'] = attr_set['host age']
+    if 'host sex' in attr_set:
+        #print(attr_set['host sex'])
+        attr_set['host_sex'] = attr_set['host sex']
+    if 'host disease' in attr_set:
+        attr_set['host_disease'] = attr_set['host disease']
+    if 'host disease stage' in attr_set:
+        attr_set['host_disease_stage'] = attr_set['host disease stage']
+    if 'host disease outcome' in attr_set:
+        attr_set['host_disease_outcome'] = attr_set['host disease outcome']
+    if 'host health state' in attr_set:
+        attr_set['host_health_state'] = attr_set['host health state']
+    if 'collecting institution' in attr_set:
+        attr_set['collected_by'] = attr_set['collecting institution']
+    if 'host description' in attr_set:
+        attr_set['host_description'] = attr_set['host description']
+
     if 'lat-lon' in attr_set:
         attr_set['lat_lon'] = attr_set['lat-lon']
+    if 'lat lon' in attr_set:
+        attr_set['lat_lon'] = attr_set['lat lon']
     if 'sample name' in attr_set:
         attr_set['sample_name'] = attr_set['sample name']
     

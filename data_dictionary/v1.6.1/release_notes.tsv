@@ -1,4 +1,4 @@
-README Summary for Data Dictionary V1.6		
+README Summary for Data Dictionary V1.6.1		
 - In 'data_files' column: '*' implies all files in that data set category 		
 - In 'data_files' column: assemblyQC.tsv refers to assemblyQC_ARGOS and assemblyQC_ARGOS_extended, ngsQC.tsv refers to ngsQC_ARGOS and ngsQC_ARGOS_extended		
 		
@@ -185,3 +185,4 @@ Core	ngsQC*	90
 Core	siteQC*	33
 Core	ngs_ID_list.tsv	14
 Annotation	DRM_all_orgs.tsv	29
+

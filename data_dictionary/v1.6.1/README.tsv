@@ -1,4 +1,4 @@
-V1.6 FDA ARGOS Data Dictionary README		
+V1.6.1 FDA ARGOS Data Dictionary README		
 		
 Description: 		
 List of controlled vocabulary terms for data.ARGOSdb.org datasets and data properties. 		
@@ -81,4 +81,5 @@ Clustering algorithm for representative genomes
   c. The species name that was used to search is the representative_genome_org		
 4. Using the proteome (whether directly from UniProt or indirectly through PIR), map it to the representative genome		
   a. This can be done via UniProt under the "Components" section: "Genome accession(s)" (which links out)		
+
   b. This is the representative_genome_acc, and is why it might be different from the genome_assembly_id		

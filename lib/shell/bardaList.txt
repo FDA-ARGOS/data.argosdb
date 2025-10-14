@@ -1,0 +1,94 @@
+Escherichia coli
+Klebsiella pneumoniae 
+Listeria monocytogenes
+Streptococcus pneumoniae
+Pseudomonas aeruginosa
+Mycobacterium tuberculosis
+Neisseria sp.
+Neisseria gonorrhoeae
+Neisseria mucosa
+Neisseria meningitidis
+Neisseria cinerea
+Legionella sp.
+Legionella anisa
+Legionella longbeachae 
+Legionella pneumophila
+Lactobacillus sp.
+Lactobacillus
+Staphylococcus epidermidis
+Streptococcus pyogenes
+Serratia marcescens
+Proteus mirabilis
+Fusarium spp.
+Fusarium
+Klebsiella (Enterobacter) aerogenes
+Haemophilus influenzae
+Bordetella pertussis
+Klebsiella oxytoca
+Bacillus anthracis
+Streptococcus mitis
+Corynebacterium diphtheriae
+Epstein-Barr virus (Human gammaherpesvirus 4)
+Streptococcus mutans
+Nocardia
+Rhinovirus
+Enterovirus (Rhinovirus Equivalent)
+Cytomegalovirus (CMV)
+Human betaherpesvirus 5
+Chlamydia trachomatis
+Corynebacterium striatum
+Aspergillus fumigatus
+Bordetella parapertussis
+Mycoplasma pneumoniae
+Mycoplasmoides pneumoniae
+Streptococcus salivarius
+Burkholderia cepacia
+Influenza B
+Influenza A
+Aspergillus flavus
+Mucorales
+Mucoromycetes
+Moraxella catarrhalis
+Candida auris
+Candidozyma auris
+Coxiella burnetii
+Cryptococcus neoformans
+Chlamydia psittaci 
+Bordetella bronchiseptica
+Herpes simplex virus type 1 (HSV-1, Human alphaherpesvirus 1)
+Human alphaherpesvirus 1
+Candida albicans
+Porphyromonas gingivalis
+Bordetella holmesii 
+Fusobacterium necrophorum 
+Nakaseomyces glabrata (Candida glabrata)
+Nakaseomyces glabratus
+Eikenella sp.
+Acinetobacter calcoaceticus
+Candida parapsilosis
+Bordetella hinzii
+Ureaplasma urealyticum
+bordetella avium
+Human adenovirus sp. 
+Candida tropicalis
+Varicella-zoster virus (Human alphaherpesvirus 3)
+Chlamydia pneumoniae
+Histoplasma spp.
+Histoplasma capsulatum
+Bacteroides oralis (Hoylesella oralis)
+Arcanobacterium haemolyticum
+Human Metapneumovirus
+human bocaviruses
+Blastomyces dermatitidis
+Ajellomyces dermatitidis
+Parainfluenza virus 3 (Human respirovirus 3 virus)
+Parainfluenza virus 4 (Human orthorubulavirus 4)
+Pneumocystis jirovecii (PJP)
+Pneumocystis jirovecii (carinii)
+Pneumocystis jirovecii
+Streptococcus viridans
+Group B streptococci
+Streptococcus sp. 'group B'
+Parainfluenza virus 1 (Human respirovirus 1)
+Parainfluenza virus 2 (Human orthorubulavirus 2)
+Respiratory syncytial virus

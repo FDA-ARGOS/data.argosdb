@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 # BARDA organism finder — writes to .txt file, lists unmatched names,
 # and reports total unique assemblies across all BARDA organisms.
+# Christie Woodside October 14, 2025
 set -euo pipefail
 
 #change input parameters here
-BARDA_LIST="${1:-bardaList.txt}"
-DATA_FILE="${2:-/Users/christiewoodside/Desktop/biosampleMeta_ARGOS_extended.tsv}" #update manually here
-#DATA_FILE="${2:-/Users/christiewoodside/Desktop/biosampleMeta_ARGOS.tsv}"
+BARDA_LIST="${1:-bardaList.txt}"    #can be found in this repo. It is bardaList.txt (as of October 14, 2025)
+DATA_FILE="${2:-/Users/user/Desktop/biosampleMeta_ARGOS_extended.tsv}"  #update manually here to point to the datatable.
+#DATA_FILE="${2:-/Users/user/Desktop/biosampleMeta_ARGOS.tsv}"
 
 #--------------------------------------------------------------------------------
 
-ASM_COL="${ASM_COL:-11}"          # assembly accession column
+ASM_COL="${ASM_COL:-11}"          # assembly accession column in biosample table
 STRIP_VERSION="${STRIP_VERSION:-0}"  # strip .version suffix?
 OUT_FILE="${OUT_FILE:-barda_counts_$(date +%Y%m%d_%H%M%S).txt}"
 
@@ -110,24 +111,10 @@ done < "$BARDA_LIST"
 } >> "$OUT_FILE"
 
 rm -f "$TMP_ASM_LIST"
-printf "Wrote results to: %s\n" "$OUT_FILE"
+printf "Wrote BARDA Count results to: %s\n" "$OUT_FILE"
 
 
 
 
-# ----------------------------------------------------
-#og stuff
-# #!/bin/bash
-# # Script to look through our processed data to find those requested by BARDA. This file looks through the assemblyQC_ARGOS" file.
-# # Christie's updates on October 14
 
-# while read line; do
-#         echo "Total number of entries for: $line:"
-#         #cat /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS_extended.tsv | awk -F '\t' -v name="$line" '$1 ~ name' | wc -l
 
-#         cat /Users/christiewoodside/Desktop/biosampleMeta_ARGOS_extended.tsv | awk -F '\t' -v name="$line" '$1 ~ name' | wc -l
-#         echo -e ' \t '"Unique assembles:"
-#         #echo -ne ' \t ' && cat /data/shared/argosdb/generated/datasets/reviewed/assemblyQC_ARGOS_extended.tsv |  awk -F '\t' -v name="$line" '$1 ~ name' | awk -F '\t' '{ print $4 }' | sort | uniq | wc -l
-
-#         echo -ne ' \t ' && cat /Users/christiewoodside/Desktop/biosampleMeta_ARGOS_extended.tsv |  awk -F '\t' -v name="$line" '$1 ~ name' | awk -F '\t' '{ print $4 }' | sort | uniq | wc -l
-# done < bardaList.txt

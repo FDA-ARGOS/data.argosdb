@@ -314,6 +314,20 @@ for json_file in "$input_dir"*-qcAll.json; do
                 #TRIMMED=$(echo "$GENE_SEC" | awk -F'\\)' '{print $NF}' | awk -F',' 'NF{NF--; print}' OFS=,)
                 OUTPUT=$(echo "$TRIMMED" | xargs)  # Trim leading/trailing whitespace
                 echo "-------- Influenza Segment Extracted: $OUTPUT"
+                
+            elif [[ "$GENE_SEC" == *"Influenza B virus"* ]]; then
+                # Extract everything up to and including the first closing parenthesis
+                INFRA_NAME=$(echo "$GENE_SEC" | sed -E 's/^(Influenza B virus \([^)]*\)).*/\1/')
+
+                # Everything after that = segment info
+                REMAINDER=$(echo "$GENE_SEC" | sed -E 's/^Influenza B virus \([^)]*\)\s*//')
+
+                # Optional: remove redundant (PB2) style gene name at the end
+                OUTPUT=$(echo "$REMAINDER" | sed -E 's/\s+\([^)]*\)\s+gene/gene/' | xargs)
+                OUTPUT=$(echo "$OUTPUT" | sed -E 's/,.*$//' | xargs)
+
+                echo "Strain (B): $INFRA_NAME"
+                echo "Segment Info (B): $OUTPUT"
 
 
             elif [[ $GENE_SEC != *","* ]]; then

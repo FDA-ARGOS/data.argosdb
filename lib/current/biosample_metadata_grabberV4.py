@@ -97,22 +97,83 @@ def bsDataGet(bs_term, genome_assembly_id, srr_id, sleeptime, bco_id):
     # now put it into your attr_set
     #end of new code
 
-    attr = sd_json['Attributes']['Attribute']
+    # attr = sd_json['Attributes']['Attribute'] ## Commented out Nov 24 2025 because it needed to be more specific
+    # attr_set = {}
+
+    # for att in attr:
+    #     if '#text' in att:
+    #         attr_set[att['@attribute_name']] = att['#text']
+    #     else:
+    #         attr_set[att['@attribute_name']] = None
+
+    #adding new code:
     attr_set = {}
 
-    for att in attr:
-        if '#text' in att:
-            attr_set[att['@attribute_name']] = att['#text']
-        else:
-            attr_set[att['@attribute_name']] = None
+    # 1) Normalize to a list
+    raw_attr = sd_json.get('Attributes', {}).get('Attribute', [])
+    if isinstance(raw_attr, dict):
+        raw_attr = [raw_attr]
+    elif raw_attr is None:
+        raw_attr = []
+
+    for att in raw_attr:
+        # 2) Skip non-dict entries (e.g., stray strings/whitespace)
+        if not isinstance(att, dict):
+            print("Skipping non-dict Attribute entry:", repr(att))
+            continue
+
+        # 3) Safely fetch the attribute name and value
+        name = att.get('@attribute_name') or att.get('attribute_name')
+        value = att.get('#text')
+
+        if not name:
+            # No name => can't store it
+            print("Attribute without a name, skipping:", att)
+            continue
+
+        # 4) If '#text' exists but is empty/missing, store None; otherwise store the text
+        attr_set[name] = value if (value is not None and str(value).strip() != "") else None
+    #end fo new codee
+
 
     ids = sd_json['Ids']['Id']
     ids = sd_json['Attributes']['Attribute']
     idm_id = ''
-    for id in ids:
-        if id.get('@attribute_name') == 'identification method':
-            idm_id = id['#text']
+    # for id in ids:
+    #     if id.get('@attribute_name') == 'identification method':
+    #         idm_id = id['#text']'
 
+    # keep sd_json['Ids']['Id'] separate if you need it later
+    def _normalize_to_list(x):
+        if x is None:
+            return []
+        return x if isinstance(x, list) else [x]
+
+    attrs = _normalize_to_list(sd_json.get('Attributes', {}).get('Attribute'))
+    idm_id = None
+
+    for a in attrs:
+        if not isinstance(a, dict):
+            continue  # skip stray strings/whitespace nodes
+
+        name = (a.get('@attribute_name') or a.get('attribute_name') or '').strip().lower()
+        harm = (a.get('@harmonized_name') or '').strip().lower()
+        disp = (a.get('@display_name') or '').strip().lower()
+
+        # match common label variants
+        if (
+            name == 'identification method'
+            or harm in ('identification_method', 'id_method')
+            or disp == 'identification method'
+        ):
+            text = a.get('#text')
+            idm_id = (str(text).strip() if text is not None and str(text).strip() != '' else None)
+            break
+
+
+
+
+    #print(attr_set)
     attr_set['biosample'] = bs_term
     attr_set['infraspecific_name'] = ''
     attr_set['organism_name'] = sd_json.get('Description', {}).get('Organism', {}).get('OrganismName', '')
@@ -130,6 +191,7 @@ def bsDataGet(bs_term, genome_assembly_id, srr_id, sleeptime, bco_id):
             attr_set['bioproject'] = sd_json['Links']['Link'][0].get('@label', '')
         else:
             attr_set['bioproject'] = sd_json['Links']['Link'].get('@label', '')
+    #print(attr_set)
 
     if 'isolation source' in attr_set:
         attr_set['isolation_source'] = attr_set['isolation source']
@@ -186,7 +248,8 @@ def bsDataGet(bs_term, genome_assembly_id, srr_id, sleeptime, bco_id):
         #print(records[0].keys())
         attr_set['lineage'] = records[0]["Lineage"]
 
-    sra_id_list = [s.strip() for s in srr_id.split(';') if s.strip()]
+    #sra_id_list = [s.strip() for s in srr_id.split(';') if s.strip()]
+    sra_id_list = [s.strip() for s in (srr_id.split(';') if ';' in srr_id else srr_id.split(',')) if s.strip()]
 
     bs_data_list = []
     for sra_id in sra_id_list:

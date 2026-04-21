@@ -19,8 +19,19 @@ _
 Documentation can be found in the [docs](docs) directory.
 
 ## lib
-The [lib](lib) directory contains the scripts, raw, processed code, and extras. 
-Shell files, inside lib, can be found [here](lib/shell).
+The [lib](lib/) directory contains scripts and supporting code used for data retrieval, processing, and table generation within ARGOS workflows.
+
+**These scripts have been used to**:
+- Retrieve data and identifiers from external APIs (e.g., NCBI)
+- Process and transform QC outputs
+- Generate standardized data tables and supporting schema inputs
+
+**Subdirectories**
+
+- [HIVE3/](lib/HIVE3/) Contains scripts used historically to generate ARGOS data tables using HIVE3-based QC workflows.
+Some scripts may be outdated due to ongoing changes and updates to HIVE3 over time.
+- [current/](lib/current/) Contains the actively maintained codebase used to generate the data tables currently available on data.argosdb.org. These scripts can also be adapted to generate custom tables from HIVE QC outputs.
+- [shell/](lib/shell/) Contains legacy shell scripts that were used in earlier versions of the pipeline and are no longer actively maintained.
 
 ## Schema
 This directory contains the ARGOS data schemas, organized by release version. Each version defines the expected structure and validation rules for datasets published on ARGOS.

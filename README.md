@@ -19,29 +19,30 @@ _
 ## Docs
 Documentation can be found in the [docs](docs) directory.
 
-## Schema
-Houses the ARGOS data schemas by release version:
-
-Current: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
-
-[v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)  
-[v1.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.4)  
-[v1.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.3)  
-[v1.2](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.2)  
-[v1.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.1)  
-[v1.0](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.0)  
-[v0.9](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.9)  
-[v0.8](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.8)  
-[v0.7](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.7)  
-[v0.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.6)  
-[v0.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.5)  
-[v0.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.4)  
-[v0.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.3)  
-[v0.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.1)  
-
 ## lib
 The [lib](lib) directory contains the scripts, raw, processed code, and extras. 
 Shell files, inside lib, can be found [here](lib/shell).
+
+## Schema
+This directory contains the ARGOS data schemas, organized by release version. Each version defines the expected structure and validation rules for datasets published on ARGOS.
+
+Current version: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
+
+**What is included in each schema version?**
+Each version contains a core/ subdirectory, which houses JSON schema files corresponding to the data tables available on data.argosdb.org. There is an annotation/ subdirectory, but we are not currently performing any annotations. 
+
+These JSON schemas define:
+- Column names (attributes) for each dataset
+- Data types (e.g., string, integer, float)
+- Descriptions explaining the meaning of each field
+- Titles for readability and standardization
+- Example values to guide interpretation and usage
+
+This structure ensures consistency, transparency, and reproducibility across ARGOS datasets.
+
+Example schema file:
+- [assemblyQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/assemblyQC.json)
+- [ngsQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/ngsQC.json)
 
 ## covid-drdb
 COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.

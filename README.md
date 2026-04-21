@@ -46,7 +46,7 @@ It can be found [here](data_files)
 ## Docs
 The [docs](docs/) folder contains reference materials focused on lineage structure and overall data flow within the pipeline. These documents provide background context on how taxonomic relationships are organized and how data moves through the system. While helpful for understanding the framework, some content may be outdated compared to the current implementation.
 
-## lib
+## Lib
 The [lib](lib/) directory contains scripts and supporting code used for data retrieval, processing, and table generation within ARGOS workflows.
 
 **These scripts have been used to**:

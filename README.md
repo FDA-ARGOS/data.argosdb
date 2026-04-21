@@ -37,10 +37,11 @@ The primary purpose of the Data Dictionary is to:
 - Support accurate interpretation of QC metrics and biosample metadata
 
 The Data Dictionary complements the schema directory: [schema/](schema/)
+
 Data Dictionary → human-readable definitions and controlled vocabulary
 
 ## Data_files
-The [data_files](data_files/) folder contains archived and reference data tables used throughout the project, including materials from Release 1.0 (December 2025), older data table files, and other historical supporting files. It also includes _HumanPathogens_Comprehensive.xlsx_, an important reference table of human pathogenic organisms spanning bacteria, viruses, and eukaryotic pathogens, compiled from multiple curated sources for downstream analysis and database integration. The current dataset contains 1,705 bacterial species, 1,598 viral species, and 49 fungal and other eukaryotic organisms, and while the table can be reviewed on the wiki, the full file is also available in this repository for download and use.
+The [data_files](data_files/) folder contains archived and reference data tables used throughout the project, including materials from Release 1.0 (December 2025), older data table files, and other historical supporting files. It also includes _HumanPathogens_Comprehensive.xlsx_, an important reference table of human pathogenic organisms spanning bacteria, viruses, and eukaryotic pathogens, compiled from multiple curated sources for downstream analysis and database integration. The current dataset contains 1,705 bacterial species, 1,598 viral species, and 49 fungal and other eukaryotic organisms, and while the table can be reviewed on the [wiki](https://hivelab.biochemistry.gwu.edu/wiki/Comprehensive_Pathogenic_Organisms_Reference), the full file is also available in this repository for download and use.
 
 ## Docs
 The [docs](docs/) folder contains reference materials focused on lineage structure and overall data flow within the pipeline. These documents provide background context on how taxonomic relationships are organized and how data moves through the system. While helpful for understanding the framework, some content may be outdated compared to the current implementation.

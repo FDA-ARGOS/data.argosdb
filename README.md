@@ -1,16 +1,15 @@
 # FDA-ARGOS: ARGOSDB
 
-Repository for data files and schema definitions for ARGOS project.
+## Introduction
+FDA-ARGOS database updates may help researchers rapidly validate diagnostic tests and use qualified genetic sequences to support future product development
+
+As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
+
 For additional details on project information and assembly QC see:
 
 * [ARGOSDB](https://data.argosdb.org/)
 * [NCBI Bioproject](https://www.ncbi.nlm.nih.gov/bioproject/231221)
 * [Project Information](https://www.fda.gov/emergency-preparedness-and-response/mcm-regulatory-science/expanding-next-generation-sequencing-tools-support-pandemic-preparedness-and-response)
-
-## Introduction
-FDA-ARGOS database updates may help researchers rapidly validate diagnostic tests and use qualified genetic sequences to support future product development
-
-As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
 
 ## Data_files
 The data files contains raw or processed code. It also contains templates and tables for the data files pushed to data.argosdb.org.
@@ -26,9 +25,10 @@ Shell files, inside lib, can be found [here](lib/shell).
 ## Schema
 This directory contains the ARGOS data schemas, organized by release version. Each version defines the expected structure and validation rules for datasets published on ARGOS.
 
-Current version: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
+_Current version_: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
 
 **What is included in each schema version?**
+
 Each version contains a core/ subdirectory, which houses JSON schema files corresponding to the data tables available on data.argosdb.org. There is an annotation/ subdirectory, but we are not currently performing any annotations. 
 
 These JSON schemas define:
@@ -43,10 +43,6 @@ This structure ensures consistency, transparency, and reproducibility across ARG
 Example schema file:
 - [assemblyQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/assemblyQC.json)
 - [ngsQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/ngsQC.json)
-
-## covid-drdb
-COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.
-The documents and files can be found [here](covid-drdb/README.md).
 
 ### Validating a data file against a schema:
 Assume you wanted to validate a file of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).
@@ -74,6 +70,9 @@ For Example:
 ``` 
 should give you the same results. 
 
+## covid-drdb
+COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.
+The documents and files can be found [here](covid-drdb/README.md).
 
 ## Citations
 Sichtig, H., Minogue, T., Yan, Y. et al. FDA-ARGOS is a database with public quality-controlled reference genomes for diagnostic use and regulatory science. Nat Commun 10, 3313 (2019). https://doi.org/10.1038/s41467-019-11306-6

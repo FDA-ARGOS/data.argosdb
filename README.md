@@ -11,6 +11,34 @@ For additional details on project information and assembly QC see:
 * [NCBI Bioproject](https://www.ncbi.nlm.nih.gov/bioproject/231221)
 * [Project Information](https://www.fda.gov/emergency-preparedness-and-response/mcm-regulatory-science/expanding-next-generation-sequencing-tools-support-pandemic-preparedness-and-response)
 
+## Data Dictionary
+The Data Dictionary directory contains the controlled vocabulary and standardized definitions for ARGOS data tables.
+
+_Current version_: [v1.6.1](data_dictionary/v1.6.1/)
+
+This resource was developed to support the integration of ARGOS data from multiple, disparate sources by ensuring a consistent representation of data properties across all datasets in ARGOS.
+
+Each entry in the Data Dictionary corresponds to a column header used in data tables on data.argosdb.org, and includes:
+- Standardized qc attribute (column) names
+- Descriptions defining each data property
+- Data types and expected formats
+- Harmonized terminology across datasets
+
+These terms were:
+- Proposed by ARGOS project members and FDA collaborators
+- Manually curated to merge overlapping or redundant fields
+- Standardized to ensure consistency across all data tables
+
+### Purpose
+
+The primary purpose of the Data Dictionary is to:
+- Ensure all data submitted to ARGOS follows a consistent and controlled structure
+- Enable reliable integration of datasets from different sources
+- Support accurate interpretation of QC metrics and biosample metadata
+
+The Data Dictionary complements the schema directory: [schema/](schema/)
+Data Dictionary → human-readable definitions and controlled vocabulary
+
 ## Data_files
 The data files contains raw or processed code. It also contains templates and tables for the data files pushed to data.argosdb.org.
 It can be found [here](data_files)

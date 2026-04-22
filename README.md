@@ -1,50 +1,87 @@
 # FDA-ARGOS: ARGOSDB
 
-Repository for data files and schema definitions for ARGOS project.
+## Introduction
+FDA-ARGOS database updates may help researchers rapidly validate diagnostic tests and use qualified genetic sequences to support future product development
+
+As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
+
 For additional details on project information and assembly QC see:
 
 * [ARGOSDB](https://data.argosdb.org/)
 * [NCBI Bioproject](https://www.ncbi.nlm.nih.gov/bioproject/231221)
 * [Project Information](https://www.fda.gov/emergency-preparedness-and-response/mcm-regulatory-science/expanding-next-generation-sequencing-tools-support-pandemic-preparedness-and-response)
 
-## Introduction
-FDA-ARGOS database updates may help researchers rapidly validate diagnostic tests and use qualified genetic sequences to support future product development
+## Data Dictionary
+The Data Dictionary directory contains the controlled vocabulary and standardized definitions for ARGOS data tables.
 
-As of September 2021, Embleema and George Washington University have been conducting bioinformatic research and system development, focusing on expanding the FDA-ARGOS database. This project expands datasets publicly available in FDA-ARGOS, improves quality control by developing quality matrix tools and scoring approaches that will allow the mining of public sequence databases, and identifies high-quality sequences for upload to the FDA-ARGOS database as regulatory-grade sequences. Building on expansions during the COVID-19 pandemic, this project aims to further improve the utility of the FDA-ARGOS database as a key tool for medical countermeasure development and validation.
+_Current version_: [v1.6.1](data_dictionary/v1.6.1/)
+
+This resource was developed to support the integration of ARGOS data from multiple, disparate sources by ensuring a consistent representation of data properties across all datasets in ARGOS.
+
+Each entry in the Data Dictionary corresponds to a column header used in data tables on data.argosdb.org, and includes:
+- Standardized qc attribute (column) names
+- Descriptions defining each data property
+- Data types and expected formats
+- Harmonized terminology across datasets
+
+These terms were:
+- Proposed by ARGOS project members and FDA collaborators
+- Manually curated to merge overlapping or redundant fields
+- Standardized to ensure consistency across all data tables
+
+### Purpose
+
+The primary purpose of the Data Dictionary is to:
+- Ensure all data submitted to ARGOS follows a consistent and controlled structure
+- Enable reliable integration of datasets from different sources
+- Support accurate interpretation of QC metrics and biosample metadata
+
+The Data Dictionary complements the schema directory: [schema/](schema/)
+
+Data Dictionary → human-readable definitions and controlled vocabulary
 
 ## Data_files
-The data files contains raw or processed code. It also contains templates and tables for the data files pushed to data.argosdb.org.
-It can be found [here](data_files)
-_
+The [data_files](data_files/) folder contains archived and reference data tables used throughout the project, including materials from Release 1.0 (December 2025), older data table files, and other historical supporting files. It also includes _HumanPathogens_Comprehensive.xlsx_, an important reference table of human pathogenic organisms spanning bacteria, viruses, and eukaryotic pathogens, compiled from multiple curated sources for downstream analysis and database integration. The current dataset contains 1,705 bacterial species, 1,598 viral species, and 49 fungal and other eukaryotic organisms, and while the table can be reviewed on the [wiki](https://hivelab.biochemistry.gwu.edu/wiki/Comprehensive_Pathogenic_Organisms_Reference), the full file is also available in this repository for download and use.
+
 ## Docs
-Documentation can be found in the [docs](docs) directory.
+The [docs](docs/) folder contains reference materials focused on lineage structure and overall data flow within the pipeline. These documents provide background context on how taxonomic relationships are organized and how data moves through the system. While helpful for understanding the framework, some content may be outdated compared to the current implementation.
+
+## Lib
+The [lib](lib/) directory contains scripts and supporting code used for data retrieval, processing, and table generation within ARGOS workflows.
+
+**These scripts have been used to**:
+- Retrieve data and identifiers from external APIs (e.g., NCBI)
+- Process and transform QC outputs
+- Generate standardized data tables and supporting schema inputs
+
+**Subdirectories**
+
+- [HIVE3/](lib/HIVE3/) Contains scripts used historically to generate ARGOS data tables using HIVE3-based QC workflows.
+Some scripts may be outdated due to ongoing changes and updates to HIVE3 over time.
+- [current/](lib/current/) Contains the actively maintained codebase used to generate the data tables currently available on data.argosdb.org. These scripts can also be adapted to generate custom tables from HIVE QC outputs.
+- [shell/](lib/shell/) Contains legacy shell scripts that were used in earlier versions of the pipeline and are no longer actively maintained.
 
 ## Schema
-Houses the ARGOS data schemas by release version:
+This directory contains the ARGOS data schemas, organized by release version. Each version defines the expected structure and validation rules for datasets published on ARGOS.
 
-Current: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
-[v1.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.5)  
-[v1.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.4)  
-[v1.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.3)  
-[v1.2](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.2)  
-[v1.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.1)  
-[v1.0](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.0)  
-[v0.9](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.9)  
-[v0.8](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.8)  
-[v0.7](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.7)  
-[v0.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.6)  
-[v0.5](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.5)  
-[v0.4](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.4)  
-[v0.3](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.3)  
-[v0.1](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v0.1)  
+_Current version_: [v1.6](https://github.com/FDA-ARGOS/data.argosdb/tree/main/schema/v1.6)
 
-## lib
-The [lib](lib) directory contains the scripts, raw, processed code, and extras. 
-Shell files, inside lib, can be found [here](lib/shell).
+**What is included in each schema version?**
 
-## covid-drdb
-COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.
-The documents and files can be found [here](covid-drdb/README.md).
+Each version contains a core/ subdirectory, which houses JSON schema files corresponding to the data tables available on data.argosdb.org. There is an annotation/ subdirectory, but we are not currently performing any annotations. 
+
+These JSON schemas define:
+- Column names (attributes) for each dataset
+- Data types (e.g., string, integer, float)
+- Descriptions explaining the meaning of each field
+- Titles for readability and standardization
+- Example values to guide interpretation and usage
+
+This structure ensures consistency, transparency, and reproducibility across ARGOS datasets.
+
+Example schema file:
+- [assemblyQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/assemblyQC.json)
+- [ngsQC.json](https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.6/core/ngsQC.json)
 
 ### Validating a data file against a schema:
 Assume you wanted to validate a file of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).
@@ -72,6 +109,9 @@ For Example:
 ``` 
 should give you the same results. 
 
+## covid-drdb
+COVID-DRDB is created by the HIVDB team of Stanford University. It includes resistance data of SARS-CoV-2 for convalescent plasma, vaccinee plasma and monoclonal antibodies collected from published peer-reviewed/pre-print studies.
+The documents and files can be found [here](covid-drdb/README.md).
 
 ## Citations
 Sichtig, H., Minogue, T., Yan, Y. et al. FDA-ARGOS is a database with public quality-controlled reference genomes for diagnostic use and regulatory science. Nat Commun 10, 3313 (2019). https://doi.org/10.1038/s41467-019-11306-6

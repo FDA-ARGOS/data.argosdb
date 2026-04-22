@@ -1,53 +1,66 @@
+# lib
 
-## Guide to using scripts in `/lib`:
+The lib directory contains scripts and supporting code used for data retrieval, processing, validation, and table generation within ARGOS workflows.
 
-## biosample_complete.sh
+These scripts have been used to:
+- Retrieve data and identifiers from external APIs (e.g., NCBI)
+- Process and transform QC outputs
+- Generate standardized data tables
+- Validate datasets against defined schemas
 
-Generates a TSV file (hopefully) adhering to the biosampleMeta schema
-as defined in https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.4/core/biosampleMeta_HIVE.json
+⚠️ Note: Much of the code in this directory reflects earlier versions of the pipeline and may no longer be part of the current workflow. Except for the current or HIVE3 olders. 
 
-The TSV returned contains one row per SRA id associated with the biosample.
+## Subdirectories
+`HIVE3/`
+Scripts used historically to generate ARGOS data tables using HIVE3-based QC workflows. Some scripts may be outdated due to changes in HIVE3 over time.
 
+`current/`
+Contains the actively maintained codebase used to generate the data tables currently available on data.argosdb.org.
+
+`shell/`
+Legacy shell scripts used in earlier versions of the pipeline. These are no longer actively maintained.
+
+## Notes
+Many scripts in this directory are deprecated or legacy
+
+Retained for:
+- Reproducibility
+- Historical reference
+- Troubleshooting older datasets
+
+For current workflows, refer to the main README and updated pipelines.
+
+## Biosample Schema script
+A much older file that is still applicable, biosample_complete.sh, contains the steps below.
+
+Generates a TSV file intended to follow the biosampleMeta schema:
+https://github.com/FDA-ARGOS/data.argosdb/blob/main/schema/v1.4/core/biosampleMeta_HIVE.json
+
+Output: One row per SRA ID associated with each biosample
 Required parameters:
-- `-f`: Path to text file of bioSample IDs (one ID per line)
-- `-n`: Path to NGS QC file (must be TSV format)
+`-f`: Path to text file of BioSample IDs (one per line)
+`-n`: Path to NGS QC file (TSV format)
 
 Optional parameters:
-- `-b`: BCO ID
-- `-s`: schema version
-- `-d`: debug (if `-d` is not set, the output directory will contain intermediate xml and tsv files)
+`-b`: BCO ID
+`-s`: Schema version
+`-d`: Debug mode
 
-Example usage:
-
+Example:
 `./biosample_complete.sh -f biosample_ids.txt -n ngsQC_HIVE.tsv -b ARGOS_000028 -s v1.12`
 
-## lib
-For scripts and sutch
+## Schema Validation
+The dictionary_utils.py script can be used to validate data tables against ARGOS schemas. This is an older file, but can still be applicable.
 
+_Local validation_
+`python lib/dictionary_utils.py validate \
+  -i data_files/test_SRA_ngsQC.tsv \
+  -s schema/v0.5/non-core/SRA_ngsQC.json`
 
-### Validating a data file against a schema:
-Assume you wanted to validate a flie of the type`SRA_ngsQC`(this same process should work for any of the types we have defined).
+_Remote validation_
+`python lib/dictionary_utils.py validate \
+  -i https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/data_files/test_SRA_ngsQC.tsv \
+  -s https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/SRA_ngsQC.json`
 
-- The data file is `/data_files/test_SRA_ngsQC.tsv`
-- The schema for a `SRA_ngsQC` data file is `/schema/v0.5/non-core/SRA_ngsQC.json` 
-
-For illitstration purposes cell `T6` in our example data file has been modified. The schema says that the value has to be less than 1, as `gc_ content` is a percentage. The example data sheet has a value of `10.63682374` in that cell, and the following error shoudl be thrown:
-
-`Line 5 failed. '10.63682374' does not match '^[+-]?([0]+\\.?[0-9]*|\\.[0-9]+)$` 
-
-From the project root run:
- 
-```shell
-> python lib/dictionary_utils.py validate -i data_files/test_SRA_ngsQC.tsv -s schema/v0.5/non-core/SRA_ngsQC.json
-```
-
-### Validating a data file against a schema with remote files:
-
-Both the schema [`-s`] and input file [`-i`] values can take a URL, assuming they are formatted correctly and resolvable. 
-
-For Example: 
-```
->  python lib/dictionary_utils.py validate -i https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/data_files/test_SRA_ngsQC.tsv -s https://raw.githubusercontent.com/FDA-ARGOS/data.argosdb/v0.5/schema/v0.5/non-core/SRA_ngsQC.json
-``` 
-should give you the same results. 
-
+_Example error_
+`Line 5 failed. '10.63682374' does not match '^[+-]?([0]+\\.?[0-9]*|\\.[0-9]+)$'`

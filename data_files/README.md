@@ -8,7 +8,7 @@ This folder contains archived and reference data tables used throughout the proj
 - _HumanPathogens_Comprehensive.xlsx_: A curated reference table of human pathogenic organisms, including bacteria, viruses, and eukaryotic pathogens. This dataset integrates multiple sources and provides taxonomic identifiers and classification information for downstream analysis and database integration.
 
 The current version of _HumanPathogens_Comprehensive.xlsx_ includes:
-- 1,705 bacterial species
+- 1,755 bacterial species
 - 1,598 viral species
 - 49 fungal and other eukaryotic organisms
 
